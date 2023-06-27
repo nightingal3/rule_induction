@@ -55,6 +55,7 @@ prompt_with_true_grammar = {
         [[x and y]] = [[x]] [[y]]
         [[x after y]] = [[y]] [[x]]
 
+        Examples: 
         {few_shot_examples}
 
         Input: {input}
@@ -76,7 +77,7 @@ prompt_for_grammar_induction = {
 
     However, just write the output like what's shown in these examples.
     {few_shot_examples}
-    
+
     Input: {input}
     """
 }

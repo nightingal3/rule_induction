@@ -64,6 +64,15 @@ class ScanTask(BaseTask):
         few_shot_examples = self.get_few_shot_examples(idx)
         return self.grammar_induction_prompt_wrap(few_shot_examples,)
     
+        
+    def get_system_prompt(self) -> str:
+        if self.prompt_style == "full_grammar":
+            return prompt_with_true_grammar["system"]
+        elif self.prompt_style == "grammar_induction":
+            return prompt_for_grammar_induction["system"]
+            
+        return base_prompt["system"]
+    
     @staticmethod
     def standard_prompt_wrap(few_shot_examples: str, input: str) -> str:
         return base_prompt["user"].format(few_shot_examples=few_shot_examples, input=input)
@@ -79,10 +88,6 @@ class ScanTask(BaseTask):
     @staticmethod
     def prompt_with_induced_grammar_wrap(induced_grammar: str, few_shot_examples: str, input: str) -> str:
         return prompt_for_grammar_induction["user_followup"].format(induced_grammar=induced_grammar, input=input, few_shot_examples=few_shot_examples)
-    
-    @staticmethod
-    def get_system_prompt(idx: int) -> str:
-        return base_prompt["system"]
     
     @staticmethod
     def few_shot_examples_wrap(few_shot_inputs: List, few_shot_outputs: List) -> str:
