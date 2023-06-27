@@ -5,8 +5,7 @@ GRAMMAR_USING_SYSPROMPT = "You are a parser. Carefully use the grammar to parse 
 
 base_prompt = {
     "system": PROBLEM_SOLVING_SYSPROMPT,
-    "user": """{few_shot_examples}
-    Input: {input}"""
+    "user": """Return the output preceded by 'Output:'\n{few_shot_examples}\nInput: {input}"""
 }
 
 prompt_with_true_grammar = {
@@ -77,3 +76,6 @@ prompt_for_grammar_induction = {
     Input: {input}
     """
 }
+
+few_shot_examples_prompt = """Input: {input}\nOutput: {output}\n"""
+

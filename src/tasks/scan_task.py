@@ -1,0 +1,95 @@
+from typing import List, Literal
+
+import pandas as pd
+import random
+
+from src.prompts.scan_prompts import * 
+from src.task import BaseTask
+from src.prompt_openai import get_completion
+
+class ScanTask(BaseTask):
+    def __init__(self, train_file: str, test_file: str, prompt_style: Literal["base", "full_grammar", "grammar_induction"], num_few_shot_examples: int = 5) -> None:
+        self.train_file = train_file
+        self.test_file = test_file
+        self.train_data = pd.read_csv(train_file)
+        self.test_data = pd.read_csv(test_file)
+        self.prompt_style = prompt_style
+        self.num_few_shot_examples = num_few_shot_examples
+
+    def __len__(self) -> int:
+        return len(self.test_data)
+
+    def get_input(self, idx: int) -> str:
+        return self.test_data.iloc[idx]["commands"]
+    
+    def get_few_shot_examples(self, idx: int) -> str:
+        # get some random examples based on the idx (repeatable)
+        random.seed(idx)
+        indices = random.sample(range(len(self.train_data)), self.num_few_shot_examples)
+        few_shot_inputs = [self.train_data.iloc[i]["commands"] for i in indices]
+        few_shot_outputs = [self.train_data.iloc[i]["actions"] for i in indices]
+        few_shot_formatted = self.few_shot_examples_wrap(few_shot_inputs, few_shot_outputs)
+        return few_shot_formatted
+    
+    def validate(self, idx: int, output: str) -> bool:
+        output_text = output["choices"][0]["message"]["content"]
+        output_actions = output_text.split("Output: ")[-1].strip()
+        return output_actions == self.test_data.iloc[idx]["actions"]
+    
+    def get_standard_prompt(self, idx: int) -> str:
+        input = self.get_input(idx)
+        few_shot_examples = self.get_few_shot_examples(idx)
+        return self.standard_prompt_wrap(few_shot_examples, input)
+    
+    def get_special_prompt(self, idx: int, backend: str = "gpt-4") -> str:
+        if self.prompt_style == "full_grammar":
+            return self.get_full_grammar_prompt(idx)
+        else:
+            import pdb; pdb.set_trace()
+            grammar_induction_prompt = self.get_grammar_induction_prompt(idx)
+            message = [
+                {"role": "system", "content": GRAMMAR_INDUCTION_SYSPROMPT},
+                {"role": "user", "content": grammar_induction_prompt},
+            ]
+            induced_grammar = get_completion(message, backend, temp=0.0)
+            import pdb; pdb.set_trace()
+            prompt_with_induced_grammar = self.prompt_with_induced_grammar_wrap(induced_grammar, self.get_input(idx))
+            return prompt_with_xinduced_grammar
+        
+    def get_full_grammar_prompt(self, idx: int) -> str:
+        input = self.get_input(idx)
+        few_shot_examples = self.get_few_shot_examples(idx)
+        return self.full_grammar_prompt_wrap(few_shot_examples, input)
+    
+    def get_grammar_induction_prompt(self, idx: int) -> str:
+        input = self.get_input(idx)
+        few_shot_examples = self.get_few_shot_examples(idx)
+        return self.grammar_induction_prompt_wrap(few_shot_examples,)
+    
+    @staticmethod
+    def standard_prompt_wrap(few_shot_examples: str, input: str) -> str:
+        return base_prompt["user"].format(few_shot_examples=few_shot_examples, input=input)
+    
+    @staticmethod
+    def full_grammar_prompt_wrap(few_shot_examples: str, input: str) -> str:
+        return prompt_with_true_grammar["user"].format(few_shot_examples=few_shot_examples, input=input)
+    
+    @staticmethod
+    def grammar_induction_prompt_wrap(few_shot_examples: str) -> str:
+        return prompt_for_grammar_induction["user"].format(few_shot_examples=few_shot_examples)
+    
+    @staticmethod
+    def prompt_with_induced_grammar_wrap(induced_grammar: str, input: str) -> str:
+        return prompt_for_grammar_induction["user_followup"].format(induced_grammar=induced_grammar, input=input)
+    
+    @staticmethod
+    def get_system_prompt(idx: int) -> str:
+        return base_prompt["system"]
+    
+    @staticmethod
+    def few_shot_examples_wrap(few_shot_inputs: List, few_shot_outputs: List) -> str:
+        examples = ""
+        for inp, oup in zip(few_shot_inputs, few_shot_outputs):
+            example = few_shot_examples_prompt.format(input=inp, output=oup)
+            examples += example
+        return examples
