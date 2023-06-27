@@ -102,8 +102,8 @@ if __name__ == "__main__":
         start_ind = args.start_ind if args.start_ind is not None else 0
         end_ind = args.end_ind if args.end_ind is not None else len(_task)
 
-        task = do_task(train_file, test_file, prompt_style=args.prompt_type, start_ind=start_ind, end_ind=end_ind)
-        acc, results_log, total_completion_tokens, total_prompt_tokens = do_task(task, args.model, args.prompt_type, args.temp)
+        task = _task(train_file, test_file, prompt_style=args.prompt_type)
+        acc, results_log, total_completion_tokens, total_prompt_tokens = do_task(task, args.model, args.prompt_type, args.temp, start_ind=start_ind, end_ind=end_ind)
         finish_task(acc, results_log, output_file)
         cost = gpt_usage(total_completion_tokens, total_prompt_tokens, backend=args.model)
         print(f"Cost: {cost}")
