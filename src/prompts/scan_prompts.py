@@ -65,6 +65,7 @@ prompt_for_grammar_induction = {
     "system": GRAMMAR_INDUCTION_SYSPROMPT,
     "user": """
     Write a grammar that captures the relationship between input phrases and outputs. Write the grammar in Backus-Naur form if possible.
+    It's possible there are some more abstract rules that cannot be captured by Backus-Naur form, this is fine. They should also be recorded.
     {few_shot_examples}
     Grammar:
     """,
@@ -73,6 +74,9 @@ prompt_for_grammar_induction = {
 
     {induced_grammar}
 
+    However, just write the output like what's shown in these examples.
+    {few_shot_examples}
+    
     Input: {input}
     """
 }

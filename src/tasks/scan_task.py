@@ -45,16 +45,15 @@ class ScanTask(BaseTask):
         if self.prompt_style == "full_grammar":
             return self.get_full_grammar_prompt(idx)
         else:
-            import pdb; pdb.set_trace()
             grammar_induction_prompt = self.get_grammar_induction_prompt(idx)
             message = [
                 {"role": "system", "content": GRAMMAR_INDUCTION_SYSPROMPT},
                 {"role": "user", "content": grammar_induction_prompt},
             ]
-            induced_grammar = get_completion(message, backend, temp=0.0)
-            import pdb; pdb.set_trace()
-            prompt_with_induced_grammar = self.prompt_with_induced_grammar_wrap(induced_grammar, self.get_input(idx))
-            return prompt_with_xinduced_grammar
+            few_shot_examples = self.get_few_shot_examples(idx + 1) # selecting some different examples for second step
+            induced_grammar = get_completion(message, backend, temp=0.0)["choices"][0]["message"]["content"]
+            prompt_with_induced_grammar = self.prompt_with_induced_grammar_wrap(induced_grammar, few_shot_examples, self.get_input(idx))
+            return prompt_with_induced_grammar
         
     def get_full_grammar_prompt(self, idx: int) -> str:
         input = self.get_input(idx)
@@ -62,7 +61,6 @@ class ScanTask(BaseTask):
         return self.full_grammar_prompt_wrap(few_shot_examples, input)
     
     def get_grammar_induction_prompt(self, idx: int) -> str:
-        input = self.get_input(idx)
         few_shot_examples = self.get_few_shot_examples(idx)
         return self.grammar_induction_prompt_wrap(few_shot_examples,)
     
@@ -79,8 +77,8 @@ class ScanTask(BaseTask):
         return prompt_for_grammar_induction["user"].format(few_shot_examples=few_shot_examples)
     
     @staticmethod
-    def prompt_with_induced_grammar_wrap(induced_grammar: str, input: str) -> str:
-        return prompt_for_grammar_induction["user_followup"].format(induced_grammar=induced_grammar, input=input)
+    def prompt_with_induced_grammar_wrap(induced_grammar: str, few_shot_examples: str, input: str) -> str:
+        return prompt_for_grammar_induction["user_followup"].format(induced_grammar=induced_grammar, input=input, few_shot_examples=few_shot_examples)
     
     @staticmethod
     def get_system_prompt(idx: int) -> str:
