@@ -58,6 +58,7 @@ prompt_with_true_grammar = {
         Examples: 
         {few_shot_examples}
 
+        Return the output preceded by 'Output:'
         Input: {input}
     """
 }
@@ -78,6 +79,7 @@ prompt_for_grammar_induction = {
     However, just write the output like what's shown in these examples.
     {few_shot_examples}
 
+    Return the output preceded by 'Output:'
     Input: {input}
     """
 }

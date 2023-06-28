@@ -53,7 +53,7 @@ def finish_task(acc: float, results_log: dict, output_file: str) -> None:
 def backoff_printer(details):
     print(f"Backing off {details['wait']} seconds after {details['tries']} tries calling function {details['target'].__name__} with args {details['args']} and kwargs {details['kwargs']}")
     
-@backoff.on_exception(backoff.expo, openai.error.APIError, max_tries=30, on_backoff=backoff_printer)
+@backoff.on_exception(backoff.expo, openai.error.OpenAIError, max_tries=30, on_backoff=backoff_printer)
 def get_completion(prompts: List, model_name: str, temp: float = 0.7) -> str:
     completion = openai.ChatCompletion.create(
         model=model_name,
@@ -83,7 +83,7 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
     
-    output_file = args.output if args.output is not None else f"./logs/{args.dataset}_{args.split}_{args.prompt_type}_{args.model}.csv"
+    output_file = args.output if args.output is not None else f"./logs/{args.dataset}_{args.split}_{args.prompt_type}_{args.model}_{args.start_ind}_{args.end_ind}.csv"
     openai.api_key = os.environ["OPENAI_API_KEY"]
     try:
         _task = get_task(args.dataset)
