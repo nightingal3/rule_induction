@@ -53,7 +53,7 @@ def finish_task(acc: float, results_log: dict, output_file: str) -> None:
 def backoff_printer(details):
     print(f"Backing off {details['wait']} seconds after {details['tries']} tries calling function {details['target'].__name__} with args {details['args']} and kwargs {details['kwargs']}")
     
-@backoff.on_exception(backoff.expo, openai.error.OpenAIError, max_tries=30, on_backoff=backoff_printer)
+@backoff.on_exception(backoff.constant, openai.error.OpenAIError, max_tries=30, on_backoff=backoff_printer, interval=5)
 def get_completion(prompts: List, model_name: str, temp: float = 0.7) -> str:
     completion = openai.ChatCompletion.create(
         model=model_name,
@@ -74,8 +74,8 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Prompt OpenAI models with task specs")
     parser.add_argument("--model", type=str, default="gpt-3.5-turbo", choices=["gpt-4", "gpt-3.5-turbo"], help="OpenAI model to use")
     parser.add_argument("--temp", default=0.0, type=float, help="Temperature for sampling")
-    parser.add_argument("--dataset", default="scan", choices=["scan"])
-    parser.add_argument("--split", default="simple", choices=["simple", "length", "jump", "nonce"])
+    parser.add_argument("--dataset", required=True, choices=["scan", "cogs"])
+    parser.add_argument("--split", default="simple", choices=["simple", "length", "jump", "cp_recursion", "prim_to_subj_common", "exposure_example_obj_proper", "obj_to_subj_common", "only_seen_as_unacc_subj_as_obj_omitted_transitive_subj"])
     parser.add_argument("--prompt_type", default="base", choices=["base", "full_grammar", "grammar_induction"])
     parser.add_argument("--output", type=str)
     parser.add_argument("--start_ind", type=int)
@@ -87,22 +87,25 @@ if __name__ == "__main__":
     openai.api_key = os.environ["OPENAI_API_KEY"]
     try:
         _task = get_task(args.dataset)
-        if args.split == "simple":
-            train_file = "./data/scan_simple_train.csv"
-            test_file = "./data/scan_simple_test.csv"
-        elif args.split == "length":
-            train_file = "./data/scan_length_train.csv"
-            test_file = "./data/scan_length_test.csv"
-        elif args.split == "jump":
-            train_file = "./data/scan_jump_train.csv"
-            test_file = "./data/scan_jump_test.csv"
-        else:
-            raise ValueError(f"Split {args.split} not registered")
+        if args.dataset == "scan":
+            if args.split == "simple":
+                train_file = "./data/scan/scan_simple_train.csv"
+                test_file = "./data/scan/scan_simple_test.csv"
+            elif args.split == "length":
+                train_file = "./data/scan/scan_length_train.csv"
+                test_file = "./data/scan/scan_length_test.csv"
+            elif args.split == "jump":
+                train_file = "./data/scan/scan_jump_train.csv"
+                test_file = "./data/scan/scan_jump_test.csv"
+            else:
+                raise ValueError(f"Split {args.split} not registered")
+        elif args.dataset == "cogs":
+            train_file = "./data/cogs/train_100.tsv"
+            test_file = "./data/cogs/gen.tsv"
         
         start_ind = args.start_ind if args.start_ind is not None else 0
         end_ind = args.end_ind if args.end_ind is not None else len(_task)
-
-        task = _task(train_file, test_file, prompt_style=args.prompt_type)
+        task = _task(train_file, test_file, prompt_style=args.prompt_type, split=args.split)
         acc, results_log, total_completion_tokens, total_prompt_tokens = do_task(task, args.model, args.prompt_type, args.temp, start_ind=start_ind, end_ind=end_ind)
         finish_task(acc, results_log, output_file)
         cost = gpt_usage(total_completion_tokens, total_prompt_tokens, backend=args.model)

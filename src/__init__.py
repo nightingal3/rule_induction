@@ -6,7 +6,8 @@ TASK_DIR="src/tasks" #will make a dir called 'tasks' when I add more tasks
 
 def get_task(task_name: str):
     task_to_classname = {
-        "scan": "ScanTask"
+        "scan": "ScanTask",
+        "cogs": "CogsTask",
     }
     task_cls = BaseTask.tasks.get(task_to_classname[task_name])
     if task_cls is None:
