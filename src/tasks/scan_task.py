@@ -8,7 +8,7 @@ from src.task import BaseTask
 from src.prompt_openai import get_completion
 
 class ScanTask(BaseTask):
-    def __init__(self, train_file: str, test_file: str, prompt_style: Literal["base", "full_grammar", "grammar_induction"], num_few_shot_examples: int = 5, nonce: bool = False) -> None:
+    def __init__(self, train_file: str, test_file: str, prompt_style: Literal["base", "full_grammar", "grammar_induction"], num_few_shot_examples: int = 5, nonce: bool = False, **kwargs) -> None:
         self.train_file = train_file
         self.test_file = test_file
         self.train_data = pd.read_csv(train_file)
