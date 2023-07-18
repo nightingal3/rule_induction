@@ -16,3 +16,6 @@ class BaseTask:
     
     def validate(self, idx: int, output: str) -> bool:
         raise NotImplementedError
+    
+    def get_answer(self, idx: int) -> str:
+        raise NotImplementedError
