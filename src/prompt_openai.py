@@ -37,12 +37,15 @@ def init_task(args: argparse.Namespace):
             test_file = "./data/scan/scan_jump_test.csv"
         else:
             raise ValueError(f"Split {args.split} not registered")
+        task = _task(train_file, test_file, prompt_style=args.prompt_type, split=args.split, few_shot_min_set=args.use_min_cover, num_few_shot_examples=args.num_few_shot_examples)
     elif args.dataset == "cogs":
         train_file = "./data/cogs/train_100.tsv"
         test_file = "./data/cogs/gen.tsv"
+        task = _task(train_file, test_file, prompt_style=args.prompt_type, split=args.split, few_shot_min_set=args.use_min_cover, num_few_shot_examples=args.num_few_shot_examples)
+    elif args.dataset == "colours":
+        rules_file = "./data/colours/colours.csv"
+        task = _task(rules_file, prompt_style=args.prompt_type, few_shot_min_set=args.use_min_cover, num_few_shot_examples=args.num_few_shot_examples)
     
-    task = _task(train_file, test_file, prompt_style=args.prompt_type, split=args.split, few_shot_min_set=args.use_min_cover, num_few_shot_examples=args.num_few_shot_examples)
-
     return task
 
 def do_task(task, model_name, prompt_type, temp, start_ind: int = 0, end_ind: int = None, get_grammar_only: bool = False, get_completion_fn: Callable = get_completion_openai):
@@ -110,7 +113,8 @@ def finish_task(args: argparse.Namespace, acc: float, results_log: dict, output_
             "is_correct": None,
             "human_corrected": False
         } 
-        with jsonlines.open("./data/scan/gpt_4_induced_grammars.jsonl", "a") as writer:
+        mode = "w" if not os.path.exists(f"./data/{args.dataset}/gpt_4_induced_grammars.jsonl") else "a"
+        with jsonlines.open(f"./data/{args.dataset}/gpt_4_induced_grammars.jsonl", mode) as writer:
             writer.write(info)
 
 # from the tree of thoughts repo.
@@ -125,9 +129,9 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Prompt OpenAI models with task specs")
     parser.add_argument("--model", type=str, default="gpt-3.5-turbo", choices=["gpt-4", "gpt-3.5-turbo"], help="OpenAI model to use")
     parser.add_argument("--temp", default=0.0, type=float, help="Temperature for sampling")
-    parser.add_argument("--dataset", required=True, choices=["scan", "cogs"])
+    parser.add_argument("--dataset", required=True, choices=["scan", "cogs", "colours"])
     parser.add_argument("--split", default="simple", choices=["simple", "length", "jump", "cp_recursion", "prim_to_subj_common", "exposure_example_obj_proper", "obj_to_subj_common", "only_seen_as_unacc_subj_as_obj_omitted_transitive_subj"])
-    parser.add_argument("--prompt_type", default="base", choices=["base", "full_grammar", "grammar_induction"])
+    parser.add_argument("--prompt_type", default="base", choices=["base", "full_grammar", "grammar_induction", "rule_selection"])
     parser.add_argument("--output", type=str)
     parser.add_argument("--start_ind", type=int)
     parser.add_argument("--end_ind", type=int)

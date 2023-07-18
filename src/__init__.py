@@ -8,6 +8,7 @@ def get_task(task_name: str):
     task_to_classname = {
         "scan": "ScanTask",
         "cogs": "CogsTask",
+        "colours": "ColoursTask"
     }
     task_cls = BaseTask.tasks.get(task_to_classname[task_name])
     if task_cls is None:
@@ -15,7 +16,7 @@ def get_task(task_name: str):
     
     return task_cls
 
-def import_tasks(namespace: str = "tasks"):
+def import_tasks(namespace: str = "src.tasks"):
     for file in os.listdir(TASK_DIR):
         if file.endswith(".py") and not file.startswith("__"):
             print(f"Importing {file}")
