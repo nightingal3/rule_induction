@@ -21,7 +21,7 @@ if __name__ == "__main__":
     parser.add_argument("--temp", default=0.0, type=float, help="Temperature for sampling")
     parser.add_argument("--dataset", required=True, choices=["scan", "cogs", "colours"])
     parser.add_argument("--split", default="simple", choices=["simple", "length", "jump", "cp_recursion", "prim_to_subj_common", "exposure_example_obj_proper", "obj_to_subj_common", "only_seen_as_unacc_subj_as_obj_omitted_transitive_subj"])
-    parser.add_argument("--prompt_type", default="base", choices=["base", "full_grammar", "grammar_induction"])
+    parser.add_argument("--prompt_type", default="base", choices=["base", "full_grammar", "grammar_induction", "rule_selection"])
     parser.add_argument("--output", type=str)
     parser.add_argument("--start_ind", type=int)
     parser.add_argument("--end_ind", type=int)
