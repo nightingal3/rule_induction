@@ -7,6 +7,7 @@ import jsonlines
 import numpy as np
 import os
 import evaluate
+import pickle
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
@@ -52,8 +53,9 @@ class CherokeeTask(BaseTask):
             self.eval_criteria.append("bertscore")
             self.eval_fns["bertscore"] = evaluate.load("bertscore", lang=self.tgt_lang)
         
-        tfidf_vectorizer = None
-        faiss_index = None
+        self.en_common_nouns = pickle.load(open("./data/cherokee/most_common_nouns.pkl", "rb"))
+        self.en_common_verbs = pickle.load(open("./data/cherokee/most_common_verbs.pkl", "rb"))
+        self.en_common_adjectives = pickle.load(open("./data/cherokee/most_common_adjs.pkl", "rb"))
         
     def __len__(self) -> int:
         return len(self.test_data)
@@ -86,8 +88,7 @@ class CherokeeTask(BaseTask):
     def retrieve_few_shot_examples_by_similarity(self, idx: int, num_examples: int = 5, metric: str = "cos_sim") -> str:
         if self.tgt_lang == "chr" and metric == "cos_sim":
             raise ValueError("cos_sim is not supported for Cherokee, please use another metric.")
-        
-
+    
     def validate(self, idx: int, output_text: str) -> bool:
         if self.prompt_style == "base":
             output_actions = output_text.split(f"{self.tgt_lang_name}: ")[-1].strip()
@@ -162,6 +163,24 @@ class CherokeeTask(BaseTask):
     def get_rule_selection_prompt(self, idx: int) -> str:
         input = self.get_input(idx)
         return self.rule_induction_prompt_wrap(input)
+    
+    def get_examples_containing_vocab(self, vocab: str, upos: str) -> str:
+        if upos == "NOUN":
+            pos_data = self.en_common_nouns
+        elif upos == "VERB":
+            pos_data = self.en_common_verbs
+        elif upos == "ADJ":
+            pos_data = self.en_common_adjs
+        else:
+            raise ValueError(f"POS {upos} not supported.")
+
+        inds = list(pos_data[f"{vocab}_{upos}"]["inds"])
+        subset = self.train_data.iloc[inds].sort_values(by="num_words")[:10]
+
+        few_shot_examples = self.few_shot_examples_wrap(subset[self.src_lang].tolist(), subset[self.tgt_lang].tolist())
+        prompt = prompt_for_vocab_induction["user"].format(few_shot_examples=few_shot_examples, word=vocab)
+
+        return prompt
     
     def get_system_prompt(self) -> str:
         if self.prompt_style == "full_grammar":
