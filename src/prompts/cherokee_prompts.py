@@ -1,7 +1,7 @@
 GRAMMAR_INDUCTION_SYSPROMPT = "You are a linguist. Your task is to deduce a grammar for Cherokee based on the examples given. The grammar will be used to translate between Cherokee and English."
 PROBLEM_SOLVING_SYSPROMPT = "You are an expert translator. You are translating between Cherokee and English. Use the examples to guide your thinking."
 GRAMMAR_USING_SYSPROMPT = "You are an expert translator. You are translating between Cherokee and English. You are provided with a grammar, which you should use to parse the examples and translate them."
-
+VOCAB_INDUCTION_SYSPROMPT = "You are a linguist. Your task is to deduce a vocabulary for Cherokee based on the examples given. The vocabulary will be used to translate between Cherokee and English."
 # grammar comes from this page: https://www.cherokeelessons.com/content/Cherokee-Language-Grammar---Cherokee-Messenger-1844-1846/
 # nouns come from this word list: https://language.cherokee.org/word-list/
 cherokee_grammar_components = {
@@ -86,14 +86,20 @@ cherokee_grammar_components = {
     """
 }
 
+prompt_with_induced_vocab = """We are translating Cherokee to English. Here are a few vocabulary mappings from English to Cherokee to help you out:\n{vocab_mappings}\n\nPlease return the translation preceded by 'English: '\nInput: {input}"""
+
+prompt_one_example_only = """We are translating Cherokee to English.\n\nPlease return the translation preceded by 'English: '\nInput: {input}"""
+
 base_prompt_chr_en = {
     "system": PROBLEM_SOLVING_SYSPROMPT,
-    "user": """We are translating Cherokee to English. Please return the translation preceded by 'Cherokee: '\n{few_shot_examples}\nInput: {input}"""
+    "user": """We are translating Cherokee to English. Please return the translation preceded by 'Cherokee: '\nExamples:{few_shot_examples}\nInput: {input}""",
+    "user_dict": """We are translating Cherokee to English. Please return the translation preceded by 'Cherokee: '\n{dict_entries}\n\nExamples:{few_shot_examples}\nInput: {input}"""
 }
 
 base_prompt_en_chr = {
     "system": PROBLEM_SOLVING_SYSPROMPT,
-    "user": """We are translating English to Cherokee. Please return the translation preceded by 'English: '\n{few_shot_examples}\nInput: {input}"""
+    "user": """We are translating English to Cherokee. Please return the translation preceded by 'English: '\nExamples:{few_shot_examples}\nInput: {input}""",
+    "user_dict": """We are translating English to Cherokee. Please return the translation preceded by 'English: '\n{dict_entries}\n\nExamples:{few_shot_examples}\nInput: {input}"""
 }
 
 # TODO: note: the full grammar for real languages is too lengthy to fit into context.
@@ -120,7 +126,7 @@ prompt_with_true_grammar = {
     """
 }
 
-prompt_with_true_grammar["user"] = prompt_with_true_grammar["user"].format(grammar_fragment=cherokee_grammar_components["pronouns"], common_words=cherokee_grammar_components["common_words"], few_shot_examples="{few_shot_examples}", input="{input}")
+prompt_with_true_grammar["user"] = prompt_with_true_grammar["user"].format(grammar_fragment="\n\n".join([cherokee_grammar_components["pronouns"], cherokee_grammar_components["verb_conjugation"]]), common_words=cherokee_grammar_components["common_words"], few_shot_examples="{few_shot_examples}", input="{input}")
 
 prompt_for_grammar_induction = {
     "system": GRAMMAR_INDUCTION_SYSPROMPT,
@@ -141,22 +147,18 @@ prompt_for_grammar_induction = {
     """
 }
 
-few_shot_examples_chr_en_prompt = """Cherokee: {input}\English: {output}\n"""
+few_shot_examples_chr_en_prompt = """Cherokee: {input}\nEnglish: {output}\n"""
 
-few_shot_examples_en_chr_prompt = """English: {input}\Cherokee: {output}\n"""
+few_shot_examples_en_chr_prompt = """English: {input}\nCherokee: {output}\n"""
 
-prompt_for_rule_selection = {
-    "system": GRAMMAR_USING_SYSPROMPT,
-    "user": """First, select rules from the grammar that are relevant to the current input. You should copy the rules that look relevant from the grammar below.
-    Grammar:
-    lug -> blue
-    dax -> green
-    wif -> red
-    zup -> yellow
-    bluf -> repeat the last action twice
-    walm -> repeat the last action three times
+prompt_for_vocab_induction = {
+    "system": VOCAB_INDUCTION_SYSPROMPT,
+    "user": """You are a linguist helping to document the Cherokee language. The following examples all contain the word {word}. Can you try to induce the likely mapping from the English word to the Cherokee word? Write it like this:\nEnglish word -> Cherokee word.
+
+    {few_shot_examples}\nIf you don't think there's a clear mapping from this English word to a Cherokee word, just write "no mapping".
     
-    Input: {input}
-    Rules:""",
-    "user_followup": """Now, you should apply this subset of rules to the input to get the output:\n{rules}\n\nInput: {input}"""
+    Mapping:
+    """,
 }
+
+prompt_for_dict_lookup = """Here are some vocabulary entries retrieved from a dictionary to help you translate. If a word has multiple possible translations, they will be separated with a comma.\n{matching_entries}"""

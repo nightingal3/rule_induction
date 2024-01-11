@@ -2,9 +2,14 @@ GRAMMAR_INDUCTION_SYSPROMPT = "You are a rule induction system. Your job is to f
 PROBLEM_SOLVING_SYSPROMPT = "You are a problem solving system. Your job is to use the input-output pairs to solve the problem as well as you can."
 GRAMMAR_USING_SYSPROMPT = "You are a parser. Carefully use the grammar to parse inputs to determine the correct output."
 
+llama_wrapper = """<s>[INST] <<SYS>>
+{system_prompt}
+<</SYS>>
+
+{user_prompt} [/INST]"""
 base_prompt = {
     "system": PROBLEM_SOLVING_SYSPROMPT,
-    "user": """Return the output preceded by 'Output:'\n{few_shot_examples}\nInput: {input}"""
+    "user": """Return the output preceded by 'Output:'\n{few_shot_examples}\nInput: {input} Output:"""
 }
 
 prompt_with_true_grammar = {
@@ -29,11 +34,11 @@ prompt_with_true_grammar = {
 
 prompt_for_grammar_induction = {
     "system": GRAMMAR_INDUCTION_SYSPROMPT,
-    "user": """Write a grammar that captures the relationship between input phrases and outputs.
-    It's possible there are some more abstract rules that cannot be captured by Backus-Naur form, this is fine. They should also be recorded.
+    "user_new": """Write a grammar that captures the relationship between input phrases and outputs.
+    You should phrase this in terms of production rules. In other words, the format should be input phrase -> output phrase. Please write a rule for each input word that appears.
+    You can also write rules that are more abstract like this: input phrase [[ something else ]] -> output phrase [[ something else different ]]. This captures contextual rules.
     {few_shot_examples}
-    Grammar:
-    """,
+    Grammar:""",
     "user_followup": """Use this grammar to parse the input example to get the correct output.
 
     {induced_grammar}
@@ -43,6 +48,16 @@ prompt_for_grammar_induction = {
 
     Return the output preceded by 'Output:'
     Input: {input}
+    """,
+    "user_repeat": """Here are some new examples. Use these examples to check whether or not your grammar is correct. If your grammar is not correct, please write down a revised version.
+    If everything is correct, write down "no changes".
+    
+    {few_shot_examples}
+
+    Your current grammar:
+    {induced_grammar}
+
+    New grammar:
     """
 }
 

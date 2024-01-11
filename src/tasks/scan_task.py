@@ -10,6 +10,9 @@ from src.task import BaseTask
 from src.prompt_openai import get_completion_openai
 
 class ScanTask(BaseTask):
+
+    task_type = "io"
+    
     def __init__(self, train_file: str, test_file: str, prompt_style: Literal["base", "full_grammar", "grammar_induction"], num_few_shot_examples: int = 5, nonce: bool = False, few_shot_min_set: bool = False, **kwargs) -> None:
         self.train_file = train_file
         self.test_file = test_file
@@ -29,6 +32,8 @@ class ScanTask(BaseTask):
         if self.use_few_shot_minset:
             self.min_examples = pd.read_csv("./data/scan/all_commands_minset.csv")
 
+        self.vocab = ["walk", "jump", "look", "turn right", "run", "turn left", "opposite left", "opposite right", "after", "and", "twice", "thrice"]
+
     def __len__(self) -> int:
         return len(self.test_data)
 
@@ -37,6 +42,18 @@ class ScanTask(BaseTask):
     
     def get_answer(self, idx: int) -> str:
         return self.test_data.iloc[idx]["actions"]
+    
+    def get_training_examples_with_command(self, command: str = "jump", N: int = 10) -> List[str]:
+        # get N training examples that contain a command to induce one rule at a time
+        examples = []
+        for train_example in self.train_data.to_dict("records"):
+            if command in train_example["commands"]:
+                examples.append(train_example)
+                if len(examples) == N:
+                    break
+        
+        examples_formatted = self.few_shot_examples_wrap([example["commands"] for example in examples], [example["actions"] for example in examples])
+        return examples_formatted
     
     def get_few_shot_examples(self, idx: int) -> str:
         # get some random examples based on the idx (repeatable)
@@ -64,12 +81,35 @@ class ScanTask(BaseTask):
     def get_standard_prompt(self, idx: int) -> str:
         input = self.get_input(idx)
         few_shot_examples = self.get_few_shot_examples(idx)
-        return self.standard_prompt_wrap(few_shot_examples, input)
+        return self.standard_prompt_wrap(few_shot_examples, input), ''
     
-    def get_special_prompt(self, idx: int, backend: str = "gpt-3.5-turbo", return_grammar_only: bool = False, use_cached: bool = True) -> Tuple[str, int, int]:
+    def get_special_prompt(self, idx: int, backend: str = "gpt-4", return_grammar_only: bool = False, use_cached: bool = True, no_few_shot_examples: bool = False) -> Tuple[str, int, int]:
         if self.prompt_style == "full_grammar":
-            return self.get_full_grammar_prompt(idx), 0, 0
-        else:
+            return self.get_full_grammar_prompt(idx), 0, 0, ""
+        elif self.prompt_style == "grammar_induction":
+            full_rules = []
+            few_shot_examples = self.get_few_shot_examples(idx + 1)
+            usage_completion, usage_prompt = 0, 0
+            for vocab in self.vocab:
+                training_examples = self.get_training_examples_with_command(vocab)
+                vocab_prompt = vocab_induction_prompt.format(word=vocab, examples=training_examples)
+                message = [
+                    {"role": "system", "content": VOCAB_INDUCTION_SYSPROMPT},
+                    {"role": "user", "content": vocab_prompt},
+                ]
+                completion = get_completion_openai(message, backend, temp=0.0)
+                induced_vocab_rule = completion["choices"][0]["message"]["content"]
+                usage_completion += completion["usage"]["completion_tokens"]
+                usage_prompt += completion["usage"]["prompt_tokens"]
+
+                full_rules.append(induced_vocab_rule)
+                
+            full_rules_str = "Rules:\n" + "\n".join(full_rules)
+            final_prompt = self.prompt_with_induced_grammar_wrap(full_rules_str, few_shot_examples, self.get_input(idx))
+
+            return final_prompt, usage_completion, usage_prompt, ""
+            
+        else: #TODO: deprecated, here for reference temporarily
             few_shot_examples = self.get_few_shot_examples(idx + 1) # selecting some different examples for second step
             if use_cached:
                 induced_grammar = self.cached_induced_grammars[0]["grammar"]
@@ -90,7 +130,7 @@ class ScanTask(BaseTask):
                     return induced_grammar, usage_completion, usage_prompt
                 
             prompt_with_induced_grammar = self.prompt_with_induced_grammar_wrap(induced_grammar, few_shot_examples, self.get_input(idx))
-            return prompt_with_induced_grammar, usage_completion, usage_prompt
+            return prompt_with_induced_grammar, usage_completion, usage_prompt, ""
         
     def get_full_grammar_prompt(self, idx: int) -> str:
         input = self.get_input(idx)

@@ -5,9 +5,12 @@ import random
 
 from src.prompts.cogs_prompts import * 
 from src.task import BaseTask
-from src.prompt_openai import get_completion
+from src.prompt_openai import get_completion_openai
 
 class CogsTask(BaseTask):
+
+    task_type = "io"
+    
     def __init__(self, train_file: str, test_file: str, prompt_style: Literal["base", "full_grammar", "grammar_induction"], split: Literal["cp_recursion", "prim_to_subj_common", "exposure_example_obj_proper", "obj_to_subj_common", "only_seen_as_unacc_subj_as_obj_omitted_transitive_subj", "simple"], num_few_shot_examples: int = 5, nonce: bool = False, **kwargs) -> None:
         self.train_file = train_file
         self.test_file = test_file
@@ -24,6 +27,9 @@ class CogsTask(BaseTask):
 
     def get_input(self, idx: int) -> str:
         return self.test_data.iloc[idx]["sentence"]
+    
+    def get_answer(self, idx: int) -> str:
+        return self.test_data.iloc[idx]["parse"]
     
     def get_few_shot_examples(self, idx: int) -> str:
         # get some random examples based on the idx (repeatable)

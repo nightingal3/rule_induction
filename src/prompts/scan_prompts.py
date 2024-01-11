@@ -2,16 +2,20 @@
 GRAMMAR_INDUCTION_SYSPROMPT = "You are a rule induction system. Your job is to figure out the rules underlying a problem and report on them. Use the examples to guide your thinking."
 PROBLEM_SOLVING_SYSPROMPT = "You are a problem solving system. Your job is to use the input-output pairs to solve the problem as well as you can."
 GRAMMAR_USING_SYSPROMPT = "You are a parser. Carefully use the grammar to parse inputs to determine the correct output."
+VOCAB_INDUCTION_SYSPROMPT = "You are a vocabulary induction system. Your job is to figure out the meaning of a word from the examples."
 
 base_prompt = {
+    "system": PROBLEM_SOLVING_SYSPROMPT,
+    "user": """Return the output of only the last example preceded by 'Output:'\n{few_shot_examples}\nInput: {input}"""
+}
+base_prompt_orig = {
     "system": PROBLEM_SOLVING_SYSPROMPT,
     "user": """Return the output preceded by 'Output:'\n{few_shot_examples}\nInput: {input}"""
 }
 
 prompt_with_true_grammar = {
     "system": GRAMMAR_USING_SYSPROMPT,
-    "user": """
-        Use this grammar to parse the input example to get the correct output.
+    "user": """Use this grammar to parse the input example to get the correct output.
 
         Grammar:
         C -> S and S
@@ -65,14 +69,12 @@ prompt_with_true_grammar = {
 
 prompt_for_grammar_induction = {
     "system": GRAMMAR_INDUCTION_SYSPROMPT,
-    "user": """
-    Write a grammar that captures the relationship between input phrases and outputs. Write the grammar in Backus-Naur form if possible.
+    "user": """Write a grammar that captures the relationship between input phrases and outputs. Write the grammar in Backus-Naur form if possible.
     It's possible there are some more abstract rules that cannot be captured by Backus-Naur form, this is fine. They should also be recorded.
     {few_shot_examples}
     Grammar:
     """,
-    "user_followup": """
-    Use this grammar to parse the input example to get the correct output.
+    "user_followup": """Use this grammar to parse the input example to get the correct output.
 
     {induced_grammar}
 
@@ -85,4 +87,6 @@ prompt_for_grammar_induction = {
 }
 
 few_shot_examples_prompt = """Input: {input}\nOutput: {output}\n"""
+
+vocab_induction_prompt = """Here are some examples containing the word {word}.\nExamples:{examples}\n\nCan you write a rule summarizing the mapping between the input and output for {word}? Write it like {word} -> <command>."""
 
