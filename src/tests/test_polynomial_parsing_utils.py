@@ -7,6 +7,7 @@ from src.utils.polynomial_parsing_utils import parse_polynomial
     [
         ("y = x", {1: 1}),
         ("y = 5", {0: 5}),
+        ("y = -x - 1", {0: -1, 1: -1}),
         ("y = 3x + 4", {0: 4, 1: 3}),
         ("y = 6x + 4", {0: 4, 1: 6}),
         ("y = -17x + 5", {0: 5, 1: -17}),
@@ -163,10 +164,21 @@ Therefore, the function that captures the relationship between the inputs and ou
 Output: y = 0.5x^2 - 16.9x + 69.8""",
             {2: 0.5, 1: -16.9, 0: 69.8},
         ),
+        (
+            """The pattern in the given data suggests that the output is obtained by subtracting a value from the square of the input. Therefore, the function that captures this relationship can be written as:
+
+Output = -15 - x^2
+
+So, the function can be written as:
+
+y = -15 - x^2""",
+            {2: -1, 0: -15},
+        ),
     ],
     ids=[
         "no_coeff",
         "no_coeff_2",
+        "simple-negative-2",
         "simple-positive",
         "simple-positive-2",
         "simple-x1-negative",
@@ -186,6 +198,7 @@ Output: y = 0.5x^2 - 16.9x + 69.8""",
         "long-with-answer",
         "long-no-answer-2",
         "long-quadratic",
+        "long-quadratic-2",
     ],
 )
 def test_parse_polynomial(input_string, expected_output):

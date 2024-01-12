@@ -26,12 +26,14 @@ def parse_polynomial(orig_polynomial: str) -> dict:
     # This function was written by chatgpt and postedited by me. Use at own risk but seems to be working
     # Remove spaces and 'y=' part if present
     # model outputs this when it declines to answer
+    # if orig_polynomial == "y = -x - 1":
+    # breakpoint()
 
     if "y" in orig_polynomial:
-        polynomial = orig_polynomial.split("=")[-1].split("\n")[0]
+        polynomial = orig_polynomial.split("y =")[-1].split("\n")[0]
     else:
         if "Output" in orig_polynomial:
-            polynomial = orig_polynomial.split("=")[-1].split("\n")[0]
+            polynomial = orig_polynomial.split("Output =")[-1].split("\n")[0]
         else:
             return {0: None, 1: None}
 
@@ -68,11 +70,15 @@ def parse_polynomial(orig_polynomial: str) -> dict:
 
             # Set default values if missing
             try:
-                coeff = float(coeff_str) if coeff_str else 1
+                if coeff_str == "-":
+                    coeff = -1
+                else:
+                    coeff = float(coeff_str) if coeff_str else 1
                 power = int(power_str) if power_str else 1 if "x" in term else 0
             except:
                 print("=== Error parsing: ", orig_polynomial)
                 # if we can't parse the polynomial, return None
+                breakpoint()
                 return {}
 
             if abs(coeff) > 100:
