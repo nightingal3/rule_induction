@@ -46,13 +46,28 @@ proposed_hypotheses = defaultdict(
     list, {"all_hyps": [], "all_probs": [], "task_id": []}
 )
 
-total_prompt_tokens = 0
-total_completion_tokens = 0
+
+TOTAL_COST = 0
+
 num_not_skipped = 0
 total_processed = 0
 
 start_ind = None
 end_ind = None
+
+# per 1k tokens
+OPENAI_CURRENT_COSTS = {
+    "gpt-4-1106-preview": {
+        "completion": 0.03,
+        "prompt": 0.01,
+    },
+    "gpt-4": {
+        "completion": 0.06,
+        "prompt": 0.03,
+    },
+    "gpt-3.5-turbo-0613": {"completion": 0.002, "prompt": 0.001},
+    "davinci-002": {"completion": 0.012, "prompt": 0.012},
+}
 
 
 def backoff_printer(details):
@@ -74,7 +89,9 @@ def get_completion_openai(
     temp: float = 0.7,
     logprobs: bool = False,
     max_tokens: Optional[int] = None,
-) -> str:
+) -> Tuple[str, float, float]:
+    global TOTAL_COST
+
     if max_tokens == 0:
         # Just scoring the prompt - use the old completions endpoint
         completion = openai.Completion.create(
@@ -85,6 +102,10 @@ def get_completion_openai(
             max_tokens=max_tokens,
             echo=True,
         )
+        prompt_tokens = completion["usage"]["total_tokens"]
+        TOTAL_COST += (prompt_tokens / 1000) * OPENAI_CURRENT_COSTS[model_name][
+            "prompt"
+        ]
     else:
         completion = openai.ChatCompletion.create(
             model=model_name,
@@ -93,6 +114,14 @@ def get_completion_openai(
             logprobs=logprobs,
             max_tokens=max_tokens,
         )
+        num_prompt_tokens = completion["usage"]["prompt_tokens"]
+        num_completion_tokens = completion["usage"]["completion_tokens"]
+        TOTAL_COST += (num_prompt_tokens / 1000) * OPENAI_CURRENT_COSTS[model_name][
+            "prompt"
+        ] + (num_completion_tokens / 1000) * OPENAI_CURRENT_COSTS[model_name][
+            "completion"
+        ]
+
     return completion
 
 
@@ -227,8 +256,7 @@ def do_task(
     global results_log
     global proposed_hypotheses
 
-    global total_prompt_tokens
-    global total_completion_tokens
+    global TOTAL_COST
     global num_not_skipped
     global total_processed
 
@@ -320,8 +348,6 @@ def do_task(
             completion_num_tokens = output["usage"]["completion_tokens"]
             prompt_num_tokens = output["usage"]["prompt_tokens"]
             output_text = output["choices"][0]["message"]["content"]
-            total_completion_tokens += completion_num_tokens
-            total_prompt_tokens += prompt_num_tokens
 
         results_log["inputs"].append(input_prompt)
         results_log["outputs"].append(output_text)
@@ -350,12 +376,7 @@ def do_task(
         if "bertscore" in scores:
             results_log["bertscore"] = scores["bertscore"]["f1"][0]
 
-    return (
-        correct / num_not_skipped,
-        results_log,
-        total_completion_tokens,
-        total_prompt_tokens,
-    )
+    return (correct / num_not_skipped, results_log)
 
 
 def make_finish_task(
@@ -370,8 +391,7 @@ def make_finish_task(
         global total_processed
         global results_log
         global proposed_hypotheses
-        global total_completion_tokens
-        global total_prompt_tokens
+        global TOTAL_COST
 
         nonlocal args_for_task
         nonlocal output_file_orig
@@ -428,29 +448,11 @@ def make_finish_task(
             hyps_df.to_csv(hyps_file, index=False)
             logging.info("Wrote hypotheses to " + hyps_file)
 
-        cost = gpt_usage(backend=args_for_task.model)
-        logging.info(f"Cost: {cost}")
+        logging.info(f"Cost: {TOTAL_COST}")
 
         sys.exit(0)
 
     return finish_task
-
-
-# from the tree of thoughts repo.
-def gpt_usage(backend: str = "gpt-4"):
-    global total_completion_tokens
-    global total_prompt_tokens
-    if backend == "gpt-4":
-        cost = total_completion_tokens / 1000 * 0.06 + total_prompt_tokens / 1000 * 0.03
-    elif backend == "gpt-4-turbo":
-        cost = total_completion_tokens / 1000 * 0.01 + total_prompt_tokens / 1000 * 0.03
-    elif backend == "gpt-3.5-turbo":
-        cost = (total_completion_tokens + total_prompt_tokens) / 1000 * 0.0002
-    return {
-        "completion_tokens": total_completion_tokens,
-        "prompt_tokens": total_prompt_tokens,
-        "cost": cost,
-    }
 
 
 if __name__ == "__main__":
@@ -591,7 +593,7 @@ if __name__ == "__main__":
     try:
         task = init_task(args)
         end_ind = args.end_ind if args.end_ind is not None else len(task)
-        acc, results_log, total_completion_tokens, total_prompt_tokens = do_task(
+        acc, results_log = do_task(
             task,
             model_name,
             args.prompt_type,
