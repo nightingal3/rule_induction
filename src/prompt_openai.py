@@ -443,10 +443,7 @@ def gpt_usage(backend: str = "gpt-4"):
     if backend == "gpt-4":
         cost = total_completion_tokens / 1000 * 0.06 + total_prompt_tokens / 1000 * 0.03
     elif backend == "gpt-4-turbo":
-        cost = (
-            total_completion_tokens / 1000 * 0.01
-            + total_prompt_tokens / 1000 * 0.03
-        )
+        cost = total_completion_tokens / 1000 * 0.01 + total_prompt_tokens / 1000 * 0.03
     elif backend == "gpt-3.5-turbo":
         cost = (total_completion_tokens + total_prompt_tokens) / 1000 * 0.0002
     return {
