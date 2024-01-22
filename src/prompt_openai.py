@@ -370,6 +370,8 @@ def make_finish_task(
         global total_processed
         global results_log
         global proposed_hypotheses
+        global total_completion_tokens
+        global total_prompt_tokens
 
         nonlocal args_for_task
         nonlocal output_file_orig
@@ -426,17 +428,25 @@ def make_finish_task(
             hyps_df.to_csv(hyps_file, index=False)
             logging.info("Wrote hypotheses to " + hyps_file)
 
+        cost = gpt_usage(backend=args_for_task.model)
+        logging.info(f"Cost: {cost}")
+
         sys.exit(0)
 
     return finish_task
 
 
 # from the tree of thoughts repo.
-def gpt_usage(backend="gpt-4"):
+def gpt_usage(backend: str = "gpt-4"):
     global total_completion_tokens
     global total_prompt_tokens
     if backend == "gpt-4":
         cost = total_completion_tokens / 1000 * 0.06 + total_prompt_tokens / 1000 * 0.03
+    elif backend == "gpt-4-turbo":
+        cost = (
+            total_completion_tokens / 1000 * 0.01
+            + total_prompt_tokens / 1000 * 0.03
+        )
     elif backend == "gpt-3.5-turbo":
         cost = (total_completion_tokens + total_prompt_tokens) / 1000 * 0.0002
     return {
@@ -606,9 +616,5 @@ if __name__ == "__main__":
             num_hyps=args.num_hyps,
             hyp_reranking_method=args.hyp_reranking_method,
         )
-        cost = gpt_usage(
-            total_completion_tokens, total_prompt_tokens, backend=args.model
-        )
-        logging.info(f"Cost: {cost}")
     except KeyboardInterrupt:
         pass
