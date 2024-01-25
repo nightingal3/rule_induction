@@ -31,10 +31,11 @@ def function_task():
         (1, "Output: 5", 10, False),
         (2, "Output: 100\n\nInput: 30\nOutput: 10", 100, True),
         (3, "Output: 100\n\nInput: 30\nOutput: 10", 10, False),
+        (4, "Output: -13", -13, True),
     ],
 )
 def test_math_answer_validation(
     function_task, idx, output_text, answer, expected_result
 ):
-    result = function_task.validate_improved(idx, output_text, answer)
+    result = function_task.validate(idx, output_text, answer)
     assert result == expected_result

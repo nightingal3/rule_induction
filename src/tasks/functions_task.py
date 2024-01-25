@@ -21,7 +21,7 @@ class FunctionsTask(BaseTask):
 
     def __init__(
         self,
-        prompt_style: Literal["base", "full_grammar", "grammar_induction"],
+        prompt_style: Literal["base", "full_grammar", "grammar_induction", "zs-cot"],
         num_few_shot_examples: int = 5,
         seed: int = 42,
         degree: int = 1,
@@ -97,7 +97,7 @@ class FunctionsTask(BaseTask):
         self.test_examples_to_rule_inds = test_examples_to_rule_inds
         return dataset, test_examples
 
-    def validate(self, idx: int, output_text: str):
+    def _validate(self, idx: int, output_text: str):
         answer = self.test_examples[idx]["output"]
         try:
             # this was output: [1] before. Not sure why, I think sometimes the output is in a weird arbitrary place
@@ -113,7 +113,7 @@ class FunctionsTask(BaseTask):
         except:
             return False
 
-    def validate_improved(
+    def validate(
         self, idx: int, output_text: str, expected_answer: Optional[int] = None
     ):
         if expected_answer is None:
@@ -125,7 +125,7 @@ class FunctionsTask(BaseTask):
         output_text = output_text.replace("\r\n", "\n").lower()
 
         # Pattern to find "Output:" and the output number
-        pattern = r"output:\s*(\d+)"
+        pattern = r"output:\s*(-?\d+)"
         matches = list(re.finditer(pattern, output_text, re.IGNORECASE | re.DOTALL))
         print("OUTPUT TEXT: ", output_text)
         print("MATCHES: ", [match.group() for match in matches])
@@ -180,6 +180,19 @@ class FunctionsTask(BaseTask):
             few_shot_examples, input, idx, no_few_shot_examples=no_few_shot_examples
         )
 
+    def get_zs_cot_prompt(self, idx: int) -> str:
+        few_shot_examples = self.get_few_shot_examples(idx)
+        few_shot_examples_str = "\n".join(
+            [
+                few_shot_examples_prompt.format(input=i, output=o)
+                for i, o in few_shot_examples
+            ]
+        )
+        return cot_zero_shot_prompt["user"].format(
+            input=self.get_input(idx),
+            few_shot_examples=few_shot_examples_str,
+        )
+
     def get_special_prompt(
         self,
         idx: int,
@@ -197,6 +210,13 @@ class FunctionsTask(BaseTask):
                 self.get_full_grammar_prompt(
                     idx, no_few_shot_examples=no_few_shot_examples
                 ),
+                0,
+                0,
+                self.get_rule(idx),
+            )
+        elif self.prompt_style == "zs-cot":
+            return (
+                self.get_zs_cot_prompt(idx),
                 0,
                 0,
                 self.get_rule(idx),
