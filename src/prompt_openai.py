@@ -15,6 +15,9 @@ import signal
 import sys
 
 from src import get_task
+from src.get_completion import get_completion_openai
+from src.globals import TOTAL_COST, OPENAI_CURRENT_COSTS
+from src.common_args import get_common_arguments
 
 
 llama_wrapper = """<s>[INST] <<SYS>>
@@ -46,83 +49,66 @@ proposed_hypotheses = defaultdict(
     list, {"all_hyps": [], "all_probs": [], "task_id": []}
 )
 
-
-TOTAL_COST = 0
-
 num_not_skipped = 0
 total_processed = 0
 
 start_ind = None
 end_ind = None
 
-# per 1k tokens
-OPENAI_CURRENT_COSTS = {
-    "gpt-4-1106-preview": {
-        "completion": 0.03,
-        "prompt": 0.01,
-    },
-    "gpt-4": {
-        "completion": 0.06,
-        "prompt": 0.03,
-    },
-    "gpt-3.5-turbo-0613": {"completion": 0.002, "prompt": 0.001},
-    "davinci-002": {"completion": 0.012, "prompt": 0.012},
-}
+
+# def backoff_printer(details):
+#     logging.info(
+#         f"Backing off {details['wait']} seconds after {details['tries']} tries calling function {details['target'].__name__} with args {details['args']} and kwargs {details['kwargs']}"
+#     )
 
 
-def backoff_printer(details):
-    logging.info(
-        f"Backing off {details['wait']} seconds after {details['tries']} tries calling function {details['target'].__name__} with args {details['args']} and kwargs {details['kwargs']}"
-    )
+# @backoff.on_exception(
+#     backoff.constant,
+#     all_error_types,
+#     max_tries=30,
+#     on_backoff=backoff_printer,
+#     interval=5,
+# )
+# def get_completion_openai(
+#     prompts: Union[List, str],
+#     model_name: str,
+#     temp: float = 0.7,
+#     logprobs: bool = False,
+#     max_tokens: Optional[int] = None,
+# ) -> Tuple[str, float, float]:
+#     global TOTAL_COST
 
+#     if max_tokens == 0:
+#         # Just scoring the prompt - use the old completions endpoint
+#         completion = openai.Completion.create(
+#             model=model_name,
+#             prompt=prompts,
+#             temperature=temp,
+#             logprobs=1,
+#             max_tokens=max_tokens,
+#             echo=True,
+#         )
+#         prompt_tokens = completion["usage"]["total_tokens"]
+#         TOTAL_COST += (prompt_tokens / 1000) * OPENAI_CURRENT_COSTS[model_name][
+#             "prompt"
+#         ]
+#     else:
+#         completion = openai.ChatCompletion.create(
+#             model=model_name,
+#             messages=prompts,
+#             temperature=temp,
+#             logprobs=logprobs,
+#             max_tokens=max_tokens,
+#         )
+#         num_prompt_tokens = completion["usage"]["prompt_tokens"]
+#         num_completion_tokens = completion["usage"]["completion_tokens"]
+#         TOTAL_COST += (num_prompt_tokens / 1000) * OPENAI_CURRENT_COSTS[model_name][
+#             "prompt"
+#         ] + (num_completion_tokens / 1000) * OPENAI_CURRENT_COSTS[model_name][
+#             "completion"
+#         ]
 
-@backoff.on_exception(
-    backoff.constant,
-    all_error_types,
-    max_tries=30,
-    on_backoff=backoff_printer,
-    interval=5,
-)
-def get_completion_openai(
-    prompts: Union[List, str],
-    model_name: str,
-    temp: float = 0.7,
-    logprobs: bool = False,
-    max_tokens: Optional[int] = None,
-) -> Tuple[str, float, float]:
-    global TOTAL_COST
-
-    if max_tokens == 0:
-        # Just scoring the prompt - use the old completions endpoint
-        completion = openai.Completion.create(
-            model=model_name,
-            prompt=prompts,
-            temperature=temp,
-            logprobs=1,
-            max_tokens=max_tokens,
-            echo=True,
-        )
-        prompt_tokens = completion["usage"]["total_tokens"]
-        TOTAL_COST += (prompt_tokens / 1000) * OPENAI_CURRENT_COSTS[model_name][
-            "prompt"
-        ]
-    else:
-        completion = openai.ChatCompletion.create(
-            model=model_name,
-            messages=prompts,
-            temperature=temp,
-            logprobs=logprobs,
-            max_tokens=max_tokens,
-        )
-        num_prompt_tokens = completion["usage"]["prompt_tokens"]
-        num_completion_tokens = completion["usage"]["completion_tokens"]
-        TOTAL_COST += (num_prompt_tokens / 1000) * OPENAI_CURRENT_COSTS[model_name][
-            "prompt"
-        ] + (num_completion_tokens / 1000) * OPENAI_CURRENT_COSTS[model_name][
-            "completion"
-        ]
-
-    return completion
+#     return completion
 
 
 def init_task(args: argparse.Namespace):
@@ -456,101 +442,13 @@ def make_finish_task(
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Prompt OpenAI models with task specs")
+    parser = get_common_arguments()
     parser.add_argument(
         "--model",
         type=str,
         default="gpt-3.5-turbo",
         choices=["gpt-4", "gpt-3.5-turbo", "gpt-4-turbo"],
         help="OpenAI model to use",
-    )
-    parser.add_argument(
-        "--temp", default=0.0, type=float, help="Temperature for sampling"
-    )
-    parser.add_argument(
-        "--dataset",
-        required=True,
-        choices=["scan", "cogs", "colours", "cherokee", "arc", "naclo", "functions"],
-    )
-    parser.add_argument(
-        "--split",
-        default="simple",
-        choices=[
-            "simple",
-            "easy",
-            "length",
-            "jump",
-            "cp_recursion",
-            "prim_to_subj_common",
-            "exposure_example_obj_proper",
-            "obj_to_subj_common",
-            "only_seen_as_unacc_subj_as_obj_omitted_transitive_subj",
-            "debug",
-            "AboveBelow",
-            "CleanUp",
-        ],
-    )
-    parser.add_argument(
-        "--prompt_type",
-        default="base",
-        choices=[
-            "base",
-            "full_grammar",
-            "grammar_induction",
-            "rule_selection",
-            "vocab_induction",
-        ],
-    )
-    parser.add_argument("--output", type=str)
-    parser.add_argument("--start_ind", type=int)
-    parser.add_argument("--end_ind", type=int)
-    parser.add_argument("--num_few_shot_examples", type=int, default=5)
-    parser.add_argument(
-        "--use_min_cover",
-        action="store_true",
-        help="Use a curated set of few-shot examples that contain all primitives",
-    )
-    parser.add_argument("--return_induced_grammar_only", action="store_true")
-    parser.add_argument(
-        "--prompt_in_loop",
-        help="Only for grammar induction. Present a few examples at a time until rules converge.",
-        action="store_true",
-    )
-    parser.add_argument(
-        "--debug", action="store_true", help="Show debug info (prompts and num correct)"
-    )
-    parser.add_argument(
-        "--no_few_shot_examples",
-        action="store_true",
-        help="Don't show few shot examples at all (for full_grammar and grammar_induction type prompts)",
-    )
-    parser.add_argument(
-        "--rejection_sampling",
-        action="store_true",
-        help="Use rejection sampling to get a valid completion",
-    )
-    parser.add_argument(
-        "--num_hyps",
-        type=int,
-        default=1,
-        help="number of hypotheses to generate (for use with grammar_induction prompt type)",
-    )
-    parser.add_argument(
-        "--hyp_reranking_method",
-        type=str,
-        choices=[
-            "ground_truth",
-            "p_data_given_hyp_guess",
-            "p_data_given_hyp_logprobs",
-            "p_answer_given_hyp_logprobs",
-        ],
-        default="ground_truth",
-    )
-    parser.add_argument(
-        "--degree",
-        help="polynomial degree for the functions domain",
-        type=int,
-        default=1,
     )
 
     args = parser.parse_args()

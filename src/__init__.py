@@ -1,10 +1,13 @@
 from src.task import BaseTask
 import importlib
 import os
-
-TASK_DIR = "src/tasks"  # will make a dir called 'tasks' when I add more tasks
-GPT_4_VERSION = "gpt-4-0613"
-GPT_3_VERSION = "gpt3-0613"
+from src.tasks.scan_task import ScanTask
+from src.tasks.cogs_task import CogsTask
+from src.tasks.colours_task import ColoursTask
+from src.tasks.cherokee_task import CherokeeTask
+from src.tasks.arc_task import ArcTask
+from src.tasks.naclo_task import NacloTask
+from src.tasks.functions_task import FunctionsTask
 
 
 def get_task(task_name: str):
@@ -22,13 +25,3 @@ def get_task(task_name: str):
         raise ValueError(f"Task {task_name} not registered")
 
     return task_cls
-
-
-def import_tasks(namespace: str = "src.tasks"):
-    for file in os.listdir(TASK_DIR):
-        if file.endswith(".py") and not file.startswith("__"):
-            print(f"Importing {file}")
-            importlib.import_module(f"{namespace}.{file[:-3]}")
-
-
-import_tasks()

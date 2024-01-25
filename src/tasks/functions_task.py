@@ -5,8 +5,14 @@ from functools import reduce
 
 from src.prompts.functions_prompts import *
 from src.task import BaseTask
-from src.prompt_openai import get_completion_openai
-from src.utils.utils import parse_polynomial, try_convert_to_float
+from src.get_completion import get_completion_openai
+from src.utils.utils import try_convert_to_float
+from src.utils.parsing_utils import (
+    parse_polynomial,
+    get_ground_truth_answers,
+    get_example_start_token,
+    get_start_and_end_tokens,
+)
 from typing import Literal, List, Tuple
 
 
@@ -94,7 +100,8 @@ class FunctionsTask(BaseTask):
     def validate(self, idx: int, output_text: str):
         answer = self.test_examples[idx]["output"]
         try:
-            output_text = output_text.lower().split("output:")[1]
+            # this was output: [1] before. Not sure why, I think sometimes the output is in a weird arbitrary place
+            output_text = output_text.lower().split("output:")[0]
         except:
             try:
                 output_text = int(output_text.strip())
@@ -104,6 +111,43 @@ class FunctionsTask(BaseTask):
             correct = answer == int(output_text.strip())
             return correct
         except:
+            return False
+
+    def validate_improved(
+        self, idx: int, output_text: str, expected_answer: Optional[int] = None
+    ):
+        if expected_answer is None:
+            answer = self.test_examples[idx]["output"]
+        else:
+            answer = expected_answer
+
+        # Normalize line breaks and lowercase
+        output_text = output_text.replace("\r\n", "\n").lower()
+
+        # Pattern to find "Output:" and the output number
+        pattern = r"output:\s*(\d+)"
+        matches = list(re.finditer(pattern, output_text, re.IGNORECASE | re.DOTALL))
+        print("OUTPUT TEXT: ", output_text)
+        print("MATCHES: ", [match.group() for match in matches])
+
+        valid_output = None
+        for match in matches:
+            # Extract the context for this "Output:"
+            start_pos = match.start()
+            context = output_text[:start_pos]
+            context_lines = context.split("\n")
+
+            print("CONTEXT: ", context)
+            # Check if the context does not contain "Input:" immediately before this "Output:"
+            if len(context_lines) < 2 or "input:" not in context_lines[-2]:
+                valid_output = match.group(1)
+
+        if valid_output is not None:
+            try:
+                return answer == int(valid_output.strip())
+            except ValueError:
+                return False
+        else:
             return False
 
     def get_input(self, idx: int):
@@ -143,7 +187,7 @@ class FunctionsTask(BaseTask):
         return_grammar_only: bool = False,
         no_few_shot_examples: bool = False,
         n_hyps: int = 1,
-        rerank_by: int = "p_answer_given_hyp_logprobs",
+        rerank_by: str = "p_answer_given_hyp_logprobs",
         **kwargs,
     ) -> Tuple[
         str, int, int
@@ -168,7 +212,6 @@ class FunctionsTask(BaseTask):
                         for i, o in few_shot_examples
                     ]
                 )
-
                 grammar_induction_prompt = self.get_grammar_induction_prompt(
                     idx, no_parse=True
                 )
@@ -183,7 +226,7 @@ class FunctionsTask(BaseTask):
                         backend,
                         n_hyps=n_hyps,
                         rerank_by=rerank_by,
-                        few_shot_examples_str=few_shot_examples_str,
+                        few_shot_examples=few_shot_examples,
                     )
                     if isinstance(completion, list):
                         # returning all the possible hypotheses - save these
@@ -261,13 +304,19 @@ class FunctionsTask(BaseTask):
             "p_data_given_hyp_logprobs",
             "ground_truth",
         ],
-        few_shot_examples_str: str,
+        few_shot_examples: list,
         return_hyps_ranked: bool = True,
     ):
+        few_shot_examples_str = "\n".join(
+            [
+                few_shot_examples_prompt.format(input=i, output=o)
+                for i, o in few_shot_examples
+            ]
+        )
         assert n_hyps > 0, "n_hyps must be positive"
         if n_hyps == 1:
             # generate one hyp with temp = 0
-            completion = get_completion_openai(message, backend, temp=0.0)
+            completion = get_completion_openai(message, backend, temp=1.0)
             induced_grammar = completion["choices"][0]["message"]["content"]
         else:
             # default temp 1.0 for different options
@@ -275,6 +324,7 @@ class FunctionsTask(BaseTask):
             prob_model_names = {
                 "gpt-4-0314": "gpt-4-1106-preview",
                 "gpt-3.5-turbo-0613": "gpt-3.5-turbo-0613",
+                "gpt-4-1106-preview": "gpt-4-1106-preview",
             }
             prob_model_name = prob_model_names[backend]
             completions = [
@@ -335,9 +385,7 @@ class FunctionsTask(BaseTask):
                 ]
                 # Exclude the hypothesis itself from the logprobs
                 token_offsets = [
-                    self.get_example_start_token(
-                        completion, start_indicator="Examples:"
-                    )
+                    get_example_start_token(completion, start_indicator="Examples:")
                     for completion in logprobs_estimations
                 ]
                 sum_logprobs = []
@@ -386,9 +434,7 @@ class FunctionsTask(BaseTask):
                 ]
                 # Exclude the hypothesis itself from the logprobs
                 token_offsets = [
-                    self.get_example_start_token(
-                        completion, start_indicator="Examples:"
-                    )
+                    get_example_start_token(completion, start_indicator="Examples:")
                     for completion in logprobs_estimations
                 ]
                 tokens_of_answers_only = []
@@ -403,7 +449,7 @@ class FunctionsTask(BaseTask):
                     orig_text = orig_text[char_offset:]
 
                     pattern_answer = "Output:\s*(-?\d+)"
-                    answer_tok_ranges = self.get_start_and_end_tokens(
+                    answer_tok_ranges = get_start_and_end_tokens(
                         completion, pattern_answer
                     )
                     completion_logprobs_total = []
@@ -429,50 +475,28 @@ class FunctionsTask(BaseTask):
                 ]
             elif rerank_by == "ground_truth":
                 parsed_equations = [
-                    parse_polynomial(completion) for completion in completions
+                    parse_polynomial(completion["choices"][0]["message"]["content"])
+                    for completion in completions
+                ]
+
+                icl_example_answers_and_mses = [
+                    (i, get_ground_truth_answers(parsed_eq, few_shot_examples))
+                    for i, parsed_eq in enumerate(parsed_equations)
+                ]
+
+                completions = [
+                    (completion, -mse)
+                    for completion, (i, (_, mse)) in sorted(
+                        zip(completions, icl_example_answers_and_mses),
+                        key=lambda pair: pair[1][1][1],
+                        reverse=False,
+                    )
                 ]
 
             if return_hyps_ranked:
                 return completions
 
             return completions[0][0]
-
-    def get_example_start_token(
-        self, completion: dict, start_indicator: str = "Examples:"
-    ):
-        completion_text = completion["choices"][0]["text"]
-        start_char_ind = completion_text.find(start_indicator) + len(start_indicator)
-        tok_offsets = completion["choices"][0]["logprobs"]["text_offset"]
-
-        # I'm adding 1 here because there's a newline immediately after Examples:
-        return next(
-            i + 1 for i, offset in enumerate(tok_offsets) if offset >= start_char_ind
-        )
-
-    def get_start_and_end_tokens(self, completion: dict, pattern: str):
-        completion_text = completion["choices"][0]["text"]
-        pattern = re.compile(pattern)
-        tok_offsets = completion["choices"][0]["logprobs"]["text_offset"]
-
-        answer_tok_ranges = []
-        for match in pattern.finditer(completion_text):
-            start_char_ind = match.start()
-            end_char_ind = match.end()
-
-            start_tok_ind = None
-            end_tok_ind = None
-
-            # Iterate over tok_offsets for each match
-            for i, offset in enumerate(tok_offsets):
-                if start_tok_ind is None and offset >= start_char_ind:
-                    start_tok_ind = i
-                if offset > end_char_ind:
-                    end_tok_ind = i
-                    break
-
-            answer_tok_ranges.append((start_tok_ind, end_tok_ind))
-
-        return answer_tok_ranges
 
     def get_system_prompt(
         self,

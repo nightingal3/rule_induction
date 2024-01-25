@@ -1,5 +1,5 @@
 import pytest
-from src.utils.polynomial_parsing_utils import parse_polynomial
+from src.utils.parsing_utils import parse_polynomial
 
 
 @pytest.mark.parametrize(

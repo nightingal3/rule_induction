@@ -5,15 +5,24 @@ import random
 import json
 import jsonlines
 
-from src.prompts.scan_prompts import * 
+from src.prompts.scan_prompts import *
 from src.task import BaseTask
-from src.prompt_openai import get_completion_openai
+from src.get_completion import get_completion_openai
+
 
 class ScanTask(BaseTask):
-
     task_type = "io"
-    
-    def __init__(self, train_file: str, test_file: str, prompt_style: Literal["base", "full_grammar", "grammar_induction"], num_few_shot_examples: int = 5, nonce: bool = False, few_shot_min_set: bool = False, **kwargs) -> None:
+
+    def __init__(
+        self,
+        train_file: str,
+        test_file: str,
+        prompt_style: Literal["base", "full_grammar", "grammar_induction"],
+        num_few_shot_examples: int = 5,
+        nonce: bool = False,
+        few_shot_min_set: bool = False,
+        **kwargs
+    ) -> None:
         self.train_file = train_file
         self.test_file = test_file
         self.train_data = pd.read_csv(train_file)
@@ -32,18 +41,33 @@ class ScanTask(BaseTask):
         if self.use_few_shot_minset:
             self.min_examples = pd.read_csv("./data/scan/all_commands_minset.csv")
 
-        self.vocab = ["walk", "jump", "look", "turn right", "run", "turn left", "opposite left", "opposite right", "after", "and", "twice", "thrice"]
+        self.vocab = [
+            "walk",
+            "jump",
+            "look",
+            "turn right",
+            "run",
+            "turn left",
+            "opposite left",
+            "opposite right",
+            "after",
+            "and",
+            "twice",
+            "thrice",
+        ]
 
     def __len__(self) -> int:
         return len(self.test_data)
 
     def get_input(self, idx: int) -> str:
         return self.test_data.iloc[idx]["commands"]
-    
+
     def get_answer(self, idx: int) -> str:
         return self.test_data.iloc[idx]["actions"]
-    
-    def get_training_examples_with_command(self, command: str = "jump", N: int = 10) -> List[str]:
+
+    def get_training_examples_with_command(
+        self, command: str = "jump", N: int = 10
+    ) -> List[str]:
         # get N training examples that contain a command to induce one rule at a time
         examples = []
         for train_example in self.train_data.to_dict("records"):
@@ -51,39 +75,55 @@ class ScanTask(BaseTask):
                 examples.append(train_example)
                 if len(examples) == N:
                     break
-        
-        examples_formatted = self.few_shot_examples_wrap([example["commands"] for example in examples], [example["actions"] for example in examples])
+
+        examples_formatted = self.few_shot_examples_wrap(
+            [example["commands"] for example in examples],
+            [example["actions"] for example in examples],
+        )
         return examples_formatted
-    
+
     def get_few_shot_examples(self, idx: int) -> str:
         # get some random examples based on the idx (repeatable)
         if self.use_few_shot_minset:
             if self.prompt_style == "base":
                 few_shot_inputs = self.min_examples["commands"]
                 few_shot_outputs = self.min_examples["actions"]
-                few_shot_formatted = self.few_shot_examples_wrap(few_shot_inputs, few_shot_outputs)
+                few_shot_formatted = self.few_shot_examples_wrap(
+                    few_shot_inputs, few_shot_outputs
+                )
             else:
                 all_examples = self.min_examples["example_parse_few_shot"]
                 few_shot_formatted = "\n\n".join(all_examples)
         else:
             random.seed(idx)
-            indices = random.sample(range(len(self.train_data)), self.num_few_shot_examples)
+            indices = random.sample(
+                range(len(self.train_data)), self.num_few_shot_examples
+            )
             few_shot_inputs = [self.train_data.iloc[i]["commands"] for i in indices]
             few_shot_outputs = [self.train_data.iloc[i]["actions"] for i in indices]
-            few_shot_formatted = self.few_shot_examples_wrap(few_shot_inputs, few_shot_outputs)
+            few_shot_formatted = self.few_shot_examples_wrap(
+                few_shot_inputs, few_shot_outputs
+            )
 
         return few_shot_formatted
-    
+
     def validate(self, idx: int, output_text: str) -> bool:
         output_actions = output_text.split("Output: ")[-1].strip()
         return output_actions == self.test_data.iloc[idx]["actions"]
-    
+
     def get_standard_prompt(self, idx: int) -> str:
         input = self.get_input(idx)
         few_shot_examples = self.get_few_shot_examples(idx)
-        return self.standard_prompt_wrap(few_shot_examples, input), ''
-    
-    def get_special_prompt(self, idx: int, backend: str = "gpt-4", return_grammar_only: bool = False, use_cached: bool = True, no_few_shot_examples: bool = False) -> Tuple[str, int, int]:
+        return self.standard_prompt_wrap(few_shot_examples, input), ""
+
+    def get_special_prompt(
+        self,
+        idx: int,
+        backend: str = "gpt-4",
+        return_grammar_only: bool = False,
+        use_cached: bool = True,
+        no_few_shot_examples: bool = False,
+    ) -> Tuple[str, int, int]:
         if self.prompt_style == "full_grammar":
             return self.get_full_grammar_prompt(idx), 0, 0, ""
         elif self.prompt_style == "grammar_induction":
@@ -92,7 +132,9 @@ class ScanTask(BaseTask):
             usage_completion, usage_prompt = 0, 0
             for vocab in self.vocab:
                 training_examples = self.get_training_examples_with_command(vocab)
-                vocab_prompt = vocab_induction_prompt.format(word=vocab, examples=training_examples)
+                vocab_prompt = vocab_induction_prompt.format(
+                    word=vocab, examples=training_examples
+                )
                 message = [
                     {"role": "system", "content": VOCAB_INDUCTION_SYSPROMPT},
                     {"role": "user", "content": vocab_prompt},
@@ -103,14 +145,18 @@ class ScanTask(BaseTask):
                 usage_prompt += completion["usage"]["prompt_tokens"]
 
                 full_rules.append(induced_vocab_rule)
-                
+
             full_rules_str = "Rules:\n" + "\n".join(full_rules)
-            final_prompt = self.prompt_with_induced_grammar_wrap(full_rules_str, few_shot_examples, self.get_input(idx))
+            final_prompt = self.prompt_with_induced_grammar_wrap(
+                full_rules_str, few_shot_examples, self.get_input(idx)
+            )
 
             return final_prompt, usage_completion, usage_prompt, ""
-            
-        else: #TODO: deprecated, here for reference temporarily
-            few_shot_examples = self.get_few_shot_examples(idx + 1) # selecting some different examples for second step
+
+        else:  # TODO: deprecated, here for reference temporarily
+            few_shot_examples = self.get_few_shot_examples(
+                idx + 1
+            )  # selecting some different examples for second step
             if use_cached:
                 induced_grammar = self.cached_induced_grammars[0]["grammar"]
                 usage_completion = 0
@@ -128,44 +174,59 @@ class ScanTask(BaseTask):
                 usage_prompt = completion["usage"]["prompt_tokens"]
                 if return_grammar_only:
                     return induced_grammar, usage_completion, usage_prompt
-                
-            prompt_with_induced_grammar = self.prompt_with_induced_grammar_wrap(induced_grammar, few_shot_examples, self.get_input(idx))
+
+            prompt_with_induced_grammar = self.prompt_with_induced_grammar_wrap(
+                induced_grammar, few_shot_examples, self.get_input(idx)
+            )
             return prompt_with_induced_grammar, usage_completion, usage_prompt, ""
-        
+
     def get_full_grammar_prompt(self, idx: int) -> str:
         input = self.get_input(idx)
         few_shot_examples = self.get_few_shot_examples(idx)
         return self.full_grammar_prompt_wrap(few_shot_examples, input)
-    
+
     def get_grammar_induction_prompt(self, idx: int) -> str:
         few_shot_examples = self.get_few_shot_examples(idx)
-        return self.grammar_induction_prompt_wrap(few_shot_examples,)
-    
-        
+        return self.grammar_induction_prompt_wrap(
+            few_shot_examples,
+        )
+
     def get_system_prompt(self) -> str:
         if self.prompt_style == "full_grammar":
             return prompt_with_true_grammar["system"]
         elif self.prompt_style == "grammar_induction":
             return prompt_for_grammar_induction["system"]
-            
+
         return base_prompt["system"]
-    
+
     @staticmethod
     def standard_prompt_wrap(few_shot_examples: str, input: str) -> str:
-        return base_prompt["user"].format(few_shot_examples=few_shot_examples, input=input)
-    
+        return base_prompt["user"].format(
+            few_shot_examples=few_shot_examples, input=input
+        )
+
     @staticmethod
     def full_grammar_prompt_wrap(few_shot_examples: str, input: str) -> str:
-        return prompt_with_true_grammar["user"].format(few_shot_examples=few_shot_examples, input=input)
-    
+        return prompt_with_true_grammar["user"].format(
+            few_shot_examples=few_shot_examples, input=input
+        )
+
     @staticmethod
     def grammar_induction_prompt_wrap(few_shot_examples: str) -> str:
-        return prompt_for_grammar_induction["user"].format(few_shot_examples=few_shot_examples)
-    
+        return prompt_for_grammar_induction["user"].format(
+            few_shot_examples=few_shot_examples
+        )
+
     @staticmethod
-    def prompt_with_induced_grammar_wrap(induced_grammar: str, few_shot_examples: str, input: str) -> str:
-        return prompt_for_grammar_induction["user_followup"].format(induced_grammar=induced_grammar, input=input, few_shot_examples=few_shot_examples)
-    
+    def prompt_with_induced_grammar_wrap(
+        induced_grammar: str, few_shot_examples: str, input: str
+    ) -> str:
+        return prompt_for_grammar_induction["user_followup"].format(
+            induced_grammar=induced_grammar,
+            input=input,
+            few_shot_examples=few_shot_examples,
+        )
+
     @staticmethod
     def few_shot_examples_wrap(few_shot_inputs: List, few_shot_outputs: List) -> str:
         examples = ""
