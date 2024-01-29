@@ -7,6 +7,7 @@ import jsonlines
 import numpy as np
 import os
 from collections import defaultdict
+import re
 
 from src.prompts.colours_prompts import *
 from src.task import BaseTask
@@ -26,24 +27,45 @@ class ColoursTask(BaseTask):
     def __init__(
         self,
         rules_file: str,
-        prompt_style: Literal["base", "full_grammar", "grammar_induction"],
+        prompt_style: Literal["base", "full_grammar", "grammar_induction", "zs-cot"],
         num_few_shot_examples: int = 5,
         nonce: bool = False,
         few_shot_min_set: bool = False,
         grammar_induction_loop: bool = False,
+        test_data_file: Optional[str] = None,
+        train_data_file: Optional[str] = None,
+        write_data_dir: Optional[str] = None,
+        split: str = "simple",
         **kwargs,
     ) -> None:
         self.rules = pd.read_csv(rules_file)
-        self.train_data, self.test_data = self.generate_examples()
+
+        self.write_data_dir = (
+            write_data_dir if write_data_dir is not None else "./data/colours"
+        )
+
+        if test_data_file is not None and train_data_file is not None:
+            self.train_data = pd.read_csv(train_data_file)
+            self.test_data = pd.read_csv(test_data_file)
+        else:
+            self.train_data, self.test_data = self.generate_examples()
 
         self.prompt_style = prompt_style
         self.num_few_shot_examples = num_few_shot_examples
         self.is_nonce = nonce
+        self.split = split
         # if prompt style is base, this will just select the min set examples.
         # if prompt style is full_grammar, this will use the example parses as well.
         self.use_few_shot_minset = few_shot_min_set
         if self.use_few_shot_minset:
-            self.min_examples = pd.read_csv("./data/colours/all_commands_minset.csv")
+            if self.split == "miniscan":
+                self.min_examples = pd.read_csv(
+                    "./data/colours/miniscan/train_data.csv"
+                )
+            else:
+                self.min_examples = pd.read_csv(
+                    "./data/colours/all_commands_minset.csv"
+                )
 
         self.cached_induced_grammars = []
         if os.path.exists("./data/colours/gpt_4_induced_grammars.jsonl"):
@@ -55,16 +77,25 @@ class ColoursTask(BaseTask):
 
         self.grammar_induction_loop = grammar_induction_loop
         self.src_vocab = list(self.rules["word"])
+        self.proposed_hypotheses = {
+            "hypothesis": [],
+            "estimated_prob": [],
+            "rank": [],
+            "task_id": [],
+            "for_word": [],
+        }
 
     def generate_examples(self, data_size=1000) -> Tuple[pd.DataFrame, pd.DataFrame]:
-        if os.path.exists("./data/colours/train_data.csv") and os.path.exists(
-            "./data/colours/test_data.csv"
+        if os.path.exists(f"{self.write_data_dir}/train_data.csv") and os.path.exists(
+            f"{self.write_data_dir}/test_data.csv"
         ):
-            train_data = pd.read_csv("./data/colours/train_data.csv")
-            test_data = pd.read_csv("./data/colours/test_data.csv")
+            train_data = pd.read_csv(f"{self.write_data_dir}/train_data.csv")
+            test_data = pd.read_csv(f"{self.write_data_dir}/test_data.csv")
         else:
             colour_mappings = self.rules.loc[self.rules["rule_type"] == "colour"]
             number_mappings = self.rules.loc[self.rules["rule_type"] == "number"]
+            concept_mappings = self.rules.loc[self.rules["rule_type"] == "concept"]
+            # TODO: finish the concept mappings to round out the colours dataset
             all_examples = []
             prev_colour = None
             for _ in range(data_size):
@@ -126,7 +157,7 @@ class ColoursTask(BaseTask):
     def get_few_shot_examples(
         self,
         idx: int,
-        no_parse: bool = False,
+        no_parse: bool = True,
         use_few_shot_minset: Optional[bool] = None,
         num_examples: Optional[int] = None,
         return_as_lst: bool = False,
@@ -150,6 +181,7 @@ class ColoursTask(BaseTask):
             else:
                 all_examples = self.min_examples["example_parse_few_shot"]
                 if return_as_lst:
+                    breakpoint()
                     return list(all_examples)
                 few_shot_formatted = "\n\n".join(all_examples)
         else:
@@ -181,9 +213,36 @@ class ColoursTask(BaseTask):
                 break
         return list(zip(examples_src, examples_tgt))
 
-    def validate(self, idx: int, output_text: str) -> bool:
+    def _validate(self, idx: int, output_text: str) -> bool:
         output_actions = output_text.split("Output: ")[-1].strip()
         return output_actions == self.test_data.iloc[idx]["actions"]
+
+    def validate(
+        self, idx: int, output_text: str, expected_answer: Optional[str] = None
+    ):
+        if expected_answer is None:
+            answer = self.test_examples[idx]["output"]
+        else:
+            answer = expected_answer
+
+        # Normalize line breaks and lowercase
+        output_text = output_text.replace("\r\n", "\n").lower()
+
+        # Pattern to find "Output:" followed by space-separated words, stopping at newline
+        pattern = r"output:\s*([^\n]+)(?=\n|$)"
+        matches = list(re.finditer(pattern, output_text, re.IGNORECASE | re.DOTALL))
+        valid_output = None
+        for match in matches:
+            # Extract the context for this "Output:"
+            start_pos = match.start()
+            context = output_text[:start_pos]
+            context_lines = context.split("\n")
+
+            # Check if the context does not contain "Input:" immediately before this "Output:"
+            if len(context_lines) < 2 or "input:" not in context_lines[-2]:
+                valid_output = match.group(1).strip()
+
+        return valid_output == answer
 
     def get_standard_prompt(self, idx: int) -> str:
         input = self.get_input(idx)
@@ -205,6 +264,8 @@ class ColoursTask(BaseTask):
         # TODO: implement ground truth reranking!!!
         if self.prompt_style == "full_grammar":
             return self.get_full_grammar_prompt(idx), 0, 0
+        elif self.prompt_style == "zs-cot":
+            return (self.get_zs_cot_prompt(idx), 0, 0)
         else:
             if self.prompt_style == "grammar_induction":
                 few_shot_examples = self.get_few_shot_examples(
@@ -230,7 +291,7 @@ class ColoursTask(BaseTask):
                         usage_completion,
                         usage_prompt,
                     ) = self.induce_word_by_word(
-                        self.src_vocab, backend, rerank_by=rerank_by
+                        idx, self.src_vocab, backend, rerank_by=rerank_by, n_hyps=n_hyps
                     )
                     all_induced_rules = "\n".join(induced_rules.values())
                     induced_grammar = all_induced_rules_wrapped.format(
@@ -483,15 +544,22 @@ class ColoursTask(BaseTask):
 
     def induce_word_by_word(
         self,
+        idx: int,
         word_lst: List[str],
         backend: str = "gpt-4",
-        n_hyps: int = 5,
+        n_hyps: int = 1,
         rerank_by: str = "p_data_given_hyp_guess",
     ) -> Tuple[str, float, float]:
         rule_set = {}
         usage_completion_all = 0
         usage_prompt_all = 0
-
+        interim_hypotheses = {
+            "hypothesis": [],
+            "estimated_prob": [],
+            "rank": [],
+            "task_id": [],
+            "for_word": [],
+        }
         for word in word_lst:
             few_shot_examples = self.get_examples_with_one_word(word)
             few_shot_examples_str = "\n".join(
@@ -508,7 +576,7 @@ class ColoursTask(BaseTask):
                 {"role": "system", "content": GRAMMAR_INDUCTION_SYSPROMPT},
                 {"role": "user", "content": word_induction_prompt},
             ]
-            rules, usage_completion, usage_prompt = self.get_best_grammar(
+            completion, usage_completion, usage_prompt = self.get_best_grammar(
                 word,
                 message,
                 backend,
@@ -517,13 +585,34 @@ class ColoursTask(BaseTask):
                 few_shot_examples,
                 return_hyps_ranked=True,
             )
+            if isinstance(completion, list):
+                alternate_completions = [
+                    c[0]["choices"][0]["message"]["content"] for c in completion
+                ]
+                alternate_probs = [c[1] for c in completion]
+                completion = completion[0][0]
+
+                interim_hypotheses["hypothesis"].append(alternate_completions)
+                interim_hypotheses["estimated_prob"].append(alternate_probs)
+                interim_hypotheses["rank"].append(
+                    list(range(len(alternate_completions)))
+                )
+                interim_hypotheses["task_id"].append([idx] * len(alternate_completions))
+                interim_hypotheses["for_word"].append(
+                    [word] * len(alternate_completions)
+                )
+
             usage_completion_all += usage_completion
             usage_prompt_all += usage_prompt
 
-            # TODO: need to save all the hypotheses for analysis
-            induced_rule = rules[0][0]["choices"][0]["message"]["content"]
-            print("Induced rule: ", induced_rule)
+            induced_rule = completion["choices"][0]["message"]["content"]
             rule_set[word] = induced_rule
+
+        # save all the interim hypotheses
+        for key, value in interim_hypotheses.items():
+            # breakpoint()
+            interim_hypotheses[key] = [item for sublist in value for item in sublist]
+            self.proposed_hypotheses[key].append(interim_hypotheses[key])
 
         return rule_set, usage_completion_all, usage_prompt_all
 
@@ -557,7 +646,8 @@ class ColoursTask(BaseTask):
             completion = get_completion_openai(message, backend, temp=1.0)
             usage_prompt = completion["usage"]["prompt_tokens"]
             usage_completion = completion["usage"]["completion_tokens"]
-            induced_grammar = completion["choices"][0]["message"]["content"]
+
+            return (completion, usage_completion, usage_prompt)
         else:
             # default temp 1.0 for different options
             # use turbo models' backends to get logprobs
@@ -772,6 +862,7 @@ class ColoursTask(BaseTask):
                 # TODO: this will NOT work with more complex production rules
                 # with repeats, contextual rules etc. Need to prompt the model more carefully
                 # and also need to parse the production rules more carefully
+                # skip the ground truth reranking for colours for now
 
                 icl_example_answers_and_chrfs = [
                     (i, get_ground_truth_answers_vocab(parsed_eq, few_shot_examples))
@@ -792,9 +883,27 @@ class ColoursTask(BaseTask):
 
             return completions[0][0], usage_completion, usage_prompt
 
+    def get_zs_cot_prompt(self, idx: int) -> str:
+        few_shot_examples = self.get_few_shot_examples(
+            idx, return_as_lst=True, no_parse=True
+        )
+        few_shot_examples_str = "\n".join(
+            [
+                few_shot_examples_prompt.format(input=i, output=o)
+                for i, o in few_shot_examples
+            ]
+        )
+        return cot_zero_shot_prompt["user"].format(
+            input=self.get_input(idx),
+            few_shot_examples=few_shot_examples_str,
+        )
+
     def get_full_grammar_prompt(self, idx: int) -> str:
         input = self.get_input(idx)
         few_shot_examples = self.get_few_shot_examples(idx)
+        if self.split == "miniscan":
+            return self.full_grammar_prompt_wrap_miniscan(few_shot_examples, input)
+
         return self.full_grammar_prompt_wrap(few_shot_examples, input)
 
     def get_grammar_induction_prompt(self, idx: int, no_parse: bool = False) -> str:
@@ -888,6 +997,12 @@ class ColoursTask(BaseTask):
     @staticmethod
     def full_grammar_prompt_wrap(few_shot_examples: str, input: str) -> str:
         return prompt_with_true_grammar["user"].format(
+            few_shot_examples=few_shot_examples, input=input
+        )
+
+    @staticmethod
+    def full_grammar_prompt_wrap_miniscan(few_shot_examples: str, input: str) -> str:
+        return prompt_with_true_grammar_miniscan["user"].format(
             few_shot_examples=few_shot_examples, input=input
         )
 

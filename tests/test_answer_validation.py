@@ -23,6 +23,26 @@ def function_task():
 
     yield task
 
+@pytest.fixture()
+def colours_task():
+    fake_args = SimpleNamespace(
+        dataset="colours",
+        prompt_type="base",
+        model="gpt-3.5-turbo",
+        temp=0.0,
+        num_few_shot_examples=5,
+        split="simple",
+        use_min_cover=True,
+        output=None,
+        start_ind=0,
+        end_ind=10,
+        prompt_in_loop=False
+    )
+
+    task = init_task(fake_args)
+
+    yield task
+
 
 @pytest.mark.parametrize(
     "idx, output_text, answer, expected_result",
@@ -39,3 +59,23 @@ def test_math_answer_validation(
 ):
     result = function_task.validate(idx, output_text, answer)
     assert result == expected_result
+
+
+@pytest.mark.parametrize(
+    "idx, output_text, answer, expected_result",
+    [
+        (0, "Output: red green", "red green", True),
+        (1, "Output: red yellow", "red green", False),
+        (2, "Output: red yellow\nInput: lug lug\nOutput: blue blue", "red yellow", True),
+        (3, "Output: red yellow\nInput: lug lug\nOutput: blue blue", "blue blue", False),
+        (4, """
+    Output: red yellow
+
+    Input: lug walm dax bluf""", "red yellow", True)
+    ]
+)
+def test_colours_task_validation(
+    colours_task, idx, output_text, answer, expected_result
+):
+    result = colours_task.validate(idx, output_text, answer)
+    assert result == expected_result, f"Failed at index {idx}"

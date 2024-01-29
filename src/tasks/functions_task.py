@@ -97,22 +97,6 @@ class FunctionsTask(BaseTask):
         self.test_examples_to_rule_inds = test_examples_to_rule_inds
         return dataset, test_examples
 
-    def _validate(self, idx: int, output_text: str):
-        answer = self.test_examples[idx]["output"]
-        try:
-            # this was output: [1] before. Not sure why, I think sometimes the output is in a weird arbitrary place
-            output_text = output_text.lower().split("output:")[0]
-        except:
-            try:
-                output_text = int(output_text.strip())
-            except:
-                return False
-        try:
-            correct = answer == int(output_text.strip())
-            return correct
-        except:
-            return False
-
     def validate(
         self, idx: int, output_text: str, expected_answer: Optional[int] = None
     ):
@@ -127,8 +111,6 @@ class FunctionsTask(BaseTask):
         # Pattern to find "Output:" and the output number
         pattern = r"output:\s*(-?\d+)"
         matches = list(re.finditer(pattern, output_text, re.IGNORECASE | re.DOTALL))
-        print("OUTPUT TEXT: ", output_text)
-        print("MATCHES: ", [match.group() for match in matches])
 
         valid_output = None
         for match in matches:
