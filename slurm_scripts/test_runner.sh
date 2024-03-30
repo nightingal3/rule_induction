@@ -6,7 +6,7 @@
 #SBATCH --mem=10G
 
 # Load the required modules (if any)
-export OPENAI_API_KEY="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"
+export OPENAI_API_KEY=XXXXXX
 source ~/miniconda3/etc/profile.d/conda.sh
 conda activate tgi-env
 export PYTHONPATH=/projects/tir5/users/mengyan3/rule_induction/

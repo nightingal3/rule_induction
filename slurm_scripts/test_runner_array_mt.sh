@@ -15,7 +15,7 @@ conda activate tgi-mtob
 
 export PYTHONPATH=/data/tir/projects/tir5/users/mengyan3/rule_induction/
 #export OPENAI_API_KEY=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
-export OPENAI_API_KEY=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
+export OPENAI_API_KEY=XXXXXX
 # Read the jobs.txt file into an array
 mapfile -t commands < $input_file
 
