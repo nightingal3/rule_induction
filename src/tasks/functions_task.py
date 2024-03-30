@@ -5,7 +5,7 @@ from functools import reduce
 
 from src.prompts.functions_prompts import *
 from src.task import BaseTask
-from src.get_completion import get_completion_openai
+from src.get_completion import get_completion_openai, make_completion_fn_tgi_server
 from src.utils.utils import try_convert_to_float
 from src.utils.parsing_utils import (
     parse_polynomial,
@@ -55,7 +55,10 @@ class FunctionsTask(BaseTask):
             "hypothesis": [],
             "estimated_prob": [],
             "rank": [],
+            "task_id": [],
         }
+
+        self.open_llm_completion_fn = None
 
     def __len__(self):
         return len(self.test_examples)
@@ -107,30 +110,46 @@ class FunctionsTask(BaseTask):
 
         # Normalize line breaks and lowercase
         output_text = output_text.replace("\r\n", "\n").lower()
+        if self.prompt_style == "zs-cot":
+            pattern = r"final output: (.*)"
 
-        # Pattern to find "Output:" and the output number
-        pattern = r"output:\s*(-?\d+)"
-        matches = list(re.finditer(pattern, output_text, re.IGNORECASE | re.DOTALL))
+            match = re.search(pattern, output_text)
 
-        valid_output = None
-        for match in matches:
-            # Extract the context for this "Output:"
-            start_pos = match.start()
-            context = output_text[:start_pos]
-            context_lines = context.split("\n")
-
-            print("CONTEXT: ", context)
-            # Check if the context does not contain "Input:" immediately before this "Output:"
-            if len(context_lines) < 2 or "input:" not in context_lines[-2]:
+            if match:
                 valid_output = match.group(1)
+            else:
+                # try looking for just "output: " and then the number
+                pattern = r"output: (.*)"
+                match = re.search(pattern, output_text)
+                if match:
+                    valid_output = match.group(1)
+                else:
+                    return False
 
-        if valid_output is not None:
-            try:
-                return answer == int(valid_output.strip())
-            except ValueError:
-                return False
+            return valid_output.strip() == str(answer)
         else:
-            return False
+            # Pattern to find "Output:" and the output number
+            pattern = r"output:\s*(-?\d+)"
+            matches = list(re.finditer(pattern, output_text, re.IGNORECASE | re.DOTALL))
+
+            valid_output = None
+            for match in matches:
+                # Extract the context for this "Output:"
+                start_pos = match.start()
+                context = output_text[:start_pos]
+                context_lines = context.split("\n")
+
+                # Check if the context does not contain "Input:" immediately before this "Output:"
+                if len(context_lines) < 2 or "input:" not in context_lines[-2]:
+                    valid_output = match.group(1)
+
+            if valid_output is not None:
+                try:
+                    return answer == int(valid_output.strip())
+                except ValueError:
+                    return False
+            else:
+                return False
 
     def get_input(self, idx: int):
         input = self.test_examples[idx]["input"]
@@ -187,20 +206,19 @@ class FunctionsTask(BaseTask):
     ) -> Tuple[
         str, int, int
     ]:  # TODO: this is really ugly and also the same everywhere. Refactor
+        if "gpt" not in backend and self.open_llm_completion_fn is None:
+            self.open_llm_completion_fn = make_completion_fn_tgi_server(backend)
+
         if self.prompt_style == "full_grammar":
             return (
                 self.get_full_grammar_prompt(
                     idx, no_few_shot_examples=no_few_shot_examples
                 ),
-                0,
-                0,
                 self.get_rule(idx),
             )
         elif self.prompt_style == "zs-cot":
             return (
                 self.get_zs_cot_prompt(idx),
-                0,
-                0,
                 self.get_rule(idx),
             )
         else:
@@ -245,39 +263,65 @@ class FunctionsTask(BaseTask):
                         self.proposed_hypotheses["estimated_prob"].append(
                             alternate_probs
                         )
+                        self.proposed_hypotheses["task_id"].append(
+                            [self.get_rule(idx)] * len(alternate_completions)
+                        )
                         self.proposed_hypotheses["rank"].append(
                             list(range(len(alternate_completions)))
                         )
 
                     induced_grammar = completion["choices"][0]["message"]["content"]
-                    # completion = get_completion_openai(message, backend, temp=0.0)
-
-                    # induced_grammar = completion["choices"][0]["message"]["content"]
 
                     print(induced_grammar)
-                    usage_completion = completion["usage"]["completion_tokens"]
-                    usage_prompt = completion["usage"]["prompt_tokens"]
 
-                else:  # alpaca or llama
-                    raise NotImplementedError
+                else:
+                    completion = self.get_best_grammar(
+                        grammar_induction_prompt,
+                        backend,
+                        n_hyps=n_hyps,
+                        rerank_by=rerank_by,
+                        few_shot_examples=few_shot_examples,
+                    )
+
+                    if isinstance(completion, list):
+                        alternate_completions = [c[0] for c in completion]
+                        alternate_probs = [c[1] for c in completion]
+                        completion = completion[0][0]
+
+                        self.proposed_hypotheses["hypothesis"].append(
+                            alternate_completions
+                        )
+                        self.proposed_hypotheses["estimated_prob"].append(
+                            alternate_probs
+                        )
+                        self.proposed_hypotheses["task_id"].append(
+                            [self.get_rule(idx)] * len(alternate_completions)
+                        )
+                        self.proposed_hypotheses["rank"].append(
+                            list(range(len(alternate_completions)))
+                        )
+                        self.proposed_hypotheses
+
+                    try:
+                        induced_grammar = completion[0][0]
+                    except:
+                        # empty completion
+                        induced_grammar = ""
+
+                    print(induced_grammar)
+
                 if return_grammar_only:
                     num_times_changed = 0
                     return (
                         induced_grammar,
-                        usage_completion,
-                        usage_prompt,
                         num_times_changed,
                     )
 
                 prompt_with_induced_grammar = self.prompt_with_induced_grammar_wrap(
                     induced_grammar, few_shot_examples_str, self.get_input(idx)
                 )
-                return (
-                    prompt_with_induced_grammar,
-                    usage_completion,
-                    usage_prompt,
-                    self.get_rule(idx),
-                )
+                return (prompt_with_induced_grammar, self.get_rule(idx))
+
             elif self.prompt_style == "rule_selection":
                 rule_selection_prompt = self.get_rule_selection_prompt(idx)
                 message = [
@@ -289,11 +333,7 @@ class FunctionsTask(BaseTask):
                 prompt_with_relevant_rules = self.prompt_with_relevant_rules_wrap(
                     rules, self.get_input(idx)
                 )
-                return (
-                    prompt_with_relevant_rules,
-                    completion["usage"]["completion_tokens"],
-                    completion["usage"]["prompt_tokens"],
-                )
+                return prompt_with_relevant_rules, self.get_rule(idx)
 
     def get_best_grammar(
         self,
@@ -318,44 +358,73 @@ class FunctionsTask(BaseTask):
         assert n_hyps > 0, "n_hyps must be positive"
         if n_hyps == 1:
             # generate one hyp with temp = 0
-            completion = get_completion_openai(message, backend, temp=1.0)
-            induced_grammar = completion["choices"][0]["message"]["content"]
+            if "gpt" in backend:
+                completion = get_completion_openai(message, backend, temp=1.0)
+            else:
+                # Note: temp=1.0 produces a non-answer over and over again. Did a bisection search between 1 and 2 to find this.
+                # TODO: may have to have different temps for different open source models.
+                completion = self.open_llm_completion_fn(message, temp=1.0625)
         else:
             # default temp 1.0 for different options
             # use turbo models' backends to get logprobs
-            prob_model_names = {
-                "gpt-4-0314": "gpt-4-1106-preview",
-                "gpt-3.5-turbo-0613": "gpt-3.5-turbo-0613",
-                "gpt-4-1106-preview": "gpt-4-1106-preview",
-            }
-            prob_model_name = prob_model_names[backend]
-            completions = [
-                get_completion_openai(message, prob_model_name, temp=1.0)
-                for _ in range(n_hyps)
-            ]
+
+            if "gpt" in backend:
+                prob_model_names = {
+                    "gpt-4-0314": "gpt-4-1106-preview",
+                    "gpt-3.5-turbo-0613": "gpt-3.5-turbo-0613",
+                    "gpt-4-1106-preview": "gpt-4-1106-preview",
+                }
+                prob_model_name = prob_model_names[backend]
+                completions = [
+                    get_completion_openai(message, prob_model_name, temp=1.0)
+                    for _ in range(n_hyps)
+                ]
+            else:
+                # Note: temp=1.0 produces a non-answer over and over again. Did a bisection search between 1 and 2 to find this.
+                # TODO: may have to have different temps for different open source models.
+                completions = [
+                    self.open_llm_completion_fn(message, temp=1.0625)
+                    for _ in range(n_hyps)
+                ]
+
             if rerank_by == "p_data_given_hyp_guess":
-                estimate_p_data_prompts = [
-                    prompt_for_probability_guess.format(
-                        few_shot_examples=few_shot_examples_str,
-                        hypothesis=completion["choices"][0]["message"]["content"],
-                    )
-                    for completion in completions
-                ]
-                p_data_given_hyp_guesses = [
-                    get_completion_openai(
-                        [
-                            {
-                                "role": "system",
-                                "content": "You are a probability estimating system. Your job is to judge how probable data is given an explanation, and answer only with a number from 0 to 1 inclusive.",
-                            },
-                            {"role": "user", "content": prompt},
-                        ],
-                        backend,
-                        temp=0.0,
-                        logprobs=True,
-                    )["choices"][0]["message"]["content"]
-                    for prompt in estimate_p_data_prompts
-                ]
+                if "gpt" in backend:
+                    estimate_p_data_prompts = [
+                        prompt_for_probability_guess.format(
+                            few_shot_examples=few_shot_examples_str,
+                            hypothesis=completion["choices"][0]["message"]["content"],
+                        )
+                        for completion in completions
+                    ]
+                    p_data_given_hyp_guesses = [
+                        get_completion_openai(
+                            [
+                                {
+                                    "role": "system",
+                                    "content": "You are a probability estimating system. Your job is to judge how probable data is given an explanation, and answer only with a number from 0 to 1 inclusive.",
+                                },
+                                {"role": "user", "content": prompt},
+                            ],
+                            backend,
+                            temp=0.0,
+                            logprobs=True,
+                        )["choices"][0]["message"]["content"]
+                        for prompt in estimate_p_data_prompts
+                    ]
+                else:
+                    estimate_p_data_prompts = [
+                        prompt_for_probability_guess.format(
+                            few_shot_examples=few_shot_examples_str,
+                            hypothesis=completion,
+                        )
+                        for completion in completions
+                    ]
+
+                    p_data_given_hyp_guesses = [
+                        self.open_llm_completion_fn(prompt)
+                        for prompt in estimate_p_data_prompts
+                    ]
+
                 p_data_given_hyp_guesses = [
                     try_convert_to_float(guess) for guess in p_data_given_hyp_guesses
                 ]
@@ -370,15 +439,29 @@ class FunctionsTask(BaseTask):
                 ]
 
             elif rerank_by == "p_data_given_hyp_logprobs":
+
+                # NOTE: I need to make a slight change to text-generation-inference to allow max_new_tokens=0 and output_scores for logprobs.
+                # probably not worth doing at this point, just use the same model (davinci-002) for scores then
+
                 # logprobs - from turbo models
                 # oracle condition -> best possible function description in N generated hypotheses
-                estimate_p_data_prompts = [
-                    prompt_for_probability_logprobs.format(
-                        few_shot_examples=few_shot_examples_str,
-                        hypothesis=completion["choices"][0]["message"]["content"],
-                    )
-                    for completion in completions
-                ]
+                if "gpt" in backend:
+                    estimate_p_data_prompts = [
+                        prompt_for_probability_logprobs.format(
+                            few_shot_examples=few_shot_examples_str,
+                            hypothesis=completion["choices"][0]["message"]["content"],
+                        )
+                        for completion in completions
+                    ]
+                else:
+                    estimate_p_data_prompts = [
+                        prompt_for_probability_logprobs.format(
+                            few_shot_examples=few_shot_examples_str,
+                            hypothesis=completion,
+                        )
+                        for completion in completions
+                    ]
+
                 logprobs_estimations = [
                     get_completion_openai(
                         prompt, "davinci-002", temp=0.0, logprobs=True, max_tokens=0
@@ -420,14 +503,25 @@ class FunctionsTask(BaseTask):
                         reverse=True,
                     )
                 ]
+
             elif rerank_by == "p_answer_given_hyp_logprobs":
-                estimate_p_data_prompts = [
-                    prompt_for_probability_logprobs.format(
-                        few_shot_examples=few_shot_examples_str,
-                        hypothesis=completion["choices"][0]["message"]["content"],
-                    )
-                    for completion in completions
-                ]
+                if "gpt" in backend:
+                    estimate_p_data_prompts = [
+                        prompt_for_probability_logprobs.format(
+                            few_shot_examples=few_shot_examples_str,
+                            hypothesis=completion["choices"][0]["message"]["content"],
+                        )
+                        for completion in completions
+                    ]
+                else:
+                    estimate_p_data_prompts = [
+                        prompt_for_probability_logprobs.format(
+                            few_shot_examples=few_shot_examples_str,
+                            hypothesis=completion,
+                        )
+                        for completion in completions
+                    ]
+
                 logprobs_estimations = [
                     get_completion_openai(
                         prompt, "davinci-002", temp=0.0, logprobs=True, max_tokens=0
@@ -476,10 +570,15 @@ class FunctionsTask(BaseTask):
                     )
                 ]
             elif rerank_by == "ground_truth":
-                parsed_equations = [
-                    parse_polynomial(completion["choices"][0]["message"]["content"])
-                    for completion in completions
-                ]
+                if "gpt" in backend:
+                    parsed_equations = [
+                        parse_polynomial(completion["choices"][0]["message"]["content"])
+                        for completion in completions
+                    ]
+                else:
+                    parsed_equations = [
+                        parse_polynomial(completion) for completion in completions
+                    ]
 
                 icl_example_answers_and_mses = [
                     (i, get_ground_truth_answers(parsed_eq, few_shot_examples))

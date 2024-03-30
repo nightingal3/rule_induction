@@ -16,7 +16,7 @@ import sys
 
 from src import get_task
 from src.get_completion import get_completion_openai
-from src.globals import TOTAL_COST, OPENAI_CURRENT_COSTS
+import src.globals
 from src.common_args import get_common_arguments
 
 
@@ -45,70 +45,13 @@ score_bertscore = 0
 results_log = defaultdict(
     list, {"inputs": [], "outputs": [], "answer": [], "correct": []}
 )
-proposed_hypotheses = defaultdict(
-    list, {"all_hyps": [], "all_probs": [], "task_id": []}
-)
+proposed_hypotheses = defaultdict(list, {"all_hyps": [], "all_probs": []})
 
 num_not_skipped = 0
 total_processed = 0
 
 start_ind = None
 end_ind = None
-
-
-# def backoff_printer(details):
-#     logging.info(
-#         f"Backing off {details['wait']} seconds after {details['tries']} tries calling function {details['target'].__name__} with args {details['args']} and kwargs {details['kwargs']}"
-#     )
-
-
-# @backoff.on_exception(
-#     backoff.constant,
-#     all_error_types,
-#     max_tries=30,
-#     on_backoff=backoff_printer,
-#     interval=5,
-# )
-# def get_completion_openai(
-#     prompts: Union[List, str],
-#     model_name: str,
-#     temp: float = 0.7,
-#     logprobs: bool = False,
-#     max_tokens: Optional[int] = None,
-# ) -> Tuple[str, float, float]:
-#     global TOTAL_COST
-
-#     if max_tokens == 0:
-#         # Just scoring the prompt - use the old completions endpoint
-#         completion = openai.Completion.create(
-#             model=model_name,
-#             prompt=prompts,
-#             temperature=temp,
-#             logprobs=1,
-#             max_tokens=max_tokens,
-#             echo=True,
-#         )
-#         prompt_tokens = completion["usage"]["total_tokens"]
-#         TOTAL_COST += (prompt_tokens / 1000) * OPENAI_CURRENT_COSTS[model_name][
-#             "prompt"
-#         ]
-#     else:
-#         completion = openai.ChatCompletion.create(
-#             model=model_name,
-#             messages=prompts,
-#             temperature=temp,
-#             logprobs=logprobs,
-#             max_tokens=max_tokens,
-#         )
-#         num_prompt_tokens = completion["usage"]["prompt_tokens"]
-#         num_completion_tokens = completion["usage"]["completion_tokens"]
-#         TOTAL_COST += (num_prompt_tokens / 1000) * OPENAI_CURRENT_COSTS[model_name][
-#             "prompt"
-#         ] + (num_completion_tokens / 1000) * OPENAI_CURRENT_COSTS[model_name][
-#             "completion"
-#         ]
-
-#     return completion
 
 
 def init_task(args: argparse.Namespace):
@@ -147,7 +90,14 @@ def init_task(args: argparse.Namespace):
             num_few_shot_examples=args.num_few_shot_examples,
         )
     elif args.dataset == "colours":
-        rules_file = "./data/colours/colours.csv"
+        if args.split == "miniscan":
+            rules_file = "./data/colours/miniscan/miniscan_original.csv"
+            write_data_dir = "./data/colours/miniscan"
+            split = "miniscan"
+        else:
+            rules_file = "./data/colours/colours.csv"
+            write_data_dir = None
+            split = "simple"
         task = _task(
             rules_file,
             prompt_style=args.prompt_type,
@@ -155,6 +105,8 @@ def init_task(args: argparse.Namespace):
             num_few_shot_examples=args.num_few_shot_examples,
             grammar_induction_loop=args.prompt_in_loop
             and args.prompt_type == "grammar_induction",
+            write_data_dir=write_data_dir,
+            split=split,
         )
     elif args.dataset == "arc":
         task = _task(
@@ -242,7 +194,6 @@ def do_task(
     global results_log
     global proposed_hypotheses
 
-    global TOTAL_COST
     global num_not_skipped
     global total_processed
 
@@ -262,8 +213,6 @@ def do_task(
             # input_prompt, input_completion_num_tokens, input_prompt_num_tokens, *rest = task.get_special_prompt(i, return_grammar_only=get_grammar_only, use_cached=use_cached, no_few_shot_examples=args.no_few_shot_examples)
             (
                 input_prompt,
-                input_completion_num_tokens,
-                input_prompt_num_tokens,
                 *rest,
             ) = task.get_special_prompt(
                 i,
@@ -283,26 +232,28 @@ def do_task(
                 num_not_skipped += 1
                 continue
 
-        # task.process_en_svo()
-        # breakpoint()
-        if len(rest) > 0 and len(rest[0]) > 0:
+        if len(rest) > 0 or (isinstance(rest, list) and len(rest[0]) > 0):
             # ARC/naclo
             task_id = rest[0]
             results_log["task_id"].append(task_id)
-            # TODO - this is a bug
             # add alternate hypotheses and probabilities to the results log if they exist in the task
-            if (
-                hasattr(task, "proposed_hypotheses")
-                and len(task.proposed_hypotheses["hypothesis"]) > 0
-            ):
-                proposed_hypotheses["all_hyps"].extend(
-                    task.proposed_hypotheses["hypothesis"][-1]
-                )
-                proposed_hypotheses["all_probs"].extend(
-                    task.proposed_hypotheses["estimated_prob"][-1]
-                )
+        if (
+            hasattr(task, "proposed_hypotheses")
+            and len(task.proposed_hypotheses["hypothesis"]) > 0
+        ):
+            proposed_hypotheses["all_hyps"].extend(
+                task.proposed_hypotheses["hypothesis"][-1]
+            )
+            proposed_hypotheses["all_probs"].extend(
+                task.proposed_hypotheses["estimated_prob"][-1]
+            )
+            if "task_id" in task.proposed_hypotheses:
                 proposed_hypotheses["task_id"].extend(
-                    [task_id] * len(task.proposed_hypotheses["hypothesis"][-1])
+                    task.proposed_hypotheses["task_id"][-1]
+                )
+            if "for_word" in task.proposed_hypotheses:
+                proposed_hypotheses["for_word"].extend(
+                    task.proposed_hypotheses["for_word"][-1]
                 )
 
         message = [
@@ -377,7 +328,6 @@ def make_finish_task(
         global total_processed
         global results_log
         global proposed_hypotheses
-        global TOTAL_COST
 
         nonlocal args_for_task
         nonlocal output_file_orig
@@ -434,7 +384,7 @@ def make_finish_task(
             hyps_df.to_csv(hyps_file, index=False)
             logging.info("Wrote hypotheses to " + hyps_file)
 
-        logging.info(f"Cost: {TOTAL_COST}")
+        logging.info(f"Cost: {src.globals.TOTAL_COST}")
 
         sys.exit(0)
 
@@ -462,6 +412,10 @@ if __name__ == "__main__":
         if args.output is not None
         else f"./logs/{args.dataset}/{args.dataset}_{args.split}_{args.prompt_type}_{args.model}_minset_{args.use_min_cover}_loop_{args.prompt_in_loop}_temp_{args.temp}_few_shot_examples_{args.no_few_shot_examples}.csv"
     )
+
+    if args.dataset == "colours" and args.split == "miniscan":
+        output_file = output_file.replace("colours", "colours_miniscan")
+        print(output_file)
 
     finish_task = make_finish_task(
         args, output_file, args.return_induced_grammar_only, start_ind

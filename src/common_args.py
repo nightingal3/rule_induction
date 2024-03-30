@@ -29,6 +29,7 @@ def get_common_arguments():
             "debug",
             "AboveBelow",
             "CleanUp",
+            "miniscan",
         ],
     )
     parser.add_argument(
@@ -40,6 +41,7 @@ def get_common_arguments():
             "grammar_induction",
             "rule_selection",
             "vocab_induction",
+            "zs-cot",
         ],
     )
     parser.add_argument("--output", type=str)

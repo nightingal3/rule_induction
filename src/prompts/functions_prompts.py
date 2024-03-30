@@ -12,10 +12,16 @@ base_prompt = {
     "user": """Return the output preceded by 'Output:'\n{few_shot_examples}\nInput: {input}""",
 }
 
+cot_zero_shot_prompt_old = {
+    "system": PROBLEM_SOLVING_SYSPROMPT,
+    "user": """Return the output preceded by 'Output:'\n{few_shot_examples}\nLet's think step by step about what the function could be. Remember to write down 'Output:' before your final answer.\nInput: {input}\n""",
+}
+
 cot_zero_shot_prompt = {
     "system": PROBLEM_SOLVING_SYSPROMPT,
-    "user": """Return the output preceded by 'Output:'\n{few_shot_examples}\nInput: {input}\nLet's think step by step. Remember to write down 'Output:' before your final answer.""",
+    "user": """Return the output preceded by 'Final Output:'\n{few_shot_examples}\nLet's think step by step about what the function could be. Remember to write down 'Final Output:' before your final answer.\nInput: {input}\n""",
 }
+
 
 prompt_with_true_grammar = {
     "system": GRAMMAR_USING_SYSPROMPT,
@@ -80,3 +86,5 @@ prompt_for_rule_selection = {
 
 prompt_for_probability_guess = """How likely is this hypothesis about the function to be true given the data?\n\nExamples: {few_shot_examples}\n\nFunction explanation: {hypothesis}\n\nPlease give a probability between 0 and 1 inclusive, and only answer with a number.\nProbability:"""
 prompt_for_probability_logprobs = """These are examples of applying this function: {hypothesis}:\nExamples:\n{few_shot_examples}"""
+
+zero_shot_cot_addition = """Let's think step by step. Remember to write down 'Output:' before your final answer."""

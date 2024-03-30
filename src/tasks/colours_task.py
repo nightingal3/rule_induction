@@ -11,7 +11,7 @@ import re
 
 from src.prompts.colours_prompts import *
 from src.task import BaseTask
-from src.get_completion import get_completion_openai
+from src.get_completion import get_completion_openai, make_completion_fn_tgi_server
 from src.utils.utils import try_convert_to_float
 from src.utils.parsing_utils import (
     get_example_start_token,
@@ -84,6 +84,8 @@ class ColoursTask(BaseTask):
             "task_id": [],
             "for_word": [],
         }
+
+        self.open_llm_completion_fn = None
 
     def generate_examples(self, data_size=1000) -> Tuple[pd.DataFrame, pd.DataFrame]:
         if os.path.exists(f"{self.write_data_dir}/train_data.csv") and os.path.exists(
@@ -181,7 +183,6 @@ class ColoursTask(BaseTask):
             else:
                 all_examples = self.min_examples["example_parse_few_shot"]
                 if return_as_lst:
-                    breakpoint()
                     return list(all_examples)
                 few_shot_formatted = "\n\n".join(all_examples)
         else:
@@ -213,34 +214,45 @@ class ColoursTask(BaseTask):
                 break
         return list(zip(examples_src, examples_tgt))
 
-    def _validate(self, idx: int, output_text: str) -> bool:
-        output_actions = output_text.split("Output: ")[-1].strip()
-        return output_actions == self.test_data.iloc[idx]["actions"]
-
     def validate(
         self, idx: int, output_text: str, expected_answer: Optional[str] = None
     ):
         if expected_answer is None:
-            answer = self.test_examples[idx]["output"]
+            answer = self.get_answer(idx)
         else:
             answer = expected_answer
 
         # Normalize line breaks and lowercase
         output_text = output_text.replace("\r\n", "\n").lower()
+        if self.prompt_style == "zs-cot":
+            pattern = r"final output: (.*)"
 
-        # Pattern to find "Output:" followed by space-separated words, stopping at newline
-        pattern = r"output:\s*([^\n]+)(?=\n|$)"
-        matches = list(re.finditer(pattern, output_text, re.IGNORECASE | re.DOTALL))
-        valid_output = None
-        for match in matches:
-            # Extract the context for this "Output:"
-            start_pos = match.start()
-            context = output_text[:start_pos]
-            context_lines = context.split("\n")
+            match = re.search(pattern, output_text)
 
-            # Check if the context does not contain "Input:" immediately before this "Output:"
-            if len(context_lines) < 2 or "input:" not in context_lines[-2]:
-                valid_output = match.group(1).strip()
+            if match:
+                valid_output = match.group(1)
+            else:
+                # try looking for just "output: " and then the number
+                pattern = r"output: (.*)"
+                match = re.search(pattern, output_text)
+                if match:
+                    valid_output = match.group(1)
+                else:
+                    return False
+        else:
+            # Pattern to find "Output:" followed by space-separated words, stopping at newline
+            pattern = r"output:\s*([^\n]+)(?=\n|$)"
+            matches = list(re.finditer(pattern, output_text, re.IGNORECASE | re.DOTALL))
+            valid_output = None
+            for match in matches:
+                # Extract the context for this "Output:"
+                start_pos = match.start()
+                context = output_text[:start_pos]
+                context_lines = context.split("\n")
+
+                # Check if the context does not contain "Input:" immediately before this "Output:"
+                if len(context_lines) < 2 or "input:" not in context_lines[-2]:
+                    valid_output = match.group(1).strip()
 
         return valid_output == answer
 
@@ -260,12 +272,13 @@ class ColoursTask(BaseTask):
         rerank_by: str = "p_data_given_hyp_guess",
         induce_one_word_at_a_time: bool = True,
         **kwargs,
-    ) -> Tuple[str, int, int]:
+    ) -> Tuple[str, int]:
         # TODO: implement ground truth reranking!!!
+
         if self.prompt_style == "full_grammar":
-            return self.get_full_grammar_prompt(idx), 0, 0
+            return (self.get_full_grammar_prompt(idx), idx)
         elif self.prompt_style == "zs-cot":
-            return (self.get_zs_cot_prompt(idx), 0, 0)
+            return (self.get_zs_cot_prompt(idx), idx)
         else:
             if self.prompt_style == "grammar_induction":
                 few_shot_examples = self.get_few_shot_examples(
@@ -280,17 +293,13 @@ class ColoursTask(BaseTask):
                         for i, o in few_shot_examples
                     ]
                 )
-
                 if use_cached:
                     induced_grammar = self.cached_induced_grammars[0]["grammar"]
                     usage_completion = 0
                     usage_prompt = 0
                 else:
-                    (
-                        induced_rules,
-                        usage_completion,
-                        usage_prompt,
-                    ) = self.induce_word_by_word(
+
+                    induced_rules = self.induce_word_by_word(
                         idx, self.src_vocab, backend, rerank_by=rerank_by, n_hyps=n_hyps
                     )
                     all_induced_rules = "\n".join(induced_rules.values())
@@ -298,233 +307,11 @@ class ColoursTask(BaseTask):
                         all_induced_rules=all_induced_rules
                     )
 
-                    # grammar_induction_prompt = self.get_grammar_induction_prompt(
-                    #     idx, no_parse=True
-                    # )
-                    # if "gpt" in backend:
-                    #     message = [
-                    #         {"role": "system", "content": GRAMMAR_INDUCTION_SYSPROMPT},
-                    #         {"role": "user", "content": grammar_induction_prompt},
-                    #     ]
-                    #     if not rejection_sampling:
-                    #         completion = self.get_best_grammar(
-                    #             message,
-                    #             backend,
-                    #             n_hyps=n_hyps,
-                    #             rerank_by=rerank_by,
-                    #             few_shot_examples=few_shot_examples,
-                    #         )
-                    #     else:
-                    #         completion = get_completion_openai(
-                    #             message, backend, temp=1.0
-                    #         )
-
-                    #     induced_grammar = completion["choices"][0]["message"]["content"]
-
-                    #     converged = False
-                    #     num_times_changed = 0
-                    #     while (self.grammar_induction_loop and not converged) or (
-                    #         rejection_sampling and not converged
-                    #     ):
-                    #         repeat_prompt = self.get_repeat_prompt(
-                    #             induced_grammar,
-                    #             schedule="target_hard_words",
-                    #             num_examples_to_get=5,
-                    #         )
-                    #         if self.grammar_induction_loop:
-                    #             if num_times_changed == 0:
-                    #                 message = [
-                    #                     {
-                    #                         "role": "system",
-                    #                         "content": GRAMMAR_INDUCTION_SYSPROMPT,
-                    #                     },
-                    #                     {"role": "user", "content": repeat_prompt},
-                    #                 ]
-                    #             else:
-                    #                 new_examples = self.get_repeat_prompt(
-                    #                     induced_grammar,
-                    #                     schedule="target_hard_words",
-                    #                     num_examples_to_get=5,
-                    #                     return_examples_only=True,
-                    #                 )
-                    #                 new_examples_str = "\n\n".join(new_examples)
-                    #                 # if there are too many previous revisions (> 5, truncate to 5)
-                    #                 if len(message) >= 5:
-                    #                     message = message[-4:]
-                    #                     message.insert(
-                    #                         0,
-                    #                         {
-                    #                             "role": "system",
-                    #                             "content": GRAMMAR_INDUCTION_SYSPROMPT,
-                    #                         },
-                    #                     )
-                    #                 message.append(
-                    #                     {
-                    #                         "role": "user",
-                    #                         "content": f"That wasn't quite right. Please observe these new examples and try again.\n\nNew Examples:\n"
-                    #                         + new_examples_str
-                    #                         + f"\nYour previous attempt:\n{induced_grammar}\n\nNew grammar:",
-                    #                     }
-                    #                 )
-
-                    #             completion = get_completion_openai(
-                    #                 message, backend, temp=1
-                    #             )
-                    #             induced_grammar_new = completion["choices"][0][
-                    #                 "message"
-                    #             ]["content"]
-                    #             if "no changes" in induced_grammar_new.lower():
-                    #                 converged = True
-                    #             else:
-                    #                 induced_grammar = induced_grammar_new
-                    #                 num_times_changed += 1
-                    #         elif rejection_sampling:
-                    #             new_examples = self.get_repeat_prompt(
-                    #                 induced_grammar,
-                    #                 schedule="target_hard_words",
-                    #                 num_examples_to_get=5,
-                    #                 return_examples_only=True,
-                    #             )
-                    #             rules_split = induced_grammar.split("\n")
-                    #             rules_dict = defaultdict(str)
-                    #             for rule in rules_split:
-                    #                 if "->" not in rule:
-                    #                     continue
-                    #                 try:
-                    #                     lhs, rhs = rule.split("->")[:2]
-                    #                 except:
-                    #                     print("unparseable rule: ", rule)
-                    #                     continue
-                    #                 lhs = lhs.strip()
-                    #                 rhs = rhs.strip()
-                    #                 # remove numbering such as 1. or 2. or 3.
-                    #                 lhs = lhs.split(". ")[-1]
-                    #                 # remove left/right brackets
-
-                    #                 if lhs not in rules_dict:
-                    #                     rules_dict[lhs] = rhs
-
-                    #             # use string substitution to test the rules. If the rules are incorrect, generate new rules.
-                    #             all_correct = False
-                    #             for example in new_examples:
-                    #                 inp, oup = example.split("\n")
-                    #                 inp = inp.split(": ")[1].strip()
-                    #                 oup = oup.split(": ")[1].strip()
-
-                    #                 inp = inp.split(". ")[-1]
-                    #                 output_try = inp
-
-                    #                 # replace all the lhs with rhs
-                    #                 for lhs, rhs in rules_dict.items():
-                    #                     if "bluf" in lhs or "walm" in lhs:
-                    #                         continue  # repeat rules, do them last
-                    #                     output_try = output_try.replace(lhs, rhs)
-
-                    #                 # repeat rules
-                    #                 bluf_rule = rules_dict["bluf"]
-                    #                 walm_rule = rules_dict["walm"]
-                    #                 keywords_bluf = [
-                    #                     "repeat",
-                    #                     "twice",
-                    #                     "2",
-                    #                     "two",
-                    #                     "double",
-                    #                     "before",
-                    #                 ]
-                    #                 keywords_walm = [
-                    #                     "repeat",
-                    #                     "thrice",
-                    #                     "3",
-                    #                     "three",
-                    #                     "triple",
-                    #                     "before",
-                    #                 ]
-                    #                 # if none of the keywords are present, it's probably wrong
-                    #                 if not any(
-                    #                     [
-                    #                         keyword in bluf_rule
-                    #                         for keyword in keywords_bluf
-                    #                     ]
-                    #                 ) or not any(
-                    #                     [
-                    #                         keyword in walm_rule
-                    #                         for keyword in keywords_walm
-                    #                     ]
-                    #                 ):
-                    #                     all_correct = False
-                    #                     break
-
-                    #                 # TODO: we can replace them but it's probably correct if it has the keywords
-                    #                 split_output = output_try.split(" ")
-                    #                 output_try_new = []
-                    #                 # repeat the previous thing once more, or twice more
-                    #                 for i, word in enumerate(split_output):
-                    #                     if word != "bluf" and word != "walm":
-                    #                         new_input.append(word)
-                    #                     if word == "bluf":
-                    #                         translated_word = rules_dict[
-                    #                             split_output[i - 1]
-                    #                         ]
-                    #                         new_input.append(translated_word)
-                    #                     elif word == "walm":
-                    #                         translated_word = rules_dict[
-                    #                             split_output[i - 1]
-                    #                         ]
-                    #                         new_input.append(translated_word)
-                    #                         new_input.append(translated_word)
-
-                    #                 if output_try != oup:
-                    #                     all_correct = False
-                    #                     break
-
-                    #                 print("output try: ", output_try)
-                    #                 print("correct output: ", oup)
-
-                    #             if all_correct:
-                    #                 converged = True
-                    #                 break
-
-                    #             # failed
-                    #             print("TIMES CHANGED: ", num_times_changed)
-                    #             print("Grammar: ", induced_grammar)
-                    #             new_examples_str = "\n\n".join(new_examples)
-                    #             message.append(
-                    #                 {
-                    #                     "role": "user",
-                    #                     "content": f"That wasn't quite right. Please observe these new examples and try again.\n\nNew Examples:\n"
-                    #                     + new_examples_str
-                    #                     + f"\nYour previous attempt:\n{induced_grammar}\n\nNew grammar:",
-                    #                 }
-                    #             )
-                    #             completion = get_completion_openai(
-                    #                 message, backend, temp=1.0
-                    #             )
-                    #             induced_grammar = completion["choices"][0]["message"][
-                    #                 "content"
-                    #             ]
-                    #             num_times_changed += 1
-
-                    #     print("TIMES CHANGED: ", num_times_changed)
-                    #     print(induced_grammar)
-                    #     usage_completion = completion["usage"]["completion_tokens"]
-                    #     usage_prompt = completion["usage"]["prompt_tokens"]
-
-                    # else:  # alpaca or llama
-                    #     raise NotImplementedError
-
-                    # if return_grammar_only:
-                    # return (
-                    # induced_grammar,
-                    # usage_completion,
-                    # usage_prompt,
-                    # num_times_changed,
-                    # )
-
                 prompt_with_induced_grammar = self.prompt_with_induced_grammar_wrap(
                     induced_grammar, few_shot_examples_str, self.get_input(idx)
                 )
 
-                return prompt_with_induced_grammar, usage_completion, usage_prompt
+                return (prompt_with_induced_grammar, idx)
             elif self.prompt_style == "rule_selection":
                 rule_selection_prompt = self.get_rule_selection_prompt(idx)
                 message = [
@@ -536,11 +323,7 @@ class ColoursTask(BaseTask):
                 prompt_with_relevant_rules = self.prompt_with_relevant_rules_wrap(
                     rules, self.get_input(idx)
                 )
-                return (
-                    prompt_with_relevant_rules,
-                    completion["usage"]["completion_tokens"],
-                    completion["usage"]["prompt_tokens"],
-                )
+                return (prompt_with_relevant_rules, idx)
 
     def induce_word_by_word(
         self,
@@ -551,8 +334,6 @@ class ColoursTask(BaseTask):
         rerank_by: str = "p_data_given_hyp_guess",
     ) -> Tuple[str, float, float]:
         rule_set = {}
-        usage_completion_all = 0
-        usage_prompt_all = 0
         interim_hypotheses = {
             "hypothesis": [],
             "estimated_prob": [],
@@ -568,53 +349,83 @@ class ColoursTask(BaseTask):
                     for i, o in few_shot_examples
                 ]
             )
+
             word_induction_prompt = prompt_for_grammar_induction_one_word.format(
                 word=word, few_shot_examples=few_shot_examples_str
             )
 
-            message = [
-                {"role": "system", "content": GRAMMAR_INDUCTION_SYSPROMPT},
-                {"role": "user", "content": word_induction_prompt},
-            ]
-            completion, usage_completion, usage_prompt = self.get_best_grammar(
-                word,
-                message,
-                backend,
-                n_hyps,
-                rerank_by,
-                few_shot_examples,
-                return_hyps_ranked=True,
-            )
-            if isinstance(completion, list):
-                alternate_completions = [
-                    c[0]["choices"][0]["message"]["content"] for c in completion
+            if "gpt" in backend:
+                message = [
+                    {"role": "system", "content": GRAMMAR_INDUCTION_SYSPROMPT},
+                    {"role": "user", "content": word_induction_prompt},
                 ]
-                alternate_probs = [c[1] for c in completion]
-                completion = completion[0][0]
-
-                interim_hypotheses["hypothesis"].append(alternate_completions)
-                interim_hypotheses["estimated_prob"].append(alternate_probs)
-                interim_hypotheses["rank"].append(
-                    list(range(len(alternate_completions)))
+                completion = self.get_best_grammar(
+                    word,
+                    message,
+                    backend,
+                    n_hyps,
+                    rerank_by,
+                    few_shot_examples,
+                    return_hyps_ranked=True,
                 )
-                interim_hypotheses["task_id"].append([idx] * len(alternate_completions))
-                interim_hypotheses["for_word"].append(
-                    [word] * len(alternate_completions)
+                if isinstance(completion, list):
+                    alternate_completions = [
+                        c[0]["choices"][0]["message"]["content"] for c in completion
+                    ]
+                    alternate_probs = [c[1] for c in completion]
+                    completion = completion[0][0]
+
+                    interim_hypotheses["hypothesis"].append(alternate_completions)
+                    interim_hypotheses["estimated_prob"].append(alternate_probs)
+                    interim_hypotheses["rank"].append(
+                        list(range(len(alternate_completions)))
+                    )
+                    interim_hypotheses["task_id"].append(
+                        [idx] * len(alternate_completions)
+                    )
+                    interim_hypotheses["for_word"].append(
+                        [word] * len(alternate_completions)
+                    )
+
+                induced_rule = completion["choices"][0]["message"]["content"]
+            else:
+                message = word_induction_prompt
+                completion = self.get_best_grammar(
+                    word,
+                    message,
+                    backend,
+                    n_hyps,
+                    rerank_by,
+                    few_shot_examples,
+                    return_hyps_ranked=True,
                 )
 
-            usage_completion_all += usage_completion
-            usage_prompt_all += usage_prompt
+                if isinstance(completion, list):
+                    alternate_completions = [c[0] for c in completion]
+                    alternate_probs = [c[1] for c in completion]
+                    completion = completion[0][0]
 
-            induced_rule = completion["choices"][0]["message"]["content"]
+                    interim_hypotheses["hypothesis"].append(alternate_completions)
+                    interim_hypotheses["estimated_prob"].append(alternate_probs)
+                    interim_hypotheses["rank"].append(
+                        list(range(len(alternate_completions)))
+                    )
+                    interim_hypotheses["task_id"].append(
+                        [idx] * len(alternate_completions)
+                    )
+                    interim_hypotheses["for_word"].append(
+                        [word] * len(alternate_completions)
+                    )
+                induced_rule = completion
+
             rule_set[word] = induced_rule
 
         # save all the interim hypotheses
         for key, value in interim_hypotheses.items():
-            # breakpoint()
             interim_hypotheses[key] = [item for sublist in value for item in sublist]
             self.proposed_hypotheses[key].append(interim_hypotheses[key])
 
-        return rule_set, usage_completion_all, usage_prompt_all
+        return rule_set
 
     def get_best_grammar(
         self,
@@ -631,8 +442,8 @@ class ColoursTask(BaseTask):
         few_shot_examples: list,
         return_hyps_ranked: bool = True,
     ):
-        usage_completion = 0
-        usage_prompt = 0
+        if "gpt" not in backend and self.open_llm_completion_fn is None:
+            self.open_llm_completion_fn = make_completion_fn_tgi_server(backend)
 
         few_shot_examples_str = "\n".join(
             [
@@ -642,73 +453,78 @@ class ColoursTask(BaseTask):
         )
         assert n_hyps > 0, "n_hyps must be positive"
         if n_hyps == 1:
-            # generate one hyp with temp = 0
-            completion = get_completion_openai(message, backend, temp=1.0)
-            usage_prompt = completion["usage"]["prompt_tokens"]
-            usage_completion = completion["usage"]["completion_tokens"]
+            # generate one hyp with temp = 1
+            if "gpt" in backend:
+                completion = get_completion_openai(message, backend, temp=1.0)
+            else:
+                completion = self.open_llm_completion_fn(message, temp=1.0)
 
-            return (completion, usage_completion, usage_prompt)
+            return completion
         else:
             # default temp 1.0 for different options
             # use turbo models' backends to get logprobs
-            prob_model_names = {
-                "gpt-4-0314": "gpt-4-1106-preview",
-                "gpt-3.5-turbo-0613": "gpt-3.5-turbo-0613",
-            }
-            prob_model_name = prob_model_names[backend]
-            completions = [
-                get_completion_openai(message, prob_model_name, temp=1.0)
-                for _ in range(n_hyps)
-            ]
-            usage_prompt += sum(
-                [completion["usage"]["prompt_tokens"] for completion in completions]
-            )
-            usage_completion += sum(
-                [completion["usage"]["completion_tokens"] for completion in completions]
-            )
+            if "gpt" in backend:
+                prob_model_names = {
+                    "gpt-4-0314": "gpt-4-1106-preview",
+                    "gpt-4-1106-preview": "gpt-4-1106-preview",
+                    "gpt-3.5-turbo-0613": "gpt-3.5-turbo-0613",
+                }
+                prob_model_name = prob_model_names[backend]
+                completions = [
+                    get_completion_openai(message, prob_model_name, temp=1.0)
+                    for _ in range(n_hyps)
+                ]
+            else:
+                completions = [
+                    self.open_llm_completion_fn(message, temp=1.0)
+                    for _ in range(n_hyps)
+                ]
 
             if rerank_by == "p_data_given_hyp_guess":
-                estimate_p_data_prompts = [
-                    prompt_for_probability_guess.format(
-                        word=word,
-                        few_shot_examples=few_shot_examples_str,
-                        hypothesis=completion["choices"][0]["message"]["content"],
-                    )
-                    for completion in completions
-                ]
-                p_data_given_hyp_guesses = [
-                    get_completion_openai(
-                        [
-                            {
-                                "role": "system",
-                                "content": "You are a probability estimating system. Your job is to judge how probable data is given an explanation, and answer only with a number from 0 to 1 inclusive.",
-                            },
-                            {"role": "user", "content": prompt},
-                        ],
-                        backend,
-                        temp=0.0,
-                        logprobs=True,
-                    )
-                    for prompt in estimate_p_data_prompts
-                ]
-
-                usage_completion += sum(
-                    [
-                        completion["usage"]["completion_tokens"]
-                        for completion in p_data_given_hyp_guesses
+                if "gpt" in backend:
+                    estimate_p_data_prompts = [
+                        prompt_for_probability_guess.format(
+                            word=word,
+                            few_shot_examples=few_shot_examples_str,
+                            hypothesis=completion["choices"][0]["message"]["content"],
+                        )
+                        for completion in completions
                     ]
-                )
-                usage_prompt += sum(
-                    [
-                        completion["usage"]["prompt_tokens"]
-                        for completion in p_data_given_hyp_guesses
-                    ]
-                )
 
-                p_data_given_hyp_guesses = [
-                    x["choices"][0]["message"]["content"]
-                    for x in p_data_given_hyp_guesses
-                ]
+                    p_data_given_hyp_guesses = [
+                        get_completion_openai(
+                            [
+                                {
+                                    "role": "system",
+                                    "content": "You are a probability estimating system. Your job is to judge how probable data is given an explanation, and answer only with a number from 0 to 1 inclusive.",
+                                },
+                                {"role": "user", "content": prompt},
+                            ],
+                            backend,
+                            temp=0.0,
+                            logprobs=True,
+                        )
+                        for prompt in estimate_p_data_prompts
+                    ]
+
+                    p_data_given_hyp_guesses = [
+                        x["choices"][0]["message"]["content"]
+                        for x in p_data_given_hyp_guesses
+                    ]
+                else:
+                    estimate_p_data_prompts = [
+                        prompt_for_probability_guess.format(
+                            word=word,
+                            few_shot_examples=few_shot_examples_str,
+                            hypothesis=completion,
+                        )
+                        for completion in completions
+                    ]
+
+                    p_data_given_hyp_guesses = [
+                        self.open_llm_completion_fn(prompt)
+                        for prompt in estimate_p_data_prompts
+                    ]
 
                 p_data_given_hyp_guesses = [
                     try_convert_to_float(guess) for guess in p_data_given_hyp_guesses
@@ -726,23 +542,25 @@ class ColoursTask(BaseTask):
             elif rerank_by == "p_data_given_hyp_logprobs":
                 # logprobs - from turbo models
                 # oracle condition -> best possible function description in N generated hypotheses
-                estimate_p_data_prompts = [
-                    prompt_for_probability_logprobs.format(
-                        word=word,
-                        few_shot_examples=few_shot_examples_str,
-                        hypothesis=completion["choices"][0]["message"]["content"],
-                    )
-                    for completion in completions
-                ]
-                usage_completion += sum(
-                    [
-                        completion["usage"]["completion_tokens"]
+
+                if "gpt" in backend:
+                    estimate_p_data_prompts = [
+                        prompt_for_probability_logprobs.format(
+                            word=word,
+                            few_shot_examples=few_shot_examples_str,
+                            hypothesis=completion["choices"][0]["message"]["content"],
+                        )
                         for completion in completions
                     ]
-                )
-                usage_prompt += sum(
-                    [completion["usage"]["prompt_tokens"] for completion in completions]
-                )
+                else:
+                    estimate_p_data_prompts = [
+                        prompt_for_probability_logprobs.format(
+                            word=word,
+                            few_shot_examples=few_shot_examples_str,
+                            hypothesis=completion,
+                        )
+                        for completion in completions
+                    ]
 
                 logprobs_estimations = [
                     get_completion_openai(
@@ -786,23 +604,25 @@ class ColoursTask(BaseTask):
                     )
                 ]
             elif rerank_by == "p_answer_given_hyp_logprobs":
-                estimate_p_data_prompts = [
-                    prompt_for_probability_logprobs.format(
-                        word=word,
-                        few_shot_examples=few_shot_examples_str,
-                        hypothesis=completion["choices"][0]["message"]["content"],
-                    )
-                    for completion in completions
-                ]
-                usage_completion += sum(
-                    [
-                        completion["usage"]["completion_tokens"]
+                if "gpt" in backend:
+                    estimate_p_data_prompts = [
+                        prompt_for_probability_logprobs.format(
+                            word=word,
+                            few_shot_examples=few_shot_examples_str,
+                            hypothesis=completion["choices"][0]["message"]["content"],
+                        )
                         for completion in completions
                     ]
-                )
-                usage_prompt += sum(
-                    [completion["usage"]["prompt_tokens"] for completion in completions]
-                )
+                else:
+                    estimate_p_data_prompts = [
+                        prompt_for_probability_logprobs.format(
+                            word=word,
+                            few_shot_examples=few_shot_examples_str,
+                            hypothesis=completion,
+                        )
+                        for completion in completions
+                    ]
+
                 logprobs_estimations = [
                     get_completion_openai(
                         prompt, "davinci-002", temp=0.0, logprobs=True, max_tokens=0
@@ -852,12 +672,17 @@ class ColoursTask(BaseTask):
                     )
                 ]
             elif rerank_by == "ground_truth":
-                parsed_equations = [
-                    parse_production_rule(
-                        completion["choices"][0]["message"]["content"]
-                    )
-                    for completion in completions
-                ]
+                if "gpt" in backend:
+                    parsed_equations = [
+                        parse_production_rule(
+                            completion["choices"][0]["message"]["content"]
+                        )
+                        for completion in completions
+                    ]
+                else:
+                    parsed_equations = [
+                        parse_production_rule(completion) for completion in completions
+                    ]
 
                 # TODO: this will NOT work with more complex production rules
                 # with repeats, contextual rules etc. Need to prompt the model more carefully
@@ -879,9 +704,9 @@ class ColoursTask(BaseTask):
                 ]
 
             if return_hyps_ranked:
-                return completions, usage_completion, usage_prompt
+                return completions
 
-            return completions[0][0], usage_completion, usage_prompt
+            return completions[0][0]
 
     def get_zs_cot_prompt(self, idx: int) -> str:
         few_shot_examples = self.get_few_shot_examples(
