@@ -1,0 +1,1 @@
+python3 src/prompt_open_llms.py --use_min_cover --start_ind 900 --end_ind 1000 --prompt_type base --model gpt-4 --dataset scan

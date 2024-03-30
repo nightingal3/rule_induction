@@ -1,0 +1,10 @@
+python3 src/prompt_open_llms.py --use_min_cover --start_ind 0 --end_ind 100 --prompt_type grammar_induction --model gpt-4 --dataset scan
+python3 src/prompt_open_llms.py --use_min_cover --start_ind 100 --end_ind 200 --prompt_type grammar_induction --model gpt-4 --dataset scan
+python3 src/prompt_open_llms.py --use_min_cover --start_ind 200 --end_ind 300 --prompt_type grammar_induction --model gpt-4 --dataset scan
+python3 src/prompt_open_llms.py --use_min_cover --start_ind 300 --end_ind 400 --prompt_type grammar_induction --model gpt-4 --dataset scan
+python3 src/prompt_open_llms.py --use_min_cover --start_ind 400 --end_ind 500 --prompt_type grammar_induction --model gpt-4 --dataset scan
+python3 src/prompt_open_llms.py --use_min_cover --start_ind 500 --end_ind 600 --prompt_type grammar_induction --model gpt-4 --dataset scan
+python3 src/prompt_open_llms.py --use_min_cover --start_ind 600 --end_ind 700 --prompt_type grammar_induction --model gpt-4 --dataset scan
+python3 src/prompt_open_llms.py --use_min_cover --start_ind 700 --end_ind 800 --prompt_type grammar_induction --model gpt-4 --dataset scan
+python3 src/prompt_open_llms.py --use_min_cover --start_ind 800 --end_ind 900 --prompt_type grammar_induction --model gpt-4 --dataset scan
+python3 src/prompt_open_llms.py --use_min_cover --start_ind 900 --end_ind 1000 --prompt_type grammar_induction --model gpt-4 --dataset scan

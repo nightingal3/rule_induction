@@ -1,0 +1,8 @@
+python3 src/prompt_openai.py --prompt_type grammar_induction --model gpt-4-turbo --dataset colours --rerank_by ground_truth
+python3 src/prompt_openai.py --prompt_type grammar_induction --model gpt-4-turbo --dataset colours --rerank_by ground_truth
+python3 src/prompt_openai.py --prompt_type grammar_induction --model gpt-4-turbo --dataset colours --rerank_by ground_truth
+python3 src/prompt_openai.py --prompt_type grammar_induction --model gpt-4-turbo --dataset colours --rerank_by ground_truth
+python3 src/prompt_openai.py --temp 0.0 --prompt_type grammar_induction --model gpt-4-turbo --dataset functions --rerank_by ground_truth
+python3 src/prompt_openai.py --temp 1.0 --prompt_type grammar_induction --model gpt-4-turbo --dataset functions --rerank_by ground_truth
+python3 src/prompt_openai.py --temp 0.0 --prompt_type grammar_induction --model gpt-4-turbo --dataset colours --rerank_by ground_truth
+python3 src/prompt_openai.py --temp 1.0 --prompt_type grammar_induction --model gpt-4-turbo --dataset colours --rerank_by ground_truth
