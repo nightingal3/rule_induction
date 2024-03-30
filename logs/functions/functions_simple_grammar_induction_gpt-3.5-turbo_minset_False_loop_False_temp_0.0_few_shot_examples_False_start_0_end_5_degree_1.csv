@@ -1,0 +1,241 @@
+inputs,outputs,answer,correct,task_id
+"Use this function to apply to the input example to get the correct output.
+
+    To find the relationship between the inputs and outputs, we can use the method of least squares to fit a linear equation to the given data points. The linear equation can be written in the form y = ax^0 + bx^1, where x^0 represents the constant term and x^1 represents the coefficient of x.
+
+Using the given data points, we can set up a system of equations:
+
+(-19, -393): -393 = a(1) + b(-19)
+(-3, -73): -73 = a(1) + b(-3)
+(-5, -113): -113 = a(1) + b(-5)
+(-6, -133): -133 = a(1) + b(-6)
+(-12, -253): -253 = a(1) + b(-12)
+
+Simplifying these equations, we get:
+
+-393 = a - 19b
+-73 = a - 3b
+-113 = a - 5b
+-133 = a - 6b
+-253 = a - 12b
+
+We can solve this system of equations to find the values of a and b.
+
+Using a calculator or a system of equations solver, we find that a = -20 and b = 11.
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+
+Output: y = -20x^0 + 11x^1
+
+    However, just write the output like what's shown in these examples.
+    Input: -19
+Output: -393
+
+Input: -3
+Output: -73
+
+Input: -5
+Output: -113
+
+Input: -6
+Output: -133
+
+Input: -12
+Output: -253
+
+
+    Return the output preceded by 'Output:'
+    Input: -14
+    ",Output: -293,-293,True,"[20, -13]"
+"Use this function to apply to the input example to get the correct output.
+
+    To find the relationship between the inputs and outputs, we can use the method of least squares to fit a linear equation to the given data points. The linear equation can be written in the form y = ax^0 + bx^1, where x^0 represents the constant term and x^1 represents the linear term.
+
+Using the given data points, we can set up a system of equations:
+
+-393 = a(-19)^0 + b(-19)^1
+-73 = a(-3)^0 + b(-3)^1
+-113 = a(-5)^0 + b(-5)^1
+-133 = a(-6)^0 + b(-6)^1
+-253 = a(-12)^0 + b(-12)^1
+
+Simplifying these equations, we get:
+
+-393 = a - 19b
+-73 = a - 3b
+-113 = a - 5b
+-133 = a - 6b
+-253 = a - 12b
+
+We can solve this system of equations to find the values of a and b.
+
+Using a calculator or a system of equations solver, we find that a = -10 and b = 21.
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+
+Output: y = -10x^0 + 21x^1
+
+    However, just write the output like what's shown in these examples.
+    Input: -19
+Output: -393
+
+Input: -3
+Output: -73
+
+Input: -5
+Output: -113
+
+Input: -6
+Output: -133
+
+Input: -12
+Output: -253
+
+
+    Return the output preceded by 'Output:'
+    Input: 14
+    ",Output: 287,267,False,"[20, -13]"
+"Use this function to apply to the input example to get the correct output.
+
+    To find the relationship between the inputs and outputs, we can use the method of least squares to fit a linear equation to the given data points. The linear equation can be written in the form y = ax^0 + bx^1, where x^0 represents the constant term and x^1 represents the coefficient of x.
+
+Using the given data points, we can set up a system of equations:
+
+(-19, -393): -393 = a(1) + b(-19)
+(-3, -73): -73 = a(1) + b(-3)
+(-5, -113): -113 = a(1) + b(-5)
+(-6, -133): -133 = a(1) + b(-6)
+(-12, -253): -253 = a(1) + b(-12)
+
+Simplifying these equations, we get:
+
+-393 = a - 19b
+-73 = a - 3b
+-113 = a - 5b
+-133 = a - 6b
+-253 = a - 12b
+
+We can solve this system of equations to find the values of a and b.
+
+Using a calculator or a system of equations solver, we find that a = -20 and b = 11.
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+
+Output: y = -20x^0 + 11x^1
+
+    However, just write the output like what's shown in these examples.
+    Input: -19
+Output: -393
+
+Input: -3
+Output: -73
+
+Input: -5
+Output: -113
+
+Input: -6
+Output: -133
+
+Input: -12
+Output: -253
+
+
+    Return the output preceded by 'Output:'
+    Input: -15
+    ",Output: -293,-313,False,"[20, -13]"
+"Use this function to apply to the input example to get the correct output.
+
+    To find the relationship between the inputs and outputs, we can use the method of least squares to fit a linear equation to the given data points. The linear equation can be written in the form y = ax^0 + bx^1, where x^0 represents the constant term and x^1 represents the coefficient of x.
+
+Using the given data points, we can set up a system of equations:
+
+(-19, -393): -393 = a(1) + b(-19)
+(-3, -73): -73 = a(1) + b(-3)
+(-5, -113): -113 = a(1) + b(-5)
+(-6, -133): -133 = a(1) + b(-6)
+(-12, -253): -253 = a(1) + b(-12)
+
+Simplifying these equations, we get:
+
+-393 = a - 19b
+-73 = a - 3b
+-113 = a - 5b
+-133 = a - 6b
+-253 = a - 12b
+
+We can solve this system of equations to find the values of a and b.
+
+Using a calculator or a system of equations solver, we find that a = -20 and b = 11.
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+
+Output: y = -20x^0 + 11x^1
+
+    However, just write the output like what's shown in these examples.
+    Input: -19
+Output: -393
+
+Input: -3
+Output: -73
+
+Input: -5
+Output: -113
+
+Input: -6
+Output: -133
+
+Input: -12
+Output: -253
+
+
+    Return the output preceded by 'Output:'
+    Input: 17
+    ",Output: 187,327,False,"[20, -13]"
+"Use this function to apply to the input example to get the correct output.
+
+    To find the relationship between the inputs and outputs, we can use the method of least squares to fit a linear equation to the given data points. The linear equation can be written in the form y = ax^0 + bx^1, where x^0 represents the constant term and x^1 represents the linear term.
+
+Using the given data points, we can set up a system of equations:
+
+-393 = a(-19)^0 + b(-19)^1
+-73 = a(-3)^0 + b(-3)^1
+-113 = a(-5)^0 + b(-5)^1
+-133 = a(-6)^0 + b(-6)^1
+-253 = a(-12)^0 + b(-12)^1
+
+Simplifying these equations, we get:
+
+-393 = a - 19b
+-73 = a - 3b
+-113 = a - 5b
+-133 = a - 6b
+-253 = a - 12b
+
+We can solve this system of equations to find the values of a and b.
+
+Using a calculator or a system of equations solver, we find that a = -10 and b = 21.
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+
+Output: y = -10x^0 + 21x^1
+
+    However, just write the output like what's shown in these examples.
+    Input: -19
+Output: -393
+
+Input: -3
+Output: -73
+
+Input: -5
+Output: -113
+
+Input: -6
+Output: -133
+
+Input: -12
+Output: -253
+
+
+    Return the output preceded by 'Output:'
+    Input: 7
+    ",Output: 151,127,False,"[20, -13]"

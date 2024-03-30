@@ -1,0 +1,2291 @@
+inputs,outputs,answer,correct
+"Use this function to apply to the input example to get the correct output.
+
+    To find the relationship between the inputs and outputs, we can use the method of least squares to fit a linear equation to the given data points. The linear equation can be written in the form y = ax^0 + bx^1, where x^0 represents the constant term and x^1 represents the coefficient of x.
+
+Using the given data points, we can set up a system of equations:
+
+1907 = a(96)^0 + b(96)^1
+67 = a(4)^0 + b(4)^1
+927 = a(47)^0 + b(47)^1
+-1653 = a(-82)^0 + b(-82)^1
+-1373 = a(-68)^0 + b(-68)^1
+
+Simplifying the equations, we get:
+
+1907 = a + 96b
+67 = a + 4b
+927 = a + 47b
+-1653 = a - 82b
+-1373 = a - 68b
+
+We can solve this system of equations to find the values of a and b.
+
+Using a calculator or a system of equations solver, we find that a = 23 and b = 19.
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+
+y = 23x^0 + 19x^1
+
+Simplifying further, we get:
+
+y = 23 + 19x
+
+    However, just write the output like what's shown in these examples.
+    [(64, -1219), (-82, 1555), (15, -288), (19, -364), (74, -1409)]
+
+    Return the output preceded by 'Output:'
+    Input: -19
+    ",Output: -364,-393,False
+"Use this function to apply to the input example to get the correct output.
+
+    To find the relationship between the inputs and outputs, we need to find the values of a and b in the equation y = ax^0 + bx^1.
+
+Let's substitute the given inputs and outputs into the equation:
+
+For the first pair (64, -1219):
+-1219 = a(64^0) + b(64^1)
+-1219 = a + 64b
+
+For the second pair (-82, 1555):
+1555 = a(-82^0) + b(-82^1)
+1555 = a - 82b
+
+For the third pair (15, -288):
+-288 = a(15^0) + b(15^1)
+-288 = a + 15b
+
+For the fourth pair (19, -364):
+-364 = a(19^0) + b(19^1)
+-364 = a + 19b
+
+For the fifth pair (74, -1409):
+-1409 = a(74^0) + b(74^1)
+-1409 = a + 74b
+
+We now have a system of equations:
+
+-1219 = a + 64b
+1555 = a - 82b
+-288 = a + 15b
+-364 = a + 19b
+-1409 = a + 74b
+
+Solving this system of equations will give us the values of a and b, which will define the function.
+
+Using a calculator or a system of equations solver, we find that a = -5 and b = -15.
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+
+y = -5x^0 - 15x^1
+
+Simplifying, we get:
+
+y = -5 - 15x
+
+    However, just write the output like what's shown in these examples.
+    [(-12, 54), (-68, 334), (99, -501), (41, -211), (63, -321)]
+
+    Return the output preceded by 'Output:'
+    Input: 32
+    ",Output: -635,-611,False
+"Use this function to apply to the input example to get the correct output.
+
+    To find the relationship between the inputs and outputs, we need to find the values of a and b in the equation y = ax^0 + bx^1.
+
+Let's substitute the given inputs and outputs into the equation:
+
+For the first pair (-12, 54):
+54 = a(-12)^0 + b(-12)^1
+54 = a + (-12)b
+
+For the second pair (-68, 334):
+334 = a(-68)^0 + b(-68)^1
+334 = a + (-68)b
+
+For the third pair (99, -501):
+-501 = a(99)^0 + b(99)^1
+-501 = a + 99b
+
+For the fourth pair (41, -211):
+-211 = a(41)^0 + b(41)^1
+-211 = a + 41b
+
+For the fifth pair (63, -321):
+-321 = a(63)^0 + b(63)^1
+-321 = a + 63b
+
+We now have a system of equations:
+
+a + (-12)b = 54
+a + (-68)b = 334
+a + 99b = -501
+a + 41b = -211
+a + 63b = -321
+
+Solving this system of equations will give us the values of a and b, which will define the relationship between the inputs and outputs.
+
+    However, just write the output like what's shown in these examples.
+    [(-54, 634), (96, -1166), (-67, 790), (10, -134), (28, -350)]
+
+    Return the output preceded by 'Output:'
+    Input: 50
+    ","Output: (-54, 634)",-256,False
+"Use this function to apply to the input example to get the correct output.
+
+    y = 634x^0 - 1166x^1 + 790x^0 - 134x^1 - 350x^1
+
+    However, just write the output like what's shown in these examples.
+    [(-69, -981), (32, 433), (-61, -869), (-23, -337), (-58, -827)]
+
+    Return the output preceded by 'Output:'
+    Input: -86
+    ","Output: (-86, 1220)",1018,False
+"Use this function to apply to the input example to get the correct output.
+
+    y = -981x^0 + 433x^1
+
+    However, just write the output like what's shown in these examples.
+    [(-18, -299), (81, 1384), (-43, -724), (-12, -197), (32, 551)]
+
+    Return the output preceded by 'Output:'
+    Input: -59
+    ",Output: -981,-841,False
+"Use this function to apply to the input example to get the correct output.
+
+    To find the relationship between the inputs and outputs, we can use the given points to solve for the coefficients a and b in the equation y = ax^0 + bx^1.
+
+Using the first point (-18, -299):
+-299 = a(-18)^0 + b(-18)^1
+-299 = a + (-18)b
+
+Using the second point (81, 1384):
+1384 = a(81)^0 + b(81)^1
+1384 = a + 81b
+
+Using the third point (-43, -724):
+-724 = a(-43)^0 + b(-43)^1
+-724 = a + (-43)b
+
+Using the fourth point (-12, -197):
+-197 = a(-12)^0 + b(-12)^1
+-197 = a + (-12)b
+
+Using the fifth point (32, 551):
+551 = a(32)^0 + b(32)^1
+551 = a + 32b
+
+Now we have a system of equations:
+
+a + (-18)b = -299
+a + 81b = 1384
+a + (-43)b = -724
+a + (-12)b = -197
+a + 32b = 551
+
+Solving this system of equations will give us the values of a and b, which we can then use to write the function in the form y = ax^0 + bx^1.
+
+    However, just write the output like what's shown in these examples.
+    [(-80, 1421), (-36, 629), (-50, 881), (62, -1135), (41, -757)]
+
+    Return the output preceded by 'Output:'
+    Input: -28
+    ",Output: 1007,-469,False
+"Use this function to apply to the input example to get the correct output.
+
+    y = 1421 + 629x
+
+    However, just write the output like what's shown in these examples.
+    [(-68, 1013), (60, -907), (-23, 338), (57, -862), (36, -547)]
+
+    Return the output preceded by 'Output:'
+    Input: -30
+    ",Output: 1421 + 629(-30) = -18549,521,False
+"Use this function to apply to the input example to get the correct output.
+
+    y = 1013x^0 - 907x^1
+
+    However, just write the output like what's shown in these examples.
+    [(28, -156), (64, -372), (-57, 354), (51, -294), (48, -276)]
+
+    Return the output preceded by 'Output:'
+    Input: -77
+    ",Output: 1013(-77)^0 - 907(-77)^1 = 1013 - 907(-77) = 1013 + 69739 = 70752,1148,False
+"Use this function to apply to the input example to get the correct output.
+
+    To find the relationship between the inputs and outputs, we can use the given data points to solve for the coefficients a and b in the equation y = ax^0 + bx^1.
+
+Using the first data point (28, -156), we can substitute the values into the equation:
+-156 = a(28^0) + b(28^1)
+-156 = a + 28b
+
+Using the second data point (64, -372):
+-372 = a(64^0) + b(64^1)
+-372 = a + 64b
+
+Using the third data point (-57, 354):
+354 = a(-57^0) + b(-57^1)
+354 = a - 57b
+
+Using the fourth data point (51, -294):
+-294 = a(51^0) + b(51^1)
+-294 = a + 51b
+
+Using the fifth data point (48, -276):
+-276 = a(48^0) + b(48^1)
+-276 = a + 48b
+
+We now have a system of equations:
+-156 = a + 28b
+-372 = a + 64b
+354 = a - 57b
+-294 = a + 51b
+-276 = a + 48b
+
+Solving this system of equations, we find that a = -6 and b = -5.
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+y = -6x^0 - 5x^1
+
+    However, just write the output like what's shown in these examples.
+    [(-57, -1045), (68, 1205), (59, 1043), (84, 1493), (54, 953)]
+
+    Return the output preceded by 'Output:'
+    Input: -61
+    ",Output: -1115,378,False
+"Use this function to apply to the input example to get the correct output.
+
+    y = -1045 + (-57)x + 1205 + 68x + 1043 + 59x + 1493 + 84x + 953 + 54x
+
+    However, just write the output like what's shown in these examples.
+    [(44, 652), (-90, -1358), (-93, -1403), (-80, -1208), (-89, -1343)]
+
+    Return the output preceded by 'Output:'
+    Input: -14
+    ","Output: (44, 652)",-271,False
+"Use this function to apply to the input example to get the correct output.
+
+    To find the relationship between the inputs and outputs, we can use the method of least squares to fit a linear equation of the form y = ax^0 + bx^1 to the given data points.
+
+Using the given data points [(44, 652), (-90, -1358), (-93, -1403), (-80, -1208), (-89, -1343)], we can set up a system of equations:
+
+652 = a(44^0) + b(44^1)
+-1358 = a(-90^0) + b(-90^1)
+-1403 = a(-93^0) + b(-93^1)
+-1208 = a(-80^0) + b(-80^1)
+-1343 = a(-89^0) + b(-89^1)
+
+Simplifying the equations, we get:
+
+652 = a + 44b
+-1358 = a - 90b
+-1403 = a - 93b
+-1208 = a - 80b
+-1343 = a - 89b
+
+Rearranging the equations, we have:
+
+a + 44b = 652
+a - 90b = -1358
+a - 93b = -1403
+a - 80b = -1208
+a - 89b = -1343
+
+We can solve this system of equations to find the values of a and b.
+
+Using a calculator or a system of equations solver, we find that a = 100 and b = -5.
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+
+y = 100x^0 - 5x^1
+
+Simplifying further, we get:
+
+y = 100 - 5x
+
+    However, just write the output like what's shown in these examples.
+    [(97, 1364), (47, 664), (-33, -456), (66, 930), (-47, -652)]
+
+    Return the output preceded by 'Output:'
+    Input: 64
+    ",Output: 700,952,False
+"Use this function to apply to the input example to get the correct output.
+
+    To find the relationship between the inputs and outputs, we can use the method of least squares to fit a linear equation to the given data points. The linear equation can be written in the form y = ax^0 + bx^1, where x^0 represents the constant term and x^1 represents the coefficient of x.
+
+Using the given data points, we can set up a system of equations:
+
+1364 = a(97)^0 + b(97)^1
+664 = a(47)^0 + b(47)^1
+-456 = a(-33)^0 + b(-33)^1
+930 = a(66)^0 + b(66)^1
+-652 = a(-47)^0 + b(-47)^1
+
+Simplifying the equations, we get:
+
+1364 = a + 97b
+664 = a + 47b
+-456 = a - 33b
+930 = a + 66b
+-652 = a - 47b
+
+We can solve this system of equations to find the values of a and b.
+
+Using a calculator or a system of equations solver, we find that a = 4 and b = 12.
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+
+y = 4x^0 + 12x^1
+
+Simplifying further, we get:
+
+y = 4 + 12x
+
+    However, just write the output like what's shown in these examples.
+    [(46, -268), (6, -28), (58, -340), (63, -370), (-93, 566)]
+
+    Return the output preceded by 'Output:'
+    Input: 96
+    ",Output: -112,1350,False
+"Use this function to apply to the input example to get the correct output.
+
+    To find the relationship between the inputs and outputs, we can use the method of least squares to fit a linear equation to the given data points. The linear equation can be written in the form y = ax^0 + bx^1, where x^0 represents the constant term and x^1 represents the coefficient of x.
+
+Using the given data points, we can set up a system of equations:
+
+-268 = a(46)^0 + b(46)^1
+-28 = a(6)^0 + b(6)^1
+-340 = a(58)^0 + b(58)^1
+-370 = a(63)^0 + b(63)^1
+566 = a(-93)^0 + b(-93)^1
+
+Simplifying the equations, we get:
+
+-268 = a + 46b
+-28 = a + 6b
+-340 = a + 58b
+-370 = a + 63b
+566 = a - 93b
+
+We can solve this system of equations to find the values of a and b.
+
+Using a calculator or a system of equations solver, we find that a = -2.5 and b = -5.
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+
+y = -2.5x^0 - 5x^1
+
+    However, just write the output like what's shown in these examples.
+    [(60, 1017), (39, 660), (-26, -445), (64, 1085), (-23, -394)]
+
+    Return the output preceded by 'Output:'
+    Input: 27
+    ",Output: 432,-154,False
+"Use this function to apply to the input example to get the correct output.
+
+    y = -445x^0 + 660x^1
+
+    However, just write the output like what's shown in these examples.
+    [(-38, 750), (75, -1510), (3, -70), (-24, 470), (16, -330)]
+
+    Return the output preceded by 'Output:'
+    Input: 23
+    ",Output: 1225,388,False
+"Use this function to apply to the input example to get the correct output.
+
+    To find the relationship between the inputs and outputs, we can use the given points to solve for the coefficients a and b in the equation y = ax^0 + bx^1.
+
+Using the first point (-38, 750):
+750 = a(-38)^0 + b(-38)^1
+750 = a + (-38)b
+
+Using the second point (75, -1510):
+-1510 = a(75)^0 + b(75)^1
+-1510 = a + 75b
+
+Using the third point (3, -70):
+-70 = a(3)^0 + b(3)^1
+-70 = a + 3b
+
+Using the fourth point (-24, 470):
+470 = a(-24)^0 + b(-24)^1
+470 = a + (-24)b
+
+Using the fifth point (16, -330):
+-330 = a(16)^0 + b(16)^1
+-330 = a + 16b
+
+We now have a system of equations:
+
+a + (-38)b = 750
+a + 75b = -1510
+a + 3b = -70
+a + (-24)b = 470
+a + 16b = -330
+
+Solving this system of equations, we find that a = -10 and b = -20.
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+
+y = -10x^0 - 20x^1
+
+    However, just write the output like what's shown in these examples.
+    [(76, 533), (-85, -594), (-60, -419), (12, 85), (6, 43)]
+
+    Return the output preceded by 'Output:'
+    Input: -82
+    ",Output: -574,1630,False
+"Use this function to apply to the input example to get the correct output.
+
+    To find the relationship between the inputs and outputs, we can use the method of least squares to fit a linear equation to the given data points. The linear equation can be written in the form y = ax^0 + bx^1, where x^0 represents the constant term and x^1 represents the coefficient of x.
+
+Using the given data points, we can set up a system of equations:
+
+533 = a(76)^0 + b(76)^1
+-594 = a(-85)^0 + b(-85)^1
+-419 = a(-60)^0 + b(-60)^1
+85 = a(12)^0 + b(12)^1
+43 = a(6)^0 + b(6)^1
+
+Simplifying these equations, we get:
+
+533 = a + 76b
+-594 = a - 85b
+-419 = a - 60b
+85 = a + 12b
+43 = a + 6b
+
+We can solve this system of equations to find the values of a and b.
+
+    However, just write the output like what's shown in these examples.
+    [(18, -65), (-48, 133), (-13, 28), (55, -176), (-64, 181)]
+
+    Return the output preceded by 'Output:'
+    Input: 23
+    ","Output: (23, -82)",162,False
+"Use this function to apply to the input example to get the correct output.
+
+    y = -65x^0 + 133x^1
+
+    However, just write the output like what's shown in these examples.
+    [(83, -580), (-19, 134), (87, -608), (-12, 85), (2, -13)]
+
+    Return the output preceded by 'Output:'
+    Input: -20
+    ",Output: 133,49,False
+"Use this function to apply to the input example to get the correct output.
+
+    To find the relationship between the inputs and outputs, we can use the given data points to solve for the coefficients a and b in the equation y = ax^0 + bx^1.
+
+Using the first data point (83, -580):
+-580 = a(83)^0 + b(83)^1
+-580 = a + 83b
+
+Using the second data point (-19, 134):
+134 = a(-19)^0 + b(-19)^1
+134 = a - 19b
+
+Using the third data point (87, -608):
+-608 = a(87)^0 + b(87)^1
+-608 = a + 87b
+
+Using the fourth data point (-12, 85):
+85 = a(-12)^0 + b(-12)^1
+85 = a - 12b
+
+Using the fifth data point (2, -13):
+-13 = a(2)^0 + b(2)^1
+-13 = a + 2b
+
+We now have a system of equations:
+
+a + 83b = -580
+a - 19b = 134
+a + 87b = -608
+a - 12b = 85
+a + 2b = -13
+
+Solving this system of equations, we find that a = -3 and b = -7.
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+
+y = -3x^0 - 7x^1
+
+    However, just write the output like what's shown in these examples.
+    [(94, -1331), (-6, 69), (31, -449), (43, -617), (-73, 1007)]
+
+    Return the output preceded by 'Output:'
+    Input: -67
+    ",Output: 938,470,False
+"Use this function to apply to the input example to get the correct output.
+
+    To find the relationship between the inputs and outputs, we can use the method of least squares to fit a linear equation to the given data points. The linear equation can be written in the form y = ax^0 + bx^1, where x^0 represents the constant term and x^1 represents the coefficient of x.
+
+Using the given data points, we can set up a system of equations:
+
+-1331 = a(94)^0 + b(94)^1
+69 = a(-6)^0 + b(-6)^1
+-449 = a(31)^0 + b(31)^1
+-617 = a(43)^0 + b(43)^1
+1007 = a(-73)^0 + b(-73)^1
+
+Simplifying the equations, we get:
+
+-1331 = a + 94b
+69 = a - 6b
+-449 = a + 31b
+-617 = a + 43b
+1007 = a - 73b
+
+We can solve this system of equations to find the values of a and b.
+
+Using a calculator or a system of equations solver, we find that a = -1 and b = -2.
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+
+y = -1x^0 - 2x^1
+
+Simplifying further, we get:
+
+y = -1 - 2x
+
+    However, just write the output like what's shown in these examples.
+    [(-39, -170), (19, 62), (-69, -290), (-32, -142), (15, 46)]
+
+    Return the output preceded by 'Output:'
+    Input: -19
+    ",Output: -8,251,False
+"Use this function to apply to the input example to get the correct output.
+
+    y = -170x^0 + 62x^1
+
+    However, just write the output like what's shown in these examples.
+    [(-64, -126), (-76, -150), (-88, -174), (-26, -50), (-2, -2)]
+
+    Return the output preceded by 'Output:'
+    Input: -37
+    ","Output: (-37, -74)",-162,False
+"Use this function to apply to the input example to get the correct output.
+
+    y = -2x^0 + 2x^1
+
+    However, just write the output like what's shown in these examples.
+    [(7, 122), (-37, -670), (-60, -1084), (-17, -310), (47, 842)]
+
+    Return the output preceded by 'Output:'
+    Input: 57
+    ",Output: 2,116,False
+"Use this function to apply to the input example to get the correct output.
+
+    y = 2x^0 + 3x^1
+
+    However, just write the output like what's shown in these examples.
+    [(-20, 369), (-52, 945), (95, -1701), (-60, 1089), (27, -477)]
+
+    Return the output preceded by 'Output:'
+    Input: 84
+    ",Output: 2,1508,False
+"Use this function to apply to the input example to get the correct output.
+
+    To find the relationship between the inputs and outputs, we can use the method of least squares to fit a linear equation to the given data points. The linear equation can be written in the form y = ax^0 + bx^1, where x^0 represents the constant term and x^1 represents the linear term.
+
+Using the given data points, we can set up a system of equations:
+
+369 = a + b(-20)
+945 = a + b(-52)
+-1701 = a + b(95)
+1089 = a + b(-60)
+-477 = a + b(27)
+
+Simplifying these equations, we get:
+
+a - 20b = 369
+a - 52b = 945
+a + 95b = -1701
+a - 60b = 1089
+a + 27b = -477
+
+Solving this system of equations, we find that a = -3 and b = -6.
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+
+y = -3x^0 - 6x^1
+
+Simplifying further, we get:
+
+y = -3 - 6x
+
+    However, just write the output like what's shown in these examples.
+    [(19, 253), (27, 365), (-22, -321), (27, 365), (-95, -1343)]
+
+    Return the output preceded by 'Output:'
+    Input: 31
+    ",Output: 157,-549,False
+"Use this function to apply to the input example to get the correct output.
+
+    y = -321x^0 + 365x^1
+
+    However, just write the output like what's shown in these examples.
+    [(0, -15), (29, 101), (17, 53), (-39, -171), (-45, -195)]
+
+    Return the output preceded by 'Output:'
+    Input: -77
+    ",Output: -251,-1091,False
+"Use this function to apply to the input example to get the correct output.
+
+    y = -15 + 5x
+
+    However, just write the output like what's shown in these examples.
+    [(-10, -152), (-88, -1322), (-88, -1322), (-28, -422), (26, 388)]
+
+    Return the output preceded by 'Output:'
+    Input: 49
+    ",Output: 220,181,False
+"Use this function to apply to the input example to get the correct output.
+
+    y = -152 + (-1322)x + (-1322)x + (-422)x + 388x
+
+    However, just write the output like what's shown in these examples.
+    [(67, 1359), (72, 1459), (20, 419), (-27, -521), (37, 759)]
+
+    Return the output preceded by 'Output:'
+    Input: 52
+    ",Output: 1359,778,False
+"Use this function to apply to the input example to get the correct output.
+
+    To find the relationship between the inputs and outputs, we can use the given data points to solve for the coefficients a and b in the equation y = ax^0 + bx^1.
+
+Using the first data point (67, 1359), we can substitute the values into the equation:
+
+1359 = a(67^0) + b(67^1)
+1359 = a + 67b
+
+Using the second data point (72, 1459), we can substitute the values into the equation:
+
+1459 = a(72^0) + b(72^1)
+1459 = a + 72b
+
+Using the third data point (20, 419), we can substitute the values into the equation:
+
+419 = a(20^0) + b(20^1)
+419 = a + 20b
+
+Using the fourth data point (-27, -521), we can substitute the values into the equation:
+
+-521 = a((-27)^0) + b((-27)^1)
+-521 = a - 27b
+
+Using the fifth data point (37, 759), we can substitute the values into the equation:
+
+759 = a(37^0) + b(37^1)
+759 = a + 37b
+
+Now we have a system of linear equations:
+
+a + 67b = 1359
+a + 72b = 1459
+a + 20b = 419
+a - 27b = -521
+a + 37b = 759
+
+Solving this system of equations, we find that a = 100 and b = 15.
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+
+y = 100x^0 + 15x^1
+
+Simplifying, we get:
+
+y = 100 + 15x
+
+    However, just write the output like what's shown in these examples.
+    [(-73, -203), (10, 46), (-66, -182), (-33, -83), (86, 274)]
+
+    Return the output preceded by 'Output:'
+    Input: -98
+    ",Output: -263,-1941,False
+"Use this function to apply to the input example to get the correct output.
+
+    y = -3x^0 + 2x^1
+
+    However, just write the output like what's shown in these examples.
+    [(95, -776), (3, -40), (-7, 40), (-89, 696), (2, -32)]
+
+    Return the output preceded by 'Output:'
+    Input: -7
+    ",Output: 40,-5,False
+"Use this function to apply to the input example to get the correct output.
+
+    y = -40x^1 + 8x^0
+
+    However, just write the output like what's shown in these examples.
+    [(45, -816), (43, -780), (-51, 912), (-8, 138), (41, -744)]
+
+    Return the output preceded by 'Output:'
+    Input: -87
+    ",Output: 3480,680,False
+"Use this function to apply to the input example to get the correct output.
+
+    To find the relationship between the inputs and outputs, we can use the given data points to solve for the coefficients a and b in the equation y = ax^0 + bx^1.
+
+Using the first data point (45, -816), we can substitute the values into the equation:
+-816 = a(45)^0 + b(45)^1
+-816 = a + 45b
+
+Using the second data point (43, -780):
+-780 = a(43)^0 + b(43)^1
+-780 = a + 43b
+
+Using the third data point (-51, 912):
+912 = a(-51)^0 + b(-51)^1
+912 = a - 51b
+
+Using the fourth data point (-8, 138):
+138 = a(-8)^0 + b(-8)^1
+138 = a - 8b
+
+Using the fifth data point (41, -744):
+-744 = a(41)^0 + b(41)^1
+-744 = a + 41b
+
+We now have a system of equations:
+a + 45b = -816
+a + 43b = -780
+a - 51b = 912
+a - 8b = 138
+a + 41b = -744
+
+Solving this system of equations, we find that a = -12 and b = -18.
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+y = -12x^0 - 18x^1
+
+    However, just write the output like what's shown in these examples.
+    [(-82, 149), (-2, -11), (29, -73), (15, -45), (95, -205)]
+
+    Return the output preceded by 'Output:'
+    Input: -27
+    ","Output: (-27, 51)",480,False
+"Use this function to apply to the input example to get the correct output.
+
+    y = 1x^0 + (-2)x^1
+
+    However, just write the output like what's shown in these examples.
+    [(-29, 160), (59, -368), (74, -458), (56, -350), (-70, 406)]
+
+    Return the output preceded by 'Output:'
+    Input: 40
+    ","Output: (-29, 160)",-95,False
+"Use this function to apply to the input example to get the correct output.
+
+    y = 0x^0 + (-4)x^1
+
+    However, just write the output like what's shown in these examples.
+    [(-76, -307), (0, -3), (-5, -23), (-14, -59), (42, 165)]
+
+    Return the output preceded by 'Output:'
+    Input: -68
+    ",Output: -307,394,False
+"Use this function to apply to the input example to get the correct output.
+
+    y = -3x^1 + 1x^0
+
+    However, just write the output like what's shown in these examples.
+    [(93, 857), (-64, -556), (-50, -430), (54, 506), (30, 290)]
+
+    Return the output preceded by 'Output:'
+    Input: -7
+    ",Output: -22,-31,False
+"Use this function to apply to the input example to get the correct output.
+
+    To find the relationship between the inputs and outputs, we can use the method of least squares to fit a linear equation to the given data points. The linear equation can be written in the form y = ax^0 + bx^1, where x^0 represents the constant term and x^1 represents the coefficient of x.
+
+Using the given data points, we can set up a system of equations:
+
+93 = a(1)^0 + b(93)^1
+-64 = a(1)^0 + b(-64)^1
+-50 = a(1)^0 + b(-50)^1
+54 = a(1)^0 + b(54)^1
+30 = a(1)^0 + b(30)^1
+
+Simplifying the equations, we get:
+
+93 = a + 93b
+-64 = a - 64b
+-50 = a - 50b
+54 = a + 54b
+30 = a + 30b
+
+We can solve this system of equations to find the values of a and b.
+
+Adding the second and third equations, we get:
+
+-114 = 2a - 114b
+
+Adding the fourth and fifth equations, we get:
+
+84 = 2a + 84b
+
+Subtracting the above two equations, we get:
+
+198 = 198b
+
+Solving for b, we get:
+
+b = 1
+
+Substituting the value of b into any of the equations, we can solve for a. Let's use the first equation:
+
+93 = a + 93(1)
+93 = a + 93
+a = 0
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+
+y = 0x^0 + 1x^1
+y = x
+
+    However, just write the output like what's shown in these examples.
+    [(28, 74), (-90, -280), (-89, -277), (-91, -283), (-65, -205)]
+
+    Return the output preceded by 'Output:'
+    Input: 2
+    ",Output: 2,38,False
+"Use this function to apply to the input example to get the correct output.
+
+    y = -3x^0 - 2x^1
+
+    However, just write the output like what's shown in these examples.
+    [(-15, -43), (21, 65), (32, 98), (16, 50), (-62, -184)]
+
+    Return the output preceded by 'Output:'
+    Input: 82
+    ",Output: -250,236,False
+"Use this function to apply to the input example to get the correct output.
+
+    y = -43 + 65x
+
+    However, just write the output like what's shown in these examples.
+    [(31, -220), (-65, 452), (-17, 116), (56, -395), (-19, 130)]
+
+    Return the output preceded by 'Output:'
+    Input: 55
+    ",Output: 3520,167,False
+"Use this function to apply to the input example to get the correct output.
+
+    To find the relationship between the inputs and outputs, we can use the method of least squares to fit a linear equation to the given data points. The linear equation can be written in the form y = ax^0 + bx^1, where x^0 represents the constant term and x^1 represents the coefficient of x.
+
+Using the given data points, we can set up a system of equations:
+
+-220 = a(31)^0 + b(31)^1
+452 = a(-65)^0 + b(-65)^1
+116 = a(-17)^0 + b(-17)^1
+-395 = a(56)^0 + b(56)^1
+130 = a(-19)^0 + b(-19)^1
+
+Simplifying the equations, we get:
+
+-220 = a + 31b
+452 = a - 65b
+116 = a - 17b
+-395 = a + 56b
+130 = a - 19b
+
+We can solve this system of equations to find the values of a and b.
+
+Using a calculator or a matrix solver, we find that a = -2.5 and b = 7.5.
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+
+y = -2.5x^0 + 7.5x^1
+
+    However, just write the output like what's shown in these examples.
+    [(0, 18), (57, -894), (89, -1406), (-24, 402), (51, -798)]
+
+    Return the output preceded by 'Output:'
+    Input: -59
+    ",Output: -1002,410,False
+"Use this function to apply to the input example to get the correct output.
+
+    y = 18 + (-894)x^1
+
+    However, just write the output like what's shown in these examples.
+    [(29, 570), (30, 590), (36, 710), (25, 490), (81, 1610)]
+
+    Return the output preceded by 'Output:'
+    Input: -14
+    ",Output: 18 + (-894)(-14)^1 = 18 + 894 = 912,242,False
+"Use this function to apply to the input example to get the correct output.
+
+    To find the relationship between the inputs and outputs, we can use the given data points to solve for the coefficients a and b in the equation y = ax^0 + bx^1.
+
+Using the first data point (29, 570), we can substitute the values into the equation:
+570 = a(29^0) + b(29^1)
+570 = a + 29b
+
+Using the second data point (30, 590):
+590 = a(30^0) + b(30^1)
+590 = a + 30b
+
+Using the third data point (36, 710):
+710 = a(36^0) + b(36^1)
+710 = a + 36b
+
+Using the fourth data point (25, 490):
+490 = a(25^0) + b(25^1)
+490 = a + 25b
+
+Using the fifth data point (81, 1610):
+1610 = a(81^0) + b(81^1)
+1610 = a + 81b
+
+We now have a system of equations that we can solve to find the values of a and b.
+
+Solving the system of equations, we find that a = 10 and b = 20.
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+y = 10x^0 + 20x^1
+
+Simplifying, we get:
+y = 10 + 20x
+
+    However, just write the output like what's shown in these examples.
+    [(-24, -341), (21, 289), (-96, -1349), (-6, -89), (-16, -229)]
+
+    Return the output preceded by 'Output:'
+    Input: 44
+    ",Output: 890,870,False
+"Use this function to apply to the input example to get the correct output.
+
+    y = -341x^0 + 289x^1
+
+    However, just write the output like what's shown in these examples.
+    [(-72, 729), (6, -51), (49, -481), (-22, 229), (85, -841)]
+
+    Return the output preceded by 'Output:'
+    Input: 72
+    ",Output: 729,1003,False
+"Use this function to apply to the input example to get the correct output.
+
+    y = -1x^0 + 10x^1
+
+    However, just write the output like what's shown in these examples.
+    [(61, 241), (-94, -379), (52, 205), (21, 81), (-33, -135)]
+
+    Return the output preceded by 'Output:'
+    Input: 76
+    ",Output: 760,-751,False
+"Use this function to apply to the input example to get the correct output.
+
+    To find the relationship between the inputs and outputs, we can use the given points to solve for the coefficients a and b in the equation y = ax^0 + bx^1.
+
+Using the first point (61, 241):
+241 = a(61)^0 + b(61)^1
+241 = a + 61b
+
+Using the second point (-94, -379):
+-379 = a(-94)^0 + b(-94)^1
+-379 = a - 94b
+
+Using the third point (52, 205):
+205 = a(52)^0 + b(52)^1
+205 = a + 52b
+
+Using the fourth point (21, 81):
+81 = a(21)^0 + b(21)^1
+81 = a + 21b
+
+Using the fifth point (-33, -135):
+-135 = a(-33)^0 + b(-33)^1
+-135 = a - 33b
+
+We now have a system of equations:
+
+a + 61b = 241
+a - 94b = -379
+a + 52b = 205
+a + 21b = 81
+a - 33b = -135
+
+Solving this system of equations, we find that a = 4 and b = 3.
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+
+y = 4x^0 + 3x^1
+
+Simplifying, we get:
+
+y = 4 + 3x
+
+    However, just write the output like what's shown in these examples.
+    [(100, 2015), (98, 1975), (48, 975), (47, 955), (-42, -825)]
+
+    Return the output preceded by 'Output:'
+    Input: 67
+    ",Output: 4 + 3(67) = 205,265,False
+"Use this function to apply to the input example to get the correct output.
+
+    y = 2015 + 1975x
+
+    However, just write the output like what's shown in these examples.
+    [(-87, 522), (49, -294), (22, -132), (-57, 342), (34, -204)]
+
+    Return the output preceded by 'Output:'
+    Input: 84
+    ",Output: 168819,1695,False
+"Use this function to apply to the input example to get the correct output.
+
+    y = 6x^0 - 6x^1
+
+    However, just write the output like what's shown in these examples.
+    [(84, -1434), (58, -992), (98, -1672), (-3, 45), (-63, 1065)]
+
+    Return the output preceded by 'Output:'
+    Input: 61
+    ",Output: -103,-366,False
+"Use this function to apply to the input example to get the correct output.
+
+    y = -10x^0 + 15x^1
+
+    However, just write the output like what's shown in these examples.
+    [(-38, 684), (-92, 1656), (46, -828), (79, -1422), (-72, 1296)]
+
+    Return the output preceded by 'Output:'
+    Input: 74
+    ",Output: 1090,-1264,False
+"Use this function to apply to the input example to get the correct output.
+
+    y = 12x^0 - 18x^1
+
+    However, just write the output like what's shown in these examples.
+    [(-96, -483), (12, 57), (-20, -103), (7, 32), (-62, -313)]
+
+    Return the output preceded by 'Output:'
+    Input: -52
+    ",Output: -483,936,False
+"Use this function to apply to the input example to get the correct output.
+
+    y = -5x^0 + 4x^1
+
+    However, just write the output like what's shown in these examples.
+    [(76, -1223), (-48, 761), (5, -87), (28, -455), (98, -1575)]
+
+    Return the output preceded by 'Output:'
+    Input: 5
+    ",Output: -87,22,False
+"Use this function to apply to the input example to get the correct output.
+
+    To find the relationship between the inputs and outputs, we can use the method of least squares to fit a linear equation to the given data points. The linear equation can be written in the form y = ax^0 + bx^1, where x^0 represents the constant term and x^1 represents the coefficient of x.
+
+Using the given data points, we can set up a system of equations:
+
+-1223 = a(76)^0 + b(76)^1
+761 = a(-48)^0 + b(-48)^1
+-87 = a(5)^0 + b(5)^1
+-455 = a(28)^0 + b(28)^1
+-1575 = a(98)^0 + b(98)^1
+
+Simplifying these equations, we get:
+
+-1223 = a + 76b
+761 = a - 48b
+-87 = a + 5b
+-455 = a + 28b
+-1575 = a + 98b
+
+We can solve this system of equations to find the values of a and b.
+
+Using a calculator or a matrix solver, we find that a = -2.5 and b = -15.
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+
+y = -2.5x^0 - 15x^1
+
+    However, just write the output like what's shown in these examples.
+    [(20, 320), (88, 1408), (86, 1376), (-85, -1360), (80, 1280)]
+
+    Return the output preceded by 'Output:'
+    Input: 56
+    ",Output: 944,-903,False
+"Use this function to apply to the input example to get the correct output.
+
+    y = 16x^0 + 16x^1
+
+    However, just write the output like what's shown in these examples.
+    [(32, -213), (-47, 340), (43, -290), (-17, 130), (69, -472)]
+
+    Return the output preceded by 'Output:'
+    Input: -65
+    ",Output: -213,-1040,False
+"Use this function to apply to the input example to get the correct output.
+
+    To find the relationship between the inputs and outputs, we can use the method of least squares to fit a linear equation to the given data points. The linear equation can be written in the form y = ax^0 + bx^1, where x^0 represents the constant term and x^1 represents the coefficient of x.
+
+Using the given data points, we can set up a system of equations:
+
+-213 = a(32)^0 + b(32)^1
+340 = a(-47)^0 + b(-47)^1
+-290 = a(43)^0 + b(43)^1
+130 = a(-17)^0 + b(-17)^1
+-472 = a(69)^0 + b(69)^1
+
+Simplifying the equations, we get:
+
+-213 = a + 32b
+340 = a - 47b
+-290 = a + 43b
+130 = a - 17b
+-472 = a + 69b
+
+We can solve this system of equations to find the values of a and b.
+
+Using a matrix representation, we have:
+
+| 1  32 | | a |   | -213 |
+| -1  -47 | | b | = | 340 |
+| 1  43 | |   |   | -290 |
+| -1  -17 |         | 130 |
+| 1  69 |         | -472 |
+
+Solving this system of equations, we find a = -3 and b = -5.
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+
+y = -3x^0 - 5x^1
+
+    However, just write the output like what's shown in these examples.
+    [(34, 179), (-4, -11), (-20, -91), (-56, -271), (17, 94)]
+
+    Return the output preceded by 'Output:'
+    Input: 22
+    ",Output: 79,-143,False
+"Use this function to apply to the input example to get the correct output.
+
+    To find the relationship between the inputs and outputs, we can use the method of least squares to fit a linear equation to the given data points. The linear equation can be written in the form y = ax^0 + bx^1, where x^0 represents the constant term and x^1 represents the coefficient of x.
+
+Using the given data points, we can set up a system of equations:
+
+1. For the first data point (34, 179):
+179 = a(34^0) + b(34^1)
+179 = a + 34b
+
+2. For the second data point (-4, -11):
+-11 = a(-4^0) + b(-4^1)
+-11 = a - 4b
+
+3. For the third data point (-20, -91):
+-91 = a(-20^0) + b(-20^1)
+-91 = a - 20b
+
+4. For the fourth data point (-56, -271):
+-271 = a(-56^0) + b(-56^1)
+-271 = a - 56b
+
+5. For the fifth data point (17, 94):
+94 = a(17^0) + b(17^1)
+94 = a + 17b
+
+Solving this system of equations will give us the values of a and b, which will define the relationship between the inputs and outputs.
+
+After solving the system of equations, we find that a = 3 and b = 5. Therefore, the function that captures the relationship between the inputs and outputs is:
+
+y = 3x^0 + 5x^1
+
+Simplifying this equation, we get:
+
+y = 3 + 5x
+
+    However, just write the output like what's shown in these examples.
+    [(-13, 139), (39, -433), (-10, 106), (73, -807), (97, -1071)]
+
+    Return the output preceded by 'Output:'
+    Input: 36
+    ",Output: 187,189,False
+"Use this function to apply to the input example to get the correct output.
+
+    y = 139x^0 - 433x^1
+
+    However, just write the output like what's shown in these examples.
+    [(74, -893), (64, -773), (77, -929), (-33, 391), (56, -677)]
+
+    Return the output preceded by 'Output:'
+    Input: 84
+    ",Output: -1009,-928,False
+"Use this function to apply to the input example to get the correct output.
+
+    To find the relationship between the inputs and outputs, we can use the method of least squares to fit a linear equation to the given data points. The linear equation can be written in the form y = ax^0 + bx^1, where x^0 represents the constant term and x^1 represents the coefficient of x.
+
+Using the given data points, we can set up a system of equations:
+
+-893 = a(74)^0 + b(74)^1
+-773 = a(64)^0 + b(64)^1
+-929 = a(77)^0 + b(77)^1
+391 = a(-33)^0 + b(-33)^1
+-677 = a(56)^0 + b(56)^1
+
+Simplifying the equations, we get:
+
+-893 = a + 74b
+-773 = a + 64b
+-929 = a + 77b
+391 = a - 33b
+-677 = a + 56b
+
+We can solve this system of equations to find the values of a and b.
+
+Using a matrix representation, the system of equations can be written as:
+
+| 1  74 | | a |   | -893 |
+| 1  64 | | b | = | -773 |
+| 1  77 |         | -929 |
+| 1 -33 |         |  391 |
+| 1  56 |         | -677 |
+
+Solving this system of equations, we find that a = -1.5 and b = -10.
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+
+y = -1.5x^0 - 10x^1
+
+    However, just write the output like what's shown in these examples.
+    [(-51, -751), (-37, -541), (-29, -421), (42, 644), (-24, -346)]
+
+    Return the output preceded by 'Output:'
+    Input: 23
+    ","Output: (-51, -751)",-281,False
+"Use this function to apply to the input example to get the correct output.
+
+    To find the relationship between the inputs and outputs, we need to find the values of a and b in the equation y = ax^0 + bx^1.
+
+Let's substitute the given inputs and outputs into the equation:
+
+For the first pair (-51, -751):
+-751 = a(-51)^0 + b(-51)^1
+-751 = a + (-51)b
+
+For the second pair (-37, -541):
+-541 = a(-37)^0 + b(-37)^1
+-541 = a + (-37)b
+
+For the third pair (-29, -421):
+-421 = a(-29)^0 + b(-29)^1
+-421 = a + (-29)b
+
+For the fourth pair (42, 644):
+644 = a(42)^0 + b(42)^1
+644 = a + 42b
+
+For the fifth pair (-24, -346):
+-346 = a(-24)^0 + b(-24)^1
+-346 = a + (-24)b
+
+We now have a system of equations:
+
+a + (-51)b = -751
+a + (-37)b = -541
+a + (-29)b = -421
+a + 42b = 644
+a + (-24)b = -346
+
+Solving this system of equations will give us the values of a and b, which will define the relationship between the inputs and outputs.
+
+    However, just write the output like what's shown in these examples.
+    [(-24, 113), (97, -371), (-27, 125), (80, -303), (-47, 205)]
+
+    Return the output preceded by 'Output:'
+    Input: -43
+    ","Output: -43, -631",-631,False
+"Use this function to apply to the input example to get the correct output.
+
+    y = 113x^0 - 371x^1
+
+    However, just write the output like what's shown in these examples.
+    [(80, 577), (25, 192), (-19, -116), (22, 171), (-11, -60)]
+
+    Return the output preceded by 'Output:'
+    Input: 76
+    ",Output: 113,-287,False
+"Use this function to apply to the input example to get the correct output.
+
+    y = 1x^0 + 5x^1
+
+    However, just write the output like what's shown in these examples.
+    [(84, 423), (-30, -147), (-27, -132), (-69, -342), (46, 233)]
+
+    Return the output preceded by 'Output:'
+    Input: 43
+    ",Output: 84,318,False
+"Use this function to apply to the input example to get the correct output.
+
+    To find the relationship between the inputs and outputs, we can use the method of least squares to fit a linear equation to the given data points. The linear equation can be written in the form y = ax^0 + bx^1, where x^0 represents the constant term and x^1 represents the coefficient of x.
+
+Using the given data points, we can set up a system of equations:
+
+423 = a(84)^0 + b(84)^1
+-147 = a(-30)^0 + b(-30)^1
+-132 = a(-27)^0 + b(-27)^1
+-342 = a(-69)^0 + b(-69)^1
+233 = a(46)^0 + b(46)^1
+
+Simplifying these equations, we get:
+
+423 = a + 84b
+-147 = a - 30b
+-132 = a - 27b
+-342 = a - 69b
+233 = a + 46b
+
+We can solve this system of equations to find the values of a and b.
+
+Using a calculator or a matrix solver, we find that a = 3 and b = 5.
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+
+y = 3x^0 + 5x^1
+
+Simplifying further, we get:
+
+y = 3 + 5x
+
+    However, just write the output like what's shown in these examples.
+    [(39, -246), (-3, 6), (1, -18), (-12, 60), (97, -594)]
+
+    Return the output preceded by 'Output:'
+    Input: 73
+    ",Output: -362,368,False
+"Use this function to apply to the input example to get the correct output.
+
+    y = -6x^1 - 12x^0
+
+    However, just write the output like what's shown in these examples.
+    [(-26, -301), (-90, -1069), (-27, -313), (82, 995), (-80, -949)]
+
+    Return the output preceded by 'Output:'
+    Input: -63
+    ",Output: -12,366,False
+"Use this function to apply to the input example to get the correct output.
+
+    y = -301 + (-1069)x + (-313)x^2 + 995x^3 + (-949)x^4
+
+    However, just write the output like what's shown in these examples.
+    [(13, -212), (67, -1022), (-35, 508), (91, -1382), (22, -347)]
+
+    Return the output preceded by 'Output:'
+    Input: -12
+    ",Output: -212,-133,False
+"Use this function to apply to the input example to get the correct output.
+
+    To find the relationship between the inputs and outputs, we can use the method of least squares to fit a linear equation to the given data points. The linear equation can be written in the form y = ax^0 + bx^1, where x^0 represents the constant term and x^1 represents the coefficient of x.
+
+Using the given data points, we can set up a system of equations:
+
+-212 = a(13)^0 + b(13)^1
+-1022 = a(67)^0 + b(67)^1
+508 = a(-35)^0 + b(-35)^1
+-1382 = a(91)^0 + b(91)^1
+-347 = a(22)^0 + b(22)^1
+
+Simplifying the equations, we get:
+
+-212 = a + 13b
+-1022 = a + 67b
+508 = a - 35b
+-1382 = a + 91b
+-347 = a + 22b
+
+We can solve this system of equations to find the values of a and b.
+
+Using a calculator or a matrix solver, we find that a = -2 and b = -10.
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+
+y = -2x^0 - 10x^1
+
+Simplifying further, we get:
+
+y = -2 - 10x
+
+    However, just write the output like what's shown in these examples.
+    [(-49, 626), (37, -492), (-31, 392), (43, -570), (78, -1025)]
+
+    Return the output preceded by 'Output:'
+    Input: -46
+    ",Output: 586,673,False
+"Use this function to apply to the input example to get the correct output.
+
+    y = 0x^0 + (-10x^1)
+
+    However, just write the output like what's shown in these examples.
+    [(-65, -1310), (-73, -1470), (57, 1130), (89, 1770), (50, 990)]
+
+    Return the output preceded by 'Output:'
+    Input: -31
+    ",Output: -1310,392,False
+"Use this function to apply to the input example to get the correct output.
+
+    To find the relationship between the inputs and outputs, we can use the method of least squares to fit a linear equation to the given data points. The linear equation can be written in the form y = ax^0 + bx^1, where x^0 represents the constant term and x^1 represents the coefficient of x.
+
+Using the given data points, we can set up a system of equations:
+
+-1310 = a(1) + b(-65)
+-1470 = a(1) + b(-73)
+1130 = a(1) + b(57)
+1770 = a(1) + b(89)
+990 = a(1) + b(50)
+
+Simplifying these equations, we get:
+
+-65a -  b = -1310
+-73a -  b = -1470
+57a +  b = 1130
+89a +  b = 1770
+50a +  b = 990
+
+We can solve this system of equations to find the values of a and b.
+
+Using a calculator or a matrix solver, we find that a = 20 and b = -30.
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+
+y = 20x^0 - 30x^1
+
+Simplifying further, we get:
+
+y = 20 - 30x
+
+    However, just write the output like what's shown in these examples.
+    [(-38, -248), (-88, -598), (71, 515), (35, 263), (-43, -283)]
+
+    Return the output preceded by 'Output:'
+    Input: -39
+    ",Output: -268,-790,False
+"Use this function to apply to the input example to get the correct output.
+
+    To find the relationship between the inputs and outputs, we need to find the values of a and b in the equation y = ax^0 + bx^1.
+
+Let's substitute the given inputs and outputs into the equation:
+
+For the first pair (-38, -248):
+-248 = a(-38)^0 + b(-38)^1
+-248 = a + (-38)b
+
+For the second pair (-88, -598):
+-598 = a(-88)^0 + b(-88)^1
+-598 = a + (-88)b
+
+For the third pair (71, 515):
+515 = a(71)^0 + b(71)^1
+515 = a + 71b
+
+For the fourth pair (35, 263):
+263 = a(35)^0 + b(35)^1
+263 = a + 35b
+
+For the fifth pair (-43, -283):
+-283 = a(-43)^0 + b(-43)^1
+-283 = a + (-43)b
+
+Now we have a system of equations:
+
+-248 = a + (-38)b
+-598 = a + (-88)b
+515 = a + 71b
+263 = a + 35b
+-283 = a + (-43)b
+
+We can solve this system of equations to find the values of a and b.
+
+    However, just write the output like what's shown in these examples.
+    [(-41, 660), (-87, 1396), (-75, 1204), (5, -76), (-16, 260)]
+
+    Return the output preceded by 'Output:'
+    Input: 63
+    ","Output: (63, 1018)",459,False
+"Use this function to apply to the input example to get the correct output.
+
+    y = 660x^0 + 0x^1
+
+    However, just write the output like what's shown in these examples.
+    [(20, 98), (-75, -282), (74, 314), (97, 406), (-65, -242)]
+
+    Return the output preceded by 'Output:'
+    Input: 83
+    ",Output: 660,-1324,False
+"Use this function to apply to the input example to get the correct output.
+
+    y = 2x^0 + 3x^1
+
+    However, just write the output like what's shown in these examples.
+    [(40, 373), (-60, -527), (4, 49), (67, 616), (21, 202)]
+
+    Return the output preceded by 'Output:'
+    Input: -99
+    ",Output: -195,-378,False
+"Use this function to apply to the input example to get the correct output.
+
+    To find the relationship between the inputs and outputs, we can use the method of least squares to fit a linear equation to the given data points. The linear equation can be written in the form y = ax^0 + bx^1, where x^0 represents the constant term and x^1 represents the coefficient of x.
+
+Using the given data points, we can set up a system of equations:
+
+373 = a(40)^0 + b(40)^1
+-527 = a(-60)^0 + b(-60)^1
+49 = a(4)^0 + b(4)^1
+616 = a(67)^0 + b(67)^1
+202 = a(21)^0 + b(21)^1
+
+Simplifying the equations, we get:
+
+373 = a + 40b
+-527 = a - 60b
+49 = a + 4b
+616 = a + 67b
+202 = a + 21b
+
+We can solve this system of equations to find the values of a and b.
+
+Using a calculator or a matrix solver, we find that a = 3.5 and b = 8.5.
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+
+y = 3.5x^0 + 8.5x^1
+
+Simplifying further, we get:
+
+y = 3.5 + 8.5x
+
+    However, just write the output like what's shown in these examples.
+    [(66, -249), (-49, 211), (93, -357), (-27, 123), (-18, 87)]
+
+    Return the output preceded by 'Output:'
+    Input: 22
+    ",Output: -3.5,211,False
+"Use this function to apply to the input example to get the correct output.
+
+    To find the relationship between the inputs and outputs, we can use the method of least squares to fit a linear equation to the given data points. The linear equation can be written in the form y = ax^0 + bx^1, where x^0 represents the constant term and x^1 represents the coefficient of x.
+
+Using the given data points, we can set up a system of equations:
+
+-249 = a(66)^0 + b(66)^1
+211 = a(-49)^0 + b(-49)^1
+-357 = a(93)^0 + b(93)^1
+123 = a(-27)^0 + b(-27)^1
+87 = a(-18)^0 + b(-18)^1
+
+Simplifying the equations, we get:
+
+-249 = a + 66b
+211 = a - 49b
+-357 = a + 93b
+123 = a - 27b
+87 = a - 18b
+
+We can solve this system of equations to find the values of a and b.
+
+Using a matrix representation, we have:
+
+| 1   66 | | a |   | -249 |
+| 1  -49 | | b | = |  211 |
+| 1   93 |         | -357 |
+| 1  -27 |         |  123 |
+| 1  -18 |         |   87 |
+
+Solving this system of equations, we find a = -3 and b = 4.
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+
+y = -3x^0 + 4x^1
+
+Simplifying further, we get:
+
+y = -3 + 4x
+
+    However, just write the output like what's shown in these examples.
+    [(65, -1313), (-85, 1687), (96, -1933), (-78, 1547), (66, -1333)]
+
+    Return the output preceded by 'Output:'
+    Input: -27
+    ",Output: 123,123,True
+"Use this function to apply to the input example to get the correct output.
+
+    y = -1313 + 1687x
+
+    However, just write the output like what's shown in these examples.
+    [(-41, -577), (36, 501), (89, 1243), (85, 1187), (-91, -1277)]
+
+    Return the output preceded by 'Output:'
+    Input: 46
+    ",Output: 697,-933,False
+"Use this function to apply to the input example to get the correct output.
+
+    y = -577 + 501x
+
+    However, just write the output like what's shown in these examples.
+    [(6, -7), (-55, -68), (-91, -104), (1, -12), (26, 13)]
+
+    Return the output preceded by 'Output:'
+    Input: -56
+    ",Output: -28524,-787,False
+"Use this function to apply to the input example to get the correct output.
+
+    y = -7 + (-68 - (-7))/( -55 - 6 ) * (x - 6)
+
+    However, just write the output like what's shown in these examples.
+    [(91, -175), (-26, 59), (-91, 189), (-98, 203), (-24, 55)]
+
+    Return the output preceded by 'Output:'
+    Input: -53
+    ","Output: (-53, 91)",-66,False
+"Use this function to apply to the input example to get the correct output.
+
+    To find the relationship between the inputs and outputs, we can use the method of least squares to fit a linear equation of the form y = ax^0 + bx^1 to the given data points.
+
+Using the given data points [(91, -175), (-26, 59), (-91, 189), (-98, 203), (-24, 55)], we can set up a system of equations:
+
+-175 = a(91)^0 + b(91)^1
+59 = a(-26)^0 + b(-26)^1
+189 = a(-91)^0 + b(-91)^1
+203 = a(-98)^0 + b(-98)^1
+55 = a(-24)^0 + b(-24)^1
+
+Simplifying the equations, we get:
+
+-175 = a + 91b
+59 = a - 26b
+189 = a - 91b
+203 = a - 98b
+55 = a - 24b
+
+We can solve this system of equations to find the values of a and b.
+
+Using a matrix representation, we have:
+
+| 1   91 | | a |   | -175 |
+| 1  -26 | | b | = |   59 |
+| 1  -91 |         |  189 |
+| 1  -98 |         |  203 |
+| 1  -24 |         |   55 |
+
+Solving this system of equations, we find that a = -1 and b = 2.
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+
+y = -1x^0 + 2x^1
+
+Simplifying further, we get:
+
+y = -1 + 2x
+
+    However, just write the output like what's shown in these examples.
+    [(54, -531), (-73, 739), (-15, 159), (-28, 289), (16, -151)]
+
+    Return the output preceded by 'Output:'
+    Input: 45
+    ",Output: -89,-83,False
+"Use this function to apply to the input example to get the correct output.
+
+    y = -531 + 739x
+
+    However, just write the output like what's shown in these examples.
+    [(39, -784), (34, -684), (26, -524), (-66, 1316), (29, -584)]
+
+    Return the output preceded by 'Output:'
+    Input: 64
+    ",Output: 45745,-631,False
+"Use this function to apply to the input example to get the correct output.
+
+    y = -784 + (-684)x^1 + (-524)x^2 + 1316x^3 + (-584)x^4
+
+    However, just write the output like what's shown in these examples.
+    [(-31, -381), (-51, -621), (-72, -873), (-16, -201), (-59, -717)]
+
+    Return the output preceded by 'Output:'
+    Input: 19
+    ","Output: [(-31, -381), (-51, -621), (-72, -873), (-16, -201), (-59, -717)]",-384,False
+"Use this function to apply to the input example to get the correct output.
+
+    y = -20x^0 - 7x^1
+
+    However, just write the output like what's shown in these examples.
+    [(17, 190), (65, 766), (-35, -434), (83, 982), (-53, -650)]
+
+    Return the output preceded by 'Output:'
+    Input: 87
+    ",Output: -20,1035,False
+"Use this function to apply to the input example to get the correct output.
+
+    y = 8x^0 + 10x^1
+
+    However, just write the output like what's shown in these examples.
+    [(88, 1759), (-14, -281), (-25, -501), (45, 899), (72, 1439)]
+
+    Return the output preceded by 'Output:'
+    Input: -97
+    ","Output: -97, -769",-1178,False
+"Use this function to apply to the input example to get the correct output.
+
+    To find the relationship between the inputs and outputs, we can use the method of least squares to fit a linear equation to the given data points. The linear equation can be written in the form y = ax^0 + bx^1, where x^0 represents the constant term and x^1 represents the coefficient of x.
+
+Using the given data points, we can set up a system of equations:
+
+1759 = a(88)^0 + b(88)^1
+-281 = a(-14)^0 + b(-14)^1
+-501 = a(-25)^0 + b(-25)^1
+899 = a(45)^0 + b(45)^1
+1439 = a(72)^0 + b(72)^1
+
+Simplifying the equations, we get:
+
+1759 = a + 88b
+-281 = a - 14b
+-501 = a - 25b
+899 = a + 45b
+1439 = a + 72b
+
+We can solve this system of equations to find the values of a and b.
+
+Using a calculator or a system of equations solver, we find that a = 1 and b = 20.
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+
+y = 1x^0 + 20x^1
+
+Simplifying further, we get:
+
+y = 1 + 20x
+
+    However, just write the output like what's shown in these examples.
+    [(-51, -1008), (-56, -1108), (56, 1132), (63, 1272), (3, 72)]
+
+    Return the output preceded by 'Output:'
+    Input: 93
+    ",Output: 1903,1859,False
+"Use this function to apply to the input example to get the correct output.
+
+    To find the relationship between the inputs and outputs, we can use the given points to solve for the coefficients a and b in the equation y = ax^0 + bx^1.
+
+Using the first point (-51, -1008):
+-1008 = a(-51)^0 + b(-51)^1
+-1008 = a + (-51)b
+
+Using the second point (-56, -1108):
+-1108 = a(-56)^0 + b(-56)^1
+-1108 = a + (-56)b
+
+Using the third point (56, 1132):
+1132 = a(56)^0 + b(56)^1
+1132 = a + 56b
+
+Using the fourth point (63, 1272):
+1272 = a(63)^0 + b(63)^1
+1272 = a + 63b
+
+Using the fifth point (3, 72):
+72 = a(3)^0 + b(3)^1
+72 = a + 3b
+
+We now have a system of equations:
+
+a + (-51)b = -1008
+a + (-56)b = -1108
+a + 56b = 1132
+a + 63b = 1272
+a + 3b = 72
+
+Solving this system of equations, we find that a = 24 and b = -16.
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+
+y = 24x^0 - 16x^1
+
+    However, just write the output like what's shown in these examples.
+    [(31, 550), (-17, -314), (-78, -1412), (2, 28), (71, 1270)]
+
+    Return the output preceded by 'Output:'
+    Input: 9
+    ",Output: 24,192,False
+"Use this function to apply to the input example to get the correct output.
+
+    y = 6x^0 + 8x^1
+
+    However, just write the output like what's shown in these examples.
+    [(-53, 586), (-65, 718), (22, -239), (-18, 201), (-37, 410)]
+
+    Return the output preceded by 'Output:'
+    Input: -76
+    ",Output: 6(-76)^0 + 8(-76)^1 = 6 + (-608) = -602,-1376,False
+"Use this function to apply to the input example to get the correct output.
+
+    To find the relationship between the inputs and outputs, we can use the method of least squares to fit a linear equation to the given data points. The linear equation can be written in the form y = ax^0 + bx^1, where x^0 represents the constant term and x^1 represents the coefficient of x.
+
+Using the given data points, we can set up a system of equations:
+
+586 = a + b(-53)
+718 = a + b(-65)
+-239 = a + b(22)
+201 = a + b(-18)
+410 = a + b(-37)
+
+Simplifying these equations, we get:
+
+a - 53b = 586
+a - 65b = 718
+a + 22b = -239
+a - 18b = 201
+a - 37b = 410
+
+Solving this system of equations, we find that a = -3 and b = -5.
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+
+y = -3x^0 - 5x^1
+
+Simplifying further, we get:
+
+y = -3 - 5x
+
+    However, just write the output like what's shown in these examples.
+    [(-34, 354), (-2, 34), (-40, 414), (14, -126), (92, -906)]
+
+    Return the output preceded by 'Output:'
+    Input: -99
+    ",Output: 492,1092,False
+"Use this function to apply to the input example to get the correct output.
+
+    To find the relationship between the inputs and outputs, we can use the method of least squares to fit a linear equation to the given data points. The linear equation can be written in the form y = ax^0 + bx^1, where x^0 represents the constant term and x^1 represents the coefficient of x.
+
+Using the given data points, we can set up a system of equations:
+
+354 = a(-34)^0 + b(-34)^1
+34 = a(-2)^0 + b(-2)^1
+414 = a(-40)^0 + b(-40)^1
+-126 = a(14)^0 + b(14)^1
+-906 = a(92)^0 + b(92)^1
+
+Simplifying the equations, we get:
+
+354 = a + (-34)b
+34 = a + (-2)b
+414 = a + (-40)b
+-126 = a + 14b
+-906 = a + 92b
+
+We can solve this system of equations to find the values of a and b.
+
+Using a calculator or a system of equations solver, we find that a = -2 and b = 10.
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+
+y = -2x^0 + 10x^1
+
+Simplifying further, we get:
+
+y = -2 + 10x
+
+    However, just write the output like what's shown in these examples.
+    [(-16, -228), (-23, -319), (49, 617), (85, 1085), (46, 578)]
+
+    Return the output preceded by 'Output:'
+    Input: -32
+    ",Output: -388,334,False
+"Use this function to apply to the input example to get the correct output.
+
+    To find the relationship between the inputs and outputs, we can use the method of least squares to fit a linear equation to the given data points. The equation will be in the form y = ax^0 + bx^1, where x^0 represents the constant term and x^1 represents the linear term.
+
+Using the given data points, we can set up a system of equations:
+
+(-16, -228): -228 = a(1) + b(-16)
+(-23, -319): -319 = a(1) + b(-23)
+(49, 617): 617 = a(1) + b(49)
+(85, 1085): 1085 = a(1) + b(85)
+(46, 578): 578 = a(1) + b(46)
+
+Simplifying these equations, we get:
+
+-228 = a - 16b
+-319 = a - 23b
+617 = a + 49b
+1085 = a + 85b
+578 = a + 46b
+
+We can solve this system of equations to find the values of a and b.
+
+Using a calculator or a matrix solver, we find that a = -2 and b = 5.
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+
+y = -2x^0 + 5x^1
+
+Simplifying further, we get:
+
+y = -2 + 5x
+
+    However, just write the output like what's shown in these examples.
+    [(-34, -612), (67, 1206), (-8, -144), (77, 1386), (-40, -720)]
+
+    Return the output preceded by 'Output:'
+    Input: -98
+    ",Output: -194,-1294,False
+"Use this function to apply to the input example to get the correct output.
+
+    y = -18x^0 + 6x^1
+
+    However, just write the output like what's shown in these examples.
+    [(70, 751), (-70, -789), (19, 190), (-22, -261), (-60, -679)]
+
+    Return the output preceded by 'Output:'
+    Input: -85
+    ",Output: -18,-1530,False
+"Use this function to apply to the input example to get the correct output.
+
+    y = 1x^0 + 10x^1
+
+    However, just write the output like what's shown in these examples.
+    [(75, -972), (28, -361), (80, -1037), (97, -1258), (-21, 276)]
+
+    Return the output preceded by 'Output:'
+    Input: 3
+    ",Output: -971,14,False
+"Use this function to apply to the input example to get the correct output.
+
+    To find the relationship between the inputs and outputs, we can use the method of least squares to fit a linear equation to the given data points. The linear equation can be written in the form y = ax^0 + bx^1, where x^0 represents the constant term and x^1 represents the coefficient of x.
+
+Using the given data points, we can set up a system of equations:
+
+-972 = a(75)^0 + b(75)^1
+-361 = a(28)^0 + b(28)^1
+-1037 = a(80)^0 + b(80)^1
+-1258 = a(97)^0 + b(97)^1
+276 = a(-21)^0 + b(-21)^1
+
+Simplifying the equations, we get:
+
+-972 = a + 75b
+-361 = a + 28b
+-1037 = a + 80b
+-1258 = a + 97b
+276 = a - 21b
+
+We can solve this system of equations to find the values of a and b.
+
+Using a calculator or a system of equations solver, we find that a = -1003 and b = -7.
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+
+y = -1003x^0 - 7x^1
+
+    However, just write the output like what's shown in these examples.
+    [(-70, 65), (63, -68), (-25, 20), (-6, 1), (57, -62)]
+
+    Return the output preceded by 'Output:'
+    Input: 76
+    ",Output: 69,-985,False
+"Use this function to apply to the input example to get the correct output.
+
+    y = 65x^0 - 68x^1 + 20x^0 + 1x^1 - 62x^1
+
+    However, just write the output like what's shown in these examples.
+    [(-44, 743), (-66, 1117), (22, -379), (-61, 1032), (16, -277)]
+
+    Return the output preceded by 'Output:'
+    Input: -44
+    ",Output: 743,39,False
+"Use this function to apply to the input example to get the correct output.
+
+    y = 743 + 1117x
+
+    However, just write the output like what's shown in these examples.
+    [(55, 865), (-5, -95), (6, 81), (79, 1249), (40, 625)]
+
+    Return the output preceded by 'Output:'
+    Input: 91
+    ",Output: 107690,-1552,False
+"Use this function to apply to the input example to get the correct output.
+
+    y = 10x^0 + 15x^1
+
+    However, just write the output like what's shown in these examples.
+    [(93, -1384), (37, -544), (70, -1039), (-45, 686), (95, -1414)]
+
+    Return the output preceded by 'Output:'
+    Input: 20
+    ",Output: 10,305,False
+"Use this function to apply to the input example to get the correct output.
+
+    y = -1384 + (-544)x
+
+    However, just write the output like what's shown in these examples.
+    [(74, -1170), (93, -1474), (52, -818), (-80, 1294), (34, -530)]
+
+    Return the output preceded by 'Output:'
+    Input: -37
+    ",Output: -1384 + (-544)(-37) = -1384 + 19928 = 18544,566,False
+"Use this function to apply to the input example to get the correct output.
+
+    To find the relationship between the inputs and outputs, we need to find the values of a and b in the equation y = ax^0 + bx^1.
+
+Let's substitute the given inputs and outputs into the equation:
+
+For the first pair (74, -1170):
+-1170 = a(74^0) + b(74^1)
+-1170 = a + 74b
+
+For the second pair (93, -1474):
+-1474 = a(93^0) + b(93^1)
+-1474 = a + 93b
+
+For the third pair (52, -818):
+-818 = a(52^0) + b(52^1)
+-818 = a + 52b
+
+For the fourth pair (-80, 1294):
+1294 = a(-80^0) + b(-80^1)
+1294 = a - 80b
+
+For the fifth pair (34, -530):
+-530 = a(34^0) + b(34^1)
+-530 = a + 34b
+
+We now have a system of equations:
+
+a + 74b = -1170
+a + 93b = -1474
+a + 52b = -818
+a - 80b = 1294
+a + 34b = -530
+
+Solving this system of equations will give us the values of a and b, which will define the relationship between the inputs and outputs.
+
+    However, just write the output like what's shown in these examples.
+    [(35, -432), (80, -972), (-8, 84), (-81, 960), (44, -540)]
+
+    Return the output preceded by 'Output:'
+    Input: 14
+    ",Output: -216,-210,False
+"Use this function to apply to the input example to get the correct output.
+
+    To find the relationship between the inputs and outputs, we can use the given data points to solve for the coefficients a and b in the equation y = ax^0 + bx^1.
+
+Using the first data point (35, -432):
+-432 = a(35^0) + b(35^1)
+-432 = a + 35b
+
+Using the second data point (80, -972):
+-972 = a(80^0) + b(80^1)
+-972 = a + 80b
+
+Using the third data point (-8, 84):
+84 = a(-8^0) + b(-8^1)
+84 = a - 8b
+
+Using the fourth data point (-81, 960):
+960 = a(-81^0) + b(-81^1)
+960 = a - 81b
+
+Using the fifth data point (44, -540):
+-540 = a(44^0) + b(44^1)
+-540 = a + 44b
+
+We now have a system of equations:
+
+a + 35b = -432
+a + 80b = -972
+a - 8b = 84
+a - 81b = 960
+a + 44b = -540
+
+Solving this system of equations, we find that a = -12 and b = -8.
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+
+y = -12x^0 - 8x^1
+
+    However, just write the output like what's shown in these examples.
+    [(-85, -835), (40, 415), (29, 305), (-49, -475), (46, 475)]
+
+    Return the output preceded by 'Output:'
+    Input: -72
+    ",Output: -712,852,False
+"Use this function to apply to the input example to get the correct output.
+
+    y = -835 + 415x
+
+    However, just write the output like what's shown in these examples.
+    [(-62, 616), (-58, 576), (-17, 166), (33, -334), (13, -134)]
+
+    Return the output preceded by 'Output:'
+    Input: 37
+    ",Output: -835 + 415(37) = 616,385,False
+"Use this function to apply to the input example to get the correct output.
+
+    To find the relationship between the inputs and outputs, we can use the method of least squares to fit a linear equation to the given data points. The linear equation can be written in the form y = ax^0 + bx^1, where x^0 represents the constant term and x^1 represents the coefficient of x.
+
+Using the given data points, we can set up a system of equations:
+
+616 = a(-62)^0 + b(-62)^1
+576 = a(-58)^0 + b(-58)^1
+166 = a(-17)^0 + b(-17)^1
+-334 = a(33)^0 + b(33)^1
+-134 = a(13)^0 + b(13)^1
+
+Simplifying these equations, we get:
+
+616 = a + (-62)b
+576 = a + (-58)b
+166 = a + (-17)b
+-334 = a + 33b
+-134 = a + 13b
+
+We can solve this system of equations to find the values of a and b.
+
+Using a calculator or a system of equations solver, we find that a = 10 and b = -2.
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+
+y = 10x^0 - 2x^1
+
+Simplifying further, we get:
+
+y = 10 - 2x
+
+    However, just write the output like what's shown in these examples.
+    [(74, 980), (-48, -606), (83, 1097), (49, 655), (25, 343)]
+
+    Return the output preceded by 'Output:'
+    Input: -71
+    ",Output: 852,706,False
+"Use this function to apply to the input example to get the correct output.
+
+    To find the relationship between the inputs and outputs, we can use the method of least squares to fit a linear equation to the given data points. The linear equation can be written in the form y = ax^0 + bx^1, where x^0 represents the constant term and x^1 represents the coefficient of x.
+
+Using the given data points, we can set up a system of equations:
+
+980 = a(74)^0 + b(74)^1
+-606 = a(-48)^0 + b(-48)^1
+1097 = a(83)^0 + b(83)^1
+655 = a(49)^0 + b(49)^1
+343 = a(25)^0 + b(25)^1
+
+Simplifying the equations, we get:
+
+980 = a + 74b
+-606 = a - 48b
+1097 = a + 83b
+655 = a + 49b
+343 = a + 25b
+
+We can solve this system of equations to find the values of a and b.
+
+Using a calculator or a matrix solver, we find that a = 7 and b = 11.
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+
+y = 7x^0 + 11x^1
+
+Simplifying further, we get:
+
+y = 7 + 11x
+
+    However, just write the output like what's shown in these examples.
+    [(30, 203), (14, 91), (-86, -609), (16, 105), (-67, -476)]
+
+    Return the output preceded by 'Output:'
+    Input: -77
+    ",Output: -532,-983,False
+"Use this function to apply to the input example to get the correct output.
+
+    To find the relationship between the inputs and outputs, we can use the method of least squares to fit a linear equation to the given data points. The linear equation can be written in the form y = ax^0 + bx^1, where x^0 represents the constant term and x^1 represents the coefficient of x.
+
+Using the given data points, we can set up a system of equations:
+
+203 = a(30)^0 + b(30)^1
+91 = a(14)^0 + b(14)^1
+-609 = a(-86)^0 + b(-86)^1
+105 = a(16)^0 + b(16)^1
+-476 = a(-67)^0 + b(-67)^1
+
+Simplifying the equations, we get:
+
+203 = a + 30b
+91 = a + 14b
+-609 = a - 86b
+105 = a + 16b
+-476 = a - 67b
+
+We can solve this system of equations to find the values of a and b.
+
+Using a calculator or a matrix solver, we find that a = -1 and b = 7.
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+
+y = -1x^0 + 7x^1
+
+Simplifying further, we get:
+
+y = -1 + 7x
+
+    However, just write the output like what's shown in these examples.
+    [(6, 76), (16, 216), (44, 608), (-86, -1212), (43, 594)]
+
+    Return the output preceded by 'Output:'
+    Input: 31
+    ",Output: 206,210,False
+"Use this function to apply to the input example to get the correct output.
+
+    y = 4x^0 + 5x^1
+
+    However, just write the output like what's shown in these examples.
+    [(72, -67), (-22, 27), (85, -80), (-95, 100), (1, 4)]
+
+    Return the output preceded by 'Output:'
+    Input: 18
+    ",Output: 72,244,False
+"Use this function to apply to the input example to get the correct output.
+
+    y = -67 + 72x + 27x^1 - 22x^0 - 80x + 85x^1 + 100x^0 - 95x - 4x^1 + 1x^0
+
+    However, just write the output like what's shown in these examples.
+    [(-100, -292), (90, 278), (-45, -127), (48, 152), (-82, -238)]
+
+    Return the output preceded by 'Output:'
+    Input: -35
+    ",Output: -67 + 72(-35) + 27(-35)^1 - 22(-35)^0 - 80(-35) + 85(-35)^1 + 100(-35)^0 - 95(-35) - 4(-35)^1 + 1(-35)^0 = -292,40,False
+"Use this function to apply to the input example to get the correct output.
+
+    y = -292 + 278x
+
+    However, just write the output like what's shown in these examples.
+    [(8, 112), (-12, -148), (79, 1035), (-84, -1084), (38, 502)]
+
+    Return the output preceded by 'Output:'
+    Input: -89
+    ",Output: -24314,-259,False
+"Use this function to apply to the input example to get the correct output.
+
+    y = 2x^0 + 10x^1
+
+    However, just write the output like what's shown in these examples.
+    [(-83, 1074), (20, -265), (-92, 1191), (-27, 346), (4, -57)]
+
+    Return the output preceded by 'Output:'
+    Input: -85
+    ",Output: 1074,-1097,False
+"Use this function to apply to the input example to get the correct output.
+
+    y = 1074x^0 - 265x^1
+
+    However, just write the output like what's shown in these examples.
+    [(96, -592), (-66, 380), (96, -592), (64, -400), (86, -532)]
+
+    Return the output preceded by 'Output:'
+    Input: -54
+    ","Output: (96, -592)",697,False
+"Use this function to apply to the input example to get the correct output.
+
+    y = -592 + 380x
+
+    However, just write the output like what's shown in these examples.
+    [(7, -12), (-5, -24), (-3, -22), (14, -5), (-4, -23)]
+
+    Return the output preceded by 'Output:'
+    Input: 65
+    ",Output: 24408,-406,False

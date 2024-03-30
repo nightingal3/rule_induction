@@ -1,0 +1,1508 @@
+all_hyps,all_probs,task_id
+Function: y = -80x^0 + 10x^1,1.0,0
+"Based on the given input-output pairs, the function can be written as:
+
+Output: y = -2x^0 + 19x^1",1.0,0
+"Based on the given inputs and outputs, the function that captures the relationship can be represented as:
+
+Output: y = -3x^0 + 20x^1
+
+So the function can be written as:
+
+Output: y = -3 + 20x",0.95,0
+"Based on the given inputs and outputs, the relationship appears to be a linear function of the form y = ax^0 + bx^1. Let's find the values of a and b:
+
+Substituting the values into the equation:
+
+For the first data point (-10, -213):
+-213 = a + (-10)b
+
+For the second data point (9, 167):
+167 = a + (9)b
+
+For the third data point (4, 67):
+67 = a + (4)b
+
+For the fourth data point (-3, -73):
+-73 = a + (-3)b
+
+For the fifth data point (20, 387):
+387 = a + (20)b
+
+Simplifying the equations:
+
+-213 = a - 10b             (Equation 1)
+167 = a + 9b               (Equation 2)
+67 = a + 4b                (Equation 3)
+-73 = a - 3b               (Equation 4)
+387 = a + 20b              (Equation 5)
+
+We can solve this system of equations to find the values of a and b:
+
+Adding Equation 1 and Equation 4:
+-286 = 2a - 7b              (Equation 6)
+
+Subtracting Equation 1 from Equation 2:
+380 = 19b                   (Equation 7)
+b = 20
+
+Substituting b = 20 into Equation 7:
+a = 27
+
+Therefore, the function that captures the relationship between inputs and outputs is:
+
+Output (y) = 27x^0 + 20x^1
+
+Simplifying:
+
+Output (y) = 27 + 20x",0.95,0
+"To find a function that describes the relationship between the inputs and outputs, we can try to fit a linear equation of the form y = ax^0 + bx^1.
+
+We can use these data points to solve for the coefficients a and b:
+
+Input: -10, Output: -213
+Input: 9, Output: 167
+Input: 4, Output: 67
+Input: -3, Output: -73
+Input: 20, Output: 387
+
+Using these points, we can set up a system of equations:
+
+-213 = a(-10)^0 + b(-10)^1
+167 = a(9)^0 + b(9)^1
+67 = a(4)^0 + b(4)^1
+-73 = a(-3)^0 + b(-3)^1
+387 = a(20)^0 + b(20)^1
+
+Simplifying these equations, we get:
+
+-213 = a + (-10)b
+167 = a + 9b
+67 = a + 4b
+-73 = a - 3b
+387 = a + 20b
+
+Rearranging the equations, we obtain:
+
+a + (-10)b = -213
+a + 9b = 167
+a + 4b = 67
+a - 3b = -73
+a + 20b = 387
+
+We can solve this system of equations to find the values of a and b.
+
+Solving for a in terms of b using equations 2 and 3:
+a = 67 - 4b
+
+Substituting the expression for a in equation 2:
+67 - 4b + 9b = 167
+5b = 100
+b = 20
+
+Substituting the value of b into the expression for a:
+a = 67 - 4(20)
+a = -53
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+
+Output: y = -53x^0 + 20x^1
+
+Simplifying this function, we get:
+
+Output: y = -53 + 20x",0.95,0
+Function: y = -80x^0 + 10x^1,1.0,0
+"Based on the given input-output pairs, the function can be written as:
+
+Output: y = -2x^0 + 19x^1",1.0,0
+"Based on the given inputs and outputs, the function that captures the relationship can be represented as:
+
+Output: y = -3x^0 + 20x^1
+
+So the function can be written as:
+
+Output: y = -3 + 20x",0.95,0
+"Based on the given inputs and outputs, the relationship appears to be a linear function of the form y = ax^0 + bx^1. Let's find the values of a and b:
+
+Substituting the values into the equation:
+
+For the first data point (-10, -213):
+-213 = a + (-10)b
+
+For the second data point (9, 167):
+167 = a + (9)b
+
+For the third data point (4, 67):
+67 = a + (4)b
+
+For the fourth data point (-3, -73):
+-73 = a + (-3)b
+
+For the fifth data point (20, 387):
+387 = a + (20)b
+
+Simplifying the equations:
+
+-213 = a - 10b             (Equation 1)
+167 = a + 9b               (Equation 2)
+67 = a + 4b                (Equation 3)
+-73 = a - 3b               (Equation 4)
+387 = a + 20b              (Equation 5)
+
+We can solve this system of equations to find the values of a and b:
+
+Adding Equation 1 and Equation 4:
+-286 = 2a - 7b              (Equation 6)
+
+Subtracting Equation 1 from Equation 2:
+380 = 19b                   (Equation 7)
+b = 20
+
+Substituting b = 20 into Equation 7:
+a = 27
+
+Therefore, the function that captures the relationship between inputs and outputs is:
+
+Output (y) = 27x^0 + 20x^1
+
+Simplifying:
+
+Output (y) = 27 + 20x",0.95,0
+"To find a function that describes the relationship between the inputs and outputs, we can try to fit a linear equation of the form y = ax^0 + bx^1.
+
+We can use these data points to solve for the coefficients a and b:
+
+Input: -10, Output: -213
+Input: 9, Output: 167
+Input: 4, Output: 67
+Input: -3, Output: -73
+Input: 20, Output: 387
+
+Using these points, we can set up a system of equations:
+
+-213 = a(-10)^0 + b(-10)^1
+167 = a(9)^0 + b(9)^1
+67 = a(4)^0 + b(4)^1
+-73 = a(-3)^0 + b(-3)^1
+387 = a(20)^0 + b(20)^1
+
+Simplifying these equations, we get:
+
+-213 = a + (-10)b
+167 = a + 9b
+67 = a + 4b
+-73 = a - 3b
+387 = a + 20b
+
+Rearranging the equations, we obtain:
+
+a + (-10)b = -213
+a + 9b = 167
+a + 4b = 67
+a - 3b = -73
+a + 20b = 387
+
+We can solve this system of equations to find the values of a and b.
+
+Solving for a in terms of b using equations 2 and 3:
+a = 67 - 4b
+
+Substituting the expression for a in equation 2:
+67 - 4b + 9b = 167
+5b = 100
+b = 20
+
+Substituting the value of b into the expression for a:
+a = 67 - 4(20)
+a = -53
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+
+Output: y = -53x^0 + 20x^1
+
+Simplifying this function, we get:
+
+Output: y = -53 + 20x",0.95,0
+"To find the relationship between the inputs and outputs, let's fit the data to a linear function in the form of y = ax^0 + bx^1.
+
+We can form a system of linear equations using the given input-output pairs:
+
+-213 = a(-10)^0 + b(-10)^1   -->   a - 10b = -213   (Equation 1)
+167 = a(9)^0 + b(9)^1         -->   a + 9b = 167     (Equation 2)
+67 = a(4)^0 + b(4)^1           -->   a + 4b = 67      (Equation 3)
+-73 = a(-3)^0 + b(-3)^1       -->   a - 3b = -73     (Equation 4)
+387 = a(20)^0 + b(20)^1     -->   a + 20b = 387   (Equation 5)
+
+Solving this system of equations will give us the values of 'a' and 'b', which we can then plug back into the function y = ax^0 + bx^1.
+
+Solving the system of equations, we find:
+a = 8
+b = 21
+
+Thus, the function that captures the relationship between the inputs and outputs is:
+Output: y = 8x^0 + 21x^1
+
+Simplifying this equation yields:
+Output: y = 8 + 21x",1.0,1
+"Based on the given input-output pairs, it is clear that the output (y) can be represented by the equation:
+
+y = 6x^0 + 17x^1
+
+Therefore, the function that captures this relationship is:
+
+Output: y = 6 + 17x",1.0,1
+y = -3x^0 + 10x^1,0.95,1
+"Based on the given inputs and outputs, it appears that the function relating the input (x) to the output (y) can be described by a quadratic equation. Let's assume the function to be of the form:
+
+y = ax^0 + bx^1
+
+Since x^0 is equal to 1, we can simplify the equation as:
+
+y = a + bx
+
+By using the inputs and outputs provided, we can solve for the values of a and b in the equation.
+
+Input: -10, Output: -213
+
+-213 = a + (-10)b
+
+Input: 9, Output: 167
+
+167 = a + 9b
+
+Input: 4, Output: 67
+
+67 = a + 4b
+
+Input: -3, Output: -73
+
+-73 = a + (-3)b
+
+Input: 20, Output: 387
+
+387 = a + 20b
+
+Solving these equations simultaneously, we can find the values of a and b.",0.95,1
+Output: y = -2x^0 + 9x^1,0.95,1
+Function: y = -80x^0 + 10x^1,1.0,0
+"Based on the given input-output pairs, the function can be written as:
+
+Output: y = -2x^0 + 19x^1",1.0,0
+"Based on the given inputs and outputs, the function that captures the relationship can be represented as:
+
+Output: y = -3x^0 + 20x^1
+
+So the function can be written as:
+
+Output: y = -3 + 20x",0.95,0
+"Based on the given inputs and outputs, the relationship appears to be a linear function of the form y = ax^0 + bx^1. Let's find the values of a and b:
+
+Substituting the values into the equation:
+
+For the first data point (-10, -213):
+-213 = a + (-10)b
+
+For the second data point (9, 167):
+167 = a + (9)b
+
+For the third data point (4, 67):
+67 = a + (4)b
+
+For the fourth data point (-3, -73):
+-73 = a + (-3)b
+
+For the fifth data point (20, 387):
+387 = a + (20)b
+
+Simplifying the equations:
+
+-213 = a - 10b             (Equation 1)
+167 = a + 9b               (Equation 2)
+67 = a + 4b                (Equation 3)
+-73 = a - 3b               (Equation 4)
+387 = a + 20b              (Equation 5)
+
+We can solve this system of equations to find the values of a and b:
+
+Adding Equation 1 and Equation 4:
+-286 = 2a - 7b              (Equation 6)
+
+Subtracting Equation 1 from Equation 2:
+380 = 19b                   (Equation 7)
+b = 20
+
+Substituting b = 20 into Equation 7:
+a = 27
+
+Therefore, the function that captures the relationship between inputs and outputs is:
+
+Output (y) = 27x^0 + 20x^1
+
+Simplifying:
+
+Output (y) = 27 + 20x",0.95,0
+"To find a function that describes the relationship between the inputs and outputs, we can try to fit a linear equation of the form y = ax^0 + bx^1.
+
+We can use these data points to solve for the coefficients a and b:
+
+Input: -10, Output: -213
+Input: 9, Output: 167
+Input: 4, Output: 67
+Input: -3, Output: -73
+Input: 20, Output: 387
+
+Using these points, we can set up a system of equations:
+
+-213 = a(-10)^0 + b(-10)^1
+167 = a(9)^0 + b(9)^1
+67 = a(4)^0 + b(4)^1
+-73 = a(-3)^0 + b(-3)^1
+387 = a(20)^0 + b(20)^1
+
+Simplifying these equations, we get:
+
+-213 = a + (-10)b
+167 = a + 9b
+67 = a + 4b
+-73 = a - 3b
+387 = a + 20b
+
+Rearranging the equations, we obtain:
+
+a + (-10)b = -213
+a + 9b = 167
+a + 4b = 67
+a - 3b = -73
+a + 20b = 387
+
+We can solve this system of equations to find the values of a and b.
+
+Solving for a in terms of b using equations 2 and 3:
+a = 67 - 4b
+
+Substituting the expression for a in equation 2:
+67 - 4b + 9b = 167
+5b = 100
+b = 20
+
+Substituting the value of b into the expression for a:
+a = 67 - 4(20)
+a = -53
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+
+Output: y = -53x^0 + 20x^1
+
+Simplifying this function, we get:
+
+Output: y = -53 + 20x",0.95,0
+"To find the relationship between the inputs and outputs, let's fit the data to a linear function in the form of y = ax^0 + bx^1.
+
+We can form a system of linear equations using the given input-output pairs:
+
+-213 = a(-10)^0 + b(-10)^1   -->   a - 10b = -213   (Equation 1)
+167 = a(9)^0 + b(9)^1         -->   a + 9b = 167     (Equation 2)
+67 = a(4)^0 + b(4)^1           -->   a + 4b = 67      (Equation 3)
+-73 = a(-3)^0 + b(-3)^1       -->   a - 3b = -73     (Equation 4)
+387 = a(20)^0 + b(20)^1     -->   a + 20b = 387   (Equation 5)
+
+Solving this system of equations will give us the values of 'a' and 'b', which we can then plug back into the function y = ax^0 + bx^1.
+
+Solving the system of equations, we find:
+a = 8
+b = 21
+
+Thus, the function that captures the relationship between the inputs and outputs is:
+Output: y = 8x^0 + 21x^1
+
+Simplifying this equation yields:
+Output: y = 8 + 21x",1.0,1
+"Based on the given input-output pairs, it is clear that the output (y) can be represented by the equation:
+
+y = 6x^0 + 17x^1
+
+Therefore, the function that captures this relationship is:
+
+Output: y = 6 + 17x",1.0,1
+y = -3x^0 + 10x^1,0.95,1
+"Based on the given inputs and outputs, it appears that the function relating the input (x) to the output (y) can be described by a quadratic equation. Let's assume the function to be of the form:
+
+y = ax^0 + bx^1
+
+Since x^0 is equal to 1, we can simplify the equation as:
+
+y = a + bx
+
+By using the inputs and outputs provided, we can solve for the values of a and b in the equation.
+
+Input: -10, Output: -213
+
+-213 = a + (-10)b
+
+Input: 9, Output: 167
+
+167 = a + 9b
+
+Input: 4, Output: 67
+
+67 = a + 4b
+
+Input: -3, Output: -73
+
+-73 = a + (-3)b
+
+Input: 20, Output: 387
+
+387 = a + 20b
+
+Solving these equations simultaneously, we can find the values of a and b.",0.95,1
+Output: y = -2x^0 + 9x^1,0.95,1
+"The function that captures the relationship between inputs and outputs is:
+
+Output: y = -10x^0 + 20x^1
+
+where a = -10 and b = 20.",1.0,2
+"The function that captures the relationship between the inputs and outputs can be written as follows:
+
+Output = -10 + 21x",1.0,2
+"Based on the given inputs and outputs, the function can be written as:
+
+Output: y = -3x^0 + 20x^1
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+
+Output: y = -3 + 20x",1.0,2
+"The given function in the exact form is:
+
+Output: y = -3x^0 + 10x^1
+
+where a = -3 and b = 10.",0.95,2
+"Based on the given inputs and outputs, it is clear that the relationship between the inputs (x) and the outputs (y) can be described by a linear function in the form y = ax^0 + bx^1.
+
+Using the given data points, we can find the values of a and b.
+
+Substituting the first data point (-10, -213) into the function, we get:
+-213 = a(-10)^0 + b(-10)^1
+-213 = a - 10b
+
+Similarly, substituting the second data point (9, 167) into the function, we get:
+167 = a(9)^0 + b(9)^1
+167 = a + 9b
+
+We now have a system of linear equations:
+
+-213 = a - 10b
+167 = a + 9b
+
+Solving this system of equations, we find that a = -20 and b = -19.
+
+Thus, the function that captures the relationship between the inputs and outputs is:
+
+y = -20x^0 - 19x^1
+
+Simplifying this expression, we get:
+
+y = -20 - 19x",0.0,2
+Function: y = -80x^0 + 10x^1,1.0,0
+"Based on the given input-output pairs, the function can be written as:
+
+Output: y = -2x^0 + 19x^1",1.0,0
+"Based on the given inputs and outputs, the function that captures the relationship can be represented as:
+
+Output: y = -3x^0 + 20x^1
+
+So the function can be written as:
+
+Output: y = -3 + 20x",0.95,0
+"Based on the given inputs and outputs, the relationship appears to be a linear function of the form y = ax^0 + bx^1. Let's find the values of a and b:
+
+Substituting the values into the equation:
+
+For the first data point (-10, -213):
+-213 = a + (-10)b
+
+For the second data point (9, 167):
+167 = a + (9)b
+
+For the third data point (4, 67):
+67 = a + (4)b
+
+For the fourth data point (-3, -73):
+-73 = a + (-3)b
+
+For the fifth data point (20, 387):
+387 = a + (20)b
+
+Simplifying the equations:
+
+-213 = a - 10b             (Equation 1)
+167 = a + 9b               (Equation 2)
+67 = a + 4b                (Equation 3)
+-73 = a - 3b               (Equation 4)
+387 = a + 20b              (Equation 5)
+
+We can solve this system of equations to find the values of a and b:
+
+Adding Equation 1 and Equation 4:
+-286 = 2a - 7b              (Equation 6)
+
+Subtracting Equation 1 from Equation 2:
+380 = 19b                   (Equation 7)
+b = 20
+
+Substituting b = 20 into Equation 7:
+a = 27
+
+Therefore, the function that captures the relationship between inputs and outputs is:
+
+Output (y) = 27x^0 + 20x^1
+
+Simplifying:
+
+Output (y) = 27 + 20x",0.95,0
+"To find a function that describes the relationship between the inputs and outputs, we can try to fit a linear equation of the form y = ax^0 + bx^1.
+
+We can use these data points to solve for the coefficients a and b:
+
+Input: -10, Output: -213
+Input: 9, Output: 167
+Input: 4, Output: 67
+Input: -3, Output: -73
+Input: 20, Output: 387
+
+Using these points, we can set up a system of equations:
+
+-213 = a(-10)^0 + b(-10)^1
+167 = a(9)^0 + b(9)^1
+67 = a(4)^0 + b(4)^1
+-73 = a(-3)^0 + b(-3)^1
+387 = a(20)^0 + b(20)^1
+
+Simplifying these equations, we get:
+
+-213 = a + (-10)b
+167 = a + 9b
+67 = a + 4b
+-73 = a - 3b
+387 = a + 20b
+
+Rearranging the equations, we obtain:
+
+a + (-10)b = -213
+a + 9b = 167
+a + 4b = 67
+a - 3b = -73
+a + 20b = 387
+
+We can solve this system of equations to find the values of a and b.
+
+Solving for a in terms of b using equations 2 and 3:
+a = 67 - 4b
+
+Substituting the expression for a in equation 2:
+67 - 4b + 9b = 167
+5b = 100
+b = 20
+
+Substituting the value of b into the expression for a:
+a = 67 - 4(20)
+a = -53
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+
+Output: y = -53x^0 + 20x^1
+
+Simplifying this function, we get:
+
+Output: y = -53 + 20x",0.95,0
+"To find the relationship between the inputs and outputs, let's fit the data to a linear function in the form of y = ax^0 + bx^1.
+
+We can form a system of linear equations using the given input-output pairs:
+
+-213 = a(-10)^0 + b(-10)^1   -->   a - 10b = -213   (Equation 1)
+167 = a(9)^0 + b(9)^1         -->   a + 9b = 167     (Equation 2)
+67 = a(4)^0 + b(4)^1           -->   a + 4b = 67      (Equation 3)
+-73 = a(-3)^0 + b(-3)^1       -->   a - 3b = -73     (Equation 4)
+387 = a(20)^0 + b(20)^1     -->   a + 20b = 387   (Equation 5)
+
+Solving this system of equations will give us the values of 'a' and 'b', which we can then plug back into the function y = ax^0 + bx^1.
+
+Solving the system of equations, we find:
+a = 8
+b = 21
+
+Thus, the function that captures the relationship between the inputs and outputs is:
+Output: y = 8x^0 + 21x^1
+
+Simplifying this equation yields:
+Output: y = 8 + 21x",1.0,1
+"Based on the given input-output pairs, it is clear that the output (y) can be represented by the equation:
+
+y = 6x^0 + 17x^1
+
+Therefore, the function that captures this relationship is:
+
+Output: y = 6 + 17x",1.0,1
+y = -3x^0 + 10x^1,0.95,1
+"Based on the given inputs and outputs, it appears that the function relating the input (x) to the output (y) can be described by a quadratic equation. Let's assume the function to be of the form:
+
+y = ax^0 + bx^1
+
+Since x^0 is equal to 1, we can simplify the equation as:
+
+y = a + bx
+
+By using the inputs and outputs provided, we can solve for the values of a and b in the equation.
+
+Input: -10, Output: -213
+
+-213 = a + (-10)b
+
+Input: 9, Output: 167
+
+167 = a + 9b
+
+Input: 4, Output: 67
+
+67 = a + 4b
+
+Input: -3, Output: -73
+
+-73 = a + (-3)b
+
+Input: 20, Output: 387
+
+387 = a + 20b
+
+Solving these equations simultaneously, we can find the values of a and b.",0.95,1
+Output: y = -2x^0 + 9x^1,0.95,1
+"The function that captures the relationship between inputs and outputs is:
+
+Output: y = -10x^0 + 20x^1
+
+where a = -10 and b = 20.",1.0,2
+"The function that captures the relationship between the inputs and outputs can be written as follows:
+
+Output = -10 + 21x",1.0,2
+"Based on the given inputs and outputs, the function can be written as:
+
+Output: y = -3x^0 + 20x^1
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+
+Output: y = -3 + 20x",1.0,2
+"The given function in the exact form is:
+
+Output: y = -3x^0 + 10x^1
+
+where a = -3 and b = 10.",0.95,2
+"Based on the given inputs and outputs, it is clear that the relationship between the inputs (x) and the outputs (y) can be described by a linear function in the form y = ax^0 + bx^1.
+
+Using the given data points, we can find the values of a and b.
+
+Substituting the first data point (-10, -213) into the function, we get:
+-213 = a(-10)^0 + b(-10)^1
+-213 = a - 10b
+
+Similarly, substituting the second data point (9, 167) into the function, we get:
+167 = a(9)^0 + b(9)^1
+167 = a + 9b
+
+We now have a system of linear equations:
+
+-213 = a - 10b
+167 = a + 9b
+
+Solving this system of equations, we find that a = -20 and b = -19.
+
+Thus, the function that captures the relationship between the inputs and outputs is:
+
+y = -20x^0 - 19x^1
+
+Simplifying this expression, we get:
+
+y = -20 - 19x",0.0,2
+"Based on the given inputs and outputs, the relationship can be described by the function:
+
+Output: y = -2x^0 + 21x^1
+
+where x is the input value.",1.0,3
+Output: y = -3x^0 + 20x^1,0.95,3
+"To find the function that captures the relationship between the inputs and outputs given, we can use a linear regression approach. By fitting a line to the data points, we can find the equation of the line in the form y = ax^0 + bx^1.
+
+Let's start by finding the values of a and b.
+
+Using the input-output pairs, we have the following equations:
+
+-213 = a + b(-10)
+167 = a + b(9)
+67 = a + b(4)
+-73 = a + b(-3)
+387 = a + b(20)
+
+To solve these equations simultaneously, we can use a linear algebra method like matrix inversion.
+
+Rewriting the equations, we have:
+
+1a - 10b = -213
+1a + 9b = 167
+1a + 4b = 67
+1a - 3b = -73
+1a + 20b = 387
+
+Writing the system of equations in matrix form:
+
+[[1, -10], [1, 9], [1, 4], [1, -3], [1, 20]] * [a, b] = [-213, 167, 67, -73, 387]
+
+Now, let's solve this system of equations:
+
+Using a matrix inversion calculator, we find the solution:
+
+[a, b] = [12.18, 18.06]
+
+Therefore, the function that captures the relationship between the input and output is:
+
+Output: y = 12.18x^0 + 18.06x^1",0.95,3
+"Based on the given inputs and outputs, the function can be described as:
+
+Output: y = -7x^0 + 20x^1",0.95,3
+"Based on the given inputs and outputs, it appears that the relationship between the inputs and outputs can be captured by a linear equation of the form y = ax^0 + bx^1. 
+
+Let's solve for the values of a and b by substituting one of the input-output pairs into the equation.
+
+When input x = -10, output y = -213.
+
+Substituting these values into the equation:
+
+-213 = a(-10)^0 + b(-10)^1
+-213 = a - 10b
+
+When input x = 9, output y = 167.
+
+Substituting these values into the equation:
+
+167 = a(9)^0 + b(9)^1
+167 = a + 9b
+
+We now have a system of two equations:
+
+-213 = a - 10b
+167 = a + 9b
+
+Solving this system of equations, we find that a = 47 and b = -19.
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+y = 47x^0 - 19x^1",0.95,3
+Function: y = -80x^0 + 10x^1,1.0,0
+"Based on the given input-output pairs, the function can be written as:
+
+Output: y = -2x^0 + 19x^1",1.0,0
+"Based on the given inputs and outputs, the function that captures the relationship can be represented as:
+
+Output: y = -3x^0 + 20x^1
+
+So the function can be written as:
+
+Output: y = -3 + 20x",0.95,0
+"Based on the given inputs and outputs, the relationship appears to be a linear function of the form y = ax^0 + bx^1. Let's find the values of a and b:
+
+Substituting the values into the equation:
+
+For the first data point (-10, -213):
+-213 = a + (-10)b
+
+For the second data point (9, 167):
+167 = a + (9)b
+
+For the third data point (4, 67):
+67 = a + (4)b
+
+For the fourth data point (-3, -73):
+-73 = a + (-3)b
+
+For the fifth data point (20, 387):
+387 = a + (20)b
+
+Simplifying the equations:
+
+-213 = a - 10b             (Equation 1)
+167 = a + 9b               (Equation 2)
+67 = a + 4b                (Equation 3)
+-73 = a - 3b               (Equation 4)
+387 = a + 20b              (Equation 5)
+
+We can solve this system of equations to find the values of a and b:
+
+Adding Equation 1 and Equation 4:
+-286 = 2a - 7b              (Equation 6)
+
+Subtracting Equation 1 from Equation 2:
+380 = 19b                   (Equation 7)
+b = 20
+
+Substituting b = 20 into Equation 7:
+a = 27
+
+Therefore, the function that captures the relationship between inputs and outputs is:
+
+Output (y) = 27x^0 + 20x^1
+
+Simplifying:
+
+Output (y) = 27 + 20x",0.95,0
+"To find a function that describes the relationship between the inputs and outputs, we can try to fit a linear equation of the form y = ax^0 + bx^1.
+
+We can use these data points to solve for the coefficients a and b:
+
+Input: -10, Output: -213
+Input: 9, Output: 167
+Input: 4, Output: 67
+Input: -3, Output: -73
+Input: 20, Output: 387
+
+Using these points, we can set up a system of equations:
+
+-213 = a(-10)^0 + b(-10)^1
+167 = a(9)^0 + b(9)^1
+67 = a(4)^0 + b(4)^1
+-73 = a(-3)^0 + b(-3)^1
+387 = a(20)^0 + b(20)^1
+
+Simplifying these equations, we get:
+
+-213 = a + (-10)b
+167 = a + 9b
+67 = a + 4b
+-73 = a - 3b
+387 = a + 20b
+
+Rearranging the equations, we obtain:
+
+a + (-10)b = -213
+a + 9b = 167
+a + 4b = 67
+a - 3b = -73
+a + 20b = 387
+
+We can solve this system of equations to find the values of a and b.
+
+Solving for a in terms of b using equations 2 and 3:
+a = 67 - 4b
+
+Substituting the expression for a in equation 2:
+67 - 4b + 9b = 167
+5b = 100
+b = 20
+
+Substituting the value of b into the expression for a:
+a = 67 - 4(20)
+a = -53
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+
+Output: y = -53x^0 + 20x^1
+
+Simplifying this function, we get:
+
+Output: y = -53 + 20x",0.95,0
+"To find the relationship between the inputs and outputs, let's fit the data to a linear function in the form of y = ax^0 + bx^1.
+
+We can form a system of linear equations using the given input-output pairs:
+
+-213 = a(-10)^0 + b(-10)^1   -->   a - 10b = -213   (Equation 1)
+167 = a(9)^0 + b(9)^1         -->   a + 9b = 167     (Equation 2)
+67 = a(4)^0 + b(4)^1           -->   a + 4b = 67      (Equation 3)
+-73 = a(-3)^0 + b(-3)^1       -->   a - 3b = -73     (Equation 4)
+387 = a(20)^0 + b(20)^1     -->   a + 20b = 387   (Equation 5)
+
+Solving this system of equations will give us the values of 'a' and 'b', which we can then plug back into the function y = ax^0 + bx^1.
+
+Solving the system of equations, we find:
+a = 8
+b = 21
+
+Thus, the function that captures the relationship between the inputs and outputs is:
+Output: y = 8x^0 + 21x^1
+
+Simplifying this equation yields:
+Output: y = 8 + 21x",1.0,1
+"Based on the given input-output pairs, it is clear that the output (y) can be represented by the equation:
+
+y = 6x^0 + 17x^1
+
+Therefore, the function that captures this relationship is:
+
+Output: y = 6 + 17x",1.0,1
+y = -3x^0 + 10x^1,0.95,1
+"Based on the given inputs and outputs, it appears that the function relating the input (x) to the output (y) can be described by a quadratic equation. Let's assume the function to be of the form:
+
+y = ax^0 + bx^1
+
+Since x^0 is equal to 1, we can simplify the equation as:
+
+y = a + bx
+
+By using the inputs and outputs provided, we can solve for the values of a and b in the equation.
+
+Input: -10, Output: -213
+
+-213 = a + (-10)b
+
+Input: 9, Output: 167
+
+167 = a + 9b
+
+Input: 4, Output: 67
+
+67 = a + 4b
+
+Input: -3, Output: -73
+
+-73 = a + (-3)b
+
+Input: 20, Output: 387
+
+387 = a + 20b
+
+Solving these equations simultaneously, we can find the values of a and b.",0.95,1
+Output: y = -2x^0 + 9x^1,0.95,1
+"The function that captures the relationship between inputs and outputs is:
+
+Output: y = -10x^0 + 20x^1
+
+where a = -10 and b = 20.",1.0,2
+"The function that captures the relationship between the inputs and outputs can be written as follows:
+
+Output = -10 + 21x",1.0,2
+"Based on the given inputs and outputs, the function can be written as:
+
+Output: y = -3x^0 + 20x^1
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+
+Output: y = -3 + 20x",1.0,2
+"The given function in the exact form is:
+
+Output: y = -3x^0 + 10x^1
+
+where a = -3 and b = 10.",0.95,2
+"Based on the given inputs and outputs, it is clear that the relationship between the inputs (x) and the outputs (y) can be described by a linear function in the form y = ax^0 + bx^1.
+
+Using the given data points, we can find the values of a and b.
+
+Substituting the first data point (-10, -213) into the function, we get:
+-213 = a(-10)^0 + b(-10)^1
+-213 = a - 10b
+
+Similarly, substituting the second data point (9, 167) into the function, we get:
+167 = a(9)^0 + b(9)^1
+167 = a + 9b
+
+We now have a system of linear equations:
+
+-213 = a - 10b
+167 = a + 9b
+
+Solving this system of equations, we find that a = -20 and b = -19.
+
+Thus, the function that captures the relationship between the inputs and outputs is:
+
+y = -20x^0 - 19x^1
+
+Simplifying this expression, we get:
+
+y = -20 - 19x",0.0,2
+"Based on the given inputs and outputs, the relationship can be described by the function:
+
+Output: y = -2x^0 + 21x^1
+
+where x is the input value.",1.0,3
+Output: y = -3x^0 + 20x^1,0.95,3
+"To find the function that captures the relationship between the inputs and outputs given, we can use a linear regression approach. By fitting a line to the data points, we can find the equation of the line in the form y = ax^0 + bx^1.
+
+Let's start by finding the values of a and b.
+
+Using the input-output pairs, we have the following equations:
+
+-213 = a + b(-10)
+167 = a + b(9)
+67 = a + b(4)
+-73 = a + b(-3)
+387 = a + b(20)
+
+To solve these equations simultaneously, we can use a linear algebra method like matrix inversion.
+
+Rewriting the equations, we have:
+
+1a - 10b = -213
+1a + 9b = 167
+1a + 4b = 67
+1a - 3b = -73
+1a + 20b = 387
+
+Writing the system of equations in matrix form:
+
+[[1, -10], [1, 9], [1, 4], [1, -3], [1, 20]] * [a, b] = [-213, 167, 67, -73, 387]
+
+Now, let's solve this system of equations:
+
+Using a matrix inversion calculator, we find the solution:
+
+[a, b] = [12.18, 18.06]
+
+Therefore, the function that captures the relationship between the input and output is:
+
+Output: y = 12.18x^0 + 18.06x^1",0.95,3
+"Based on the given inputs and outputs, the function can be described as:
+
+Output: y = -7x^0 + 20x^1",0.95,3
+"Based on the given inputs and outputs, it appears that the relationship between the inputs and outputs can be captured by a linear equation of the form y = ax^0 + bx^1. 
+
+Let's solve for the values of a and b by substituting one of the input-output pairs into the equation.
+
+When input x = -10, output y = -213.
+
+Substituting these values into the equation:
+
+-213 = a(-10)^0 + b(-10)^1
+-213 = a - 10b
+
+When input x = 9, output y = 167.
+
+Substituting these values into the equation:
+
+167 = a(9)^0 + b(9)^1
+167 = a + 9b
+
+We now have a system of two equations:
+
+-213 = a - 10b
+167 = a + 9b
+
+Solving this system of equations, we find that a = 47 and b = -19.
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+y = 47x^0 - 19x^1",0.95,3
+Function: y = -5x^0 + 21x^1,1.0,4
+"To find the function that describes the relationship between the inputs and outputs, we can use the given data to solve a system of equations.
+
+Taking the general form of the function as y = ax^0 + bx^1, we can simplify it to y = a + bx.
+
+Given the following data points:
+
+Input: -10
+Output: -213
+
+Input: 9
+Output: 167
+
+Input: 4
+Output: 67
+
+Input: -3
+Output: -73
+
+Input: 20
+Output: 387
+
+We can set up the following system of equations:
+
+-213 = a - 10b         (equation 1)
+167 = a + 9b           (equation 2)
+67 = a + 4b            (equation 3)
+-73 = a - 3b           (equation 4)
+387 = a + 20b          (equation 5)
+
+To solve this system of equations, we can use any method like substitution or elimination. Solving the system, we find that a = -10 and b = 24.
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+
+Output: y = -10 + 24x",0.999,4
+Output: y = -76 + 9x,0.95,4
+y = -3x^0 + 8x^1,0.95,4
+"Based on the given input-output pairs, it seems that the relationship between the input (x) and output (y) can be captured by a linear equation of the form y = ax^0 + bx^1, where a and b are constants.
+
+To find the values of a and b, we can solve the equation system formed by substituting the given input-output pairs.
+
+Substituting the first pair (-10, -213):
+-213 = a(-10)^0 + b(-10)^1
+-213 = a - 10b
+
+Substituting the second pair (9, 167):
+167 = a(9)^0 + b(9)^1
+167 = a + 9b
+
+Substituting the third pair (4, 67):
+67 = a(4)^0 + b(4)^1
+67 = a + 4b
+
+Substituting the fourth pair (-3, -73):
+-73 = a(-3)^0 + b(-3)^1
+-73 = a - 3b
+
+Substituting the fifth pair (20, 387):
+387 = a(20)^0 + b(20)^1
+387 = a + 20b
+
+We can solve this system of linear equations to find the values of a and b.",0.9,4
+Function: y = -80x^0 + 10x^1,1.0,0
+"Based on the given input-output pairs, the function can be written as:
+
+Output: y = -2x^0 + 19x^1",1.0,0
+"Based on the given inputs and outputs, the function that captures the relationship can be represented as:
+
+Output: y = -3x^0 + 20x^1
+
+So the function can be written as:
+
+Output: y = -3 + 20x",0.95,0
+"Based on the given inputs and outputs, the relationship appears to be a linear function of the form y = ax^0 + bx^1. Let's find the values of a and b:
+
+Substituting the values into the equation:
+
+For the first data point (-10, -213):
+-213 = a + (-10)b
+
+For the second data point (9, 167):
+167 = a + (9)b
+
+For the third data point (4, 67):
+67 = a + (4)b
+
+For the fourth data point (-3, -73):
+-73 = a + (-3)b
+
+For the fifth data point (20, 387):
+387 = a + (20)b
+
+Simplifying the equations:
+
+-213 = a - 10b             (Equation 1)
+167 = a + 9b               (Equation 2)
+67 = a + 4b                (Equation 3)
+-73 = a - 3b               (Equation 4)
+387 = a + 20b              (Equation 5)
+
+We can solve this system of equations to find the values of a and b:
+
+Adding Equation 1 and Equation 4:
+-286 = 2a - 7b              (Equation 6)
+
+Subtracting Equation 1 from Equation 2:
+380 = 19b                   (Equation 7)
+b = 20
+
+Substituting b = 20 into Equation 7:
+a = 27
+
+Therefore, the function that captures the relationship between inputs and outputs is:
+
+Output (y) = 27x^0 + 20x^1
+
+Simplifying:
+
+Output (y) = 27 + 20x",0.95,0
+"To find a function that describes the relationship between the inputs and outputs, we can try to fit a linear equation of the form y = ax^0 + bx^1.
+
+We can use these data points to solve for the coefficients a and b:
+
+Input: -10, Output: -213
+Input: 9, Output: 167
+Input: 4, Output: 67
+Input: -3, Output: -73
+Input: 20, Output: 387
+
+Using these points, we can set up a system of equations:
+
+-213 = a(-10)^0 + b(-10)^1
+167 = a(9)^0 + b(9)^1
+67 = a(4)^0 + b(4)^1
+-73 = a(-3)^0 + b(-3)^1
+387 = a(20)^0 + b(20)^1
+
+Simplifying these equations, we get:
+
+-213 = a + (-10)b
+167 = a + 9b
+67 = a + 4b
+-73 = a - 3b
+387 = a + 20b
+
+Rearranging the equations, we obtain:
+
+a + (-10)b = -213
+a + 9b = 167
+a + 4b = 67
+a - 3b = -73
+a + 20b = 387
+
+We can solve this system of equations to find the values of a and b.
+
+Solving for a in terms of b using equations 2 and 3:
+a = 67 - 4b
+
+Substituting the expression for a in equation 2:
+67 - 4b + 9b = 167
+5b = 100
+b = 20
+
+Substituting the value of b into the expression for a:
+a = 67 - 4(20)
+a = -53
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+
+Output: y = -53x^0 + 20x^1
+
+Simplifying this function, we get:
+
+Output: y = -53 + 20x",0.95,0
+"To find the relationship between the inputs and outputs, let's fit the data to a linear function in the form of y = ax^0 + bx^1.
+
+We can form a system of linear equations using the given input-output pairs:
+
+-213 = a(-10)^0 + b(-10)^1   -->   a - 10b = -213   (Equation 1)
+167 = a(9)^0 + b(9)^1         -->   a + 9b = 167     (Equation 2)
+67 = a(4)^0 + b(4)^1           -->   a + 4b = 67      (Equation 3)
+-73 = a(-3)^0 + b(-3)^1       -->   a - 3b = -73     (Equation 4)
+387 = a(20)^0 + b(20)^1     -->   a + 20b = 387   (Equation 5)
+
+Solving this system of equations will give us the values of 'a' and 'b', which we can then plug back into the function y = ax^0 + bx^1.
+
+Solving the system of equations, we find:
+a = 8
+b = 21
+
+Thus, the function that captures the relationship between the inputs and outputs is:
+Output: y = 8x^0 + 21x^1
+
+Simplifying this equation yields:
+Output: y = 8 + 21x",1.0,1
+"Based on the given input-output pairs, it is clear that the output (y) can be represented by the equation:
+
+y = 6x^0 + 17x^1
+
+Therefore, the function that captures this relationship is:
+
+Output: y = 6 + 17x",1.0,1
+y = -3x^0 + 10x^1,0.95,1
+"Based on the given inputs and outputs, it appears that the function relating the input (x) to the output (y) can be described by a quadratic equation. Let's assume the function to be of the form:
+
+y = ax^0 + bx^1
+
+Since x^0 is equal to 1, we can simplify the equation as:
+
+y = a + bx
+
+By using the inputs and outputs provided, we can solve for the values of a and b in the equation.
+
+Input: -10, Output: -213
+
+-213 = a + (-10)b
+
+Input: 9, Output: 167
+
+167 = a + 9b
+
+Input: 4, Output: 67
+
+67 = a + 4b
+
+Input: -3, Output: -73
+
+-73 = a + (-3)b
+
+Input: 20, Output: 387
+
+387 = a + 20b
+
+Solving these equations simultaneously, we can find the values of a and b.",0.95,1
+Output: y = -2x^0 + 9x^1,0.95,1
+"The function that captures the relationship between inputs and outputs is:
+
+Output: y = -10x^0 + 20x^1
+
+where a = -10 and b = 20.",1.0,2
+"The function that captures the relationship between the inputs and outputs can be written as follows:
+
+Output = -10 + 21x",1.0,2
+"Based on the given inputs and outputs, the function can be written as:
+
+Output: y = -3x^0 + 20x^1
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+
+Output: y = -3 + 20x",1.0,2
+"The given function in the exact form is:
+
+Output: y = -3x^0 + 10x^1
+
+where a = -3 and b = 10.",0.95,2
+"Based on the given inputs and outputs, it is clear that the relationship between the inputs (x) and the outputs (y) can be described by a linear function in the form y = ax^0 + bx^1.
+
+Using the given data points, we can find the values of a and b.
+
+Substituting the first data point (-10, -213) into the function, we get:
+-213 = a(-10)^0 + b(-10)^1
+-213 = a - 10b
+
+Similarly, substituting the second data point (9, 167) into the function, we get:
+167 = a(9)^0 + b(9)^1
+167 = a + 9b
+
+We now have a system of linear equations:
+
+-213 = a - 10b
+167 = a + 9b
+
+Solving this system of equations, we find that a = -20 and b = -19.
+
+Thus, the function that captures the relationship between the inputs and outputs is:
+
+y = -20x^0 - 19x^1
+
+Simplifying this expression, we get:
+
+y = -20 - 19x",0.0,2
+"Based on the given inputs and outputs, the relationship can be described by the function:
+
+Output: y = -2x^0 + 21x^1
+
+where x is the input value.",1.0,3
+Output: y = -3x^0 + 20x^1,0.95,3
+"To find the function that captures the relationship between the inputs and outputs given, we can use a linear regression approach. By fitting a line to the data points, we can find the equation of the line in the form y = ax^0 + bx^1.
+
+Let's start by finding the values of a and b.
+
+Using the input-output pairs, we have the following equations:
+
+-213 = a + b(-10)
+167 = a + b(9)
+67 = a + b(4)
+-73 = a + b(-3)
+387 = a + b(20)
+
+To solve these equations simultaneously, we can use a linear algebra method like matrix inversion.
+
+Rewriting the equations, we have:
+
+1a - 10b = -213
+1a + 9b = 167
+1a + 4b = 67
+1a - 3b = -73
+1a + 20b = 387
+
+Writing the system of equations in matrix form:
+
+[[1, -10], [1, 9], [1, 4], [1, -3], [1, 20]] * [a, b] = [-213, 167, 67, -73, 387]
+
+Now, let's solve this system of equations:
+
+Using a matrix inversion calculator, we find the solution:
+
+[a, b] = [12.18, 18.06]
+
+Therefore, the function that captures the relationship between the input and output is:
+
+Output: y = 12.18x^0 + 18.06x^1",0.95,3
+"Based on the given inputs and outputs, the function can be described as:
+
+Output: y = -7x^0 + 20x^1",0.95,3
+"Based on the given inputs and outputs, it appears that the relationship between the inputs and outputs can be captured by a linear equation of the form y = ax^0 + bx^1. 
+
+Let's solve for the values of a and b by substituting one of the input-output pairs into the equation.
+
+When input x = -10, output y = -213.
+
+Substituting these values into the equation:
+
+-213 = a(-10)^0 + b(-10)^1
+-213 = a - 10b
+
+When input x = 9, output y = 167.
+
+Substituting these values into the equation:
+
+167 = a(9)^0 + b(9)^1
+167 = a + 9b
+
+We now have a system of two equations:
+
+-213 = a - 10b
+167 = a + 9b
+
+Solving this system of equations, we find that a = 47 and b = -19.
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+y = 47x^0 - 19x^1",0.95,3
+Function: y = -5x^0 + 21x^1,1.0,4
+"To find the function that describes the relationship between the inputs and outputs, we can use the given data to solve a system of equations.
+
+Taking the general form of the function as y = ax^0 + bx^1, we can simplify it to y = a + bx.
+
+Given the following data points:
+
+Input: -10
+Output: -213
+
+Input: 9
+Output: 167
+
+Input: 4
+Output: 67
+
+Input: -3
+Output: -73
+
+Input: 20
+Output: 387
+
+We can set up the following system of equations:
+
+-213 = a - 10b         (equation 1)
+167 = a + 9b           (equation 2)
+67 = a + 4b            (equation 3)
+-73 = a - 3b           (equation 4)
+387 = a + 20b          (equation 5)
+
+To solve this system of equations, we can use any method like substitution or elimination. Solving the system, we find that a = -10 and b = 24.
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+
+Output: y = -10 + 24x",0.999,4
+Output: y = -76 + 9x,0.95,4
+y = -3x^0 + 8x^1,0.95,4
+"Based on the given input-output pairs, it seems that the relationship between the input (x) and output (y) can be captured by a linear equation of the form y = ax^0 + bx^1, where a and b are constants.
+
+To find the values of a and b, we can solve the equation system formed by substituting the given input-output pairs.
+
+Substituting the first pair (-10, -213):
+-213 = a(-10)^0 + b(-10)^1
+-213 = a - 10b
+
+Substituting the second pair (9, 167):
+167 = a(9)^0 + b(9)^1
+167 = a + 9b
+
+Substituting the third pair (4, 67):
+67 = a(4)^0 + b(4)^1
+67 = a + 4b
+
+Substituting the fourth pair (-3, -73):
+-73 = a(-3)^0 + b(-3)^1
+-73 = a - 3b
+
+Substituting the fifth pair (20, 387):
+387 = a(20)^0 + b(20)^1
+387 = a + 20b
+
+We can solve this system of linear equations to find the values of a and b.",0.9,4
+"The function that captures the relationship between inputs and outputs based on the given data can be written as:
+
+Output: y = 3 - 17x",0.95,5
+y = -3x^0 - 17x^1,0.95,5
+Output: y = -3x + 6,0.95,5
+Output: y = -5x^0 + 6x^1,0.9,5
+"The function that captures the relationship between the inputs and outputs can be written as:
+
+Output: y = 3x^0 - 17x^1",0.9,5

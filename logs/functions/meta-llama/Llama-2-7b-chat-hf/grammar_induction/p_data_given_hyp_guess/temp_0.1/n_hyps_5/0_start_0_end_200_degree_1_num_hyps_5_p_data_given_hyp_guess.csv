@@ -1,0 +1,6145 @@
+inputs,outputs,answer,correct,task_id
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -10
+Output: -213
+
+Input: 9
+Output: 167
+
+Input: 4
+Output: 67
+
+Input: -3
+Output: -73
+
+Input: 20
+Output: 387
+
+
+    Return the output preceded by 'Output:'
+    Input: 15
+    ","Output: Output: 225
+
+    Input: -5
+     Output: Output",287,False,"[20, -13]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -10
+Output: -213
+
+Input: 9
+Output: 167
+
+Input: 4
+Output: 67
+
+Input: -3
+Output: -73
+
+Input: 20
+Output: 387
+
+
+    Return the output preceded by 'Output:'
+    Input: -6
+    ","Output: Output: -105
+
+    Input: 10
+     Output:",-133,False,"[20, -13]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -10
+Output: -213
+
+Input: 9
+Output: 167
+
+Input: 4
+Output: 67
+
+Input: -3
+Output: -73
+
+Input: 20
+Output: 387
+
+
+    Return the output preceded by 'Output:'
+    Input: 0
+    ","Output: 0
+
+    Input: 1
+     Output: 1
+
+   ",-13,False,"[20, -13]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -10
+Output: -213
+
+Input: 9
+Output: 167
+
+Input: 4
+Output: 67
+
+Input: -3
+Output: -73
+
+Input: 20
+Output: 387
+
+
+    Return the output preceded by 'Output:'
+    Input: -17
+    ","Output: Output: -213
+
+    Input: 12
+     Output:",-353,False,"[20, -13]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -10
+Output: -213
+
+Input: 9
+Output: 167
+
+Input: 4
+Output: 67
+
+Input: -3
+Output: -73
+
+Input: 20
+Output: 387
+
+
+    Return the output preceded by 'Output:'
+    Input: -6
+    ","Output: Output: -126
+
+    Input: 10
+     Output:",-133,False,"[20, -13]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -18
+Output: 339
+
+Input: 0
+Output: -3
+
+Input: 5
+Output: -98
+
+Input: -3
+Output: 54
+
+Input: -16
+Output: 301
+
+
+    Return the output preceded by 'Output:'
+    Input: -7
+    ","Output: 233
+
+
+
+
+
+
+
+
+
+
+
+
+
+",130,False,"[-19, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -18
+Output: 339
+
+Input: 0
+Output: -3
+
+Input: 5
+Output: -98
+
+Input: -3
+Output: 54
+
+Input: -16
+Output: 301
+
+
+    Return the output preceded by 'Output:'
+    Input: 16
+    ","
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+",-307,False,"[-19, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -18
+Output: 339
+
+Input: 0
+Output: -3
+
+Input: 5
+Output: -98
+
+Input: -3
+Output: 54
+
+Input: -16
+Output: 301
+
+
+    Return the output preceded by 'Output:'
+    Input: 0
+    ","Output: -3
+
+    Input: 5
+     Output: -98
+
+",-3,True,"[-19, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -18
+Output: 339
+
+Input: 0
+Output: -3
+
+Input: 5
+Output: -98
+
+Input: -3
+Output: 54
+
+Input: -16
+Output: 301
+
+
+    Return the output preceded by 'Output:'
+    Input: -7
+    ","Output: 243
+
+
+
+
+
+
+
+
+
+
+
+
+
+",130,False,"[-19, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -18
+Output: 339
+
+Input: 0
+Output: -3
+
+Input: 5
+Output: -98
+
+Input: -3
+Output: 54
+
+Input: -16
+Output: 301
+
+
+    Return the output preceded by 'Output:'
+    Input: 11
+    ","
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+",-212,False,"[-19, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 5
+Output: -31
+
+Input: 9
+Output: -51
+
+Input: -11
+Output: 49
+
+Input: -4
+Output: 14
+
+Input: -12
+Output: 54
+
+
+    Return the output preceded by 'Output:'
+    Input: -5
+    ","Output: Output: -31
+
+    Input: 10
+     Output: Output",19,False,"[-5, -6]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 5
+Output: -31
+
+Input: 9
+Output: -51
+
+Input: -11
+Output: 49
+
+Input: -4
+Output: 14
+
+Input: -12
+Output: 54
+
+
+    Return the output preceded by 'Output:'
+    Input: 15
+    ","
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+",-81,False,"[-5, -6]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 5
+Output: -31
+
+Input: 9
+Output: -51
+
+Input: -11
+Output: 49
+
+Input: -4
+Output: 14
+
+Input: -12
+Output: 54
+
+
+    Return the output preceded by 'Output:'
+    Input: 14
+    ","Output: Output: 25
+
+    Input: -15
+     Output: Output",-76,False,"[-5, -6]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 5
+Output: -31
+
+Input: 9
+Output: -51
+
+Input: -11
+Output: 49
+
+Input: -4
+Output: 14
+
+Input: -12
+Output: 54
+
+
+    Return the output preceded by 'Output:'
+    Input: -4
+    ","Output: Output: 14
+
+    Input: 5
+     Output: Output:",14,True,"[-5, -6]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 5
+Output: -31
+
+Input: 9
+Output: -51
+
+Input: -11
+Output: 49
+
+Input: -4
+Output: 14
+
+Input: -12
+Output: 54
+
+
+    Return the output preceded by 'Output:'
+    Input: 17
+    ","
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+",-91,False,"[-5, -6]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 7
+Output: -98
+
+Input: 17
+Output: -218
+
+Input: 5
+Output: -74
+
+Input: 3
+Output: -50
+
+Input: -6
+Output: 58
+
+
+    Return the output preceded by 'Output:'
+    Input: -12
+    ","Output: Output: -104
+
+    Input: 10
+     Output:",130,False,"[-12, -14]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 7
+Output: -98
+
+Input: 17
+Output: -218
+
+Input: 5
+Output: -74
+
+Input: 3
+Output: -50
+
+Input: -6
+Output: 58
+
+
+    Return the output preceded by 'Output:'
+    Input: 12
+    ","Output: Output: 102
+
+    Input: -12
+     Output:",-158,False,"[-12, -14]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 7
+Output: -98
+
+Input: 17
+Output: -218
+
+Input: 5
+Output: -74
+
+Input: 3
+Output: -50
+
+Input: -6
+Output: 58
+
+
+    Return the output preceded by 'Output:'
+    Input: 11
+    ","Output: Output: 123
+
+    Input: 23
+     Output:",-146,False,"[-12, -14]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 7
+Output: -98
+
+Input: 17
+Output: -218
+
+Input: 5
+Output: -74
+
+Input: 3
+Output: -50
+
+Input: -6
+Output: 58
+
+
+    Return the output preceded by 'Output:'
+    Input: -15
+    ","Output: Output: -218
+
+    Input: 10
+     Output:",166,False,"[-12, -14]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 7
+Output: -98
+
+Input: 17
+Output: -218
+
+Input: 5
+Output: -74
+
+Input: 3
+Output: -50
+
+Input: -6
+Output: 58
+
+
+    Return the output preceded by 'Output:'
+    Input: -17
+    ","Output: Output: 105
+
+    Input: 10
+     Output:",190,False,"[-12, -14]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -13
+Output: -197
+
+Input: -11
+Output: -169
+
+Input: 20
+Output: 265
+
+Input: -10
+Output: -155
+
+Input: 7
+Output: 83
+
+
+    Return the output preceded by 'Output:'
+    Input: 18
+    ","Output: Output: 209
+
+    Input: -12
+     Output:",237,False,"[14, -15]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -13
+Output: -197
+
+Input: -11
+Output: -169
+
+Input: 20
+Output: 265
+
+Input: -10
+Output: -155
+
+Input: 7
+Output: 83
+
+
+    Return the output preceded by 'Output:'
+    Input: -16
+    ","Output: Output: -248
+
+    Input: 12
+     Output:",-239,False,"[14, -15]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -13
+Output: -197
+
+Input: -11
+Output: -169
+
+Input: 20
+Output: 265
+
+Input: -10
+Output: -155
+
+Input: 7
+Output: 83
+
+
+    Return the output preceded by 'Output:'
+    Input: 4
+    ","Output: Output: 160
+
+    Input: -5
+     Output: Output",41,False,"[14, -15]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -13
+Output: -197
+
+Input: -11
+Output: -169
+
+Input: 20
+Output: 265
+
+Input: -10
+Output: -155
+
+Input: 7
+Output: 83
+
+
+    Return the output preceded by 'Output:'
+    Input: 4
+    ","Output: Output: 16
+
+    Input: -5
+     Output: Output:",41,False,"[14, -15]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -13
+Output: -197
+
+Input: -11
+Output: -169
+
+Input: 20
+Output: 265
+
+Input: -10
+Output: -155
+
+Input: 7
+Output: 83
+
+
+    Return the output preceded by 'Output:'
+    Input: 18
+    ","Output: Output: 205
+
+    Input: -12
+     Output:",237,False,"[14, -15]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 9
+Output: 160
+
+Input: 13
+Output: 228
+
+Input: -4
+Output: -61
+
+Input: 15
+Output: 262
+
+Input: -20
+Output: -333
+
+
+    Return the output preceded by 'Output:'
+    Input: -13
+    ","Output: Output: -228
+
+    Input: 10
+     Output:",-214,False,"[17, 7]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 9
+Output: 160
+
+Input: 13
+Output: 228
+
+Input: -4
+Output: -61
+
+Input: 15
+Output: 262
+
+Input: -20
+Output: -333
+
+
+    Return the output preceded by 'Output:'
+    Input: 14
+    ","Output: 200
+
+    Input: 10
+     Output: 1",245,False,"[17, 7]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 9
+Output: 160
+
+Input: 13
+Output: 228
+
+Input: -4
+Output: -61
+
+Input: 15
+Output: 262
+
+Input: -20
+Output: -333
+
+
+    Return the output preceded by 'Output:'
+    Input: -3
+    ","Output: Output: -21
+
+    Input: 10
+     Output: Output",-44,False,"[17, 7]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 9
+Output: 160
+
+Input: 13
+Output: 228
+
+Input: -4
+Output: -61
+
+Input: 15
+Output: 262
+
+Input: -20
+Output: -333
+
+
+    Return the output preceded by 'Output:'
+    Input: 1
+    ","Output: 1
+
+    Input: 10
+     Output: 10
+",24,False,"[17, 7]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 9
+Output: 160
+
+Input: 13
+Output: 228
+
+Input: -4
+Output: -61
+
+Input: 15
+Output: 262
+
+Input: -20
+Output: -333
+
+
+    Return the output preceded by 'Output:'
+    Input: -13
+    ","Output: Output: -228
+
+    Input: 10
+     Output:",-214,False,"[17, 7]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -2
+Output: 17
+
+Input: 7
+Output: -145
+
+Input: -10
+Output: 161
+
+Input: 9
+Output: -181
+
+Input: -20
+Output: 341
+
+
+    Return the output preceded by 'Output:'
+    Input: -4
+    ","Output: 23
+
+    Input: 10
+     Output: -12",53,False,"[-18, -19]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -2
+Output: 17
+
+Input: 7
+Output: -145
+
+Input: -10
+Output: 161
+
+Input: 9
+Output: -181
+
+Input: -20
+Output: 341
+
+
+    Return the output preceded by 'Output:'
+    Input: 12
+    ","Output: 20
+
+    Input: -5
+     Output: -15
+",-235,False,"[-18, -19]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -2
+Output: 17
+
+Input: 7
+Output: -145
+
+Input: -10
+Output: 161
+
+Input: 9
+Output: -181
+
+Input: -20
+Output: 341
+
+
+    Return the output preceded by 'Output:'
+    Input: -9
+    ","Output: 17
+
+    Input: 10
+     Output: -14",143,False,"[-18, -19]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -2
+Output: 17
+
+Input: 7
+Output: -145
+
+Input: -10
+Output: 161
+
+Input: 9
+Output: -181
+
+Input: -20
+Output: 341
+
+
+    Return the output preceded by 'Output:'
+    Input: 12
+    ","Output: 234
+
+    Return the output preceded by 'Output:'
+   ",-235,False,"[-18, -19]"
+"Use this function to apply to the input example to get the correct output.
+
+    y
+
+    However, just write the output like what's shown in these examples.
+    Input: -2
+Output: 17
+
+Input: 7
+Output: -145
+
+Input: -10
+Output: 161
+
+Input: 9
+Output: -181
+
+Input: -20
+Output: 341
+
+
+    Return the output preceded by 'Output:'
+    Input: -14
+    ","Output: 20
+
+    Return the output preceded by 'Output: '
+   ",233,False,"[-18, -19]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 20
+Output: -307
+
+Input: -1
+Output: 8
+
+Input: 20
+Output: -307
+
+Input: 12
+Output: -187
+
+Input: 18
+Output: -277
+
+
+    Return the output preceded by 'Output:'
+    Input: -8
+    ","Output: Output:-128
+
+    Input: 10
+     Output: Output",113,False,"[-15, -7]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 20
+Output: -307
+
+Input: -1
+Output: 8
+
+Input: 20
+Output: -307
+
+Input: 12
+Output: -187
+
+Input: 18
+Output: -277
+
+
+    Return the output preceded by 'Output:'
+    Input: -11
+    ","Output: Output: -187
+
+    Input: 10
+     Output:",158,False,"[-15, -7]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 20
+Output: -307
+
+Input: -1
+Output: 8
+
+Input: 20
+Output: -307
+
+Input: 12
+Output: -187
+
+Input: 18
+Output: -277
+
+
+    Return the output preceded by 'Output:'
+    Input: 3
+    ","Output: 3
+
+    Input: 10
+     Output: 10
+",-52,False,"[-15, -7]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 20
+Output: -307
+
+Input: -1
+Output: 8
+
+Input: 20
+Output: -307
+
+Input: 12
+Output: -187
+
+Input: 18
+Output: -277
+
+
+    Return the output preceded by 'Output:'
+    Input: -10
+    ","Output: Output: -18
+
+    Input: 10
+     Output: Output",143,False,"[-15, -7]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 20
+Output: -307
+
+Input: -1
+Output: 8
+
+Input: 20
+Output: -307
+
+Input: 12
+Output: -187
+
+Input: 18
+Output: -277
+
+
+    Return the output preceded by 'Output:'
+    Input: 14
+    ","Output: -214
+
+    Input: 20
+     Output: -3",-217,False,"[-15, -7]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 13
+Output: -66
+
+Input: -20
+Output: 132
+
+Input: 18
+Output: -96
+
+Input: 0
+Output: 12
+
+Input: 11
+Output: -54
+
+
+    Return the output preceded by 'Output:'
+    Input: -19
+    ","
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+",126,False,"[-6, 12]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 13
+Output: -66
+
+Input: -20
+Output: 132
+
+Input: 18
+Output: -96
+
+Input: 0
+Output: 12
+
+Input: 11
+Output: -54
+
+
+    Return the output preceded by 'Output:'
+    Input: -13
+    ","Output: Output:-66
+
+    Input: 20
+     Output: Output:",90,False,"[-6, 12]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 13
+Output: -66
+
+Input: -20
+Output: 132
+
+Input: 18
+Output: -96
+
+Input: 0
+Output: 12
+
+Input: 11
+Output: -54
+
+
+    Return the output preceded by 'Output:'
+    Input: 3
+    ","Output: Output: 3
+
+    Input: -5
+     Output: Output: -",-6,False,"[-6, 12]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 13
+Output: -66
+
+Input: -20
+Output: 132
+
+Input: 18
+Output: -96
+
+Input: 0
+Output: 12
+
+Input: 11
+Output: -54
+
+
+    Return the output preceded by 'Output:'
+    Input: -1
+    ","Output: -1
+
+    Input: 10
+     Output: 10
+",18,False,"[-6, 12]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 13
+Output: -66
+
+Input: -20
+Output: 132
+
+Input: 18
+Output: -96
+
+Input: 0
+Output: 12
+
+Input: 11
+Output: -54
+
+
+    Return the output preceded by 'Output:'
+    Input: -5
+    ","Output: -66
+
+    Input: 10
+     Output: 13",42,False,"[-6, 12]"
+"Use this function to apply to the input example to get the correct output.
+
+    y
+
+    However, just write the output like what's shown in these examples.
+    Input: -17
+Output: -325
+
+Input: -5
+Output: -109
+
+Input: 16
+Output: 269
+
+Input: -15
+Output: -289
+
+Input: -15
+Output: -289
+
+
+    Return the output preceded by 'Output:'
+    Input: 11
+    ","Output: 169
+
+    Return the output preceded by 'Output: '
+",179,False,"[18, -19]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -17
+Output: -325
+
+Input: -5
+Output: -109
+
+Input: 16
+Output: 269
+
+Input: -15
+Output: -289
+
+Input: -15
+Output: -289
+
+
+    Return the output preceded by 'Output:'
+    Input: -16
+    ","Output: Output: -325
+
+    Input: -17
+     Output:",-307,False,"[18, -19]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -17
+Output: -325
+
+Input: -5
+Output: -109
+
+Input: 16
+Output: 269
+
+Input: -15
+Output: -289
+
+Input: -15
+Output: -289
+
+
+    Return the output preceded by 'Output:'
+    Input: 14
+    ","Output: 209
+
+    Return the output preceded by 'Output:'
+   ",233,False,"[18, -19]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -17
+Output: -325
+
+Input: -5
+Output: -109
+
+Input: 16
+Output: 269
+
+Input: -15
+Output: -289
+
+Input: -15
+Output: -289
+
+
+    Return the output preceded by 'Output:'
+    Input: -12
+    ","Output: Output: -144
+
+    Input: 10
+     Output:",-235,False,"[18, -19]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -17
+Output: -325
+
+Input: -5
+Output: -109
+
+Input: 16
+Output: 269
+
+Input: -15
+Output: -289
+
+Input: -15
+Output: -289
+
+
+    Return the output preceded by 'Output:'
+    Input: -12
+    ","Output: Output: -144
+
+    Return the output preceded by 'Output:'",-235,False,"[18, -19]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 10
+Output: 142
+
+Input: 15
+Output: 217
+
+Input: -10
+Output: -158
+
+Input: -4
+Output: -68
+
+Input: 13
+Output: 187
+
+
+    Return the output preceded by 'Output:'
+    Input: 18
+    ","Output: Output: 276
+
+    Input: 2
+     Output: Output",262,False,"[15, -8]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 10
+Output: 142
+
+Input: 15
+Output: 217
+
+Input: -10
+Output: -158
+
+Input: -4
+Output: -68
+
+Input: 13
+Output: 187
+
+
+    Return the output preceded by 'Output:'
+    Input: 7
+    ","Output: 100
+
+    Return the output preceded by 'Output: '
+",97,False,"[15, -8]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 10
+Output: 142
+
+Input: 15
+Output: 217
+
+Input: -10
+Output: -158
+
+Input: -4
+Output: -68
+
+Input: 13
+Output: 187
+
+
+    Return the output preceded by 'Output:'
+    Input: -7
+    ","Output: Output: -49
+
+    Input: 12
+     Output: Output",-113,False,"[15, -8]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 10
+Output: 142
+
+Input: 15
+Output: 217
+
+Input: -10
+Output: -158
+
+Input: -4
+Output: -68
+
+Input: 13
+Output: 187
+
+
+    Return the output preceded by 'Output:'
+    Input: 14
+    ","Output: 142
+
+    Input: 12
+     Output: 1",202,False,"[15, -8]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 10
+Output: 142
+
+Input: 15
+Output: 217
+
+Input: -10
+Output: -158
+
+Input: -4
+Output: -68
+
+Input: 13
+Output: 187
+
+
+    Return the output preceded by 'Output:'
+    Input: -8
+    ","Output: Output: -146
+
+    Input: 12
+     Output:",-128,False,"[15, -8]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -1
+Output: -8
+
+Input: 5
+Output: 76
+
+Input: 3
+Output: 48
+
+Input: 8
+Output: 118
+
+Input: 13
+Output: 188
+
+
+    Return the output preceded by 'Output:'
+    Input: 8
+    ","Output: Output: 118
+
+    Input: -8
+     Output: Output",118,True,"[14, 6]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -1
+Output: -8
+
+Input: 5
+Output: 76
+
+Input: 3
+Output: 48
+
+Input: 8
+Output: 118
+
+Input: 13
+Output: 188
+
+
+    Return the output preceded by 'Output:'
+    Input: -13
+    ","Output: Output: -188
+
+    Input: 12
+     Output:",-176,False,"[14, 6]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -1
+Output: -8
+
+Input: 5
+Output: 76
+
+Input: 3
+Output: 48
+
+Input: 8
+Output: 118
+
+Input: 13
+Output: 188
+
+
+    Return the output preceded by 'Output:'
+    Input: -5
+    ","Output: Output: -40
+
+    Input: 10
+     Output: Output",-64,False,"[14, 6]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -1
+Output: -8
+
+Input: 5
+Output: 76
+
+Input: 3
+Output: 48
+
+Input: 8
+Output: 118
+
+Input: 13
+Output: 188
+
+
+    Return the output preceded by 'Output:'
+    Input: -6
+    ","Output: Output: -48
+
+    Input: 10
+     Output: Output",-78,False,"[14, 6]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -1
+Output: -8
+
+Input: 5
+Output: 76
+
+Input: 3
+Output: 48
+
+Input: 8
+Output: 118
+
+Input: 13
+Output: 188
+
+
+    Return the output preceded by 'Output:'
+    Input: -16
+    ","Output: Output: -108
+
+    Input: 12
+     Output:",-218,False,"[14, 6]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 1
+Output: 2
+
+Input: -19
+Output: 122
+
+Input: 17
+Output: -94
+
+Input: 15
+Output: -82
+
+Input: -6
+Output: 44
+
+
+    Return the output preceded by 'Output:'
+    Input: 17
+    ","Output: -94
+
+    Input: -19
+     Output: 12",-94,True,"[-6, 8]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 1
+Output: 2
+
+Input: -19
+Output: 122
+
+Input: 17
+Output: -94
+
+Input: 15
+Output: -82
+
+Input: -6
+Output: 44
+
+
+    Return the output preceded by 'Output:'
+    Input: -6
+    ","Output: Output: 44
+
+    Input: 17
+     Output: Output",44,True,"[-6, 8]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 1
+Output: 2
+
+Input: -19
+Output: 122
+
+Input: 17
+Output: -94
+
+Input: 15
+Output: -82
+
+Input: -6
+Output: 44
+
+
+    Return the output preceded by 'Output:'
+    Input: -20
+    ","Output: Output: -122
+
+    Input: 10
+     Output:",128,False,"[-6, 8]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 1
+Output: 2
+
+Input: -19
+Output: 122
+
+Input: 17
+Output: -94
+
+Input: 15
+Output: -82
+
+Input: -6
+Output: 44
+
+
+    Return the output preceded by 'Output:'
+    Input: -16
+    ","Output: Output: -84
+
+    Input: 12
+     Output: Output",104,False,"[-6, 8]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 1
+Output: 2
+
+Input: -19
+Output: 122
+
+Input: 17
+Output: -94
+
+Input: 15
+Output: -82
+
+Input: -6
+Output: 44
+
+
+    Return the output preceded by 'Output:'
+    Input: 20
+    ","Output: Output: 40
+
+    Input: -10
+     Output: Output",-112,False,"[-6, 8]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -17
+Output: -292
+
+Input: -6
+Output: -105
+
+Input: -16
+Output: -275
+
+Input: -18
+Output: -309
+
+Input: 1
+Output: 14
+
+
+    Return the output preceded by 'Output:'
+    Input: -16
+    ","Output: -275
+
+    Input: -18
+     Output: -3",-275,True,"[17, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -17
+Output: -292
+
+Input: -6
+Output: -105
+
+Input: -16
+Output: -275
+
+Input: -18
+Output: -309
+
+Input: 1
+Output: 14
+
+
+    Return the output preceded by 'Output:'
+    Input: 12
+    ","Output: Output: 264
+
+    Return the output preceded by 'Output:'",201,False,"[17, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -17
+Output: -292
+
+Input: -6
+Output: -105
+
+Input: -16
+Output: -275
+
+Input: -18
+Output: -309
+
+Input: 1
+Output: 14
+
+
+    Return the output preceded by 'Output:'
+    Input: -5
+    ","Output: Output: -105
+
+    Input: 10
+     Output:",-88,False,"[17, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -17
+Output: -292
+
+Input: -6
+Output: -105
+
+Input: -16
+Output: -275
+
+Input: -18
+Output: -309
+
+Input: 1
+Output: 14
+
+
+    Return the output preceded by 'Output:'
+    Input: -3
+    ","Output: Output: -21
+
+    Input: 10
+     Output: Output",-54,False,"[17, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -17
+Output: -292
+
+Input: -6
+Output: -105
+
+Input: -16
+Output: -275
+
+Input: -18
+Output: -309
+
+Input: 1
+Output: 14
+
+
+    Return the output preceded by 'Output:'
+    Input: 11
+    ","Output: Output: 225
+
+    Return the output preceded by 'Output:'",184,False,"[17, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    y
+
+    However, just write the output like what's shown in these examples.
+    Input: -7
+Output: 130
+
+Input: 14
+Output: -290
+
+Input: -12
+Output: 230
+
+Input: 16
+Output: -330
+
+Input: 16
+Output: -330
+
+
+    Return the output preceded by 'Output:'
+    Input: 10
+    ","Output: Output: 130
+
+    Input: -10
+     Output:",-210,False,"[-20, -10]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -7
+Output: 130
+
+Input: 14
+Output: -290
+
+Input: -12
+Output: 230
+
+Input: 16
+Output: -330
+
+Input: 16
+Output: -330
+
+
+    Return the output preceded by 'Output:'
+    Input: -5
+    ","Output: 160
+
+
+
+
+
+
+
+
+
+
+
+
+
+",90,False,"[-20, -10]"
+"Use this function to apply to the input example to get the correct output.
+
+    y
+
+    However, just write the output like what's shown in these examples.
+    Input: -7
+Output: 130
+
+Input: 14
+Output: -290
+
+Input: -12
+Output: 230
+
+Input: 16
+Output: -330
+
+Input: 16
+Output: -330
+
+
+    Return the output preceded by 'Output:'
+    Input: 10
+    ","Output: Output: 100
+
+    Return the output preceded by 'Output:'",-210,False,"[-20, -10]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -7
+Output: 130
+
+Input: 14
+Output: -290
+
+Input: -12
+Output: 230
+
+Input: 16
+Output: -330
+
+Input: 16
+Output: -330
+
+
+    Return the output preceded by 'Output:'
+    Input: 6
+    ","Output: 130
+
+    Input: -6
+     Output: -29",-130,False,"[-20, -10]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -7
+Output: 130
+
+Input: 14
+Output: -290
+
+Input: -12
+Output: 230
+
+Input: 16
+Output: -330
+
+Input: 16
+Output: -330
+
+
+    Return the output preceded by 'Output:'
+    Input: -8
+    ","Output: 160
+
+    Return the output preceded by 'Output:'
+   ",150,False,"[-20, -10]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -14
+Output: -97
+
+Input: -14
+Output: -97
+
+Input: 7
+Output: 50
+
+Input: 2
+Output: 15
+
+Input: 7
+Output: 50
+
+
+    Return the output preceded by 'Output:'
+    Input: 6
+    ","Output: Output: 42
+
+    Input: -14
+     Output: Output",43,False,"[7, 1]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -14
+Output: -97
+
+Input: -14
+Output: -97
+
+Input: 7
+Output: 50
+
+Input: 2
+Output: 15
+
+Input: 7
+Output: 50
+
+
+    Return the output preceded by 'Output:'
+    Input: 9
+    ","Output: Output: 81
+
+    Input: -14
+     Output: Output",64,False,"[7, 1]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -14
+Output: -97
+
+Input: -14
+Output: -97
+
+Input: 7
+Output: 50
+
+Input: 2
+Output: 15
+
+Input: 7
+Output: 50
+
+
+    Return the output preceded by 'Output:'
+    Input: -17
+    ","Output: -97
+
+    Input: -17
+    Output: -97",-118,False,"[7, 1]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -14
+Output: -97
+
+Input: -14
+Output: -97
+
+Input: 7
+Output: 50
+
+Input: 2
+Output: 15
+
+Input: 7
+Output: 50
+
+
+    Return the output preceded by 'Output:'
+    Input: -14
+    ","Output: -97
+
+    Input: -14
+     Output: -97",-97,True,"[7, 1]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -14
+Output: -97
+
+Input: -14
+Output: -97
+
+Input: 7
+Output: 50
+
+Input: 2
+Output: 15
+
+Input: 7
+Output: 50
+
+
+    Return the output preceded by 'Output:'
+    Input: -17
+    ","Output: -104
+
+    Return the output preceded by 'Output:'
+   ",-118,False,"[7, 1]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 5
+Output: -26
+
+Input: 1
+Output: -14
+
+Input: -14
+Output: 31
+
+Input: -5
+Output: 4
+
+Input: -8
+Output: 13
+
+
+    Return the output preceded by 'Output:'
+    Input: -8
+    ","Output: Output: 13
+
+
+
+
+
+
+
+
+
+
+
+
+",13,True,"[-3, -11]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 5
+Output: -26
+
+Input: 1
+Output: -14
+
+Input: -14
+Output: 31
+
+Input: -5
+Output: 4
+
+Input: -8
+Output: 13
+
+
+    Return the output preceded by 'Output:'
+    Input: 14
+    ","
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+",-53,False,"[-3, -11]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 5
+Output: -26
+
+Input: 1
+Output: -14
+
+Input: -14
+Output: 31
+
+Input: -5
+Output: 4
+
+Input: -8
+Output: 13
+
+
+    Return the output preceded by 'Output:'
+    Input: 8
+    ","
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+",-35,False,"[-3, -11]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 5
+Output: -26
+
+Input: 1
+Output: -14
+
+Input: -14
+Output: 31
+
+Input: -5
+Output: 4
+
+Input: -8
+Output: 13
+
+
+    Return the output preceded by 'Output:'
+    Input: -12
+    ","Output: Output: -14
+
+    Input: 10
+     Output: Output",25,False,"[-3, -11]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 5
+Output: -26
+
+Input: 1
+Output: -14
+
+Input: -14
+Output: 31
+
+Input: -5
+Output: 4
+
+Input: -8
+Output: 13
+
+
+    Return the output preceded by 'Output:'
+    Input: 7
+    ","
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+",-32,False,"[-3, -11]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -9
+Output: 64
+
+Input: -3
+Output: 22
+
+Input: 9
+Output: -62
+
+Input: -5
+Output: 36
+
+Input: -16
+Output: 113
+
+
+    Return the output preceded by 'Output:'
+    Input: 8
+    ","Output: Output: 64
+
+    Input: -10
+     Output: Output",-55,False,"[-7, 1]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -9
+Output: 64
+
+Input: -3
+Output: 22
+
+Input: 9
+Output: -62
+
+Input: -5
+Output: 36
+
+Input: -16
+Output: 113
+
+
+    Return the output preceded by 'Output:'
+    Input: 15
+    ","
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+",-104,False,"[-7, 1]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -9
+Output: 64
+
+Input: -3
+Output: 22
+
+Input: 9
+Output: -62
+
+Input: -5
+Output: 36
+
+Input: -16
+Output: 113
+
+
+    Return the output preceded by 'Output:'
+    Input: -14
+    ","Output: Output: 92
+
+    Input: 12
+     Output: Output",99,False,"[-7, 1]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -9
+Output: 64
+
+Input: -3
+Output: 22
+
+Input: 9
+Output: -62
+
+Input: -5
+Output: 36
+
+Input: -16
+Output: 113
+
+
+    Return the output preceded by 'Output:'
+    Input: -17
+    ","Output: Output: -104
+
+    Input: 10
+     Output:",120,False,"[-7, 1]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -9
+Output: 64
+
+Input: -3
+Output: 22
+
+Input: 9
+Output: -62
+
+Input: -5
+Output: 36
+
+Input: -16
+Output: 113
+
+
+    Return the output preceded by 'Output:'
+    Input: 14
+    ","
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+",-97,False,"[-7, 1]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -20
+Output: 265
+
+Input: -15
+Output: 195
+
+Input: -5
+Output: 55
+
+Input: -10
+Output: 125
+
+Input: 6
+Output: -99
+
+
+    Return the output preceded by 'Output:'
+    Input: 11
+    ","Output: 265
+
+    Input: 20
+     Output: 1",-169,False,"[-14, -15]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -20
+Output: 265
+
+Input: -15
+Output: 195
+
+Input: -5
+Output: 55
+
+Input: -10
+Output: 125
+
+Input: 6
+Output: -99
+
+
+    Return the output preceded by 'Output:'
+    Input: 10
+    ","
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+",-155,False,"[-14, -15]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -20
+Output: 265
+
+Input: -15
+Output: 195
+
+Input: -5
+Output: 55
+
+Input: -10
+Output: 125
+
+Input: 6
+Output: -99
+
+
+    Return the output preceded by 'Output:'
+    Input: -7
+    ","Output: 143
+
+
+
+
+
+
+
+
+
+
+
+
+
+",83,False,"[-14, -15]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -20
+Output: 265
+
+Input: -15
+Output: 195
+
+Input: -5
+Output: 55
+
+Input: -10
+Output: 125
+
+Input: 6
+Output: -99
+
+
+    Return the output preceded by 'Output:'
+    Input: 5
+    ","Output: 145
+
+    Input: 10
+     Output: 1",-85,False,"[-14, -15]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -20
+Output: 265
+
+Input: -15
+Output: 195
+
+Input: -5
+Output: 55
+
+Input: -10
+Output: 125
+
+Input: 6
+Output: -99
+
+
+    Return the output preceded by 'Output:'
+    Input: -17
+    ","
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+",223,False,"[-14, -15]"
+"Use this function to apply to the input example to get the correct output.
+
+    f
+
+    However, just write the output like what's shown in these examples.
+    Input: -10
+Output: -54
+
+Input: 4
+Output: 2
+
+Input: -20
+Output: -94
+
+Input: 4
+Output: 2
+
+Input: -4
+Output: -30
+
+
+    Return the output preceded by 'Output:'
+    Input: 9
+    ","Output: Output: 18
+
+    Return the output preceded by 'Output:'
+",22,False,"[4, -14]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -10
+Output: -54
+
+Input: 4
+Output: 2
+
+Input: -20
+Output: -94
+
+Input: 4
+Output: 2
+
+Input: -4
+Output: -30
+
+
+    Return the output preceded by 'Output:'
+    Input: -2
+    ","Output: Output: -14
+
+    Input: 10
+     Output: Output",-22,False,"[4, -14]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -10
+Output: -54
+
+Input: 4
+Output: 2
+
+Input: -20
+Output: -94
+
+Input: 4
+Output: 2
+
+Input: -4
+Output: -30
+
+
+    Return the output preceded by 'Output:'
+    Input: 7
+    ","Output: Output: 14
+
+    Input: -3
+     Output: Output:",14,True,"[4, -14]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -10
+Output: -54
+
+Input: 4
+Output: 2
+
+Input: -20
+Output: -94
+
+Input: 4
+Output: 2
+
+Input: -4
+Output: -30
+
+
+    Return the output preceded by 'Output:'
+    Input: 15
+    ","Output: Output: 39
+
+    Input: -10
+     Output: Output",46,False,"[4, -14]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -10
+Output: -54
+
+Input: 4
+Output: 2
+
+Input: -20
+Output: -94
+
+Input: 4
+Output: 2
+
+Input: -4
+Output: -30
+
+
+    Return the output preceded by 'Output:'
+    Input: 11
+    ","Output: Output: 65
+
+    Input: -10
+     Output: Output",30,False,"[4, -14]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -11
+Output: -20
+
+Input: -8
+Output: -14
+
+Input: -2
+Output: -2
+
+Input: -7
+Output: -12
+
+Input: -17
+Output: -32
+
+
+    Return the output preceded by 'Output:'
+    Input: 17
+    ","
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+",36,False,"[2, 2]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -11
+Output: -20
+
+Input: -8
+Output: -14
+
+Input: -2
+Output: -2
+
+Input: -7
+Output: -12
+
+Input: -17
+Output: -32
+
+
+    Return the output preceded by 'Output:'
+    Input: 14
+    ","Output: Output: 20
+
+    Input: 2
+     Output: Output:",30,False,"[2, 2]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -11
+Output: -20
+
+Input: -8
+Output: -14
+
+Input: -2
+Output: -2
+
+Input: -7
+Output: -12
+
+Input: -17
+Output: -32
+
+
+    Return the output preceded by 'Output:'
+    Input: -17
+    ","Output: Output: -32
+
+    You may assume that the input will always be a",-32,True,"[2, 2]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -11
+Output: -20
+
+Input: -8
+Output: -14
+
+Input: -2
+Output: -2
+
+Input: -7
+Output: -12
+
+Input: -17
+Output: -32
+
+
+    Return the output preceded by 'Output:'
+    Input: 0
+    ","Output: 0
+
+    Input: 1
+     Output: 1
+
+   ",2,False,"[2, 2]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -11
+Output: -20
+
+Input: -8
+Output: -14
+
+Input: -2
+Output: -2
+
+Input: -7
+Output: -12
+
+Input: -17
+Output: -32
+
+
+    Return the output preceded by 'Output:'
+    Input: -17
+    ","Output: Output: -32
+
+    You may assume that the input will always be a",-32,True,"[2, 2]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -17
+Output: -310
+
+Input: 17
+Output: 302
+
+Input: 10
+Output: 176
+
+Input: 12
+Output: 212
+
+Input: 13
+Output: 230
+
+
+    Return the output preceded by 'Output:'
+    Input: -10
+    ","Output: Output: -206
+
+    Input: 100
+     Output",-184,False,"[18, -4]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -17
+Output: -310
+
+Input: 17
+Output: 302
+
+Input: 10
+Output: 176
+
+Input: 12
+Output: 212
+
+Input: 13
+Output: 230
+
+
+    Return the output preceded by 'Output:'
+    Input: -17
+    ","Output: -310
+
+    Input: 17
+     Output: 3",-310,True,"[18, -4]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -17
+Output: -310
+
+Input: 17
+Output: 302
+
+Input: 10
+Output: 176
+
+Input: 12
+Output: 212
+
+Input: 13
+Output: 230
+
+
+    Return the output preceded by 'Output:'
+    Input: 12
+    ","Output: 212
+
+    Input: -12
+     Output: -2",212,True,"[18, -4]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -17
+Output: -310
+
+Input: 17
+Output: 302
+
+Input: 10
+Output: 176
+
+Input: 12
+Output: 212
+
+Input: 13
+Output: 230
+
+
+    Return the output preceded by 'Output:'
+    Input: -15
+    ","Output: Output: -320
+
+    Input: 18
+     Output:",-274,False,"[18, -4]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -17
+Output: -310
+
+Input: 17
+Output: 302
+
+Input: 10
+Output: 176
+
+Input: 12
+Output: 212
+
+Input: 13
+Output: 230
+
+
+    Return the output preceded by 'Output:'
+    Input: -9
+    ","Output: Output: -162
+
+    Input: 15
+     Output:",-166,False,"[18, -4]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -16
+Output: 297
+
+Input: 18
+Output: -315
+
+Input: -16
+Output: 297
+
+Input: -5
+Output: 99
+
+Input: 5
+Output: -81
+
+
+    Return the output preceded by 'Output:'
+    Input: -13
+    ","Output: 263
+
+    Input: -16
+     Output: 2",243,False,"[-18, 9]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -16
+Output: 297
+
+Input: 18
+Output: -315
+
+Input: -16
+Output: 297
+
+Input: -5
+Output: 99
+
+Input: 5
+Output: -81
+
+
+    Return the output preceded by 'Output:'
+    Input: 16
+    ","
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+",-279,False,"[-18, 9]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -16
+Output: 297
+
+Input: 18
+Output: -315
+
+Input: -16
+Output: 297
+
+Input: -5
+Output: 99
+
+Input: 5
+Output: -81
+
+
+    Return the output preceded by 'Output:'
+    Input: -5
+    ","Output: Output: -81
+
+    Input: 18
+     Output: Output",99,False,"[-18, 9]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -16
+Output: 297
+
+Input: 18
+Output: -315
+
+Input: -16
+Output: 297
+
+Input: -5
+Output: 99
+
+Input: 5
+Output: -81
+
+
+    Return the output preceded by 'Output:'
+    Input: 17
+    ","Output: 297
+
+    Input: -17
+     Output: -2",-297,False,"[-18, 9]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -16
+Output: 297
+
+Input: 18
+Output: -315
+
+Input: -16
+Output: 297
+
+Input: -5
+Output: 99
+
+Input: 5
+Output: -81
+
+
+    Return the output preceded by 'Output:'
+    Input: 18
+    ","Output: -315
+
+    Input: -16
+     Output: 2",-315,True,"[-18, 9]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -18
+Output: -265
+
+Input: 19
+Output: 253
+
+Input: -15
+Output: -223
+
+Input: 6
+Output: 71
+
+Input: 17
+Output: 225
+
+
+    Return the output preceded by 'Output:'
+    Input: 16
+    ","Output: Output: 199
+
+    Return the output preceded by 'Output:'",211,False,"[14, -13]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -18
+Output: -265
+
+Input: 19
+Output: 253
+
+Input: -15
+Output: -223
+
+Input: 6
+Output: 71
+
+Input: 17
+Output: 225
+
+
+    Return the output preceded by 'Output:'
+    Input: 13
+    ","Output: Output: 167
+
+    Input: -2
+     Output: Output",169,False,"[14, -13]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -18
+Output: -265
+
+Input: 19
+Output: 253
+
+Input: -15
+Output: -223
+
+Input: 6
+Output: 71
+
+Input: 17
+Output: 225
+
+
+    Return the output preceded by 'Output:'
+    Input: 0
+    ","Output: 0
+
+    Input: 10
+     Output: 10
+",-13,False,"[14, -13]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -18
+Output: -265
+
+Input: 19
+Output: 253
+
+Input: -15
+Output: -223
+
+Input: 6
+Output: 71
+
+Input: 17
+Output: 225
+
+
+    Return the output preceded by 'Output:'
+    Input: -4
+    ","Output: Output: -26
+
+    Input: 12
+     Output: Output",-69,False,"[14, -13]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -18
+Output: -265
+
+Input: 19
+Output: 253
+
+Input: -15
+Output: -223
+
+Input: 6
+Output: 71
+
+Input: 17
+Output: 225
+
+
+    Return the output preceded by 'Output:'
+    Input: -7
+    ","Output: Output: -125
+
+    Input: 10
+     Output:",-111,False,"[14, -13]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 0
+Output: -15
+
+Input: -5
+Output: -35
+
+Input: -4
+Output: -31
+
+Input: 5
+Output: 5
+
+Input: -12
+Output: -63
+
+
+    Return the output preceded by 'Output:'
+    Input: -1
+    ","Output: Output:-15
+
+    Input: 1
+     Output: Output: ",-19,False,"[4, -15]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 0
+Output: -15
+
+Input: -5
+Output: -35
+
+Input: -4
+Output: -31
+
+Input: 5
+Output: 5
+
+Input: -12
+Output: -63
+
+
+    Return the output preceded by 'Output:'
+    Input: 9
+    ","Output: Output: 9
+
+    Input: -10
+     Output: Output:",21,False,"[4, -15]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 0
+Output: -15
+
+Input: -5
+Output: -35
+
+Input: -4
+Output: -31
+
+Input: 5
+Output: 5
+
+Input: -12
+Output: -63
+
+
+    Return the output preceded by 'Output:'
+    Input: 0
+    ","Output: -15
+
+    Input: -5
+     Output: -35
+",-15,True,"[4, -15]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 0
+Output: -15
+
+Input: -5
+Output: -35
+
+Input: -4
+Output: -31
+
+Input: 5
+Output: 5
+
+Input: -12
+Output: -63
+
+
+    Return the output preceded by 'Output:'
+    Input: -16
+    ","
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+",-79,False,"[4, -15]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 0
+Output: -15
+
+Input: -5
+Output: -35
+
+Input: -4
+Output: -31
+
+Input: 5
+Output: 5
+
+Input: -12
+Output: -63
+
+
+    Return the output preceded by 'Output:'
+    Input: -20
+    ","Output: Output: -80
+
+    Input: 10
+     Output: Output",-95,False,"[4, -15]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 9
+Output: 133
+
+Input: 19
+Output: 283
+
+Input: 16
+Output: 238
+
+Input: -14
+Output: -212
+
+Input: -16
+Output: -242
+
+
+    Return the output preceded by 'Output:'
+    Input: 14
+    ","Output: 199
+
+    Input: 10
+     Output: 1",208,False,"[15, -2]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 9
+Output: 133
+
+Input: 19
+Output: 283
+
+Input: 16
+Output: 238
+
+Input: -14
+Output: -212
+
+Input: -16
+Output: -242
+
+
+    Return the output preceded by 'Output:'
+    Input: -7
+    ","Output: Output: -143
+
+    Input: 10
+     Output:",-107,False,"[15, -2]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 9
+Output: 133
+
+Input: 19
+Output: 283
+
+Input: 16
+Output: 238
+
+Input: -14
+Output: -212
+
+Input: -16
+Output: -242
+
+
+    Return the output preceded by 'Output:'
+    Input: 12
+    ","Output: 162
+
+    Return the output preceded by 'Output:'
+   ",178,False,"[15, -2]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 9
+Output: 133
+
+Input: 19
+Output: 283
+
+Input: 16
+Output: 238
+
+Input: -14
+Output: -212
+
+Input: -16
+Output: -242
+
+
+    Return the output preceded by 'Output:'
+    Input: -4
+    ","Output: Output:-16
+
+    Input: 10
+     Output: Output:",-62,False,"[15, -2]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 9
+Output: 133
+
+Input: 19
+Output: 283
+
+Input: 16
+Output: 238
+
+Input: -14
+Output: -212
+
+Input: -16
+Output: -242
+
+
+    Return the output preceded by 'Output:'
+    Input: -12
+    ","Output: Output: -194
+
+    Input: 10
+     Output:",-182,False,"[15, -2]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 2
+Output: 59
+
+Input: -16
+Output: -301
+
+Input: -5
+Output: -81
+
+Input: 3
+Output: 79
+
+Input: -2
+Output: -21
+
+
+    Return the output preceded by 'Output:'
+    Input: -10
+    ","Output: Output: -160
+
+    Input: 10
+     Output:",-181,False,"[20, 19]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 2
+Output: 59
+
+Input: -16
+Output: -301
+
+Input: -5
+Output: -81
+
+Input: 3
+Output: 79
+
+Input: -2
+Output: -21
+
+
+    Return the output preceded by 'Output:'
+    Input: 8
+    ","Output: Output: 64
+
+    Input: 10
+     Output: Output",179,False,"[20, 19]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 2
+Output: 59
+
+Input: -16
+Output: -301
+
+Input: -5
+Output: -81
+
+Input: 3
+Output: 79
+
+Input: -2
+Output: -21
+
+
+    Return the output preceded by 'Output:'
+    Input: 14
+    ","Output: Output: 196
+
+    Input: -1
+     Output: Output",299,False,"[20, 19]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 2
+Output: 59
+
+Input: -16
+Output: -301
+
+Input: -5
+Output: -81
+
+Input: 3
+Output: 79
+
+Input: -2
+Output: -21
+
+
+    Return the output preceded by 'Output:'
+    Input: -1
+    ","Output: Output: -101
+
+    Input: 10
+     Output:",-1,False,"[20, 19]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 2
+Output: 59
+
+Input: -16
+Output: -301
+
+Input: -5
+Output: -81
+
+Input: 3
+Output: 79
+
+Input: -2
+Output: -21
+
+
+    Return the output preceded by 'Output:'
+    Input: 19
+    ","Output: 309
+
+    Input: 10
+     Output: 1",399,False,"[20, 19]"
+"Use this function to apply to the input example to get the correct output.
+
+    )
+
+    However, just write the output like what's shown in these examples.
+    Input: 13
+Output: 55
+
+Input: -20
+Output: -44
+
+Input: 15
+Output: 61
+
+Input: -1
+Output: 13
+
+Input: -14
+Output: -26
+
+
+    Return the output preceded by 'Output:'
+    Input: -12
+    ","Output: Output: -26
+
+    Input: 10
+     Output: Output",-20,False,"[3, 16]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 13
+Output: 55
+
+Input: -20
+Output: -44
+
+Input: 15
+Output: 61
+
+Input: -1
+Output: 13
+
+Input: -14
+Output: -26
+
+
+    Return the output preceded by 'Output:'
+    Input: -4
+    ","Output: Output: -28
+
+    Input: 10
+     Output: Output",4,False,"[3, 16]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 13
+Output: 55
+
+Input: -20
+Output: -44
+
+Input: 15
+Output: 61
+
+Input: -1
+Output: 13
+
+Input: -14
+Output: -26
+
+
+    Return the output preceded by 'Output:'
+    Input: -13
+    ","Output: Output: -35
+
+    Input: 10
+     Output: Output",-23,False,"[3, 16]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 13
+Output: 55
+
+Input: -20
+Output: -44
+
+Input: 15
+Output: 61
+
+Input: -1
+Output: 13
+
+Input: -14
+Output: -26
+
+
+    Return the output preceded by 'Output:'
+    Input: -14
+    ","Output: -26
+
+    Return the output preceded by 'Output: '
+   ",-26,True,"[3, 16]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 13
+Output: 55
+
+Input: -20
+Output: -44
+
+Input: 15
+Output: 61
+
+Input: -1
+Output: 13
+
+Input: -14
+Output: -26
+
+
+    Return the output preceded by 'Output:'
+    Input: 15
+    ","Output: 61
+
+    Input: -20
+     Output: -44",61,True,"[3, 16]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -11
+Output: 72
+
+Input: -3
+Output: 8
+
+Input: -2
+Output: 0
+
+Input: 18
+Output: -160
+
+Input: -7
+Output: 40
+
+
+    Return the output preceded by 'Output:'
+    Input: 1
+    ","Output: 1
+
+    Input: 10
+     Output: 10
+",-24,False,"[-8, -16]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -11
+Output: 72
+
+Input: -3
+Output: 8
+
+Input: -2
+Output: 0
+
+Input: 18
+Output: -160
+
+Input: -7
+Output: 40
+
+
+    Return the output preceded by 'Output:'
+    Input: -7
+    ","Output: Output: 40
+
+    Input: 18
+     Output: Output",40,True,"[-8, -16]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -11
+Output: 72
+
+Input: -3
+Output: 8
+
+Input: -2
+Output: 0
+
+Input: 18
+Output: -160
+
+Input: -7
+Output: 40
+
+
+    Return the output preceded by 'Output:'
+    Input: 20
+    ","
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+",-176,False,"[-8, -16]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -11
+Output: 72
+
+Input: -3
+Output: 8
+
+Input: -2
+Output: 0
+
+Input: 18
+Output: -160
+
+Input: -7
+Output: 40
+
+
+    Return the output preceded by 'Output:'
+    Input: -4
+    ","Output: Output: -120
+
+    Input: 10
+     Output:",16,False,"[-8, -16]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -11
+Output: 72
+
+Input: -3
+Output: 8
+
+Input: -2
+Output: 0
+
+Input: 18
+Output: -160
+
+Input: -7
+Output: 40
+
+
+    Return the output preceded by 'Output:'
+    Input: 12
+    ","
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+",-112,False,"[-8, -16]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 11
+Output: -204
+
+Input: -4
+Output: 66
+
+Input: -17
+Output: 300
+
+Input: -15
+Output: 264
+
+Input: 20
+Output: -366
+
+
+    Return the output preceded by 'Output:'
+    Input: 7
+    ","Output: Output: 12
+
+    Input: -10
+     Output: Output",-132,False,"[-18, -6]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 11
+Output: -204
+
+Input: -4
+Output: 66
+
+Input: -17
+Output: 300
+
+Input: -15
+Output: 264
+
+Input: 20
+Output: -366
+
+
+    Return the output preceded by 'Output:'
+    Input: -3
+    ","Output: Output:-104
+
+    Input: 10
+     Output: Output",48,False,"[-18, -6]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 11
+Output: -204
+
+Input: -4
+Output: 66
+
+Input: -17
+Output: 300
+
+Input: -15
+Output: 264
+
+Input: 20
+Output: -366
+
+
+    Return the output preceded by 'Output:'
+    Input: -18
+    ","Output: Output: -264
+
+    Input: 10
+     Output:",318,False,"[-18, -6]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 11
+Output: -204
+
+Input: -4
+Output: 66
+
+Input: -17
+Output: 300
+
+Input: -15
+Output: 264
+
+Input: 20
+Output: -366
+
+
+    Return the output preceded by 'Output:'
+    Input: -20
+    ","Output: Output: -204
+
+    Input: 10
+     Output:",354,False,"[-18, -6]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 11
+Output: -204
+
+Input: -4
+Output: 66
+
+Input: -17
+Output: 300
+
+Input: -15
+Output: 264
+
+Input: 20
+Output: -366
+
+
+    Return the output preceded by 'Output:'
+    Input: 1
+    ","Output: 1
+
+    Input: 2
+     Output: 2
+
+   ",-24,False,"[-18, -6]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -12
+Output: 9
+
+Input: 20
+Output: -55
+
+Input: -4
+Output: -7
+
+Input: -10
+Output: 5
+
+Input: 8
+Output: -31
+
+
+    Return the output preceded by 'Output:'
+    Input: 15
+    ","
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+",-45,False,"[-2, -15]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -12
+Output: 9
+
+Input: 20
+Output: -55
+
+Input: -4
+Output: -7
+
+Input: -10
+Output: 5
+
+Input: 8
+Output: -31
+
+
+    Return the output preceded by 'Output:'
+    Input: 7
+    ","Output: 9
+
+    Input: -3
+     Output: -5
+
+   ",-29,False,"[-2, -15]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -12
+Output: 9
+
+Input: 20
+Output: -55
+
+Input: -4
+Output: -7
+
+Input: -10
+Output: 5
+
+Input: 8
+Output: -31
+
+
+    Return the output preceded by 'Output:'
+    Input: 15
+    ","
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+",-45,False,"[-2, -15]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -12
+Output: 9
+
+Input: 20
+Output: -55
+
+Input: -4
+Output: -7
+
+Input: -10
+Output: 5
+
+Input: 8
+Output: -31
+
+
+    Return the output preceded by 'Output:'
+    Input: -20
+    ","Output: -55
+
+    Input: 10
+     Output: 5
+",25,False,"[-2, -15]"
+"Use this function to apply to the input example to get the correct output.
+
+    #
+
+    However, just write the output like what's shown in these examples.
+    Input: -12
+Output: 9
+
+Input: 20
+Output: -55
+
+Input: -4
+Output: -7
+
+Input: -10
+Output: 5
+
+Input: 8
+Output: -31
+
+
+    Return the output preceded by 'Output:'
+    Input: -13
+    ","Output: 10
+
+    Input: 10
+     Output: -10",11,False,"[-2, -15]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -16
+Output: 82
+
+Input: -11
+Output: 52
+
+Input: 14
+Output: -98
+
+Input: -18
+Output: 94
+
+Input: 3
+Output: -32
+
+
+    Return the output preceded by 'Output:'
+    Input: 17
+    ","
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+",-116,False,"[-6, -14]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -16
+Output: 82
+
+Input: -11
+Output: 52
+
+Input: 14
+Output: -98
+
+Input: -18
+Output: 94
+
+Input: 3
+Output: -32
+
+
+    Return the output preceded by 'Output:'
+    Input: 15
+    ","
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+",-104,False,"[-6, -14]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -16
+Output: 82
+
+Input: -11
+Output: 52
+
+Input: 14
+Output: -98
+
+Input: -18
+Output: 94
+
+Input: 3
+Output: -32
+
+
+    Return the output preceded by 'Output:'
+    Input: -11
+    ","Output: 52
+
+    Input: -18
+     Output: 94",52,True,"[-6, -14]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -16
+Output: 82
+
+Input: -11
+Output: 52
+
+Input: 14
+Output: -98
+
+Input: -18
+Output: 94
+
+Input: 3
+Output: -32
+
+
+    Return the output preceded by 'Output:'
+    Input: 7
+    ","Output: 49
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+",-56,False,"[-6, -14]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -16
+Output: 82
+
+Input: -11
+Output: 52
+
+Input: 14
+Output: -98
+
+Input: -18
+Output: 94
+
+Input: 3
+Output: -32
+
+
+    Return the output preceded by 'Output:'
+    Input: -12
+    ","Output: 70
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+",58,False,"[-6, -14]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -18
+Output: -75
+
+Input: -1
+Output: -7
+
+Input: 3
+Output: 9
+
+Input: -18
+Output: -75
+
+Input: 2
+Output: 5
+
+
+    Return the output preceded by 'Output:'
+    Input: -7
+    ","Output: Output: -7
+
+    Input: 10
+     Output: Output:",-31,False,"[4, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -18
+Output: -75
+
+Input: -1
+Output: -7
+
+Input: 3
+Output: 9
+
+Input: -18
+Output: -75
+
+Input: 2
+Output: 5
+
+
+    Return the output preceded by 'Output:'
+    Input: -5
+    ","Output: Output: -35
+
+    Input: 10
+     Output: Output",-23,False,"[4, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -18
+Output: -75
+
+Input: -1
+Output: -7
+
+Input: 3
+Output: 9
+
+Input: -18
+Output: -75
+
+Input: 2
+Output: 5
+
+
+    Return the output preceded by 'Output:'
+    Input: -14
+    ","Output: Output: -70
+
+    Input: 12
+     Output: Output",-59,False,"[4, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    y
+
+    However, just write the output like what's shown in these examples.
+    Input: -18
+Output: -75
+
+Input: -1
+Output: -7
+
+Input: 3
+Output: 9
+
+Input: -18
+Output: -75
+
+Input: 2
+Output: 5
+
+
+    Return the output preceded by 'Output:'
+    Input: 2
+    ","Output: Output: 5
+
+    Return the output preceded by 'Output: '
+",5,True,"[4, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -18
+Output: -75
+
+Input: -1
+Output: -7
+
+Input: 3
+Output: 9
+
+Input: -18
+Output: -75
+
+Input: 2
+Output: 5
+
+
+    Return the output preceded by 'Output:'
+    Input: 15
+    ","
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+",57,False,"[4, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 6
+Output: 74
+
+Input: 19
+Output: 191
+
+Input: -11
+Output: -79
+
+Input: -5
+Output: -25
+
+Input: -10
+Output: -70
+
+
+    Return the output preceded by 'Output:'
+    Input: -9
+    ","Output: Output: -81
+
+    Input: 10
+     Output: Output",-61,False,"[9, 20]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 6
+Output: 74
+
+Input: 19
+Output: 191
+
+Input: -11
+Output: -79
+
+Input: -5
+Output: -25
+
+Input: -10
+Output: -70
+
+
+    Return the output preceded by 'Output:'
+    Input: 6
+    ","Output: 74
+
+    Input: 19
+     Output: 19",74,True,"[9, 20]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 6
+Output: 74
+
+Input: 19
+Output: 191
+
+Input: -11
+Output: -79
+
+Input: -5
+Output: -25
+
+Input: -10
+Output: -70
+
+
+    Return the output preceded by 'Output:'
+    Input: -19
+    ","Output: Output: -119
+
+    Input: 10
+     Output:",-151,False,"[9, 20]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 6
+Output: 74
+
+Input: 19
+Output: 191
+
+Input: -11
+Output: -79
+
+Input: -5
+Output: -25
+
+Input: -10
+Output: -70
+
+
+    Return the output preceded by 'Output:'
+    Input: -9
+    ","Output: Output: -79
+
+    Input: 10
+     Output: Output",-61,False,"[9, 20]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 6
+Output: 74
+
+Input: 19
+Output: 191
+
+Input: -11
+Output: -79
+
+Input: -5
+Output: -25
+
+Input: -10
+Output: -70
+
+
+    Return the output preceded by 'Output:'
+    Input: 1
+    ","Output: 7
+
+    Input: 2
+     Output: 14
+
+",29,False,"[9, 20]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 6
+Output: 8
+
+Input: -5
+Output: -25
+
+Input: -3
+Output: -19
+
+Input: -10
+Output: -40
+
+Input: -14
+Output: -52
+
+
+    Return the output preceded by 'Output:'
+    Input: 4
+    ","Output: 12
+
+    Input: 2
+     Output: 4
+
+",2,False,"[3, -10]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 6
+Output: 8
+
+Input: -5
+Output: -25
+
+Input: -3
+Output: -19
+
+Input: -10
+Output: -40
+
+Input: -14
+Output: -52
+
+
+    Return the output preceded by 'Output:'
+    Input: -18
+    ","Output: Output: -72
+
+    Input: 10
+     Output: Output",-64,False,"[3, -10]"
+"Use this function to apply to the input example to get the correct output.
+
+    f
+
+    However, just write the output like what's shown in these examples.
+    Input: 6
+Output: 8
+
+Input: -5
+Output: -25
+
+Input: -3
+Output: -19
+
+Input: -10
+Output: -40
+
+Input: -14
+Output: -52
+
+
+    Return the output preceded by 'Output:'
+    Input: 10
+    ","Output: 18
+
+    Return the output preceded by 'Output:'
+    Input",20,False,"[3, -10]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 6
+Output: 8
+
+Input: -5
+Output: -25
+
+Input: -3
+Output: -19
+
+Input: -10
+Output: -40
+
+Input: -14
+Output: -52
+
+
+    Return the output preceded by 'Output:'
+    Input: -6
+    ","Output: Output: -8
+
+    Input: -1
+     Output: Output: -",-28,False,"[3, -10]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 6
+Output: 8
+
+Input: -5
+Output: -25
+
+Input: -3
+Output: -19
+
+Input: -10
+Output: -40
+
+Input: -14
+Output: -52
+
+
+    Return the output preceded by 'Output:'
+    Input: -8
+    ","Output: Output: -16
+
+    Input: 10
+     Output: Output",-34,False,"[3, -10]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 9
+Output: 29
+
+Input: 2
+Output: 8
+
+Input: -1
+Output: -1
+
+Input: -6
+Output: -16
+
+Input: -6
+Output: -16
+
+
+    Return the output preceded by 'Output:'
+    Input: -19
+    ","Output: Output: -29
+
+    Input: 10
+     Output: Output",-55,False,"[3, 2]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 9
+Output: 29
+
+Input: 2
+Output: 8
+
+Input: -1
+Output: -1
+
+Input: -6
+Output: -16
+
+Input: -6
+Output: -16
+
+
+    Return the output preceded by 'Output:'
+    Input: -8
+    ","Output: Output: -14
+
+    Return the output preceded by 'Output:'
+",-22,False,"[3, 2]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 9
+Output: 29
+
+Input: 2
+Output: 8
+
+Input: -1
+Output: -1
+
+Input: -6
+Output: -16
+
+Input: -6
+Output: -16
+
+
+    Return the output preceded by 'Output:'
+    Input: 5
+    ","Output: 25
+
+    Input: 10
+     Output: 50",17,False,"[3, 2]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 9
+Output: 29
+
+Input: 2
+Output: 8
+
+Input: -1
+Output: -1
+
+Input: -6
+Output: -16
+
+Input: -6
+Output: -16
+
+
+    Return the output preceded by 'Output:'
+    Input: 1
+    ","Output: 1
+
+    Input: 10
+     Output: 20
+",5,False,"[3, 2]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 9
+Output: 29
+
+Input: 2
+Output: 8
+
+Input: -1
+Output: -1
+
+Input: -6
+Output: -16
+
+Input: -6
+Output: -16
+
+
+    Return the output preceded by 'Output:'
+    Input: -3
+    ","Output: Output: -12
+
+    Input: 4
+     Output: Output:",-7,False,"[3, 2]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -16
+Output: 109
+
+Input: -3
+Output: 18
+
+Input: 2
+Output: -17
+
+Input: 12
+Output: -87
+
+Input: 5
+Output: -38
+
+
+    Return the output preceded by 'Output:'
+    Input: 14
+    ","
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+",-101,False,"[-7, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -16
+Output: 109
+
+Input: -3
+Output: 18
+
+Input: 2
+Output: -17
+
+Input: 12
+Output: -87
+
+Input: 5
+Output: -38
+
+
+    Return the output preceded by 'Output:'
+    Input: 1
+    ","Output: 1
+
+    Input: 2
+     Output: 2
+
+   ",-10,False,"[-7, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -16
+Output: 109
+
+Input: -3
+Output: 18
+
+Input: 2
+Output: -17
+
+Input: 12
+Output: -87
+
+Input: 5
+Output: -38
+
+
+    Return the output preceded by 'Output:'
+    Input: -19
+    ","Output: 109
+
+    Input: -1
+     Output: 18",130,False,"[-7, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -16
+Output: 109
+
+Input: -3
+Output: 18
+
+Input: 2
+Output: -17
+
+Input: 12
+Output: -87
+
+Input: 5
+Output: -38
+
+
+    Return the output preceded by 'Output:'
+    Input: -13
+    ","
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+",88,False,"[-7, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -16
+Output: 109
+
+Input: -3
+Output: 18
+
+Input: 2
+Output: -17
+
+Input: 12
+Output: -87
+
+Input: 5
+Output: -38
+
+
+    Return the output preceded by 'Output:'
+    Input: -4
+    ","Output: 10
+
+    Input: 10
+     Output: -10",25,False,"[-7, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -9
+Output: 162
+
+Input: 17
+Output: -254
+
+Input: -4
+Output: 82
+
+Input: -18
+Output: 306
+
+Input: -14
+Output: 242
+
+
+    Return the output preceded by 'Output:'
+    Input: 18
+    ","Output: Output: 162
+
+    Input: -10
+     Output:",-270,False,"[-16, 18]"
+"Use this function to apply to the input example to get the correct output.
+
+    y
+
+    However, just write the output like what's shown in these examples.
+    Input: -9
+Output: 162
+
+Input: 17
+Output: -254
+
+Input: -4
+Output: 82
+
+Input: -18
+Output: 306
+
+Input: -14
+Output: 242
+
+
+    Return the output preceded by 'Output:'
+    Input: 7
+    ","Output: 105
+
+    Return the output preceded by 'Output: '
+",-94,False,"[-16, 18]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -9
+Output: 162
+
+Input: 17
+Output: -254
+
+Input: -4
+Output: 82
+
+Input: -18
+Output: 306
+
+Input: -14
+Output: 242
+
+
+    Return the output preceded by 'Output:'
+    Input: 2
+    ","Output: 4
+
+    Input: 10
+     Output: 16
+",-14,False,"[-16, 18]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -9
+Output: 162
+
+Input: 17
+Output: -254
+
+Input: -4
+Output: 82
+
+Input: -18
+Output: 306
+
+Input: -14
+Output: 242
+
+
+    Return the output preceded by 'Output:'
+    Input: 0
+    ","Output: 0
+
+    Input: 1
+     Output: 1
+
+   ",18,False,"[-16, 18]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: -9
+Output: 162
+
+Input: 17
+Output: -254
+
+Input: -4
+Output: 82
+
+Input: -18
+Output: 306
+
+Input: -14
+Output: 242
+
+
+    Return the output preceded by 'Output:'
+    Input: 7
+    ","Output: 103
+
+    Input: -10
+     Output: 1",-94,False,"[-16, 18]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 18
+Output: 350
+
+Input: 12
+Output: 230
+
+Input: -13
+Output: -270
+
+Input: 4
+Output: 70
+
+Input: 16
+Output: 310
+
+
+    Return the output preceded by 'Output:'
+    Input: -8
+    ","
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+",-170,False,"[20, -10]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 18
+Output: 350
+
+Input: 12
+Output: 230
+
+Input: -13
+Output: -270
+
+Input: 4
+Output: 70
+
+Input: 16
+Output: 310
+
+
+    Return the output preceded by 'Output:'
+    Input: -4
+    ","Output: -280
+
+    Input: 10
+     Output: 3",-90,False,"[20, -10]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 18
+Output: 350
+
+Input: 12
+Output: 230
+
+Input: -13
+Output: -270
+
+Input: 4
+Output: 70
+
+Input: 16
+Output: 310
+
+
+    Return the output preceded by 'Output:'
+    Input: -18
+    ","Output: -350
+
+    Input: 10
+     Output: 2",-370,False,"[20, -10]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 18
+Output: 350
+
+Input: 12
+Output: 230
+
+Input: -13
+Output: -270
+
+Input: 4
+Output: 70
+
+Input: 16
+Output: 310
+
+
+    Return the output preceded by 'Output:'
+    Input: 7
+    ","Output: 120
+
+    Input: 10
+     Output: 2",130,False,"[20, -10]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 18
+Output: 350
+
+Input: 12
+Output: 230
+
+Input: -13
+Output: -270
+
+Input: 4
+Output: 70
+
+Input: 16
+Output: 310
+
+
+    Return the output preceded by 'Output:'
+    Input: -20
+    ","Output: -400
+
+
+
+
+
+
+
+
+
+
+
+
+
+",-410,False,"[20, -10]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 13
+Output: 177
+
+Input: 14
+Output: 191
+
+Input: -8
+Output: -117
+
+Input: 3
+Output: 37
+
+Input: 7
+Output: 93
+
+
+    Return the output preceded by 'Output:'
+    Input: -16
+    ","
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+",-229,False,"[14, -5]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 13
+Output: 177
+
+Input: 14
+Output: 191
+
+Input: -8
+Output: -117
+
+Input: 3
+Output: 37
+
+Input: 7
+Output: 93
+
+
+    Return the output preceded by 'Output:'
+    Input: 1
+    ","Output: 100
+
+    Input: 2
+     Output: 10",9,False,"[14, -5]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 13
+Output: 177
+
+Input: 14
+Output: 191
+
+Input: -8
+Output: -117
+
+Input: 3
+Output: 37
+
+Input: 7
+Output: 93
+
+
+    Return the output preceded by 'Output:'
+    Input: 19
+    ","Output: Output: 363
+
+    Input: 20
+     Output:",261,False,"[14, -5]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 13
+Output: 177
+
+Input: 14
+Output: 191
+
+Input: -8
+Output: -117
+
+Input: 3
+Output: 37
+
+Input: 7
+Output: 93
+
+
+    Return the output preceded by 'Output:'
+    Input: 0
+    ","Output: 0
+
+    Input: 1
+     Output: 1
+
+   ",-5,False,"[14, -5]"
+"Use this function to apply to the input example to get the correct output.
+
+    
+
+
+    However, just write the output like what's shown in these examples.
+    Input: 13
+Output: 177
+
+Input: 14
+Output: 191
+
+Input: -8
+Output: -117
+
+Input: 3
+Output: 37
+
+Input: 7
+Output: 93
+
+
+    Return the output preceded by 'Output:'
+    Input: -13
+    ","Output: Output: -177
+
+    Input: 12
+     Output:",-187,False,"[14, -5]"

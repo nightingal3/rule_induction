@@ -1,0 +1,501 @@
+inputs,outputs,answer,correct,task_id
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    20 * x^2 + -13 * x^1 + -19 * x^0
+    
+    Examples:
+    Input: 9
+Output: 1484
+
+Input: -7
+Output: 1052
+
+Input: 13
+Output: 3192
+
+Input: 10
+Output: 1851
+
+Input: 2
+Output: 35
+
+
+    Return the output preceded by 'Output:'
+    Input: 21
+    ",Output: 8348,8528,False,"[20, -13, -19]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -3 * x^2 + -5 * x^1 + -6 * x^0
+    
+    Examples:
+    Input: -14
+Output: -524
+
+Input: 8
+Output: -238
+
+Input: 8
+Output: -238
+
+Input: 0
+Output: -6
+
+Input: -16
+Output: -694
+
+
+    Return the output preceded by 'Output:'
+    Input: -24
+    ",Output: -1518,-1614,False,"[-3, -5, -6]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -12 * x^2 + -14 * x^1 + 14 * x^0
+    
+    Examples:
+    Input: -18
+Output: -3622
+
+Input: -13
+Output: -1832
+
+Input: -19
+Output: -4052
+
+Input: 1
+Output: -12
+
+Input: -14
+Output: -2142
+
+
+    Return the output preceded by 'Output:'
+    Input: 73
+    ",Output: -64814,-64956,False,"[-12, -14, 14]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -15 * x^2 + 17 * x^1 + 7 * x^0
+    
+    Examples:
+    Input: -10
+Output: -1663
+
+Input: -5
+Output: -453
+
+Input: 13
+Output: -2307
+
+Input: -9
+Output: -1361
+
+Input: 15
+Output: -3113
+
+
+    Return the output preceded by 'Output:'
+    Input: -60
+    ",Output: -53993,-55013,False,"[-15, 17, 7]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -18 * x^2 + -19 * x^1 + -15 * x^0
+    
+    Examples:
+    Input: 1
+Output: -52
+
+Input: 15
+Output: -4350
+
+Input: 7
+Output: -1030
+
+Input: 9
+Output: -1644
+
+Input: -6
+Output: -549
+
+
+    Return the output preceded by 'Output:'
+    Input: 3
+    ",Output: -213,-234,False,"[-18, -19, -15]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -7 * x^2 + -6 * x^1 + 12 * x^0
+    
+    Examples:
+    Input: 20
+Output: -2908
+
+Input: -9
+Output: -501
+
+Input: -9
+Output: -501
+
+Input: 20
+Output: -2908
+
+Input: 7
+Output: -373
+
+
+    Return the output preceded by 'Output:'
+    Input: 1
+    ",Output: -1,-1,True,"[-7, -6, 12]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    18 * x^2 + -19 * x^1 + 15 * x^0
+    
+    Examples:
+    Input: -19
+Output: 6874
+
+Input: 19
+Output: 6152
+
+Input: -8
+Output: 1319
+
+Input: 8
+Output: 1015
+
+Input: 17
+Output: 4894
+
+
+    Return the output preceded by 'Output:'
+    Input: 9
+    ",Output: 1230,1302,False,"[18, -19, 15]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -8 * x^2 + 14 * x^1 + 6 * x^0
+    
+    Examples:
+    Input: 4
+Output: -66
+
+Input: -20
+Output: -3474
+
+Input: -7
+Output: -484
+
+Input: -7
+Output: -484
+
+Input: -3
+Output: -108
+
+
+    Return the output preceded by 'Output:'
+    Input: 92
+    ",Output: -64636,-66418,False,"[-8, 14, 6]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -6 * x^2 + 8 * x^1 + 17 * x^0
+    
+    Examples:
+    Input: -16
+Output: -1647
+
+Input: 16
+Output: -1391
+
+Input: -14
+Output: -1271
+
+Input: 14
+Output: -1047
+
+Input: -9
+Output: -541
+
+
+    Return the output preceded by 'Output:'
+    Input: -7
+    ",Output: -287,-333,False,"[-6, 8, 17]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -3 * x^2 + -20 * x^1 + -10 * x^0
+    
+    Examples:
+    Input: 0
+Output: -10
+
+Input: -8
+Output: -42
+
+Input: 9
+Output: -433
+
+Input: -13
+Output: -257
+
+Input: -4
+Output: 22
+
+
+    Return the output preceded by 'Output:'
+    Input: 71
+    ",Output: -15313,-16553,False,"[-3, -20, -10]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    7 * x^2 + 1 * x^1 + -3 * x^0
+    
+    Examples:
+    Input: 11
+Output: 855
+
+Input: 13
+Output: 1193
+
+Input: 20
+Output: 2817
+
+Input: 0
+Output: -3
+
+Input: 18
+Output: 2283
+
+
+    Return the output preceded by 'Output:'
+    Input: -1
+    ",Output: -9,3,False,"[7, 1, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -11 * x^2 + -7 * x^1 + 1 * x^0
+    
+    Examples:
+    Input: 19
+Output: -4103
+
+Input: 5
+Output: -309
+
+Input: 17
+Output: -3297
+
+Input: -13
+Output: -1767
+
+Input: 2
+Output: -57
+
+
+    Return the output preceded by 'Output:'
+    Input: -10
+    ",Output: -1101,-1029,False,"[-11, -7, 1]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -14 * x^2 + -15 * x^1 + 4 * x^0
+    
+    Examples:
+    Input: 9
+Output: -1265
+
+Input: 19
+Output: -5335
+
+Input: -9
+Output: -995
+
+Input: -1
+Output: 5
+
+Input: 19
+Output: -5335
+
+
+    Return the output preceded by 'Output:'
+    Input: 51
+    ",Output: -37265,-37175,False,"[-14, -15, 4]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -14 * x^2 + 2 * x^1 + 2 * x^0
+    
+    Examples:
+    Input: -15
+Output: -3178
+
+Input: -12
+Output: -2038
+
+Input: 0
+Output: 2
+
+Input: -13
+Output: -2390
+
+Input: -5
+Output: -358
+
+
+    Return the output preceded by 'Output:'
+    Input: -22
+    ",Output: -6776,-6818,False,"[-14, 2, 2]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    18 * x^2 + -4 * x^1 + -18 * x^0
+    
+    Examples:
+    Input: -13
+Output: 3076
+
+Input: -9
+Output: 1476
+
+Input: 3
+Output: 132
+
+Input: -11
+Output: 2204
+
+Input: 12
+Output: 2526
+
+
+    Return the output preceded by 'Output:'
+    Input: -1
+    ",Output: 40,4,False,"[18, -4, -18]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    9 * x^2 + 14 * x^1 + -13 * x^0
+    
+    Examples:
+    Input: 6
+Output: 395
+
+Input: 18
+Output: 3155
+
+Input: -12
+Output: 1115
+
+Input: 16
+Output: 2515
+
+Input: 4
+Output: 187
+
+
+    Return the output preceded by 'Output:'
+    Input: 8
+    ",Output: 635,675,False,"[9, 14, -13]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    4 * x^2 + -15 * x^1 + 15 * x^0
+    
+    Examples:
+    Input: -9
+Output: 474
+
+Input: 11
+Output: 334
+
+Input: 20
+Output: 1315
+
+Input: 14
+Output: 589
+
+Input: -9
+Output: 474
+
+
+    Return the output preceded by 'Output:'
+    Input: 42
+    ",Output: 6519,6441,False,"[4, -15, 15]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -2 * x^2 + 20 * x^1 + 19 * x^0
+    
+    Examples:
+    Input: -10
+Output: -381
+
+Input: 11
+Output: -3
+
+Input: -2
+Output: -29
+
+Input: -12
+Output: -509
+
+Input: -9
+Output: -323
+
+
+    Return the output preceded by 'Output:'
+    Input: -20
+    ",Output: -1241,-1181,False,"[-2, 20, 19]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    3 * x^2 + 16 * x^1 + -8 * x^0
+    
+    Examples:
+    Input: 8
+Output: 312
+
+Input: 19
+Output: 1379
+
+Input: -17
+Output: 587
+
+Input: 2
+Output: 36
+
+Input: -20
+Output: 872
+
+
+    Return the output preceded by 'Output:'
+    Input: 24
+    ",Output: 2184,2104,False,"[3, 16, -8]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -16 * x^2 + -18 * x^1 + -6 * x^0
+    
+    Examples:
+    Input: -12
+Output: -2094
+
+Input: -8
+Output: -886
+
+Input: 4
+Output: -334
+
+Input: 15
+Output: -3876
+
+Input: 12
+Output: -2526
+
+
+    Return the output preceded by 'Output:'
+    Input: 67
+    ",Output: -72290,-73036,False,"[-16, -18, -6]"

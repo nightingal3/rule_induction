@@ -1,0 +1,668 @@
+inputs,outputs,answer,correct,task_id
+"Use this function to apply to the input example to get the correct output.
+
+    y = -2 + 7x
+
+    However, just write the output like what's shown in these examples.
+    Input: -10
+Output: -213
+
+Input: 9
+Output: 167
+
+Input: 4
+Output: 67
+
+Input: -3
+Output: -73
+
+Input: 20
+Output: 387
+
+
+    Return the output preceded by 'Output:'
+    Input: 15
+    ",Output: 103,287,False,"[20, -13]"
+"Use this function to apply to the input example to get the correct output.
+
+    To find the function that captures the relationship between inputs and outputs, we need to use the given input-output pairs and solve the system of equations.
+
+Let's denote the input as x and the output as y.
+We can write the equations as follows:
+
+Equation 1: -10^0*a + (-10)^1*b = -213
+Equation 2: 9^0*a + 9^1*b = 167
+Equation 3: 4^0*a + 4^1*b = 67
+Equation 4: (-3)^0*a + (-3)^1*b = -73
+Equation 5: 20^0*a + 20^1*b = 387
+
+Simplifying each equation, we get:
+
+Equation 1: a - 10b = -213
+Equation 2: a + 9b = 167
+Equation 3: a + 4b = 67
+Equation 4: a - 3b = -73
+Equation 5: a + 20b = 387
+
+Solving this system of equations, we find that a = 127 and b = 25.
+
+Therefore, the function that captures the relationship between inputs and outputs is:
+
+Output: y = 127x^0 + 25x^1
+
+Simplifying further:
+
+Output: y = 127 + 25x
+
+    However, just write the output like what's shown in these examples.
+    Input: -10
+Output: -213
+
+Input: 9
+Output: 167
+
+Input: 4
+Output: 67
+
+Input: -3
+Output: -73
+
+Input: 20
+Output: 387
+
+
+    Return the output preceded by 'Output:'
+    Input: -6
+    ",Output: -23,-133,False,"[20, -13]"
+"Use this function to apply to the input example to get the correct output.
+
+    y = ax^0 + bx^1
+
+For each input x, we can determine the corresponding output y using the given data points. Based on the provided inputs and outputs, we can set up the following system of equations:
+
+-213 = a(-10)^0 + b(-10)^1   (equation 1)
+167 = a(9)^0 + b(9)^1         (equation 2)
+67 = a(4)^0 + b(4)^1          (equation 3)
+-73 = a(-3)^0 + b(-3)^1       (equation 4)
+387 = a(20)^0 + b(20)^1       (equation 5)
+
+Simplifying the equations, we get:
+
+-213 = a - 10b   (equation 1)
+167 = a + 9b     (equation 2)
+67 = a + 4b      (equation 3)
+-73 = a - 3b     (equation 4)
+387 = a + 20b    (equation 5)
+
+To solve this system of equations, we can use the method of substitution. From equation 4, we can isolate a:
+
+a = -73 + 3b
+
+Substituting this expression for a in equations 1, 2, 3, and 5, we get:
+
+-213 = (-73 + 3b) - 10b       (equation 1)
+167 = (-73 + 3b) + 9b         (equation 2)
+67 = (-73 + 3b) + 4b          (equation 3)
+387 = (-73 + 3b) + 20b        (equation 5)
+
+Simplifying these equations, we have:
+
+-213 = -73 - 7b               (equation 1)
+167 = -73 + 12b               (equation 2)
+67 = -73 + 7b                 (equation 3)
+387 = -73 + 23b               (equation 5)
+
+Rearranging the equations, we find:
+
+7b = -140              (equation 1)
+12b = 240              (equation 2)
+7b = 140               (equation 3)
+23b = 460              (equation 5)
+
+Dividing both sides of equations 1, 2, 3, and 5 by 7, 12, 7, and 23 respectively, we get:
+
+b = -20
+b = 20
+b = 20
+b = 20
+
+Substituting these values of b in equations 1, 2, 3, and 5, we can solve for a:
+
+-213 = -73 - 7(-20)
+-213 = -73 + 140
+a = -213 + 73 + 140
+a = 0
+
+167 = -73 + 12(20)
+167 = -73 + 240
+a = 167 + 73 - 240
+a = 0
+
+67 = -73 + 7(20)
+67 = -73 + 140
+a = 67 + 73 - 140
+a = 0
+
+387 = -73 + 23(20)
+387 = -73 + 460
+a = 387 + 73 - 460
+a = 0
+
+Based on the calculations, we find that a = 0 and b = 20.
+
+Thus, the function that captures the relationship between inputs and outputs is:
+
+y = 0x^0 + 20x^1
+
+Simplifying, the function can be written as:
+
+Output: y = 20x
+
+    However, just write the output like what's shown in these examples.
+    Input: -10
+Output: -213
+
+Input: 9
+Output: 167
+
+Input: 4
+Output: 67
+
+Input: -3
+Output: -73
+
+Input: 20
+Output: 387
+
+
+    Return the output preceded by 'Output:'
+    Input: 0
+    ",Output: 0,-13,False,"[20, -13]"
+"Use this function to apply to the input example to get the correct output.
+
+    The function that captures the relationship between inputs and outputs is:
+
+Output: y = -3x^0 + 20x^1
+
+    However, just write the output like what's shown in these examples.
+    Input: -10
+Output: -213
+
+Input: 9
+Output: 167
+
+Input: 4
+Output: 67
+
+Input: -3
+Output: -73
+
+Input: 20
+Output: 387
+
+
+    Return the output preceded by 'Output:'
+    Input: -17
+    ",Output: -323,-353,False,"[20, -13]"
+"Use this function to apply to the input example to get the correct output.
+
+    y = -3x^0 + 20x^1
+
+    However, just write the output like what's shown in these examples.
+    Input: -10
+Output: -213
+
+Input: 9
+Output: 167
+
+Input: 4
+Output: 67
+
+Input: -3
+Output: -73
+
+Input: 20
+Output: 387
+
+
+    Return the output preceded by 'Output:'
+    Input: -6
+    ",Output: -53,-133,False,"[20, -13]"
+"Use this function to apply to the input example to get the correct output.
+
+    The function can be written as:
+
+Output: y = ax^0 + bx^1
+
+To find the values of a and b, we can use the provided input-output pairs.
+
+1) For the first pair (-18, 339):
+339 = a(-18)^0 + b(-18)^1
+339 = a + (-18)b
+339 = a - 18b   ----(1)
+
+2) For the second pair (0, -3):
+-3 = a(0)^0 + b(0)^1
+-3 = a + 0 (since any non-zero number raised to the power of 0 is equal to 1)
+-3 = a   ----(2)
+
+3) For the third pair (5, -98):
+-98 = a(5)^0 + b(5)^1
+-98 = a + 5b   ----(3)
+
+4) For the fourth pair (-3, 54):
+54 = a(-3)^0 + b(-3)^1
+54 = a - 3b   ----(4)
+
+5) For the fifth pair (-16, 301):
+301 = a(-16)^0 + b(-16)^1
+301 = a - 16b   ----(5)
+
+Using equations 2, 3, 4, and 5 to substitute for ""a"" in equation 1:
+
+339 = (-3) - 18b
+339 = -3 - 18b
+342 = -18b
+b = -342/18
+b = -19
+
+Substituting the value of b into equation 2: 
+-3 = a
+
+Therefore, a = -3 and b = -19.
+
+Thus, the relationship between input and output is given by the function:
+
+Output: y = -3x^0 - 19x^1
+
+    However, just write the output like what's shown in these examples.
+    Input: -18
+Output: 339
+
+Input: 0
+Output: -3
+
+Input: 5
+Output: -98
+
+Input: -3
+Output: 54
+
+Input: -16
+Output: 301
+
+
+    Return the output preceded by 'Output:'
+    Input: -7
+    ",Output: 130,130,True,"[-19, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    To find the function that captures the relationship between the inputs and outputs provided, we can use the two given expressions: y = ax^0 + bx^1.
+
+By substituting the given inputs and outputs into this expression and solving for the coefficients a and b, we can determine the function.
+
+Substituting the first input and output:
+
+y = ax^0 + bx^1
+339 = a(-18)^0 + b(-18)^1
+339 = a(1) + b(-18)
+339 = a - 18b              (Equation 1)
+
+Substituting the second input and output:
+
+y = ax^0 + bx^1
+-3 = a(0)^0 + b(0)^1
+-3 = a(1) + b(0)
+-3 = a                    (Equation 2)
+
+Using Equation 2, we know that a = -3.
+
+Substituting the third input and output:
+
+y = ax^0 + bx^1
+-98 = (-3)(5)^0 + b(5)^1
+-98 = -3 + 5b
+-95 = 5b
+b = -19                (Equation 3)
+
+Now we have a = -3 and b = -19.
+
+Thus, the explicit form of the function is:
+
+Output: y = -3x^0 - 19x^1
+
+    However, just write the output like what's shown in these examples.
+    Input: -18
+Output: 339
+
+Input: 0
+Output: -3
+
+Input: 5
+Output: -98
+
+Input: -3
+Output: 54
+
+Input: -16
+Output: 301
+
+
+    Return the output preceded by 'Output:'
+    Input: 16
+    ",Output: -307,-307,True,"[-19, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    Output: y = -3x^1 + 0x^0
+
+    However, just write the output like what's shown in these examples.
+    Input: -18
+Output: 339
+
+Input: 0
+Output: -3
+
+Input: 5
+Output: -98
+
+Input: -3
+Output: 54
+
+Input: -16
+Output: 301
+
+
+    Return the output preceded by 'Output:'
+    Input: 0
+    ",Output: -3,-3,True,"[-19, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    To find the relationship between the inputs and outputs, we need to solve for the coefficients a and b in the equation y = ax^0 + bx^1. 
+
+Using the given inputs and outputs, we can form a system of equations:
+
+1. -18 = a(0)^0 + b(-18)^1
+2. 0 = a(0)^0 + b(0)^1
+3. 5 = a(5)^0 + b(5)^1
+4. -3 = a(-3)^0 + b(-3)^1
+5. -16 = a(-16)^0 + b(-16)^1
+
+Simplifying these equations, we have:
+
+1. -18 = a + (-18)b
+2. 0 = a
+3. 5 = a + 5b
+4. -3 = a - 3b
+5. -16 = a - 16b
+
+From equation 2, we can determine that a = 0. Substituting this value into equations 1, 3, 4, and 5, we get:
+
+1. -18 = 0 + (-18)b => -18 = -18b => b = 1
+3. 5 = 0 + 5(1) => 5 = 5
+4. -3 = 0 - 3(1) => -3 = -3
+5. -16 = 0 - 16(1) => -16 = -16
+
+So, the coefficients a and b are a = 0 and b = 1.
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+
+Output: y = 0x^0 + 1x^1
+Simplified: y = x
+
+    However, just write the output like what's shown in these examples.
+    Input: -18
+Output: 339
+
+Input: 0
+Output: -3
+
+Input: 5
+Output: -98
+
+Input: -3
+Output: 54
+
+Input: -16
+Output: 301
+
+
+    Return the output preceded by 'Output:'
+    Input: -7
+    ",Output: 126,130,False,"[-19, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    y = -3x + 339
+
+    However, just write the output like what's shown in these examples.
+    Input: -18
+Output: 339
+
+Input: 0
+Output: -3
+
+Input: 5
+Output: -98
+
+Input: -3
+Output: 54
+
+Input: -16
+Output: 301
+
+
+    Return the output preceded by 'Output:'
+    Input: 11
+    ",Output: 372,-212,False,"[-19, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function: 
+Output: y = -6x^0 + 7x^1
+
+Explanation: 
+Given the input-output pairs, we can write two equations in terms of variables a and b:
+
+For the first input-output pair (5, -31):
+-31 = -6*5^0 + 7*5^1
+-31 = -6*1 + 7*5
+-31 = -6 + 35
+-31 = 29
+
+For the second input-output pair (9, -51):
+-51 = -6*9^0 + 7*9^1
+-51 = -6*1 + 7*9
+-51 = -6 + 63
+-51 = 57
+
+For the third input-output pair (-11, 49):
+49 = -6*(-11)^0 + 7*(-11)^1
+49 = -6*1 + 7*(-11)
+49 = -6 - 77
+49 = -83
+
+For the fourth input-output pair (-4, 14):
+14 = -6*(-4)^0 + 7*(-4)^1
+14 = -6*1 + 7*(-4)
+14 = -6 - 28
+14 = -34
+
+For the fifth input-output pair (-12, 54):
+54 = -6*(-12)^0 + 7*(-12)^1
+54 = -6*1 + 7*(-12)
+54 = -6 - 84
+54 = -90
+
+Solving these equations, we get the values of a and b:
+a = -6
+b = 7
+
+Thus, the function that captures the relationship between inputs and outputs is:
+y = -6x^0 + 7x^1
+
+    However, just write the output like what's shown in these examples.
+    Input: 5
+Output: -31
+
+Input: 9
+Output: -51
+
+Input: -11
+Output: 49
+
+Input: -4
+Output: 14
+
+Input: -12
+Output: 54
+
+
+    Return the output preceded by 'Output:'
+    Input: -5
+    ",Output: -1,19,False,"[-5, -6]"
+"Use this function to apply to the input example to get the correct output.
+
+    y = ax^0 + bx^1
+
+For the first two inputs and outputs:
+
+Using the first input and output:
+-31 = a(5^0) + b(5^1)
+-31 = a + 5b
+
+Using the second input and output:
+-51 = a(9^0) + b(9^1)
+-51 = a + 9b
+
+Now we have a system of equations:
+
+a + 5b = -31   (Equation 1)
+a + 9b = -51   (Equation 2)
+
+We can solve this system of equations to find the values of a and b:
+
+Multiply Equation 1 by -9 and Equation 2 by 5:
+
+-9a - 45b = 279   (Equation 3)
+5a + 45b = -255   (Equation 4)
+
+Adding Equation 3 and Equation 4:
+
+-4a = 24
+
+Dividing both sides by -4:
+
+a = -6
+
+Substituting the value of a back into Equation 1:
+
+-6 + 5b = -31
+5b = -25
+b = -5
+
+Substituting the values of a and b back into the equation y = ax^0 + bx^1:
+
+y = -6(0) - 5x^1
+y = -5x
+
+    However, just write the output like what's shown in these examples.
+    Input: 5
+Output: -31
+
+Input: 9
+Output: -51
+
+Input: -11
+Output: 49
+
+Input: -4
+Output: 14
+
+Input: -12
+Output: 54
+
+
+    Return the output preceded by 'Output:'
+    Input: 15
+    ",Output: -79,-81,False,"[-5, -6]"
+"Use this function to apply to the input example to get the correct output.
+
+    Based on the provided inputs and outputs, we can find the relationship as:
+
+Input: 5 -> Output: -31 -> -31 = a(5^0) + b(5^1) -> -31 = a + 5b
+
+Input: 9 -> Output: -51 -> -51 = a(9^0) + b(9^1) -> -51 = a + 9b
+
+Input: -11 -> Output: 49 -> 49 = a((-11)^0) + b((-11)^1) -> 49 = a - 11b
+
+Input: -4 -> Output: 14 -> 14 = a((-4)^0) + b((-4)^1) -> 14 = a - 4b
+
+Input: -12 -> Output: 54 -> 54 = a((-12)^0) + b((-12)^1) -> 54 = a - 12b
+
+Simplifying these equations, we get:
+
+-31 = a + 5b  ->  Eq1
+-51 = a + 9b  ->  Eq2
+49 = a - 11b  ->  Eq3
+14 = a - 4b  ->  Eq4
+54 = a - 12b  ->  Eq5
+
+Now, we can solve these equations simultaneously to find the values of a and b.
+
+By solving Eq1 and Eq2:
+From Eq1: a = -31 - 5b
+Substituting this in Eq2:
+-51 = (-31 - 5b) + 9b
+20 = 4b
+b = 5
+
+Substituting this value of b in Eq1:
+-31 = a + 5(5)
+-31 = a + 25
+a = -56
+
+Therefore, the function is:
+Output: y = -56x^0 + 5x^1
+
+    However, just write the output like what's shown in these examples.
+    Input: 5
+Output: -31
+
+Input: 9
+Output: -51
+
+Input: -11
+Output: 49
+
+Input: -4
+Output: 14
+
+Input: -12
+Output: 54
+
+
+    Return the output preceded by 'Output:'
+    Input: 14
+    ",Output: -4,-76,False,"[-5, -6]"
+"Use this function to apply to the input example to get the correct output.
+
+    y = -6x + 1
+
+    However, just write the output like what's shown in these examples.
+    Input: 5
+Output: -31
+
+Input: 9
+Output: -51
+
+Input: -11
+Output: 49
+
+Input: -4
+Output: 14
+
+Input: -12
+Output: 54
+
+
+    Return the output preceded by 'Output:'
+    Input: -4
+    ",Output: 25,14,False,"[-5, -6]"

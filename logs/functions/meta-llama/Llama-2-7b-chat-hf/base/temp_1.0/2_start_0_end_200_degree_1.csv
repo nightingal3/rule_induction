@@ -1,0 +1,4332 @@
+inputs,outputs,answer,correct,task_id
+"Return the output preceded by 'Output:'
+Input: -10
+Output: -213
+
+Input: 9
+Output: 167
+
+Input: 4
+Output: 67
+
+Input: -3
+Output: -73
+
+Input: 20
+Output: 387
+
+Input: 15","
+Output: 255
+
+Input: 10
+Output: 16",287,False,"[20, -13]"
+"Return the output preceded by 'Output:'
+Input: -10
+Output: -213
+
+Input: 9
+Output: 167
+
+Input: 4
+Output: 67
+
+Input: -3
+Output: -73
+
+Input: 20
+Output: 387
+
+Input: -6","
+Output: -102
+
+Input: 10
+Output: 16",-133,False,"[20, -13]"
+"Return the output preceded by 'Output:'
+Input: -10
+Output: -213
+
+Input: 9
+Output: 167
+
+Input: 4
+Output: 67
+
+Input: -3
+Output: -73
+
+Input: 20
+Output: 387
+
+Input: 0","
+Output: 0
+
+Input: 1
+Output: 10
+
+Input",-13,False,"[20, -13]"
+"Return the output preceded by 'Output:'
+Input: -10
+Output: -213
+
+Input: 9
+Output: 167
+
+Input: 4
+Output: 67
+
+Input: -3
+Output: -73
+
+Input: 20
+Output: 387
+
+Input: -17","
+Output: -287
+
+Input: 12
+Output: 21",-353,False,"[20, -13]"
+"Return the output preceded by 'Output:'
+Input: -10
+Output: -213
+
+Input: 9
+Output: 167
+
+Input: 4
+Output: 67
+
+Input: -3
+Output: -73
+
+Input: 20
+Output: 387
+
+Input: -6","
+Output: -102
+
+Input: 10
+Output: 16",-133,False,"[20, -13]"
+"Return the output preceded by 'Output:'
+Input: -18
+Output: 339
+
+Input: 0
+Output: -3
+
+Input: 5
+Output: -98
+
+Input: -3
+Output: 54
+
+Input: -16
+Output: 301
+
+Input: -7","
+Output: 105
+
+Input: -12
+Output: 15",130,False,"[-19, -3]"
+"Return the output preceded by 'Output:'
+Input: -18
+Output: 339
+
+Input: 0
+Output: -3
+
+Input: 5
+Output: -98
+
+Input: -3
+Output: 54
+
+Input: -16
+Output: 301
+
+Input: 16","
+Output: -100
+
+Input: -2
+Output: 16
+",-307,False,"[-19, -3]"
+"Return the output preceded by 'Output:'
+Input: -18
+Output: 339
+
+Input: 0
+Output: -3
+
+Input: 5
+Output: -98
+
+Input: -3
+Output: 54
+
+Input: -16
+Output: 301
+
+Input: 0","
+Output: -3
+
+Input: 5
+Output: -98
+
+Input",-3,True,"[-19, -3]"
+"Return the output preceded by 'Output:'
+Input: -18
+Output: 339
+
+Input: 0
+Output: -3
+
+Input: 5
+Output: -98
+
+Input: -3
+Output: 54
+
+Input: -16
+Output: 301
+
+Input: -7","
+Output: 105
+
+Input: -12
+Output: 15",130,False,"[-19, -3]"
+"Return the output preceded by 'Output:'
+Input: -18
+Output: 339
+
+Input: 0
+Output: -3
+
+Input: 5
+Output: -98
+
+Input: -3
+Output: 54
+
+Input: -16
+Output: 301
+
+Input: 11","
+Output: -10
+
+Input: -2
+Output: 16
+
+",-212,False,"[-19, -3]"
+"Return the output preceded by 'Output:'
+Input: 5
+Output: -31
+
+Input: 9
+Output: -51
+
+Input: -11
+Output: 49
+
+Input: -4
+Output: 14
+
+Input: -12
+Output: 54
+
+Input: -5","
+Output: 39
+
+Input: -7
+Output: 43
+
+",19,False,"[-5, -6]"
+"Return the output preceded by 'Output:'
+Input: 5
+Output: -31
+
+Input: 9
+Output: -51
+
+Input: -11
+Output: 49
+
+Input: -4
+Output: 14
+
+Input: -12
+Output: 54
+
+Input: 15","
+Output: -21
+
+Input: -7
+Output: 46
+
+",-81,False,"[-5, -6]"
+"Return the output preceded by 'Output:'
+Input: 5
+Output: -31
+
+Input: 9
+Output: -51
+
+Input: -11
+Output: 49
+
+Input: -4
+Output: 14
+
+Input: -12
+Output: 54
+
+Input: 14","
+Output: -2
+
+Input: -3
+Output: 19
+
+Input",-76,False,"[-5, -6]"
+"Return the output preceded by 'Output:'
+Input: 5
+Output: -31
+
+Input: 9
+Output: -51
+
+Input: -11
+Output: 49
+
+Input: -4
+Output: 14
+
+Input: -12
+Output: 54
+
+Input: -4","5
+Output: 123
+
+Input: 10
+Output: 1",14,False,"[-5, -6]"
+"Return the output preceded by 'Output:'
+Input: 5
+Output: -31
+
+Input: 9
+Output: -51
+
+Input: -11
+Output: 49
+
+Input: -4
+Output: 14
+
+Input: -12
+Output: 54
+
+Input: 17","
+Output: -10
+
+Input: -2
+Output: 39
+
+",-91,False,"[-5, -6]"
+"Return the output preceded by 'Output:'
+Input: 7
+Output: -98
+
+Input: 17
+Output: -218
+
+Input: 5
+Output: -74
+
+Input: 3
+Output: -50
+
+Input: -6
+Output: 58
+
+Input: -12","
+Output: 100
+
+Input: 2
+Output: -102",130,False,"[-12, -14]"
+"Return the output preceded by 'Output:'
+Input: 7
+Output: -98
+
+Input: 17
+Output: -218
+
+Input: 5
+Output: -74
+
+Input: 3
+Output: -50
+
+Input: -6
+Output: 58
+
+Input: 12","
+Output: -102
+
+Input: 2
+Output: -104",-158,False,"[-12, -14]"
+"Return the output preceded by 'Output:'
+Input: 7
+Output: -98
+
+Input: 17
+Output: -218
+
+Input: 5
+Output: -74
+
+Input: 3
+Output: -50
+
+Input: -6
+Output: 58
+
+Input: 11","
+Output: -159
+
+Input: 2
+Output: -106",-146,False,"[-12, -14]"
+"Return the output preceded by 'Output:'
+Input: 7
+Output: -98
+
+Input: 17
+Output: -218
+
+Input: 5
+Output: -74
+
+Input: 3
+Output: -50
+
+Input: -6
+Output: 58
+
+Input: -15","
+Output: 123
+
+Input: 2
+Output: 100",166,False,"[-12, -14]"
+"Return the output preceded by 'Output:'
+Input: 7
+Output: -98
+
+Input: 17
+Output: -218
+
+Input: 5
+Output: -74
+
+Input: 3
+Output: -50
+
+Input: -6
+Output: 58
+
+Input: -17","
+Output: 105
+
+Input: -2
+Output: 102",190,False,"[-12, -14]"
+"Return the output preceded by 'Output:'
+Input: -13
+Output: -197
+
+Input: -11
+Output: -169
+
+Input: 20
+Output: 265
+
+Input: -10
+Output: -155
+
+Input: 7
+Output: 83
+
+Input: 18","
+Output: 215
+
+Input: -5
+Output: -125",237,False,"[14, -15]"
+"Return the output preceded by 'Output:'
+Input: -13
+Output: -197
+
+Input: -11
+Output: -169
+
+Input: 20
+Output: 265
+
+Input: -10
+Output: -155
+
+Input: 7
+Output: 83
+
+Input: -16","
+Output: -214
+
+Input: 12
+Output: 14",-239,False,"[14, -15]"
+"Return the output preceded by 'Output:'
+Input: -13
+Output: -197
+
+Input: -11
+Output: -169
+
+Input: 20
+Output: 265
+
+Input: -10
+Output: -155
+
+Input: 7
+Output: 83
+
+Input: 4","
+Output: 44
+
+Input: -5
+Output: -65
+
+",41,False,"[14, -15]"
+"Return the output preceded by 'Output:'
+Input: -13
+Output: -197
+
+Input: -11
+Output: -169
+
+Input: 20
+Output: 265
+
+Input: -10
+Output: -155
+
+Input: 7
+Output: 83
+
+Input: 4","
+Output: 44
+
+Input: -5
+Output: -65
+
+",41,False,"[14, -15]"
+"Return the output preceded by 'Output:'
+Input: -13
+Output: -197
+
+Input: -11
+Output: -169
+
+Input: 20
+Output: 265
+
+Input: -10
+Output: -155
+
+Input: 7
+Output: 83
+
+Input: 18","
+Output: 215
+
+Input: -5
+Output: -125",237,False,"[14, -15]"
+"Return the output preceded by 'Output:'
+Input: 9
+Output: 160
+
+Input: 13
+Output: 228
+
+Input: -4
+Output: -61
+
+Input: 15
+Output: 262
+
+Input: -20
+Output: -333
+
+Input: -13","
+Output: -204
+
+Input: 10
+Output: 16",-214,False,"[17, 7]"
+"Return the output preceded by 'Output:'
+Input: 9
+Output: 160
+
+Input: 13
+Output: 228
+
+Input: -4
+Output: -61
+
+Input: 15
+Output: 262
+
+Input: -20
+Output: -333
+
+Input: 14","
+Output: 266
+
+Input: 10
+Output: 19",245,False,"[17, 7]"
+"Return the output preceded by 'Output:'
+Input: 9
+Output: 160
+
+Input: 13
+Output: 228
+
+Input: -4
+Output: -61
+
+Input: 15
+Output: 262
+
+Input: -20
+Output: -333
+
+Input: -3","
+Output: -53
+
+Input: 10
+Output: 160",-44,False,"[17, 7]"
+"Return the output preceded by 'Output:'
+Input: 9
+Output: 160
+
+Input: 13
+Output: 228
+
+Input: -4
+Output: -61
+
+Input: 15
+Output: 262
+
+Input: -20
+Output: -333
+
+Input: 1","0
+Output: 160
+
+Input: 17
+Output: 2",24,False,"[17, 7]"
+"Return the output preceded by 'Output:'
+Input: 9
+Output: 160
+
+Input: 13
+Output: 228
+
+Input: -4
+Output: -61
+
+Input: 15
+Output: 262
+
+Input: -20
+Output: -333
+
+Input: -13","
+Output: -204
+
+Input: 10
+Output: 16",-214,False,"[17, 7]"
+"Return the output preceded by 'Output:'
+Input: -2
+Output: 17
+
+Input: 7
+Output: -145
+
+Input: -10
+Output: 161
+
+Input: 9
+Output: -181
+
+Input: -20
+Output: 341
+
+Input: -4","
+Output: 165
+
+Input: 12
+Output: -10",53,False,"[-18, -19]"
+"Return the output preceded by 'Output:'
+Input: -2
+Output: 17
+
+Input: 7
+Output: -145
+
+Input: -10
+Output: 161
+
+Input: 9
+Output: -181
+
+Input: -20
+Output: 341
+
+Input: 12","
+Output: -105
+
+Input: -5
+Output: 177",-235,False,"[-18, -19]"
+"Return the output preceded by 'Output:'
+Input: -2
+Output: 17
+
+Input: 7
+Output: -145
+
+Input: -10
+Output: 161
+
+Input: 9
+Output: -181
+
+Input: -20
+Output: 341
+
+Input: -9","
+Output: 279
+
+Input: 10
+Output: -15",143,False,"[-18, -19]"
+"Return the output preceded by 'Output:'
+Input: -2
+Output: 17
+
+Input: 7
+Output: -145
+
+Input: -10
+Output: 161
+
+Input: 9
+Output: -181
+
+Input: -20
+Output: 341
+
+Input: 12","
+Output: -105
+
+Input: -5
+Output: 177",-235,False,"[-18, -19]"
+"Return the output preceded by 'Output:'
+Input: -2
+Output: 17
+
+Input: 7
+Output: -145
+
+Input: -10
+Output: 161
+
+Input: 9
+Output: -181
+
+Input: -20
+Output: 341
+
+Input: -14","
+Output: 209
+
+Input: 12
+Output: -10",233,False,"[-18, -19]"
+"Return the output preceded by 'Output:'
+Input: 20
+Output: -307
+
+Input: -1
+Output: 8
+
+Input: 20
+Output: -307
+
+Input: 12
+Output: -187
+
+Input: 18
+Output: -277
+
+Input: -8","
+Output: 12
+
+Input: 12
+Output: -187",113,False,"[-15, -7]"
+"Return the output preceded by 'Output:'
+Input: 20
+Output: -307
+
+Input: -1
+Output: 8
+
+Input: 20
+Output: -307
+
+Input: 12
+Output: -187
+
+Input: 18
+Output: -277
+
+Input: -11","
+Output: 12
+
+Input: 20
+Output: -307",158,False,"[-15, -7]"
+"Return the output preceded by 'Output:'
+Input: 20
+Output: -307
+
+Input: -1
+Output: 8
+
+Input: 20
+Output: -307
+
+Input: 12
+Output: -187
+
+Input: 18
+Output: -277
+
+Input: 3","0
+Output: -107
+
+Input: 40
+Output: -1",-52,False,"[-15, -7]"
+"Return the output preceded by 'Output:'
+Input: 20
+Output: -307
+
+Input: -1
+Output: 8
+
+Input: 20
+Output: -307
+
+Input: 12
+Output: -187
+
+Input: 18
+Output: -277
+
+Input: -10","
+Output: 120
+
+Input: 20
+Output: -30",143,False,"[-15, -7]"
+"Return the output preceded by 'Output:'
+Input: 20
+Output: -307
+
+Input: -1
+Output: 8
+
+Input: 20
+Output: -307
+
+Input: 12
+Output: -187
+
+Input: 18
+Output: -277
+
+Input: 14","
+Output: -206
+
+Input: 10
+Output: -12",-217,False,"[-15, -7]"
+"Return the output preceded by 'Output:'
+Input: 13
+Output: -66
+
+Input: -20
+Output: 132
+
+Input: 18
+Output: -96
+
+Input: 0
+Output: 12
+
+Input: 11
+Output: -54
+
+Input: -19","
+Output: 100
+
+Input: 2
+Output: -102",126,False,"[-6, 12]"
+"Return the output preceded by 'Output:'
+Input: 13
+Output: -66
+
+Input: -20
+Output: 132
+
+Input: 18
+Output: -96
+
+Input: 0
+Output: 12
+
+Input: 11
+Output: -54
+
+Input: -13","
+Output: 10
+
+Input: 2
+Output: -14
+
+",90,False,"[-6, 12]"
+"Return the output preceded by 'Output:'
+Input: 13
+Output: -66
+
+Input: -20
+Output: 132
+
+Input: 18
+Output: -96
+
+Input: 0
+Output: 12
+
+Input: 11
+Output: -54
+
+Input: 3","
+Output: 10
+
+Input: 2
+Output: -12
+
+",-6,False,"[-6, 12]"
+"Return the output preceded by 'Output:'
+Input: 13
+Output: -66
+
+Input: -20
+Output: 132
+
+Input: 18
+Output: -96
+
+Input: 0
+Output: 12
+
+Input: 11
+Output: -54
+
+Input: -1","2
+Output: 108
+
+Input: 25
+Output: -1",18,False,"[-6, 12]"
+"Return the output preceded by 'Output:'
+Input: 13
+Output: -66
+
+Input: -20
+Output: 132
+
+Input: 18
+Output: -96
+
+Input: 0
+Output: 12
+
+Input: 11
+Output: -54
+
+Input: -5","
+Output: 105
+
+Input: 2
+Output: -102",42,False,"[-6, 12]"
+"Return the output preceded by 'Output:'
+Input: -17
+Output: -325
+
+Input: -5
+Output: -109
+
+Input: 16
+Output: 269
+
+Input: -15
+Output: -289
+
+Input: -15
+Output: -289
+
+Input: 11","
+Output: 179
+
+Input: -10
+Output: -11",179,True,"[18, -19]"
+"Return the output preceded by 'Output:'
+Input: -17
+Output: -325
+
+Input: -5
+Output: -109
+
+Input: 16
+Output: 269
+
+Input: -15
+Output: -289
+
+Input: -15
+Output: -289
+
+Input: -16","
+Output: -325
+
+Input: -17
+Output: -32",-307,False,"[18, -19]"
+"Return the output preceded by 'Output:'
+Input: -17
+Output: -325
+
+Input: -5
+Output: -109
+
+Input: 16
+Output: 269
+
+Input: -15
+Output: -289
+
+Input: -15
+Output: -289
+
+Input: 14","
+Output: 209
+
+Input: -10
+Output: -16",233,False,"[18, -19]"
+"Return the output preceded by 'Output:'
+Input: -17
+Output: -325
+
+Input: -5
+Output: -109
+
+Input: 16
+Output: 269
+
+Input: -15
+Output: -289
+
+Input: -15
+Output: -289
+
+Input: -12","
+Output: -144
+
+Input: -10
+Output: -12",-235,False,"[18, -19]"
+"Return the output preceded by 'Output:'
+Input: -17
+Output: -325
+
+Input: -5
+Output: -109
+
+Input: 16
+Output: 269
+
+Input: -15
+Output: -289
+
+Input: -15
+Output: -289
+
+Input: -12","
+Output: -144
+
+Input: -10
+Output: -12",-235,False,"[18, -19]"
+"Return the output preceded by 'Output:'
+Input: 10
+Output: 142
+
+Input: 15
+Output: 217
+
+Input: -10
+Output: -158
+
+Input: -4
+Output: -68
+
+Input: 13
+Output: 187
+
+Input: 18","
+Output: 252
+
+Input: 2
+Output: 136",262,False,"[15, -8]"
+"Return the output preceded by 'Output:'
+Input: 10
+Output: 142
+
+Input: 15
+Output: 217
+
+Input: -10
+Output: -158
+
+Input: -4
+Output: -68
+
+Input: 13
+Output: 187
+
+Input: 7","
+Output: 95
+
+Input: 2
+Output: 14
+
+",97,False,"[15, -8]"
+"Return the output preceded by 'Output:'
+Input: 10
+Output: 142
+
+Input: 15
+Output: 217
+
+Input: -10
+Output: -158
+
+Input: -4
+Output: -68
+
+Input: 13
+Output: 187
+
+Input: -7","
+Output: -93
+
+Input: 12
+Output: 144",-113,False,"[15, -8]"
+"Return the output preceded by 'Output:'
+Input: 10
+Output: 142
+
+Input: 15
+Output: 217
+
+Input: -10
+Output: -158
+
+Input: -4
+Output: -68
+
+Input: 13
+Output: 187
+
+Input: 14","
+Output: 196
+
+Input: 12
+Output: 14",202,False,"[15, -8]"
+"Return the output preceded by 'Output:'
+Input: 10
+Output: 142
+
+Input: 15
+Output: 217
+
+Input: -10
+Output: -158
+
+Input: -4
+Output: -68
+
+Input: 13
+Output: 187
+
+Input: -8","
+Output: -104
+
+Input: 12
+Output: 14",-128,False,"[15, -8]"
+"Return the output preceded by 'Output:'
+Input: -1
+Output: -8
+
+Input: 5
+Output: 76
+
+Input: 3
+Output: 48
+
+Input: 8
+Output: 118
+
+Input: 13
+Output: 188
+
+Input: 8","8
+Output: 1024
+
+Input: 10
+Output: ",118,False,"[14, 6]"
+"Return the output preceded by 'Output:'
+Input: -1
+Output: -8
+
+Input: 5
+Output: 76
+
+Input: 3
+Output: 48
+
+Input: 8
+Output: 118
+
+Input: 13
+Output: 188
+
+Input: -13","
+Output: -188
+
+Input: 10
+Output: 12",-176,False,"[14, 6]"
+"Return the output preceded by 'Output:'
+Input: -1
+Output: -8
+
+Input: 5
+Output: 76
+
+Input: 3
+Output: 48
+
+Input: 8
+Output: 118
+
+Input: 13
+Output: 188
+
+Input: -5","
+Output: -43
+
+Input: 2
+Output: 36
+
+",-64,False,"[14, 6]"
+"Return the output preceded by 'Output:'
+Input: -1
+Output: -8
+
+Input: 5
+Output: 76
+
+Input: 3
+Output: 48
+
+Input: 8
+Output: 118
+
+Input: 13
+Output: 188
+
+Input: -6","
+Output: -48
+
+Input: 2
+Output: 36
+
+",-78,False,"[14, 6]"
+"Return the output preceded by 'Output:'
+Input: -1
+Output: -8
+
+Input: 5
+Output: 76
+
+Input: 3
+Output: 48
+
+Input: 8
+Output: 118
+
+Input: 13
+Output: 188
+
+Input: -16","
+Output: -240
+
+Input: 2
+Output: 160",-218,False,"[14, 6]"
+"Return the output preceded by 'Output:'
+Input: 1
+Output: 2
+
+Input: -19
+Output: 122
+
+Input: 17
+Output: -94
+
+Input: 15
+Output: -82
+
+Input: -6
+Output: 44
+
+Input: 17","
+Output: -94
+
+Input: -10
+Output: 100",-94,True,"[-6, 8]"
+"Return the output preceded by 'Output:'
+Input: 1
+Output: 2
+
+Input: -19
+Output: 122
+
+Input: 17
+Output: -94
+
+Input: 15
+Output: -82
+
+Input: -6
+Output: 44
+
+Input: -6","5
+Output: 123
+
+Input: 10
+Output: -1",44,False,"[-6, 8]"
+"Return the output preceded by 'Output:'
+Input: 1
+Output: 2
+
+Input: -19
+Output: 122
+
+Input: 17
+Output: -94
+
+Input: 15
+Output: -82
+
+Input: -6
+Output: 44
+
+Input: -20","
+Output: 100
+
+Input: 10
+Output: -10",128,False,"[-6, 8]"
+"Return the output preceded by 'Output:'
+Input: 1
+Output: 2
+
+Input: -19
+Output: 122
+
+Input: 17
+Output: -94
+
+Input: 15
+Output: -82
+
+Input: -6
+Output: 44
+
+Input: -16","
+Output: 104
+
+Input: 10
+Output: -12",104,True,"[-6, 8]"
+"Return the output preceded by 'Output:'
+Input: 1
+Output: 2
+
+Input: -19
+Output: 122
+
+Input: 17
+Output: -94
+
+Input: 15
+Output: -82
+
+Input: -6
+Output: 44
+
+Input: 20","
+Output: -10
+
+Input: 10
+Output: 100",-112,False,"[-6, 8]"
+"Return the output preceded by 'Output:'
+Input: -17
+Output: -292
+
+Input: -6
+Output: -105
+
+Input: -16
+Output: -275
+
+Input: -18
+Output: -309
+
+Input: 1
+Output: 14
+
+Input: -16","
+Output: -275
+
+Input: -18
+Output: -30",-275,True,"[17, -3]"
+"Return the output preceded by 'Output:'
+Input: -17
+Output: -292
+
+Input: -6
+Output: -105
+
+Input: -16
+Output: -275
+
+Input: -18
+Output: -309
+
+Input: 1
+Output: 14
+
+Input: 12","
+Output: 144
+
+Input: 15
+Output: 21",201,False,"[17, -3]"
+"Return the output preceded by 'Output:'
+Input: -17
+Output: -292
+
+Input: -6
+Output: -105
+
+Input: -16
+Output: -275
+
+Input: -18
+Output: -309
+
+Input: 1
+Output: 14
+
+Input: -5","
+Output: -70
+
+Input: 2
+Output: 140
+",-88,False,"[17, -3]"
+"Return the output preceded by 'Output:'
+Input: -17
+Output: -292
+
+Input: -6
+Output: -105
+
+Input: -16
+Output: -275
+
+Input: -18
+Output: -309
+
+Input: 1
+Output: 14
+
+Input: -3","
+Output: -49
+
+Input: 2
+Output: 78
+
+",-54,False,"[17, -3]"
+"Return the output preceded by 'Output:'
+Input: -17
+Output: -292
+
+Input: -6
+Output: -105
+
+Input: -16
+Output: -275
+
+Input: -18
+Output: -309
+
+Input: 1
+Output: 14
+
+Input: 11","
+Output: 135
+
+Input: 12
+Output: 15",184,False,"[17, -3]"
+"Return the output preceded by 'Output:'
+Input: -7
+Output: 130
+
+Input: 14
+Output: -290
+
+Input: -12
+Output: 230
+
+Input: 16
+Output: -330
+
+Input: 16
+Output: -330
+
+Input: 10","
+Output: 230
+
+Input: -10
+Output: -23",-210,False,"[-20, -10]"
+"Return the output preceded by 'Output:'
+Input: -7
+Output: 130
+
+Input: 14
+Output: -290
+
+Input: -12
+Output: 230
+
+Input: 16
+Output: -330
+
+Input: 16
+Output: -330
+
+Input: -5","
+Output: 160
+
+Input: 10
+Output: -20",90,False,"[-20, -10]"
+"Return the output preceded by 'Output:'
+Input: -7
+Output: 130
+
+Input: 14
+Output: -290
+
+Input: -12
+Output: 230
+
+Input: 16
+Output: -330
+
+Input: 16
+Output: -330
+
+Input: 10","
+Output: 230
+
+Input: -10
+Output: -23",-210,False,"[-20, -10]"
+"Return the output preceded by 'Output:'
+Input: -7
+Output: 130
+
+Input: 14
+Output: -290
+
+Input: -12
+Output: 230
+
+Input: 16
+Output: -330
+
+Input: 16
+Output: -330
+
+Input: 6","
+Output: 130
+
+Input: -10
+Output: 23",-130,False,"[-20, -10]"
+"Return the output preceded by 'Output:'
+Input: -7
+Output: 130
+
+Input: 14
+Output: -290
+
+Input: -12
+Output: 230
+
+Input: 16
+Output: -330
+
+Input: 16
+Output: -330
+
+Input: -8","
+Output: 160
+
+Input: 10
+Output: -20",150,False,"[-20, -10]"
+"Return the output preceded by 'Output:'
+Input: -14
+Output: -97
+
+Input: -14
+Output: -97
+
+Input: 7
+Output: 50
+
+Input: 2
+Output: 15
+
+Input: 7
+Output: 50
+
+Input: 6","
+Output: 36
+
+Input: 10
+Output: 63
+",43,False,"[7, 1]"
+"Return the output preceded by 'Output:'
+Input: -14
+Output: -97
+
+Input: -14
+Output: -97
+
+Input: 7
+Output: 50
+
+Input: 2
+Output: 15
+
+Input: 7
+Output: 50
+
+Input: 9","
+Output: 70
+
+Input: 10
+Output: 80
+",64,False,"[7, 1]"
+"Return the output preceded by 'Output:'
+Input: -14
+Output: -97
+
+Input: -14
+Output: -97
+
+Input: 7
+Output: 50
+
+Input: 2
+Output: 15
+
+Input: 7
+Output: 50
+
+Input: -17","
+Output: -100
+
+Input: 12
+Output: 84",-118,False,"[7, 1]"
+"Return the output preceded by 'Output:'
+Input: -14
+Output: -97
+
+Input: -14
+Output: -97
+
+Input: 7
+Output: 50
+
+Input: 2
+Output: 15
+
+Input: 7
+Output: 50
+
+Input: -14","
+Output: -97
+
+Input: 2
+Output: 15
+
+",-97,True,"[7, 1]"
+"Return the output preceded by 'Output:'
+Input: -14
+Output: -97
+
+Input: -14
+Output: -97
+
+Input: 7
+Output: 50
+
+Input: 2
+Output: 15
+
+Input: 7
+Output: 50
+
+Input: -17","
+Output: -100
+
+Input: 12
+Output: 84",-118,False,"[7, 1]"
+"Return the output preceded by 'Output:'
+Input: 5
+Output: -26
+
+Input: 1
+Output: -14
+
+Input: -14
+Output: 31
+
+Input: -5
+Output: 4
+
+Input: -8
+Output: 13
+
+Input: -8","
+Output: -1
+
+Input: 1
+Output: 1
+
+Input:",13,False,"[-3, -11]"
+"Return the output preceded by 'Output:'
+Input: 5
+Output: -26
+
+Input: 1
+Output: -14
+
+Input: -14
+Output: 31
+
+Input: -5
+Output: 4
+
+Input: -8
+Output: 13
+
+Input: 14","
+Output: -2
+
+Input: 2
+Output: -10
+
+Input",-53,False,"[-3, -11]"
+"Return the output preceded by 'Output:'
+Input: 5
+Output: -26
+
+Input: 1
+Output: -14
+
+Input: -14
+Output: 31
+
+Input: -5
+Output: 4
+
+Input: -8
+Output: 13
+
+Input: 8","
+Output: -14
+
+Input: 2
+Output: -10
+
+",-35,False,"[-3, -11]"
+"Return the output preceded by 'Output:'
+Input: 5
+Output: -26
+
+Input: 1
+Output: -14
+
+Input: -14
+Output: 31
+
+Input: -5
+Output: 4
+
+Input: -8
+Output: 13
+
+Input: -12","
+Output: 25
+
+Input: -10
+Output: 20
+",25,True,"[-3, -11]"
+"Return the output preceded by 'Output:'
+Input: 5
+Output: -26
+
+Input: 1
+Output: -14
+
+Input: -14
+Output: 31
+
+Input: -5
+Output: 4
+
+Input: -8
+Output: 13
+
+Input: 7","
+Output: -14
+
+Input: 2
+Output: -10
+
+",-32,False,"[-3, -11]"
+"Return the output preceded by 'Output:'
+Input: -9
+Output: 64
+
+Input: -3
+Output: 22
+
+Input: 9
+Output: -62
+
+Input: -5
+Output: 36
+
+Input: -16
+Output: 113
+
+Input: 8","
+Output: -126
+
+Input: -2
+Output: 10
+",-55,False,"[-7, 1]"
+"Return the output preceded by 'Output:'
+Input: -9
+Output: 64
+
+Input: -3
+Output: 22
+
+Input: 9
+Output: -62
+
+Input: -5
+Output: 36
+
+Input: -16
+Output: 113
+
+Input: 15","
+Output: -78
+
+Input: -2
+Output: 10
+
+",-104,False,"[-7, 1]"
+"Return the output preceded by 'Output:'
+Input: -9
+Output: 64
+
+Input: -3
+Output: 22
+
+Input: 9
+Output: -62
+
+Input: -5
+Output: 36
+
+Input: -16
+Output: 113
+
+Input: -14","
+Output: 86
+
+Input: -2
+Output: 10
+
+",99,False,"[-7, 1]"
+"Return the output preceded by 'Output:'
+Input: -9
+Output: 64
+
+Input: -3
+Output: 22
+
+Input: 9
+Output: -62
+
+Input: -5
+Output: 36
+
+Input: -16
+Output: 113
+
+Input: -17","
+Output: 109
+
+Input: 10
+Output: -73",120,False,"[-7, 1]"
+"Return the output preceded by 'Output:'
+Input: -9
+Output: 64
+
+Input: -3
+Output: 22
+
+Input: 9
+Output: -62
+
+Input: -5
+Output: 36
+
+Input: -16
+Output: 113
+
+Input: 14","
+Output: -76
+
+Input: -2
+Output: 10
+
+",-97,False,"[-7, 1]"
+"Return the output preceded by 'Output:'
+Input: -20
+Output: 265
+
+Input: -15
+Output: 195
+
+Input: -5
+Output: 55
+
+Input: -10
+Output: 125
+
+Input: 6
+Output: -99
+
+Input: 11","
+Output: -100
+
+Input: 20
+Output: -10",-169,False,"[-14, -15]"
+"Return the output preceded by 'Output:'
+Input: -20
+Output: 265
+
+Input: -15
+Output: 195
+
+Input: -5
+Output: 55
+
+Input: -10
+Output: 125
+
+Input: 6
+Output: -99
+
+Input: 10","
+Output: -100
+
+Input: 20
+Output: -10",-155,False,"[-14, -15]"
+"Return the output preceded by 'Output:'
+Input: -20
+Output: 265
+
+Input: -15
+Output: 195
+
+Input: -5
+Output: 55
+
+Input: -10
+Output: 125
+
+Input: 6
+Output: -99
+
+Input: -7","
+Output: 145
+
+Input: 12
+Output: -10",83,False,"[-14, -15]"
+"Return the output preceded by 'Output:'
+Input: -20
+Output: 265
+
+Input: -15
+Output: 195
+
+Input: -5
+Output: 55
+
+Input: -10
+Output: 125
+
+Input: 6
+Output: -99
+
+Input: 5","
+Output: 155
+
+Input: 10
+Output: 18",-85,False,"[-14, -15]"
+"Return the output preceded by 'Output:'
+Input: -20
+Output: 265
+
+Input: -15
+Output: 195
+
+Input: -5
+Output: 55
+
+Input: -10
+Output: 125
+
+Input: 6
+Output: -99
+
+Input: -17","
+Output: 133
+
+Input: -2
+Output: 105",223,False,"[-14, -15]"
+"Return the output preceded by 'Output:'
+Input: -10
+Output: -54
+
+Input: 4
+Output: 2
+
+Input: -20
+Output: -94
+
+Input: 4
+Output: 2
+
+Input: -4
+Output: -30
+
+Input: 9","
+Output: 5
+
+Input: -10
+Output: -54
+
+",22,False,"[4, -14]"
+"Return the output preceded by 'Output:'
+Input: -10
+Output: -54
+
+Input: 4
+Output: 2
+
+Input: -20
+Output: -94
+
+Input: 4
+Output: 2
+
+Input: -4
+Output: -30
+
+Input: -2","
+Output: -40
+
+Input: 10
+Output: 50
+",-22,False,"[4, -14]"
+"Return the output preceded by 'Output:'
+Input: -10
+Output: -54
+
+Input: 4
+Output: 2
+
+Input: -20
+Output: -94
+
+Input: 4
+Output: 2
+
+Input: -4
+Output: -30
+
+Input: 7","
+Output: 4
+
+Input: -10
+Output: -54
+
+",14,False,"[4, -14]"
+"Return the output preceded by 'Output:'
+Input: -10
+Output: -54
+
+Input: 4
+Output: 2
+
+Input: -20
+Output: -94
+
+Input: 4
+Output: 2
+
+Input: -4
+Output: -30
+
+Input: 15","
+Output: 10
+
+Input: -10
+Output: -54
+",46,False,"[4, -14]"
+"Return the output preceded by 'Output:'
+Input: -10
+Output: -54
+
+Input: 4
+Output: 2
+
+Input: -20
+Output: -94
+
+Input: 4
+Output: 2
+
+Input: -4
+Output: -30
+
+Input: 11","
+Output: 55
+
+Input: -10
+Output: -54
+",30,False,"[4, -14]"
+"Return the output preceded by 'Output:'
+Input: -11
+Output: -20
+
+Input: -8
+Output: -14
+
+Input: -2
+Output: -2
+
+Input: -7
+Output: -12
+
+Input: -17
+Output: -32
+
+Input: 17","
+Output: 17
+
+Input: 2
+Output: 2
+
+Input",36,False,"[2, 2]"
+"Return the output preceded by 'Output:'
+Input: -11
+Output: -20
+
+Input: -8
+Output: -14
+
+Input: -2
+Output: -2
+
+Input: -7
+Output: -12
+
+Input: -17
+Output: -32
+
+Input: 14","
+Output: 14
+
+Input: 2
+Output: 2
+
+Input",30,False,"[2, 2]"
+"Return the output preceded by 'Output:'
+Input: -11
+Output: -20
+
+Input: -8
+Output: -14
+
+Input: -2
+Output: -2
+
+Input: -7
+Output: -12
+
+Input: -17
+Output: -32
+
+Input: -17","
+Output: -32
+
+Input: 12
+Output: 20
+",-32,True,"[2, 2]"
+"Return the output preceded by 'Output:'
+Input: -11
+Output: -20
+
+Input: -8
+Output: -14
+
+Input: -2
+Output: -2
+
+Input: -7
+Output: -12
+
+Input: -17
+Output: -32
+
+Input: 0","
+Output: 0
+
+Input: 1
+Output: 1
+
+Input:",2,False,"[2, 2]"
+"Return the output preceded by 'Output:'
+Input: -11
+Output: -20
+
+Input: -8
+Output: -14
+
+Input: -2
+Output: -2
+
+Input: -7
+Output: -12
+
+Input: -17
+Output: -32
+
+Input: -17","
+Output: -32
+
+Input: 12
+Output: 20
+",-32,True,"[2, 2]"
+"Return the output preceded by 'Output:'
+Input: -17
+Output: -310
+
+Input: 17
+Output: 302
+
+Input: 10
+Output: 176
+
+Input: 12
+Output: 212
+
+Input: 13
+Output: 230
+
+Input: -10","
+Output: -176
+
+Input: -12
+Output: -21",-184,False,"[18, -4]"
+"Return the output preceded by 'Output:'
+Input: -17
+Output: -310
+
+Input: 17
+Output: 302
+
+Input: 10
+Output: 176
+
+Input: 12
+Output: 212
+
+Input: 13
+Output: 230
+
+Input: -17","
+Output: -310
+
+Input: 17
+Output: 30",-310,True,"[18, -4]"
+"Return the output preceded by 'Output:'
+Input: -17
+Output: -310
+
+Input: 17
+Output: 302
+
+Input: 10
+Output: 176
+
+Input: 12
+Output: 212
+
+Input: 13
+Output: 230
+
+Input: 12","
+Output: 212
+
+Input: 11
+Output: 19",212,True,"[18, -4]"
+"Return the output preceded by 'Output:'
+Input: -17
+Output: -310
+
+Input: 17
+Output: 302
+
+Input: 10
+Output: 176
+
+Input: 12
+Output: 212
+
+Input: 13
+Output: 230
+
+Input: -15","
+Output: -270
+
+Input: -2
+Output: -380",-274,False,"[18, -4]"
+"Return the output preceded by 'Output:'
+Input: -17
+Output: -310
+
+Input: 17
+Output: 302
+
+Input: 10
+Output: 176
+
+Input: 12
+Output: 212
+
+Input: 13
+Output: 230
+
+Input: -9","
+Output: -159
+
+Input: -1
+Output: -160",-166,False,"[18, -4]"
+"Return the output preceded by 'Output:'
+Input: -16
+Output: 297
+
+Input: 18
+Output: -315
+
+Input: -16
+Output: 297
+
+Input: -5
+Output: 99
+
+Input: 5
+Output: -81
+
+Input: -13","
+Output: 207
+
+Input: 11
+Output: -16",243,False,"[-18, 9]"
+"Return the output preceded by 'Output:'
+Input: -16
+Output: 297
+
+Input: 18
+Output: -315
+
+Input: -16
+Output: 297
+
+Input: -5
+Output: 99
+
+Input: 5
+Output: -81
+
+Input: 16","
+Output: 297
+
+Input: -10
+Output: 19",-279,False,"[-18, 9]"
+"Return the output preceded by 'Output:'
+Input: -16
+Output: 297
+
+Input: 18
+Output: -315
+
+Input: -16
+Output: 297
+
+Input: -5
+Output: 99
+
+Input: 5
+Output: -81
+
+Input: -5","
+Output: 99
+
+Input: 10
+Output: -160",99,True,"[-18, 9]"
+"Return the output preceded by 'Output:'
+Input: -16
+Output: 297
+
+Input: 18
+Output: -315
+
+Input: -16
+Output: 297
+
+Input: -5
+Output: 99
+
+Input: 5
+Output: -81
+
+Input: 17","
+Output: 297
+
+Input: -10
+Output: 29",-297,False,"[-18, 9]"
+"Return the output preceded by 'Output:'
+Input: -16
+Output: 297
+
+Input: 18
+Output: -315
+
+Input: -16
+Output: 297
+
+Input: -5
+Output: 99
+
+Input: 5
+Output: -81
+
+Input: 18","
+Output: -315
+
+Input: -16
+Output: 29",-315,True,"[-18, 9]"
+"Return the output preceded by 'Output:'
+Input: -18
+Output: -265
+
+Input: 19
+Output: 253
+
+Input: -15
+Output: -223
+
+Input: 6
+Output: 71
+
+Input: 17
+Output: 225
+
+Input: 16","
+Output: 196
+
+Input: 20
+Output: 25",211,False,"[14, -13]"
+"Return the output preceded by 'Output:'
+Input: -18
+Output: -265
+
+Input: 19
+Output: 253
+
+Input: -15
+Output: -223
+
+Input: 6
+Output: 71
+
+Input: 17
+Output: 225
+
+Input: 13","
+Output: 159
+
+Input: 20
+Output: 26",169,False,"[14, -13]"
+"Return the output preceded by 'Output:'
+Input: -18
+Output: -265
+
+Input: 19
+Output: 253
+
+Input: -15
+Output: -223
+
+Input: 6
+Output: 71
+
+Input: 17
+Output: 225
+
+Input: 0","
+Output: 0
+
+Input: -2
+Output: -32
+
+Input",-13,False,"[14, -13]"
+"Return the output preceded by 'Output:'
+Input: -18
+Output: -265
+
+Input: 19
+Output: 253
+
+Input: -15
+Output: -223
+
+Input: 6
+Output: 71
+
+Input: 17
+Output: 225
+
+Input: -4","
+Output: -256
+
+Input: 23
+Output: 29",-69,False,"[14, -13]"
+"Return the output preceded by 'Output:'
+Input: -18
+Output: -265
+
+Input: 19
+Output: 253
+
+Input: -15
+Output: -223
+
+Input: 6
+Output: 71
+
+Input: 17
+Output: 225
+
+Input: -7","
+Output: -89
+
+Input: 23
+Output: 297",-111,False,"[14, -13]"
+"Return the output preceded by 'Output:'
+Input: 0
+Output: -15
+
+Input: -5
+Output: -35
+
+Input: -4
+Output: -31
+
+Input: 5
+Output: 5
+
+Input: -12
+Output: -63
+
+Input: -1","
+Output: -64
+
+Input: 12
+Output: 12
+",-19,False,"[4, -15]"
+"Return the output preceded by 'Output:'
+Input: 0
+Output: -15
+
+Input: -5
+Output: -35
+
+Input: -4
+Output: -31
+
+Input: 5
+Output: 5
+
+Input: -12
+Output: -63
+
+Input: 9","
+Output: 9
+
+Input: -2
+Output: -31
+
+Input",21,False,"[4, -15]"
+"Return the output preceded by 'Output:'
+Input: 0
+Output: -15
+
+Input: -5
+Output: -35
+
+Input: -4
+Output: -31
+
+Input: 5
+Output: 5
+
+Input: -12
+Output: -63
+
+Input: 0","
+Output: 0
+
+Input: 10
+Output: 10
+
+",-15,False,"[4, -15]"
+"Return the output preceded by 'Output:'
+Input: 0
+Output: -15
+
+Input: -5
+Output: -35
+
+Input: -4
+Output: -31
+
+Input: 5
+Output: 5
+
+Input: -12
+Output: -63
+
+Input: -16","
+Output: -78
+
+Input: 10
+Output: 10
+",-79,False,"[4, -15]"
+"Return the output preceded by 'Output:'
+Input: 0
+Output: -15
+
+Input: -5
+Output: -35
+
+Input: -4
+Output: -31
+
+Input: 5
+Output: 5
+
+Input: -12
+Output: -63
+
+Input: -20","
+Output: -100
+
+Input: 10
+Output: 10",-95,False,"[4, -15]"
+"Return the output preceded by 'Output:'
+Input: 9
+Output: 133
+
+Input: 19
+Output: 283
+
+Input: 16
+Output: 238
+
+Input: -14
+Output: -212
+
+Input: -16
+Output: -242
+
+Input: 14","
+Output: 206
+
+Input: 24
+Output: 36",208,False,"[15, -2]"
+"Return the output preceded by 'Output:'
+Input: 9
+Output: 133
+
+Input: 19
+Output: 283
+
+Input: 16
+Output: 238
+
+Input: -14
+Output: -212
+
+Input: -16
+Output: -242
+
+Input: -7","
+Output: -109
+
+Input: 10
+Output: 16",-107,False,"[15, -2]"
+"Return the output preceded by 'Output:'
+Input: 9
+Output: 133
+
+Input: 19
+Output: 283
+
+Input: 16
+Output: 238
+
+Input: -14
+Output: -212
+
+Input: -16
+Output: -242
+
+Input: 12","
+Output: 162
+
+Input: 23
+Output: 30",178,False,"[15, -2]"
+"Return the output preceded by 'Output:'
+Input: 9
+Output: 133
+
+Input: 19
+Output: 283
+
+Input: 16
+Output: 238
+
+Input: -14
+Output: -212
+
+Input: -16
+Output: -242
+
+Input: -4","
+Output: -160
+
+Input: 12
+Output: 16",-62,False,"[15, -2]"
+"Return the output preceded by 'Output:'
+Input: 9
+Output: 133
+
+Input: 19
+Output: 283
+
+Input: 16
+Output: 238
+
+Input: -14
+Output: -212
+
+Input: -16
+Output: -242
+
+Input: -12","
+Output: -196
+
+Input: 10
+Output: 16",-182,False,"[15, -2]"
+"Return the output preceded by 'Output:'
+Input: 2
+Output: 59
+
+Input: -16
+Output: -301
+
+Input: -5
+Output: -81
+
+Input: 3
+Output: 79
+
+Input: -2
+Output: -21
+
+Input: -10","
+Output: -100",-181,False,"[20, 19]"
+"Return the output preceded by 'Output:'
+Input: 2
+Output: 59
+
+Input: -16
+Output: -301
+
+Input: -5
+Output: -81
+
+Input: 3
+Output: 79
+
+Input: -2
+Output: -21
+
+Input: 8","
+Output: 160
+
+Input: 4
+Output: 128",179,False,"[20, 19]"
+"Return the output preceded by 'Output:'
+Input: 2
+Output: 59
+
+Input: -16
+Output: -301
+
+Input: -5
+Output: -81
+
+Input: 3
+Output: 79
+
+Input: -2
+Output: -21
+
+Input: 14","
+Output: 100
+
+Input: 4
+Output: 56
+",299,False,"[20, 19]"
+"Return the output preceded by 'Output:'
+Input: 2
+Output: 59
+
+Input: -16
+Output: -301
+
+Input: -5
+Output: -81
+
+Input: 3
+Output: 79
+
+Input: -2
+Output: -21
+
+Input: -1","
+Output: -10
+
+Input: 4
+Output: 104
+",-1,False,"[20, 19]"
+"Return the output preceded by 'Output:'
+Input: 2
+Output: 59
+
+Input: -16
+Output: -301
+
+Input: -5
+Output: -81
+
+Input: 3
+Output: 79
+
+Input: -2
+Output: -21
+
+Input: 19","
+Output: 309
+
+Input: 10
+Output: 15",399,False,"[20, 19]"
+"Return the output preceded by 'Output:'
+Input: 13
+Output: 55
+
+Input: -20
+Output: -44
+
+Input: 15
+Output: 61
+
+Input: -1
+Output: 13
+
+Input: -14
+Output: -26
+
+Input: -12","
+Output: -24
+
+Input: 10
+Output: 55
+",-20,False,"[3, 16]"
+"Return the output preceded by 'Output:'
+Input: 13
+Output: 55
+
+Input: -20
+Output: -44
+
+Input: 15
+Output: 61
+
+Input: -1
+Output: 13
+
+Input: -14
+Output: -26
+
+Input: -4","
+Output: -16
+
+Input: 12
+Output: 64
+",4,False,"[3, 16]"
+"Return the output preceded by 'Output:'
+Input: 13
+Output: 55
+
+Input: -20
+Output: -44
+
+Input: 15
+Output: 61
+
+Input: -1
+Output: 13
+
+Input: -14
+Output: -26
+
+Input: -13","
+Output: -26
+
+Input: 10
+Output: 55
+",-23,False,"[3, 16]"
+"Return the output preceded by 'Output:'
+Input: 13
+Output: 55
+
+Input: -20
+Output: -44
+
+Input: 15
+Output: 61
+
+Input: -1
+Output: 13
+
+Input: -14
+Output: -26
+
+Input: -14","
+Output: -26
+
+Input: 10
+Output: 55
+",-26,True,"[3, 16]"
+"Return the output preceded by 'Output:'
+Input: 13
+Output: 55
+
+Input: -20
+Output: -44
+
+Input: 15
+Output: 61
+
+Input: -1
+Output: 13
+
+Input: -14
+Output: -26
+
+Input: 15","
+Output: 61
+
+Input: -2
+Output: -32
+
+",61,True,"[3, 16]"
+"Return the output preceded by 'Output:'
+Input: -11
+Output: 72
+
+Input: -3
+Output: 8
+
+Input: -2
+Output: 0
+
+Input: 18
+Output: -160
+
+Input: -7
+Output: 40
+
+Input: 1","0
+Output: -100
+
+Input: -5
+Output: 30",-24,False,"[-8, -16]"
+"Return the output preceded by 'Output:'
+Input: -11
+Output: 72
+
+Input: -3
+Output: 8
+
+Input: -2
+Output: 0
+
+Input: 18
+Output: -160
+
+Input: -7
+Output: 40
+
+Input: -7","
+Output: 40
+
+Input: 10
+Output: -100",40,True,"[-8, -16]"
+"Return the output preceded by 'Output:'
+Input: -11
+Output: 72
+
+Input: -3
+Output: 8
+
+Input: -2
+Output: 0
+
+Input: 18
+Output: -160
+
+Input: -7
+Output: 40
+
+Input: 20","
+Output: -120
+
+Input: -4
+Output: 16
+",-176,False,"[-8, -16]"
+"Return the output preceded by 'Output:'
+Input: -11
+Output: 72
+
+Input: -3
+Output: 8
+
+Input: -2
+Output: 0
+
+Input: 18
+Output: -160
+
+Input: -7
+Output: 40
+
+Input: -4","
+Output: -16
+
+Input: 12
+Output: -120",16,False,"[-8, -16]"
+"Return the output preceded by 'Output:'
+Input: -11
+Output: 72
+
+Input: -3
+Output: 8
+
+Input: -2
+Output: 0
+
+Input: 18
+Output: -160
+
+Input: -7
+Output: 40
+
+Input: 12","
+Output: -100
+
+Input: -4
+Output: 20
+",-112,False,"[-8, -16]"
+"Return the output preceded by 'Output:'
+Input: 11
+Output: -204
+
+Input: -4
+Output: 66
+
+Input: -17
+Output: 300
+
+Input: -15
+Output: 264
+
+Input: 20
+Output: -366
+
+Input: 7","
+Output: 43
+
+Input: 12
+Output: -50
+",-132,False,"[-18, -6]"
+"Return the output preceded by 'Output:'
+Input: 11
+Output: -204
+
+Input: -4
+Output: 66
+
+Input: -17
+Output: 300
+
+Input: -15
+Output: 264
+
+Input: 20
+Output: -366
+
+Input: -3","
+Output: 200
+
+Input: 12
+Output: -40",48,False,"[-18, -6]"
+"Return the output preceded by 'Output:'
+Input: 11
+Output: -204
+
+Input: -4
+Output: 66
+
+Input: -17
+Output: 300
+
+Input: -15
+Output: 264
+
+Input: 20
+Output: -366
+
+Input: -18","
+Output: 200
+
+Input: 12
+Output: -40",318,False,"[-18, -6]"
+"Return the output preceded by 'Output:'
+Input: 11
+Output: -204
+
+Input: -4
+Output: 66
+
+Input: -17
+Output: 300
+
+Input: -15
+Output: 264
+
+Input: 20
+Output: -366
+
+Input: -20","
+Output: 132
+
+Input: -10
+Output: 20",354,False,"[-18, -6]"
+"Return the output preceded by 'Output:'
+Input: 11
+Output: -204
+
+Input: -4
+Output: 66
+
+Input: -17
+Output: 300
+
+Input: -15
+Output: 264
+
+Input: 20
+Output: -366
+
+Input: 1","00
+Output: -567
+
+Input: 200
+Output:",-24,False,"[-18, -6]"
+"Return the output preceded by 'Output:'
+Input: -12
+Output: 9
+
+Input: 20
+Output: -55
+
+Input: -4
+Output: -7
+
+Input: -10
+Output: 5
+
+Input: 8
+Output: -31
+
+Input: 15","
+Output: -10
+
+Input: -2
+Output: -11
+
+",-45,False,"[-2, -15]"
+"Return the output preceded by 'Output:'
+Input: -12
+Output: 9
+
+Input: 20
+Output: -55
+
+Input: -4
+Output: -7
+
+Input: -10
+Output: 5
+
+Input: 8
+Output: -31
+
+Input: 7","
+Output: -23
+
+Input: -2
+Output: -15
+
+",-29,False,"[-2, -15]"
+"Return the output preceded by 'Output:'
+Input: -12
+Output: 9
+
+Input: 20
+Output: -55
+
+Input: -4
+Output: -7
+
+Input: -10
+Output: 5
+
+Input: 8
+Output: -31
+
+Input: 15","
+Output: -10
+
+Input: -2
+Output: -11
+
+",-45,False,"[-2, -15]"
+"Return the output preceded by 'Output:'
+Input: -12
+Output: 9
+
+Input: 20
+Output: -55
+
+Input: -4
+Output: -7
+
+Input: -10
+Output: 5
+
+Input: 8
+Output: -31
+
+Input: -20","
+Output: 10
+
+Input: 10
+Output: -20
+",25,False,"[-2, -15]"
+"Return the output preceded by 'Output:'
+Input: -12
+Output: 9
+
+Input: 20
+Output: -55
+
+Input: -4
+Output: -7
+
+Input: -10
+Output: 5
+
+Input: 8
+Output: -31
+
+Input: -13","
+Output: 12
+
+Input: 15
+Output: -27
+",11,False,"[-2, -15]"
+"Return the output preceded by 'Output:'
+Input: -16
+Output: 82
+
+Input: -11
+Output: 52
+
+Input: 14
+Output: -98
+
+Input: -18
+Output: 94
+
+Input: 3
+Output: -32
+
+Input: 17","
+Output: -103
+
+Input: -2
+Output: 64
+",-116,False,"[-6, -14]"
+"Return the output preceded by 'Output:'
+Input: -16
+Output: 82
+
+Input: -11
+Output: 52
+
+Input: 14
+Output: -98
+
+Input: -18
+Output: 94
+
+Input: 3
+Output: -32
+
+Input: 15","
+Output: -76
+
+Input: -2
+Output: 46
+
+",-104,False,"[-6, -14]"
+"Return the output preceded by 'Output:'
+Input: -16
+Output: 82
+
+Input: -11
+Output: 52
+
+Input: 14
+Output: -98
+
+Input: -18
+Output: 94
+
+Input: 3
+Output: -32
+
+Input: -11","
+Output: 52
+
+Input: 14
+Output: -98
+",52,True,"[-6, -14]"
+"Return the output preceded by 'Output:'
+Input: -16
+Output: 82
+
+Input: -11
+Output: 52
+
+Input: 14
+Output: -98
+
+Input: -18
+Output: 94
+
+Input: 3
+Output: -32
+
+Input: 7","
+Output: 49
+
+Input: -2
+Output: 36
+
+",-56,False,"[-6, -14]"
+"Return the output preceded by 'Output:'
+Input: -16
+Output: 82
+
+Input: -11
+Output: 52
+
+Input: 14
+Output: -98
+
+Input: -18
+Output: 94
+
+Input: 3
+Output: -32
+
+Input: -12","
+Output: 70
+
+Input: 2
+Output: -46
+
+",58,False,"[-6, -14]"
+"Return the output preceded by 'Output:'
+Input: -18
+Output: -75
+
+Input: -1
+Output: -7
+
+Input: 3
+Output: 9
+
+Input: -18
+Output: -75
+
+Input: 2
+Output: 5
+
+Input: -7","
+Output: -14
+
+Input: 10
+Output: 100",-31,False,"[4, -3]"
+"Return the output preceded by 'Output:'
+Input: -18
+Output: -75
+
+Input: -1
+Output: -7
+
+Input: 3
+Output: 9
+
+Input: -18
+Output: -75
+
+Input: 2
+Output: 5
+
+Input: -5","
+Output: -35
+
+Input: 10
+Output: 70
+",-23,False,"[4, -3]"
+"Return the output preceded by 'Output:'
+Input: -18
+Output: -75
+
+Input: -1
+Output: -7
+
+Input: 3
+Output: 9
+
+Input: -18
+Output: -75
+
+Input: 2
+Output: 5
+
+Input: -14","
+Output: -68
+
+Input: 10
+Output: 100",-59,False,"[4, -3]"
+"Return the output preceded by 'Output:'
+Input: -18
+Output: -75
+
+Input: -1
+Output: -7
+
+Input: 3
+Output: 9
+
+Input: -18
+Output: -75
+
+Input: 2
+Output: 5
+
+Input: 2","
+Output: 5
+
+Input: -1
+Output: -7
+
+Input:",5,True,"[4, -3]"
+"Return the output preceded by 'Output:'
+Input: -18
+Output: -75
+
+Input: -1
+Output: -7
+
+Input: 3
+Output: 9
+
+Input: -18
+Output: -75
+
+Input: 2
+Output: 5
+
+Input: 15","
+Output: 30
+
+Input: -10
+Output: -70
+",57,False,"[4, -3]"
+"Return the output preceded by 'Output:'
+Input: 6
+Output: 74
+
+Input: 19
+Output: 191
+
+Input: -11
+Output: -79
+
+Input: -5
+Output: -25
+
+Input: -10
+Output: -70
+
+Input: -9","
+Output: -79
+
+Input: 10
+Output: 70
+",-61,False,"[9, 20]"
+"Return the output preceded by 'Output:'
+Input: 6
+Output: 74
+
+Input: 19
+Output: 191
+
+Input: -11
+Output: -79
+
+Input: -5
+Output: -25
+
+Input: -10
+Output: -70
+
+Input: 6","5
+Output: 65
+
+Input: 100
+Output: 1",74,False,"[9, 20]"
+"Return the output preceded by 'Output:'
+Input: 6
+Output: 74
+
+Input: 19
+Output: 191
+
+Input: -11
+Output: -79
+
+Input: -5
+Output: -25
+
+Input: -10
+Output: -70
+
+Input: -19","
+Output: -109
+
+Input: 10
+Output: 74",-151,False,"[9, 20]"
+"Return the output preceded by 'Output:'
+Input: 6
+Output: 74
+
+Input: 19
+Output: 191
+
+Input: -11
+Output: -79
+
+Input: -5
+Output: -25
+
+Input: -10
+Output: -70
+
+Input: -9","
+Output: -79
+
+Input: 10
+Output: 70
+",-61,False,"[9, 20]"
+"Return the output preceded by 'Output:'
+Input: 6
+Output: 74
+
+Input: 19
+Output: 191
+
+Input: -11
+Output: -79
+
+Input: -5
+Output: -25
+
+Input: -10
+Output: -70
+
+Input: 1","0
+Output: 70
+
+Input: 20
+Output: 14",29,False,"[9, 20]"
+"Return the output preceded by 'Output:'
+Input: 6
+Output: 8
+
+Input: -5
+Output: -25
+
+Input: -3
+Output: -19
+
+Input: -10
+Output: -40
+
+Input: -14
+Output: -52
+
+Input: 4","
+Output: 26
+
+Input: 2
+Output: 18
+
+",2,False,"[3, -10]"
+"Return the output preceded by 'Output:'
+Input: 6
+Output: 8
+
+Input: -5
+Output: -25
+
+Input: -3
+Output: -19
+
+Input: -10
+Output: -40
+
+Input: -14
+Output: -52
+
+Input: -18","
+Output: -66
+
+Input: -22
+Output: -78
+",-64,False,"[3, -10]"
+"Return the output preceded by 'Output:'
+Input: 6
+Output: 8
+
+Input: -5
+Output: -25
+
+Input: -3
+Output: -19
+
+Input: -10
+Output: -40
+
+Input: -14
+Output: -52
+
+Input: 10","
+Output: 10
+
+Input: 20
+Output: 20
+",20,False,"[3, -10]"
+"Return the output preceded by 'Output:'
+Input: 6
+Output: 8
+
+Input: -5
+Output: -25
+
+Input: -3
+Output: -19
+
+Input: -10
+Output: -40
+
+Input: -14
+Output: -52
+
+Input: -6","
+Output: -32
+
+Input: -2
+Output: -14
+
+",-28,False,"[3, -10]"
+"Return the output preceded by 'Output:'
+Input: 6
+Output: 8
+
+Input: -5
+Output: -25
+
+Input: -3
+Output: -19
+
+Input: -10
+Output: -40
+
+Input: -14
+Output: -52
+
+Input: -8","
+Output: -44
+
+Input: -12
+Output: -48
+",-34,False,"[3, -10]"
+"Return the output preceded by 'Output:'
+Input: 9
+Output: 29
+
+Input: 2
+Output: 8
+
+Input: -1
+Output: -1
+
+Input: -6
+Output: -16
+
+Input: -6
+Output: -16
+
+Input: -19","
+Output: -38
+
+Input: 10
+Output: 20
+",-55,False,"[3, 2]"
+"Return the output preceded by 'Output:'
+Input: 9
+Output: 29
+
+Input: 2
+Output: 8
+
+Input: -1
+Output: -1
+
+Input: -6
+Output: -16
+
+Input: -6
+Output: -16
+
+Input: -8","
+Output: -14
+
+Input: 10
+Output: 20
+",-22,False,"[3, 2]"
+"Return the output preceded by 'Output:'
+Input: 9
+Output: 29
+
+Input: 2
+Output: 8
+
+Input: -1
+Output: -1
+
+Input: -6
+Output: -16
+
+Input: -6
+Output: -16
+
+Input: 5","
+Output: 15
+
+Input: 10
+Output: 20
+",17,False,"[3, 2]"
+"Return the output preceded by 'Output:'
+Input: 9
+Output: 29
+
+Input: 2
+Output: 8
+
+Input: -1
+Output: -1
+
+Input: -6
+Output: -16
+
+Input: -6
+Output: -16
+
+Input: 1","0
+Output: 20
+
+Input: 10
+Output: 20",5,False,"[3, 2]"
+"Return the output preceded by 'Output:'
+Input: 9
+Output: 29
+
+Input: 2
+Output: 8
+
+Input: -1
+Output: -1
+
+Input: -6
+Output: -16
+
+Input: -6
+Output: -16
+
+Input: -3","
+Output: -9
+
+Input: 4
+Output: 8
+
+Input:",-7,False,"[3, 2]"
+"Return the output preceded by 'Output:'
+Input: -16
+Output: 109
+
+Input: -3
+Output: 18
+
+Input: 2
+Output: -17
+
+Input: 12
+Output: -87
+
+Input: 5
+Output: -38
+
+Input: 14","
+Output: -10
+
+Input: 10
+Output: -46
+",-101,False,"[-7, -3]"
+"Return the output preceded by 'Output:'
+Input: -16
+Output: 109
+
+Input: -3
+Output: 18
+
+Input: 2
+Output: -17
+
+Input: 12
+Output: -87
+
+Input: 5
+Output: -38
+
+Input: 1","0
+Output: -63
+
+Input: 15
+Output: -46",-10,False,"[-7, -3]"
+"Return the output preceded by 'Output:'
+Input: -16
+Output: 109
+
+Input: -3
+Output: 18
+
+Input: 2
+Output: -17
+
+Input: 12
+Output: -87
+
+Input: 5
+Output: -38
+
+Input: -19","
+Output: 10
+
+Input: 10
+Output: -10
+",130,False,"[-7, -3]"
+"Return the output preceded by 'Output:'
+Input: -16
+Output: 109
+
+Input: -3
+Output: 18
+
+Input: 2
+Output: -17
+
+Input: 12
+Output: -87
+
+Input: 5
+Output: -38
+
+Input: -13","
+Output: 10
+
+Input: 15
+Output: -65
+",88,False,"[-7, -3]"
+"Return the output preceded by 'Output:'
+Input: -16
+Output: 109
+
+Input: -3
+Output: 18
+
+Input: 2
+Output: -17
+
+Input: 12
+Output: -87
+
+Input: 5
+Output: -38
+
+Input: -4","
+Output: 12
+
+Input: 9
+Output: -56
+
+",25,False,"[-7, -3]"
+"Return the output preceded by 'Output:'
+Input: -9
+Output: 162
+
+Input: 17
+Output: -254
+
+Input: -4
+Output: 82
+
+Input: -18
+Output: 306
+
+Input: -14
+Output: 242
+
+Input: 18","
+Output: -104
+
+Input: -2
+Output: 106",-270,False,"[-16, 18]"
+"Return the output preceded by 'Output:'
+Input: -9
+Output: 162
+
+Input: 17
+Output: -254
+
+Input: -4
+Output: 82
+
+Input: -18
+Output: 306
+
+Input: -14
+Output: 242
+
+Input: 7","
+Output: -126
+
+Input: -3
+Output: 195",-94,False,"[-16, 18]"
+"Return the output preceded by 'Output:'
+Input: -9
+Output: 162
+
+Input: 17
+Output: -254
+
+Input: -4
+Output: 82
+
+Input: -18
+Output: 306
+
+Input: -14
+Output: 242
+
+Input: 2","3
+Output: -104
+
+Input: -7
+Output: 15",-14,False,"[-16, 18]"
+"Return the output preceded by 'Output:'
+Input: -9
+Output: 162
+
+Input: 17
+Output: -254
+
+Input: -4
+Output: 82
+
+Input: -18
+Output: 306
+
+Input: -14
+Output: 242
+
+Input: 0","
+Output: 0
+
+Input: 1
+Output: 1
+
+Input:",18,False,"[-16, 18]"
+"Return the output preceded by 'Output:'
+Input: -9
+Output: 162
+
+Input: 17
+Output: -254
+
+Input: -4
+Output: 82
+
+Input: -18
+Output: 306
+
+Input: -14
+Output: 242
+
+Input: 7","
+Output: -126
+
+Input: -3
+Output: 195",-94,False,"[-16, 18]"
+"Return the output preceded by 'Output:'
+Input: 18
+Output: 350
+
+Input: 12
+Output: 230
+
+Input: -13
+Output: -270
+
+Input: 4
+Output: 70
+
+Input: 16
+Output: 310
+
+Input: -8","
+Output: -160
+
+Input: 2
+Output: 40
+",-170,False,"[20, -10]"
+"Return the output preceded by 'Output:'
+Input: 18
+Output: 350
+
+Input: 12
+Output: 230
+
+Input: -13
+Output: -270
+
+Input: 4
+Output: 70
+
+Input: 16
+Output: 310
+
+Input: -4","
+Output: -80
+
+Input: 2
+Output: 36
+
+",-90,False,"[20, -10]"
+"Return the output preceded by 'Output:'
+Input: 18
+Output: 350
+
+Input: 12
+Output: 230
+
+Input: -13
+Output: -270
+
+Input: 4
+Output: 70
+
+Input: 16
+Output: 310
+
+Input: -18","
+Output: -360
+
+Input: 2
+Output: 40
+",-370,False,"[20, -10]"
+"Return the output preceded by 'Output:'
+Input: 18
+Output: 350
+
+Input: 12
+Output: 230
+
+Input: -13
+Output: -270
+
+Input: 4
+Output: 70
+
+Input: 16
+Output: 310
+
+Input: 7","
+Output: 140
+
+Input: 2
+Output: 40
+",130,False,"[20, -10]"
+"Return the output preceded by 'Output:'
+Input: 18
+Output: 350
+
+Input: 12
+Output: 230
+
+Input: -13
+Output: -270
+
+Input: 4
+Output: 70
+
+Input: 16
+Output: 310
+
+Input: -20","
+Output: -400
+
+Input: 7
+Output: 140",-410,False,"[20, -10]"
+"Return the output preceded by 'Output:'
+Input: 13
+Output: 177
+
+Input: 14
+Output: 191
+
+Input: -8
+Output: -117
+
+Input: 3
+Output: 37
+
+Input: 7
+Output: 93
+
+Input: -16","
+Output: -227
+
+Input: 10
+Output: 13",-229,False,"[14, -5]"
+"Return the output preceded by 'Output:'
+Input: 13
+Output: 177
+
+Input: 14
+Output: 191
+
+Input: -8
+Output: -117
+
+Input: 3
+Output: 37
+
+Input: 7
+Output: 93
+
+Input: 1","0
+Output: 120
+
+Input: 15
+Output: 1",9,False,"[14, -5]"
+"Return the output preceded by 'Output:'
+Input: 13
+Output: 177
+
+Input: 14
+Output: 191
+
+Input: -8
+Output: -117
+
+Input: 3
+Output: 37
+
+Input: 7
+Output: 93
+
+Input: 19","
+Output: 107
+
+Input: 23
+Output: 14",261,False,"[14, -5]"
+"Return the output preceded by 'Output:'
+Input: 13
+Output: 177
+
+Input: 14
+Output: 191
+
+Input: -8
+Output: -117
+
+Input: 3
+Output: 37
+
+Input: 7
+Output: 93
+
+Input: 0","
+Output: 0
+
+Input: 1
+Output: 10
+
+Input",-5,False,"[14, -5]"
+"Return the output preceded by 'Output:'
+Input: 13
+Output: 177
+
+Input: 14
+Output: 191
+
+Input: -8
+Output: -117
+
+Input: 3
+Output: 37
+
+Input: 7
+Output: 93
+
+Input: -13","
+Output: -153
+
+Input: 11
+Output: 13",-187,False,"[14, -5]"

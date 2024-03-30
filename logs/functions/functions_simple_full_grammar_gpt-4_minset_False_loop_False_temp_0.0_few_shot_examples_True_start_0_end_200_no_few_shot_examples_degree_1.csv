@@ -1,0 +1,2347 @@
+inputs,outputs,answer,correct,task_id
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    20 * x^1 + -13 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 15
+    ","To apply the function to the input, we substitute x with 15 in the function.
+
+So, 20 * 15^1 + -13 * 15^0 = 20 * 15 + -13 * 1 = 300 - 13 = 287
+
+Output: 287",287,True,"[20, -13]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    20 * x^1 + -13 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -6
+    ",Output: -98,-133,False,"[20, -13]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    20 * x^1 + -13 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 0
+    ",Output: -13,-13,True,"[20, -13]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    20 * x^1 + -13 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -17
+    ","To find the output, substitute x = -17 into the function:
+
+20 * (-17)^1 + -13 * (-17)^0
+
+This simplifies to:
+
+-340 + -13 * 1
+
+Which further simplifies to:
+
+-340 - 13
+
+So, the output is -353.
+
+Output: -353",-353,True,"[20, -13]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    20 * x^1 + -13 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -6
+    ","To apply the function to the input -6, we substitute x with -6 in the function.
+
+So, 20 * (-6)^1 + -13 * (-6)^0 = -120 + -13 = -133
+
+Output: -133",-133,True,"[20, -13]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -19 * x^1 + -3 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -7
+    ",Output: 130,130,True,"[-19, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -19 * x^1 + -3 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 16
+    ",Output: -309,-307,False,"[-19, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -19 * x^1 + -3 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 0
+    ",Output: -3,-3,True,"[-19, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -19 * x^1 + -3 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -7
+    ",Output: 130,130,True,"[-19, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -19 * x^1 + -3 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 11
+    ",Output: -212,-212,True,"[-19, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -5 * x^1 + -6 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -5
+    ",Output: 19,19,True,"[-5, -6]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -5 * x^1 + -6 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 15
+    ",Output: -81,-81,True,"[-5, -6]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -5 * x^1 + -6 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 14
+    ",Output: -76,-76,True,"[-5, -6]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -5 * x^1 + -6 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -4
+    ",Output: 14,14,True,"[-5, -6]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -5 * x^1 + -6 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 17
+    ","To apply the function to the input, we substitute x with 17 in the function.
+
+So, -5 * 17^1 + -6 * 17^0 = -5 * 17 + -6 * 1 = -85 - 6 = -91
+
+Output: -91",-91,True,"[-5, -6]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -12 * x^1 + -14 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -12
+    ",Output: 132,130,False,"[-12, -14]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -12 * x^1 + -14 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 12
+    ",Output: -158,-158,True,"[-12, -14]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -12 * x^1 + -14 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 11
+    ",Output: -146,-146,True,"[-12, -14]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -12 * x^1 + -14 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -15
+    ",Output: 198,166,False,"[-12, -14]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -12 * x^1 + -14 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -17
+    ",Output: 218,190,False,"[-12, -14]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    14 * x^1 + -15 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 18
+    ",Output: 237,237,True,"[14, -15]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    14 * x^1 + -15 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -16
+    ",Output: -386,-239,False,"[14, -15]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    14 * x^1 + -15 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 4
+    ",Output: 41,41,True,"[14, -15]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    14 * x^1 + -15 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 4
+    ",Output: 41,41,True,"[14, -15]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    14 * x^1 + -15 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 18
+    ","To apply the function to the input, we substitute x with 18 in the function.
+
+So, 14 * 18^1 + -15 * 18^0 = 14 * 18 + -15 * 1 = 252 - 15 = 237
+
+Output: 237",237,True,"[14, -15]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    17 * x^1 + 7 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -13
+    ",Output: -216,-214,False,"[17, 7]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    17 * x^1 + 7 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 14
+    ",Output: 245,245,True,"[17, 7]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    17 * x^1 + 7 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -3
+    ",Output: -44,-44,True,"[17, 7]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    17 * x^1 + 7 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 1
+    ",Output: 24,24,True,"[17, 7]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    17 * x^1 + 7 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -13
+    ",Output: -209,-214,False,"[17, 7]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -18 * x^1 + -19 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -4
+    ",Output: 53,53,True,"[-18, -19]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -18 * x^1 + -19 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 12
+    ",Output: -235,-235,True,"[-18, -19]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -18 * x^1 + -19 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -9
+    ",Output: 143,143,True,"[-18, -19]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -18 * x^1 + -19 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 12
+    ",Output: -235,-235,True,"[-18, -19]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -18 * x^1 + -19 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -14
+    ",Output: 262,233,False,"[-18, -19]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -15 * x^1 + -7 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -8
+    ",Output: 128,113,False,"[-15, -7]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -15 * x^1 + -7 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -11
+    ",Output: 152,158,False,"[-15, -7]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -15 * x^1 + -7 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 3
+    ",Output: -52,-52,True,"[-15, -7]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -15 * x^1 + -7 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -10
+    ",Output: 143,143,True,"[-15, -7]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -15 * x^1 + -7 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 14
+    ",Output: -217,-217,True,"[-15, -7]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -6 * x^1 + 12 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -19
+    ",Output: -102,126,False,"[-6, 12]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -6 * x^1 + 12 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -13
+    ",Output: 90,90,True,"[-6, 12]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -6 * x^1 + 12 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 3
+    ",Output: -6,-6,True,"[-6, 12]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -6 * x^1 + 12 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -1
+    ",Output: -18,18,False,"[-6, 12]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -6 * x^1 + 12 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -5
+    ",Output: 42,42,True,"[-6, 12]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    18 * x^1 + -19 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 11
+    ","To apply the function to the input, we substitute x with 11 in the function.
+
+So, 18 * 11^1 + -19 * 11^0 = 18 * 11 + -19 * 1 = 198 - 19 = 179
+
+Output: 179",179,True,"[18, -19]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    18 * x^1 + -19 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -16
+    ","To find the output, substitute x = -16 into the function:
+
+18 * (-16)^1 + -19 * (-16)^0
+
+This simplifies to:
+
+-288 + -19
+
+So, the output is -307.
+
+Output: -307",-307,True,"[18, -19]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    18 * x^1 + -19 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 14
+    ","To find the output, substitute x = 14 in the function 18 * x^1 + -19 * x^0.
+
+= 18 * 14^1 + -19 * 1
+= 18 * 14 - 19
+= 252 - 19
+= 233
+
+Output: 233",233,True,"[18, -19]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    18 * x^1 + -19 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -12
+    ",Output: -235,-235,True,"[18, -19]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    18 * x^1 + -19 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -12
+    ",Output: -235,-235,True,"[18, -19]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    15 * x^1 + -8 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 18
+    ","To apply the function to the input, we substitute x with 18 in the function.
+
+So, 15 * 18^1 + -8 * 18^0 = 270 + -8 = 262
+
+Output: 262",262,True,"[15, -8]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    15 * x^1 + -8 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 7
+    ",Output: 89,97,False,"[15, -8]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    15 * x^1 + -8 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -7
+    ","To find the output, substitute x = -7 into the function:
+
+15 * (-7)^1 + -8 * (-7)^0
+
+= -105 + -8
+
+= -113
+
+Output: -113",-113,True,"[15, -8]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    15 * x^1 + -8 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 14
+    ",Output: 198,202,False,"[15, -8]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    15 * x^1 + -8 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -8
+    ",Output: -136,-128,False,"[15, -8]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    14 * x^1 + 6 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 8
+    ",Output: 116,118,False,"[14, 6]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    14 * x^1 + 6 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -13
+    ",Output: -176,-176,True,"[14, 6]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    14 * x^1 + 6 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -5
+    ",Output: -64,-64,True,"[14, 6]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    14 * x^1 + 6 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -6
+    ",Output: -78,-78,True,"[14, 6]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    14 * x^1 + 6 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -16
+    ",Output: -220,-218,False,"[14, 6]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -6 * x^1 + 8 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 17
+    ",Output: -94,-94,True,"[-6, 8]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -6 * x^1 + 8 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -6
+    ",Output: -44,44,False,"[-6, 8]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -6 * x^1 + 8 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -20
+    ",Output: 128,128,True,"[-6, 8]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -6 * x^1 + 8 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -16
+    ",Output: 104,104,True,"[-6, 8]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -6 * x^1 + 8 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 20
+    ",Output: -112,-112,True,"[-6, 8]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    17 * x^1 + -3 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -16
+    ",Output: -275,-275,True,"[17, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    17 * x^1 + -3 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 12
+    ",Output: 201,201,True,"[17, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    17 * x^1 + -3 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -5
+    ",Output: -88,-88,True,"[17, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    17 * x^1 + -3 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -3
+    ",Output: -54,-54,True,"[17, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    17 * x^1 + -3 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 11
+    ",Output: 184,184,True,"[17, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -20 * x^1 + -10 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 10
+    ",Output: -210,-210,True,"[-20, -10]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -20 * x^1 + -10 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -5
+    ",Output: 90,90,True,"[-20, -10]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -20 * x^1 + -10 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 10
+    ",Output: -210,-210,True,"[-20, -10]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -20 * x^1 + -10 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 6
+    ",Output: -130,-130,True,"[-20, -10]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -20 * x^1 + -10 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -8
+    ",Output: 150,150,True,"[-20, -10]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    7 * x^1 + 1 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 6
+    ",Output: 43,43,True,"[7, 1]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    7 * x^1 + 1 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 9
+    ",Output: 64,64,True,"[7, 1]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    7 * x^1 + 1 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -17
+    ",Output: -116,-118,False,"[7, 1]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    7 * x^1 + 1 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -14
+    ",Output: -97,-97,True,"[7, 1]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    7 * x^1 + 1 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -17
+    ",Output: -116,-118,False,"[7, 1]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -3 * x^1 + -11 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -8
+    ",Output: 13,13,True,"[-3, -11]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -3 * x^1 + -11 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 14
+    ",Output: -47,-53,False,"[-3, -11]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -3 * x^1 + -11 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 8
+    ",Output: -35,-35,True,"[-3, -11]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -3 * x^1 + -11 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -12
+    ",Output: 25,25,True,"[-3, -11]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -3 * x^1 + -11 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 7
+    ",Output: -32,-32,True,"[-3, -11]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -7 * x^1 + 1 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 8
+    ",Output: -55,-55,True,"[-7, 1]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -7 * x^1 + 1 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 15
+    ",Output: -106,-104,False,"[-7, 1]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -7 * x^1 + 1 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -14
+    ",Output: 97,99,False,"[-7, 1]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -7 * x^1 + 1 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -17
+    ",Output: 120,120,True,"[-7, 1]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -7 * x^1 + 1 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 14
+    ",Output: -97,-97,True,"[-7, 1]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -14 * x^1 + -15 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 11
+    ",Output: -169,-169,True,"[-14, -15]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -14 * x^1 + -15 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 10
+    ",Output: -155,-155,True,"[-14, -15]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -14 * x^1 + -15 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -7
+    ",Output: 113,83,False,"[-14, -15]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -14 * x^1 + -15 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 5
+    ",Output: -85,-85,True,"[-14, -15]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -14 * x^1 + -15 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -17
+    ",Output: 243,223,False,"[-14, -15]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    4 * x^1 + -14 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 9
+    ","To apply the function to the input, we substitute x with 9 in the function.
+
+So, 4 * 9^1 + -14 * 9^0 = 4 * 9 + -14 * 1 = 36 - 14 = 22
+
+Output: 22",22,True,"[4, -14]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    4 * x^1 + -14 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -2
+    ",Output: -20,-22,False,"[4, -14]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    4 * x^1 + -14 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 7
+    ","To apply the function to the input, we substitute x with 7.
+
+4 * 7^1 + -14 * 7^0 = 4 * 7 + -14 * 1 = 28 - 14 = 14
+
+Output: 14",14,True,"[4, -14]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    4 * x^1 + -14 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 15
+    ","To find the output, substitute x = 15 in the function 4 * x^1 + -14 * x^0.
+
+= 4 * 15^1 + -14 * 15^0
+= 4 * 15 + -14 * 1
+= 60 - 14
+= 46
+
+Output: 46",46,True,"[4, -14]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    4 * x^1 + -14 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 11
+    ",Output: 30,30,True,"[4, -14]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    2 * x^1 + 2 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 17
+    ",Output: 36,36,True,"[2, 2]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    2 * x^1 + 2 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 14
+    ",Output: 30,30,True,"[2, 2]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    2 * x^1 + 2 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -17
+    ",Output: -32,-32,True,"[2, 2]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    2 * x^1 + 2 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 0
+    ",Output: 2,2,True,"[2, 2]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    2 * x^1 + 2 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -17
+    ",Output: -32,-32,True,"[2, 2]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    18 * x^1 + -4 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -10
+    ",Output: -184,-184,True,"[18, -4]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    18 * x^1 + -4 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -17
+    ",Output: -310,-310,True,"[18, -4]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    18 * x^1 + -4 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 12
+    ",Output: 212,212,True,"[18, -4]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    18 * x^1 + -4 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -15
+    ",Output: -276,-274,False,"[18, -4]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    18 * x^1 + -4 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -9
+    ",Output: -170,-166,False,"[18, -4]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -18 * x^1 + 9 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -13
+    ",Output: 234,243,False,"[-18, 9]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -18 * x^1 + 9 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 16
+    ",Output: -279,-279,True,"[-18, 9]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -18 * x^1 + 9 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -5
+    ",Output: 81,99,False,"[-18, 9]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -18 * x^1 + 9 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 17
+    ",Output: -297,-297,True,"[-18, 9]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -18 * x^1 + 9 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 18
+    ",Output: -315,-315,True,"[-18, 9]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    14 * x^1 + -13 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 16
+    ",Output: 210,211,False,"[14, -13]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    14 * x^1 + -13 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 13
+    ",Output: 169,169,True,"[14, -13]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    14 * x^1 + -13 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 0
+    ",Output: -13,-13,True,"[14, -13]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    14 * x^1 + -13 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -4
+    ",Output: -70,-69,False,"[14, -13]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    14 * x^1 + -13 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -7
+    ",Output: -105,-111,False,"[14, -13]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    4 * x^1 + -15 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -1
+    ",Output: -19,-19,True,"[4, -15]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    4 * x^1 + -15 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 9
+    ","To apply the function to the input, we substitute x with 9.
+
+4 * 9^1 + -15 * 9^0 = 36 - 15 = 21
+
+Output: 21",21,True,"[4, -15]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    4 * x^1 + -15 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 0
+    ",Output: -15,-15,True,"[4, -15]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    4 * x^1 + -15 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -16
+    ","To apply the function to the input -16, we substitute x with -16 in the function.
+
+So, 4 * (-16)^1 + -15 * (-16)^0 = -64 + 15 = -49
+
+Output: -49",-79,False,"[4, -15]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    4 * x^1 + -15 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -20
+    ","To apply the function to the input, we substitute -20 for x in the function:
+
+4 * (-20)^1 + -15 * (-20)^0
+
+This simplifies to:
+
+-80 + -15 * 1
+
+Which further simplifies to:
+
+-80 - 15
+
+So, the output is -95.
+
+Output: -95",-95,True,"[4, -15]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    15 * x^1 + -2 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 14
+    ",Output: 208,208,True,"[15, -2]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    15 * x^1 + -2 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -7
+    ",Output: -109,-107,False,"[15, -2]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    15 * x^1 + -2 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 12
+    ",Output: 178,178,True,"[15, -2]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    15 * x^1 + -2 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -4
+    ",Output: -68,-62,False,"[15, -2]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    15 * x^1 + -2 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -12
+    ",Output: -194,-182,False,"[15, -2]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    20 * x^1 + 19 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -10
+    ",Output: -181,-181,True,"[20, 19]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    20 * x^1 + 19 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 8
+    ",Output: 179,179,True,"[20, 19]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    20 * x^1 + 19 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 14
+    ",Output: 299,299,True,"[20, 19]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    20 * x^1 + 19 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -1
+    ",Output: 1,-1,False,"[20, 19]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    20 * x^1 + 19 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 19
+    ",Output: 400,399,False,"[20, 19]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    3 * x^1 + 16 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -12
+    ",Output: -20,-20,True,"[3, 16]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    3 * x^1 + 16 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -4
+    ",Output: -8,4,False,"[3, 16]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    3 * x^1 + 16 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -13
+    ",Output: -23,-23,True,"[3, 16]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    3 * x^1 + 16 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -14
+    ",Output: -26,-26,True,"[3, 16]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    3 * x^1 + 16 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 15
+    ",Output: 63,61,False,"[3, 16]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -8 * x^1 + -16 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 1
+    ",Output: -24,-24,True,"[-8, -16]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -8 * x^1 + -16 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -7
+    ",Output: 40,40,True,"[-8, -16]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -8 * x^1 + -16 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 20
+    ",Output: -176,-176,True,"[-8, -16]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -8 * x^1 + -16 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -4
+    ",Output: 16,16,True,"[-8, -16]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -8 * x^1 + -16 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 12
+    ",Output: -112,-112,True,"[-8, -16]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -18 * x^1 + -6 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 7
+    ",Output: -132,-132,True,"[-18, -6]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -18 * x^1 + -6 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -3
+    ",Output: 48,48,True,"[-18, -6]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -18 * x^1 + -6 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -18
+    ",Output: 324,318,False,"[-18, -6]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -18 * x^1 + -6 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -20
+    ",Output: 360,354,False,"[-18, -6]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -18 * x^1 + -6 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 1
+    ",Output: -24,-24,True,"[-18, -6]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -2 * x^1 + -15 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 15
+    ",Output: -45,-45,True,"[-2, -15]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -2 * x^1 + -15 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 7
+    ",Output: -29,-29,True,"[-2, -15]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -2 * x^1 + -15 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 15
+    ",Output: -45,-45,True,"[-2, -15]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -2 * x^1 + -15 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -20
+    ",Output: 25,25,True,"[-2, -15]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -2 * x^1 + -15 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -13
+    ",Output: 11,11,True,"[-2, -15]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -6 * x^1 + -14 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 17
+    ",Output: -122,-116,False,"[-6, -14]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -6 * x^1 + -14 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 15
+    ",Output: -104,-104,True,"[-6, -14]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -6 * x^1 + -14 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -11
+    ","To find the output, substitute x = -11 in the function -6 * x^1 + -14 * x^0.
+
+= -6 * (-11)^1 + -14 * (-11)^0
+= 66 + -14
+= 52
+
+Output: 52",52,True,"[-6, -14]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -6 * x^1 + -14 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 7
+    ",Output: -56,-56,True,"[-6, -14]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -6 * x^1 + -14 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -12
+    ",Output: 58,58,True,"[-6, -14]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    4 * x^1 + -3 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -7
+    ",Output: -31,-31,True,"[4, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    4 * x^1 + -3 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -5
+    ",Output: -23,-23,True,"[4, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    4 * x^1 + -3 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -14
+    ",Output: -62,-59,False,"[4, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    4 * x^1 + -3 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 2
+    ",Output: 5,5,True,"[4, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    4 * x^1 + -3 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 15
+    ","To apply the function to the input, we substitute x with 15 in the function.
+
+So, 4 * 15^1 + -3 * 15^0 = 60 + -3 = 57
+
+Output: 57",57,True,"[4, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    9 * x^1 + 20 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -9
+    ",Output: -61,-61,True,"[9, 20]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    9 * x^1 + 20 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 6
+    ",Output: 74,74,True,"[9, 20]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    9 * x^1 + 20 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -19
+    ",Output: -151,-151,True,"[9, 20]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    9 * x^1 + 20 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -9
+    ",Output: -61,-61,True,"[9, 20]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    9 * x^1 + 20 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 1
+    ",Output: 29,29,True,"[9, 20]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    3 * x^1 + -10 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 4
+    ",Output: 2,2,True,"[3, -10]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    3 * x^1 + -10 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -18
+    ","To apply the function to the input -18, we substitute x with -18 in the function:
+
+3 * (-18)^1 + -10 * (-18)^0
+
+This simplifies to:
+
+-54 + -10 * 1
+
+Which further simplifies to:
+
+-54 - 10
+
+So, the output is -64.
+
+Output: -64",-64,True,"[3, -10]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    3 * x^1 + -10 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 10
+    ",Output: 20,20,True,"[3, -10]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    3 * x^1 + -10 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -6
+    ","To apply the function to the input -6, we substitute x with -6 in the function.
+
+So, 3 * (-6)^1 + -10 * (-6)^0 = -18 + -10 = -28
+
+Output: -28",-28,True,"[3, -10]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    3 * x^1 + -10 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -8
+    ","To apply the function to the input -8, we substitute x with -8 in the function.
+
+So, 3 * (-8)^1 + -10 * (-8)^0 = -24 + -10 = -34
+
+Output: -34",-34,True,"[3, -10]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    3 * x^1 + 2 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -19
+    ",Output: -55,-55,True,"[3, 2]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    3 * x^1 + 2 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -8
+    ",Output: -22,-22,True,"[3, 2]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    3 * x^1 + 2 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 5
+    ",Output: 17,17,True,"[3, 2]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    3 * x^1 + 2 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 1
+    ",Output: 5,5,True,"[3, 2]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    3 * x^1 + 2 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -3
+    ","To apply the function to the input -3, we substitute x with -3 in the function.
+
+So, 3 * (-3)^1 + 2 * (-3)^0 = -9 + 2 = -7
+
+Output: -7",-7,True,"[3, 2]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -7 * x^1 + -3 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 14
+    ",Output: -101,-101,True,"[-7, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -7 * x^1 + -3 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 1
+    ",Output: -10,-10,True,"[-7, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -7 * x^1 + -3 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -19
+    ",Output: 138,130,False,"[-7, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -7 * x^1 + -3 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -13
+    ",Output: 94,88,False,"[-7, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -7 * x^1 + -3 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -4
+    ",Output: 25,25,True,"[-7, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -16 * x^1 + 18 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 18
+    ",Output: -270,-270,True,"[-16, 18]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -16 * x^1 + 18 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 7
+    ",Output: -94,-94,True,"[-16, 18]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -16 * x^1 + 18 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 2
+    ",Output: -14,-14,True,"[-16, 18]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -16 * x^1 + 18 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 0
+    ",Output: 18,18,True,"[-16, 18]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -16 * x^1 + 18 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 7
+    ",Output: -94,-94,True,"[-16, 18]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    20 * x^1 + -10 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -8
+    ",Output: -180,-170,False,"[20, -10]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    20 * x^1 + -10 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -4
+    ",Output: -60,-90,False,"[20, -10]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    20 * x^1 + -10 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -18
+    ",Output: -370,-370,True,"[20, -10]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    20 * x^1 + -10 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 7
+    ",Output: 130,130,True,"[20, -10]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    20 * x^1 + -10 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -20
+    ",Output: -410,-410,True,"[20, -10]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    14 * x^1 + -5 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -16
+    ",Output: -229,-229,True,"[14, -5]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    14 * x^1 + -5 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 1
+    ",Output: 9,9,True,"[14, -5]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    14 * x^1 + -5 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 19
+    ",Output: 256,261,False,"[14, -5]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    14 * x^1 + -5 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: 0
+    ",Output: -5,-5,True,"[14, -5]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    14 * x^1 + -5 * x^0
+    
+    Examples:
+    No examples.
+
+    Return the output preceded by 'Output:'
+    Input: -13
+    ","To find the output, substitute x = -13 into the function:
+
+14 * (-13)^1 + -5 * (-13)^0
+
+This simplifies to:
+
+-182 + -5
+
+So, the output is -187.
+
+Output: -187",-187,True,"[14, -5]"

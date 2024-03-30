@@ -1,0 +1,7853 @@
+inputs,outputs,answer,correct,task_id
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    20 * x^1 + -13 * x^0
+    
+    Examples:
+    Input: -10
+Output: -213
+
+Input: 9
+Output: 167
+
+Input: 4
+Output: 67
+
+Input: -3
+Output: -73
+
+Input: 20
+Output: 387
+
+
+    Return the output preceded by 'Output:'
+    Input: 15
+    ","To apply the function to the input 15, we follow the function:
+
+20 * x^1 + -13 * x^0
+
+First, we replace x with 15:
+
+20 * 15^1 + -13 * 15^0
+
+Now we calculate the power of 15:
+
+20 * 15 + -13 * 1
+
+Now we multiply:
+
+300 + -13
+
+Finally, we add the two numbers:
+
+300 - 13 = 287
+
+So the output is:
+
+Output: 287",287,True,"[20, -13]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    20 * x^1 + -13 * x^0
+    
+    Examples:
+    Input: -10
+Output: -213
+
+Input: 9
+Output: 167
+
+Input: 4
+Output: 67
+
+Input: -3
+Output: -73
+
+Input: 20
+Output: 387
+
+
+    Return the output preceded by 'Output:'
+    Input: -6
+    ","To apply the function to the input -6, we follow the function:
+
+20 * x^1 + -13 * x^0
+
+First, we replace x with -6:
+
+20 * (-6)^1 + -13 * (-6)^0
+
+Now we calculate the powers and the multiplication:
+
+20 * -6 + -13 * 1
+
+Which simplifies to:
+
+-120 + -13
+
+Adding these together gives us:
+
+-120 - 13 = -133
+
+So the output is:
+
+Output: -133",-133,True,"[20, -13]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    20 * x^1 + -13 * x^0
+    
+    Examples:
+    Input: -10
+Output: -213
+
+Input: 9
+Output: 167
+
+Input: 4
+Output: 67
+
+Input: -3
+Output: -73
+
+Input: 20
+Output: 387
+
+
+    Return the output preceded by 'Output:'
+    Input: 0
+    ","To apply the function to the input, we substitute the value of x with 0:
+
+Function: 20 * x^1 + -13 * x^0
+
+Input: 0
+
+Output: 20 * 0^1 + -13 * 0^0
+Output: 20 * 0 + -13 * 1
+Output: 0 + -13
+Output: -13
+
+Therefore, the correct output is:
+
+Output: -13",-13,True,"[20, -13]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    20 * x^1 + -13 * x^0
+    
+    Examples:
+    Input: -10
+Output: -213
+
+Input: 9
+Output: 167
+
+Input: 4
+Output: 67
+
+Input: -3
+Output: -73
+
+Input: 20
+Output: 387
+
+
+    Return the output preceded by 'Output:'
+    Input: -17
+    ","To apply the function to the input -17, we follow the function:
+
+20 * x^1 + -13 * x^0
+
+Substitute x with -17:
+
+20 * (-17)^1 + -13 * (-17)^0
+
+Now calculate the values:
+
+20 * (-17) + -13 * 1
+-340 + -13
+-340 - 13
+-353
+
+So the output is:
+
+Output: -353",-353,True,"[20, -13]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    20 * x^1 + -13 * x^0
+    
+    Examples:
+    Input: -10
+Output: -213
+
+Input: 9
+Output: 167
+
+Input: 4
+Output: 67
+
+Input: -3
+Output: -73
+
+Input: 20
+Output: 387
+
+
+    Return the output preceded by 'Output:'
+    Input: -6
+    ","To apply the function to the input -6, we substitute x with -6:
+
+20 * (-6)^1 + -13 * (-6)^0
+
+Now, calculate the power and multiplication:
+
+20 * (-6) + -13 * 1
+
+-120 + -13
+
+Combine the terms:
+
+-120 - 13 = -133
+
+Therefore, the correct output is:
+
+Output: -133",-133,True,"[20, -13]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -19 * x^1 + -3 * x^0
+    
+    Examples:
+    Input: -18
+Output: 339
+
+Input: 0
+Output: -3
+
+Input: 5
+Output: -98
+
+Input: -3
+Output: 54
+
+Input: -16
+Output: 301
+
+
+    Return the output preceded by 'Output:'
+    Input: -7
+    ","To apply the function to the input -7, we follow the function:
+
+-19 * x^1 + -3 * x^0
+
+Plugging in x = -7:
+
+-19 * (-7)^1 + -3 * (-7)^0
+-19 * -7 + -3 * 1
+133 + -3
+130
+
+Therefore, the correct output is:
+
+Output: 130",130,True,"[-19, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -19 * x^1 + -3 * x^0
+    
+    Examples:
+    Input: -18
+Output: 339
+
+Input: 0
+Output: -3
+
+Input: 5
+Output: -98
+
+Input: -3
+Output: 54
+
+Input: -16
+Output: 301
+
+
+    Return the output preceded by 'Output:'
+    Input: 16
+    ","To apply the function to the input value of 16, we plug in x = 16 into the function:
+
+Function: -19 * x^1 + -3 * x^0
+
+Output for x = 16:
+= -19 * (16)^1 + -3 * (16)^0
+= -19 * 16 + -3 * 1
+= -304 + -3
+= -307
+
+Therefore, the correct output is:
+
+Output: -307",-307,True,"[-19, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -19 * x^1 + -3 * x^0
+    
+    Examples:
+    Input: -18
+Output: 339
+
+Input: 0
+Output: -3
+
+Input: 5
+Output: -98
+
+Input: -3
+Output: 54
+
+Input: -16
+Output: 301
+
+
+    Return the output preceded by 'Output:'
+    Input: 0
+    ","To apply the function to the input, we substitute the value of x with 0:
+
+Function: -19 * x^1 + -3 * x^0
+
+For x = 0:
+
+-19 * (0)^1 + -3 * (0)^0
+= -19 * 0 + -3 * 1
+= 0 - 3
+= -3
+
+Therefore, the output is -3.
+
+Output: -3",-3,True,"[-19, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -19 * x^1 + -3 * x^0
+    
+    Examples:
+    Input: -18
+Output: 339
+
+Input: 0
+Output: -3
+
+Input: 5
+Output: -98
+
+Input: -3
+Output: 54
+
+Input: -16
+Output: 301
+
+
+    Return the output preceded by 'Output:'
+    Input: -7
+    ","To apply the function to the input -7, we follow the function:
+
+-19 * x^1 + -3 * x^0
+
+Plugging in x = -7:
+
+-19 * (-7)^1 + -3 * (-7)^0
+-19 * -7 + -3 * 1
+133 + -3
+130
+
+Therefore, the correct output is:
+
+Output: 130",130,True,"[-19, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -19 * x^1 + -3 * x^0
+    
+    Examples:
+    Input: -18
+Output: 339
+
+Input: 0
+Output: -3
+
+Input: 5
+Output: -98
+
+Input: -3
+Output: 54
+
+Input: -16
+Output: 301
+
+
+    Return the output preceded by 'Output:'
+    Input: 11
+    ","To apply the function to the input, we substitute the value of x with 11:
+
+Function: -19 * x^1 + -3 * x^0
+
+For x = 11:
+
+-19 * 11^1 + -3 * 11^0
+= -19 * 11 + -3 * 1
+= -209 + -3
+= -212
+
+Therefore, the output is -212.
+
+Output: -212",-212,True,"[-19, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -5 * x^1 + -6 * x^0
+    
+    Examples:
+    Input: 5
+Output: -31
+
+Input: 9
+Output: -51
+
+Input: -11
+Output: 49
+
+Input: -4
+Output: 14
+
+Input: -12
+Output: 54
+
+
+    Return the output preceded by 'Output:'
+    Input: -5
+    ","To apply the function to the input -5, we substitute x with -5:
+
+Function: -5 * x^1 + -6 * x^0
+
+For x = -5:
+
+-5 * (-5)^1 + -6 * (-5)^0
+= -5 * -5 + -6 * 1
+= 25 - 6
+= 19
+
+Therefore, the output is:
+
+Output: 19",19,True,"[-5, -6]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -5 * x^1 + -6 * x^0
+    
+    Examples:
+    Input: 5
+Output: -31
+
+Input: 9
+Output: -51
+
+Input: -11
+Output: 49
+
+Input: -4
+Output: 14
+
+Input: -12
+Output: 54
+
+
+    Return the output preceded by 'Output:'
+    Input: 15
+    ","To apply the function to the input 15, we follow the function:
+
+-5 * x^1 + -6 * x^0
+
+First, we replace x with 15:
+
+-5 * (15)^1 + -6 * (15)^0
+
+Now we calculate the power and multiplication:
+
+-5 * 15 + -6 * 1
+
+-75 + -6
+
+Now we add the two numbers together:
+
+-75 - 6 = -81
+
+So the output is:
+
+Output: -81",-81,True,"[-5, -6]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -5 * x^1 + -6 * x^0
+    
+    Examples:
+    Input: 5
+Output: -31
+
+Input: 9
+Output: -51
+
+Input: -11
+Output: 49
+
+Input: -4
+Output: 14
+
+Input: -12
+Output: 54
+
+
+    Return the output preceded by 'Output:'
+    Input: 14
+    ","To apply the function to the input 14, we substitute x with 14:
+
+Function: -5 * x^1 + -6 * x^0
+
+For x = 14:
+
+-5 * (14)^1 + -6 * (14)^0
+= -5 * 14 + -6 * 1
+= -70 + -6
+= -76
+
+Therefore, the output is -76.
+
+Output: -76",-76,True,"[-5, -6]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -5 * x^1 + -6 * x^0
+    
+    Examples:
+    Input: 5
+Output: -31
+
+Input: 9
+Output: -51
+
+Input: -11
+Output: 49
+
+Input: -4
+Output: 14
+
+Input: -12
+Output: 54
+
+
+    Return the output preceded by 'Output:'
+    Input: -4
+    ","To apply the function to the input -4, we follow the function:
+
+-5 * x^1 + -6 * x^0
+
+Plugging in x = -4:
+
+-5 * (-4)^1 + -6 * (-4)^0
+-5 * -4 + -6 * 1
+20 - 6
+14
+
+Therefore, the correct output is:
+
+Output: 14",14,True,"[-5, -6]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -5 * x^1 + -6 * x^0
+    
+    Examples:
+    Input: 5
+Output: -31
+
+Input: 9
+Output: -51
+
+Input: -11
+Output: 49
+
+Input: -4
+Output: 14
+
+Input: -12
+Output: 54
+
+
+    Return the output preceded by 'Output:'
+    Input: 17
+    ","To apply the function to the input 17, we follow the function:
+
+-5 * x^1 + -6 * x^0
+
+Plugging in x = 17:
+
+-5 * (17)^1 + -6 * (17)^0
+-5 * 17 + -6 * 1
+-85 + -6
+-91
+
+Therefore, the output is:
+
+Output: -91",-91,True,"[-5, -6]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -12 * x^1 + -14 * x^0
+    
+    Examples:
+    Input: 7
+Output: -98
+
+Input: 17
+Output: -218
+
+Input: 5
+Output: -74
+
+Input: 3
+Output: -50
+
+Input: -6
+Output: 58
+
+
+    Return the output preceded by 'Output:'
+    Input: -12
+    ","To apply the function to the input -12, we substitute x with -12:
+
+Function: -12 * x^1 + -14 * x^0
+
+For x = -12:
+
+-12 * (-12)^1 + -14 * (-12)^0
+= -12 * (-12) + -14 * 1
+= 144 - 14
+= 130
+
+Therefore, the correct output is 130.
+
+Output: 130",130,True,"[-12, -14]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -12 * x^1 + -14 * x^0
+    
+    Examples:
+    Input: 7
+Output: -98
+
+Input: 17
+Output: -218
+
+Input: 5
+Output: -74
+
+Input: 3
+Output: -50
+
+Input: -6
+Output: 58
+
+
+    Return the output preceded by 'Output:'
+    Input: 12
+    ","To apply the function to the input 12, we substitute x with 12:
+
+Function: -12 * x^1 + -14 * x^0
+
+For x = 12:
+
+-12 * 12^1 + -14 * 12^0
+= -12 * 12 + -14 * 1
+= -144 + -14
+= -158
+
+Therefore, the correct output is -158.
+
+Output: -158",-158,True,"[-12, -14]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -12 * x^1 + -14 * x^0
+    
+    Examples:
+    Input: 7
+Output: -98
+
+Input: 17
+Output: -218
+
+Input: 5
+Output: -74
+
+Input: 3
+Output: -50
+
+Input: -6
+Output: 58
+
+
+    Return the output preceded by 'Output:'
+    Input: 11
+    ","To apply the function to the input 11, we substitute x with 11:
+
+Function: -12 * x^1 + -14 * x^0
+
+For x = 11:
+
+-12 * 11^1 + -14 * 11^0
+= -12 * 11 + -14 * 1
+= -132 + -14
+= -146
+
+Therefore, the correct output is -146.
+
+Output: -146",-146,True,"[-12, -14]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -12 * x^1 + -14 * x^0
+    
+    Examples:
+    Input: 7
+Output: -98
+
+Input: 17
+Output: -218
+
+Input: 5
+Output: -74
+
+Input: 3
+Output: -50
+
+Input: -6
+Output: 58
+
+
+    Return the output preceded by 'Output:'
+    Input: -15
+    ","To apply the function to the input -15, we substitute x with -15:
+
+Function: -12 * x^1 + -14 * x^0
+
+For x = -15:
+
+-12 * (-15)^1 + -14 * (-15)^0
+= -12 * -15 + -14 * 1
+= 180 - 14
+= 166
+
+Therefore, the output is:
+
+Output: 166",166,True,"[-12, -14]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -12 * x^1 + -14 * x^0
+    
+    Examples:
+    Input: 7
+Output: -98
+
+Input: 17
+Output: -218
+
+Input: 5
+Output: -74
+
+Input: 3
+Output: -50
+
+Input: -6
+Output: 58
+
+
+    Return the output preceded by 'Output:'
+    Input: -17
+    ","To apply the function to the input -17, we substitute x with -17:
+
+Function: -12 * x^1 + -14 * x^0
+
+For x = -17:
+
+-12 * (-17)^1 + -14 * (-17)^0
+= -12 * -17 + -14 * 1
+= 204 - 14
+= 190
+
+Therefore, the correct output is:
+
+Output: 190",190,True,"[-12, -14]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    14 * x^1 + -15 * x^0
+    
+    Examples:
+    Input: -13
+Output: -197
+
+Input: -11
+Output: -169
+
+Input: 20
+Output: 265
+
+Input: -10
+Output: -155
+
+Input: 7
+Output: 83
+
+
+    Return the output preceded by 'Output:'
+    Input: 18
+    ","To apply the function to the input, we substitute the value of x with 18:
+
+14 * (18)^1 + -15 * (18)^0
+
+Now, we calculate the result:
+
+14 * 18 + -15 * 1
+= 252 + -15
+= 252 - 15
+= 237
+
+Therefore, the output is:
+
+Output: 237",237,True,"[14, -15]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    14 * x^1 + -15 * x^0
+    
+    Examples:
+    Input: -13
+Output: -197
+
+Input: -11
+Output: -169
+
+Input: 20
+Output: 265
+
+Input: -10
+Output: -155
+
+Input: 7
+Output: 83
+
+
+    Return the output preceded by 'Output:'
+    Input: -16
+    ","To apply the function to the input -16, we follow the function:
+
+14 * x^1 + -15 * x^0
+
+First, we replace x with -16:
+
+14 * (-16)^1 + -15 * (-16)^0
+
+Now we calculate the power of -16:
+
+14 * (-16) + -15 * 1
+
+Now we multiply:
+
+-224 + -15
+
+Finally, we add the two numbers:
+
+-224 - 15 = -239
+
+So the output is:
+
+Output: -239",-239,True,"[14, -15]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    14 * x^1 + -15 * x^0
+    
+    Examples:
+    Input: -13
+Output: -197
+
+Input: -11
+Output: -169
+
+Input: 20
+Output: 265
+
+Input: -10
+Output: -155
+
+Input: 7
+Output: 83
+
+
+    Return the output preceded by 'Output:'
+    Input: 4
+    ","To apply the function to the input, we substitute the value of x with 4:
+
+14 * 4^1 + -15 * 4^0
+= 14 * 4 + -15 * 1
+= 56 - 15
+= 41
+
+Therefore, the correct output is:
+
+Output: 41",41,True,"[14, -15]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    14 * x^1 + -15 * x^0
+    
+    Examples:
+    Input: -13
+Output: -197
+
+Input: -11
+Output: -169
+
+Input: 20
+Output: 265
+
+Input: -10
+Output: -155
+
+Input: 7
+Output: 83
+
+
+    Return the output preceded by 'Output:'
+    Input: 4
+    ","To apply the function to the input, we substitute the value of x with 4:
+
+14 * x^1 + -15 * x^0
+= 14 * 4^1 + -15 * 4^0
+= 14 * 4 + -15 * 1
+= 56 - 15
+= 41
+
+Therefore, the correct output is:
+
+Output: 41",41,True,"[14, -15]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    14 * x^1 + -15 * x^0
+    
+    Examples:
+    Input: -13
+Output: -197
+
+Input: -11
+Output: -169
+
+Input: 20
+Output: 265
+
+Input: -10
+Output: -155
+
+Input: 7
+Output: 83
+
+
+    Return the output preceded by 'Output:'
+    Input: 18
+    ","To apply the function to the input, we substitute the value of x with 18:
+
+14 * (18)^1 + -15 * (18)^0
+
+Now, we calculate the value:
+
+14 * 18 + -15 * 1
+= 252 + -15
+= 252 - 15
+= 237
+
+Therefore, the correct output is:
+
+Output: 237",237,True,"[14, -15]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    17 * x^1 + 7 * x^0
+    
+    Examples:
+    Input: 9
+Output: 160
+
+Input: 13
+Output: 228
+
+Input: -4
+Output: -61
+
+Input: 15
+Output: 262
+
+Input: -20
+Output: -333
+
+
+    Return the output preceded by 'Output:'
+    Input: -13
+    ","To apply the function to the input -13, we substitute x with -13:
+
+Function: 17 * x^1 + 7 * x^0
+
+For x = -13:
+
+17 * (-13)^1 + 7 * (-13)^0
+= 17 * (-13) + 7 * 1
+= -221 + 7
+= -214
+
+Therefore, the correct output is -214.
+
+Output: -214",-214,True,"[17, 7]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    17 * x^1 + 7 * x^0
+    
+    Examples:
+    Input: 9
+Output: 160
+
+Input: 13
+Output: 228
+
+Input: -4
+Output: -61
+
+Input: 15
+Output: 262
+
+Input: -20
+Output: -333
+
+
+    Return the output preceded by 'Output:'
+    Input: 14
+    ","To apply the function to the input, we substitute the value of x with 14:
+
+Function: 17 * x^1 + 7 * x^0
+
+For x = 14:
+
+17 * 14^1 + 7 * 14^0
+= 17 * 14 + 7 * 1
+= 238 + 7
+= 245
+
+Therefore, the correct output is 245.
+
+Output: 245",245,True,"[17, 7]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    17 * x^1 + 7 * x^0
+    
+    Examples:
+    Input: 9
+Output: 160
+
+Input: 13
+Output: 228
+
+Input: -4
+Output: -61
+
+Input: 15
+Output: 262
+
+Input: -20
+Output: -333
+
+
+    Return the output preceded by 'Output:'
+    Input: -3
+    ","To apply the function to the input -3, we substitute x with -3:
+
+17 * (-3)^1 + 7 * (-3)^0
+
+Calculating the power terms first:
+
+(-3)^1 = -3
+(-3)^0 = 1 (any number to the power of 0 is 1)
+
+Now, we multiply:
+
+17 * (-3) + 7 * 1
+= -51 + 7
+= -44
+
+Therefore, the correct output is -44.
+
+Output: -44",-44,True,"[17, 7]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    17 * x^1 + 7 * x^0
+    
+    Examples:
+    Input: 9
+Output: 160
+
+Input: 13
+Output: 228
+
+Input: -4
+Output: -61
+
+Input: 15
+Output: 262
+
+Input: -20
+Output: -333
+
+
+    Return the output preceded by 'Output:'
+    Input: 1
+    ","To apply the function to the input, we substitute the value of x with 1:
+
+Function: 17 * x^1 + 7 * x^0
+
+For x = 1:
+
+Output: 17 * 1^1 + 7 * 1^0
+Output: 17 * 1 + 7 * 1
+Output: 17 + 7
+Output: 24
+
+Therefore, the correct output is:
+
+Output: 24",24,True,"[17, 7]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    17 * x^1 + 7 * x^0
+    
+    Examples:
+    Input: 9
+Output: 160
+
+Input: 13
+Output: 228
+
+Input: -4
+Output: -61
+
+Input: 15
+Output: 262
+
+Input: -20
+Output: -333
+
+
+    Return the output preceded by 'Output:'
+    Input: -13
+    ","To apply the function to the input -13, we substitute x with -13:
+
+Function: 17 * x^1 + 7 * x^0
+
+For x = -13:
+
+17 * (-13)^1 + 7 * (-13)^0
+= 17 * (-13) + 7 * 1
+= -221 + 7
+= -214
+
+Therefore, the correct output is -214.
+
+Output: -214",-214,True,"[17, 7]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -18 * x^1 + -19 * x^0
+    
+    Examples:
+    Input: -2
+Output: 17
+
+Input: 7
+Output: -145
+
+Input: -10
+Output: 161
+
+Input: 9
+Output: -181
+
+Input: -20
+Output: 341
+
+
+    Return the output preceded by 'Output:'
+    Input: -4
+    ","To apply the function to the input -4, we substitute x with -4:
+
+Function: -18 * x^1 + -19 * x^0
+
+For x = -4:
+
+-18 * (-4)^1 + -19 * (-4)^0
+= -18 * -4 + -19 * 1
+= 72 - 19
+= 53
+
+Therefore, the correct output is 53.
+
+Output: 53",53,True,"[-18, -19]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -18 * x^1 + -19 * x^0
+    
+    Examples:
+    Input: -2
+Output: 17
+
+Input: 7
+Output: -145
+
+Input: -10
+Output: 161
+
+Input: 9
+Output: -181
+
+Input: -20
+Output: 341
+
+
+    Return the output preceded by 'Output:'
+    Input: 12
+    ","To apply the function to the input, we substitute the value of x with 12:
+
+Function: -18 * x^1 + -19 * x^0
+
+Input: 12
+
+Output: -18 * 12^1 + -19 * 12^0
+Output: -18 * 12 + -19 * 1
+Output: -216 + -19
+Output: -235
+
+Therefore, the correct output is:
+
+Output: -235",-235,True,"[-18, -19]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -18 * x^1 + -19 * x^0
+    
+    Examples:
+    Input: -2
+Output: 17
+
+Input: 7
+Output: -145
+
+Input: -10
+Output: 161
+
+Input: 9
+Output: -181
+
+Input: -20
+Output: 341
+
+
+    Return the output preceded by 'Output:'
+    Input: -9
+    ","To apply the function to the input -9, we substitute x with -9:
+
+Function: -18 * x^1 + -19 * x^0
+
+For x = -9:
+
+Output = -18 * (-9)^1 + -19 * (-9)^0
+Output = -18 * -9 + -19 * 1
+Output = 162 - 19
+Output = 143
+
+Therefore, the correct output is:
+
+Output: 143",143,True,"[-18, -19]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -18 * x^1 + -19 * x^0
+    
+    Examples:
+    Input: -2
+Output: 17
+
+Input: 7
+Output: -145
+
+Input: -10
+Output: 161
+
+Input: 9
+Output: -181
+
+Input: -20
+Output: 341
+
+
+    Return the output preceded by 'Output:'
+    Input: 12
+    ","To apply the function to the input, we substitute the value of x with 12:
+
+Function: -18 * x^1 + -19 * x^0
+
+For x = 12:
+
+Output = -18 * (12)^1 + -19 * (12)^0
+Output = -18 * 12 + -19 * 1
+Output = -216 + -19
+Output = -216 - 19
+Output = -235
+
+Therefore, the correct output is:
+
+Output: -235",-235,True,"[-18, -19]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -18 * x^1 + -19 * x^0
+    
+    Examples:
+    Input: -2
+Output: 17
+
+Input: 7
+Output: -145
+
+Input: -10
+Output: 161
+
+Input: 9
+Output: -181
+
+Input: -20
+Output: 341
+
+
+    Return the output preceded by 'Output:'
+    Input: -14
+    ","To apply the function to the input -14, we substitute x with -14:
+
+-18 * (-14)^1 + -19 * (-14)^0
+
+This simplifies to:
+
+-18 * (-14) + -19 * 1
+
+Which further simplifies to:
+
+252 - 19
+
+Finally, we get:
+
+233
+
+So the correct output is:
+
+Output: 233",233,True,"[-18, -19]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -15 * x^1 + -7 * x^0
+    
+    Examples:
+    Input: 20
+Output: -307
+
+Input: -1
+Output: 8
+
+Input: 20
+Output: -307
+
+Input: 12
+Output: -187
+
+Input: 18
+Output: -277
+
+
+    Return the output preceded by 'Output:'
+    Input: -8
+    ","To apply the function -15 * x^1 + -7 * x^0 to the input -8, we follow these steps:
+
+1. Replace x with -8 in the function.
+2. Calculate the power of -8 to 1, which is simply -8.
+3. Multiply -15 by -8.
+4. Calculate the power of -8 to 0, which is 1 (any number to the power of 0 is 1).
+5. Multiply -7 by 1.
+6. Add the results of steps 3 and 5.
+
+Let's do the calculations:
+
+-15 * (-8)^1 + -7 * (-8)^0
+= -15 * -8 + -7 * 1
+= 120 - 7
+= 113
+
+Therefore, the output is:
+
+Output: 113",113,True,"[-15, -7]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -15 * x^1 + -7 * x^0
+    
+    Examples:
+    Input: 20
+Output: -307
+
+Input: -1
+Output: 8
+
+Input: 20
+Output: -307
+
+Input: 12
+Output: -187
+
+Input: 18
+Output: -277
+
+
+    Return the output preceded by 'Output:'
+    Input: -11
+    ","To apply the function to the input -11, we substitute x with -11:
+
+Function: -15 * x^1 + -7 * x^0
+
+For x = -11:
+
+-15 * (-11)^1 + -7 * (-11)^0
+= -15 * (-11) + -7 * 1
+= 165 - 7
+= 158
+
+Therefore, the correct output is 158.
+
+Output: 158",158,True,"[-15, -7]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -15 * x^1 + -7 * x^0
+    
+    Examples:
+    Input: 20
+Output: -307
+
+Input: -1
+Output: 8
+
+Input: 20
+Output: -307
+
+Input: 12
+Output: -187
+
+Input: 18
+Output: -277
+
+
+    Return the output preceded by 'Output:'
+    Input: 3
+    ","To apply the function to the input value of 3, we substitute x with 3 in the function:
+
+Function: -15 * x^1 + -7 * x^0
+
+For x = 3:
+
+-15 * (3)^1 + -7 * (3)^0
+= -15 * 3 + -7 * 1
+= -45 + -7
+= -52
+
+Therefore, the output is -52.
+
+Output: -52",-52,True,"[-15, -7]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -15 * x^1 + -7 * x^0
+    
+    Examples:
+    Input: 20
+Output: -307
+
+Input: -1
+Output: 8
+
+Input: 20
+Output: -307
+
+Input: 12
+Output: -187
+
+Input: 18
+Output: -277
+
+
+    Return the output preceded by 'Output:'
+    Input: -10
+    ","To apply the function to the input -10, we follow the function:
+
+-15 * x^1 + -7 * x^0
+
+Substitute x with -10:
+
+-15 * (-10)^1 + -7 * (-10)^0
+
+Now calculate the values:
+
+-15 * (-10) + -7 * 1
+
+150 + -7
+
+143
+
+Therefore, the output is:
+
+Output: 143",143,True,"[-15, -7]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -15 * x^1 + -7 * x^0
+    
+    Examples:
+    Input: 20
+Output: -307
+
+Input: -1
+Output: 8
+
+Input: 20
+Output: -307
+
+Input: 12
+Output: -187
+
+Input: 18
+Output: -277
+
+
+    Return the output preceded by 'Output:'
+    Input: 14
+    ","To apply the function to the input, we substitute the value of x with 14:
+
+Function: -15 * x^1 + -7 * x^0
+
+For x = 14:
+
+-15 * (14)^1 + -7 * (14)^0
+= -15 * 14 + -7 * 1
+= -210 + -7
+= -217
+
+Therefore, the correct output is -217.
+
+Output: -217",-217,True,"[-15, -7]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -6 * x^1 + 12 * x^0
+    
+    Examples:
+    Input: 13
+Output: -66
+
+Input: -20
+Output: 132
+
+Input: 18
+Output: -96
+
+Input: 0
+Output: 12
+
+Input: 11
+Output: -54
+
+
+    Return the output preceded by 'Output:'
+    Input: -19
+    ","To apply the function to the input -19, we substitute x with -19:
+
+Function: -6 * x^1 + 12 * x^0
+
+For x = -19:
+
+-6 * (-19)^1 + 12 * (-19)^0
+= -6 * (-19) + 12 * 1
+= 114 + 12
+= 126
+
+Therefore, the output is:
+
+Output: 126",126,True,"[-6, 12]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -6 * x^1 + 12 * x^0
+    
+    Examples:
+    Input: 13
+Output: -66
+
+Input: -20
+Output: 132
+
+Input: 18
+Output: -96
+
+Input: 0
+Output: 12
+
+Input: 11
+Output: -54
+
+
+    Return the output preceded by 'Output:'
+    Input: -13
+    ","To apply the function to the input -13, we substitute x with -13:
+
+Function: -6 * x^1 + 12 * x^0
+
+For x = -13:
+
+-6 * (-13)^1 + 12 * (-13)^0
+= -6 * (-13) + 12 * 1
+= 78 + 12
+= 90
+
+Therefore, the correct output is 90.
+
+Output: 90",90,True,"[-6, 12]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -6 * x^1 + 12 * x^0
+    
+    Examples:
+    Input: 13
+Output: -66
+
+Input: -20
+Output: 132
+
+Input: 18
+Output: -96
+
+Input: 0
+Output: 12
+
+Input: 11
+Output: -54
+
+
+    Return the output preceded by 'Output:'
+    Input: 3
+    ","To apply the function to the input value of 3, we substitute x with 3:
+
+Function: -6 * x^1 + 12 * x^0
+
+For x = 3:
+
+-6 * (3)^1 + 12 * (3)^0
+= -6 * 3 + 12 * 1
+= -18 + 12
+= -6
+
+Therefore, the correct output is -6.
+
+Output: -6",-6,True,"[-6, 12]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -6 * x^1 + 12 * x^0
+    
+    Examples:
+    Input: 13
+Output: -66
+
+Input: -20
+Output: 132
+
+Input: 18
+Output: -96
+
+Input: 0
+Output: 12
+
+Input: 11
+Output: -54
+
+
+    Return the output preceded by 'Output:'
+    Input: -1
+    ","To apply the function to the input -1, we substitute x with -1:
+
+Function: -6 * x^1 + 12 * x^0
+
+For x = -1:
+
+-6 * (-1)^1 + 12 * (-1)^0
+= -6 * (-1) + 12 * 1
+= 6 + 12
+= 18
+
+Therefore, the output is 18.
+
+Output: 18",18,True,"[-6, 12]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -6 * x^1 + 12 * x^0
+    
+    Examples:
+    Input: 13
+Output: -66
+
+Input: -20
+Output: 132
+
+Input: 18
+Output: -96
+
+Input: 0
+Output: 12
+
+Input: 11
+Output: -54
+
+
+    Return the output preceded by 'Output:'
+    Input: -5
+    ","To apply the function to the input -5, we substitute x with -5:
+
+Function: -6 * x^1 + 12 * x^0
+
+For x = -5:
+
+-6 * (-5)^1 + 12 * (-5)^0
+= -6 * (-5) + 12 * 1
+= 30 + 12
+= 42
+
+Therefore, the output is:
+
+Output: 42",42,True,"[-6, 12]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    18 * x^1 + -19 * x^0
+    
+    Examples:
+    Input: -17
+Output: -325
+
+Input: -5
+Output: -109
+
+Input: 16
+Output: 269
+
+Input: -15
+Output: -289
+
+Input: -15
+Output: -289
+
+
+    Return the output preceded by 'Output:'
+    Input: 11
+    ","To apply the function to the input, we substitute the value of x with 11:
+
+Function: 18 * x^1 + -19 * x^0
+
+For x = 11:
+
+18 * (11)^1 + -19 * (11)^0
+= 18 * 11 + -19 * 1
+= 198 + -19
+= 198 - 19
+= 179
+
+Therefore, the output is:
+
+Output: 179",179,True,"[18, -19]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    18 * x^1 + -19 * x^0
+    
+    Examples:
+    Input: -17
+Output: -325
+
+Input: -5
+Output: -109
+
+Input: 16
+Output: 269
+
+Input: -15
+Output: -289
+
+Input: -15
+Output: -289
+
+
+    Return the output preceded by 'Output:'
+    Input: -16
+    ","To apply the function to the input -16, we substitute x with -16:
+
+18 * (-16)^1 + -19 * (-16)^0
+= 18 * -16 + -19 * 1
+= -288 + -19
+= -307
+
+Therefore, the correct output is:
+
+Output: -307",-307,True,"[18, -19]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    18 * x^1 + -19 * x^0
+    
+    Examples:
+    Input: -17
+Output: -325
+
+Input: -5
+Output: -109
+
+Input: 16
+Output: 269
+
+Input: -15
+Output: -289
+
+Input: -15
+Output: -289
+
+
+    Return the output preceded by 'Output:'
+    Input: 14
+    ","To apply the function to the input value of 14, we substitute x with 14:
+
+18 * 14^1 + -19 * 14^0
+
+This simplifies to:
+
+18 * 14 + -19 * 1
+
+Which further simplifies to:
+
+252 + -19
+
+Finally, we get:
+
+252 - 19 = 233
+
+Therefore, the correct output is:
+
+Output: 233",233,True,"[18, -19]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    18 * x^1 + -19 * x^0
+    
+    Examples:
+    Input: -17
+Output: -325
+
+Input: -5
+Output: -109
+
+Input: 16
+Output: 269
+
+Input: -15
+Output: -289
+
+Input: -15
+Output: -289
+
+
+    Return the output preceded by 'Output:'
+    Input: -12
+    ","To apply the function to the input -12, we follow the function:
+
+18 * x^1 + -19 * x^0
+
+Substitute x with -12:
+
+18 * (-12)^1 + -19 * (-12)^0
+
+Now calculate the values:
+
+18 * (-12) + -19 * 1
+
+-216 + -19
+
+-216 - 19
+
+-235
+
+Therefore, the output is -235.
+
+Output: -235",-235,True,"[18, -19]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    18 * x^1 + -19 * x^0
+    
+    Examples:
+    Input: -17
+Output: -325
+
+Input: -5
+Output: -109
+
+Input: 16
+Output: 269
+
+Input: -15
+Output: -289
+
+Input: -15
+Output: -289
+
+
+    Return the output preceded by 'Output:'
+    Input: -12
+    ","To apply the function to the input -12, we substitute x with -12:
+
+18 * (-12)^1 + (-19) * (-12)^0
+
+Calculating the power of -12 to 1 is just -12, and any number to the power of 0 is 1, so:
+
+18 * (-12) + (-19) * 1
+
+Now we multiply:
+
+-216 + (-19)
+
+And then we add the two numbers:
+
+-216 - 19 = -235
+
+So the output is:
+
+Output: -235",-235,True,"[18, -19]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    15 * x^1 + -8 * x^0
+    
+    Examples:
+    Input: 10
+Output: 142
+
+Input: 15
+Output: 217
+
+Input: -10
+Output: -158
+
+Input: -4
+Output: -68
+
+Input: 13
+Output: 187
+
+
+    Return the output preceded by 'Output:'
+    Input: 18
+    ","To apply the function to the input, we substitute the value of x with 18 and calculate the result.
+
+Function: 15 * x^1 + -8 * x^0
+
+For x = 18:
+
+Output = 15 * 18^1 + (-8) * 18^0
+Output = 15 * 18 + (-8) * 1
+Output = 270 + (-8)
+Output = 262
+
+Therefore, the correct output is:
+
+Output: 262",262,True,"[15, -8]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    15 * x^1 + -8 * x^0
+    
+    Examples:
+    Input: 10
+Output: 142
+
+Input: 15
+Output: 217
+
+Input: -10
+Output: -158
+
+Input: -4
+Output: -68
+
+Input: 13
+Output: 187
+
+
+    Return the output preceded by 'Output:'
+    Input: 7
+    ","To apply the function to the input, we will substitute the value of x with 7 and calculate the result.
+
+Function: 15 * x^1 + -8 * x^0
+
+For x = 7:
+
+15 * 7^1 + -8 * 7^0
+= 15 * 7 + -8 * 1
+= 105 + -8
+= 105 - 8
+= 97
+
+Therefore, the output is 97.
+
+Output: 97",97,True,"[15, -8]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    15 * x^1 + -8 * x^0
+    
+    Examples:
+    Input: 10
+Output: 142
+
+Input: 15
+Output: 217
+
+Input: -10
+Output: -158
+
+Input: -4
+Output: -68
+
+Input: 13
+Output: 187
+
+
+    Return the output preceded by 'Output:'
+    Input: -7
+    ","To apply the function to the input -7, we substitute x with -7:
+
+15 * (-7)^1 + -8 * (-7)^0
+
+This simplifies to:
+
+15 * (-7) + -8 * 1
+
+Which further simplifies to:
+
+-105 - 8
+
+Which equals:
+
+-113
+
+Therefore, the correct output is:
+
+Output: -113",-113,True,"[15, -8]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    15 * x^1 + -8 * x^0
+    
+    Examples:
+    Input: 10
+Output: 142
+
+Input: 15
+Output: 217
+
+Input: -10
+Output: -158
+
+Input: -4
+Output: -68
+
+Input: 13
+Output: 187
+
+
+    Return the output preceded by 'Output:'
+    Input: 14
+    ","To apply the function to the input, we substitute the value of x with 14:
+
+15 * x^1 + -8 * x^0
+= 15 * 14^1 + -8 * 14^0
+= 15 * 14 + -8 * 1
+= 210 + -8
+= 202
+
+Therefore, the correct output is:
+
+Output: 202",202,True,"[15, -8]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    15 * x^1 + -8 * x^0
+    
+    Examples:
+    Input: 10
+Output: 142
+
+Input: 15
+Output: 217
+
+Input: -10
+Output: -158
+
+Input: -4
+Output: -68
+
+Input: 13
+Output: 187
+
+
+    Return the output preceded by 'Output:'
+    Input: -8
+    ","To apply the function to the input -8, we substitute x with -8:
+
+15 * (-8)^1 + -8 * (-8)^0
+= 15 * -8 + -8 * 1
+= -120 + -8
+= -128
+
+Therefore, the correct output is:
+
+Output: -128",-128,True,"[15, -8]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    14 * x^1 + 6 * x^0
+    
+    Examples:
+    Input: -1
+Output: -8
+
+Input: 5
+Output: 76
+
+Input: 3
+Output: 48
+
+Input: 8
+Output: 118
+
+Input: 13
+Output: 188
+
+
+    Return the output preceded by 'Output:'
+    Input: 8
+    ","To apply the function to the input value of 8, we substitute x with 8 in the function:
+
+14 * x^1 + 6 * x^0
+
+14 * 8^1 + 6 * 8^0
+= 14 * 8 + 6 * 1
+= 112 + 6
+= 118
+
+Therefore, the correct output is:
+
+Output: 118",118,True,"[14, 6]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    14 * x^1 + 6 * x^0
+    
+    Examples:
+    Input: -1
+Output: -8
+
+Input: 5
+Output: 76
+
+Input: 3
+Output: 48
+
+Input: 8
+Output: 118
+
+Input: 13
+Output: 188
+
+
+    Return the output preceded by 'Output:'
+    Input: -13
+    ","To apply the function to the input -13, we substitute x with -13:
+
+14 * (-13)^1 + 6 * (-13)^0
+
+Now, calculate the result:
+
+14 * (-13) + 6 * 1
+= -182 + 6
+= -176
+
+Therefore, the correct output is:
+
+Output: -176",-176,True,"[14, 6]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    14 * x^1 + 6 * x^0
+    
+    Examples:
+    Input: -1
+Output: -8
+
+Input: 5
+Output: 76
+
+Input: 3
+Output: 48
+
+Input: 8
+Output: 118
+
+Input: 13
+Output: 188
+
+
+    Return the output preceded by 'Output:'
+    Input: -5
+    ","To apply the function to the input -5, we substitute x with -5:
+
+14 * (-5)^1 + 6 * (-5)^0
+
+Now, calculate the result:
+
+14 * (-5) + 6 * 1
+= -70 + 6
+= -64
+
+Therefore, the correct output is:
+
+Output: -64",-64,True,"[14, 6]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    14 * x^1 + 6 * x^0
+    
+    Examples:
+    Input: -1
+Output: -8
+
+Input: 5
+Output: 76
+
+Input: 3
+Output: 48
+
+Input: 8
+Output: 118
+
+Input: 13
+Output: 188
+
+
+    Return the output preceded by 'Output:'
+    Input: -6
+    ","To apply the function to the input -6, we substitute x with -6:
+
+14 * (-6)^1 + 6 * (-6)^0
+
+Now, calculate the power and multiplication:
+
+14 * (-6) + 6 * 1
+
+-84 + 6
+
+The result is -78.
+
+Therefore, the correct output is:
+
+Output: -78",-78,True,"[14, 6]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    14 * x^1 + 6 * x^0
+    
+    Examples:
+    Input: -1
+Output: -8
+
+Input: 5
+Output: 76
+
+Input: 3
+Output: 48
+
+Input: 8
+Output: 118
+
+Input: 13
+Output: 188
+
+
+    Return the output preceded by 'Output:'
+    Input: -16
+    ","To apply the function to the input -16, we substitute x with -16:
+
+14 * (-16)^1 + 6 * (-16)^0
+
+Now, calculate the result:
+
+14 * (-16) + 6 * 1
+= -224 + 6
+= -218
+
+Therefore, the output is:
+
+Output: -218",-218,True,"[14, 6]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -6 * x^1 + 8 * x^0
+    
+    Examples:
+    Input: 1
+Output: 2
+
+Input: -19
+Output: 122
+
+Input: 17
+Output: -94
+
+Input: 15
+Output: -82
+
+Input: -6
+Output: 44
+
+
+    Return the output preceded by 'Output:'
+    Input: 17
+    ","To apply the function to the input value of 17, we substitute x with 17:
+
+Function: -6 * x^1 + 8 * x^0
+
+For x = 17:
+
+-6 * (17)^1 + 8 * (17)^0
+= -6 * 17 + 8 * 1
+= -102 + 8
+= -94
+
+Therefore, the correct output is:
+
+Output: -94",-94,True,"[-6, 8]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -6 * x^1 + 8 * x^0
+    
+    Examples:
+    Input: 1
+Output: 2
+
+Input: -19
+Output: 122
+
+Input: 17
+Output: -94
+
+Input: 15
+Output: -82
+
+Input: -6
+Output: 44
+
+
+    Return the output preceded by 'Output:'
+    Input: -6
+    ","To apply the function to the input -6, we substitute x with -6:
+
+Function: -6 * x^1 + 8 * x^0
+
+For x = -6:
+
+-6 * (-6)^1 + 8 * (-6)^0
+= -6 * -6 + 8 * 1
+= 36 + 8
+= 44
+
+Therefore, the output is 44.
+
+Output: 44",44,True,"[-6, 8]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -6 * x^1 + 8 * x^0
+    
+    Examples:
+    Input: 1
+Output: 2
+
+Input: -19
+Output: 122
+
+Input: 17
+Output: -94
+
+Input: 15
+Output: -82
+
+Input: -6
+Output: 44
+
+
+    Return the output preceded by 'Output:'
+    Input: -20
+    ","To apply the function to the input -20, we substitute x with -20:
+
+Function: -6 * x^1 + 8 * x^0
+
+For x = -20:
+
+-6 * (-20)^1 + 8 * (-20)^0
+= -6 * (-20) + 8 * 1
+= 120 + 8
+= 128
+
+Therefore, the output is:
+
+Output: 128",128,True,"[-6, 8]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -6 * x^1 + 8 * x^0
+    
+    Examples:
+    Input: 1
+Output: 2
+
+Input: -19
+Output: 122
+
+Input: 17
+Output: -94
+
+Input: 15
+Output: -82
+
+Input: -6
+Output: 44
+
+
+    Return the output preceded by 'Output:'
+    Input: -16
+    ","To apply the function to the input -16, we substitute x with -16:
+
+Function: -6 * x^1 + 8 * x^0
+
+For x = -16:
+
+-6 * (-16)^1 + 8 * (-16)^0
+= -6 * -16 + 8 * 1
+= 96 + 8
+= 104
+
+Therefore, the correct output is:
+
+Output: 104",104,True,"[-6, 8]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -6 * x^1 + 8 * x^0
+    
+    Examples:
+    Input: 1
+Output: 2
+
+Input: -19
+Output: 122
+
+Input: 17
+Output: -94
+
+Input: 15
+Output: -82
+
+Input: -6
+Output: 44
+
+
+    Return the output preceded by 'Output:'
+    Input: 20
+    ","To apply the function to the input value of 20, we substitute x with 20 in the function:
+
+Function: -6 * x^1 + 8 * x^0
+
+For x = 20:
+
+-6 * (20)^1 + 8 * (20)^0
+= -6 * 20 + 8 * 1
+= -120 + 8
+= -112
+
+Therefore, the output is -112.
+
+Output: -112",-112,True,"[-6, 8]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    17 * x^1 + -3 * x^0
+    
+    Examples:
+    Input: -17
+Output: -292
+
+Input: -6
+Output: -105
+
+Input: -16
+Output: -275
+
+Input: -18
+Output: -309
+
+Input: 1
+Output: 14
+
+
+    Return the output preceded by 'Output:'
+    Input: -16
+    ","To apply the function to the input -16, we substitute x with -16:
+
+17 * (-16)^1 + -3 * (-16)^0
+
+Calculating the result:
+
+17 * (-16) + -3 * 1
+= -272 + -3
+= -275
+
+Therefore, the correct output is:
+
+Output: -275",-275,True,"[17, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    17 * x^1 + -3 * x^0
+    
+    Examples:
+    Input: -17
+Output: -292
+
+Input: -6
+Output: -105
+
+Input: -16
+Output: -275
+
+Input: -18
+Output: -309
+
+Input: 1
+Output: 14
+
+
+    Return the output preceded by 'Output:'
+    Input: 12
+    ","To apply the function to the input, we substitute the value of x with 12:
+
+Function: 17 * x^1 + -3 * x^0
+
+For x = 12:
+
+17 * 12^1 + -3 * 12^0
+= 17 * 12 + -3 * 1
+= 204 + -3
+= 201
+
+Therefore, the correct output is:
+
+Output: 201",201,True,"[17, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    17 * x^1 + -3 * x^0
+    
+    Examples:
+    Input: -17
+Output: -292
+
+Input: -6
+Output: -105
+
+Input: -16
+Output: -275
+
+Input: -18
+Output: -309
+
+Input: 1
+Output: 14
+
+
+    Return the output preceded by 'Output:'
+    Input: -5
+    ","To apply the function to the input -5, we substitute x with -5:
+
+17 * (-5)^1 + -3 * (-5)^0
+
+This simplifies to:
+
+17 * (-5) + -3 * 1
+
+Which further simplifies to:
+
+-85 - 3
+
+Which equals:
+
+-88
+
+Therefore, the correct output is:
+
+Output: -88",-88,True,"[17, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    17 * x^1 + -3 * x^0
+    
+    Examples:
+    Input: -17
+Output: -292
+
+Input: -6
+Output: -105
+
+Input: -16
+Output: -275
+
+Input: -18
+Output: -309
+
+Input: 1
+Output: 14
+
+
+    Return the output preceded by 'Output:'
+    Input: -3
+    ","To apply the function to the input -3, we substitute x with -3:
+
+17 * (-3)^1 + -3 * (-3)^0
+= 17 * (-3) + -3 * 1
+= -51 + -3
+= -54
+
+Therefore, the correct output is -54.
+
+Output: -54",-54,True,"[17, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    17 * x^1 + -3 * x^0
+    
+    Examples:
+    Input: -17
+Output: -292
+
+Input: -6
+Output: -105
+
+Input: -16
+Output: -275
+
+Input: -18
+Output: -309
+
+Input: 1
+Output: 14
+
+
+    Return the output preceded by 'Output:'
+    Input: 11
+    ","To apply the function to the input, we substitute the value of x with 11:
+
+Function: 17 * x^1 + -3 * x^0
+
+For x = 11:
+
+17 * (11)^1 + -3 * (11)^0
+= 17 * 11 + -3 * 1
+= 187 + -3
+= 184
+
+Therefore, the correct output is:
+
+Output: 184",184,True,"[17, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -20 * x^1 + -10 * x^0
+    
+    Examples:
+    Input: -7
+Output: 130
+
+Input: 14
+Output: -290
+
+Input: -12
+Output: 230
+
+Input: 16
+Output: -330
+
+Input: 16
+Output: -330
+
+
+    Return the output preceded by 'Output:'
+    Input: 10
+    ","To apply the function to the input, we substitute the value of x with 10:
+
+Function: -20 * x^1 + -10 * x^0
+
+Input: 10
+
+Output calculation:
+-20 * (10)^1 + -10 * (10)^0
+-20 * 10 + -10 * 1
+-200 + -10
+-210
+
+Therefore, the correct output is:
+
+Output: -210",-210,True,"[-20, -10]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -20 * x^1 + -10 * x^0
+    
+    Examples:
+    Input: -7
+Output: 130
+
+Input: 14
+Output: -290
+
+Input: -12
+Output: 230
+
+Input: 16
+Output: -330
+
+Input: 16
+Output: -330
+
+
+    Return the output preceded by 'Output:'
+    Input: -5
+    ","To apply the function to the input -5, we substitute x with -5:
+
+Function: -20 * x^1 + -10 * x^0
+
+-20 * (-5)^1 + -10 * (-5)^0
+-20 * -5 + -10 * 1
+100 - 10
+90
+
+Therefore, the correct output is 90.
+
+Output: 90",90,True,"[-20, -10]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -20 * x^1 + -10 * x^0
+    
+    Examples:
+    Input: -7
+Output: 130
+
+Input: 14
+Output: -290
+
+Input: -12
+Output: 230
+
+Input: 16
+Output: -330
+
+Input: 16
+Output: -330
+
+
+    Return the output preceded by 'Output:'
+    Input: 10
+    ","To apply the function to the input value of 10, we substitute x with 10 in the function:
+
+Function: -20 * x^1 + -10 * x^0
+
+For x = 10:
+
+-20 * (10)^1 + -10 * (10)^0
+= -20 * 10 + -10 * 1
+= -200 + -10
+= -210
+
+Therefore, the correct output is -210.
+
+Output: -210",-210,True,"[-20, -10]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -20 * x^1 + -10 * x^0
+    
+    Examples:
+    Input: -7
+Output: 130
+
+Input: 14
+Output: -290
+
+Input: -12
+Output: 230
+
+Input: 16
+Output: -330
+
+Input: 16
+Output: -330
+
+
+    Return the output preceded by 'Output:'
+    Input: 6
+    ","To apply the function to the input, we substitute the value of x with 6:
+
+Function: -20 * x^1 + -10 * x^0
+
+For x = 6:
+
+-20 * (6)^1 + -10 * (6)^0
+= -20 * 6 + -10 * 1
+= -120 + -10
+= -130
+
+Therefore, the output is -130.
+
+Output: -130",-130,True,"[-20, -10]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -20 * x^1 + -10 * x^0
+    
+    Examples:
+    Input: -7
+Output: 130
+
+Input: 14
+Output: -290
+
+Input: -12
+Output: 230
+
+Input: 16
+Output: -330
+
+Input: 16
+Output: -330
+
+
+    Return the output preceded by 'Output:'
+    Input: -8
+    ","To apply the function to the input -8, we substitute x with -8:
+
+-20 * (-8)^1 + -10 * (-8)^0
+
+Now we calculate the power and multiplication:
+
+-20 * (-8) + -10 * 1
+
+160 - 10
+
+The result is 150.
+
+Therefore, the correct output is:
+
+Output: 150",150,True,"[-20, -10]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    7 * x^1 + 1 * x^0
+    
+    Examples:
+    Input: -14
+Output: -97
+
+Input: -14
+Output: -97
+
+Input: 7
+Output: 50
+
+Input: 2
+Output: 15
+
+Input: 7
+Output: 50
+
+
+    Return the output preceded by 'Output:'
+    Input: 6
+    ","To apply the function to the input, we will substitute the value of x with 6:
+
+Function: 7 * x^1 + 1 * x^0
+
+For x = 6:
+
+7 * (6)^1 + 1 * (6)^0
+= 7 * 6 + 1 * 1
+= 42 + 1
+= 43
+
+Therefore, the correct output is 43.
+
+Output: 43",43,True,"[7, 1]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    7 * x^1 + 1 * x^0
+    
+    Examples:
+    Input: -14
+Output: -97
+
+Input: -14
+Output: -97
+
+Input: 7
+Output: 50
+
+Input: 2
+Output: 15
+
+Input: 7
+Output: 50
+
+
+    Return the output preceded by 'Output:'
+    Input: 9
+    ","To apply the function to the input, we substitute the value of x with 9:
+
+Function: 7 * x^1 + 1 * x^0
+
+For x = 9:
+
+7 * 9^1 + 1 * 9^0
+= 7 * 9 + 1 * 1
+= 63 + 1
+= 64
+
+Therefore, the correct output is 64.
+
+Output: 64",64,True,"[7, 1]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    7 * x^1 + 1 * x^0
+    
+    Examples:
+    Input: -14
+Output: -97
+
+Input: -14
+Output: -97
+
+Input: 7
+Output: 50
+
+Input: 2
+Output: 15
+
+Input: 7
+Output: 50
+
+
+    Return the output preceded by 'Output:'
+    Input: -17
+    ","To apply the function to the input -17, we calculate as follows:
+
+7 * (-17)^1 + 1 * (-17)^0
+
+This simplifies to:
+
+7 * (-17) + 1 * 1
+
+Which further simplifies to:
+
+-119 + 1
+
+Therefore, the output is:
+
+Output: -118",-118,True,"[7, 1]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    7 * x^1 + 1 * x^0
+    
+    Examples:
+    Input: -14
+Output: -97
+
+Input: -14
+Output: -97
+
+Input: 7
+Output: 50
+
+Input: 2
+Output: 15
+
+Input: 7
+Output: 50
+
+
+    Return the output preceded by 'Output:'
+    Input: -14
+    ",Output: -97,-97,True,"[7, 1]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    7 * x^1 + 1 * x^0
+    
+    Examples:
+    Input: -14
+Output: -97
+
+Input: -14
+Output: -97
+
+Input: 7
+Output: 50
+
+Input: 2
+Output: 15
+
+Input: 7
+Output: 50
+
+
+    Return the output preceded by 'Output:'
+    Input: -17
+    ","To apply the function to the input -17, we calculate as follows:
+
+7 * (-17)^1 + 1 * (-17)^0
+
+This simplifies to:
+
+7 * (-17) + 1 * 1
+
+Which further simplifies to:
+
+-119 + 1
+
+Therefore, the output is:
+
+Output: -118",-118,True,"[7, 1]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -3 * x^1 + -11 * x^0
+    
+    Examples:
+    Input: 5
+Output: -26
+
+Input: 1
+Output: -14
+
+Input: -14
+Output: 31
+
+Input: -5
+Output: 4
+
+Input: -8
+Output: 13
+
+
+    Return the output preceded by 'Output:'
+    Input: -8
+    ","To apply the function -3 * x^1 + -11 * x^0 to the input -8, we follow these steps:
+
+1. Replace x with -8 in the function.
+2. Calculate the power of -8, which is just -8 since it's to the power of 1.
+3. Multiply -3 by -8.
+4. Calculate -11 times -8 to the power of 0, which is -11 times 1 (since any number to the power of 0 is 1).
+5. Add the results of step 3 and step 4.
+
+Let's do the calculations:
+
+-3 * (-8)^1 + -11 * (-8)^0
+= -3 * -8 + -11 * 1
+= 24 - 11
+= 13
+
+Therefore, the output is 13.
+
+Output: 13",13,True,"[-3, -11]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -3 * x^1 + -11 * x^0
+    
+    Examples:
+    Input: 5
+Output: -26
+
+Input: 1
+Output: -14
+
+Input: -14
+Output: 31
+
+Input: -5
+Output: 4
+
+Input: -8
+Output: 13
+
+
+    Return the output preceded by 'Output:'
+    Input: 14
+    ","To apply the function to the input 14, we follow the function:
+
+-3 * x^1 + -11 * x^0
+
+Plugging in x = 14:
+
+-3 * (14)^1 + -11 * (14)^0
+-3 * 14 + -11 * 1
+-42 - 11
+-53
+
+Therefore, the output is -53.
+
+Output: -53",-53,True,"[-3, -11]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -3 * x^1 + -11 * x^0
+    
+    Examples:
+    Input: 5
+Output: -26
+
+Input: 1
+Output: -14
+
+Input: -14
+Output: 31
+
+Input: -5
+Output: 4
+
+Input: -8
+Output: 13
+
+
+    Return the output preceded by 'Output:'
+    Input: 8
+    ","To apply the function to the input, we substitute the value of x with 8:
+
+Function: -3 * x^1 + -11 * x^0
+
+For x = 8:
+
+-3 * 8^1 + -11 * 8^0
+= -3 * 8 + -11 * 1
+= -24 + -11
+= -24 - 11
+= -35
+
+Therefore, the output is:
+
+Output: -35",-35,True,"[-3, -11]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -3 * x^1 + -11 * x^0
+    
+    Examples:
+    Input: 5
+Output: -26
+
+Input: 1
+Output: -14
+
+Input: -14
+Output: 31
+
+Input: -5
+Output: 4
+
+Input: -8
+Output: 13
+
+
+    Return the output preceded by 'Output:'
+    Input: -12
+    ","To apply the function to the input -12, we follow the function:
+
+-3 * x^1 + -11 * x^0
+
+Plugging in x = -12:
+
+-3 * (-12)^1 + -11 * (-12)^0
+-3 * -12 + -11 * 1
+36 - 11
+25
+
+Therefore, the output is:
+
+Output: 25",25,True,"[-3, -11]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -3 * x^1 + -11 * x^0
+    
+    Examples:
+    Input: 5
+Output: -26
+
+Input: 1
+Output: -14
+
+Input: -14
+Output: 31
+
+Input: -5
+Output: 4
+
+Input: -8
+Output: 13
+
+
+    Return the output preceded by 'Output:'
+    Input: 7
+    ","To apply the function to the input 7, we follow the function:
+
+-3 * x^1 + -11 * x^0
+
+Plugging in x = 7:
+
+-3 * 7^1 + -11 * 7^0
+-3 * 7 + -11 * 1
+-21 - 11
+-32
+
+Therefore, the output is -32.
+
+Output: -32",-32,True,"[-3, -11]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -7 * x^1 + 1 * x^0
+    
+    Examples:
+    Input: -9
+Output: 64
+
+Input: -3
+Output: 22
+
+Input: 9
+Output: -62
+
+Input: -5
+Output: 36
+
+Input: -16
+Output: 113
+
+
+    Return the output preceded by 'Output:'
+    Input: 8
+    ","To apply the function to the input, we will substitute the value of x with 8 and then perform the calculation.
+
+Function: -7 * x^1 + 1 * x^0
+
+For x = 8:
+
+Output = -7 * (8)^1 + 1 * (8)^0
+Output = -7 * 8 + 1 * 1
+Output = -56 + 1
+Output = -55
+
+Therefore, the correct output is:
+
+Output: -55",-55,True,"[-7, 1]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -7 * x^1 + 1 * x^0
+    
+    Examples:
+    Input: -9
+Output: 64
+
+Input: -3
+Output: 22
+
+Input: 9
+Output: -62
+
+Input: -5
+Output: 36
+
+Input: -16
+Output: 113
+
+
+    Return the output preceded by 'Output:'
+    Input: 15
+    ","To apply the function -7 * x^1 + 1 * x^0 to the input 15, we follow these steps:
+
+-7 * (15)^1 + 1 * (15)^0
+
+Now, calculate the power of 15:
+
+-7 * 15 + 1 * 1
+
+Now, multiply:
+
+-105 + 1
+
+Now, add:
+
+-104
+
+So the output is -104. Therefore, the correct output is:
+
+Output: -104",-104,True,"[-7, 1]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -7 * x^1 + 1 * x^0
+    
+    Examples:
+    Input: -9
+Output: 64
+
+Input: -3
+Output: 22
+
+Input: 9
+Output: -62
+
+Input: -5
+Output: 36
+
+Input: -16
+Output: 113
+
+
+    Return the output preceded by 'Output:'
+    Input: -14
+    ","To apply the function to the input -14, we substitute x with -14:
+
+Function: -7 * x^1 + 1 * x^0
+
+For x = -14:
+
+-7 * (-14)^1 + 1 * (-14)^0
+= -7 * (-14) + 1 * 1
+= 98 + 1
+= 99
+
+Therefore, the output is 99.
+
+Output: 99",99,True,"[-7, 1]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -7 * x^1 + 1 * x^0
+    
+    Examples:
+    Input: -9
+Output: 64
+
+Input: -3
+Output: 22
+
+Input: 9
+Output: -62
+
+Input: -5
+Output: 36
+
+Input: -16
+Output: 113
+
+
+    Return the output preceded by 'Output:'
+    Input: -17
+    ","To apply the function -7 * x^1 + 1 * x^0 to the input -17, we follow these steps:
+
+1. Replace x with -17 in the function.
+2. Calculate the result.
+
+Let's do the calculation:
+
+-7 * (-17)^1 + 1 * (-17)^0
+= -7 * (-17) + 1 * 1
+= 119 + 1
+= 120
+
+Therefore, the output is:
+
+Output: 120",120,True,"[-7, 1]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -7 * x^1 + 1 * x^0
+    
+    Examples:
+    Input: -9
+Output: 64
+
+Input: -3
+Output: 22
+
+Input: 9
+Output: -62
+
+Input: -5
+Output: 36
+
+Input: -16
+Output: 113
+
+
+    Return the output preceded by 'Output:'
+    Input: 14
+    ","To apply the function to the input, we will substitute the value of x with 14 and follow the mathematical operations as defined by the function.
+
+Function: -7 * x^1 + 1 * x^0
+
+For x = 14:
+
+-7 * (14)^1 + 1 * (14)^0
+= -7 * 14 + 1 * 1
+= -98 + 1
+= -97
+
+Therefore, the output is -97.
+
+Output: -97",-97,True,"[-7, 1]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -14 * x^1 + -15 * x^0
+    
+    Examples:
+    Input: -20
+Output: 265
+
+Input: -15
+Output: 195
+
+Input: -5
+Output: 55
+
+Input: -10
+Output: 125
+
+Input: 6
+Output: -99
+
+
+    Return the output preceded by 'Output:'
+    Input: 11
+    ","To apply the function to the input, we will substitute the value of x with 11:
+
+Function: -14 * x^1 + -15 * x^0
+
+For x = 11:
+
+-14 * (11)^1 + -15 * (11)^0
+= -14 * 11 + -15 * 1
+= -154 + -15
+= -169
+
+Therefore, the output is -169.
+
+Output: -169",-169,True,"[-14, -15]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -14 * x^1 + -15 * x^0
+    
+    Examples:
+    Input: -20
+Output: 265
+
+Input: -15
+Output: 195
+
+Input: -5
+Output: 55
+
+Input: -10
+Output: 125
+
+Input: 6
+Output: -99
+
+
+    Return the output preceded by 'Output:'
+    Input: 10
+    ","To apply the function to the input value of 10, we substitute x with 10:
+
+Function: -14 * x^1 + -15 * x^0
+
+For x = 10:
+
+-14 * (10)^1 + -15 * (10)^0
+= -14 * 10 + -15 * 1
+= -140 + -15
+= -155
+
+Therefore, the output is -155.
+
+Output: -155",-155,True,"[-14, -15]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -14 * x^1 + -15 * x^0
+    
+    Examples:
+    Input: -20
+Output: 265
+
+Input: -15
+Output: 195
+
+Input: -5
+Output: 55
+
+Input: -10
+Output: 125
+
+Input: 6
+Output: -99
+
+
+    Return the output preceded by 'Output:'
+    Input: -7
+    ","To apply the function to the input -7, we plug in the value of x as -7:
+
+Function: -14 * x^1 + -15 * x^0
+
+For x = -7:
+
+Output = -14 * (-7)^1 + -15 * (-7)^0
+Output = -14 * -7 + -15 * 1
+Output = 98 - 15
+Output = 83
+
+Therefore, the correct output is:
+
+Output: 83",83,True,"[-14, -15]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -14 * x^1 + -15 * x^0
+    
+    Examples:
+    Input: -20
+Output: 265
+
+Input: -15
+Output: 195
+
+Input: -5
+Output: 55
+
+Input: -10
+Output: 125
+
+Input: 6
+Output: -99
+
+
+    Return the output preceded by 'Output:'
+    Input: 5
+    ","To apply the function to the input, we substitute the value of x with 5:
+
+Function: -14 * x^1 + -15 * x^0
+
+For x = 5:
+
+-14 * (5)^1 + -15 * (5)^0
+= -14 * 5 + -15 * 1
+= -70 + -15
+= -85
+
+Therefore, the output is -85.
+
+Output: -85",-85,True,"[-14, -15]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -14 * x^1 + -15 * x^0
+    
+    Examples:
+    Input: -20
+Output: 265
+
+Input: -15
+Output: 195
+
+Input: -5
+Output: 55
+
+Input: -10
+Output: 125
+
+Input: 6
+Output: -99
+
+
+    Return the output preceded by 'Output:'
+    Input: -17
+    ","To apply the function to the input -17, we substitute x with -17:
+
+Function: -14 * x^1 + -15 * x^0
+
+For x = -17:
+
+-14 * (-17)^1 + -15 * (-17)^0
+= -14 * -17 + -15 * 1
+= 238 + -15
+= 223
+
+Therefore, the correct output is 223.
+
+Output: 223",223,True,"[-14, -15]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    4 * x^1 + -14 * x^0
+    
+    Examples:
+    Input: -10
+Output: -54
+
+Input: 4
+Output: 2
+
+Input: -20
+Output: -94
+
+Input: 4
+Output: 2
+
+Input: -4
+Output: -30
+
+
+    Return the output preceded by 'Output:'
+    Input: 9
+    ","To apply the function to the input, we substitute the value of x with 9:
+
+4 * x^1 + -14 * x^0
+= 4 * 9^1 + -14 * 9^0
+= 4 * 9 + -14 * 1
+= 36 + -14
+= 22
+
+Therefore, the output is:
+
+Output: 22",22,True,"[4, -14]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    4 * x^1 + -14 * x^0
+    
+    Examples:
+    Input: -10
+Output: -54
+
+Input: 4
+Output: 2
+
+Input: -20
+Output: -94
+
+Input: 4
+Output: 2
+
+Input: -4
+Output: -30
+
+
+    Return the output preceded by 'Output:'
+    Input: -2
+    ","To apply the function to the input -2, we follow the function's formula:
+
+4 * x^1 + -14 * x^0
+
+First, we replace x with -2:
+
+4 * (-2)^1 + -14 * (-2)^0
+
+Now we calculate each term:
+
+4 * (-2)^1 = 4 * -2 = -8
+-14 * (-2)^0 = -14 * 1 = -14
+
+Adding these together:
+
+-8 + -14 = -22
+
+So the output is:
+
+Output: -22",-22,True,"[4, -14]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    4 * x^1 + -14 * x^0
+    
+    Examples:
+    Input: -10
+Output: -54
+
+Input: 4
+Output: 2
+
+Input: -20
+Output: -94
+
+Input: 4
+Output: 2
+
+Input: -4
+Output: -30
+
+
+    Return the output preceded by 'Output:'
+    Input: 7
+    ","To apply the function to the input, we substitute the value of x with 7:
+
+4 * (7)^1 + -14 * (7)^0
+
+Now, we calculate the power and multiplication:
+
+4 * 7 + -14 * 1
+
+28 + -14
+
+Now, we add the two numbers:
+
+28 - 14 = 14
+
+Therefore, the correct output is:
+
+Output: 14",14,True,"[4, -14]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    4 * x^1 + -14 * x^0
+    
+    Examples:
+    Input: -10
+Output: -54
+
+Input: 4
+Output: 2
+
+Input: -20
+Output: -94
+
+Input: 4
+Output: 2
+
+Input: -4
+Output: -30
+
+
+    Return the output preceded by 'Output:'
+    Input: 15
+    ","To apply the function to the input 15, we follow the function's formula:
+
+4 * x^1 + -14 * x^0
+
+First, we replace x with 15:
+
+4 * (15)^1 + -14 * (15)^0
+
+Now we calculate the power of 1 and 0:
+
+4 * 15 + -14 * 1
+
+Now we multiply:
+
+60 + -14
+
+Finally, we add the two numbers:
+
+60 - 14 = 46
+
+So the output is:
+
+Output: 46",46,True,"[4, -14]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    4 * x^1 + -14 * x^0
+    
+    Examples:
+    Input: -10
+Output: -54
+
+Input: 4
+Output: 2
+
+Input: -20
+Output: -94
+
+Input: 4
+Output: 2
+
+Input: -4
+Output: -30
+
+
+    Return the output preceded by 'Output:'
+    Input: 11
+    ","To apply the function to the input, we substitute the value of x with 11:
+
+Function: 4 * x^1 + -14 * x^0
+
+For x = 11:
+
+4 * (11)^1 + -14 * (11)^0
+= 4 * 11 + -14 * 1
+= 44 - 14
+= 30
+
+Therefore, the correct output is:
+
+Output: 30",30,True,"[4, -14]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    2 * x^1 + 2 * x^0
+    
+    Examples:
+    Input: -11
+Output: -20
+
+Input: -8
+Output: -14
+
+Input: -2
+Output: -2
+
+Input: -7
+Output: -12
+
+Input: -17
+Output: -32
+
+
+    Return the output preceded by 'Output:'
+    Input: 17
+    ","To apply the function to the input, we will substitute the value of x with 17 and calculate the result.
+
+Function: 2 * x^1 + 2 * x^0
+
+For x = 17:
+
+2 * 17^1 + 2 * 17^0
+= 2 * 17 + 2 * 1
+= 34 + 2
+= 36
+
+Therefore, the output is:
+
+Output: 36",36,True,"[2, 2]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    2 * x^1 + 2 * x^0
+    
+    Examples:
+    Input: -11
+Output: -20
+
+Input: -8
+Output: -14
+
+Input: -2
+Output: -2
+
+Input: -7
+Output: -12
+
+Input: -17
+Output: -32
+
+
+    Return the output preceded by 'Output:'
+    Input: 14
+    ","To apply the function to the input, we substitute the value of x with 14:
+
+2 * x^1 + 2 * x^0
+= 2 * 14^1 + 2 * 14^0
+= 2 * 14 + 2 * 1
+= 28 + 2
+= 30
+
+Therefore, the correct output is:
+
+Output: 30",30,True,"[2, 2]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    2 * x^1 + 2 * x^0
+    
+    Examples:
+    Input: -11
+Output: -20
+
+Input: -8
+Output: -14
+
+Input: -2
+Output: -2
+
+Input: -7
+Output: -12
+
+Input: -17
+Output: -32
+
+
+    Return the output preceded by 'Output:'
+    Input: -17
+    ","To apply the function to the input -17, we follow the function:
+
+2 * x^1 + 2 * x^0
+
+Plugging in x = -17:
+
+2 * (-17)^1 + 2 * (-17)^0
+= 2 * (-17) + 2 * 1
+= -34 + 2
+= -32
+
+Therefore, the correct output is:
+
+Output: -32",-32,True,"[2, 2]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    2 * x^1 + 2 * x^0
+    
+    Examples:
+    Input: -11
+Output: -20
+
+Input: -8
+Output: -14
+
+Input: -2
+Output: -2
+
+Input: -7
+Output: -12
+
+Input: -17
+Output: -32
+
+
+    Return the output preceded by 'Output:'
+    Input: 0
+    ","To apply the function to the input example, we will substitute the value of x with 0.
+
+Function:
+2 * x^1 + 2 * x^0
+
+Input: 0
+
+Output:
+2 * (0)^1 + 2 * (0)^0
+= 2 * 0 + 2 * 1
+= 0 + 2
+= 2
+
+Therefore, the correct output is:
+
+Output: 2",2,True,"[2, 2]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    2 * x^1 + 2 * x^0
+    
+    Examples:
+    Input: -11
+Output: -20
+
+Input: -8
+Output: -14
+
+Input: -2
+Output: -2
+
+Input: -7
+Output: -12
+
+Input: -17
+Output: -32
+
+
+    Return the output preceded by 'Output:'
+    Input: -17
+    ","To apply the function to the input -17, we follow the function:
+
+2 * x^1 + 2 * x^0
+
+First, we substitute x with -17:
+
+2 * (-17)^1 + 2 * (-17)^0
+
+Now we calculate each term:
+
+(-17)^1 is -17 (any number to the power of 1 is the number itself)
+(-17)^0 is 1 (any number to the power of 0 is 1)
+
+So we have:
+
+2 * (-17) + 2 * 1
+-34 + 2
+-32
+
+Therefore, the output is:
+
+Output: -32",-32,True,"[2, 2]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    18 * x^1 + -4 * x^0
+    
+    Examples:
+    Input: -17
+Output: -310
+
+Input: 17
+Output: 302
+
+Input: 10
+Output: 176
+
+Input: 12
+Output: 212
+
+Input: 13
+Output: 230
+
+
+    Return the output preceded by 'Output:'
+    Input: -10
+    ","To apply the function to the input -10, we substitute x with -10:
+
+18 * (-10)^1 + -4 * (-10)^0
+
+This simplifies to:
+
+18 * (-10) + -4 * 1
+
+Which is:
+
+-180 + -4
+
+Which equals:
+
+-184
+
+Therefore, the correct output is:
+
+Output: -184",-184,True,"[18, -4]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    18 * x^1 + -4 * x^0
+    
+    Examples:
+    Input: -17
+Output: -310
+
+Input: 17
+Output: 302
+
+Input: 10
+Output: 176
+
+Input: 12
+Output: 212
+
+Input: 13
+Output: 230
+
+
+    Return the output preceded by 'Output:'
+    Input: -17
+    ","To apply the function to the input -17, we substitute x with -17:
+
+18 * (-17)^1 + -4 * (-17)^0
+
+Calculating the result:
+
+18 * (-17) + -4 * 1
+= -306 + -4
+= -310
+
+Therefore, the correct output is:
+
+Output: -310",-310,True,"[18, -4]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    18 * x^1 + -4 * x^0
+    
+    Examples:
+    Input: -17
+Output: -310
+
+Input: 17
+Output: 302
+
+Input: 10
+Output: 176
+
+Input: 12
+Output: 212
+
+Input: 13
+Output: 230
+
+
+    Return the output preceded by 'Output:'
+    Input: 12
+    ","To apply the function to the input value of 12, we substitute x with 12:
+
+18 * 12^1 + -4 * 12^0
+
+Now, calculate the result:
+
+18 * 12 + -4 * 1
+= 216 + -4
+= 212
+
+Therefore, the correct output is:
+
+Output: 212",212,True,"[18, -4]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    18 * x^1 + -4 * x^0
+    
+    Examples:
+    Input: -17
+Output: -310
+
+Input: 17
+Output: 302
+
+Input: 10
+Output: 176
+
+Input: 12
+Output: 212
+
+Input: 13
+Output: 230
+
+
+    Return the output preceded by 'Output:'
+    Input: -15
+    ","To apply the function to the input -15, we substitute x with -15:
+
+18 * (-15)^1 + -4 * (-15)^0
+
+Calculating the power terms first:
+
+(-15)^1 = -15
+(-15)^0 = 1 (any number to the power of 0 is 1)
+
+Now, we multiply:
+
+18 * (-15) + -4 * 1
+
+This simplifies to:
+
+-270 + -4
+
+Adding these together gives us:
+
+-274
+
+Therefore, the correct output is:
+
+Output: -274",-274,True,"[18, -4]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    18 * x^1 + -4 * x^0
+    
+    Examples:
+    Input: -17
+Output: -310
+
+Input: 17
+Output: 302
+
+Input: 10
+Output: 176
+
+Input: 12
+Output: 212
+
+Input: 13
+Output: 230
+
+
+    Return the output preceded by 'Output:'
+    Input: -9
+    ","To apply the function to the input -9, we substitute x with -9:
+
+Function: 18 * x^1 + -4 * x^0
+
+For x = -9:
+
+18 * (-9)^1 + -4 * (-9)^0
+= 18 * -9 + -4 * 1
+= -162 + -4
+= -166
+
+Therefore, the correct output is -166.
+
+Output: -166",-166,True,"[18, -4]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -18 * x^1 + 9 * x^0
+    
+    Examples:
+    Input: -16
+Output: 297
+
+Input: 18
+Output: -315
+
+Input: -16
+Output: 297
+
+Input: -5
+Output: 99
+
+Input: 5
+Output: -81
+
+
+    Return the output preceded by 'Output:'
+    Input: -13
+    ","To apply the function to the input -13, we follow the function:
+
+-18 * x^1 + 9 * x^0
+
+First, we replace x with -13:
+
+-18 * (-13)^1 + 9 * (-13)^0
+
+Now we calculate each term:
+
+-18 * (-13) = 234 (since multiplying a negative by a negative gives a positive)
+9 * 1 = 9 (since any number to the power of 0 is 1)
+
+Now we add the two results together:
+
+234 + 9 = 243
+
+So the output for the input -13 is 243.
+
+Output: 243",243,True,"[-18, 9]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -18 * x^1 + 9 * x^0
+    
+    Examples:
+    Input: -16
+Output: 297
+
+Input: 18
+Output: -315
+
+Input: -16
+Output: 297
+
+Input: -5
+Output: 99
+
+Input: 5
+Output: -81
+
+
+    Return the output preceded by 'Output:'
+    Input: 16
+    ","To apply the function to the input, we substitute the value of x with 16:
+
+Function: -18 * x^1 + 9 * x^0
+
+For x = 16:
+
+-18 * (16)^1 + 9 * (16)^0
+= -18 * 16 + 9 * 1
+= -288 + 9
+= -279
+
+Therefore, the output is:
+
+Output: -279",-279,True,"[-18, 9]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -18 * x^1 + 9 * x^0
+    
+    Examples:
+    Input: -16
+Output: 297
+
+Input: 18
+Output: -315
+
+Input: -16
+Output: 297
+
+Input: -5
+Output: 99
+
+Input: 5
+Output: -81
+
+
+    Return the output preceded by 'Output:'
+    Input: -5
+    ","To apply the function to the input -5, we substitute x with -5:
+
+Function: -18 * x^1 + 9 * x^0
+
+For x = -5:
+
+-18 * (-5)^1 + 9 * (-5)^0
+= -18 * -5 + 9 * 1
+= 90 + 9
+= 99
+
+Therefore, the output is:
+
+Output: 99",99,True,"[-18, 9]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -18 * x^1 + 9 * x^0
+    
+    Examples:
+    Input: -16
+Output: 297
+
+Input: 18
+Output: -315
+
+Input: -16
+Output: 297
+
+Input: -5
+Output: 99
+
+Input: 5
+Output: -81
+
+
+    Return the output preceded by 'Output:'
+    Input: 17
+    ","To apply the function to the input, we substitute the value of x with 17:
+
+Function: -18 * x^1 + 9 * x^0
+
+For x = 17:
+
+-18 * (17)^1 + 9 * (17)^0
+= -18 * 17 + 9 * 1
+= -306 + 9
+= -297
+
+Therefore, the correct output is -297.
+
+Output: -297",-297,True,"[-18, 9]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -18 * x^1 + 9 * x^0
+    
+    Examples:
+    Input: -16
+Output: 297
+
+Input: 18
+Output: -315
+
+Input: -16
+Output: 297
+
+Input: -5
+Output: 99
+
+Input: 5
+Output: -81
+
+
+    Return the output preceded by 'Output:'
+    Input: 18
+    ","To apply the function to the input, we substitute the value of x with 18:
+
+Function: -18 * x^1 + 9 * x^0
+
+For x = 18:
+
+-18 * (18)^1 + 9 * (18)^0
+= -18 * 18 + 9 * 1
+= -324 + 9
+= -315
+
+Therefore, the output is:
+
+Output: -315",-315,True,"[-18, 9]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    14 * x^1 + -13 * x^0
+    
+    Examples:
+    Input: -18
+Output: -265
+
+Input: 19
+Output: 253
+
+Input: -15
+Output: -223
+
+Input: 6
+Output: 71
+
+Input: 17
+Output: 225
+
+
+    Return the output preceded by 'Output:'
+    Input: 16
+    ","To apply the function to the input, we substitute the value of x with 16:
+
+Function: 14 * x^1 + -13 * x^0
+
+Input: 16
+
+Output: 14 * 16^1 + -13 * 16^0
+Output: 14 * 16 + -13 * 1
+Output: 224 + -13
+Output: 211
+
+Therefore, the correct output is:
+
+Output: 211",211,True,"[14, -13]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    14 * x^1 + -13 * x^0
+    
+    Examples:
+    Input: -18
+Output: -265
+
+Input: 19
+Output: 253
+
+Input: -15
+Output: -223
+
+Input: 6
+Output: 71
+
+Input: 17
+Output: 225
+
+
+    Return the output preceded by 'Output:'
+    Input: 13
+    ","To apply the function to the input, we substitute the value of x with 13:
+
+14 * x^1 + -13 * x^0
+= 14 * 13^1 + -13 * 13^0
+= 14 * 13 + -13 * 1
+= 182 - 13
+= 169
+
+Therefore, the correct output is:
+
+Output: 169",169,True,"[14, -13]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    14 * x^1 + -13 * x^0
+    
+    Examples:
+    Input: -18
+Output: -265
+
+Input: 19
+Output: 253
+
+Input: -15
+Output: -223
+
+Input: 6
+Output: 71
+
+Input: 17
+Output: 225
+
+
+    Return the output preceded by 'Output:'
+    Input: 0
+    ","To apply the function to the input, we substitute the value of x with 0:
+
+Function: 14 * x^1 + -13 * x^0
+
+Input: 0
+
+Output: 14 * 0^1 + -13 * 0^0
+Output: 14 * 0 + -13 * 1
+Output: 0 + -13
+Output: -13
+
+Therefore, the correct output is:
+
+Output: -13",-13,True,"[14, -13]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    14 * x^1 + -13 * x^0
+    
+    Examples:
+    Input: -18
+Output: -265
+
+Input: 19
+Output: 253
+
+Input: -15
+Output: -223
+
+Input: 6
+Output: 71
+
+Input: 17
+Output: 225
+
+
+    Return the output preceded by 'Output:'
+    Input: -4
+    ","To apply the function to the input -4, we substitute x with -4:
+
+14 * (-4)^1 + -13 * (-4)^0
+
+Now, calculate the power and multiplication:
+
+14 * (-4) + -13 * 1
+
+-56 + -13
+
+Now, add the two numbers:
+
+-56 - 13 = -69
+
+So the output is:
+
+Output: -69",-69,True,"[14, -13]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    14 * x^1 + -13 * x^0
+    
+    Examples:
+    Input: -18
+Output: -265
+
+Input: 19
+Output: 253
+
+Input: -15
+Output: -223
+
+Input: 6
+Output: 71
+
+Input: 17
+Output: 225
+
+
+    Return the output preceded by 'Output:'
+    Input: -7
+    ","To apply the function to the input -7, we substitute x with -7:
+
+14 * (-7)^1 + (-13) * (-7)^0
+= 14 * (-7) + (-13) * 1
+= -98 - 13
+= -111
+
+Therefore, the correct output is:
+
+Output: -111",-111,True,"[14, -13]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    4 * x^1 + -15 * x^0
+    
+    Examples:
+    Input: 0
+Output: -15
+
+Input: -5
+Output: -35
+
+Input: -4
+Output: -31
+
+Input: 5
+Output: 5
+
+Input: -12
+Output: -63
+
+
+    Return the output preceded by 'Output:'
+    Input: -1
+    ","To apply the function to the input -1, we substitute x with -1:
+
+4 * (-1)^1 + -15 * (-1)^0
+= 4 * -1 + -15 * 1
+= -4 - 15
+= -19
+
+Therefore, the correct output is -19.
+
+Output: -19",-19,True,"[4, -15]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    4 * x^1 + -15 * x^0
+    
+    Examples:
+    Input: 0
+Output: -15
+
+Input: -5
+Output: -35
+
+Input: -4
+Output: -31
+
+Input: 5
+Output: 5
+
+Input: -12
+Output: -63
+
+
+    Return the output preceded by 'Output:'
+    Input: 9
+    ","To apply the function to the input, we substitute the value of x with 9:
+
+Function: 4 * x^1 + -15 * x^0
+
+For x = 9:
+
+4 * 9^1 + -15 * 9^0
+= 4 * 9 + -15 * 1
+= 36 - 15
+= 21
+
+Therefore, the correct output is 21.
+
+Output: 21",21,True,"[4, -15]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    4 * x^1 + -15 * x^0
+    
+    Examples:
+    Input: 0
+Output: -15
+
+Input: -5
+Output: -35
+
+Input: -4
+Output: -31
+
+Input: 5
+Output: 5
+
+Input: -12
+Output: -63
+
+
+    Return the output preceded by 'Output:'
+    Input: 0
+    ",Output: -15,-15,True,"[4, -15]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    4 * x^1 + -15 * x^0
+    
+    Examples:
+    Input: 0
+Output: -15
+
+Input: -5
+Output: -35
+
+Input: -4
+Output: -31
+
+Input: 5
+Output: 5
+
+Input: -12
+Output: -63
+
+
+    Return the output preceded by 'Output:'
+    Input: -16
+    ","To apply the function to the input -16, we follow the function's formula:
+
+4 * x^1 + -15 * x^0
+
+First, we replace x with -16:
+
+4 * (-16)^1 + -15 * (-16)^0
+
+Now we calculate the power of -16:
+
+(-16)^1 = -16 (because any number to the power of 1 is the number itself)
+(-16)^0 = 1 (because any number to the power of 0 is 1)
+
+Now we multiply:
+
+4 * -16 + -15 * 1
+
+-64 + -15
+
+Now we add the two results:
+
+-64 - 15 = -79
+
+So the output is -79.
+
+Output: -79",-79,True,"[4, -15]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    4 * x^1 + -15 * x^0
+    
+    Examples:
+    Input: 0
+Output: -15
+
+Input: -5
+Output: -35
+
+Input: -4
+Output: -31
+
+Input: 5
+Output: 5
+
+Input: -12
+Output: -63
+
+
+    Return the output preceded by 'Output:'
+    Input: -20
+    ","To apply the function to the input -20, we follow the function:
+
+4 * x^1 + -15 * x^0
+
+Substitute x with -20:
+
+4 * (-20)^1 + -15 * (-20)^0
+
+Now calculate the power and multiplication:
+
+4 * (-20) + -15 * 1
+
+-80 + -15
+
+Combine the terms:
+
+-80 - 15 = -95
+
+So the output is:
+
+Output: -95",-95,True,"[4, -15]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    15 * x^1 + -2 * x^0
+    
+    Examples:
+    Input: 9
+Output: 133
+
+Input: 19
+Output: 283
+
+Input: 16
+Output: 238
+
+Input: -14
+Output: -212
+
+Input: -16
+Output: -242
+
+
+    Return the output preceded by 'Output:'
+    Input: 14
+    ","To apply the function to the input, we will substitute the value of x with 14 and calculate the result.
+
+Function: 15 * x^1 + -2 * x^0
+
+For x = 14:
+
+Output = 15 * 14^1 + (-2) * 14^0
+Output = 15 * 14 + (-2) * 1
+Output = 210 + (-2)
+Output = 208
+
+Therefore, the correct output is:
+
+Output: 208",208,True,"[15, -2]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    15 * x^1 + -2 * x^0
+    
+    Examples:
+    Input: 9
+Output: 133
+
+Input: 19
+Output: 283
+
+Input: 16
+Output: 238
+
+Input: -14
+Output: -212
+
+Input: -16
+Output: -242
+
+
+    Return the output preceded by 'Output:'
+    Input: -7
+    ","To apply the function to the input -7, we follow the function:
+
+15 * x^1 + -2 * x^0
+
+First, we replace x with -7:
+
+15 * (-7)^1 + -2 * (-7)^0
+
+Now we calculate the power of -7:
+
+15 * (-7) + -2 * 1
+
+Now we multiply:
+
+-105 + -2
+
+Finally, we add the two numbers:
+
+-105 - 2 = -107
+
+So the output is:
+
+Output: -107",-107,True,"[15, -2]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    15 * x^1 + -2 * x^0
+    
+    Examples:
+    Input: 9
+Output: 133
+
+Input: 19
+Output: 283
+
+Input: 16
+Output: 238
+
+Input: -14
+Output: -212
+
+Input: -16
+Output: -242
+
+
+    Return the output preceded by 'Output:'
+    Input: 12
+    ","To apply the function to the input, we substitute the value of x with 12:
+
+Function: 15 * x^1 + -2 * x^0
+
+For x = 12:
+
+15 * 12^1 + -2 * 12^0
+= 15 * 12 + -2 * 1
+= 180 + -2
+= 178
+
+Therefore, the correct output is 178.
+
+Output: 178",178,True,"[15, -2]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    15 * x^1 + -2 * x^0
+    
+    Examples:
+    Input: 9
+Output: 133
+
+Input: 19
+Output: 283
+
+Input: 16
+Output: 238
+
+Input: -14
+Output: -212
+
+Input: -16
+Output: -242
+
+
+    Return the output preceded by 'Output:'
+    Input: -4
+    ","To apply the function to the input -4, we follow the function:
+
+15 * x^1 + -2 * x^0
+
+Plugging in x = -4:
+
+15 * (-4)^1 + -2 * (-4)^0
+= 15 * -4 + -2 * 1
+= -60 - 2
+= -62
+
+Therefore, the correct output is -62.
+
+Output: -62",-62,True,"[15, -2]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    15 * x^1 + -2 * x^0
+    
+    Examples:
+    Input: 9
+Output: 133
+
+Input: 19
+Output: 283
+
+Input: 16
+Output: 238
+
+Input: -14
+Output: -212
+
+Input: -16
+Output: -242
+
+
+    Return the output preceded by 'Output:'
+    Input: -12
+    ","To apply the function to the input -12, we substitute x with -12:
+
+15 * (-12)^1 + -2 * (-12)^0
+
+This simplifies to:
+
+15 * (-12) + -2 * 1
+
+Which is:
+
+-180 + -2
+
+Which equals:
+
+-182
+
+Therefore, the correct output is:
+
+Output: -182",-182,True,"[15, -2]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    20 * x^1 + 19 * x^0
+    
+    Examples:
+    Input: 2
+Output: 59
+
+Input: -16
+Output: -301
+
+Input: -5
+Output: -81
+
+Input: 3
+Output: 79
+
+Input: -2
+Output: -21
+
+
+    Return the output preceded by 'Output:'
+    Input: -10
+    ","To apply the function to the input -10, we substitute x with -10:
+
+20 * (-10)^1 + 19 * (-10)^0
+
+This simplifies to:
+
+20 * (-10) + 19 * 1
+
+Which further simplifies to:
+
+-200 + 19
+
+Now, we calculate the result:
+
+-200 + 19 = -181
+
+Therefore, the output is:
+
+Output: -181",-181,True,"[20, 19]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    20 * x^1 + 19 * x^0
+    
+    Examples:
+    Input: 2
+Output: 59
+
+Input: -16
+Output: -301
+
+Input: -5
+Output: -81
+
+Input: 3
+Output: 79
+
+Input: -2
+Output: -21
+
+
+    Return the output preceded by 'Output:'
+    Input: 8
+    ","To apply the function to the input, we substitute the value of x with 8:
+
+20 * x^1 + 19 * x^0
+= 20 * 8^1 + 19 * 8^0
+= 20 * 8 + 19 * 1
+= 160 + 19
+= 179
+
+Therefore, the correct output is:
+
+Output: 179",179,True,"[20, 19]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    20 * x^1 + 19 * x^0
+    
+    Examples:
+    Input: 2
+Output: 59
+
+Input: -16
+Output: -301
+
+Input: -5
+Output: -81
+
+Input: 3
+Output: 79
+
+Input: -2
+Output: -21
+
+
+    Return the output preceded by 'Output:'
+    Input: 14
+    ","To apply the function to the input, we substitute the value of x with 14:
+
+Function: 20 * x^1 + 19 * x^0
+
+For x = 14:
+
+20 * (14)^1 + 19 * (14)^0
+= 20 * 14 + 19 * 1
+= 280 + 19
+= 299
+
+Therefore, the correct output is:
+
+Output: 299",299,True,"[20, 19]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    20 * x^1 + 19 * x^0
+    
+    Examples:
+    Input: 2
+Output: 59
+
+Input: -16
+Output: -301
+
+Input: -5
+Output: -81
+
+Input: 3
+Output: 79
+
+Input: -2
+Output: -21
+
+
+    Return the output preceded by 'Output:'
+    Input: -1
+    ","To apply the function to the input -1, we substitute x with -1:
+
+20 * (-1)^1 + 19 * (-1)^0
+
+This simplifies to:
+
+20 * (-1) + 19 * 1
+
+Which further simplifies to:
+
+-20 + 19
+
+Now, we calculate the result:
+
+-20 + 19 = -1
+
+Therefore, the output is:
+
+Output: -1",-1,True,"[20, 19]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    20 * x^1 + 19 * x^0
+    
+    Examples:
+    Input: 2
+Output: 59
+
+Input: -16
+Output: -301
+
+Input: -5
+Output: -81
+
+Input: 3
+Output: 79
+
+Input: -2
+Output: -21
+
+
+    Return the output preceded by 'Output:'
+    Input: 19
+    ","To apply the function to the input, we substitute the value of x with 19:
+
+20 * x^1 + 19 * x^0
+= 20 * 19^1 + 19 * 19^0
+= 20 * 19 + 19 * 1
+= 380 + 19
+= 399
+
+Therefore, the correct output is:
+
+Output: 399",399,True,"[20, 19]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    3 * x^1 + 16 * x^0
+    
+    Examples:
+    Input: 13
+Output: 55
+
+Input: -20
+Output: -44
+
+Input: 15
+Output: 61
+
+Input: -1
+Output: 13
+
+Input: -14
+Output: -26
+
+
+    Return the output preceded by 'Output:'
+    Input: -12
+    ","To apply the function to the input -12, we follow the function:
+
+3 * x^1 + 16 * x^0
+
+Substitute x with -12:
+
+3 * (-12)^1 + 16 * (-12)^0
+
+Now calculate the power and multiplication:
+
+3 * (-12) + 16 * 1
+
+-36 + 16
+
+Now add the two results:
+
+-36 + 16 = -20
+
+So the output is:
+
+Output: -20",-20,True,"[3, 16]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    3 * x^1 + 16 * x^0
+    
+    Examples:
+    Input: 13
+Output: 55
+
+Input: -20
+Output: -44
+
+Input: 15
+Output: 61
+
+Input: -1
+Output: 13
+
+Input: -14
+Output: -26
+
+
+    Return the output preceded by 'Output:'
+    Input: -4
+    ","To apply the function to the input -4, we follow the function:
+
+3 * x^1 + 16 * x^0
+
+Substitute x with -4:
+
+3 * (-4)^1 + 16 * (-4)^0
+
+Now calculate the power and multiplication:
+
+3 * (-4) + 16 * 1
+
+-12 + 16
+
+Now add the two results:
+
+4
+
+So the output is:
+
+Output: 4",4,True,"[3, 16]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    3 * x^1 + 16 * x^0
+    
+    Examples:
+    Input: 13
+Output: 55
+
+Input: -20
+Output: -44
+
+Input: 15
+Output: 61
+
+Input: -1
+Output: 13
+
+Input: -14
+Output: -26
+
+
+    Return the output preceded by 'Output:'
+    Input: -13
+    ","To apply the function to the input -13, we plug in the value of x as -13:
+
+3 * (-13)^1 + 16 * (-13)^0
+
+This simplifies to:
+
+3 * (-13) + 16 * 1
+
+Which further simplifies to:
+
+-39 + 16
+
+Now, we calculate the result:
+
+-39 + 16 = -23
+
+Therefore, the correct output is:
+
+Output: -23",-23,True,"[3, 16]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    3 * x^1 + 16 * x^0
+    
+    Examples:
+    Input: 13
+Output: 55
+
+Input: -20
+Output: -44
+
+Input: 15
+Output: 61
+
+Input: -1
+Output: 13
+
+Input: -14
+Output: -26
+
+
+    Return the output preceded by 'Output:'
+    Input: -14
+    ","To apply the function to the input -14, we substitute x with -14:
+
+3 * (-14)^1 + 16 * (-14)^0
+
+This simplifies to:
+
+3 * (-14) + 16 * 1
+
+Which further simplifies to:
+
+-42 + 16
+
+Which equals:
+
+-26
+
+Therefore, the correct output is:
+
+Output: -26",-26,True,"[3, 16]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    3 * x^1 + 16 * x^0
+    
+    Examples:
+    Input: 13
+Output: 55
+
+Input: -20
+Output: -44
+
+Input: 15
+Output: 61
+
+Input: -1
+Output: 13
+
+Input: -14
+Output: -26
+
+
+    Return the output preceded by 'Output:'
+    Input: 15
+    ","To apply the function to the input value of 15, we substitute x with 15 in the function:
+
+3 * x^1 + 16 * x^0
+
+3 * 15^1 + 16 * 15^0
+= 3 * 15 + 16 * 1
+= 45 + 16
+= 61
+
+Therefore, the correct output is:
+
+Output: 61",61,True,"[3, 16]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -8 * x^1 + -16 * x^0
+    
+    Examples:
+    Input: -11
+Output: 72
+
+Input: -3
+Output: 8
+
+Input: -2
+Output: 0
+
+Input: 18
+Output: -160
+
+Input: -7
+Output: 40
+
+
+    Return the output preceded by 'Output:'
+    Input: 1
+    ","To apply the function to the input, we substitute the value of x with 1:
+
+Function: -8 * x^1 + -16 * x^0
+
+Input: 1
+
+Output: -8 * (1)^1 + -16 * (1)^0
+Output: -8 * 1 + -16 * 1
+Output: -8 - 16
+Output: -24
+
+Therefore, the correct output is:
+
+Output: -24",-24,True,"[-8, -16]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -8 * x^1 + -16 * x^0
+    
+    Examples:
+    Input: -11
+Output: 72
+
+Input: -3
+Output: 8
+
+Input: -2
+Output: 0
+
+Input: 18
+Output: -160
+
+Input: -7
+Output: 40
+
+
+    Return the output preceded by 'Output:'
+    Input: -7
+    ","To apply the function to the input -7, we plug in the value of x as -7:
+
+Function: -8 * x^1 + -16 * x^0
+
+For x = -7:
+
+-8 * (-7)^1 + -16 * (-7)^0
+= -8 * -7 + -16 * 1
+= 56 - 16
+= 40
+
+Therefore, the correct output is:
+
+Output: 40",40,True,"[-8, -16]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -8 * x^1 + -16 * x^0
+    
+    Examples:
+    Input: -11
+Output: 72
+
+Input: -3
+Output: 8
+
+Input: -2
+Output: 0
+
+Input: 18
+Output: -160
+
+Input: -7
+Output: 40
+
+
+    Return the output preceded by 'Output:'
+    Input: 20
+    ","To apply the function to the input, we substitute the value of x with 20:
+
+Function: -8 * x^1 + -16 * x^0
+
+For x = 20:
+
+-8 * (20)^1 + -16 * (20)^0
+= -8 * 20 + -16 * 1
+= -160 + -16
+= -160 - 16
+= -176
+
+Therefore, the output is:
+
+Output: -176",-176,True,"[-8, -16]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -8 * x^1 + -16 * x^0
+    
+    Examples:
+    Input: -11
+Output: 72
+
+Input: -3
+Output: 8
+
+Input: -2
+Output: 0
+
+Input: 18
+Output: -160
+
+Input: -7
+Output: 40
+
+
+    Return the output preceded by 'Output:'
+    Input: -4
+    ","To apply the function to the input -4, we substitute x with -4:
+
+Function: -8 * x^1 + -16 * x^0
+
+-8 * (-4)^1 + -16 * (-4)^0
+-8 * -4 + -16 * 1
+32 - 16
+16
+
+Therefore, the output is 16.
+
+Output: 16",16,True,"[-8, -16]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -8 * x^1 + -16 * x^0
+    
+    Examples:
+    Input: -11
+Output: 72
+
+Input: -3
+Output: 8
+
+Input: -2
+Output: 0
+
+Input: 18
+Output: -160
+
+Input: -7
+Output: 40
+
+
+    Return the output preceded by 'Output:'
+    Input: 12
+    ","To apply the function to the input, we substitute the value of x with 12:
+
+Function: -8 * x^1 + -16 * x^0
+
+For x = 12:
+
+-8 * (12)^1 + -16 * (12)^0
+= -8 * 12 + -16 * 1
+= -96 + -16
+= -96 - 16
+= -112
+
+Therefore, the output is -112.
+
+Output: -112",-112,True,"[-8, -16]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -18 * x^1 + -6 * x^0
+    
+    Examples:
+    Input: 11
+Output: -204
+
+Input: -4
+Output: 66
+
+Input: -17
+Output: 300
+
+Input: -15
+Output: 264
+
+Input: 20
+Output: -366
+
+
+    Return the output preceded by 'Output:'
+    Input: 7
+    ","To apply the function to the input, we will substitute the value of x with 7 and calculate the result.
+
+Function: -18 * x^1 + -6 * x^0
+
+For x = 7:
+
+-18 * (7)^1 + -6 * (7)^0
+= -18 * 7 + -6 * 1
+= -126 + -6
+= -132
+
+Therefore, the output is -132.
+
+Output: -132",-132,True,"[-18, -6]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -18 * x^1 + -6 * x^0
+    
+    Examples:
+    Input: 11
+Output: -204
+
+Input: -4
+Output: 66
+
+Input: -17
+Output: 300
+
+Input: -15
+Output: 264
+
+Input: 20
+Output: -366
+
+
+    Return the output preceded by 'Output:'
+    Input: -3
+    ","To apply the function to the input -3, we plug in the value of x as -3:
+
+Function: -18 * x^1 + -6 * x^0
+
+For x = -3:
+
+-18 * (-3)^1 + -6 * (-3)^0
+= -18 * -3 + -6 * 1
+= 54 - 6
+= 48
+
+Therefore, the correct output is 48.
+
+Output: 48",48,True,"[-18, -6]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -18 * x^1 + -6 * x^0
+    
+    Examples:
+    Input: 11
+Output: -204
+
+Input: -4
+Output: 66
+
+Input: -17
+Output: 300
+
+Input: -15
+Output: 264
+
+Input: 20
+Output: -366
+
+
+    Return the output preceded by 'Output:'
+    Input: -18
+    ","To apply the function to the input -18, we follow the function:
+
+-18 * x^1 + -6 * x^0
+
+Plugging in x = -18:
+
+-18 * (-18)^1 + -6 * (-18)^0
+= -18 * -18 + -6 * 1
+= 324 - 6
+= 318
+
+Therefore, the output is:
+
+Output: 318",318,True,"[-18, -6]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -18 * x^1 + -6 * x^0
+    
+    Examples:
+    Input: 11
+Output: -204
+
+Input: -4
+Output: 66
+
+Input: -17
+Output: 300
+
+Input: -15
+Output: 264
+
+Input: 20
+Output: -366
+
+
+    Return the output preceded by 'Output:'
+    Input: -20
+    ","To apply the function to the input -20, we follow the function:
+
+-18 * x^1 + -6 * x^0
+
+Plugging in x = -20:
+
+-18 * (-20)^1 + -6 * (-20)^0
+= -18 * -20 + -6 * 1
+= 360 - 6
+= 354
+
+Therefore, the correct output is:
+
+Output: 354",354,True,"[-18, -6]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -18 * x^1 + -6 * x^0
+    
+    Examples:
+    Input: 11
+Output: -204
+
+Input: -4
+Output: 66
+
+Input: -17
+Output: 300
+
+Input: -15
+Output: 264
+
+Input: 20
+Output: -366
+
+
+    Return the output preceded by 'Output:'
+    Input: 1
+    ","To apply the function to the input, we substitute the value of x with 1:
+
+Function: -18 * x^1 + -6 * x^0
+
+Input: 1
+
+Output: -18 * (1)^1 + -6 * (1)^0
+Output: -18 * 1 + -6 * 1
+Output: -18 - 6
+Output: -24
+
+Therefore, the correct output is:
+
+Output: -24",-24,True,"[-18, -6]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -2 * x^1 + -15 * x^0
+    
+    Examples:
+    Input: -12
+Output: 9
+
+Input: 20
+Output: -55
+
+Input: -4
+Output: -7
+
+Input: -10
+Output: 5
+
+Input: 8
+Output: -31
+
+
+    Return the output preceded by 'Output:'
+    Input: 15
+    ","To apply the function to the input 15, we substitute x with 15:
+
+Function: -2 * x^1 + -15 * x^0
+
+For x = 15:
+
+-2 * (15)^1 + -15 * (15)^0
+= -2 * 15 + -15 * 1
+= -30 + -15
+= -30 - 15
+= -45
+
+Therefore, the output is:
+
+Output: -45",-45,True,"[-2, -15]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -2 * x^1 + -15 * x^0
+    
+    Examples:
+    Input: -12
+Output: 9
+
+Input: 20
+Output: -55
+
+Input: -4
+Output: -7
+
+Input: -10
+Output: 5
+
+Input: 8
+Output: -31
+
+
+    Return the output preceded by 'Output:'
+    Input: 7
+    ","To apply the function to the input 7, we substitute x with 7:
+
+-2 * (7)^1 + -15 * (7)^0
+
+Now we calculate the result:
+
+-2 * 7 + -15 * 1
+-14 + -15
+-14 - 15
+-29
+
+Therefore, the output is:
+
+Output: -29",-29,True,"[-2, -15]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -2 * x^1 + -15 * x^0
+    
+    Examples:
+    Input: -12
+Output: 9
+
+Input: 20
+Output: -55
+
+Input: -4
+Output: -7
+
+Input: -10
+Output: 5
+
+Input: 8
+Output: -31
+
+
+    Return the output preceded by 'Output:'
+    Input: 15
+    ","To apply the function to the input 15, we substitute x with 15:
+
+-2 * (15)^1 + -15 * (15)^0
+= -2 * 15 + -15 * 1
+= -30 + -15
+= -45
+
+Therefore, the correct output is:
+
+Output: -45",-45,True,"[-2, -15]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -2 * x^1 + -15 * x^0
+    
+    Examples:
+    Input: -12
+Output: 9
+
+Input: 20
+Output: -55
+
+Input: -4
+Output: -7
+
+Input: -10
+Output: 5
+
+Input: 8
+Output: -31
+
+
+    Return the output preceded by 'Output:'
+    Input: -20
+    ","To apply the function to the input -20, we substitute x with -20:
+
+-2 * (-20)^1 + -15 * (-20)^0
+
+This simplifies to:
+
+-2 * (-20) + -15 * 1
+
+Which further simplifies to:
+
+40 - 15
+
+Which equals:
+
+25
+
+Therefore, the output is:
+
+Output: 25",25,True,"[-2, -15]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -2 * x^1 + -15 * x^0
+    
+    Examples:
+    Input: -12
+Output: 9
+
+Input: 20
+Output: -55
+
+Input: -4
+Output: -7
+
+Input: -10
+Output: 5
+
+Input: 8
+Output: -31
+
+
+    Return the output preceded by 'Output:'
+    Input: -13
+    ","To solve the problem, we will apply the given input to the function:
+
+Function: -2 * x^1 + -15 * x^0
+
+For the input -13:
+
+Output: -2 * (-13)^1 + -15 * (-13)^0
+Output: -2 * (-13) + -15 * 1
+Output: 26 - 15
+Output: 11
+
+Therefore, the correct output is:
+
+Output: 11",11,True,"[-2, -15]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -6 * x^1 + -14 * x^0
+    
+    Examples:
+    Input: -16
+Output: 82
+
+Input: -11
+Output: 52
+
+Input: 14
+Output: -98
+
+Input: -18
+Output: 94
+
+Input: 3
+Output: -32
+
+
+    Return the output preceded by 'Output:'
+    Input: 17
+    ","To apply the function to the input, we substitute the value of x with 17:
+
+Function: -6 * x^1 + -14 * x^0
+
+For x = 17:
+
+-6 * (17)^1 + -14 * (17)^0
+= -6 * 17 + -14 * 1
+= -102 + -14
+= -102 - 14
+= -116
+
+Therefore, the output is:
+
+Output: -116",-116,True,"[-6, -14]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -6 * x^1 + -14 * x^0
+    
+    Examples:
+    Input: -16
+Output: 82
+
+Input: -11
+Output: 52
+
+Input: 14
+Output: -98
+
+Input: -18
+Output: 94
+
+Input: 3
+Output: -32
+
+
+    Return the output preceded by 'Output:'
+    Input: 15
+    ","To apply the function to the input, we will substitute the value of x with 15 and then perform the calculation.
+
+Function: -6 * x^1 + -14 * x^0
+
+For x = 15:
+
+-6 * (15)^1 + -14 * (15)^0
+= -6 * 15 + -14 * 1
+= -90 + -14
+= -90 - 14
+= -104
+
+Therefore, the output is -104.
+
+Output: -104",-104,True,"[-6, -14]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -6 * x^1 + -14 * x^0
+    
+    Examples:
+    Input: -16
+Output: 82
+
+Input: -11
+Output: 52
+
+Input: 14
+Output: -98
+
+Input: -18
+Output: 94
+
+Input: 3
+Output: -32
+
+
+    Return the output preceded by 'Output:'
+    Input: -11
+    ","To apply the function to the input -11, we substitute x with -11:
+
+-6 * (-11)^1 + -14 * (-11)^0
+
+Now, calculate the power and multiplication:
+
+-6 * (-11) + -14 * 1
+
+66 - 14
+
+The result is 52.
+
+Therefore, the output is:
+
+Output: 52",52,True,"[-6, -14]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -6 * x^1 + -14 * x^0
+    
+    Examples:
+    Input: -16
+Output: 82
+
+Input: -11
+Output: 52
+
+Input: 14
+Output: -98
+
+Input: -18
+Output: 94
+
+Input: 3
+Output: -32
+
+
+    Return the output preceded by 'Output:'
+    Input: 7
+    ","To apply the function to the input, we substitute the value of x with 7:
+
+Function: -6 * x^1 + -14 * x^0
+
+For x = 7:
+
+-6 * (7)^1 + -14 * (7)^0
+= -6 * 7 + -14 * 1
+= -42 - 14
+= -56
+
+Therefore, the output is -56.
+
+Output: -56",-56,True,"[-6, -14]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -6 * x^1 + -14 * x^0
+    
+    Examples:
+    Input: -16
+Output: 82
+
+Input: -11
+Output: 52
+
+Input: 14
+Output: -98
+
+Input: -18
+Output: 94
+
+Input: 3
+Output: -32
+
+
+    Return the output preceded by 'Output:'
+    Input: -12
+    ","To apply the function to the input -12, we substitute x with -12:
+
+Function: -6 * x^1 + -14 * x^0
+
+For x = -12:
+
+-6 * (-12)^1 + -14 * (-12)^0
+= -6 * -12 + -14 * 1
+= 72 - 14
+= 58
+
+Therefore, the correct output is 58.
+
+Output: 58",58,True,"[-6, -14]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    4 * x^1 + -3 * x^0
+    
+    Examples:
+    Input: -18
+Output: -75
+
+Input: -1
+Output: -7
+
+Input: 3
+Output: 9
+
+Input: -18
+Output: -75
+
+Input: 2
+Output: 5
+
+
+    Return the output preceded by 'Output:'
+    Input: -7
+    ","To apply the function to the input -7, we calculate as follows:
+
+4 * (-7)^1 + -3 * (-7)^0
+
+This simplifies to:
+
+4 * (-7) + -3 * 1
+
+Which further simplifies to:
+
+-28 - 3
+
+Which equals:
+
+-31
+
+Therefore, the correct output is:
+
+Output: -31",-31,True,"[4, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    4 * x^1 + -3 * x^0
+    
+    Examples:
+    Input: -18
+Output: -75
+
+Input: -1
+Output: -7
+
+Input: 3
+Output: 9
+
+Input: -18
+Output: -75
+
+Input: 2
+Output: 5
+
+
+    Return the output preceded by 'Output:'
+    Input: -5
+    ","To apply the function to the input -5, we calculate as follows:
+
+4 * (-5)^1 + -3 * (-5)^0
+= 4 * -5 + -3 * 1
+= -20 - 3
+= -23
+
+Therefore, the correct output is:
+
+Output: -23",-23,True,"[4, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    4 * x^1 + -3 * x^0
+    
+    Examples:
+    Input: -18
+Output: -75
+
+Input: -1
+Output: -7
+
+Input: 3
+Output: 9
+
+Input: -18
+Output: -75
+
+Input: 2
+Output: 5
+
+
+    Return the output preceded by 'Output:'
+    Input: -14
+    ","To apply the function to the input -14, we follow the function:
+
+4 * x^1 + -3 * x^0
+
+Substitute x with -14:
+
+4 * (-14)^1 + -3 * (-14)^0
+
+Now calculate the power and multiplication:
+
+4 * (-14) + -3 * 1
+
+-56 + -3
+
+Combine the terms:
+
+-56 - 3
+
+The result is:
+
+-59
+
+So the output is:
+
+Output: -59",-59,True,"[4, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    4 * x^1 + -3 * x^0
+    
+    Examples:
+    Input: -18
+Output: -75
+
+Input: -1
+Output: -7
+
+Input: 3
+Output: 9
+
+Input: -18
+Output: -75
+
+Input: 2
+Output: 5
+
+
+    Return the output preceded by 'Output:'
+    Input: 2
+    ","To apply the function to the input, we substitute the value of x with 2:
+
+Function: 4 * x^1 + -3 * x^0
+
+For x = 2:
+
+4 * (2)^1 + -3 * (2)^0
+= 4 * 2 + -3 * 1
+= 8 + -3
+= 8 - 3
+= 5
+
+Therefore, the correct output is:
+
+Output: 5",5,True,"[4, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    4 * x^1 + -3 * x^0
+    
+    Examples:
+    Input: -18
+Output: -75
+
+Input: -1
+Output: -7
+
+Input: 3
+Output: 9
+
+Input: -18
+Output: -75
+
+Input: 2
+Output: 5
+
+
+    Return the output preceded by 'Output:'
+    Input: 15
+    ","To apply the function to the input value of 15, we follow the function's formula:
+
+4 * x^1 + -3 * x^0
+
+First, we replace x with 15:
+
+4 * (15)^1 + -3 * (15)^0
+
+Now we calculate the power of 1 and 0 for 15:
+
+4 * 15 + -3 * 1
+
+Next, we perform the multiplication:
+
+60 + -3
+
+Finally, we add the two numbers together:
+
+60 - 3 = 57
+
+So the output for the input of 15 is 57.
+
+Output: 57",57,True,"[4, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    9 * x^1 + 20 * x^0
+    
+    Examples:
+    Input: 6
+Output: 74
+
+Input: 19
+Output: 191
+
+Input: -11
+Output: -79
+
+Input: -5
+Output: -25
+
+Input: -10
+Output: -70
+
+
+    Return the output preceded by 'Output:'
+    Input: -9
+    ","To apply the function to the input -9, we substitute x with -9:
+
+9 * (-9)^1 + 20 * (-9)^0
+
+This simplifies to:
+
+9 * (-9) + 20 * 1
+
+Which is:
+
+-81 + 20
+
+Which equals:
+
+-61
+
+Therefore, the correct output is:
+
+Output: -61",-61,True,"[9, 20]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    9 * x^1 + 20 * x^0
+    
+    Examples:
+    Input: 6
+Output: 74
+
+Input: 19
+Output: 191
+
+Input: -11
+Output: -79
+
+Input: -5
+Output: -25
+
+Input: -10
+Output: -70
+
+
+    Return the output preceded by 'Output:'
+    Input: 6
+    ","To apply the function to the input example, we substitute the value of x with 6:
+
+Function: 9 * x^1 + 20 * x^0
+
+For x = 6:
+
+9 * 6^1 + 20 * 6^0
+= 9 * 6 + 20 * 1
+= 54 + 20
+= 74
+
+Output: 74",74,True,"[9, 20]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    9 * x^1 + 20 * x^0
+    
+    Examples:
+    Input: 6
+Output: 74
+
+Input: 19
+Output: 191
+
+Input: -11
+Output: -79
+
+Input: -5
+Output: -25
+
+Input: -10
+Output: -70
+
+
+    Return the output preceded by 'Output:'
+    Input: -19
+    ","To apply the function to the input -19, we substitute x with -19:
+
+9 * (-19)^1 + 20 * (-19)^0
+
+This simplifies to:
+
+9 * (-19) + 20 * 1
+
+Which further simplifies to:
+
+-171 + 20
+
+Which equals:
+
+-151
+
+Therefore, the correct output is:
+
+Output: -151",-151,True,"[9, 20]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    9 * x^1 + 20 * x^0
+    
+    Examples:
+    Input: 6
+Output: 74
+
+Input: 19
+Output: 191
+
+Input: -11
+Output: -79
+
+Input: -5
+Output: -25
+
+Input: -10
+Output: -70
+
+
+    Return the output preceded by 'Output:'
+    Input: -9
+    ","To apply the function to the input -9, we substitute x with -9:
+
+9 * (-9)^1 + 20 * (-9)^0
+
+This simplifies to:
+
+9 * (-9) + 20 * 1
+
+Which further simplifies to:
+
+-81 + 20
+
+Now, we calculate the result:
+
+-81 + 20 = -61
+
+Therefore, the output is:
+
+Output: -61",-61,True,"[9, 20]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    9 * x^1 + 20 * x^0
+    
+    Examples:
+    Input: 6
+Output: 74
+
+Input: 19
+Output: 191
+
+Input: -11
+Output: -79
+
+Input: -5
+Output: -25
+
+Input: -10
+Output: -70
+
+
+    Return the output preceded by 'Output:'
+    Input: 1
+    ","To apply the function to the input, we substitute the value of x with 1:
+
+Function: 9 * x^1 + 20 * x^0
+
+For x = 1:
+
+9 * (1)^1 + 20 * (1)^0
+= 9 * 1 + 20 * 1
+= 9 + 20
+= 29
+
+Therefore, the output is 29.
+
+Output: 29",29,True,"[9, 20]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    3 * x^1 + -10 * x^0
+    
+    Examples:
+    Input: 6
+Output: 8
+
+Input: -5
+Output: -25
+
+Input: -3
+Output: -19
+
+Input: -10
+Output: -40
+
+Input: -14
+Output: -52
+
+
+    Return the output preceded by 'Output:'
+    Input: 4
+    ","To apply the function to the input, we substitute the value of x with 4:
+
+3 * 4^1 + -10 * 4^0
+
+This simplifies to:
+
+3 * 4 + -10 * 1
+
+Which further simplifies to:
+
+12 + -10
+
+Which equals:
+
+2
+
+Therefore, the correct output is:
+
+Output: 2",2,True,"[3, -10]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    3 * x^1 + -10 * x^0
+    
+    Examples:
+    Input: 6
+Output: 8
+
+Input: -5
+Output: -25
+
+Input: -3
+Output: -19
+
+Input: -10
+Output: -40
+
+Input: -14
+Output: -52
+
+
+    Return the output preceded by 'Output:'
+    Input: -18
+    ","To apply the function to the input -18, we substitute x with -18:
+
+3 * (-18)^1 + -10 * (-18)^0
+
+This simplifies to:
+
+3 * (-18) + -10 * 1
+
+Which further simplifies to:
+
+-54 + -10
+
+Which equals:
+
+-64
+
+Therefore, the correct output is -64.
+
+Output: -64",-64,True,"[3, -10]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    3 * x^1 + -10 * x^0
+    
+    Examples:
+    Input: 6
+Output: 8
+
+Input: -5
+Output: -25
+
+Input: -3
+Output: -19
+
+Input: -10
+Output: -40
+
+Input: -14
+Output: -52
+
+
+    Return the output preceded by 'Output:'
+    Input: 10
+    ","To apply the function to the input, we substitute the value of x with 10:
+
+3 * x^1 + -10 * x^0
+= 3 * 10^1 + -10 * 10^0
+= 3 * 10 + -10 * 1
+= 30 + -10
+= 20
+
+Therefore, the correct output is:
+
+Output: 20",20,True,"[3, -10]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    3 * x^1 + -10 * x^0
+    
+    Examples:
+    Input: 6
+Output: 8
+
+Input: -5
+Output: -25
+
+Input: -3
+Output: -19
+
+Input: -10
+Output: -40
+
+Input: -14
+Output: -52
+
+
+    Return the output preceded by 'Output:'
+    Input: -6
+    ","To apply the function to the input -6, we substitute x with -6:
+
+3 * (-6)^1 + -10 * (-6)^0
+= 3 * (-6) + -10 * 1
+= -18 + -10
+= -28
+
+Therefore, the correct output is -28.
+
+Output: -28",-28,True,"[3, -10]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    3 * x^1 + -10 * x^0
+    
+    Examples:
+    Input: 6
+Output: 8
+
+Input: -5
+Output: -25
+
+Input: -3
+Output: -19
+
+Input: -10
+Output: -40
+
+Input: -14
+Output: -52
+
+
+    Return the output preceded by 'Output:'
+    Input: -8
+    ","To apply the function to the input -8, we substitute x with -8:
+
+3 * (-8)^1 + -10 * (-8)^0
+
+This simplifies to:
+
+3 * (-8) + -10 * 1
+
+Which further simplifies to:
+
+-24 + -10
+
+Which equals:
+
+-34
+
+Therefore, the correct output is -34.
+
+Output: -34",-34,True,"[3, -10]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    3 * x^1 + 2 * x^0
+    
+    Examples:
+    Input: 9
+Output: 29
+
+Input: 2
+Output: 8
+
+Input: -1
+Output: -1
+
+Input: -6
+Output: -16
+
+Input: -6
+Output: -16
+
+
+    Return the output preceded by 'Output:'
+    Input: -19
+    ","To apply the function to the input -19, we follow the function:
+
+3 * x^1 + 2 * x^0
+
+For x = -19:
+
+3 * (-19)^1 + 2 * (-19)^0
+= 3 * (-19) + 2 * 1
+= -57 + 2
+= -55
+
+Therefore, the output is:
+
+Output: -55",-55,True,"[3, 2]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    3 * x^1 + 2 * x^0
+    
+    Examples:
+    Input: 9
+Output: 29
+
+Input: 2
+Output: 8
+
+Input: -1
+Output: -1
+
+Input: -6
+Output: -16
+
+Input: -6
+Output: -16
+
+
+    Return the output preceded by 'Output:'
+    Input: -8
+    ","To apply the function to the input -8, we follow the function:
+
+3 * x^1 + 2 * x^0
+
+Substitute x with -8:
+
+3 * (-8)^1 + 2 * (-8)^0
+
+Now calculate the power and multiplication:
+
+3 * (-8) + 2 * 1
+
+-24 + 2
+
+-22
+
+So the output is:
+
+Output: -22",-22,True,"[3, 2]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    3 * x^1 + 2 * x^0
+    
+    Examples:
+    Input: 9
+Output: 29
+
+Input: 2
+Output: 8
+
+Input: -1
+Output: -1
+
+Input: -6
+Output: -16
+
+Input: -6
+Output: -16
+
+
+    Return the output preceded by 'Output:'
+    Input: 5
+    ","To apply the function to the input 5, we follow the function's formula:
+
+3 * x^1 + 2 * x^0
+
+For x = 5:
+
+3 * 5^1 + 2 * 5^0
+= 3 * 5 + 2 * 1
+= 15 + 2
+= 17
+
+Therefore, the correct output is:
+
+Output: 17",17,True,"[3, 2]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    3 * x^1 + 2 * x^0
+    
+    Examples:
+    Input: 9
+Output: 29
+
+Input: 2
+Output: 8
+
+Input: -1
+Output: -1
+
+Input: -6
+Output: -16
+
+Input: -6
+Output: -16
+
+
+    Return the output preceded by 'Output:'
+    Input: 1
+    ","To apply the function to the input example, we substitute the value of x with 1:
+
+Function: 3 * x^1 + 2 * x^0
+
+For x = 1:
+
+Output: 3 * 1^1 + 2 * 1^0
+Output: 3 * 1 + 2 * 1
+Output: 3 + 2
+Output: 5
+
+Therefore, the correct output is:
+
+Output: 5",5,True,"[3, 2]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    3 * x^1 + 2 * x^0
+    
+    Examples:
+    Input: 9
+Output: 29
+
+Input: 2
+Output: 8
+
+Input: -1
+Output: -1
+
+Input: -6
+Output: -16
+
+Input: -6
+Output: -16
+
+
+    Return the output preceded by 'Output:'
+    Input: -3
+    ","To apply the function to the input -3, we follow the function:
+
+3 * x^1 + 2 * x^0
+
+Substitute x with -3:
+
+3 * (-3)^1 + 2 * (-3)^0
+
+Now calculate the power and multiplication:
+
+3 * (-3) + 2 * 1
+
+Which simplifies to:
+
+-9 + 2
+
+Now add the two numbers:
+
+-9 + 2 = -7
+
+So the output is:
+
+Output: -7",-7,True,"[3, 2]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -7 * x^1 + -3 * x^0
+    
+    Examples:
+    Input: -16
+Output: 109
+
+Input: -3
+Output: 18
+
+Input: 2
+Output: -17
+
+Input: 12
+Output: -87
+
+Input: 5
+Output: -38
+
+
+    Return the output preceded by 'Output:'
+    Input: 14
+    ","To apply the function to the input, we substitute the value of x with 14 and calculate the result.
+
+Function: -7 * x^1 + -3 * x^0
+
+For x = 14:
+
+-7 * (14)^1 + -3 * (14)^0
+= -7 * 14 + -3 * 1
+= -98 + -3
+= -101
+
+Therefore, the output is -101.
+
+Output: -101",-101,True,"[-7, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -7 * x^1 + -3 * x^0
+    
+    Examples:
+    Input: -16
+Output: 109
+
+Input: -3
+Output: 18
+
+Input: 2
+Output: -17
+
+Input: 12
+Output: -87
+
+Input: 5
+Output: -38
+
+
+    Return the output preceded by 'Output:'
+    Input: 1
+    ","To apply the function to the input, we substitute the value of x with 1:
+
+Function: -7 * x^1 + -3 * x^0
+
+For x = 1:
+-7 * (1)^1 + -3 * (1)^0
+= -7 * 1 + -3 * 1
+= -7 - 3
+= -10
+
+Therefore, the output is -10.
+
+Output: -10",-10,True,"[-7, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -7 * x^1 + -3 * x^0
+    
+    Examples:
+    Input: -16
+Output: 109
+
+Input: -3
+Output: 18
+
+Input: 2
+Output: -17
+
+Input: 12
+Output: -87
+
+Input: 5
+Output: -38
+
+
+    Return the output preceded by 'Output:'
+    Input: -19
+    ","To apply the function to the input -19, we substitute x with -19:
+
+Function: -7 * x^1 + -3 * x^0
+
+Output for x = -19:
+-7 * (-19)^1 + -3 * (-19)^0
+-7 * -19 + -3 * 1
+133 - 3
+130
+
+Therefore, the correct output is:
+
+Output: 130",130,True,"[-7, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -7 * x^1 + -3 * x^0
+    
+    Examples:
+    Input: -16
+Output: 109
+
+Input: -3
+Output: 18
+
+Input: 2
+Output: -17
+
+Input: 12
+Output: -87
+
+Input: 5
+Output: -38
+
+
+    Return the output preceded by 'Output:'
+    Input: -13
+    ","To apply the function to the input -13, we follow the function:
+
+-7 * x^1 + -3 * x^0
+
+First, we replace x with -13:
+
+-7 * (-13)^1 + -3 * (-13)^0
+
+Now we calculate each term:
+
+-7 * (-13) = 91 (since -7 multiplied by -13 is 91)
+-3 * 1 = -3 (since any number to the power of 0 is 1)
+
+Now we add the two results together:
+
+91 + (-3) = 88
+
+Therefore, the output is:
+
+Output: 88",88,True,"[-7, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -7 * x^1 + -3 * x^0
+    
+    Examples:
+    Input: -16
+Output: 109
+
+Input: -3
+Output: 18
+
+Input: 2
+Output: -17
+
+Input: 12
+Output: -87
+
+Input: 5
+Output: -38
+
+
+    Return the output preceded by 'Output:'
+    Input: -4
+    ","To apply the function to the input -4, we substitute x with -4:
+
+Function: -7 * x^1 + -3 * x^0
+
+For x = -4:
+
+-7 * (-4)^1 + -3 * (-4)^0
+= -7 * (-4) + -3 * 1
+= 28 - 3
+= 25
+
+Therefore, the correct output is 25.
+
+Output: 25",25,True,"[-7, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -16 * x^1 + 18 * x^0
+    
+    Examples:
+    Input: -9
+Output: 162
+
+Input: 17
+Output: -254
+
+Input: -4
+Output: 82
+
+Input: -18
+Output: 306
+
+Input: -14
+Output: 242
+
+
+    Return the output preceded by 'Output:'
+    Input: 18
+    ","To apply the function to the input, we substitute the value of x with 18:
+
+Function: -16 * x^1 + 18 * x^0
+
+Input: 18
+
+Output: -16 * (18)^1 + 18 * (18)^0
+Output: -16 * 18 + 18 * 1
+Output: -288 + 18
+Output: -270
+
+Therefore, the correct output is:
+
+Output: -270",-270,True,"[-16, 18]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -16 * x^1 + 18 * x^0
+    
+    Examples:
+    Input: -9
+Output: 162
+
+Input: 17
+Output: -254
+
+Input: -4
+Output: 82
+
+Input: -18
+Output: 306
+
+Input: -14
+Output: 242
+
+
+    Return the output preceded by 'Output:'
+    Input: 7
+    ","To apply the function to the input value of 7, we plug in x = 7 into the function:
+
+-16 * x^1 + 18 * x^0
+
+-16 * 7^1 + 18 * 7^0
+-16 * 7 + 18 * 1
+-112 + 18
+-94
+
+Therefore, the output is -94.
+
+Output: -94",-94,True,"[-16, 18]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -16 * x^1 + 18 * x^0
+    
+    Examples:
+    Input: -9
+Output: 162
+
+Input: 17
+Output: -254
+
+Input: -4
+Output: 82
+
+Input: -18
+Output: 306
+
+Input: -14
+Output: 242
+
+
+    Return the output preceded by 'Output:'
+    Input: 2
+    ","To apply the function to the input value of 2, we substitute x with 2 in the function:
+
+Function: -16 * x^1 + 18 * x^0
+
+For x = 2:
+
+Output = -16 * (2)^1 + 18 * (2)^0
+Output = -16 * 2 + 18 * 1
+Output = -32 + 18
+Output = -14
+
+Therefore, the correct output is:
+
+Output: -14",-14,True,"[-16, 18]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -16 * x^1 + 18 * x^0
+    
+    Examples:
+    Input: -9
+Output: 162
+
+Input: 17
+Output: -254
+
+Input: -4
+Output: 82
+
+Input: -18
+Output: 306
+
+Input: -14
+Output: 242
+
+
+    Return the output preceded by 'Output:'
+    Input: 0
+    ","To apply the function to the input, we substitute the value of x with 0:
+
+Function: -16 * x^1 + 18 * x^0
+
+Input: 0
+
+Output: -16 * (0)^1 + 18 * (0)^0
+Output: -16 * 0 + 18 * 1
+Output: 0 + 18
+Output: 18
+
+Therefore, the correct output is:
+
+Output: 18",18,True,"[-16, 18]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    -16 * x^1 + 18 * x^0
+    
+    Examples:
+    Input: -9
+Output: 162
+
+Input: 17
+Output: -254
+
+Input: -4
+Output: 82
+
+Input: -18
+Output: 306
+
+Input: -14
+Output: 242
+
+
+    Return the output preceded by 'Output:'
+    Input: 7
+    ","To apply the function to the input value of 7, we plug in x = 7 into the function:
+
+-16 * x^1 + 18 * x^0
+
+-16 * 7^1 + 18 * 7^0
+-16 * 7 + 18 * 1
+-112 + 18
+-94
+
+Therefore, the output is -94.
+
+Output: -94",-94,True,"[-16, 18]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    20 * x^1 + -10 * x^0
+    
+    Examples:
+    Input: 18
+Output: 350
+
+Input: 12
+Output: 230
+
+Input: -13
+Output: -270
+
+Input: 4
+Output: 70
+
+Input: 16
+Output: 310
+
+
+    Return the output preceded by 'Output:'
+    Input: -8
+    ","To apply the function to the input -8, we follow the function:
+
+20 * x^1 + -10 * x^0
+
+First, we replace x with -8:
+
+20 * (-8)^1 + -10 * (-8)^0
+
+Now we calculate the power of -8:
+
+(-8)^1 = -8
+(-8)^0 = 1 (any number to the power of 0 is 1)
+
+Now we multiply:
+
+20 * -8 + -10 * 1
+
+Which gives us:
+
+-160 + -10
+
+Adding these together gives us:
+
+-160 - 10 = -170
+
+So the output is:
+
+Output: -170",-170,True,"[20, -10]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    20 * x^1 + -10 * x^0
+    
+    Examples:
+    Input: 18
+Output: 350
+
+Input: 12
+Output: 230
+
+Input: -13
+Output: -270
+
+Input: 4
+Output: 70
+
+Input: 16
+Output: 310
+
+
+    Return the output preceded by 'Output:'
+    Input: -4
+    ","To apply the function to the input -4, we follow the function:
+
+20 * x^1 + -10 * x^0
+
+First, we replace x with -4:
+
+20 * (-4)^1 + -10 * (-4)^0
+
+Now we calculate the power of -4:
+
+20 * -4 + -10 * 1
+
+Now we multiply:
+
+-80 + -10
+
+Finally, we add the two numbers:
+
+-80 - 10 = -90
+
+So the output is:
+
+Output: -90",-90,True,"[20, -10]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    20 * x^1 + -10 * x^0
+    
+    Examples:
+    Input: 18
+Output: 350
+
+Input: 12
+Output: 230
+
+Input: -13
+Output: -270
+
+Input: 4
+Output: 70
+
+Input: 16
+Output: 310
+
+
+    Return the output preceded by 'Output:'
+    Input: -18
+    ","To apply the function to the input -18, we follow the function:
+
+20 * x^1 + -10 * x^0
+
+First, we replace x with -18:
+
+20 * (-18)^1 + -10 * (-18)^0
+
+Now we calculate the power of -18:
+
+(-18)^1 = -18 (because any number to the power of 1 is the number itself)
+(-18)^0 = 1 (because any number to the power of 0 is 1)
+
+Now we multiply by the coefficients:
+
+20 * (-18) + -10 * 1
+
+This gives us:
+
+-360 + -10
+
+Adding these together gives us:
+
+-360 - 10 = -370
+
+So the output is -370. Preceded by 'Output:', the answer is:
+
+Output: -370",-370,True,"[20, -10]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    20 * x^1 + -10 * x^0
+    
+    Examples:
+    Input: 18
+Output: 350
+
+Input: 12
+Output: 230
+
+Input: -13
+Output: -270
+
+Input: 4
+Output: 70
+
+Input: 16
+Output: 310
+
+
+    Return the output preceded by 'Output:'
+    Input: 7
+    ","To apply the function to the input, we will substitute the value of x with 7:
+
+Function: 20 * x^1 + -10 * x^0
+
+For x = 7:
+
+20 * 7^1 + -10 * 7^0
+= 20 * 7 + -10 * 1
+= 140 + -10
+= 130
+
+Therefore, the correct output is 130.
+
+Output: 130",130,True,"[20, -10]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    20 * x^1 + -10 * x^0
+    
+    Examples:
+    Input: 18
+Output: 350
+
+Input: 12
+Output: 230
+
+Input: -13
+Output: -270
+
+Input: 4
+Output: 70
+
+Input: 16
+Output: 310
+
+
+    Return the output preceded by 'Output:'
+    Input: -20
+    ","To apply the function to the input -20, we follow the function:
+
+20 * x^1 + -10 * x^0
+
+First, we replace x with -20:
+
+20 * (-20)^1 + -10 * (-20)^0
+
+Now we calculate each term:
+
+20 * (-20) + -10 * 1
+
+-400 + -10
+
+-400 - 10
+
+-410
+
+So the output is -410. Preceded by 'Output:', the answer is:
+
+Output: -410",-410,True,"[20, -10]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    14 * x^1 + -5 * x^0
+    
+    Examples:
+    Input: 13
+Output: 177
+
+Input: 14
+Output: 191
+
+Input: -8
+Output: -117
+
+Input: 3
+Output: 37
+
+Input: 7
+Output: 93
+
+
+    Return the output preceded by 'Output:'
+    Input: -16
+    ","To apply the function to the input -16, we follow the function:
+
+14 * x^1 + -5 * x^0
+
+Substitute x with -16:
+
+14 * (-16)^1 + -5 * (-16)^0
+
+Now calculate the values:
+
+14 * (-16) + -5 * 1
+-224 + -5
+-229
+
+So the output is -229.
+
+Output: -229",-229,True,"[14, -5]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    14 * x^1 + -5 * x^0
+    
+    Examples:
+    Input: 13
+Output: 177
+
+Input: 14
+Output: 191
+
+Input: -8
+Output: -117
+
+Input: 3
+Output: 37
+
+Input: 7
+Output: 93
+
+
+    Return the output preceded by 'Output:'
+    Input: 1
+    ","To apply the function to the input, we will substitute the value of x with 1:
+
+Function: 14 * x^1 + -5 * x^0
+
+For x = 1:
+
+Output: 14 * 1^1 + -5 * 1^0
+Output: 14 * 1 + -5 * 1
+Output: 14 + -5
+Output: 9
+
+Therefore, the correct output is:
+
+Output: 9",9,True,"[14, -5]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    14 * x^1 + -5 * x^0
+    
+    Examples:
+    Input: 13
+Output: 177
+
+Input: 14
+Output: 191
+
+Input: -8
+Output: -117
+
+Input: 3
+Output: 37
+
+Input: 7
+Output: 93
+
+
+    Return the output preceded by 'Output:'
+    Input: 19
+    ","To apply the function to the input, we substitute the value of x with 19:
+
+14 * 19^1 + -5 * 19^0
+
+Now we calculate the result:
+
+14 * 19 + -5 * 1
+= 266 + -5
+= 261
+
+Therefore, the correct output is:
+
+Output: 261",261,True,"[14, -5]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    14 * x^1 + -5 * x^0
+    
+    Examples:
+    Input: 13
+Output: 177
+
+Input: 14
+Output: 191
+
+Input: -8
+Output: -117
+
+Input: 3
+Output: 37
+
+Input: 7
+Output: 93
+
+
+    Return the output preceded by 'Output:'
+    Input: 0
+    ","To apply the function to the input, we substitute the value of x with 0:
+
+Function: 14 * x^1 + -5 * x^0
+
+Input: 0
+
+Output: 14 * 0^1 + -5 * 0^0
+Output: 14 * 0 + -5 * 1
+Output: 0 + -5
+Output: -5
+
+Therefore, the correct output is:
+
+Output: -5",-5,True,"[14, -5]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function:
+    14 * x^1 + -5 * x^0
+    
+    Examples:
+    Input: 13
+Output: 177
+
+Input: 14
+Output: 191
+
+Input: -8
+Output: -117
+
+Input: 3
+Output: 37
+
+Input: 7
+Output: 93
+
+
+    Return the output preceded by 'Output:'
+    Input: -13
+    ","To apply the function to the input -13, we follow the function:
+
+14 * x^1 + -5 * x^0
+
+Substitute x with -13:
+
+14 * (-13)^1 + -5 * (-13)^0
+
+Now calculate the values:
+
+14 * (-13) + -5 * 1
+= -182 + -5
+= -187
+
+Therefore, the correct output is -187.
+
+Output: -187",-187,True,"[14, -5]"

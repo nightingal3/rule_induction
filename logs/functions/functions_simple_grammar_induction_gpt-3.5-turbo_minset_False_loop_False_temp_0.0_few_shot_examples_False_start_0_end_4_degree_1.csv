@@ -1,0 +1,180 @@
+inputs,outputs,answer,correct,task_id
+"Use this function to apply to the input example to get the correct output.
+
+    Output: y = 67x^0 + 10x^1
+
+    However, just write the output like what's shown in these examples.
+    Input: -10
+Output: -213
+
+Input: 9
+Output: 167
+
+Input: 4
+Output: 67
+
+Input: -3
+Output: -73
+
+Input: 20
+Output: 387
+
+
+    Return the output preceded by 'Output:'
+    Input: 15
+    ",Output: 292,287,False,"[20, -13]"
+"Use this function to apply to the input example to get the correct output.
+
+    Function: y = -3x + 7
+
+    However, just write the output like what's shown in these examples.
+    Input: -10
+Output: -213
+
+Input: 9
+Output: 167
+
+Input: 4
+Output: 67
+
+Input: -3
+Output: -73
+
+Input: 20
+Output: 387
+
+
+    Return the output preceded by 'Output:'
+    Input: -6
+    ",Output: 25,-133,False,"[20, -13]"
+"Use this function to apply to the input example to get the correct output.
+
+    y = -17x^0 + 18x^1
+
+    However, just write the output like what's shown in these examples.
+    Input: -10
+Output: -213
+
+Input: 9
+Output: 167
+
+Input: 4
+Output: 67
+
+Input: -3
+Output: -73
+
+Input: 20
+Output: 387
+
+
+    Return the output preceded by 'Output:'
+    Input: 0
+    ",Output: -17,-13,False,"[20, -13]"
+"Use this function to apply to the input example to get the correct output.
+
+    To find the function that captures the relationship between inputs and outputs, we can use the given input-output pairs to find the values of ""a"" and ""b"" in the form y = ax^0 + bx^1.
+
+Let's plug in the first input-output pair (-10, -213) into the equation:
+
+-213 = a(-10)^0 + b(-10)^1
+-213 = a + (-10)b
+
+Similarly, let's plug in the other input-output pairs:
+
+167 = a(9)^0 + b(9)^1
+167 = a + 9b
+
+67 = a(4)^0 + b(4)^1
+67 = a + 4b
+
+-73 = a(-3)^0 + b(-3)^1
+-73 = a + (-3)b
+
+387 = a(20)^0 + b(20)^1
+387 = a + 20b
+
+We now have a system of linear equations. To find the values of ""a"" and ""b"", we can solve this system.
+
+Adding up the first, second, and third equations, we get:
+
+-213 + 167 + 67 = 3a + 12b
+21 = 3a + 12b   [Equation 4]
+
+Adding up the first and fourth equations, we get:
+
+-213 + 387 = 2a + 10b
+174 = 2a + 10b   [Equation 5]
+
+Subtracting Equation 4 from Equation 5:
+
+174 - 21 = (2a + 10b) - (3a +12b)
+153 = -a - 2b
+
+Simplifying:
+
+-a - 2b = 153
+a + 2b = -153   [Equation 6]
+
+We now have two equations (Equation 5 and Equation 6) with two variables (a and b). We can solve this system of equations to find the values of ""a"" and ""b"".
+
+Multiplying Equation 6 by 2, we get:
+
+2a + 4b = -306   [Equation 7]
+
+Adding Equation 5 and Equation 7, we have:
+
+2a + 10b + 2a + 4b = -153 - 306
+4a + 14b = -459
+
+Since Equation 7 is a multiple of Equation 6, we can subtract Equation 6 from Equation 5 to eliminate the ""a"" term:
+
+(4a + 14b) - (a + 2b) = -459 - (-153)
+ 3a + 12b = -306       [Equation 8]
+
+We now have two equations (Equation 8 and Equation 4) with two variables (a and b). We can solve this system of equations to find the values of ""a"" and ""b"".
+
+Now, adding up Equation 4 and Equation 8:
+
+(3a + 12b) + (3a + 12b) = -306 + 21
+6a + 24b = -285
+
+Dividing both sides of the equation by 6:
+
+a + 4b = -47.5   [Equation 9]
+
+Subtracting Equation 9 from Equation 8:
+
+(3a + 12b) - (a + 4b) = -306 - (-47.5)
+2a + 8b = -258.5
+
+Dividing both sides of the equation by 2:
+
+a + 4b = -129.25   [Equation 10]
+
+Comparing Equation 9 and Equation 10, we can see that they are the same equation multiplied by different constants. Therefore, we can conclude that ""a"" = -47.5 and ""b"" = 4.
+
+Hence, the function that captures the relationship between inputs and outputs in the form y = ax^0 + bx^1 is:
+
+Output: y = -47.5x^0 + 4x^1
+
+    However, just write the output like what's shown in these examples.
+    Input: -10
+Output: -213
+
+Input: 9
+Output: 167
+
+Input: 4
+Output: 67
+
+Input: -3
+Output: -73
+
+Input: 20
+Output: 387
+
+
+    Return the output preceded by 'Output:'
+    Input: -17
+    ",Output: -383,-353,False,"[20, -13]"

@@ -1,0 +1,56 @@
+inputs,outputs,answer,correct,task_id
+"Use this function to apply to the input example to get the correct output.
+
+    To find a function of the form y = ax^0 + bx^1, we first need to recognize that this is a linear function where ax^0 is the constant term (since any number to the power of 0 is 1) and bx^1 is the term with x. Therefore, the function we are trying to find will look like y = a + bx.
+
+We can use two points to calculate the coefficients a and b.
+
+Let's use the following two points: (9, 167) and (-10, -213).
+
+We'll set up two equations based on these two points:
+
+1. For x = 9: 167 = a + 9b
+2. For x = -10: -213 = a - 10b
+
+Next, we solve this system of linear equations for a and b:
+
+From equation 1:
+a = 167 - 9b
+
+Substitute a from equation 1 into equation 2:
+-213 = (167 - 9b) - 10b
+-213 = 167 - 9b - 10b
+-213 = 167 - 19b
+-213 - 167 = -19b
+-380 = -19b
+b = 20
+
+Now that we have b, we can substitute it back into the equation for a:
+a = 167 - 9b
+a = 167 - 9(20)
+a = 167 - 180
+a = -13
+
+Thus, the function that describes the data is:
+y = -13 + 20x
+
+    However, just write the output like what's shown in these examples.
+    Input: -10
+Output: -213
+
+Input: 9
+Output: 167
+
+Input: 4
+Output: 67
+
+Input: -3
+Output: -73
+
+Input: 20
+Output: 387
+
+
+    Return the output preceded by 'Output:'
+    Input: 15
+    ",Output: 287,287,True,"[20, -13]"

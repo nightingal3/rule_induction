@@ -1,0 +1,626 @@
+inputs,outputs,answer,correct,task_id
+"Use this function to apply to the input example to get the correct output.
+
+    To find the relationship between the inputs and outputs, we can use the given points to solve for the coefficients a and b in the equation y = ax^0 + bx^1.
+
+Using the first point (-10, -213), we can substitute the values into the equation:
+-213 = a(-10)^0 + b(-10)^1
+-213 = a + (-10)b
+
+Using the second point (9, 167):
+167 = a(9)^0 + b(9)^1
+167 = a + 9b
+
+Using the third point (4, 67):
+67 = a(4)^0 + b(4)^1
+67 = a + 4b
+
+Using the fourth point (-3, -73):
+-73 = a(-3)^0 + b(-3)^1
+-73 = a - 3b
+
+Using the fifth point (20, 387):
+387 = a(20)^0 + b(20)^1
+387 = a + 20b
+
+Now we have a system of equations:
+-213 = a + (-10)b
+167 = a + 9b
+67 = a + 4b
+-73 = a - 3b
+387 = a + 20b
+
+Solving this system of equations, we find that a = 3 and b = 20.
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+Output: y = 3x^0 + 20x^1
+
+    However, just write the output like what's shown in these examples.
+    Input: -10
+Output: -213
+
+Input: 9
+Output: 167
+
+Input: 4
+Output: 67
+
+Input: -3
+Output: -73
+
+Input: 20
+Output: 387
+
+
+    Return the output preceded by 'Output:'
+    Input: 15
+    ",Output: 603,287,False,"[20, -13]"
+"Use this function to apply to the input example to get the correct output.
+
+    To find the relationship between the inputs and outputs, we can use the given points to solve for the coefficients a and b in the equation y = ax^0 + bx^1.
+
+Using the first point (-10, -213), we can substitute the values into the equation:
+-213 = a(-10)^0 + b(-10)^1
+-213 = a + (-10)b
+
+Using the second point (9, 167):
+167 = a(9)^0 + b(9)^1
+167 = a + 9b
+
+Using the third point (4, 67):
+67 = a(4)^0 + b(4)^1
+67 = a + 4b
+
+Using the fourth point (-3, -73):
+-73 = a(-3)^0 + b(-3)^1
+-73 = a - 3b
+
+Using the fifth point (20, 387):
+387 = a(20)^0 + b(20)^1
+387 = a + 20b
+
+Now we have a system of equations:
+-213 = a + (-10)b
+167 = a + 9b
+67 = a + 4b
+-73 = a - 3b
+387 = a + 20b
+
+Solving this system of equations, we find that a = 3 and b = 20.
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+y = 3x^0 + 20x^1
+
+Simplifying, we get:
+y = 3 + 20x
+
+    However, just write the output like what's shown in these examples.
+    Input: -10
+Output: -213
+
+Input: 9
+Output: 167
+
+Input: 4
+Output: 67
+
+Input: -3
+Output: -73
+
+Input: 20
+Output: 387
+
+
+    Return the output preceded by 'Output:'
+    Input: -6
+    ",Output: -33,-133,False,"[20, -13]"
+"Use this function to apply to the input example to get the correct output.
+
+    To find the relationship between the inputs and outputs, we can use the given points to solve for the coefficients a and b in the equation y = ax^0 + bx^1.
+
+Using the first point (-10, -213), we can substitute the values into the equation:
+-213 = a(-10)^0 + b(-10)^1
+-213 = a + (-10)b
+
+Using the second point (9, 167):
+167 = a(9)^0 + b(9)^1
+167 = a + 9b
+
+Using the third point (4, 67):
+67 = a(4)^0 + b(4)^1
+67 = a + 4b
+
+Using the fourth point (-3, -73):
+-73 = a(-3)^0 + b(-3)^1
+-73 = a - 3b
+
+Using the fifth point (20, 387):
+387 = a(20)^0 + b(20)^1
+387 = a + 20b
+
+Now we have a system of equations:
+-213 = a + (-10)b
+167 = a + 9b
+67 = a + 4b
+-73 = a - 3b
+387 = a + 20b
+
+Solving this system of equations, we find that a = 3 and b = 20.
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+Output: y = 3x^0 + 20x^1
+
+    However, just write the output like what's shown in these examples.
+    Input: -10
+Output: -213
+
+Input: 9
+Output: 167
+
+Input: 4
+Output: 67
+
+Input: -3
+Output: -73
+
+Input: 20
+Output: 387
+
+
+    Return the output preceded by 'Output:'
+    Input: 0
+    ",Output: 3,-13,False,"[20, -13]"
+"Use this function to apply to the input example to get the correct output.
+
+    To find the relationship between the inputs and outputs, we can use the given points to solve for the coefficients a and b in the equation y = ax^0 + bx^1.
+
+Using the first point (-10, -213), we can substitute the values into the equation:
+-213 = a(-10)^0 + b(-10)^1
+-213 = a + (-10)b
+
+Using the second point (9, 167):
+167 = a(9)^0 + b(9)^1
+167 = a + 9b
+
+Using the third point (4, 67):
+67 = a(4)^0 + b(4)^1
+67 = a + 4b
+
+Using the fourth point (-3, -73):
+-73 = a(-3)^0 + b(-3)^1
+-73 = a - 3b
+
+Using the fifth point (20, 387):
+387 = a(20)^0 + b(20)^1
+387 = a + 20b
+
+Now we have a system of equations:
+-213 = a + (-10)b
+167 = a + 9b
+67 = a + 4b
+-73 = a - 3b
+387 = a + 20b
+
+Solving this system of equations, we find that a = 3 and b = 20.
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+y = 3x^0 + 20x^1
+
+Simplifying, we get:
+y = 3 + 20x
+
+    However, just write the output like what's shown in these examples.
+    Input: -10
+Output: -213
+
+Input: 9
+Output: 167
+
+Input: 4
+Output: 67
+
+Input: -3
+Output: -73
+
+Input: 20
+Output: 387
+
+
+    Return the output preceded by 'Output:'
+    Input: -17
+    ",Output: -313,-353,False,"[20, -13]"
+"Use this function to apply to the input example to get the correct output.
+
+    To find the relationship between the inputs and outputs, we can use the given points to solve for the coefficients a and b in the equation y = ax^0 + bx^1.
+
+Using the first point (-10, -213), we can substitute the values into the equation:
+-213 = a(-10)^0 + b(-10)^1
+-213 = a + (-10)b
+
+Using the second point (9, 167):
+167 = a(9)^0 + b(9)^1
+167 = a + 9b
+
+Using the third point (4, 67):
+67 = a(4)^0 + b(4)^1
+67 = a + 4b
+
+Using the fourth point (-3, -73):
+-73 = a(-3)^0 + b(-3)^1
+-73 = a - 3b
+
+Using the fifth point (20, 387):
+387 = a(20)^0 + b(20)^1
+387 = a + 20b
+
+Now we have a system of equations:
+-213 = a + (-10)b
+167 = a + 9b
+67 = a + 4b
+-73 = a - 3b
+387 = a + 20b
+
+Solving this system of equations, we find that a = 3 and b = 20.
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+Output: y = 3x^0 + 20x^1
+
+    However, just write the output like what's shown in these examples.
+    Input: -18
+Output: 339
+
+Input: 0
+Output: -3
+
+Input: 5
+Output: -98
+
+Input: -3
+Output: 54
+
+Input: -16
+Output: 301
+
+
+    Return the output preceded by 'Output:'
+    Input: -6
+    ",Output: 117,-133,False,"[20, -13]"
+"Use this function to apply to the input example to get the correct output.
+
+    To find the relationship between the inputs and outputs, we can use the given points to solve for the coefficients a and b in the equation y = ax^0 + bx^1.
+
+Using the first point (-18, 339):
+339 = a(-18)^0 + b(-18)^1
+339 = a + (-18)b
+
+Using the second point (0, -3):
+-3 = a(0)^0 + b(0)^1
+-3 = a
+
+Using the third point (5, -98):
+-98 = a(5)^0 + b(5)^1
+-98 = a + 5b
+
+Using the fourth point (-3, 54):
+54 = a(-3)^0 + b(-3)^1
+54 = a + (-3)b
+
+Using the fifth point (-16, 301):
+301 = a(-16)^0 + b(-16)^1
+301 = a + (-16)b
+
+From the equations above, we can solve for a and b:
+
+a + (-18)b = 339
+-3 = a
+a + 5b = -98
+a + (-3)b = 54
+a + (-16)b = 301
+
+Substituting -3 for a in the other equations:
+
+-3 + 5b = -98
+-3 + (-3)b = 54
+-3 + (-16)b = 301
+
+Simplifying the equations:
+
+5b = -95
+(-3)b = 57
+(-16)b = 304
+
+Solving for b:
+
+b = -95/5
+b = -19
+
+b = 57/(-3)
+b = -19
+
+b = 304/(-16)
+b = -19
+
+Since b is consistent in all equations, we can conclude that b = -19.
+
+Substituting b = -19 into one of the equations:
+
+a + (-18)(-19) = 339
+a + 342 = 339
+a = 339 - 342
+a = -3
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+
+Output: y = -3x^0 - 19x^1
+
+    However, just write the output like what's shown in these examples.
+    Input: -18
+Output: 339
+
+Input: 0
+Output: -3
+
+Input: 5
+Output: -98
+
+Input: -3
+Output: 54
+
+Input: -16
+Output: 301
+
+
+    Return the output preceded by 'Output:'
+    Input: -7
+    ",Output: 120,130,False,"[-19, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    To find the relationship between the inputs and outputs, we can use the given points to solve for the coefficients a and b in the equation y = ax^0 + bx^1.
+
+Using the first point (-18, 339):
+339 = a(-18)^0 + b(-18)^1
+339 = a + (-18)b
+
+Using the second point (0, -3):
+-3 = a(0)^0 + b(0)^1
+-3 = a
+
+Using the third point (5, -98):
+-98 = a(5)^0 + b(5)^1
+-98 = a + 5b
+
+Using the fourth point (-3, 54):
+54 = a(-3)^0 + b(-3)^1
+54 = a + (-3)b
+
+Using the fifth point (-16, 301):
+301 = a(-16)^0 + b(-16)^1
+301 = a + (-16)b
+
+From the equations above, we can solve for a and b:
+
+a + (-18)b = 339
+-3 = a
+a + 5b = -98
+a + (-3)b = 54
+a + (-16)b = 301
+
+Substituting -3 for a in the other equations:
+
+-3 + 5b = -98
+-3 + (-3)b = 54
+-3 + (-16)b = 301
+
+Simplifying the equations:
+
+5b = -95
+(-3)b = 57
+(-16)b = 304
+
+Solving for b:
+
+b = -95/5
+b = -19
+
+b = 57/(-3)
+b = -19
+
+b = 304/(-16)
+b = -19
+
+Since b is consistent in all equations, we can conclude that b = -19.
+
+Substituting b = -19 into one of the equations:
+
+a + (-18)(-19) = 339
+a + 342 = 339
+a = 339 - 342
+a = -3
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+
+Output: y = -3x^0 - 19x^1
+
+    However, just write the output like what's shown in these examples.
+    Input: -18
+Output: 339
+
+Input: 0
+Output: -3
+
+Input: 5
+Output: -98
+
+Input: -3
+Output: 54
+
+Input: -16
+Output: 301
+
+
+    Return the output preceded by 'Output:'
+    Input: 16
+    ",Output: -323,-307,False,"[-19, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    To find the relationship between the inputs and outputs, we can use the given points to solve for the coefficients a and b in the equation y = ax^0 + bx^1.
+
+Using the first point (-18, 339):
+339 = a(-18)^0 + b(-18)^1
+339 = a + (-18)b
+
+Using the second point (0, -3):
+-3 = a(0)^0 + b(0)^1
+-3 = a
+
+Using the third point (5, -98):
+-98 = a(5)^0 + b(5)^1
+-98 = a + 5b
+
+Using the fourth point (-3, 54):
+54 = a(-3)^0 + b(-3)^1
+54 = a + (-3)b
+
+Using the fifth point (-16, 301):
+301 = a(-16)^0 + b(-16)^1
+301 = a + (-16)b
+
+From the equations above, we can solve for a and b:
+
+a + (-18)b = 339
+-3 = a
+a + 5b = -98
+a + (-3)b = 54
+a + (-16)b = 301
+
+Substituting -3 for a in the other equations:
+-3 + 5b = -98
+-3 + (-3)b = 54
+-3 + (-16)b = 301
+
+Simplifying the equations:
+5b = -95
+(-3)b = 57
+(-16)b = 304
+
+Solving for b:
+b = -95/5
+b = -19
+
+Substituting b = -19 into the equation a + (-3)b = 57:
+a + (-3)(-19) = 57
+a + 57 = 57
+a = 0
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+Output: y = 0x^0 + (-19)x^1
+Simplified: y = -19x
+
+    However, just write the output like what's shown in these examples.
+    Input: -18
+Output: 339
+
+Input: 0
+Output: -3
+
+Input: 5
+Output: -98
+
+Input: -3
+Output: 54
+
+Input: -16
+Output: 301
+
+
+    Return the output preceded by 'Output:'
+    Input: 0
+    ",Output: -3,-3,True,"[-19, -3]"
+"Use this function to apply to the input example to get the correct output.
+
+    To find the relationship between the inputs and outputs, we can use the given points to solve for the coefficients a and b in the equation y = ax^0 + bx^1.
+
+Using the first point (-18, 339):
+339 = a(-18)^0 + b(-18)^1
+339 = a + (-18)b
+
+Using the second point (0, -3):
+-3 = a(0)^0 + b(0)^1
+-3 = a
+
+Using the third point (5, -98):
+-98 = a(5)^0 + b(5)^1
+-98 = a + 5b
+
+Using the fourth point (-3, 54):
+54 = a(-3)^0 + b(-3)^1
+54 = a + (-3)b
+
+Using the fifth point (-16, 301):
+301 = a(-16)^0 + b(-16)^1
+301 = a + (-16)b
+
+From the equations above, we can solve for a and b:
+
+a + (-18)b = 339
+-3 = a
+a + 5b = -98
+a + (-3)b = 54
+a + (-16)b = 301
+
+Substituting -3 for a in the other equations:
+
+-3 + 5b = -98
+-3 + (-3)b = 54
+-3 + (-16)b = 301
+
+Simplifying the equations:
+
+5b = -95
+(-3)b = 57
+(-16)b = 304
+
+Solving for b:
+
+b = -95/5
+b = -19
+
+b = 57/(-3)
+b = -19
+
+b = 304/(-16)
+b = -19
+
+Since b is consistent in all equations, we can conclude that b = -19.
+
+Substituting b = -19 into one of the equations:
+
+a + (-18)(-19) = 339
+a + 342 = 339
+a = 339 - 342
+a = -3
+
+Therefore, the function that captures the relationship between the inputs and outputs is:
+
+Output: y = -3x^0 - 19x^1
+
+    However, just write the output like what's shown in these examples.
+    Input: -18
+Output: 339
+
+Input: 0
+Output: -3
+
+Input: 5
+Output: -98
+
+Input: -3
+Output: 54
+
+Input: -16
+Output: 301
+
+
+    Return the output preceded by 'Output:'
+    Input: -7
+    ",Output: 120,130,False,"[-19, -3]"
