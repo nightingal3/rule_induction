@@ -1,0 +1,8720 @@
+inputs,outputs,answer,correct,task_id
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means green.
+For example 2, lug means blue.
+
+For example 1, the nonce word dax means ""yellow"".
+For example 
+
+For example 1, wif means yellow.
+For example 2, wif means
+
+For example 1, zup means blue.
+For example 2, zup means
+
+For example 1, bluf means yellow.
+For example 2, bluf means
+
+For example 1, walm means green.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: lug dax lug
+Output: blue green blue
+
+Input: lug bluf
+Output: blue blue
+
+Input: zup lug zup lug wif
+Output: yellow blue yellow blue red
+
+Input: wif zup bluf wif dax
+Output: red yellow yellow red green
+
+Input: wif
+Output: red
+
+
+    Return the output preceded by 'Output:'
+    Input: wif dax
+    ","
+    Note: The input examples are case-sensitive.",red green,False,0
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means blue.
+For example 2, lug means blue.
+
+For example 1, the nonce word dax means ""green"".
+For example 
+
+For example 1, wif means yellow.
+For example 2, wif means
+
+For example 1, zup means ""green"".
+For example 2, zup
+
+For example, in the first input, bluf means yellow. In the second input, bl
+
+For example 1, walm means yellow.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: dax
+Output: green
+
+Input: zup wif walm
+Output: yellow red red red
+
+Input: lug zup
+Output: blue yellow
+
+Input: lug wif bluf dax lug bluf
+Output: blue red red green blue blue
+
+Input: wif walm zup
+Output: red red red yellow
+
+
+    Return the output preceded by 'Output:'
+    Input: wif zup
+    ",Output: red red red yellow,red yellow,False,1
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means ""green"".
+For example 2
+
+For example 1, the nonce word dax means ""green"".
+For example 
+
+For example 1, wif means ""red"".
+For example 2, wif
+
+For example 1, zup means ""yellow"".
+For example 2, zup
+
+For example, in the first input, bluf means blue. In the second input, bl
+
+For example 1, the nonce word walm means blue.
+For example 2
+
+    However, just write the output like what's shown in these examples.
+    Input: wif zup dax
+Output: red yellow green
+
+Input: zup wif walm lug
+Output: yellow red red red blue
+
+Input: zup walm
+Output: yellow yellow yellow
+
+Input: wif zup
+Output: red yellow
+
+Input: wif bluf
+Output: red red
+
+
+    Return the output preceded by 'Output:'
+    Input: dax
+    ",Output: green,green,True,2
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means ""yellow"".
+For example 2
+
+For example, in the first input, ""dax"" means ""green"". In the second
+
+For example 1, wif means ""blue"".
+For example 2, wif
+
+For example 1, the nonce word zup means yellow.
+For example 2
+
+For example, in the first input, bluf means ""wife"". In the second input
+
+For example 1, walm means ""green"".
+For example 2, walm
+
+    However, just write the output like what's shown in these examples.
+    Input: zup
+Output: yellow
+
+Input: zup
+Output: yellow
+
+Input: wif bluf
+Output: red red
+
+Input: zup wif
+Output: yellow red
+
+Input: wif
+Output: red
+
+
+    Return the output preceded by 'Output:'
+    Input: wif dax bluf
+    ",Output: red green red,red green green,False,3
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means blue.
+For example 2,
+
+For example 1, dax means ""wife"".
+For example 2, da
+
+For example 1, wif means red.
+For example 2, wif means
+
+For example 1, the nonce word zup means yellow.
+For example 2
+
+For example, in the first input, bluf means ""yellow"". In the second input,
+
+For example 1, walm means ""red"".
+For example 2, walm
+
+    However, just write the output like what's shown in these examples.
+    Input: dax wif bluf
+Output: green red red
+
+Input: wif bluf
+Output: red red
+
+Input: zup lug dax lug
+Output: yellow blue green blue
+
+Input: zup dax
+Output: yellow green
+
+Input: zup
+Output: yellow
+
+
+    Return the output preceded by 'Output:'
+    Input: lug walm dax zup
+    ","
+    Output: Output: blue red green yellow",blue blue blue green yellow,False,4
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means blue.
+For example 2,
+
+For example 1, the nonce word dax means ""wife"".
+For example
+
+For example 1, wif means ""luggage"".
+For example 2,
+
+For example 1, zup means yellow.
+For example 2, zup means
+
+For example, in the first input, bluf means ""green"". In the second input,
+
+For example 1, walm means blue.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: lug wif dax wif
+Output: blue red green red
+
+Input: zup lug
+Output: yellow blue
+
+Input: wif
+Output: red
+
+Input: wif
+Output: red
+
+Input: wif bluf
+Output: red red
+
+
+    Return the output preceded by 'Output:'
+    Input: dax zup dax zup
+    ","
+    Output: wife yellow wife yellow
+
+    Return the output preceded by 'Output:",green yellow green yellow,False,5
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means ""yellow"".
+For example 2
+
+For example 1, the nonce word dax means ""red"".
+For example 
+
+For example 1, wif means red.
+For example 2, wif means
+
+For example, in the first input, ""zup"" means ""yellow green"". In the
+
+For example 1, bluf means ""wife"".
+For example 2, bl
+
+For example 1, walm means yellow.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: zup lug
+Output: yellow blue
+
+Input: dax zup walm wif
+Output: green yellow yellow yellow red
+
+Input: dax
+Output: green
+
+Input: dax
+Output: green
+
+Input: wif walm dax
+Output: red red red green
+
+
+    Return the output preceded by 'Output:'
+    Input: wif
+    ",Output: Output: red,red,False,6
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means blue.
+For example 2,
+
+For example, in the first three inputs, dax means ""green"".
+In the fourth
+
+For example 1, wif means ""yellow"".
+For example 2, wif
+
+For example, in the first input, ""zup"" means ""yellow"". In the second
+
+For example, in the first two inputs, bluf seems to be a nonce word that
+
+For example 1, walm means yellow.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: zup dax lug
+Output: yellow green blue
+
+Input: dax
+Output: green
+
+Input: dax
+Output: green
+
+Input: zup
+Output: yellow
+
+Input: wif walm lug bluf
+Output: red red red blue blue
+
+
+    Return the output preceded by 'Output:'
+    Input: lug walm
+    ",Output: blue yellow,blue blue blue,False,7
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means blue.
+For example 2,
+
+For example 1, the nonce word dax means ""green"".
+For example 
+
+For example 1, wif means ""red"".
+For example 2, wif
+
+For example 1, zup means ""green"".
+For example 2, zup
+
+For example, in the first input, bluf means ""wife"". In the second input
+
+For example 1, walm means ""red"".
+For example 2, walm
+
+    However, just write the output like what's shown in these examples.
+    Input: dax
+Output: green
+
+Input: wif zup
+Output: red yellow
+
+Input: dax
+Output: green
+
+Input: lug zup dax wif
+Output: blue yellow green red
+
+Input: zup wif
+Output: yellow red
+
+
+    Return the output preceded by 'Output:'
+    Input: zup lug dax zup
+    ",Output: Output: blue yellow green blue,yellow blue green yellow,False,8
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means yellow.
+For example 2,
+
+For example 1, the nonce word dax means ""yellow green"".
+For example
+
+For example 1, wif means red.
+For example 2, wif means
+
+For example 1, the nonce word zup means yellow.
+For example 2
+
+For example 1, bluf means ""yellow"".
+For example 2, bluf
+
+For example 1, walm means yellow.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: lug dax
+Output: blue green
+
+Input: zup lug bluf zup bluf wif
+Output: yellow blue blue yellow yellow red
+
+Input: zup lug walm
+Output: yellow blue blue blue
+
+Input: lug walm
+Output: blue blue blue
+
+Input: wif
+Output: red
+
+
+    Return the output preceded by 'Output:'
+    Input: wif zup dax zup
+    ",Output: red blue green blue,red yellow green yellow,False,9
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means ""red"".
+For example 2, lug means ""
+
+For example 1, the meaning of dax is green.
+For example 2,
+
+For example 1 and 2, wif means red.
+For example 3,
+
+For example 1, the nonce word zup means ""blue"".
+For example 
+
+For example 1, bluf means ""green"".
+For example 2, bluf
+
+For example 1, walm means blue.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: wif
+Output: red
+
+Input: wif
+Output: red
+
+Input: wif dax
+Output: red green
+
+Input: wif
+Output: red
+
+Input: lug
+Output: blue
+
+
+    Return the output preceded by 'Output:'
+    Input: dax
+    ","
+    Return the output preceded by 'Output:'.
+    Input: zup
+    ",green,False,10
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example, in the first four examples, lug means blue.
+In the last example,
+
+For example 1, dax means ""yellow"".
+For example 2, dax
+
+For example 1, wif means yellow.
+For example 2, wif means
+
+For example 1, the nonce word zup means ""red"".
+For example 
+
+For example 1, bluf means ""blue"".
+For example 2, bluf
+
+For example 1, walm means yellow.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: wif lug
+Output: red blue
+
+Input: lug bluf wif lug bluf zup
+Output: blue blue red blue blue yellow
+
+Input: zup dax lug walm zup
+Output: yellow green blue blue blue yellow
+
+Input: zup dax zup
+Output: yellow green yellow
+
+Input: zup
+Output: yellow
+
+
+    Return the output preceded by 'Output:'
+    Input: wif zup lug dax
+    ","
+    Note: The input string may contain non-alphanumeric characters.
+    Note:",red yellow blue green,False,11
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example, in the first input, ""zup lug"" means ""yellow blue"".
+
+
+For example 1, the nonce word dax means ""red"".
+For example 
+
+For example 1, wif means blue.
+For example 2, wif means
+
+For example 1, the nonce word zup means yellow.
+For example 2
+
+For example, in the first input, bluf means ""green"". In the second input,
+
+For example 1, walm means blue.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: zup dax bluf
+Output: yellow green green
+
+Input: zup dax zup dax wif bluf
+Output: yellow green yellow green red red
+
+Input: dax lug walm
+Output: green blue blue blue
+
+Input: dax lug walm
+Output: green blue blue blue
+
+Input: zup lug
+Output: yellow blue
+
+
+    Return the output preceded by 'Output:'
+    Input: zup
+    ","Output: Output: yellow
+
+    Return the output preceded by 'Output:'
+    Input",yellow,False,12
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means ""yellow"".
+For example 2
+
+For example 1, the nonce word dax means ""red"".
+For example 
+
+For example 1, wif means red.
+For example 2, wif means
+
+For example 1, zup means ""blue"".
+For example 2, zup
+
+For example 1, bluf means ""red"".
+For example 2, bluf
+
+For example 1, walm means blue, yellow, green, green.
+For example
+
+    However, just write the output like what's shown in these examples.
+    Input: wif dax zup dax
+Output: red green yellow green
+
+Input: zup wif dax wif bluf
+Output: yellow red green red red
+
+Input: dax
+Output: green
+
+Input: wif dax wif
+Output: red green red
+
+Input: wif walm dax zup wif lug walm
+Output: red red red green yellow red blue blue blue
+
+
+    Return the output preceded by 'Output:'
+    Input: lug wif walm
+    ",Output: Output: yellow red green blue blue,blue red red red,False,13
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means blue.
+For example 2,
+
+For example 1, the nonce word dax means ""yellow"".
+For example 
+
+For example 1, wif means red.
+For example 2, wif means
+
+For example 1, the nonce word ""zup"" means ""yellow green"".
+
+
+For example, in the first input, bluf means ""green"". In the second input,
+
+For example 1, walm means ""green"".
+For example 2, walm
+
+    However, just write the output like what's shown in these examples.
+    Input: dax bluf wif zup wif
+Output: green green red yellow red
+
+Input: wif walm
+Output: red red red
+
+Input: lug
+Output: blue
+
+Input: dax walm wif walm
+Output: green green green red red red
+
+Input: dax
+Output: green
+
+
+    Return the output preceded by 'Output:'
+    Input: zup
+    ","Output: Output: yellow
+
+    Return the output preceded by 'Output:'
+    Input",yellow,False,14
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means blue.
+For example 2, lug means red.
+
+For example 1, the nonce word dax means ""yellow"".
+For example 
+
+For example 1, wif means yellow.
+For example 2, wif means
+
+For example 1, the nonce word zup means ""blue"".
+For example 
+
+For example 1, bluf means ""blue"".
+For example 2, bluf
+
+For example 1, walm means yellow.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: zup dax bluf
+Output: yellow green green
+
+Input: dax zup wif bluf lug
+Output: green yellow red red blue
+
+Input: dax lug
+Output: green blue
+
+Input: dax zup
+Output: green yellow
+
+Input: wif dax zup wif dax bluf
+Output: red green yellow red green green
+
+
+    Return the output preceded by 'Output:'
+    Input: lug
+    ","Output: Output: red
+
+Explanation:
+
+The grammar is a context-free",blue,False,15
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means yellow.
+For example 2, lug means blue.
+
+For example 1, dax means ""wife"".
+For example 2, da
+
+For example 1, wif means red.
+For example 2, wif means
+
+For example 1, zup means ""blue"".
+For example 2, zup
+
+For example, in the first input, ""zup bluf"" means ""yellow yellow"".
+
+For example 1, walm means ""green"".
+For example 2, walm
+
+    However, just write the output like what's shown in these examples.
+    Input: dax
+Output: green
+
+Input: zup dax bluf zup dax
+Output: yellow green green yellow green
+
+Input: zup
+Output: yellow
+
+Input: lug bluf wif lug wif walm lug
+Output: blue blue red blue red red red blue
+
+Input: dax walm
+Output: green green green
+
+
+    Return the output preceded by 'Output:'
+    Input: wif walm
+    ",Output: red green,red red red,False,16
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means blue.
+For example 2, lug means yellow.
+
+For example 1, the nonce word dax means ""yellow"".
+For example 
+
+For example 1, wif means ""yellow"".
+For example 2, wif
+
+For example 1, zup means ""red"".
+For example 2, zup
+
+For example 1, bluf means ""blue"".
+For example 2, bluf
+
+For example 1, walm means blue.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: dax lug wif lug
+Output: green blue red blue
+
+Input: zup lug zup lug wif
+Output: yellow blue yellow blue red
+
+Input: zup wif
+Output: yellow red
+
+Input: dax lug wif walm
+Output: green blue red red red
+
+Input: wif lug
+Output: red blue
+
+
+    Return the output preceded by 'Output:'
+    Input: zup bluf
+    ",Output: Output: yellow blue,yellow yellow,False,17
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means blue.
+For example 2,
+
+For example 1, the nonce word dax means ""blue"".
+For example 
+
+For example 1, wif means ""blue"".
+For example 2, wif
+
+For example 1, zup means ""yellow"".
+For example 2, zup
+
+For example 1, bluf means ""blue"".
+For example 2, bluf
+
+For example 1, walm means green.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: lug dax bluf
+Output: blue green green
+
+Input: lug dax
+Output: blue green
+
+Input: dax zup bluf
+Output: green yellow yellow
+
+Input: zup walm dax lug
+Output: yellow yellow yellow green blue
+
+Input: zup dax zup wif
+Output: yellow green yellow red
+
+
+    Return the output preceded by 'Output:'
+    Input: wif zup dax lug
+    ",Output: Output: red yellow yellow green blue,red yellow green blue,False,18
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means ""green"".
+For example 2
+
+For example 1, the nonce word dax means ""blue"".
+For example 
+
+For example 1 and 2, wif means red.
+For example 3,
+
+For example 1, zup means blue.
+For example 2, zup means
+
+For example, in the first input, bluf means blue. In the second input, bl
+
+For example 1, walm means yellow.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: zup dax lug zup
+Output: yellow green blue yellow
+
+Input: zup
+Output: yellow
+
+Input: zup
+Output: yellow
+
+Input: dax
+Output: green
+
+Input: lug bluf zup
+Output: blue blue yellow
+
+
+    Return the output preceded by 'Output:'
+    Input: zup
+    ","
+    Note: The input string may contain non-alphanumeric characters, but they will be",yellow,False,19
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means ""yellow"".
+For example 2
+
+For example 1, the nonce word dax means ""green"".
+For example 
+
+For example 1, wif means yellow.
+For example 2, wif means
+
+For example 1, zup means yellow.
+For example 2, zup means
+
+For example 1, bluf means ""wife"".
+For example 2, bl
+
+For example 1, walm means yellow.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: dax bluf zup bluf dax
+Output: green green yellow yellow green
+
+Input: dax lug walm dax wif bluf dax
+Output: green blue blue blue green red red green
+
+Input: zup lug dax lug
+Output: yellow blue green blue
+
+Input: wif bluf lug zup
+Output: red red blue yellow
+
+Input: lug
+Output: blue
+
+
+    Return the output preceded by 'Output:'
+    Input: dax lug bluf wif
+    ","
+    Note: The input string may contain non-alphanumeric characters, but they will be",green blue blue red,False,20
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means ""blue"".
+For example 2
+
+For example, in the first input, ""zup dax"" means ""yellow green"".
+
+For example 1, wif means red.
+For example 2, wif means
+
+For example 1, the nonce word zup means ""yellow"".
+For example 
+
+For example 1, bluf means ""green"".
+For example 2, bluf
+
+For example 1, walm means blue.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: wif bluf lug
+Output: red red blue
+
+Input: zup lug walm
+Output: yellow blue blue blue
+
+Input: zup wif bluf zup lug
+Output: yellow red red yellow blue
+
+Input: dax
+Output: green
+
+Input: lug zup
+Output: blue yellow
+
+
+    Return the output preceded by 'Output:'
+    Input: dax
+    ","Output: green
+
+    Return the output preceded by 'Output: '
+    Input:",green,False,21
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means ""wife"".
+For example 
+
+For example 1, the meaning of dax is ""green"".
+For example 2
+
+For example 1, wif means red.
+For example 2, wif means
+
+For example, in the first input, ""lug"" is a noun and ""z
+
+For example 1, bluf means ""wife"".
+For example 2, bl
+
+For example 1, walm means ""green"".
+For example 2, walm
+
+    However, just write the output like what's shown in these examples.
+    Input: zup
+Output: yellow
+
+Input: wif zup bluf wif dax
+Output: red yellow yellow red green
+
+Input: lug bluf
+Output: blue blue
+
+Input: zup
+Output: yellow
+
+Input: wif bluf
+Output: red red
+
+
+    Return the output preceded by 'Output:'
+    Input: lug dax lug zup lug
+    ","Output: Output: yellow yellow red yellow
+
+Explanation:
+
+In the first input",blue green blue yellow blue,False,22
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means ""green"".
+For example 2, lug means ""
+
+For example 1, the nonce word dax means ""green blue"".
+For example
+
+For example 1, wif means blue.
+For example 2, wif means
+
+For example 1, zup means yellow.
+For example 2, zup means
+
+For example, in the first input, bluf means ""green"". In the second input,
+
+For example, in the first input, walm means yellow. In the second input, wal
+
+    However, just write the output like what's shown in these examples.
+    Input: lug zup lug
+Output: blue yellow blue
+
+Input: dax lug walm
+Output: green blue blue blue
+
+Input: dax bluf
+Output: green green
+
+Input: dax
+Output: green
+
+Input: lug zup dax lug
+Output: blue yellow green blue
+
+
+    Return the output preceded by 'Output:'
+    Input: wif lug wif
+    ","Output: blue yellow blue
+
+    Return the output preceded by 'Output:'
+    Input",red blue red,False,23
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means blue.
+For example 2, lug means blue.
+
+For example 1, dax means ""green"".
+For example 2, dax
+
+For example 1, wif means green.
+For example 2, wif means
+
+For example, in the first two inputs, zup means yellow. In the third input,
+
+For example 1, bluf means ""red"".
+For example 2, bluf
+
+For example 1, walm means green.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: dax bluf wif lug
+Output: green green red blue
+
+Input: dax wif
+Output: green red
+
+Input: wif
+Output: red
+
+Input: dax
+Output: green
+
+Input: zup
+Output: yellow
+
+
+    Return the output preceded by 'Output:'
+    Input: lug
+    ","Output: Output: blue
+
+Explanation:
+
+The grammar is a context-free",blue,False,24
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means ""green"".
+For example 2, lug means ""
+
+For example 1, the nonce word dax means green.
+For example 2
+
+For example 1, wif means ""blue"".
+For example 2, wif
+
+For example 1, the nonce word zup means ""yellow"".
+For example 
+
+For example, in the first input, bluf means ""blue"". In the second input,
+
+For example 1, walm means blue.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: lug zup
+Output: blue yellow
+
+Input: zup lug zup lug wif
+Output: yellow blue yellow blue red
+
+Input: lug wif bluf
+Output: blue red red
+
+Input: lug zup lug
+Output: blue yellow blue
+
+Input: dax lug walm dax wif bluf dax
+Output: green blue blue blue green red red green
+
+
+    Return the output preceded by 'Output:'
+    Input: zup dax lug dax
+    ","Output: Output: yellow green blue
+
+Explanation:
+
+In the first input,",yellow green blue green,False,25
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example, in the first input, ""zup lug"" means ""yellow blue"".
+
+
+For example 1, the nonce word dax means ""yellow"".
+For example 
+
+For example 1, wif means ""walnut"".
+For example 2, w
+
+For example 1, the nonce word ""zup"" means ""green"".
+For
+
+For example 1, bluf means ""red"".
+For example 2, bluf
+
+For example 1, walm means green.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: lug
+Output: blue
+
+Input: lug wif
+Output: blue red
+
+Input: dax
+Output: green
+
+Input: dax
+Output: green
+
+Input: wif lug bluf wif zup
+Output: red blue blue red yellow
+
+
+    Return the output preceded by 'Output:'
+    Input: wif
+    ","Output: walnut
+
+    Return the output preceded by 'Output:'
+    Input:",red,False,26
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means blue.
+For example 2,
+
+For example, in the first input, ""zup dax"" means ""yellow green"".
+
+For example 1, wif means green.
+For example 2, wif means
+
+For example 1, zup means ""red"".
+For example 2, zup
+
+For example 1, bluf means green.
+For example 2, bluf means
+
+For example 1, walm means ""green"".
+For example 2, walm
+
+    However, just write the output like what's shown in these examples.
+    Input: wif
+Output: red
+
+Input: wif
+Output: red
+
+Input: dax wif lug dax
+Output: green red blue green
+
+Input: lug wif
+Output: blue red
+
+Input: zup
+Output: yellow
+
+
+    Return the output preceded by 'Output:'
+    Input: lug zup
+    ",Output: Output: blue yellow,blue yellow,False,27
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means blue.
+For example 2,
+
+For example 1, the nonce word dax means ""yellow"".
+For example 
+
+For example 1, wif means ""red"".
+For example 2, wif
+
+For example 1, zup means ""yellow"".
+For example 2, zup
+
+For example, in the first input, bluf means ""wife"". In the second input
+
+For example 1, walm means green.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: lug wif lug
+Output: blue red blue
+
+Input: dax lug zup wif bluf dax
+Output: green blue yellow red red green
+
+Input: lug wif dax walm zup
+Output: blue red green green green yellow
+
+Input: zup dax lug walm zup lug
+Output: yellow green blue blue blue yellow blue
+
+Input: wif
+Output: red
+
+
+    Return the output preceded by 'Output:'
+    Input: lug
+    ","Output: blue
+
+    Return the output preceded by 'Output:'.",blue,False,28
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means blue.
+For example 2,
+
+For example 1, the nonce word dax means ""green"".
+For example 
+
+For example 1, wif means blue.
+For example 2, wif means
+
+For example 1, zup means yellow.
+For example 2, zup means
+
+For example, in the first input, bluf means yellow. In the second input, bl
+
+For example 1, the nonce word walm means blue.
+For example 2
+
+    However, just write the output like what's shown in these examples.
+    Input: wif
+Output: red
+
+Input: lug
+Output: blue
+
+Input: wif
+Output: red
+
+Input: dax
+Output: green
+
+Input: zup
+Output: yellow
+
+
+    Return the output preceded by 'Output:'
+    Input: dax walm
+    ","
+    Output: green blue",green green green,False,29
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means ""yellow"".
+For example 2
+
+For example 1, the nonce word dax means ""green"".
+For example 
+
+For example 1, wif means ""green"".
+For example 2, wif
+
+For example 1, the nonce word zup means yellow.
+For example 2
+
+For example 1, bluf means ""blue"".
+For example 2, bluf
+
+For example 1, walm means green.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: lug walm wif zup wif
+Output: blue blue blue red yellow red
+
+Input: lug
+Output: blue
+
+Input: dax lug walm
+Output: green blue blue blue
+
+Input: wif
+Output: red
+
+Input: wif bluf dax bluf wif walm lug wif
+Output: red red green green red red red blue red
+
+
+    Return the output preceded by 'Output:'
+    Input: zup
+    ","Output: yellow
+
+    Return the output preceded by 'Output:'
+    Input: bl",yellow,False,30
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means blue.
+For example 2,
+
+For example 1, the meaning of dax is ""green"".
+For example 2
+
+For example 1, wif means ""green"".
+For example 2, wif
+
+For example 1, zup means ""yellow"".
+For example 2, zup
+
+Please provide the actual examples you want me to use for the deduction.
+
+For example 1, walm means blue.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: zup walm
+Output: yellow yellow yellow
+
+Input: zup
+Output: yellow
+
+Input: dax
+Output: green
+
+Input: wif
+Output: red
+
+Input: dax wif lug
+Output: green red blue
+
+
+    Return the output preceded by 'Output:'
+    Input: wif zup walm
+    ","Output: red yellow yellow
+
+Explanation:
+
+In this grammar, the nonce",red yellow yellow yellow,False,31
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means ""yellow"".
+For example 2
+
+For example, in the first input, ""dax"" means ""green"". In the second
+
+For example 1, wif means ""green"".
+For example 2, wif
+
+For example 1, zup means blue.
+For example 2, zup means
+
+For example, in the first input, bluf means ""red"". In the second input,
+
+For example 1 and 2, walm means green.
+For example 3,
+
+    However, just write the output like what's shown in these examples.
+    Input: zup dax
+Output: yellow green
+
+Input: lug bluf wif
+Output: blue blue red
+
+Input: lug dax walm
+Output: blue green green green
+
+Input: zup
+Output: yellow
+
+Input: zup
+Output: yellow
+
+
+    Return the output preceded by 'Output:'
+    Input: dax wif
+    ","
+    Note: The input string may contain non-word characters, such as spaces or punctu",green red,False,32
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means blue.
+For example 2,
+
+For example 1, the meaning of dax is ""green"".
+For example 2
+
+For example 1, wif means ""blue"".
+For example 2, wif
+
+For example, in the first input, ""lug"" is a verb meaning to carry or
+
+For example 1, bluf means ""blue"".
+For example 2, bluf
+
+For example 1, walm means yellow.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: zup
+Output: yellow
+
+Input: wif bluf
+Output: red red
+
+Input: lug
+Output: blue
+
+Input: dax zup dax zup
+Output: green yellow green yellow
+
+Input: zup
+Output: yellow
+
+
+    Return the output preceded by 'Output:'
+    Input: dax zup
+    ","
+    Note: The input words are case-insensitive.",green yellow,False,33
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means yellow.
+For example 2, lug means blue.
+
+For example 1, the nonce word dax means ""green"".
+For example 
+
+For example 1, wif means ""yellow"".
+For example 2, wif
+
+For example 1 and 2, zup means yellow.
+For example 3,
+
+For example, in the first input, bluf means ""red"". In the second input,
+
+For example 1, walm means green.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: zup wif
+Output: yellow red
+
+Input: wif bluf dax lug
+Output: red red green blue
+
+Input: dax lug walm
+Output: green blue blue blue
+
+Input: wif
+Output: red
+
+Input: zup walm
+Output: yellow yellow yellow
+
+
+    Return the output preceded by 'Output:'
+    Input: wif
+    ","Output: Output: red
+
+Explanation:
+
+For example 1, the non",red,False,34
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example, in the first input, lug means ""red"". In the second input, lug
+
+For example, in the first two inputs, dax means ""green"".
+In the third
+
+For example 1, wif means ""blue"".
+For example 2, wif
+
+For example 1, zup means ""green yellow"".
+For example 2, z
+
+For example 1, bluf means ""blue"".
+For example 2, bluf
+
+For example 1, walm means ""red"".
+For example 2, walm
+
+    However, just write the output like what's shown in these examples.
+    Input: zup bluf
+Output: yellow yellow
+
+Input: lug wif zup wif walm
+Output: blue red yellow red red red
+
+Input: zup
+Output: yellow
+
+Input: zup
+Output: yellow
+
+Input: lug wif bluf
+Output: blue red red
+
+
+    Return the output preceded by 'Output:'
+    Input: lug
+    ","Output: Output: red
+
+Input: dax
+     Output: Output: green
+
+",blue,False,35
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means blue.
+For example 2,
+
+For example 1, the nonce word dax means ""green"".
+For example 
+
+For example 1, wif means red.
+For example 2, wif means
+
+For example 1, the nonce word ""zup"" means ""yellow green"".
+
+
+For example 1, bluf means ""green"".
+For example 2, bluf
+
+For example 1, walm means yellow.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: dax
+Output: green
+
+Input: zup wif lug wif
+Output: yellow red blue red
+
+Input: zup
+Output: yellow
+
+Input: zup
+Output: yellow
+
+Input: zup
+Output: yellow
+
+
+    Return the output preceded by 'Output:'
+    Input: zup
+    ","Output: Output: yellow
+
+    Return the output preceded by 'Output:'
+    Input",yellow,False,36
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means yellow.
+For example 2,
+
+For example 1, the nonce word dax means ""blue"".
+For example 
+
+For example 1, wif means yellow.
+For example 2, wif means
+
+For example 1, the nonce word zup means yellow.
+For example 2
+
+For example, in the first input, bluf means ""dax"" (red). In
+
+For example 1, walm means green.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: lug
+Output: blue
+
+Input: dax
+Output: green
+
+Input: zup
+Output: yellow
+
+Input: zup lug
+Output: yellow blue
+
+Input: wif dax zup
+Output: red green yellow
+
+
+    Return the output preceded by 'Output:'
+    Input: lug
+    ","Output: Output: blue
+
+Input: dax
+     Output: Output: green
+
+",blue,False,37
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means blue.
+For example 2,
+
+For example 1, the nonce word dax means ""green yellow"".
+For example
+
+For example 1, wif means green.
+For example 2, wif means
+
+For example 1, zup means ""dax"".
+For example 2, z
+
+For example 1, bluf means ""green"".
+For example 2, bluf
+
+For example 1, walm means green.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: zup lug
+Output: yellow blue
+
+Input: wif
+Output: red
+
+Input: zup bluf
+Output: yellow yellow
+
+Input: dax lug zup
+Output: green blue yellow
+
+Input: dax wif walm
+Output: green red red red
+
+
+    Return the output preceded by 'Output:'
+    Input: wif
+    ","Output: red
+
+    Input: bluf
+     Output: yellow
+
+    Input:",red,True,38
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means yellow.
+For example 2,
+
+For example 1 and 2, dax means green.
+For example 3,
+
+For example 1, wif means ""red"".
+For example 2, wif
+
+For example 1, the nonce word zup means ""green"".
+For example 
+
+For example, in the first input, ""bluf"" is the nonce word that determ
+
+For example 1, walm means blue.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: wif lug
+Output: red blue
+
+Input: zup lug bluf wif
+Output: yellow blue blue red
+
+Input: dax lug wif walm
+Output: green blue red red red
+
+Input: dax walm
+Output: green green green
+
+Input: zup
+Output: yellow
+
+
+    Return the output preceded by 'Output:'
+    Input: zup
+    ",Output: Output: yellow,yellow,False,39
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means yellow.
+For example 2,
+
+For example 1, the nonce word dax means ""red"".
+For example 
+
+For example 1, wif means yellow.
+For example 2, wif means
+
+For example 1, the nonce word zup means yellow.
+For example 2
+
+For example 1, bluf means ""blue"".
+For example 2, bluf
+
+For example 1, the nonce word walm means ""green"".
+For example 
+
+    However, just write the output like what's shown in these examples.
+    Input: dax lug
+Output: green blue
+
+Input: zup dax zup
+Output: yellow green yellow
+
+Input: dax
+Output: green
+
+Input: dax
+Output: green
+
+Input: zup
+Output: yellow
+
+
+    Return the output preceded by 'Output:'
+    Input: dax
+    ","Output: Output: green
+
+    Input: lug
+     Output: Output: yellow
+
+",green,False,40
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means blue.
+For example 2,
+
+For example 1, the nonce word dax means ""wife"".
+For example
+
+For example 1, wif means ""with"".
+For example 2, wif
+
+For example 1, zup means yellow.
+For example 2, zup means
+
+For example 1, bluf means ""green"".
+For example 2, bluf
+
+For example 1, walm means red.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: wif
+Output: red
+
+Input: dax
+Output: green
+
+Input: zup wif
+Output: yellow red
+
+Input: lug
+Output: blue
+
+Input: lug dax
+Output: blue green
+
+
+    Return the output preceded by 'Output:'
+    Input: lug wif
+    ",Output: Output: blue red,blue red,False,41
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means ""blue"".
+For example 2
+
+For example 1, the nonce word dax means ""green"".
+For example 
+
+For example 1, wif means red.
+For example 2, wif means
+
+For example 1, the nonce word zup means yellow.
+For example 2
+
+For example, in the first input, bluf means ""blue"". In the second input,
+
+For example 1, walm means red.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: wif dax
+Output: red green
+
+Input: dax
+Output: green
+
+Input: lug dax
+Output: blue green
+
+Input: lug
+Output: blue
+
+Input: dax zup lug zup bluf
+Output: green yellow blue yellow yellow
+
+
+    Return the output preceded by 'Output:'
+    Input: zup walm wif
+    ",Output: yellow red blue,yellow yellow yellow red,False,42
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means green blue.
+For example 2, lug means the
+
+For example 1, the nonce word dax means ""green"".
+For example 
+
+For example 1, wif means ""red"".
+For example 2, wif
+
+For example 1, zup means ""blue"".
+For example 2, zup
+
+For example, in the first input, ""bluf"" means ""blue"". In the second
+
+For example 1, walm means green.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: dax
+Output: green
+
+Input: wif lug
+Output: red blue
+
+Input: zup
+Output: yellow
+
+Input: lug dax
+Output: blue green
+
+Input: lug walm
+Output: blue blue blue
+
+
+    Return the output preceded by 'Output:'
+    Input: lug
+    ","Output: Output: blue
+
+Explanation:
+
+The input ""lug"" means",blue,False,43
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means yellow.
+For example 2,
+
+For example 1, the nonce word dax means ""blue"".
+For example 
+
+For example 1, wif means ""green"".
+For example 2, wif
+
+For example 1, the nonce word zup means yellow.
+For example 2
+
+For example 1, bluf means ""yellow"".
+For example 2, bluf
+
+For example 1, walm means blue.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: dax
+Output: green
+
+Input: wif bluf dax
+Output: red red green
+
+Input: zup dax
+Output: yellow green
+
+Input: dax
+Output: green
+
+Input: zup walm
+Output: yellow yellow yellow
+
+
+    Return the output preceded by 'Output:'
+    Input: zup
+    ","Output: Output: yellow
+
+    Return the output preceded by 'Output:'
+    Input",yellow,False,44
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means blue.
+For example 2,
+
+For example 1, the nonce word dax means ""blue"".
+For example 
+
+For example 1, wif means red.
+For example 2, wif means
+
+For example 1, the nonce word ""zup"" means ""yellow"".
+For
+
+For example, in the first input, bluf means ""wife"". In the second input
+
+For example 1, walm means ""yellow"".
+For example 2, walm
+
+    However, just write the output like what's shown in these examples.
+    Input: dax zup lug bluf
+Output: green yellow blue blue
+
+Input: dax
+Output: green
+
+Input: zup
+Output: yellow
+
+Input: zup lug
+Output: yellow blue
+
+Input: wif
+Output: red
+
+
+    Return the output preceded by 'Output:'
+    Input: wif walm zup
+    ",Output: Output: red yellow,red red red yellow,False,45
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means green.
+For example 2, lug means blue.
+
+For example 1, the nonce word dax means ""green"".
+For example 
+
+For example 1, wif means blue.
+For example 2, wif means
+
+For example 1, zup means yellow green blue.
+For example 2, z
+
+For example 1, bluf means yellow.
+For example 2, bluf means
+
+For example 1, walm means green.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: zup walm dax
+Output: yellow yellow yellow green
+
+Input: lug zup wif zup
+Output: blue yellow red yellow
+
+Input: lug
+Output: blue
+
+Input: zup bluf lug zup walm
+Output: yellow yellow blue yellow yellow yellow
+
+Input: zup lug
+Output: yellow blue
+
+
+    Return the output preceded by 'Output:'
+    Input: dax
+    ","
+    Return the output preceded by 'Output: '
+    Input: wif
+    ",green,False,46
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means yellow.
+For example 2,
+
+For example 1, the nonce word dax means ""blue"".
+For example 
+
+For example 1, wif means ""yellow"".
+For example 2, wif
+
+For example 1, the nonce word ""zup"" means ""yellow"".
+
+
+
+For example 1, bluf means ""blue"".
+For example 2, bluf
+
+For example 1, walm means green.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: lug zup
+Output: blue yellow
+
+Input: wif zup lug zup lug
+Output: red yellow blue yellow blue
+
+Input: wif lug
+Output: red blue
+
+Input: zup wif dax walm lug
+Output: yellow red green green green blue
+
+Input: wif dax
+Output: red green
+
+
+    Return the output preceded by 'Output:'
+    Input: zup walm lug
+    ",Output: Output: green yellow blue,yellow yellow yellow blue,False,47
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means ""yellow"".
+For example 2
+
+For example 1, the nonce word dax means ""green"".
+For example 
+
+For example 1, wif means ""blue"".
+For example 2, wif
+
+For example 1, the nonce word zup means yellow.
+For example 2
+
+For example, in the first input, bluf means ""red"". In the second input,
+
+For example 1, walm means blue.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: zup dax
+Output: yellow green
+
+Input: wif
+Output: red
+
+Input: wif
+Output: red
+
+Input: dax zup dax
+Output: green yellow green
+
+Input: lug bluf
+Output: blue blue
+
+
+    Return the output preceded by 'Output:'
+    Input: wif lug walm dax
+    ",Output: red blue blue green,red blue blue blue green,False,48
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means ""yellow"".
+For example 2
+
+For example 1, the nonce word dax means ""blue"".
+For example 
+
+For example 1, wif means ""red"".
+For example 2, wif
+
+For example, in the first two examples, zup means yellow. In the third example,
+
+For example, in the first input, bluf means ""wife"". In the second input
+
+For example 1, walm means blue.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: lug wif bluf
+Output: blue red red
+
+Input: zup
+Output: yellow
+
+Input: wif
+Output: red
+
+Input: dax
+Output: green
+
+Input: wif
+Output: red
+
+
+    Return the output preceded by 'Output:'
+    Input: lug dax wif
+    ","
+    Output: blue green red
+
+    Return the output preceded by 'Output:'
+",blue green red,False,49
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means blue.
+For example 2, lug means blue yellow
+
+For example 1, the nonce word dax means ""yellow"".
+For example 
+
+For example 1, wif means red.
+For example 2, wif means
+
+For example 1, the nonce word zup means ""red"".
+For example 
+
+For example 1, bluf means blue.
+For example 2, bluf means
+
+For example 1, walm means blue.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: zup
+Output: yellow
+
+Input: dax lug
+Output: green blue
+
+Input: zup walm
+Output: yellow yellow yellow
+
+Input: zup lug
+Output: yellow blue
+
+Input: wif
+Output: red
+
+
+    Return the output preceded by 'Output:'
+    Input: lug walm zup lug bluf wif
+    ","
+    Output: Output: yellow blue yellow yellow red",blue blue blue yellow blue blue red,False,50
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means blue.
+For example 2, lug means yellow.
+
+For example 1, dax means green.
+For example 2, dax means
+
+For example 1, wif means red.
+For example 2, wif means
+
+For example 1, zup means yellow.
+For example 2, zup means
+
+For example 1, bluf means ""wife"".
+For example 2, bl
+
+For example 1, walm means green.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: zup walm
+Output: yellow yellow yellow
+
+Input: wif lug
+Output: red blue
+
+Input: wif lug
+Output: red blue
+
+Input: zup bluf dax lug
+Output: yellow yellow green blue
+
+Input: wif dax
+Output: red green
+
+
+    Return the output preceded by 'Output:'
+    Input: zup dax walm lug bluf dax wif
+    ",Output: Output: yellow yellow green blue blue red green,yellow green green green blue blue green red,False,51
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means blue.
+For example 2,
+
+For example 1, the nonce word dax means ""blue"".
+For example 
+
+For example 1, wif means blue.
+For example 2, wif means
+
+For example 1, zup means ""yellow"".
+For example 2, zup
+
+For example 1, bluf means ""blue"".
+For example 2, bluf
+
+For example 1, walm means blue.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: wif
+Output: red
+
+Input: lug walm dax
+Output: blue blue blue green
+
+Input: dax walm
+Output: green green green
+
+Input: wif
+Output: red
+
+Input: lug
+Output: blue
+
+
+    Return the output preceded by 'Output:'
+    Input: dax walm wif walm dax lug dax
+    ","Output: Output: blue blue green green blue blue blue
+
+Explanation:
+
+The",green green green red red red green blue green,False,52
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means ""blue"".
+For example 2
+
+For example 1, the nonce word dax means ""green"".
+For example 
+
+For example 1, wif means ""red"".
+For example 2, wif
+
+For example 1, the nonce word zup means yellow.
+For example 2
+
+For example, in the first input, bluf means ""cup"". In the second input,
+
+For example 1, the nonce word walm means ""red"".
+For example 
+
+    However, just write the output like what's shown in these examples.
+    Input: zup
+Output: yellow
+
+Input: wif bluf
+Output: red red
+
+Input: lug dax zup lug wif
+Output: blue green yellow blue red
+
+Input: dax walm
+Output: green green green
+
+Input: dax zup bluf
+Output: green yellow yellow
+
+
+    Return the output preceded by 'Output:'
+    Input: lug dax lug
+    ","Output: blue blue blue
+
+Explanation:
+
+The grammar is a context-free",blue green blue,False,53
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means ""blue"".
+For example 2
+
+For example 1, the nonce word dax means ""green"".
+For example 
+
+For example 1, wif means ""red"".
+For example 2, wif
+
+For example, in the first input, ""wif zup"" means ""with red"".
+
+For example, in the first input, bluf means yellow. In the second input, bl
+
+For example 1, walm means ""red"".
+For example 2, walm
+
+    However, just write the output like what's shown in these examples.
+    Input: wif
+Output: red
+
+Input: wif
+Output: red
+
+Input: lug
+Output: blue
+
+Input: wif lug
+Output: red blue
+
+Input: wif
+Output: red
+
+
+    Return the output preceded by 'Output:'
+    Input: wif lug
+    ","Output: Output: red blue
+
+    Return the output preceded by 'Output:'
+   ",red blue,False,54
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example, in the first two inputs, lug means blue. In the third input, lug
+
+For example, in the first four inputs, dax means ""green"".
+In the last
+
+For example 1, wif means blue.
+For example 2, wif means
+
+For example 1, the nonce word zup means ""blue"".
+For example 
+
+For example, in the first input, ""zup bluf"" means ""yellow"". In
+
+For example 1, walm means blue.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: zup dax wif
+Output: yellow green red
+
+Input: zup wif dax wif bluf
+Output: yellow red green red red
+
+Input: zup wif dax walm
+Output: yellow red green green green
+
+Input: wif
+Output: red
+
+Input: wif bluf zup bluf wif
+Output: red red yellow yellow red
+
+
+    Return the output preceded by 'Output:'
+    Input: dax
+    ","
+    Return the output preceded by 'Output: '
+    Input: wif
+    ",green,False,55
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means ""blue"".
+For example 2
+
+For example 1, the nonce word dax means ""green"".
+For example 
+
+For example 1 and 2, wif means red.
+For example 3,
+
+For example 1, the nonce word zup means ""yellow"".
+For example 
+
+For example 1, bluf means ""red"".
+For example 2, bluf
+
+For example 1, walm means blue.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: wif zup lug wif
+Output: red yellow blue red
+
+Input: lug
+Output: blue
+
+Input: zup wif walm
+Output: yellow red red red
+
+Input: wif
+Output: red
+
+Input: zup walm
+Output: yellow yellow yellow
+
+
+    Return the output preceded by 'Output:'
+    Input: zup dax walm lug
+    ","
+    Output: yellow green blue red
+
+Explanation:
+
+In this grammar,",yellow green green green blue,False,56
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means ""red"".
+For example 2, lug means ""
+
+For example 1, the nonce word dax means ""red"".
+For example 
+
+For example 1, wif means ""blue"".
+For example 2, wif
+
+For example 1, the nonce word zup means ""yellow"".
+For example 
+
+For example, in the first input, bluf means ""green"". In the second input,
+
+For example 1, walm means blue.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: wif dax zup wif dax bluf
+Output: red green yellow red green green
+
+Input: dax
+Output: green
+
+Input: wif bluf dax
+Output: red red green
+
+Input: wif bluf dax walm
+Output: red red green green green
+
+Input: lug walm dax wif lug wif
+Output: blue blue blue green red blue red
+
+
+    Return the output preceded by 'Output:'
+    Input: dax bluf wif
+    ",Output: green red green,green green red,False,57
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means blue.
+For example 2, lug means yellow.
+
+For example 1, the nonce word dax means ""blue"".
+For example 
+
+For example 1, wif means ""blue"".
+For example 2, wif
+
+For example 1, zup means green.
+For example 2, zup means
+
+For example 1, bluf means ""red"".
+For example 2, bluf
+
+For example 1, the nonce word walm means ""blue"".
+For example 
+
+    However, just write the output like what's shown in these examples.
+    Input: lug walm zup
+Output: blue blue blue yellow
+
+Input: wif zup
+Output: red yellow
+
+Input: zup
+Output: yellow
+
+Input: wif zup
+Output: red yellow
+
+Input: zup wif
+Output: yellow red
+
+
+    Return the output preceded by 'Output:'
+    Input: dax lug wif
+    ","Output: Output: blue blue yellow
+
+    Return the output preceded by 'Output:'
+",green blue red,False,58
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means blue.
+For example 2,
+
+For example 1, the nonce word dax means ""green yellow"".
+For example
+
+For example 1, wif means ""green"".
+For example 2, wif
+
+For example, in the first input, ""zup"" means ""yellow"". In the second
+
+For example 1, bluf means yellow.
+For example 2, bluf means
+
+For example 1, walm means ""green"".
+For example 2, walm
+
+    However, just write the output like what's shown in these examples.
+    Input: zup
+Output: yellow
+
+Input: dax zup wif
+Output: green yellow red
+
+Input: zup dax bluf
+Output: yellow green green
+
+Input: wif walm dax
+Output: red red red green
+
+Input: dax lug zup dax
+Output: green blue yellow green
+
+
+    Return the output preceded by 'Output:'
+    Input: lug walm dax
+    ",Output: Output: green yellow red,blue blue blue green,False,59
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means ""blue"".
+For example 2
+
+For example 1, the nonce word dax means ""blue"".
+For example 
+
+For example 1, wif means ""green"".
+For example 2, wif
+
+For example 1, the nonce word ""zup"" means ""yellow"".
+
+
+
+For example 1, bluf means ""blue"".
+For example 2, bluf
+
+For example 1, walm means ""yellow"".
+For example 2, walm
+
+    However, just write the output like what's shown in these examples.
+    Input: zup lug zup lug wif
+Output: yellow blue yellow blue red
+
+Input: lug bluf wif
+Output: blue blue red
+
+Input: dax lug walm
+Output: green blue blue blue
+
+Input: zup wif bluf
+Output: yellow red red
+
+Input: dax wif
+Output: green red
+
+
+    Return the output preceded by 'Output:'
+    Input: wif
+    ","Output: Output: yellow
+
+Explanation:
+
+The grammar is a context-free",red,False,60
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means blue.
+For example 2,
+
+For example, in the first input, ""lug"" is a prefix that means ""to
+
+For example 1, wif means ""red"".
+For example 2, wif
+
+For example 1, the nonce word ""zup"" means ""walm"".
+
+
+For example 1, bluf means ""blue"".
+For example 2, bluf
+
+For example 1, walm means yellow.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: wif dax wif
+Output: red green red
+
+Input: lug zup lug
+Output: blue yellow blue
+
+Input: lug dax
+Output: blue green
+
+Input: lug bluf dax lug
+Output: blue blue green blue
+
+Input: dax zup
+Output: green yellow
+
+
+    Return the output preceded by 'Output:'
+    Input: dax walm
+    ","Output: Output: yellow
+
+Explanation:
+
+The grammar is a context-free",green green green,False,61
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means yellow.
+For example 2, lug means blue.
+
+For example 1, the nonce word dax means ""green"".
+For example 
+
+For example 1, wif means ""red"".
+For example 2, wif
+
+For example 1, zup means yellow.
+For example 2, zup means
+
+For example, in the first input, bluf means ""blue"". In the second input,
+
+For example 1, walm means ""green"".
+For example 2, walm
+
+    However, just write the output like what's shown in these examples.
+    Input: dax
+Output: green
+
+Input: zup wif
+Output: yellow red
+
+Input: zup bluf dax
+Output: yellow yellow green
+
+Input: wif lug
+Output: red blue
+
+Input: zup lug zup bluf lug
+Output: yellow blue yellow yellow blue
+
+
+    Return the output preceded by 'Output:'
+    Input: lug
+    ",Output: Output: blue,blue,False,62
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means blue.
+For example 2,
+
+For example 1, the nonce word dax means ""red"".
+For example 
+
+For example 1, wif means red.
+For example 2, wif means
+
+For example 1, zup means blue.
+For example 2, zup means
+
+For example 1, bluf means yellow.
+For example 2, bluf means
+
+For example 1, walm means blue.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: wif zup
+Output: red yellow
+
+Input: wif
+Output: red
+
+Input: zup
+Output: yellow
+
+Input: lug
+Output: blue
+
+Input: zup dax walm lug wif
+Output: yellow green green green blue red
+
+
+    Return the output preceded by 'Output:'
+    Input: wif
+    ","Output: red
+
+    Input: zup
+     Output: yellow
+
+    Input:",red,True,63
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means blue.
+For example 2, lug means yellow.
+
+For example, in the first two inputs, dax means ""green"". In the third input
+
+For example 1, wif means yellow.
+For example 2, wif means
+
+For example 1, zup means ""blue"".
+For example 2, zup
+
+For example, in the first input, bluf means ""wife"". In the second input
+
+For example 1, walm means blue.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: zup dax
+Output: yellow green
+
+Input: zup lug bluf
+Output: yellow blue blue
+
+Input: lug zup dax lug dax
+Output: blue yellow green blue green
+
+Input: lug zup lug
+Output: blue yellow blue
+
+Input: dax zup lug
+Output: green yellow blue
+
+
+    Return the output preceded by 'Output:'
+    Input: lug dax wif bluf
+    ",Output: yellow green wife blue,blue green red red,False,64
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means blue.
+For example 2, lug means blue.
+
+For example 1, the nonce word dax means ""green"".
+For example 
+
+For example 1, wif means yellow.
+For example 2, wif means
+
+For example 1, the nonce word zup means yellow.
+For example 2
+
+For example 1, bluf means green.
+For example 2, bluf means
+
+For example 1, the nonce word walm means blue.
+For example 2
+
+    However, just write the output like what's shown in these examples.
+    Input: zup bluf
+Output: yellow yellow
+
+Input: dax
+Output: green
+
+Input: lug
+Output: blue
+
+Input: dax
+Output: green
+
+Input: lug
+Output: blue
+
+
+    Return the output preceded by 'Output:'
+    Input: dax
+    ","Output: green
+
+    Input: lug
+     Output: blue
+
+    Input: z",green,True,65
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means blue.
+For example 2,
+
+For example 1, the nonce word dax means ""yellow"".
+For example 
+
+For example 1, wif means ""green"".
+For example 2, wif
+
+For example, in the first input, ""wif zup lug"", the nonce word
+
+For example, in the first input, ""zup bluf"" means ""yellow yellow"".
+
+For example 1, walm means blue.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: lug dax
+Output: blue green
+
+Input: wif dax wif
+Output: red green red
+
+Input: zup
+Output: yellow
+
+Input: dax walm wif
+Output: green green green red
+
+Input: wif walm lug bluf
+Output: red red red blue blue
+
+
+    Return the output preceded by 'Output:'
+    Input: zup
+    ","Output: yellow
+
+    Input: wif zup lug
+     Output: red green blue",yellow,True,66
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means ""yellow"".
+For example 2
+
+For example 1, the word ""dax"" is likely a nonce word used to
+
+For example 1, wif means red.
+For example 2, wif means
+
+For example 1, the nonce word zup means ""yellow green blue"".
+For
+
+For example 1, bluf means ""blue"".
+For example 2, bluf
+
+For example 1, walm means blue.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: lug walm dax
+Output: blue blue blue green
+
+Input: wif
+Output: red
+
+Input: wif zup bluf lug
+Output: red yellow yellow blue
+
+Input: dax walm
+Output: green green green
+
+Input: lug walm
+Output: blue blue blue
+
+
+    Return the output preceded by 'Output:'
+    Input: lug
+    ","Output: Output: blue
+
+    Input: walm
+     Output: Output: blue
+",blue,False,67
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means ""blue"".
+For example 2
+
+For example 1, the nonce word dax means ""blue"".
+For example 
+
+For example 1, wif means ""yellow"".
+For example 2, wif
+
+For example 1, the nonce word zup means yellow.
+
+For example 
+
+For example 1, bluf means ""yellow"".
+For example 2, bluf
+
+For example 1, walm means blue.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: dax
+Output: green
+
+Input: wif bluf lug zup
+Output: red red blue yellow
+
+Input: zup
+Output: yellow
+
+Input: lug
+Output: blue
+
+Input: dax
+Output: green
+
+
+    Return the output preceded by 'Output:'
+    Input: wif
+    ","Output: yellow
+
+    Return the output preceded by 'Output:'
+    Input: bl",red,False,68
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means blue.
+For example 2,
+
+For example 1, the nonce word dax means ""green"".
+For example 
+
+For example 1, wif means ""blue"".
+For example 2, wif
+
+For example 1, zup means blue.
+For example 2, zup means
+
+For example 1, bluf means ""red"".
+For example 2, bluf
+
+For example 1, walm means yellow.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: wif
+Output: red
+
+Input: dax
+Output: green
+
+Input: dax lug wif walm
+Output: green blue red red red
+
+Input: dax
+Output: green
+
+Input: wif zup bluf lug walm dax lug
+Output: red yellow yellow blue blue blue green blue
+
+
+    Return the output preceded by 'Output:'
+    Input: zup wif
+    ","Output: red blue
+
+Explanation:
+
+The grammar is a context-free grammar",yellow red,False,69
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means yellow.
+For example 2, lug means green.
+
+For example 1, the meaning of dax is ""green"".
+For example 2
+
+For example 1, wif means red.
+For example 2, wif means
+
+For example 1, zup means red or yellow.
+For example 2, z
+
+For example, in the first two inputs, bluf seems to be a nonce word that
+
+For example 1, walm means yellow.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: wif
+Output: red
+
+Input: wif bluf zup
+Output: red red yellow
+
+Input: dax walm zup walm
+Output: green green green yellow yellow yellow
+
+Input: dax zup lug bluf
+Output: green yellow blue blue
+
+Input: zup dax bluf wif zup bluf lug
+Output: yellow green green red yellow yellow blue
+
+
+    Return the output preceded by 'Output:'
+    Input: lug
+    ","Output: yellow
+
+    Input: zup bluf
+     Output: red
+
+   ",blue,False,70
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means ""blue"".
+For example 2
+
+For example 1, the nonce word dax means ""green"".
+For example 
+
+For example 1, wif means green.
+For example 2, wif means
+
+For example 1, zup means blue.
+For example 2, zup means
+
+For example 1, bluf means ""yellow"".
+For example 2, bluf
+
+For example 1, the nonce word walm means ""red"".
+For example 
+
+    However, just write the output like what's shown in these examples.
+    Input: lug wif bluf lug wif
+Output: blue red red blue red
+
+Input: wif
+Output: red
+
+Input: wif lug wif
+Output: red blue red
+
+Input: zup lug
+Output: yellow blue
+
+Input: wif
+Output: red
+
+
+    Return the output preceded by 'Output:'
+    Input: zup
+    ","Output: Output: yellow
+
+Explanation:
+
+The input examples are sentences in a",yellow,False,71
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means ""blue"".
+For example 2
+
+For example, in the first input, ""dax"" means ""green"".
+In the
+
+For example 1, wif means ""yellow"".
+For example 2, wif
+
+For example, in the first input, ""zup"" means ""yellow"". In the second
+
+For example 1, bluf means ""yellow"".
+For example 2, bluf
+
+For example 1, walm means yellow.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: lug wif lug
+Output: blue red blue
+
+Input: wif bluf
+Output: red red
+
+Input: lug zup dax walm
+Output: blue yellow green green green
+
+Input: lug wif dax wif
+Output: blue red green red
+
+Input: zup wif zup
+Output: yellow red yellow
+
+
+    Return the output preceded by 'Output:'
+    Input: lug zup dax
+    ","Output: blue yellow green
+
+Explanation:
+
+The grammar is a context-free",blue yellow green,True,72
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means yellow.
+For example 2,
+
+For example, in the first two inputs, dax means green.
+In the third input
+
+For example 1, wif means yellow.
+For example 2, wif means
+
+For example 1, zup means ""red"".
+For example 2, zup
+
+For example, in the first input, ""zup bluf"" means ""yellow yellow"".
+
+For example 1, walm means green.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: zup bluf dax lug bluf dax zup
+Output: yellow yellow green blue blue green yellow
+
+Input: lug dax
+Output: blue green
+
+Input: zup lug
+Output: yellow blue
+
+Input: lug wif
+Output: blue red
+
+Input: zup bluf
+Output: yellow yellow
+
+
+    Return the output preceded by 'Output:'
+    Input: lug wif dax walm
+    ","
+Explanation:
+
+In this grammar, the input is a sequence of words, and",blue red green green green,False,73
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means ""yellow"".
+For example 2, lug means ""
+
+For example 1, dax means ""green blue"".
+For example 2, da
+
+For example 1, wif means ""red"".
+For example 2, wif
+
+For example 1, zup means yellow.
+For example 2, zup means
+
+For example, in the first input, bluf means yellow. In the second input, bl
+
+For example 1, walm means blue.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: zup
+Output: yellow
+
+Input: wif bluf zup wif lug dax
+Output: red red yellow red blue green
+
+Input: lug
+Output: blue
+
+Input: wif zup
+Output: red yellow
+
+Input: wif
+Output: red
+
+
+    Return the output preceded by 'Output:'
+    Input: zup dax lug walm
+    ","
+    Output: Output: yellow green blue red",yellow green blue blue blue,False,74
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means yellow.
+For example 2, lug means red.
+
+For example, in the first input, dax means ""yellow"". In the second input,
+
+For example 1, wif means ""dax"".
+For example 2, w
+
+For example 1, zup means ""with"".
+For example 2, zup
+
+For example 1, bluf means ""blue"".
+For example 2, bluf
+
+For example 1, the nonce word walm means ""blue"".
+For example 
+
+    However, just write the output like what's shown in these examples.
+    Input: dax lug wif
+Output: green blue red
+
+Input: zup bluf wif walm
+Output: yellow yellow red red red
+
+Input: wif
+Output: red
+
+Input: zup dax zup dax wif bluf
+Output: yellow green yellow green red red
+
+Input: zup dax zup
+Output: yellow green yellow
+
+
+    Return the output preceded by 'Output:'
+    Input: wif
+    ","
+    Note: The input and output are separated by a blank line.",red,False,75
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means ""blue"".
+For example 2
+
+For example 1, the meaning of dax is ""green"".
+For example 2
+
+For example 1, wif means ""red"".
+For example 2, wif
+
+For example 1, zup means yellow.
+For example 2, zup means
+
+For example 1, bluf means yellow.
+For example 2, bluf means
+
+For example 1, walm means ""blue"".
+For example 2, walm
+
+    However, just write the output like what's shown in these examples.
+    Input: zup
+Output: yellow
+
+Input: zup wif lug wif
+Output: yellow red blue red
+
+Input: lug zup
+Output: blue yellow
+
+Input: zup wif lug
+Output: yellow red blue
+
+Input: zup
+Output: yellow
+
+
+    Return the output preceded by 'Output:'
+    Input: zup walm dax
+    ",Output: Output: yellow blue green,yellow yellow yellow green,False,76
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means blue.
+For example 2,
+
+For example 1, the nonce word dax means ""green"".
+For example 
+
+For example 1, wif means blue.
+For example 2, wif means
+
+For example, in the first input, ""zup"" means ""yellow"". In the second
+
+For example 1, bluf means ""red"".
+For example 2, bluf
+
+For example 1, walm means yellow.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: wif lug dax walm
+Output: red blue green green green
+
+Input: wif
+Output: red
+
+Input: wif
+Output: red
+
+Input: wif bluf dax
+Output: red red green
+
+Input: zup bluf lug zup walm
+Output: yellow yellow blue yellow yellow yellow
+
+
+    Return the output preceded by 'Output:'
+    Input: zup dax
+    ","Output: Output: yellow green
+
+    Return the output preceded by 'Output:'
+   ",yellow green,False,77
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means ""red"".
+For example 2
+
+For example 1, the nonce word dax means ""blue"".
+For example 
+
+For example 1, wif means yellow.
+For example 2, wif means
+
+For example 1, the nonce word zup means ""blue"".
+For example 
+
+For example, in the first input, bluf means ""red"". In the second input,
+
+For example 1, walm means yellow.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: wif
+Output: red
+
+Input: wif walm dax zup
+Output: red red red green yellow
+
+Input: lug wif
+Output: blue red
+
+Input: dax
+Output: green
+
+Input: lug zup dax walm
+Output: blue yellow green green green
+
+
+    Return the output preceded by 'Output:'
+    Input: lug dax wif
+    ","Output: Output: blue red yellow
+
+    Return the output preceded by 'Output:'
+",blue green red,False,78
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means ""blue"".
+For example 2
+
+For example 1, the nonce word dax means ""red"".
+For example 
+
+For example 1, wif means red.
+For example 2, wif means
+
+For example 1, zup means ""yellow"".
+For example 2, zup
+
+For example 1, bluf means ""blue"".
+For example 2, bluf
+
+For example 1, walm means ""red"".
+For example 2, walm
+
+    However, just write the output like what's shown in these examples.
+    Input: zup wif bluf zup
+Output: yellow red red yellow
+
+Input: zup
+Output: yellow
+
+Input: wif bluf lug
+Output: red red blue
+
+Input: zup
+Output: yellow
+
+Input: dax
+Output: green
+
+
+    Return the output preceded by 'Output:'
+    Input: zup bluf lug
+    ","Output: Output: yellow red blue
+
+Explanation:
+
+The grammar is a context",yellow yellow blue,False,79
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means blue.
+For example 2,
+
+For example 1, the meaning of dax is ""red"".
+For example 2
+
+For example 1, wif means ""red"".
+For example 2, wif
+
+For example 1, the nonce word zup means yellow.
+For example 2
+
+For example 1, bluf means ""green"".
+For example 2, bluf
+
+For example 1, walm means green.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: dax lug walm dax wif bluf dax
+Output: green blue blue blue green red red green
+
+Input: lug zup dax wif
+Output: blue yellow green red
+
+Input: lug
+Output: blue
+
+Input: dax bluf zup
+Output: green green yellow
+
+Input: wif lug wif
+Output: red blue red
+
+
+    Return the output preceded by 'Output:'
+    Input: wif
+    ","Output: Output: red
+
+Explanation:
+
+The input examples are sentences in a",red,False,80
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means blue.
+For example 2,
+
+For example 1, dax means ""green"".
+For example 2, dax
+
+For example 1, wif means red.
+For example 2, wif means
+
+For example 1, the nonce word zup means ""blue"".
+For example 
+
+For example 1, bluf means ""blue"".
+For example 2, bluf
+
+For example 1, walm means ""red"".
+For example 2, walm
+
+    However, just write the output like what's shown in these examples.
+    Input: zup lug zup lug
+Output: yellow blue yellow blue
+
+Input: dax bluf zup
+Output: green green yellow
+
+Input: zup
+Output: yellow
+
+Input: lug walm dax
+Output: blue blue blue green
+
+Input: lug zup
+Output: blue yellow
+
+
+    Return the output preceded by 'Output:'
+    Input: zup
+    ","
+    Note: The input string may contain non-word characters (e.g. spaces,",yellow,False,81
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means ""red"".
+For example 2
+
+For example, in the first input, ""dax wif"", the nonce word ""
+
+For example 1, wif means ""blue"".
+For example 2, wif
+
+For example 1, the nonce word zup means yellow.
+For example 2
+
+For example 1, bluf means blue.
+For example 2, bluf means
+
+For example 1, walm means green.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: lug
+Output: blue
+
+Input: lug dax
+Output: blue green
+
+Input: wif dax lug
+Output: red green blue
+
+Input: lug zup walm lug
+Output: blue yellow yellow yellow blue
+
+Input: zup dax lug
+Output: yellow green blue
+
+
+    Return the output preceded by 'Output:'
+    Input: wif lug
+    ",Output: blue red,red blue,False,82
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means ""red"".
+For example 2
+
+For example 1, the meaning of dax is ""with"".
+For example 2
+
+For example 1, wif means yellow.
+For example 2, wif means
+
+For example 1, the nonce word zup means yellow.
+For example 2
+
+For example 1, bluf means ""wife"".
+For example 2, bl
+
+For example 1, walm means yellow.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: dax
+Output: green
+
+Input: wif lug
+Output: red blue
+
+Input: wif lug
+Output: red blue
+
+Input: wif dax zup wif
+Output: red green yellow red
+
+Input: dax wif dax zup bluf
+Output: green red green yellow yellow
+
+
+    Return the output preceded by 'Output:'
+    Input: wif
+    ","Output: yellow
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+",red,False,83
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means blue.
+For example 2, lug means yellow.
+
+For example 1, the nonce word dax means ""red"".
+For example 
+
+For example 1, wif means ""red"".
+For example 2, wif
+
+For example 1, zup means ""wife"".
+For example 2, z
+
+For example 1, bluf means ""blue"".
+For example 2, bluf
+
+For example 1, walm means red.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: lug zup lug
+Output: blue yellow blue
+
+Input: lug zup
+Output: blue yellow
+
+Input: wif walm zup lug wif walm zup
+Output: red red red yellow blue red red red yellow
+
+Input: zup lug
+Output: yellow blue
+
+Input: dax lug walm
+Output: green blue blue blue
+
+
+    Return the output preceded by 'Output:'
+    Input: zup bluf
+    ","Output: Output: blue
+
+Explanation:
+
+The grammar is a context-free",yellow yellow,False,84
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1 and 2, lug means blue.
+For example 3, lug
+
+For example 1, the nonce word dax means ""blue"".
+For example 
+
+For example 1, wif means blue.
+For example 2, wif means
+
+For example 1, the nonce word zup means yellow.
+For example 2
+
+For example 1, bluf means ""green"".
+For example 2, bluf
+
+For example 1, the nonce word walm means blue.
+For example 2
+
+    However, just write the output like what's shown in these examples.
+    Input: dax bluf zup
+Output: green green yellow
+
+Input: lug dax lug wif
+Output: blue green blue red
+
+Input: lug walm wif bluf
+Output: blue blue blue red red
+
+Input: zup lug bluf wif
+Output: yellow blue blue red
+
+Input: lug bluf zup lug
+Output: blue blue yellow blue
+
+
+    Return the output preceded by 'Output:'
+    Input: dax wif zup dax
+    ","Output: Output: green blue yellow green
+
+Explanation:
+
+In this grammar,",green red yellow green,False,85
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means green.
+For example 2, lug means blue.
+
+For example, in the first two inputs, dax means green.
+In the third input
+
+For example 1, wif means ""red"".
+For example 2, wif
+
+For example 1, the nonce word zup means ""yellow"".
+For example 
+
+For example 1, bluf means ""yellow"".
+For example 2, bluf
+
+For example 1, walm means yellow.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: lug
+Output: blue
+
+Input: wif
+Output: red
+
+Input: wif dax
+Output: red green
+
+Input: dax lug wif lug
+Output: green blue red blue
+
+Input: lug
+Output: blue
+
+
+    Return the output preceded by 'Output:'
+    Input: wif
+    ","
+    Return the output preceded by 'Output:'.",red,False,86
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means blue.
+For example 2,
+
+For example 1, the nonce word dax means ""blue"".
+For example 
+
+For example 1, wif means yellow.
+For example 2, wif means
+
+For example 1, the nonce word zup means ""green yellow"".
+For example
+
+For example 1, bluf means ""blue"".
+For example 2, bluf
+
+For example 1, walm means yellow.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: zup walm
+Output: yellow yellow yellow
+
+Input: dax zup lug wif lug
+Output: green yellow blue red blue
+
+Input: lug dax wif
+Output: blue green red
+
+Input: zup lug zup dax
+Output: yellow blue yellow green
+
+Input: wif zup walm dax zup
+Output: red yellow yellow yellow green yellow
+
+
+    Return the output preceded by 'Output:'
+    Input: dax
+    ","Output: Output: green
+
+    Input: zup
+     Output: Output: yellow
+",green,False,87
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1 and 2, lug means blue.
+For example 3, lug
+
+For example 1, the nonce word dax means ""red"".
+For example 
+
+For example 1, wif means red.
+For example 2, wif means
+
+For example 1, the nonce word zup means ""yellow"".
+For example 
+
+For example 1, bluf means ""red"".
+For example 2, bluf
+
+For example 1, walm means green.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: lug wif lug
+Output: blue red blue
+
+Input: dax zup walm wif
+Output: green yellow yellow yellow red
+
+Input: wif
+Output: red
+
+Input: lug
+Output: blue
+
+Input: dax
+Output: green
+
+
+    Return the output preceded by 'Output:'
+    Input: zup bluf
+    ","
+    Note: The input and output are separated by a blank line.",yellow yellow,False,88
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means ""red"".
+For example 2, lug means ""
+
+For example, in the first input, ""zup dax lug"" means ""yellow green
+
+For example 1, wif means red.
+For example 2, wif means
+
+For example 1, zup means ""green"".
+For example 2, zup
+
+For example, in the first input, bluf means ""blue"". In the second input,
+
+For example 1, walm means blue.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: wif
+Output: red
+
+Input: lug zup
+Output: blue yellow
+
+Input: lug walm zup lug walm
+Output: blue blue blue yellow blue blue blue
+
+Input: wif walm zup lug wif walm zup
+Output: red red red yellow blue red red red yellow
+
+Input: dax walm
+Output: green green green
+
+
+    Return the output preceded by 'Output:'
+    Input: lug wif
+    ","
+    Note: The input string may contain any combination of the words 'lug', 'w",blue red,False,89
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means yellow.
+For example 2,
+
+For example 1, the nonce word dax means ""blue"".
+For example 
+
+For example 1, wif means green.
+For example 2, wif means
+
+For example 1, zup means green yellow.
+For example 2, zup
+
+For example, in the first input, bluf means ""green"". In the second input,
+
+For example 1, the meaning of walm is green.
+For example 2,
+
+    However, just write the output like what's shown in these examples.
+    Input: dax walm zup lug walm
+Output: green green green yellow blue blue blue
+
+Input: lug zup dax wif zup
+Output: blue yellow green red yellow
+
+Input: zup lug
+Output: yellow blue
+
+Input: wif
+Output: red
+
+Input: zup walm
+Output: yellow yellow yellow
+
+
+    Return the output preceded by 'Output:'
+    Input: dax walm
+    ","
+    Note: The input string may contain non-word characters (e.g. spaces,",green green green,False,90
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means blue.
+For example 2,
+
+For example 1, the nonce word dax means ""green"".
+For example 
+
+For example 1, wif means ""blue"".
+For example 2, wif
+
+For example 1, zup means yellow green green.
+For example 2, z
+
+For example 1, bluf means ""red"".
+For example 2, bluf
+
+For example 1, walm means yellow.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: wif zup bluf
+Output: red yellow yellow
+
+Input: zup lug zup bluf lug
+Output: yellow blue yellow yellow blue
+
+Input: lug
+Output: blue
+
+Input: zup lug
+Output: yellow blue
+
+Input: dax lug dax lug walm
+Output: green blue green blue blue blue
+
+
+    Return the output preceded by 'Output:'
+    Input: zup bluf lug
+    ","Output: Output: red yellow yellow blue
+
+Explanation:
+
+In this grammar,",yellow yellow blue,False,91
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means blue.
+For example 2, lug means blue.
+
+For example 1, the nonce word dax means ""yellow"".
+For example 
+
+For example 1, wif means yellow.
+For example 2, wif means
+
+For example 1, the nonce word zup means ""blue"".
+For example 
+
+For example 1, bluf means ""yellow"".
+For example 2, bluf
+
+For example 1, walm means blue.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: wif dax wif
+Output: red green red
+
+Input: wif lug
+Output: red blue
+
+Input: lug zup dax wif
+Output: blue yellow green red
+
+Input: zup walm
+Output: yellow yellow yellow
+
+Input: wif bluf dax
+Output: red red green
+
+
+    Return the output preceded by 'Output:'
+    Input: wif lug walm dax
+    ","
+Explanation:
+
+In this grammar, the input is a sequence of words, and",red blue blue blue green,False,92
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means blue.
+For example 2,
+
+For example 1, the nonce word dax means ""green"".
+For example 
+
+For example 1, wif means blue.
+For example 2, wif means
+
+For example 1, the nonce word zup means ""yellow"".
+For example 
+
+For example 1, bluf means ""yellow"".
+For example 2, bluf
+
+For example 1, walm means yellow.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: wif
+Output: red
+
+Input: zup
+Output: yellow
+
+Input: dax
+Output: green
+
+Input: zup
+Output: yellow
+
+Input: lug wif bluf
+Output: blue red red
+
+
+    Return the output preceded by 'Output:'
+    Input: zup dax
+    ",Output: yellow green,yellow green,True,93
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means blue.
+For example 2,
+
+For example 1, dax means ""with"".
+For example 2, dax
+
+For example 1, wif means blue.
+For example 2, wif means
+
+For example 1, zup means yellow.
+For example 2, zup means
+
+For example, in the first input, bluf means ""green"". In the second input,
+
+For example 1, walm means yellow.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: zup
+Output: yellow
+
+Input: dax
+Output: green
+
+Input: dax
+Output: green
+
+Input: wif bluf
+Output: red red
+
+Input: wif
+Output: red
+
+
+    Return the output preceded by 'Output:'
+    Input: lug
+    ","Output: Output: blue
+
+    Return the output preceded by 'Output:'
+    Input",blue,False,94
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means blue.
+For example 2, lug means yellow.
+
+For example 1, the nonce word dax means ""blue"".
+For example 
+
+For example 1 and 2, wif means yellow.
+For example 3,
+
+For example 1, the nonce word zup means ""yellow"".
+For example 
+
+For example 1, bluf means ""green"".
+For example 2, bluf
+
+For example 1, walm means yellow.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: zup
+Output: yellow
+
+Input: lug zup
+Output: blue yellow
+
+Input: lug zup bluf dax
+Output: blue yellow yellow green
+
+Input: wif
+Output: red
+
+Input: dax zup bluf
+Output: green yellow yellow
+
+
+    Return the output preceded by 'Output:'
+    Input: wif walm dax
+    ","Output: red yellow yellow
+
+Explanation:
+
+The grammar is a context-free",red red red green,False,95
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means blue.
+For example 2, lug means yellow.
+
+For example, in the first input, ""zup dax"" means ""yellow green"".
+
+For example 1, wif means yellow.
+For example 2, wif means
+
+For example 1, the nonce word zup means yellow.
+For example 2
+
+For example, in the first input, bluf means yellow. In the second input, bl
+
+For example 1, walm means ""green"".
+For example 2, walm
+
+    However, just write the output like what's shown in these examples.
+    Input: dax lug dax wif dax
+Output: green blue green red green
+
+Input: dax lug wif lug
+Output: green blue red blue
+
+Input: lug walm zup lug zup wif
+Output: blue blue blue yellow blue yellow red
+
+Input: lug zup
+Output: blue yellow
+
+Input: dax lug zup wif bluf dax
+Output: green blue yellow red red green
+
+
+    Return the output preceded by 'Output:'
+    Input: wif lug wif zup bluf
+    ",Output: red blue yellow red blue,red blue red yellow yellow,False,96
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means blue.
+For example 2,
+
+For example 1, dax means ""wife"".
+For example 2, da
+
+For example 1, wif means yellow.
+For example 2, wif means
+
+For example 1, zup means yellow.
+For example 2, zup means
+
+For example, in the first input, bluf means blue. In the second input, bl
+
+For example 1, walm means blue.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: lug zup
+Output: blue yellow
+
+Input: zup bluf
+Output: yellow yellow
+
+Input: dax lug wif lug
+Output: green blue red blue
+
+Input: lug
+Output: blue
+
+Input: zup dax
+Output: yellow green
+
+
+    Return the output preceded by 'Output:'
+    Input: wif zup
+    ",Output: yellow blue,red yellow,False,97
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means blue.
+For example 2,
+
+For example 1, the nonce word dax means ""blue"".
+For example 
+
+For example 1, wif means red.
+For example 2, wif means
+
+For example, in the first input, ""zup"" means ""yellow"". In the second
+
+For example 1, bluf means ""blue"".
+For example 2, bluf
+
+For example 1, walm means yellow.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: wif
+Output: red
+
+Input: dax zup wif
+Output: green yellow red
+
+Input: dax
+Output: green
+
+Input: lug bluf dax bluf
+Output: blue blue green green
+
+Input: dax wif lug
+Output: green red blue
+
+
+    Return the output preceded by 'Output:'
+    Input: dax zup dax
+    ",Output: green yellow green,green yellow green,True,98
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means blue.
+For example 2,
+
+For example 1, the nonce word dax means ""wife"".
+For example
+
+For example 1, wif means ""red"".
+For example 2, wif
+
+For example 1, zup means yellow green blue.
+For example 2, z
+
+For example 1, bluf means blue.
+For example 2, bluf means
+
+For example 1, walm means ""red"".
+For example 2, walm
+
+    However, just write the output like what's shown in these examples.
+    Input: zup
+Output: yellow
+
+Input: dax zup wif bluf lug
+Output: green yellow red red blue
+
+Input: lug
+Output: blue
+
+Input: wif
+Output: red
+
+Input: wif
+Output: red
+
+
+    Return the output preceded by 'Output:'
+    Input: lug walm zup
+    ","Output: blue red
+
+Explanation:
+
+The grammar is a context-free grammar",blue blue blue yellow,False,99
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means blue.
+For example 2,
+
+For example 1, dax means ""green"".
+For example 2, dax
+
+For example 1, wif means blue.
+For example 2, wif means
+
+For example 1, the nonce word zup means ""yellow blue"".
+For example
+
+For example 1, bluf means yellow.
+For example 2, bluf means
+
+For example 1, the nonce word walm means ""blue"".
+For example 
+
+    However, just write the output like what's shown in these examples.
+    Input: dax
+Output: green
+
+Input: zup lug zup lug
+Output: yellow blue yellow blue
+
+Input: dax bluf
+Output: green green
+
+Input: zup wif bluf
+Output: yellow red red
+
+Input: dax
+Output: green
+
+
+    Return the output preceded by 'Output:'
+    Input: wif lug zup bluf wif bluf
+    ","Output: blue yellow blue yellow
+
+Explanation:
+
+The grammar is a context-",red blue yellow yellow red red,False,100
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means ""red"".
+For example 2, lug means ""
+
+For example 1, the nonce word dax means ""yellow"".
+For example 
+
+For example 1, wif means ""red"".
+For example 2, wif
+
+For example 1, zup means yellow.
+For example 2, zup means
+
+For example, in the first input, bluf means ""yellow"". In the second input,
+
+For example 1, walm means yellow.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: zup lug
+Output: yellow blue
+
+Input: zup dax bluf
+Output: yellow green green
+
+Input: lug
+Output: blue
+
+Input: wif zup dax bluf
+Output: red yellow green green
+
+Input: dax zup dax zup wif
+Output: green yellow green yellow red
+
+
+    Return the output preceded by 'Output:'
+    Input: zup
+    ","Output: Output: yellow
+
+Explanation:
+
+The grammar is a context-free",yellow,False,101
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means ""yellow"".
+For example 2
+
+For example 1, the nonce word dax means ""yellow"".
+For example 
+
+For example 1, wif means ""green"".
+For example 2, wif
+
+For example, in the first input, ""zup"" means ""yellow"". In the second
+
+For example 1, bluf means ""red"".
+For example 2, bluf
+
+For example 1, walm means yellow.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: zup bluf
+Output: yellow yellow
+
+Input: dax
+Output: green
+
+Input: wif bluf lug
+Output: red red blue
+
+Input: zup dax zup wif
+Output: yellow green yellow red
+
+Input: wif bluf lug zup
+Output: red red blue yellow
+
+
+    Return the output preceded by 'Output:'
+    Input: dax zup walm dax wif lug
+    ",Output: green yellow yellow red blue,green yellow yellow yellow green red blue,False,102
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1 and 2, lug means blue.
+For example 3, lug
+
+For example 1, the nonce word dax means ""green"".
+For example 
+
+For example 1, wif means blue.
+For example 2, wif means
+
+For example 1, zup means green.
+For example 2, zup means
+
+For example 1, bluf means ""yellow"".
+For example 2, bluf
+
+For example 1 and 2, walm means red.
+For example 3,
+
+    However, just write the output like what's shown in these examples.
+    Input: zup wif zup
+Output: yellow red yellow
+
+Input: dax lug walm
+Output: green blue blue blue
+
+Input: zup
+Output: yellow
+
+Input: wif dax
+Output: red green
+
+Input: dax
+Output: green
+
+
+    Return the output preceded by 'Output:'
+    Input: wif zup dax zup
+    ","Output: red yellow yellow blue
+
+Explanation:
+
+The grammar is a context-",red yellow green yellow,False,103
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means ""green"".
+For example 2
+
+For example 1, the nonce word dax means ""blue"".
+For example 
+
+For example 1, wif means ""blue"".
+For example 2, wif
+
+For example 1, the nonce word zup means yellow.
+For example 2
+
+For example 1, bluf means blue.
+For example 2, bluf means
+
+For example 1, walm means blue.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: wif
+Output: red
+
+Input: lug
+Output: blue
+
+Input: wif
+Output: red
+
+Input: wif zup
+Output: red yellow
+
+Input: wif lug dax lug
+Output: red blue green blue
+
+
+    Return the output preceded by 'Output:'
+    Input: dax wif bluf
+    ",Output: blue red,green red red,False,104
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means blue.
+For example 2,
+
+For example 1, the nonce word dax means ""red"".
+For example 
+
+For example 1, wif means yellow.
+For example 2, wif means
+
+For example 1, zup means yellow.
+For example 2, zup means
+
+For example, in the first input, bluf means ""red"". In the second input,
+
+For example 1, walm means green.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: lug
+Output: blue
+
+Input: wif walm zup lug wif walm zup
+Output: red red red yellow blue red red red yellow
+
+Input: lug walm wif lug bluf
+Output: blue blue blue red blue blue
+
+Input: zup bluf
+Output: yellow yellow
+
+Input: zup
+Output: yellow
+
+
+    Return the output preceded by 'Output:'
+    Input: zup walm
+    ",Output: yellow red,yellow yellow yellow,False,105
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means ""yellow"".
+For example 2, lug means ""
+
+For example 1, the nonce word dax means ""green"".
+For example 
+
+For example 1, wif means blue.
+For example 2, wif means
+
+For example 1, zup means yellow.
+For example 2, zup means
+
+For example 1, bluf means ""walm"".
+For example 2, bl
+
+For example 1, walm means green.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: wif
+Output: red
+
+Input: lug
+Output: blue
+
+Input: zup lug wif
+Output: yellow blue red
+
+Input: dax
+Output: green
+
+Input: lug
+Output: blue
+
+
+    Return the output preceded by 'Output:'
+    Input: wif
+    ","Output: Output: red
+
+Input: lug
+     Output: Output: blue
+
+Input",red,False,106
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means ""blue"".
+For example 2
+
+For example 1, the nonce word dax means ""green"".
+For example 
+
+For example 1, wif means red.
+For example 2, wif means
+
+For example 1, the nonce word ""zup"" means ""yellow"".
+
+
+
+For example, in the first input, bluf means yellow. In the second input, bl
+
+For example 1, walm means green.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: dax wif
+Output: green red
+
+Input: wif bluf
+Output: red red
+
+Input: zup
+Output: yellow
+
+Input: dax
+Output: green
+
+Input: dax walm
+Output: green green green
+
+
+    Return the output preceded by 'Output:'
+    Input: zup
+    ",Output: Output: yellow,yellow,False,107
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means blue.
+For example 2,
+
+For example 1, the nonce word dax means ""red"".
+For example 
+
+For example 1, wif means ""yellow"".
+For example 2, wif
+
+For example 1, zup means yellow.
+For example 2, zup means
+
+For example, in the first input, bluf means ""red"". In the second input,
+
+For example 1, the nonce word walm means ""green"".
+For example 
+
+    However, just write the output like what's shown in these examples.
+    Input: lug
+Output: blue
+
+Input: wif lug dax
+Output: red blue green
+
+Input: dax
+Output: green
+
+Input: lug walm wif bluf
+Output: blue blue blue red red
+
+Input: dax lug walm
+Output: green blue blue blue
+
+
+    Return the output preceded by 'Output:'
+    Input: dax
+    ",Output: Output: green,green,False,108
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means blue.
+For example 2,
+
+For example 1, the nonce word dax means ""yellow green"".
+For example
+
+For example 1, wif means yellow.
+For example 2, wif means
+
+For example 1, the nonce word ""zup"" means ""red"".
+For
+
+For example 1, bluf means ""green"".
+For example 2, bluf
+
+For example 1, walm means green.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: wif bluf
+Output: red red
+
+Input: zup lug wif dax bluf wif
+Output: yellow blue red green green red
+
+Input: dax zup walm wif walm
+Output: green yellow yellow yellow red red red
+
+Input: wif dax wif
+Output: red green red
+
+Input: dax
+Output: green
+
+
+    Return the output preceded by 'Output:'
+    Input: zup walm lug
+    ","Output: red green blue
+
+Explanation:
+
+In this grammar, the input is",yellow yellow yellow blue,False,109
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example, in the first input, ""dax lug"" means ""green blue"". In
+
+For example 1, the nonce word dax means green.
+For example 2
+
+For example 1, wif means red.
+For example 2, wif means
+
+For example 1, zup means yellow and red.
+For example 2, z
+
+For example, in the first input, bluf means ""yellow"". In the second input,
+
+For example 1, walm means green.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: zup walm lug zup wif dax
+Output: yellow yellow yellow blue yellow red green
+
+Input: zup
+Output: yellow
+
+Input: lug bluf zup
+Output: blue blue yellow
+
+Input: zup walm lug wif bluf
+Output: yellow yellow yellow blue red red
+
+Input: dax bluf wif lug
+Output: green green red blue
+
+
+    Return the output preceded by 'Output:'
+    Input: zup
+    ","Output: Output: yellow
+
+    Input: lug
+     Output: Output: blue
+
+",yellow,False,110
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example, in the first input, ""dax lug"" means ""green blue"".
+
+
+For example, in the first input, ""zup dax"" means ""yellow green"".
+
+For example 1, wif means ""blue"".
+For example 2, wif
+
+For example 1, the nonce word zup means yellow.
+For example 2
+
+For example 1, bluf means ""blue"".
+For example 2, bluf
+
+For example 1, walm means yellow.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: dax lug
+Output: green blue
+
+Input: wif
+Output: red
+
+Input: lug zup dax wif zup
+Output: blue yellow green red yellow
+
+Input: zup
+Output: yellow
+
+Input: dax zup lug bluf
+Output: green yellow blue blue
+
+
+    Return the output preceded by 'Output:'
+    Input: wif bluf zup lug wif
+    ",Output: red blue yellow green,red red yellow blue red,False,111
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means ""green blue"".
+For example 
+
+For example 1, the nonce word dax means ""green"".
+For example 
+
+For example 1, wif means red.
+For example 2, wif means
+
+For example 1, the nonce word ""zup"" means ""yellow"".
+
+
+
+For example 1, bluf means ""green"".
+For example 2, bluf
+
+For example 1, walm means yellow.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: wif
+Output: red
+
+Input: wif bluf lug dax wif
+Output: red red blue green red
+
+Input: wif
+Output: red
+
+Input: wif
+Output: red
+
+Input: zup
+Output: yellow
+
+
+    Return the output preceded by 'Output:'
+    Input: lug dax zup lug dax bluf
+    ","Output: Output: green blue yellow green blue
+
+Explanation:
+
+The grammar is",blue green yellow blue green green,False,112
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means yellow.
+For example 2, lug means blue.
+
+For example 1, the nonce word dax means ""blue"".
+For example 
+
+For example 1, wif means ""yellow"".
+For example 2, wif
+
+For example 1, the nonce word zup means ""yellow"".
+For example 
+
+For example 1, bluf means ""green"".
+For example 2, bluf
+
+For example 1, walm means yellow.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: wif zup
+Output: red yellow
+
+Input: zup lug zup lug
+Output: yellow blue yellow blue
+
+Input: dax
+Output: green
+
+Input: dax
+Output: green
+
+Input: dax
+Output: green
+
+
+    Return the output preceded by 'Output:'
+    Input: wif
+    ","Output: Output: yellow
+
+    Return the output preceded by 'Output:'
+    Input",red,False,113
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means blue.
+For example 2,
+
+For example, in the first input, ""dax"" is a nonce word that means
+
+For example 1, wif means ""red"".
+For example 2, wif
+
+For example 1, zup means ""yellow"".
+For example 2, zup
+
+For example 1, bluf means ""green"".
+For example 2, bluf
+
+For example 1, walm means blue.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: lug wif
+Output: blue red
+
+Input: wif
+Output: red
+
+Input: wif
+Output: red
+
+Input: dax lug walm
+Output: green blue blue blue
+
+Input: zup walm
+Output: yellow yellow yellow
+
+
+    Return the output preceded by 'Output:'
+    Input: dax zup lug
+    ","Output: Output: yellow blue red
+
+Explanation:
+
+In this grammar, the",green yellow blue,False,114
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1 and 2, lug means blue.
+For example 3 and 
+
+For example 1, dax means ""yellow"".
+For example 2, dax
+
+For example 1, wif means yellow.
+For example 2, wif means
+
+For example 1, the nonce word zup means yellow.
+For example 2
+
+For example 1, bluf means ""green"".
+For example 2, bluf
+
+For example 1, walm means blue.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: wif
+Output: red
+
+Input: wif zup
+Output: red yellow
+
+Input: wif walm
+Output: red red red
+
+Input: zup lug
+Output: yellow blue
+
+Input: wif dax wif lug wif
+Output: red green red blue red
+
+
+    Return the output preceded by 'Output:'
+    Input: wif
+    ","Output: Output: red
+
+Input: wif zup
+     Output: Output: red",red,False,115
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means ""red"".
+For example 2
+
+For example, in the first input, ""dax"" means ""green"". In the second
+
+For example 1, wif means blue.
+For example 2, wif means
+
+For example 1, zup means ""blue"".
+For example 2, zup
+
+For example 1, bluf means ""blue"".
+For example 2, bluf
+
+For example 1, walm means yellow.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: lug dax bluf wif dax
+Output: blue green green red green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug wif lug
+Output: blue red blue
+
+Input: dax
+Output: green
+
+Input: dax zup wif bluf lug
+Output: green yellow red red blue
+
+
+    Return the output preceded by 'Output:'
+    Input: dax wif
+    ","Output: Output: green yellow
+
+    Input: zup wif
+     Output: Output",green red,False,116
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means blue.
+For example 2, lug means green.
+
+For example 1, the nonce word dax means ""blue"".
+For example 
+
+For example 1, wif means red.
+For example 2, wif means
+
+For example 1, zup means ""green"".
+For example 2, zup
+
+For example, in the first input, bluf means ""wife"". In the second input
+
+For example 1, walm means green.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: lug zup
+Output: blue yellow
+
+Input: dax zup dax walm
+Output: green yellow green green green
+
+Input: dax
+Output: green
+
+Input: dax wif
+Output: green red
+
+Input: lug zup dax lug dax
+Output: blue yellow green blue green
+
+
+    Return the output preceded by 'Output:'
+    Input: lug zup walm dax lug zup
+    ",Output: Output: blue yellow green blue green,blue yellow yellow yellow green blue yellow,False,117
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means ""blue"".
+For example 2
+
+For example 1, the nonce word dax means ""blue"".
+For example 
+
+For example 1, wif means ""luggage"".
+For example 2,
+
+For example 1, zup means yellow.
+For example 2, zup means
+
+For example, in the first input, bluf means ""wife"". In the second input
+
+For example 1, walm means ""green"".
+For example 2, walm
+
+    However, just write the output like what's shown in these examples.
+    Input: lug
+Output: blue
+
+Input: zup wif bluf zup lug
+Output: yellow red red yellow blue
+
+Input: zup dax
+Output: yellow green
+
+Input: lug
+Output: blue
+
+Input: wif
+Output: red
+
+
+    Return the output preceded by 'Output:'
+    Input: wif dax
+    ",Output: red green,red green,True,118
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example, in the first two inputs, lug means blue. In the third input, lug
+
+For example 1, the nonce word dax means ""green"".
+For example 
+
+For example 1 and 2, wif means ""exchange"" or ""trade"".
+
+For example 1, the nonce word zup means ""red"".
+For example 
+
+For example 1, bluf means ""yellow"".
+For example 2, bluf
+
+For example 1, the nonce word walm means ""red"".
+For example 
+
+    However, just write the output like what's shown in these examples.
+    Input: lug wif walm
+Output: blue red red red
+
+Input: wif
+Output: red
+
+Input: wif zup
+Output: red yellow
+
+Input: zup bluf
+Output: yellow yellow
+
+Input: zup
+Output: yellow
+
+
+    Return the output preceded by 'Output:'
+    Input: zup lug zup lug
+    ","
+    Note: The input string may contain nonce words, which are words that
+    have",yellow blue yellow blue,False,119
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means blue.
+For example 2,
+
+For example 1, the nonce word dax means ""green"".
+For example 
+
+For example 1, wif means blue.
+For example 2, wif means
+
+For example 1, zup means yellow red.
+For example 2, zup
+
+For example 1, bluf means ""wife"".
+For example 2, bl
+
+For example 1, walm means green.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: lug wif walm
+Output: blue red red red
+
+Input: wif
+Output: red
+
+Input: wif bluf lug
+Output: red red blue
+
+Input: lug
+Output: blue
+
+Input: zup lug walm
+Output: yellow blue blue blue
+
+
+    Return the output preceded by 'Output:'
+    Input: zup walm lug
+    ","Output: Output: yellow blue blue blue
+
+Explanation:
+
+The grammar is a",yellow yellow yellow blue,False,120
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means blue.
+For example 2, lug means wife.
+
+For example 1, the nonce word dax means ""green"".
+For example 
+
+For example 1, wif means blue.
+For example 2, wif means
+
+For example 1, zup means yellow.
+For example 2, zup means
+
+For example 1, bluf means blue.
+For example 2, bluf means
+
+For example 1, walm means yellow.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: zup lug wif dax bluf wif
+Output: yellow blue red green green red
+
+Input: zup
+Output: yellow
+
+Input: lug wif lug
+Output: blue red blue
+
+Input: dax
+Output: green
+
+Input: dax lug walm
+Output: green blue blue blue
+
+
+    Return the output preceded by 'Output:'
+    Input: zup walm lug walm wif zup dax
+    ","Output: Output: yellow blue red green green red
+
+Explanation:
+
+For example",yellow yellow yellow blue blue blue red yellow green,False,121
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means ""blue"".
+For example 2, lug means ""
+
+For example 1, dax means ""green blue"".
+For example 2, da
+
+For example 1, wif means red.
+For example 2, wif means
+
+For example 1, the nonce word ""zup"" means ""blue"".
+For
+
+For example, in the first input, bluf means yellow. In the second input, bl
+
+For example 1, the nonce word walm means blue.
+For example 2
+
+    However, just write the output like what's shown in these examples.
+    Input: wif lug
+Output: red blue
+
+Input: zup bluf wif walm
+Output: yellow yellow red red red
+
+Input: dax walm zup lug dax
+Output: green green green yellow blue green
+
+Input: dax zup lug zup bluf
+Output: green yellow blue yellow yellow
+
+Input: lug
+Output: blue
+
+
+    Return the output preceded by 'Output:'
+    Input: zup
+    ","
+    Return the output preceded by 'Output:'.",yellow,False,122
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means blue.
+For example 2,
+
+For example 1, the nonce word dax means ""blue"".
+For example 
+
+For example 1, wif means ""with"".
+For example 2, wif
+
+For example 1, the nonce word ""zup"" means ""yellow"".
+
+
+
+For example, in the first input, bluf means ""green"". In the second input,
+
+For example 1, walm means yellow.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: wif bluf zup
+Output: red red yellow
+
+Input: dax lug walm
+Output: green blue blue blue
+
+Input: wif walm zup lug zup walm
+Output: red red red yellow blue yellow yellow yellow
+
+Input: wif
+Output: red
+
+Input: zup
+Output: yellow
+
+
+    Return the output preceded by 'Output:'
+    Input: wif
+    ","Output: Output: red
+
+    Input: bluf
+     Output: Output: green
+",red,False,123
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means blue.
+For example 2, lug means to carry
+
+For example 1, the nonce word dax means ""blue"".
+For example 
+
+For example 1, wif means yellow.
+For example 2, wif means
+
+For example 1, zup means ""blue"".
+For example 2, zup
+
+For example 1, bluf means ""yellow"".
+For example 2, bluf
+
+For example 1, walm means green.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: zup wif zup
+Output: yellow red yellow
+
+Input: wif
+Output: red
+
+Input: lug walm zup walm
+Output: blue blue blue yellow yellow yellow
+
+Input: wif
+Output: red
+
+Input: wif dax lug walm
+Output: red green blue blue blue
+
+
+    Return the output preceded by 'Output:'
+    Input: zup lug
+    ","Output: Output: yellow blue
+
+Explanation:
+
+In this grammar, the input",yellow blue,False,124
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means ""blue"".
+For example 2
+
+For example 1, the nonce word dax means ""blue"".
+For example 
+
+For example 1, wif means yellow.
+For example 2, wif means
+
+For example 1, the nonce word zup means yellow.
+For example 2
+
+For example 1, bluf means yellow.
+For example 2, bluf means
+
+For example 1, walm means blue.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: zup wif
+Output: yellow red
+
+Input: wif lug walm
+Output: red blue blue blue
+
+Input: wif
+Output: red
+
+Input: wif
+Output: red
+
+Input: wif lug dax
+Output: red blue green
+
+
+    Return the output preceded by 'Output:'
+    Input: dax lug wif lug
+    ","Output: green blue yellow red
+
+    Return the output preceded by 'Output:'
+   ",green blue red blue,False,125
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means ""red"".
+For example 2, lug means ""
+
+For example 1, the nonce word dax means ""yellow"".
+For example 
+
+For example 1, wif means green.
+For example 2, wif means
+
+For example 1, the nonce word zup means yellow.
+For example 2
+
+For example 1, bluf means ""green"".
+For example 2, bluf
+
+For example 1, walm means red.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: dax
+Output: green
+
+Input: zup dax walm zup wif
+Output: yellow green green green yellow red
+
+Input: lug
+Output: blue
+
+Input: lug
+Output: blue
+
+Input: lug bluf dax lug
+Output: blue blue green blue
+
+
+    Return the output preceded by 'Output:'
+    Input: zup walm
+    ",Output: yellow red,yellow yellow yellow,False,126
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means blue.
+For example 2,
+
+For example 1, the nonce word dax means ""yellow"".
+For example 
+
+For example 1, wif means red.
+For example 2, wif means
+
+For example 1, zup means ""blue"".
+For example 2, zup
+
+For example 1, bluf means ""yellow"".
+For example 2, bluf
+
+For example 1, walm means blue.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: zup
+Output: yellow
+
+Input: dax lug walm
+Output: green blue blue blue
+
+Input: wif
+Output: red
+
+Input: zup lug dax
+Output: yellow blue green
+
+Input: dax
+Output: green
+
+
+    Return the output preceded by 'Output:'
+    Input: lug
+    ","
+    Note: The input words are nonce words, which means they are randomly generated and may",blue,False,127
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means ""yellow"".
+For example 2, lug means ""
+
+For example 1, the nonce word dax means ""green blue"".
+For example
+
+For example 1, wif means blue.
+For example 2, wif means
+
+For example 1, the nonce word ""zup"" means ""yellow"".
+For
+
+For example 1, bluf means ""green"".
+For example 2, bluf
+
+For example 1, walm means ""red"".
+For example 2, walm
+
+    However, just write the output like what's shown in these examples.
+    Input: dax zup bluf
+Output: green yellow yellow
+
+Input: lug wif bluf
+Output: blue red red
+
+Input: dax
+Output: green
+
+Input: dax
+Output: green
+
+Input: lug walm zup
+Output: blue blue blue yellow
+
+
+    Return the output preceded by 'Output:'
+    Input: wif
+    ","Output: blue
+
+    Return the output preceded by 'Output:'
+    Input: bl",red,False,128
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means blue.
+For example 2,
+
+For example 1, the nonce word dax means ""green"".
+For example 
+
+For example 1, wif means ""red"".
+For example 2, wif
+
+For example 1 and 2, zup means yellow and blue.
+For example 
+
+For example, in the first input, bluf means yellow. In the second input, bl
+
+For example 1, walm means yellow.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: dax wif
+Output: green red
+
+Input: dax walm zup lug
+Output: green green green yellow blue
+
+Input: wif lug dax
+Output: red blue green
+
+Input: dax
+Output: green
+
+Input: lug
+Output: blue
+
+
+    Return the output preceded by 'Output:'
+    Input: dax wif zup bluf
+    ","Output: Output: green red yellow
+
+Explanation:
+
+In this grammar, the",green red yellow yellow,False,129
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means yellow.
+For example 2, lug means blue.
+
+For example 1, the nonce word dax means ""green"".
+For example 
+
+For example 1, wif means blue.
+For example 2, wif means
+
+For example 1, the nonce word zup means ""green"".
+For example 
+
+For example 1, bluf means ""green"".
+For example 2, bluf
+
+For example 1, walm means blue.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: zup
+Output: yellow
+
+Input: dax zup walm wif
+Output: green yellow yellow yellow red
+
+Input: lug dax lug
+Output: blue green blue
+
+Input: wif dax wif
+Output: red green red
+
+Input: dax
+Output: green
+
+
+    Return the output preceded by 'Output:'
+    Input: lug bluf dax
+    ","Output: Output: blue
+
+Explanation:
+
+The grammar is a context-free",blue blue green,False,130
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means blue.
+For example 2, lug means blue.
+
+For example 1, the nonce word dax means ""yellow"".
+For example 
+
+For example 1, wif means blue.
+For example 2, wif means
+
+For example 1, the nonce word ""zup"" means ""red"".
+For
+
+For example, in the first input, bluf means ""blue"". In the second input,
+
+For example 1, walm means yellow.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: lug dax zup
+Output: blue green yellow
+
+Input: dax
+Output: green
+
+Input: zup walm
+Output: yellow yellow yellow
+
+Input: zup bluf
+Output: yellow yellow
+
+Input: lug zup dax walm
+Output: blue yellow green green green
+
+
+    Return the output preceded by 'Output:'
+    Input: wif
+    ",Output: Output: blue,red,False,131
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example, in the first two inputs, lug means ""blue"". In the third input,
+
+For example 1, dax means yellow.
+For example 2, dax means
+
+For example 1, wif means red.
+For example 2, wif means
+
+For example, in the first input, ""zup"" means ""yellow"". In the second
+
+For example, in the first input, bluf means ""green"". In the second input,
+
+For example 1, walm means blue.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: lug
+Output: blue
+
+Input: wif lug wif
+Output: red blue red
+
+Input: dax
+Output: green
+
+Input: wif lug
+Output: red blue
+
+Input: wif lug dax walm
+Output: red blue green green green
+
+
+    Return the output preceded by 'Output:'
+    Input: lug
+    ","Output: Output: blue
+
+Input: wif lug wif
+     Output: Output:",blue,False,132
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1 and 2, lug means blue.
+For example 3, lug
+
+For example 1, dax means ""blue"".
+For example 2, dax
+
+For example 1, wif means red.
+For example 2, wif means
+
+For example 1, the nonce word zup means ""yellow"".
+For example 
+
+For example, in the first input, ""lug wif bluf"", the word ""
+
+For example 1, the nonce word walm means ""green"".
+For example 
+
+    However, just write the output like what's shown in these examples.
+    Input: zup dax bluf zup dax
+Output: yellow green green yellow green
+
+Input: dax
+Output: green
+
+Input: lug wif walm
+Output: blue red red red
+
+Input: zup dax lug wif dax
+Output: yellow green blue red green
+
+Input: wif bluf
+Output: red red
+
+
+    Return the output preceded by 'Output:'
+    Input: zup walm
+    ",Output: Output: yellow green,yellow yellow yellow,False,133
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means blue.
+For example 2, lug means yellow.
+
+For example, in the first input, ""dax"" means ""green"".
+In the
+
+For example 1, wif means yellow.
+For example 2, wif means
+
+For example 1, zup means ""blue"".
+For example 2, zup
+
+For example 1, bluf means ""green"".
+For example 2, bluf
+
+For example 1, walm means ""yellow"".
+For example 2, walm
+
+    However, just write the output like what's shown in these examples.
+    Input: lug zup dax lug
+Output: blue yellow green blue
+
+Input: dax bluf
+Output: green green
+
+Input: lug dax
+Output: blue green
+
+Input: zup bluf wif lug dax
+Output: yellow yellow red blue green
+
+Input: lug
+Output: blue
+
+
+    Return the output preceded by 'Output:'
+    Input: dax lug
+    ","Output: Output: green blue
+
+Explanation:
+
+For example 1, lug",green blue,False,134
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means ""blue"".
+For example 2
+
+For example 1, the nonce word dax means ""green"".
+For example 
+
+For example 1, wif means ""red"".
+For example 2, wif
+
+For example 1, the nonce word zup means yellow.
+
+For example 
+
+For example, in the first input, bluf means ""yellow"". In the second input,
+
+For example 1, walm means blue.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: dax lug zup
+Output: green blue yellow
+
+Input: wif
+Output: red
+
+Input: wif
+Output: red
+
+Input: wif
+Output: red
+
+Input: lug
+Output: blue
+
+
+    Return the output preceded by 'Output:'
+    Input: dax lug
+    ","Output: green blue
+
+    Return the output preceded by 'Output:'
+    Input:",green blue,False,135
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means blue.
+For example 2, lug means yellow.
+
+For example 1, the nonce word dax means ""green yellow"".
+For example
+
+For example 1, wif means blue.
+For example 2, wif means
+
+For example 1, zup means yellow green green.
+For example 2, z
+
+For example 1, bluf means yellow.
+For example 2, bluf means
+
+For example 1, walm means ""red"".
+For example 2, walm
+
+    However, just write the output like what's shown in these examples.
+    Input: lug
+Output: blue
+
+Input: lug dax zup wif
+Output: blue green yellow red
+
+Input: dax walm wif dax
+Output: green green green red green
+
+Input: zup walm
+Output: yellow yellow yellow
+
+Input: zup
+Output: yellow
+
+
+    Return the output preceded by 'Output:'
+    Input: wif
+    ",Output: blue,red,False,136
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1 and 2, lug means blue.
+For example 3, lug
+
+For example 1, the nonce word dax means ""red"".
+For example 
+
+For example 1, wif means blue.
+For example 2, wif means
+
+For example, in the first two inputs, ""zup"" means ""yellow"".
+In
+
+For example 1, bluf means ""red"".
+For example 2, bluf
+
+For example 1, the nonce word walm means yellow.
+For example 2
+
+    However, just write the output like what's shown in these examples.
+    Input: zup
+Output: yellow
+
+Input: dax
+Output: green
+
+Input: dax lug
+Output: green blue
+
+Input: dax bluf
+Output: green green
+
+Input: zup
+Output: yellow
+
+
+    Return the output preceded by 'Output:'
+    Input: dax lug
+    ","Output: Output: green blue
+
+Input: wif
+Output: Output: blue
+
+",green blue,False,137
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means blue.
+For example 2, lug means nothing (
+
+For example, in the first input, ""dax"" means ""green"". In the second
+
+For example 1, wif means ""blue"".
+For example 2, wif
+
+For example 1, the nonce word zup means ""green"".
+For example 
+
+For example, in the first input, bluf means blue. In the second input, bl
+
+For example 1, walm means yellow.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: dax bluf wif zup dax
+Output: green green red yellow green
+
+Input: wif dax zup wif dax bluf
+Output: red green yellow red green green
+
+Input: dax
+Output: green
+
+Input: zup lug
+Output: yellow blue
+
+Input: zup wif bluf zup
+Output: yellow red red yellow
+
+
+    Return the output preceded by 'Output:'
+    Input: wif zup dax
+    ","
+    Note: The input string may contain non-word characters (e.g. spaces,",red yellow green,False,138
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means blue.
+For example 2, lug means yellow.
+
+For example 1, the nonce word dax means ""green"".
+For example 
+
+For example 1, wif means red.
+For example 2, wif means
+
+For example 1, the nonce word zup means yellow.
+For example 2
+
+For example, in the first input, ""zup dax bluf"" means ""yellow
+
+For example 1, walm means green.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: zup lug dax
+Output: yellow blue green
+
+Input: lug zup
+Output: blue yellow
+
+Input: lug wif bluf
+Output: blue red red
+
+Input: wif walm dax
+Output: red red red green
+
+Input: lug walm
+Output: blue blue blue
+
+
+    Return the output preceded by 'Output:'
+    Input: wif dax wif dax
+    ",Output: red red red green green,red green red green,False,139
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means ""yellow"".
+For example 2
+
+For example 1, the meaning of dax is yellow.
+For example 2,
+
+For example 1, wif means ""with"".
+For example 2, wif
+
+For example 1, zup means yellow.
+For example 2, zup means
+
+For example 1, bluf means ""yellow"".
+For example 2, bluf
+
+For example 1, walm means green.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: wif bluf
+Output: red red
+
+Input: wif
+Output: red
+
+Input: zup dax bluf
+Output: yellow green green
+
+Input: lug dax walm
+Output: blue green green green
+
+Input: wif
+Output: red
+
+
+    Return the output preceded by 'Output:'
+    Input: wif
+    ","Output: Output: red
+
+Explanation:
+
+The input ""wif bluf",red,False,140
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means green.
+For example 2, lug means blue.
+
+For example 1, dax means ""green"".
+For example 2, dax
+
+For example 1, wif means ""yellow"".
+For example 2, wif
+
+For example 1, zup means yellow.
+For example 2, zup means
+
+For example 1, bluf means yellow.
+For example 2, bluf means
+
+For example 1, walm means green.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: lug dax zup
+Output: blue green yellow
+
+Input: dax bluf
+Output: green green
+
+Input: zup
+Output: yellow
+
+Input: zup bluf
+Output: yellow yellow
+
+Input: dax
+Output: green
+
+
+    Return the output preceded by 'Output:'
+    Input: lug
+    ","Output: Output: blue
+
+Explanation:
+
+The grammar is a context-free",blue,False,141
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means ""yellow"".
+For example 2
+
+For example, in the first input, ""dax wif"" means ""green red"".
+
+For example 1, wif means green.
+For example 2, wif means
+
+For example 1, zup means blue.
+For example 2, zup means
+
+For example 1, bluf means ""red"".
+For example 2, bluf
+
+For example 1, walm means green.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: lug walm
+Output: blue blue blue
+
+Input: dax wif walm
+Output: green red red red
+
+Input: wif zup bluf lug
+Output: red yellow yellow blue
+
+Input: dax wif zup bluf wif walm
+Output: green red yellow yellow red red red
+
+Input: dax wif
+Output: green red
+
+
+    Return the output preceded by 'Output:'
+    Input: dax lug zup
+    ","
+    Note: The input string may contain non-alphanumeric characters.
+    Note:",green blue yellow,False,142
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means blue.
+For example 2, lug means yellow.
+
+For example 1, the nonce word dax means ""green"".
+For example 
+
+For example 1, wif means red.
+For example 2, wif means
+
+For example 1, zup means yellow.
+For example 2, zup means
+
+For example, in the first input, bluf means ""yellow"". In the second input,
+
+For example 1, walm means green.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: dax
+Output: green
+
+Input: zup bluf
+Output: yellow yellow
+
+Input: wif
+Output: red
+
+Input: lug
+Output: blue
+
+Input: lug
+Output: blue
+
+
+    Return the output preceded by 'Output:'
+    Input: dax zup walm
+    ",Output: Output: green yellow green,green yellow yellow yellow,False,143
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means blue.
+For example 2,
+
+For example 1, the nonce word dax means ""green"".
+For example 
+
+For example 1, wif means yellow.
+For example 2, wif means
+
+For example 1, the nonce word zup means ""yellow"".
+For example 
+
+For example 1, bluf means ""yellow"".
+For example 2, bluf
+
+For example 1, walm means green.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: dax lug walm
+Output: green blue blue blue
+
+Input: lug
+Output: blue
+
+Input: dax walm
+Output: green green green
+
+Input: lug
+Output: blue
+
+Input: zup dax
+Output: yellow green
+
+
+    Return the output preceded by 'Output:'
+    Input: dax
+    ","Output: green
+
+    Return the output preceded by 'Output:'
+    Input: bl",green,False,144
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means ""yellow"".
+For example 2
+
+For example 1, the nonce word dax means ""yellow"".
+For example 
+
+For example 1, wif means ""green"".
+For example 2, wif
+
+For example 1, the nonce word ""zup"" means ""yellow"".
+For
+
+For example 1, bluf means ""red"".
+For example 2, bluf
+
+For example 1, walm means green.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: wif lug
+Output: red blue
+
+Input: wif walm zup lug zup walm
+Output: red red red yellow blue yellow yellow yellow
+
+Input: dax
+Output: green
+
+Input: dax walm
+Output: green green green
+
+Input: dax walm wif dax
+Output: green green green red green
+
+
+    Return the output preceded by 'Output:'
+    Input: lug zup
+    ","Output: Output: red blue
+
+Explanation:
+
+In this grammar, the input",blue yellow,False,145
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means green.
+For example 2, lug means yellow.
+
+For example 1, the nonce word dax means ""red"".
+For example 
+
+For example 1, wif means ""red"".
+For example 2, wif
+
+For example 1, the nonce word zup means yellow.
+For example 2
+
+For example, in the first input, bluf means yellow. In the second input, bl
+
+For example 1 and 2, walm means blue.
+For example 3,
+
+    However, just write the output like what's shown in these examples.
+    Input: zup lug wif dax lug
+Output: yellow blue red green blue
+
+Input: dax lug dax lug wif
+Output: green blue green blue red
+
+Input: lug
+Output: blue
+
+Input: dax wif
+Output: green red
+
+Input: wif lug zup walm wif lug
+Output: red blue yellow yellow yellow red blue
+
+
+    Return the output preceded by 'Output:'
+    Input: wif zup bluf
+    ",Output: Output: yellow blue,red yellow yellow,False,146
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means ""red"".
+For example 2, lug means ""
+
+For example 1, the nonce word dax means ""green"".
+For example 
+
+For example 1, wif means blue.
+For example 2, wif means
+
+For example 1, zup means red yellow.
+For example 2, zup
+
+For example 1, bluf means ""blue"".
+For example 2, bluf
+
+For example 1, walm means green.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: wif bluf
+Output: red red
+
+Input: dax
+Output: green
+
+Input: lug wif dax bluf wif lug
+Output: blue red green green red blue
+
+Input: dax bluf wif zup lug
+Output: green green red yellow blue
+
+Input: lug
+Output: blue
+
+
+    Return the output preceded by 'Output:'
+    Input: wif walm
+    ",Output: red green,red red red,False,147
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means ""blue"".
+For example 2
+
+For example 1, the nonce word dax means ""red"".
+For example 
+
+For example 1, wif means red.
+For example 2, wif means
+
+For example 1, the nonce word zup means ""blue"".
+For example 
+
+For example 1, bluf means yellow.
+For example 2, bluf means
+
+For example 1, walm means yellow.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: wif
+Output: red
+
+Input: dax bluf wif lug
+Output: green green red blue
+
+Input: dax
+Output: green
+
+Input: wif zup lug
+Output: red yellow blue
+
+Input: dax zup walm wif
+Output: green yellow yellow yellow red
+
+
+    Return the output preceded by 'Output:'
+    Input: dax wif
+    ",Output: green red,green red,True,148
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means ""red"".
+For example 2, lug means ""
+
+For example 1, the nonce word dax means ""yellow"".
+For example 
+
+For example 1, wif means blue.
+For example 2, wif means
+
+For example 1, the nonce word zup means ""blue"".
+For example 
+
+For example 1, bluf means green.
+For example 2, bluf means
+
+For example 1, walm means green.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: dax
+Output: green
+
+Input: zup lug walm wif dax
+Output: yellow blue blue blue red green
+
+Input: zup bluf dax
+Output: yellow yellow green
+
+Input: dax bluf
+Output: green green
+
+Input: zup lug
+Output: yellow blue
+
+
+    Return the output preceded by 'Output:'
+    Input: zup dax
+    ","Output: Output: yellow blue
+
+Explanation:
+
+The input ""zup da",yellow green,False,149
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example, in the first input, ""dax lug"" means ""green blue"". In
+
+For example 1, the nonce word dax means ""green"".
+For example 
+
+For example 1, wif means ""blue"".
+For example 2, wif
+
+For example 1 and 2, zup means yellow.
+For example 3,
+
+For example, in the first input, ""lug"" and ""bluf"" are the
+
+For example 1, walm means ""green"".
+For example 2, walm
+
+    However, just write the output like what's shown in these examples.
+    Input: dax wif walm
+Output: green red red red
+
+Input: wif
+Output: red
+
+Input: dax
+Output: green
+
+Input: dax wif
+Output: green red
+
+Input: lug walm
+Output: blue blue blue
+
+
+    Return the output preceded by 'Output:'
+    Input: lug dax
+    ",Output: blue green,blue green,True,150
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means blue.
+For example 2,
+
+For example 1, the nonce word dax means ""red"".
+For example 
+
+For example 1 and 2, wif means red.
+For example 3,
+
+For example 1, the nonce word zup means yellow.
+For example 2
+
+For example 1, bluf means ""yellow"".
+For example 2, bluf
+
+For example 1, walm means ""green"".
+For example 2, walm
+
+    However, just write the output like what's shown in these examples.
+    Input: zup lug wif dax lug
+Output: yellow blue red green blue
+
+Input: dax
+Output: green
+
+Input: zup
+Output: yellow
+
+Input: wif
+Output: red
+
+Input: zup lug zup wif dax
+Output: yellow blue yellow red green
+
+
+    Return the output preceded by 'Output:'
+    Input: lug zup walm dax lug
+    ",Output: Output: green blue yellow red green blue,blue yellow yellow yellow green blue,False,151
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means blue.
+For example 2,
+
+For example 1, the nonce word dax means ""green"".
+For example 
+
+For example 1, wif means yellow.
+For example 2, wif means
+
+For example 1, the nonce word zup means ""red"".
+For example 
+
+For example 1, bluf means ""green"".
+For example 2, bluf
+
+For example 1, walm means blue.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: lug bluf
+Output: blue blue
+
+Input: zup bluf
+Output: yellow yellow
+
+Input: zup wif walm
+Output: yellow red red red
+
+Input: dax bluf wif zup
+Output: green green red yellow
+
+Input: wif dax bluf
+Output: red green green
+
+
+    Return the output preceded by 'Output:'
+    Input: wif zup wif dax
+    ",Output: red red green green,red yellow red green,False,152
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means blue.
+For example 2,
+
+For example 1, the nonce word dax means ""green"".
+For example 
+
+For example 1, wif means ""blue"".
+For example 2, wif
+
+For example 1, zup means yellow.
+For example 2, zup means
+
+For example, in the first input, bluf means ""green"". In the second input,
+
+For example 1, walm means blue.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: wif bluf
+Output: red red
+
+Input: lug dax
+Output: blue green
+
+Input: lug walm dax
+Output: blue blue blue green
+
+Input: dax lug dax lug wif
+Output: green blue green blue red
+
+Input: dax lug
+Output: green blue
+
+
+    Return the output preceded by 'Output:'
+    Input: zup bluf lug walm
+    ",Output: yellow blue green blue,yellow yellow blue blue blue,False,153
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means yellow.
+For example 2, lug means red.
+
+For example 1, the nonce word dax means ""yellow"".
+For example 
+
+For example 1, wif means ""luggage"".
+For example 2,
+
+For example 1, zup means yellow green red yellow.
+For example 2,
+
+For example 1, bluf means ""blue"".
+For example 2, bluf
+
+For example 1, walm means blue.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: lug wif
+Output: blue red
+
+Input: dax zup
+Output: green yellow
+
+Input: wif dax zup wif dax bluf
+Output: red green yellow red green green
+
+Input: dax
+Output: green
+
+Input: wif zup dax
+Output: red yellow green
+
+
+    Return the output preceded by 'Output:'
+    Input: dax zup dax lug dax
+    ","Output: Output: green yellow green red yellow
+
+Explanation:
+
+In this grammar",green yellow green blue green,False,154
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means blue.
+For example 2, lug means yellow.
+
+For example 1, the nonce word dax means ""blue"".
+For example 
+
+For example 1, wif means blue.
+For example 2, wif means
+
+For example 1, the nonce word zup means ""yellow"".
+For example 
+
+For example, in the first input, bluf means ""green"". In the second input,
+
+For example 1, walm means blue.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: lug
+Output: blue
+
+Input: lug
+Output: blue
+
+Input: wif bluf lug zup
+Output: red red blue yellow
+
+Input: wif bluf zup
+Output: red red yellow
+
+Input: lug walm zup walm
+Output: blue blue blue yellow yellow yellow
+
+
+    Return the output preceded by 'Output:'
+    Input: lug
+    ","Output: Output: blue
+
+Input: lug
+Output: Output: blue
+
+Input:",blue,False,155
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means ""yellow"".
+For example 2
+
+For example 1, the nonce word dax means ""yellow"".
+For example 
+
+For example 1, wif means ""blue"".
+For example 2, wif
+
+For example 1, the nonce word zup means yellow.
+For example 2
+
+For example, in the first input, bluf means ""blue"". In the second input,
+
+For example 1, walm means blue.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: dax lug
+Output: green blue
+
+Input: dax
+Output: green
+
+Input: wif bluf dax
+Output: red red green
+
+Input: zup lug walm wif walm
+Output: yellow blue blue blue red red red
+
+Input: zup
+Output: yellow
+
+
+    Return the output preceded by 'Output:'
+    Input: dax
+    ","Output: green blue
+
+Input: wif
+     Output: red red green
+
+Input",green,False,156
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means ""blue"".
+For example 2
+
+For example 1, the nonce word dax means ""green"".
+For example 
+
+For example 1, wif means yellow.
+For example 2, wif means
+
+For example, in the first input, zup means yellow. In the second input, z
+
+For example 1, bluf means yellow.
+For example 2, bluf means
+
+For example 1, walm means blue.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: dax bluf wif lug
+Output: green green red blue
+
+Input: dax wif walm lug zup walm
+Output: green red red red blue yellow yellow yellow
+
+Input: zup
+Output: yellow
+
+Input: zup
+Output: yellow
+
+Input: zup wif bluf
+Output: yellow red red
+
+
+    Return the output preceded by 'Output:'
+    Input: wif dax wif lug walm zup
+    ",Output: yellow green green red blue yellow,red green red blue blue blue yellow,False,157
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means ""green"".
+For example 2
+
+For example 1, the meaning of dax is ""red"".
+For example 2
+
+For example 1, wif means green.
+For example 2, wif means
+
+For example 1, zup means ""red"".
+For example 2, zup
+
+For example 1, bluf means ""wife"".
+For example 2, bl
+
+For example 1, walm means yellow.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: zup
+Output: yellow
+
+Input: zup wif
+Output: yellow red
+
+Input: lug wif
+Output: blue red
+
+Input: wif bluf lug dax wif
+Output: red red blue green red
+
+Input: lug walm
+Output: blue blue blue
+
+
+    Return the output preceded by 'Output:'
+    Input: lug dax zup wif
+    ","Output: Output: yellow red yellow
+
+Explanation:
+
+In this grammar, the",blue green yellow red,False,158
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means ""yellow"".
+For example 2
+
+For example 1, the nonce word dax means ""blue"".
+For example 
+
+For example 1, wif means red.
+For example 2, wif means
+
+For example 1, the nonce word zup means ""yellow"".
+For example 
+
+For example, in the first input, bluf means ""green"". In the second input,
+
+For example 1, walm means yellow.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: zup wif bluf zup
+Output: yellow red red yellow
+
+Input: zup dax
+Output: yellow green
+
+Input: lug wif dax wif
+Output: blue red green red
+
+Input: zup dax zup wif
+Output: yellow green yellow red
+
+Input: wif
+Output: red
+
+
+    Return the output preceded by 'Output:'
+    Input: lug dax
+    ","
+    Note: The input string may contain non-word characters (e.g. spaces,",blue green,False,159
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means ""blue"".
+For example 2
+
+For example 1, dax means ""green"".
+For example 2, dax
+
+For example 1, wif means red.
+For example 2, wif means
+
+For example 1, zup means ""green"".
+For example 2, zup
+
+For example 1, bluf means ""red"".
+For example 2, bluf
+
+For example 1, walm means green.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: wif
+Output: red
+
+Input: lug bluf wif lug wif walm lug
+Output: blue blue red blue red red red blue
+
+Input: wif lug
+Output: red blue
+
+Input: zup
+Output: yellow
+
+Input: zup
+Output: yellow
+
+
+    Return the output preceded by 'Output:'
+    Input: lug wif
+    ","Output: blue red
+
+Explanation:
+
+The grammar is a context-free grammar",blue red,True,160
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means ""blue"".
+For example 2
+
+For example, in the first input, ""dax"" means ""green"". In the second
+
+For example 1, wif means blue.
+For example 2, wif means
+
+For example 1, the nonce word ""zup"" means ""blue"".
+For
+
+For example 1, bluf means ""blue"".
+For example 2, bluf
+
+For example 1, walm means blue.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: zup bluf wif dax lug
+Output: yellow yellow red green blue
+
+Input: wif
+Output: red
+
+Input: zup wif dax
+Output: yellow red green
+
+Input: zup wif
+Output: yellow red
+
+Input: lug walm zup
+Output: blue blue blue yellow
+
+
+    Return the output preceded by 'Output:'
+    Input: zup dax walm wif
+    ",Output: Output: yellow red green blue,yellow green green green red,False,161
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means ""blue"".
+For example 2
+
+For example, in the first four inputs, dax means ""green"".
+In the fifth
+
+For example 1, wif means ""blue"".
+For example 2, wif
+
+For example 1, the nonce word zup means ""yellow"".
+For example 
+
+For example 1, bluf means yellow.
+For example 2, bluf means
+
+For example 1, walm means yellow.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: dax lug
+Output: green blue
+
+Input: lug walm wif lug
+Output: blue blue blue red blue
+
+Input: dax lug
+Output: green blue
+
+Input: wif
+Output: red
+
+Input: wif
+Output: red
+
+
+    Return the output preceded by 'Output:'
+    Input: dax lug walm dax walm
+    ","Output: Output: green blue blue red blue
+
+Explanation:
+
+The grammar is",green blue blue blue green green green,False,162
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means ""blue"".
+For example 2
+
+For example 1, the nonce word dax means ""yellow"".
+For example 
+
+For example 1, wif means green.
+For example 2, wif means
+
+For example 1, zup means yellow.
+For example 2, zup means
+
+For example 1, bluf means ""red"".
+For example 2, bluf
+
+For example 1, walm means green.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: wif zup
+Output: red yellow
+
+Input: lug dax lug
+Output: blue green blue
+
+Input: zup
+Output: yellow
+
+Input: dax
+Output: green
+
+Input: zup
+Output: yellow
+
+
+    Return the output preceded by 'Output:'
+    Input: wif
+    ","Output: green
+
+    Return the output preceded by 'Output:'.
+    Input:",red,False,163
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means yellow.
+For example 2,
+
+For example 1, the nonce word dax means ""green"".
+For example 
+
+For example 1, wif means ""green"".
+For example 2, wif
+
+For example 1, the nonce word zup means ""blue"".
+For example 
+
+For example 1, bluf means ""red"".
+For example 2, bluf
+
+For example 1, walm means green.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: wif lug dax walm
+Output: red blue green green green
+
+Input: zup
+Output: yellow
+
+Input: lug zup lug
+Output: blue yellow blue
+
+Input: lug dax zup dax wif
+Output: blue green yellow green red
+
+Input: lug wif
+Output: blue red
+
+
+    Return the output preceded by 'Output:'
+    Input: zup dax lug walm zup
+    ",Output: yellow green blue red green,yellow green blue blue blue yellow,False,164
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means blue.
+For example 2, lug means red.
+
+For example 1, dax means ""yellow"".
+For example 2, dax
+
+For example 1, wif means ""red"".
+For example 2, wif
+
+For example 1, the nonce word zup means ""yellow"".
+For example 
+
+For example, in the first input, bluf means ""yellow"". In the second input,
+
+For example 1, walm means blue.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: dax zup wif
+Output: green yellow red
+
+Input: dax lug bluf dax
+Output: green blue blue green
+
+Input: zup dax
+Output: yellow green
+
+Input: zup bluf
+Output: yellow yellow
+
+Input: lug zup
+Output: blue yellow
+
+
+    Return the output preceded by 'Output:'
+    Input: wif
+    ",Output: red,red,True,165
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means yellow.
+For example 2,
+
+For example 1, the nonce word dax means ""blue"".
+For example 
+
+For example 1, wif means blue.
+For example 2, wif means
+
+For example 1, zup means ""blue"".
+For example 2, zup
+
+For example, in the first input, bluf means yellow. In the second input, bl
+
+For example 1, walm means blue.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: lug bluf zup
+Output: blue blue yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: lug zup bluf dax
+Output: blue yellow yellow green
+
+Input: lug bluf dax lug
+Output: blue blue green blue
+
+Input: lug dax
+Output: blue green
+
+
+    Return the output preceded by 'Output:'
+    Input: lug
+    ","Output: Output: blue
+
+    Return the output preceded by 'Output:'
+    Input",blue,False,166
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1 and 2, lug means blue.
+For example 3, lug
+
+For example 1, the nonce word dax means ""yellow"".
+For example 
+
+For example 1, wif means ""red"".
+For example 2, wif
+
+For example 1, zup means yellow.
+For example 2, zup means
+
+For example 1, bluf means yellow.
+For example 2, bluf means
+
+For example 1, walm means green.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: lug dax zup
+Output: blue green yellow
+
+Input: zup wif bluf zup
+Output: yellow red red yellow
+
+Input: zup wif walm
+Output: yellow red red red
+
+Input: lug walm
+Output: blue blue blue
+
+Input: lug
+Output: blue
+
+
+    Return the output preceded by 'Output:'
+    Input: zup
+    ","Output: yellow
+
+Explanation:
+
+The grammar is a context-free grammar,",yellow,True,167
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means green.
+For example 2, lug means blue.
+
+For example 1, the nonce word dax means ""green"".
+For example 
+
+For example 1, wif means red.
+For example 2, wif means
+
+For example 1, the nonce word zup means ""red"".
+For example 
+
+For example, in the first input, bluf means ""yellow"". In the second input,
+
+For example 1, walm means ""blue"".
+For example 2, walm
+
+    However, just write the output like what's shown in these examples.
+    Input: dax walm
+Output: green green green
+
+Input: lug walm wif bluf
+Output: blue blue blue red red
+
+Input: dax lug bluf wif
+Output: green blue blue red
+
+Input: wif walm dax zup
+Output: red red red green yellow
+
+Input: zup
+Output: yellow
+
+
+    Return the output preceded by 'Output:'
+    Input: wif
+    ","Output: red
+
+Explanation:
+
+The grammar is a context-free grammar,",red,True,168
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means blue.
+For example 2,
+
+For example 1, the nonce word dax means ""wife"".
+For example
+
+For example, in the first input, wif means ""red"". In the second input,
+
+For example 1, the nonce word zup means ""yellow"".
+For example 
+
+For example, in the first input, bluf means ""green"". In the second input,
+
+For example 1, walm means yellow.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: lug zup
+Output: blue yellow
+
+Input: lug bluf dax lug
+Output: blue blue green blue
+
+Input: wif
+Output: red
+
+Input: lug walm
+Output: blue blue blue
+
+Input: zup dax bluf
+Output: yellow green green
+
+
+    Return the output preceded by 'Output:'
+    Input: lug walm
+    ",Output: Output: blue blue blue,blue blue blue,False,169
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means blue.
+For example 2, lug means yellow.
+
+For example 1, the nonce word dax means ""red"".
+For example 
+
+For example, in the first four inputs, wif means ""red"".
+In the last
+
+For example 1, the nonce word zup means yellow.
+For example 2
+
+For example 1, bluf means ""blue"".
+For example 2, bluf
+
+For example 1, walm means ""red"".
+For example 2, walm
+
+    However, just write the output like what's shown in these examples.
+    Input: lug
+Output: blue
+
+Input: wif lug
+Output: red blue
+
+Input: dax bluf zup
+Output: green green yellow
+
+Input: wif lug
+Output: red blue
+
+Input: zup dax wif
+Output: yellow green red
+
+
+    Return the output preceded by 'Output:'
+    Input: zup dax zup wif walm
+    ",Output: yellow green yellow red,yellow green yellow red red red,False,170
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means ""blue"".
+For example 2
+
+For example 1, dax means ""yellow"".
+For example 2, dax
+
+For example 1, wif means yellow.
+For example 2, wif means
+
+For example 1, zup means yellow.
+For example 2, zup means
+
+For example 1, bluf means green.
+For example 2, bluf means
+
+For example 1, walm means green.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: lug
+Output: blue
+
+Input: wif dax
+Output: red green
+
+Input: dax wif
+Output: green red
+
+Input: zup bluf
+Output: yellow yellow
+
+Input: dax wif dax zup bluf
+Output: green red green yellow yellow
+
+
+    Return the output preceded by 'Output:'
+    Input: zup wif dax lug bluf zup
+    ",Output: Output: yellow yellow blue blue yellow,yellow red green blue blue yellow,False,171
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means blue.
+For example 2,
+
+For example 1, the nonce word dax means ""blue"".
+For example 
+
+For example 1, wif means blue.
+For example 2, wif means
+
+For example 1, zup means ""blue"".
+For example 2, zup
+
+For example 1, bluf means yellow.
+For example 2, bluf means
+
+For example 1, walm means blue.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: dax lug dax
+Output: green blue green
+
+Input: wif walm dax zup
+Output: red red red green yellow
+
+Input: lug
+Output: blue
+
+Input: lug bluf dax bluf
+Output: blue blue green green
+
+Input: wif dax zup dax
+Output: red green yellow green
+
+
+    Return the output preceded by 'Output:'
+    Input: lug dax
+    ","
+    Note: The input string may contain non-word characters (e.g. spaces,",blue green,False,172
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means yellow.
+For example 2, lug means red.
+
+For example 1, the nonce word dax means ""yellow"".
+For example 
+
+For example 1, wif means red.
+For example 2, wif means
+
+For example 1, the nonce word zup means ""yellow blue red"".
+For
+
+For example 1, bluf means green.
+For example 2, bluf means
+
+For example 1, walm means blue.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: lug dax wif
+Output: blue green red
+
+Input: wif dax zup
+Output: red green yellow
+
+Input: zup lug
+Output: yellow blue
+
+Input: dax bluf wif zup
+Output: green green red yellow
+
+Input: lug bluf
+Output: blue blue
+
+
+    Return the output preceded by 'Output:'
+    Input: lug wif dax walm
+    ",Output: Output: blue green red blue,blue red green green green,False,173
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means ""red"".
+For example 2
+
+For example 1, the word ""dax"" means ""yellow"".
+For example 
+
+For example 1, wif means ""blue"".
+For example 2, wif
+
+For example 1, the nonce word zup means ""yellow"".
+For example 
+
+For example, in the first input, bluf means yellow. In the second input, bl
+
+For example 1, walm means blue.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: lug
+Output: blue
+
+Input: wif bluf lug zup
+Output: red red blue yellow
+
+Input: lug
+Output: blue
+
+Input: dax wif lug
+Output: green red blue
+
+Input: wif lug dax
+Output: red blue green
+
+
+    Return the output preceded by 'Output:'
+    Input: wif lug
+    ",Output: Output: blue,red blue,False,174
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means blue.
+For example 2,
+
+For example 1, dax means ""wife"".
+For example 2, da
+
+For example 1, wif means ""red"".
+For example 2, wif
+
+For example 1, zup means blue.
+For example 2, zup means
+
+For example 1, bluf means ""red"".
+For example 2, bluf
+
+For example 1, walm means yellow.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: dax wif dax
+Output: green red green
+
+Input: lug wif lug wif lug
+Output: blue red blue red blue
+
+Input: lug
+Output: blue
+
+Input: zup lug
+Output: yellow blue
+
+Input: lug wif dax zup walm
+Output: blue red green yellow yellow yellow
+
+
+    Return the output preceded by 'Output:'
+    Input: dax walm
+    ","
+    Note: The input and output are case-sensitive.",green green green,False,175
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means red.
+For example 2, lug means yellow.
+
+For example 1, the nonce word dax means ""green"".
+For example 
+
+For example 1, wif means yellow.
+For example 2, wif means
+
+For example 1, zup means blue.
+For example 2, zup means
+
+For example, in the first input, ""lug"" is a nonce word that means
+
+For example 1, walm means blue.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: dax
+Output: green
+
+Input: wif walm zup walm
+Output: red red red yellow yellow yellow
+
+Input: lug zup dax wif
+Output: blue yellow green red
+
+Input: zup wif bluf zup
+Output: yellow red red yellow
+
+Input: wif bluf dax walm
+Output: red red green green green
+
+
+    Return the output preceded by 'Output:'
+    Input: lug
+    ","Output: Output: red
+
+Explanation:
+
+The input ""lug"" is",blue,False,176
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means ""green"".
+For example 2, lug means ""
+
+For example 1, the nonce word dax means ""green"".
+For example 
+
+For example 1, wif means yellow.
+For example 2, wif means
+
+For example, in the first input, ""zup"" means ""yellow"". In the second
+
+For example, in the first input, bluf means yellow. In the second input, bl
+
+For example 1, walm means ""red"".
+For example 2, walm
+
+    However, just write the output like what's shown in these examples.
+    Input: wif
+Output: red
+
+Input: dax zup dax
+Output: green yellow green
+
+Input: lug wif dax
+Output: blue red green
+
+Input: dax
+Output: green
+
+Input: dax lug wif walm
+Output: green blue red red red
+
+
+    Return the output preceded by 'Output:'
+    Input: wif walm lug
+    ",Output: Output: red blue red,red red red blue,False,177
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means yellow.
+For example 2,
+
+For example, in the first input, ""dax"" means ""green"". In the second
+
+For example, in the first input, wif means ""blue"". In the second input,
+
+For example 1, zup means yellow green red.
+For example 2, z
+
+For example, in the first input, bluf means ""green"". In the second input,
+
+For example 1, walm means blue.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: wif walm
+Output: red red red
+
+Input: wif bluf dax lug
+Output: red red green blue
+
+Input: lug
+Output: blue
+
+Input: zup dax wif
+Output: yellow green red
+
+Input: dax zup dax
+Output: green yellow green
+
+
+    Return the output preceded by 'Output:'
+    Input: zup
+    ","Output: Output: yellow
+
+Explanation:
+
+The grammar is a context-free",yellow,False,178
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means blue.
+For example 2,
+
+For example 1, dax means ""green"".
+For example 2, dax
+
+For example 1, wif means red.
+For example 2, wif means
+
+For example 1, the nonce word zup means yellow.
+For example 2
+
+For example 1, bluf means ""red"".
+For example 2, bluf
+
+For example 1, walm means yellow.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: wif
+Output: red
+
+Input: zup lug
+Output: yellow blue
+
+Input: wif
+Output: red
+
+Input: wif
+Output: red
+
+Input: dax wif walm lug zup walm
+Output: green red red red blue yellow yellow yellow
+
+
+    Return the output preceded by 'Output:'
+    Input: lug zup
+    ","Output: Output: yellow blue
+
+Explanation:
+
+In this grammar, the input",blue yellow,False,179
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means blue.
+For example 2,
+
+For example 1, the nonce word dax means ""blue"".
+For example 
+
+For example 1, wif means red.
+For example 2, wif means
+
+For example 1, zup means blue.
+For example 2, zup means
+
+For example, in the first input, bluf means yellow. In the second input, bl
+
+For example 1, walm means ""red"".
+For example 2, walm
+
+    However, just write the output like what's shown in these examples.
+    Input: lug
+Output: blue
+
+Input: wif dax
+Output: red green
+
+Input: dax lug
+Output: green blue
+
+Input: dax
+Output: green
+
+Input: zup walm dax
+Output: yellow yellow yellow green
+
+
+    Return the output preceded by 'Output:'
+    Input: lug
+    ","Output: Output: blue
+
+Input: wif dax
+     Output: Output: red",blue,False,180
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means yellow.
+For example 2, lug means red.
+
+For example 1, the nonce word dax means ""yellow"".
+For example 
+
+For example 1, wif means ""green"".
+For example 2, wif
+
+For example 1, the nonce word zup means yellow.
+For example 2
+
+For example 1, bluf means ""green"".
+For example 2, bluf
+
+For example 1, the nonce word walm means ""red"".
+For example 
+
+    However, just write the output like what's shown in these examples.
+    Input: lug
+Output: blue
+
+Input: dax lug walm
+Output: green blue blue blue
+
+Input: wif lug wif
+Output: red blue red
+
+Input: lug dax wif
+Output: blue green red
+
+Input: lug wif bluf dax lug bluf
+Output: blue red red green blue blue
+
+
+    Return the output preceded by 'Output:'
+    Input: zup lug walm zup lug
+    ","Output: Output: yellow red yellow red
+
+Explanation:
+
+The grammar is a",yellow blue blue blue yellow blue,False,181
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means yellow.
+For example 2, lug means green.
+
+For example 1, the nonce word dax means ""blue"".
+For example 
+
+For example 1, wif means ""red"".
+For example 2, wif
+
+For example 1, the nonce word zup means yellow.
+For example 2
+
+For example, in the first input, bluf means yellow. In the second input, bl
+
+For example 1, walm means blue.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: lug bluf wif lug wif walm lug
+Output: blue blue red blue red red red blue
+
+Input: lug zup
+Output: blue yellow
+
+Input: dax lug dax
+Output: green blue green
+
+Input: dax wif
+Output: green red
+
+Input: wif walm zup lug wif walm zup
+Output: red red red yellow blue red red red yellow
+
+
+    Return the output preceded by 'Output:'
+    Input: dax zup dax wif
+    ",Output: green yellow green red,green yellow green red,True,182
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1 and 2, lug means blue.
+For example 3 and 
+
+For example, in the first input, ""dax"" is likely a nonce word used
+
+For example 1, wif means red.
+For example 2, wif means
+
+For example 1, zup means blue.
+For example 2, zup means
+
+For example 1, bluf means yellow.
+For example 2, bluf means
+
+For example 1, walm means yellow.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: wif
+Output: red
+
+Input: lug zup lug
+Output: blue yellow blue
+
+Input: wif
+Output: red
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif lug
+Output: red blue
+
+
+    Return the output preceded by 'Output:'
+    Input: lug dax walm lug
+    ","
+    Note: dax is a nonce word used in this example.",blue green green green blue,False,183
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means ""yellow"".
+For example 2
+
+For example 1, the nonce word dax means ""blue"".
+For example 
+
+For example 1, wif means red.
+For example 2, wif means
+
+For example 1, zup means yellow.
+For example 2, zup means
+
+For example, in the first input, bluf means yellow. In the second input, bl
+
+For example 1, walm means ""red"".
+For example 2, walm
+
+    However, just write the output like what's shown in these examples.
+    Input: dax
+Output: green
+
+Input: zup wif
+Output: yellow red
+
+Input: zup dax lug wif dax
+Output: yellow green blue red green
+
+Input: wif zup bluf
+Output: red yellow yellow
+
+Input: wif bluf lug zup
+Output: red red blue yellow
+
+
+    Return the output preceded by 'Output:'
+    Input: dax walm
+    ",Output: Output: green red,green green green,False,184
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means blue.
+For example 2,
+
+For example 1, the nonce word dax means ""green"".
+For example 
+
+For example 1, wif means yellow.
+For example 2, wif means
+
+For example 1, zup means blue.
+For example 2, zup means
+
+For example 1, bluf means ""yellow"".
+For example 2, bluf
+
+For example 1, walm means yellow.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: dax walm
+Output: green green green
+
+Input: lug
+Output: blue
+
+Input: wif bluf
+Output: red red
+
+Input: dax zup lug wif lug
+Output: green yellow blue red blue
+
+Input: wif
+Output: red
+
+
+    Return the output preceded by 'Output:'
+    Input: zup wif zup
+    ","Output: blue red blue
+
+Explanation:
+
+The grammar is a context-free",yellow red yellow,False,185
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means ""green"".
+For example 2, lug means ""
+
+For example 1, the nonce word dax means ""green"".
+For example 
+
+For example 1, wif means ""red"".
+For example 2, wif
+
+For example 1, zup means yellow.
+For example 2, zup means
+
+For example 1, bluf means blue.
+For example 2, bluf means
+
+For example 1, walm means blue.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: zup lug bluf zup bluf wif
+Output: yellow blue blue yellow yellow red
+
+Input: zup dax lug
+Output: yellow green blue
+
+Input: dax walm zup lug dax
+Output: green green green yellow blue green
+
+Input: lug
+Output: blue
+
+Input: zup dax zup wif
+Output: yellow green yellow red
+
+
+    Return the output preceded by 'Output:'
+    Input: wif
+    ","Output: Output: red
+
+Explanation:
+
+The grammar is a context-free",red,False,186
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means blue.
+For example 2,
+
+For example 1, the nonce word dax means ""yellow"".
+For example 
+
+For example 1, wif means ""blue"".
+For example 2, wif
+
+For example 1, the nonce word zup means ""green"".
+For example 
+
+For example 1, bluf means ""red"".
+For example 2, bluf
+
+For example 1, walm means yellow.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: lug zup
+Output: blue yellow
+
+Input: lug
+Output: blue
+
+Input: dax bluf zup bluf dax
+Output: green green yellow yellow green
+
+Input: zup wif
+Output: yellow red
+
+Input: lug wif walm
+Output: blue red red red
+
+
+    Return the output preceded by 'Output:'
+    Input: dax zup bluf
+    ",Output: yellow green,green yellow yellow,False,187
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means blue.
+For example 2,
+
+For example 1, the nonce word dax means ""wife"".
+For example
+
+For example 1 and 2, wif means red.
+For example 3,
+
+For example 1, zup means yellow.
+For example 2, zup means
+
+For example 1, bluf means ""blue"".
+For example 2, bluf
+
+For example 1, walm means green.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: zup dax lug
+Output: yellow green blue
+
+Input: zup wif zup
+Output: yellow red yellow
+
+Input: dax bluf
+Output: green green
+
+Input: zup wif dax walm
+Output: yellow red green green green
+
+Input: dax zup lug zup bluf
+Output: green yellow blue yellow yellow
+
+
+    Return the output preceded by 'Output:'
+    Input: wif dax wif
+    ","Output: red green red
+
+Explanation:
+
+The grammar is a context-free",red green red,True,188
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means blue.
+For example 2,
+
+For example 1, the meaning of dax is ""green"".
+For example 2
+
+For example 1, wif means ""blue"".
+For example 2, wif
+
+For example 1, zup means yellow.
+For example 2, zup means
+
+For example 1, bluf means blue.
+For example 2, bluf means
+
+For example 1, the nonce word walm means ""blue"".
+For example 
+
+    However, just write the output like what's shown in these examples.
+    Input: lug
+Output: blue
+
+Input: lug
+Output: blue
+
+Input: dax wif bluf
+Output: green red red
+
+Input: dax wif
+Output: green red
+
+Input: zup walm
+Output: yellow yellow yellow
+
+
+    Return the output preceded by 'Output:'
+    Input: dax lug wif
+    ","Output: green blue red
+
+Explanation:
+
+For example 1, the meaning",green blue red,True,189
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example, in the first input, ""lug"" is used as a nonce word
+
+For example, in the first input, ""dax"" means ""green"". In the second
+
+For example 1, wif means ""luggage"".
+For example 2,
+
+For example 1, the nonce word zup means yellow.
+For example 2
+
+For example, in the first input, bluf means ""blue"". In the second input,
+
+For example 1, walm means ""yellow"".
+For example 2, walm
+
+    However, just write the output like what's shown in these examples.
+    Input: dax
+Output: green
+
+Input: dax walm
+Output: green green green
+
+Input: zup bluf
+Output: yellow yellow
+
+Input: wif zup lug zup lug
+Output: red yellow blue yellow blue
+
+Input: zup bluf lug zup walm
+Output: yellow yellow blue yellow yellow yellow
+
+
+    Return the output preceded by 'Output:'
+    Input: dax wif zup dax
+    ",Output: Output: green luggage green,green red yellow green,False,190
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means ""green blue"".
+For example 
+
+For example 1, the nonce word dax means ""green"".
+For example 
+
+For example 1, wif means ""blue"".
+For example 2, wif
+
+For example 1, the nonce word zup means yellow.
+For example 2
+
+For example, in the first input, bluf means ""green"". In the second input,
+
+For example 1, walm means ""red"".
+For example 2, walm
+
+    However, just write the output like what's shown in these examples.
+    Input: zup walm lug zup wif dax
+Output: yellow yellow yellow blue yellow red green
+
+Input: zup dax
+Output: yellow green
+
+Input: dax
+Output: green
+
+Input: lug bluf
+Output: blue blue
+
+Input: lug
+Output: blue
+
+
+    Return the output preceded by 'Output:'
+    Input: wif lug dax wif walm
+    ","Output: blue blue red
+
+Explanation:
+
+In the first input, the non",red blue green red red red,False,191
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means ""blue"".
+For example 2
+
+For example 1, the nonce word dax means ""green"".
+For example 
+
+For example 1, wif means green.
+For example 2, wif means
+
+For example 1, 2, and 4, zup means yellow.
+For
+
+For example 1, bluf means ""red"".
+For example 2, bluf
+
+For example 1, walm means green.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: dax lug
+Output: green blue
+
+Input: lug
+Output: blue
+
+Input: wif
+Output: red
+
+Input: wif bluf
+Output: red red
+
+Input: lug zup
+Output: blue yellow
+
+
+    Return the output preceded by 'Output:'
+    Input: zup bluf lug zup walm lug
+    ",Output: Output: yellow red blue green,yellow yellow blue yellow yellow yellow blue,False,192
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means yellow.
+For example 2, lug means green.
+
+For example 1, the meaning of dax is ""green"".
+For example 2
+
+For example 1, wif means ""blue"".
+For example 2, wif
+
+For example 1, the nonce word zup means ""yellow"".
+For example 
+
+Please provide the actual examples you want me to use for deduction.
+
+For example 1, walm means yellow.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: lug zup
+Output: blue yellow
+
+Input: wif lug bluf wif zup
+Output: red blue blue red yellow
+
+Input: dax walm wif walm zup
+Output: green green green red red red yellow
+
+Input: lug zup dax lug dax
+Output: blue yellow green blue green
+
+Input: lug
+Output: blue
+
+
+    Return the output preceded by 'Output:'
+    Input: wif bluf lug walm dax lug dax
+    ","
+    Note: The input examples are case-sensitive.",red red blue blue blue green blue green,False,193
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means blue.
+For example 2, lug means blue.
+
+For example 1, the nonce word dax means ""green"".
+For example 
+
+For example 1, wif means blue.
+For example 2, wif means
+
+For example 1, the nonce word zup means ""red"".
+For example 
+
+For example, in the first input, bluf means yellow. In the second input, bl
+
+For example 1, walm means yellow.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: dax
+Output: green
+
+Input: lug zup
+Output: blue yellow
+
+Input: wif walm zup lug wif walm zup
+Output: red red red yellow blue red red red yellow
+
+Input: wif zup
+Output: red yellow
+
+Input: wif walm lug bluf
+Output: red red red blue blue
+
+
+    Return the output preceded by 'Output:'
+    Input: lug
+    ","Output: blue
+
+    Input: dax
+     Output: green
+
+    Input:",blue,True,194
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means blue.
+For example 2, lug means blue.
+
+For example 1, the nonce word dax means ""green"".
+For example 
+
+For example 1, wif means ""green"".
+For example 2, wif
+
+For example 1, zup means yellow.
+For example 2, zup means
+
+For example, in the first input, ""zup bluf"" means ""yellow"". In
+
+For example, in the first input, walm means ""green"". In the second input,
+
+    However, just write the output like what's shown in these examples.
+    Input: wif dax
+Output: red green
+
+Input: zup bluf wif walm
+Output: yellow yellow red red red
+
+Input: dax lug walm zup wif
+Output: green blue blue blue yellow red
+
+Input: zup lug
+Output: yellow blue
+
+Input: wif zup lug
+Output: red yellow blue
+
+
+    Return the output preceded by 'Output:'
+    Input: dax wif
+    ",Output: red green,green red,False,195
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means blue.
+For example 2, lug means green.
+
+For example 1, the nonce word dax means ""blue"".
+For example 
+
+For example 1, wif means yellow.
+For example 2, wif means
+
+For example 1, zup means yellow.
+For example 2, zup means
+
+For example 1, bluf means ""red"".
+For example 2, bluf
+
+For example 1, walm means yellow.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: dax lug walm zup wif
+Output: green blue blue blue yellow red
+
+Input: wif walm zup lug wif walm zup
+Output: red red red yellow blue red red red yellow
+
+Input: dax bluf
+Output: green green
+
+Input: wif zup
+Output: red yellow
+
+Input: dax wif lug dax
+Output: green red blue green
+
+
+    Return the output preceded by 'Output:'
+    Input: dax zup dax zup walm
+    ","Output: Output: green blue blue red
+
+Explanation:
+
+For example 1",green yellow green yellow yellow yellow,False,196
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, the nonce word lug means ""green"".
+For example 2
+
+For example 1, the nonce word dax means ""green blue"".
+For example
+
+For example 1, wif means yellow.
+For example 2, wif means
+
+For example 1, zup means ""green"".
+For example 2, zup
+
+For example, in the first input, ""zup bluf"" means ""yellow yellow"".
+
+For example 1, walm means blue.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: lug zup
+Output: blue yellow
+
+Input: wif bluf dax
+Output: red red green
+
+Input: zup dax lug
+Output: yellow green blue
+
+Input: dax wif zup
+Output: green red yellow
+
+Input: wif bluf
+Output: red red
+
+
+    Return the output preceded by 'Output:'
+    Input: lug dax bluf wif lug
+    ",Output: Output: blue green yellow red,blue green green red blue,False,197
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example 1, lug means red.
+For example 2, lug means blue.
+
+For example, in the first input, ""zup dax"" means ""yellow green"".
+
+For example 1, wif means ""red"".
+For example 2, wif
+
+For example, in the first input, ""zup"" means ""yellow"". In the second
+
+For example 1 and 2, bluf means green.
+For example 3,
+
+For example 1, walm means green.
+For example 2, walm means
+
+    However, just write the output like what's shown in these examples.
+    Input: zup bluf wif dax wif zup
+Output: yellow yellow red green red yellow
+
+Input: dax
+Output: green
+
+Input: wif dax lug dax
+Output: red green blue green
+
+Input: dax lug
+Output: green blue
+
+Input: dax lug
+Output: green blue
+
+
+    Return the output preceded by 'Output:'
+    Input: wif
+    ","Output: red
+
+    Return the output preceded by 'Output:'
+    Input: bl",red,False,198
+"Use this grammar to parse the input example to get the correct output.
+
+    Rules:
+
+For example, in the first two inputs, lug means yellow and blue. In the third input
+
+For example 1, the nonce word dax means ""blue"".
+For example 
+
+For example 1, wif means blue.
+For example 2, wif means
+
+For example 1, the nonce word zup means ""yellow"".
+For example 
+
+For example, in the first input, bluf means ""wife"". In the second input
+
+For example 1, the nonce word walm means ""green"".
+For example 
+
+    However, just write the output like what's shown in these examples.
+    Input: wif
+Output: red
+
+Input: wif
+Output: red
+
+Input: zup dax zup dax wif bluf
+Output: yellow green yellow green red red
+
+Input: lug zup
+Output: blue yellow
+
+Input: dax
+Output: green
+
+
+    Return the output preceded by 'Output:'
+    Input: zup wif dax
+    ",Output: red green,yellow red green,False,199

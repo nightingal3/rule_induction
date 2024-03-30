@@ -1,0 +1,3601 @@
+inputs,outputs,answer,correct,task_id
+"Return the output preceded by 'Output:'
+Input: lug dax lug
+Output: blue green blue
+
+Input: lug bluf
+Output: blue blue
+
+Input: zup lug zup lug wif
+Output: yellow blue yellow blue red
+
+Input: wif zup bluf wif dax
+Output: red yellow yellow red green
+
+Input: wif
+Output: red
+
+
+Input: wif dax Output:",Output: red green,red green,True,0
+"Return the output preceded by 'Output:'
+Input: zup
+Output: yellow
+
+Input: lug bluf dax lug
+Output: blue blue green blue
+
+Input: dax
+Output: green
+
+Input: lug
+Output: blue
+
+Input: dax lug zup dax
+Output: green blue yellow green
+
+
+Input: wif zup Output:",Output: red yellow,red yellow,True,1
+"Return the output preceded by 'Output:'
+Input: dax bluf
+Output: green green
+
+Input: lug walm zup
+Output: blue blue blue yellow
+
+Input: wif walm dax zup
+Output: red red red green yellow
+
+Input: wif walm dax zup wif lug walm
+Output: red red red green yellow red blue blue blue
+
+Input: lug walm
+Output: blue blue blue
+
+
+Input: dax Output:",Output: green,green,True,2
+"Return the output preceded by 'Output:'
+Input: zup lug
+Output: yellow blue
+
+Input: dax lug wif
+Output: green blue red
+
+Input: lug
+Output: blue
+
+Input: wif zup
+Output: red yellow
+
+Input: wif
+Output: red
+
+
+Input: wif dax bluf Output:",Output: red green purple,red green green,False,3
+"Return the output preceded by 'Output:'
+Input: wif bluf dax walm
+Output: red red green green green
+
+Input: zup bluf wif bluf
+Output: yellow yellow red red
+
+Input: dax wif
+Output: green red
+
+Input: zup walm
+Output: yellow yellow yellow
+
+Input: lug wif
+Output: blue red
+
+
+Input: lug walm dax zup Output:",Output: blue green green yellow,blue blue blue green yellow,False,4
+"Return the output preceded by 'Output:'
+Input: lug
+Output: blue
+
+Input: dax lug zup dax
+Output: green blue yellow green
+
+Input: wif bluf dax bluf wif walm lug wif
+Output: red red green green red red red blue red
+
+Input: wif
+Output: red
+
+Input: lug dax lug
+Output: blue green blue
+
+
+Input: dax zup dax zup Output:",Output: green yellow green yellow,green yellow green yellow,True,5
+"Return the output preceded by 'Output:'
+Input: lug
+Output: blue
+
+Input: lug wif bluf
+Output: blue red red
+
+Input: dax
+Output: green
+
+Input: zup
+Output: yellow
+
+Input: zup bluf wif walm
+Output: yellow yellow red red red
+
+
+Input: wif Output:",Output: red,red,True,6
+"Return the output preceded by 'Output:'
+Input: wif zup
+Output: red yellow
+
+Input: dax
+Output: green
+
+Input: zup
+Output: yellow
+
+Input: zup lug dax
+Output: yellow blue green
+
+Input: zup wif dax walm
+Output: yellow red green green green
+
+
+Input: lug walm Output:",Output: blue green green green,blue blue blue,False,7
+"Return the output preceded by 'Output:'
+Input: lug walm
+Output: blue blue blue
+
+Input: dax lug
+Output: green blue
+
+Input: dax
+Output: green
+
+Input: zup wif bluf zup lug
+Output: yellow red red yellow blue
+
+Input: zup lug
+Output: yellow blue
+
+
+Input: zup lug dax zup Output:",Output: yellow blue green yellow,yellow blue green yellow,True,8
+"Return the output preceded by 'Output:'
+Input: lug zup
+Output: blue yellow
+
+Input: lug
+Output: blue
+
+Input: wif
+Output: red
+
+Input: zup walm
+Output: yellow yellow yellow
+
+Input: zup lug
+Output: yellow blue
+
+
+Input: wif zup dax zup Output:",Output: red yellow green yellow,red yellow green yellow,True,9
+"Return the output preceded by 'Output:'
+Input: zup lug
+Output: yellow blue
+
+Input: dax lug
+Output: green blue
+
+Input: lug dax zup lug wif
+Output: blue green yellow blue red
+
+Input: wif bluf lug dax wif
+Output: red red blue green red
+
+Input: wif
+Output: red
+
+
+Input: dax Output:",Output: green,green,True,10
+"Return the output preceded by 'Output:'
+Input: zup
+Output: yellow
+
+Input: zup dax zup dax wif bluf
+Output: yellow green yellow green red red
+
+Input: dax zup bluf
+Output: green yellow yellow
+
+Input: wif walm
+Output: red red red
+
+Input: wif dax lug dax
+Output: red green blue green
+
+
+Input: wif zup lug dax Output:",Output: red yellow blue green,red yellow blue green,True,11
+"Return the output preceded by 'Output:'
+Input: zup lug zup dax
+Output: yellow blue yellow green
+
+Input: lug zup
+Output: blue yellow
+
+Input: wif
+Output: red
+
+Input: lug wif zup wif
+Output: blue red yellow red
+
+Input: dax
+Output: green
+
+
+Input: zup Output:",Output: yellow,yellow,True,12
+"Return the output preceded by 'Output:'
+Input: wif
+Output: red
+
+Input: dax bluf zup
+Output: green green yellow
+
+Input: dax walm zup lug walm
+Output: green green green yellow blue blue blue
+
+Input: zup lug
+Output: yellow blue
+
+Input: lug zup
+Output: blue yellow
+
+
+Input: lug wif walm Output:",Output: blue red blue blue blue,blue red red red,False,13
+"Return the output preceded by 'Output:'
+Input: lug
+Output: blue
+
+Input: lug
+Output: blue
+
+Input: dax
+Output: green
+
+Input: zup wif bluf
+Output: yellow red red
+
+Input: zup dax lug
+Output: yellow green blue
+
+
+Input: zup Output:",Output: yellow,yellow,True,14
+"Return the output preceded by 'Output:'
+Input: lug wif dax
+Output: blue red green
+
+Input: zup lug wif
+Output: yellow blue red
+
+Input: wif
+Output: red
+
+Input: wif lug
+Output: red blue
+
+Input: zup lug bluf wif
+Output: yellow blue blue red
+
+
+Input: lug Output:",Output: blue,blue,True,15
+"Return the output preceded by 'Output:'
+Input: zup
+Output: yellow
+
+Input: dax walm zup lug dax
+Output: green green green yellow blue green
+
+Input: dax
+Output: green
+
+Input: zup dax walm zup wif
+Output: yellow green green green yellow red
+
+Input: lug wif dax zup walm
+Output: blue red green yellow yellow yellow
+
+
+Input: wif walm Output:",Output: red yellow yellow,red red red,False,16
+"Return the output preceded by 'Output:'
+Input: zup
+Output: yellow
+
+Input: wif
+Output: red
+
+Input: zup bluf wif bluf
+Output: yellow yellow red red
+
+Input: wif
+Output: red
+
+Input: zup wif
+Output: yellow red
+
+
+Input: zup bluf Output:",Output: yellow yellow,yellow yellow,True,17
+"Return the output preceded by 'Output:'
+Input: zup walm lug
+Output: yellow yellow yellow blue
+
+Input: wif
+Output: red
+
+Input: zup wif lug
+Output: yellow red blue
+
+Input: dax zup bluf
+Output: green yellow yellow
+
+Input: zup dax lug zup
+Output: yellow green blue yellow
+
+
+Input: wif zup dax lug Output:",Output: red yellow green blue,red yellow green blue,True,18
+"Return the output preceded by 'Output:'
+Input: dax bluf
+Output: green green
+
+Input: zup wif lug dax
+Output: yellow red blue green
+
+Input: dax walm
+Output: green green green
+
+Input: lug zup dax zup
+Output: blue yellow green yellow
+
+Input: dax lug walm
+Output: green blue blue blue
+
+
+Input: zup Output:",Output: yellow,yellow,True,19
+"Return the output preceded by 'Output:'
+Input: dax bluf
+Output: green green
+
+Input: dax
+Output: green
+
+Input: zup
+Output: yellow
+
+Input: dax
+Output: green
+
+Input: dax lug wif
+Output: green blue red
+
+
+Input: dax lug bluf wif Output:",Output: green blue green red,green blue blue red,False,20
+"Return the output preceded by 'Output:'
+Input: zup wif lug zup walm
+Output: yellow red blue yellow yellow yellow
+
+Input: dax zup
+Output: green yellow
+
+Input: wif dax bluf
+Output: red green green
+
+Input: wif
+Output: red
+
+Input: zup walm dax lug
+Output: yellow yellow yellow green blue
+
+
+Input: dax Output:",Output: green,green,True,21
+"Return the output preceded by 'Output:'
+Input: dax wif
+Output: green red
+
+Input: zup wif dax wif bluf
+Output: yellow red green red red
+
+Input: zup wif
+Output: yellow red
+
+Input: lug
+Output: blue
+
+Input: zup lug walm
+Output: yellow blue blue blue
+
+
+Input: lug dax lug zup lug Output:",Output: blue green blue yellow blue,blue green blue yellow blue,True,22
+"Return the output preceded by 'Output:'
+Input: lug walm
+Output: blue blue blue
+
+Input: zup wif
+Output: yellow red
+
+Input: lug zup
+Output: blue yellow
+
+Input: zup bluf
+Output: yellow yellow
+
+Input: dax lug wif
+Output: green blue red
+
+
+Input: wif lug wif Output:",Output: red blue red,red blue red,True,23
+"Return the output preceded by 'Output:'
+Input: wif
+Output: red
+
+Input: zup walm
+Output: yellow yellow yellow
+
+Input: zup
+Output: yellow
+
+Input: zup
+Output: yellow
+
+Input: dax lug zup wif bluf dax
+Output: green blue yellow red red green
+
+
+Input: lug Output:",Output: blue,blue,True,24
+"Return the output preceded by 'Output:'
+Input: dax zup lug wif lug
+Output: green yellow blue red blue
+
+Input: dax wif
+Output: green red
+
+Input: wif walm zup lug zup walm
+Output: red red red yellow blue yellow yellow yellow
+
+Input: zup wif bluf
+Output: yellow red red
+
+Input: lug
+Output: blue
+
+
+Input: zup dax lug dax Output:",Output: yellow green blue green,yellow green blue green,True,25
+"Return the output preceded by 'Output:'
+Input: wif lug zup
+Output: red blue yellow
+
+Input: lug walm dax
+Output: blue blue blue green
+
+Input: dax wif
+Output: green red
+
+Input: zup wif
+Output: yellow red
+
+Input: lug walm
+Output: blue blue blue
+
+
+Input: wif Output:",Output: red,red,True,26
+"Return the output preceded by 'Output:'
+Input: zup bluf
+Output: yellow yellow
+
+Input: dax wif
+Output: green red
+
+Input: wif lug
+Output: red blue
+
+Input: zup dax lug walm zup
+Output: yellow green blue blue blue yellow
+
+Input: zup
+Output: yellow
+
+
+Input: lug zup Output:",Output: blue yellow,blue yellow,True,27
+"Return the output preceded by 'Output:'
+Input: zup
+Output: yellow
+
+Input: zup dax lug wif dax
+Output: yellow green blue red green
+
+Input: wif zup
+Output: red yellow
+
+Input: dax lug walm
+Output: green blue blue blue
+
+Input: wif bluf
+Output: red red
+
+
+Input: lug Output:",Output: blue,blue,True,28
+"Return the output preceded by 'Output:'
+Input: zup walm wif
+Output: yellow yellow yellow red
+
+Input: lug
+Output: blue
+
+Input: zup
+Output: yellow
+
+Input: zup lug bluf
+Output: yellow blue blue
+
+Input: wif
+Output: red
+
+
+Input: dax walm Output:",Output: green yellow,green green green,False,29
+"Return the output preceded by 'Output:'
+Input: lug wif dax walm zup
+Output: blue red green green green yellow
+
+Input: zup wif
+Output: yellow red
+
+Input: lug zup
+Output: blue yellow
+
+Input: lug wif lug wif lug
+Output: blue red blue red blue
+
+Input: zup
+Output: yellow
+
+
+Input: zup Output:",Output: yellow,yellow,True,30
+"Return the output preceded by 'Output:'
+Input: dax
+Output: green
+
+Input: dax walm zup lug dax
+Output: green green green yellow blue green
+
+Input: zup
+Output: yellow
+
+Input: dax
+Output: green
+
+Input: zup bluf dax lug
+Output: yellow yellow green blue
+
+
+Input: wif zup walm Output:",Output: yellow yellow green,red yellow yellow yellow,False,31
+"Return the output preceded by 'Output:'
+Input: lug dax zup
+Output: blue green yellow
+
+Input: lug
+Output: blue
+
+Input: dax lug wif walm
+Output: green blue red red red
+
+Input: zup bluf wif bluf
+Output: yellow yellow red red
+
+Input: wif
+Output: red
+
+
+Input: dax wif Output:",Output: green red,green red,True,32
+"Return the output preceded by 'Output:'
+Input: dax
+Output: green
+
+Input: wif zup walm dax zup
+Output: red yellow yellow yellow green yellow
+
+Input: lug wif bluf
+Output: blue red red
+
+Input: lug dax
+Output: blue green
+
+Input: zup dax lug walm zup
+Output: yellow green blue blue blue yellow
+
+
+Input: dax zup Output:",Output: green yellow,green yellow,True,33
+"Return the output preceded by 'Output:'
+Input: lug wif zup wif
+Output: blue red yellow red
+
+Input: dax walm wif dax
+Output: green green green red green
+
+Input: zup dax lug
+Output: yellow green blue
+
+Input: dax lug dax lug wif
+Output: green blue green blue red
+
+Input: lug walm
+Output: blue blue blue
+
+
+Input: wif Output:",Output: red,red,True,34
+"Return the output preceded by 'Output:'
+Input: zup walm wif
+Output: yellow yellow yellow red
+
+Input: lug dax zup
+Output: blue green yellow
+
+Input: dax walm wif zup
+Output: green green green red yellow
+
+Input: wif
+Output: red
+
+Input: wif lug zup
+Output: red blue yellow
+
+
+Input: lug Output:",Output: blue,blue,True,35
+"Return the output preceded by 'Output:'
+Input: wif
+Output: red
+
+Input: lug wif
+Output: blue red
+
+Input: zup walm
+Output: yellow yellow yellow
+
+Input: zup dax walm zup wif
+Output: yellow green green green yellow red
+
+Input: wif walm zup
+Output: red red red yellow
+
+
+Input: zup Output:",Output: yellow,yellow,True,36
+"Return the output preceded by 'Output:'
+Input: zup lug walm wif dax
+Output: yellow blue blue blue red green
+
+Input: dax walm
+Output: green green green
+
+Input: lug walm zup
+Output: blue blue blue yellow
+
+Input: lug wif dax
+Output: blue red green
+
+Input: zup walm lug wif
+Output: yellow yellow yellow blue red
+
+
+Input: lug Output:",Output: blue,blue,True,37
+"Return the output preceded by 'Output:'
+Input: dax
+Output: green
+
+Input: lug zup
+Output: blue yellow
+
+Input: lug dax zup lug wif
+Output: blue green yellow blue red
+
+Input: dax
+Output: green
+
+Input: lug
+Output: blue
+
+
+Input: wif Output:",Output: red,red,True,38
+"Return the output preceded by 'Output:'
+Input: lug
+Output: blue
+
+Input: wif
+Output: red
+
+Input: lug dax lug
+Output: blue green blue
+
+Input: dax wif zup
+Output: green red yellow
+
+Input: zup walm
+Output: yellow yellow yellow
+
+
+Input: zup Output:",Output: yellow,yellow,True,39
+"Return the output preceded by 'Output:'
+Input: wif bluf lug zup
+Output: red red blue yellow
+
+Input: wif dax zup dax
+Output: red green yellow green
+
+Input: zup
+Output: yellow
+
+Input: lug dax zup wif
+Output: blue green yellow red
+
+Input: zup bluf lug dax lug
+Output: yellow yellow blue green blue
+
+
+Input: dax Output:",Output: green,green,True,40
+"Return the output preceded by 'Output:'
+Input: zup dax zup
+Output: yellow green yellow
+
+Input: lug dax wif lug
+Output: blue green red blue
+
+Input: dax wif walm lug zup
+Output: green red red red blue yellow
+
+Input: dax
+Output: green
+
+Input: lug dax lug
+Output: blue green blue
+
+
+Input: lug wif Output:",Output: blue red,blue red,True,41
+"Return the output preceded by 'Output:'
+Input: dax
+Output: green
+
+Input: zup lug zup lug
+Output: yellow blue yellow blue
+
+Input: dax zup wif bluf lug
+Output: green yellow red red blue
+
+Input: wif bluf dax bluf wif walm lug wif
+Output: red red green green red red red blue red
+
+Input: lug zup walm lug
+Output: blue yellow yellow yellow blue
+
+
+Input: zup walm wif Output:",Output: yellow yellow red,yellow yellow yellow red,False,42
+"Return the output preceded by 'Output:'
+Input: wif zup
+Output: red yellow
+
+Input: zup
+Output: yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: zup
+Output: yellow
+
+Input: zup
+Output: yellow
+
+
+Input: lug Output:",Output: blue,blue,True,43
+"Return the output preceded by 'Output:'
+Input: zup
+Output: yellow
+
+Input: dax walm
+Output: green green green
+
+Input: dax
+Output: green
+
+Input: wif lug
+Output: red blue
+
+Input: wif zup bluf lug
+Output: red yellow yellow blue
+
+
+Input: zup Output:",Output: yellow,yellow,True,44
+"Return the output preceded by 'Output:'
+Input: wif
+Output: red
+
+Input: wif lug
+Output: red blue
+
+Input: wif
+Output: red
+
+Input: lug zup wif lug
+Output: blue yellow red blue
+
+Input: lug zup
+Output: blue yellow
+
+
+Input: wif walm zup Output:",Output: red green yellow,red red red yellow,False,45
+"Return the output preceded by 'Output:'
+Input: zup
+Output: yellow
+
+Input: dax walm
+Output: green green green
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif lug dax walm
+Output: red blue green green green
+
+Input: wif bluf dax lug
+Output: red red green blue
+
+
+Input: dax Output:",Output: green,green,True,46
+"Return the output preceded by 'Output:'
+Input: lug
+Output: blue
+
+Input: lug
+Output: blue
+
+Input: dax
+Output: green
+
+Input: zup lug zup lug zup bluf
+Output: yellow blue yellow blue yellow yellow
+
+Input: lug
+Output: blue
+
+
+Input: zup walm lug Output:",Output: yellow red blue,yellow yellow yellow blue,False,47
+"Return the output preceded by 'Output:'
+Input: zup walm wif
+Output: yellow yellow yellow red
+
+Input: dax zup bluf
+Output: green yellow yellow
+
+Input: zup
+Output: yellow
+
+Input: wif
+Output: red
+
+Input: lug
+Output: blue
+
+
+Input: wif lug walm dax Output:",Output: red blue yellow green,red blue blue blue green,False,48
+"Return the output preceded by 'Output:'
+Input: zup
+Output: yellow
+
+Input: lug wif zup wif walm
+Output: blue red yellow red red red
+
+Input: dax
+Output: green
+
+Input: wif bluf dax
+Output: red red green
+
+Input: wif zup
+Output: red yellow
+
+
+Input: lug dax wif Output:",Output: blue green red,blue green red,True,49
+"Return the output preceded by 'Output:'
+Input: wif lug wif
+Output: red blue red
+
+Input: dax walm zup lug
+Output: green green green yellow blue
+
+Input: lug
+Output: blue
+
+Input: lug dax zup dax walm wif
+Output: blue green yellow green green green red
+
+Input: zup wif dax wif bluf
+Output: yellow red green red red
+
+
+Input: lug walm zup lug bluf wif Output:",Output: blue green yellow blue red red,blue blue blue yellow blue blue red,False,50
+"Return the output preceded by 'Output:'
+Input: dax lug wif bluf
+Output: green blue red red
+
+Input: dax lug
+Output: green blue
+
+Input: wif
+Output: red
+
+Input: dax lug walm zup wif
+Output: green blue blue blue yellow red
+
+Input: zup bluf lug dax lug
+Output: yellow yellow blue green blue
+
+
+Input: zup dax walm lug bluf dax wif Output:",Output: yellow green blue blue red green red,yellow green green green blue blue green red,False,51
+"Return the output preceded by 'Output:'
+Input: wif dax zup dax
+Output: red green yellow green
+
+Input: wif lug
+Output: red blue
+
+Input: dax wif dax zup bluf
+Output: green red green yellow yellow
+
+Input: wif dax zup
+Output: red green yellow
+
+Input: lug zup
+Output: blue yellow
+
+
+Input: dax walm wif walm dax lug dax Output:",Output: green purple red purple green blue green,green green green red red red green blue green,False,52
+"Return the output preceded by 'Output:'
+Input: zup
+Output: yellow
+
+Input: dax
+Output: green
+
+Input: zup
+Output: yellow
+
+Input: dax lug
+Output: green blue
+
+Input: lug
+Output: blue
+
+
+Input: lug dax lug Output:",Output: blue green blue,blue green blue,True,53
+"Return the output preceded by 'Output:'
+Input: dax lug wif
+Output: green blue red
+
+Input: wif walm
+Output: red red red
+
+Input: zup
+Output: yellow
+
+Input: lug zup bluf dax
+Output: blue yellow yellow green
+
+Input: wif bluf lug dax wif
+Output: red red blue green red
+
+
+Input: wif lug Output:",Output: red blue,red blue,True,54
+"Return the output preceded by 'Output:'
+Input: dax lug bluf dax
+Output: green blue blue green
+
+Input: wif
+Output: red
+
+Input: lug zup
+Output: blue yellow
+
+Input: dax zup
+Output: green yellow
+
+Input: wif walm
+Output: red red red
+
+
+Input: dax Output:",Output: green,green,True,55
+"Return the output preceded by 'Output:'
+Input: zup dax zup dax wif bluf
+Output: yellow green yellow green red red
+
+Input: zup lug wif
+Output: yellow blue red
+
+Input: zup lug zup dax
+Output: yellow blue yellow green
+
+Input: zup dax zup wif
+Output: yellow green yellow red
+
+Input: lug dax
+Output: blue green
+
+
+Input: zup dax walm lug Output:",Output: yellow green purple blue,yellow green green green blue,False,56
+"Return the output preceded by 'Output:'
+Input: lug dax
+Output: blue green
+
+Input: lug bluf
+Output: blue blue
+
+Input: lug dax
+Output: blue green
+
+Input: lug
+Output: blue
+
+Input: lug
+Output: blue
+
+
+Input: dax bluf wif Output:",Output: green blue red,green green red,False,57
+"Return the output preceded by 'Output:'
+Input: wif zup lug
+Output: red yellow blue
+
+Input: zup
+Output: yellow
+
+Input: zup wif
+Output: yellow red
+
+Input: lug
+Output: blue
+
+Input: wif bluf
+Output: red red
+
+
+Input: dax lug wif Output:",Output: blue red,green blue red,False,58
+"Return the output preceded by 'Output:'
+Input: dax zup dax zup
+Output: green yellow green yellow
+
+Input: wif walm dax zup
+Output: red red red green yellow
+
+Input: zup lug dax
+Output: yellow blue green
+
+Input: lug zup lug
+Output: blue yellow blue
+
+Input: wif
+Output: red
+
+
+Input: lug walm dax Output:",Output: blue red green,blue blue blue green,False,59
+"Return the output preceded by 'Output:'
+Input: zup bluf dax
+Output: yellow yellow green
+
+Input: lug wif
+Output: blue red
+
+Input: wif
+Output: red
+
+Input: dax walm
+Output: green green green
+
+Input: dax bluf wif lug
+Output: green green red blue
+
+
+Input: wif Output:",Output: red,red,True,60
+"Return the output preceded by 'Output:'
+Input: wif dax wif
+Output: red green red
+
+Input: zup
+Output: yellow
+
+Input: wif
+Output: red
+
+Input: dax
+Output: green
+
+Input: lug wif bluf dax lug bluf
+Output: blue red red green blue blue
+
+
+Input: dax walm Output:",Output: green purple,green green green,False,61
+"Return the output preceded by 'Output:'
+Input: wif
+Output: red
+
+Input: dax bluf
+Output: green green
+
+Input: wif
+Output: red
+
+Input: zup lug
+Output: yellow blue
+
+Input: wif zup
+Output: red yellow
+
+
+Input: lug Output:",Output: blue,blue,True,62
+"Return the output preceded by 'Output:'
+Input: lug dax
+Output: blue green
+
+Input: dax wif walm
+Output: green red red red
+
+Input: wif zup
+Output: red yellow
+
+Input: wif
+Output: red
+
+Input: lug zup
+Output: blue yellow
+
+
+Input: wif Output:",Output: red,red,True,63
+"Return the output preceded by 'Output:'
+Input: zup bluf
+Output: yellow yellow
+
+Input: wif lug zup bluf
+Output: red blue yellow yellow
+
+Input: lug
+Output: blue
+
+Input: lug
+Output: blue
+
+Input: zup bluf
+Output: yellow yellow
+
+
+Input: lug dax wif bluf Output:",Output: blue green red blue,blue green red red,False,64
+"Return the output preceded by 'Output:'
+Input: wif
+Output: red
+
+Input: wif lug bluf
+Output: red blue blue
+
+Input: dax zup
+Output: green yellow
+
+Input: zup bluf
+Output: yellow yellow
+
+Input: lug bluf
+Output: blue blue
+
+
+Input: dax Output:",Output: green,green,True,65
+"Return the output preceded by 'Output:'
+Input: lug bluf
+Output: blue blue
+
+Input: lug wif dax wif
+Output: blue red green red
+
+Input: zup
+Output: yellow
+
+Input: dax lug zup
+Output: green blue yellow
+
+Input: lug dax lug
+Output: blue green blue
+
+
+Input: zup Output:",Output: yellow,yellow,True,66
+"Return the output preceded by 'Output:'
+Input: dax zup dax
+Output: green yellow green
+
+Input: dax bluf wif zup
+Output: green green red yellow
+
+Input: zup
+Output: yellow
+
+Input: zup
+Output: yellow
+
+Input: zup
+Output: yellow
+
+
+Input: lug Output:",Output: red,blue,False,67
+"Return the output preceded by 'Output:'
+Input: wif bluf dax bluf wif walm lug wif
+Output: red red green green red red red blue red
+
+Input: zup lug dax
+Output: yellow blue green
+
+Input: wif dax bluf
+Output: red green green
+
+Input: wif lug zup
+Output: red blue yellow
+
+Input: wif bluf
+Output: red red
+
+
+Input: wif Output:",Output: red,red,True,68
+"Return the output preceded by 'Output:'
+Input: zup lug
+Output: yellow blue
+
+Input: zup
+Output: yellow
+
+Input: dax lug dax
+Output: green blue green
+
+Input: dax
+Output: green
+
+Input: zup
+Output: yellow
+
+
+Input: zup wif Output:",Output: yellow red,yellow red,True,69
+"Return the output preceded by 'Output:'
+Input: dax zup
+Output: green yellow
+
+Input: wif zup
+Output: red yellow
+
+Input: dax
+Output: green
+
+Input: lug zup lug
+Output: blue yellow blue
+
+Input: dax walm
+Output: green green green
+
+
+Input: lug Output:",Output: blue,blue,True,70
+"Return the output preceded by 'Output:'
+Input: wif zup
+Output: red yellow
+
+Input: lug zup
+Output: blue yellow
+
+Input: lug zup walm lug
+Output: blue yellow yellow yellow blue
+
+Input: wif lug
+Output: red blue
+
+Input: dax bluf wif lug
+Output: green green red blue
+
+
+Input: zup Output:",Output: yellow,yellow,True,71
+"Return the output preceded by 'Output:'
+Input: zup
+Output: yellow
+
+Input: zup bluf
+Output: yellow yellow
+
+Input: lug
+Output: blue
+
+Input: lug zup
+Output: blue yellow
+
+Input: lug wif zup wif walm
+Output: blue red yellow red red red
+
+
+Input: lug zup dax Output:",Output: blue yellow green,blue yellow green,True,72
+"Return the output preceded by 'Output:'
+Input: zup dax walm
+Output: yellow green green green
+
+Input: wif
+Output: red
+
+Input: dax lug
+Output: green blue
+
+Input: dax wif
+Output: green red
+
+Input: wif lug
+Output: red blue
+
+
+Input: lug wif dax walm Output:",Output: blue red green green,blue red green green green,False,73
+"Return the output preceded by 'Output:'
+Input: lug zup
+Output: blue yellow
+
+Input: wif bluf
+Output: red red
+
+Input: wif dax zup walm
+Output: red green yellow yellow yellow
+
+Input: dax wif bluf
+Output: green red red
+
+Input: lug zup dax zup
+Output: blue yellow green yellow
+
+
+Input: zup dax lug walm Output:",Output: yellow green blue yellow yellow,yellow green blue blue blue,False,74
+"Return the output preceded by 'Output:'
+Input: zup lug walm
+Output: yellow blue blue blue
+
+Input: wif bluf
+Output: red red
+
+Input: dax bluf
+Output: green green
+
+Input: dax
+Output: green
+
+Input: wif
+Output: red
+
+
+Input: wif Output:",Output: red,red,True,75
+"Return the output preceded by 'Output:'
+Input: dax lug
+Output: green blue
+
+Input: lug zup
+Output: blue yellow
+
+Input: zup lug walm wif walm
+Output: yellow blue blue blue red red red
+
+Input: zup lug dax lug
+Output: yellow blue green blue
+
+Input: zup lug dax
+Output: yellow blue green
+
+
+Input: zup walm dax Output:",Output: yellow blue green,yellow yellow yellow green,False,76
+"Return the output preceded by 'Output:'
+Input: wif dax
+Output: red green
+
+Input: lug walm wif
+Output: blue blue blue red
+
+Input: wif zup lug zup lug
+Output: red yellow blue yellow blue
+
+Input: dax
+Output: green
+
+Input: zup lug
+Output: yellow blue
+
+
+Input: zup dax Output:",Output: yellow green,yellow green,True,77
+"Return the output preceded by 'Output:'
+Input: wif zup
+Output: red yellow
+
+Input: dax lug dax
+Output: green blue green
+
+Input: dax
+Output: green
+
+Input: zup lug wif dax bluf wif
+Output: yellow blue red green green red
+
+Input: zup
+Output: yellow
+
+
+Input: lug dax wif Output:",Output: blue green red,blue green red,True,78
+"Return the output preceded by 'Output:'
+Input: dax lug wif walm
+Output: green blue red red red
+
+Input: zup
+Output: yellow
+
+Input: lug walm wif bluf
+Output: blue blue blue red red
+
+Input: zup
+Output: yellow
+
+Input: zup bluf wif dax wif zup
+Output: yellow yellow red green red yellow
+
+
+Input: zup bluf lug Output:",Output: yellow yellow blue,yellow yellow blue,True,79
+"Return the output preceded by 'Output:'
+Input: wif
+Output: red
+
+Input: dax
+Output: green
+
+Input: dax
+Output: green
+
+Input: lug
+Output: blue
+
+Input: zup lug zup lug wif
+Output: yellow blue yellow blue red
+
+
+Input: wif Output:",Output: red,red,True,80
+"Return the output preceded by 'Output:'
+Input: dax
+Output: green
+
+Input: lug
+Output: blue
+
+Input: lug zup
+Output: blue yellow
+
+Input: zup dax wif zup
+Output: yellow green red yellow
+
+Input: wif
+Output: red
+
+
+Input: zup Output:",Output: yellow,yellow,True,81
+"Return the output preceded by 'Output:'
+Input: dax lug wif walm
+Output: green blue red red red
+
+Input: dax zup lug zup bluf
+Output: green yellow blue yellow yellow
+
+Input: wif bluf
+Output: red red
+
+Input: lug zup
+Output: blue yellow
+
+Input: zup dax
+Output: yellow green
+
+
+Input: wif lug Output:",Output: red blue,red blue,True,82
+"Return the output preceded by 'Output:'
+Input: dax lug
+Output: green blue
+
+Input: lug zup lug
+Output: blue yellow blue
+
+Input: wif lug
+Output: red blue
+
+Input: dax zup wif
+Output: green yellow red
+
+Input: zup dax
+Output: yellow green
+
+
+Input: wif Output:",Output: red,red,True,83
+"Return the output preceded by 'Output:'
+Input: wif
+Output: red
+
+Input: lug wif
+Output: blue red
+
+Input: lug
+Output: blue
+
+Input: zup
+Output: yellow
+
+Input: dax bluf zup
+Output: green green yellow
+
+
+Input: zup bluf Output:",Output: yellow green,yellow yellow,False,84
+"Return the output preceded by 'Output:'
+Input: zup lug dax lug
+Output: yellow blue green blue
+
+Input: wif lug
+Output: red blue
+
+Input: dax lug dax wif dax
+Output: green blue green red green
+
+Input: lug
+Output: blue
+
+Input: lug wif bluf dax lug bluf
+Output: blue red red green blue blue
+
+
+Input: dax wif zup dax Output:",Output: green red yellow green,green red yellow green,True,85
+"Return the output preceded by 'Output:'
+Input: lug
+Output: blue
+
+Input: dax
+Output: green
+
+Input: zup
+Output: yellow
+
+Input: zup
+Output: yellow
+
+Input: zup dax lug wif dax
+Output: yellow green blue red green
+
+
+Input: wif Output:",Output: red,red,True,86
+"Return the output preceded by 'Output:'
+Input: lug bluf
+Output: blue blue
+
+Input: zup bluf
+Output: yellow yellow
+
+Input: wif
+Output: red
+
+Input: dax zup dax zup wif
+Output: green yellow green yellow red
+
+Input: zup
+Output: yellow
+
+
+Input: dax Output:",Output: green,green,True,87
+"Return the output preceded by 'Output:'
+Input: dax walm
+Output: green green green
+
+Input: zup
+Output: yellow
+
+Input: lug dax wif lug
+Output: blue green red blue
+
+Input: dax
+Output: green
+
+Input: lug wif lug
+Output: blue red blue
+
+
+Input: zup bluf Output:",Output: yellow purple,yellow yellow,False,88
+"Return the output preceded by 'Output:'
+Input: lug zup
+Output: blue yellow
+
+Input: dax wif
+Output: green red
+
+Input: zup lug zup walm dax wif bluf
+Output: yellow blue yellow yellow yellow green red red
+
+Input: lug zup lug
+Output: blue yellow blue
+
+Input: wif
+Output: red
+
+
+Input: lug wif Output:",Output: blue red,blue red,True,89
+"Return the output preceded by 'Output:'
+Input: wif walm
+Output: red red red
+
+Input: zup lug
+Output: yellow blue
+
+Input: dax lug
+Output: green blue
+
+Input: dax
+Output: green
+
+Input: dax wif
+Output: green red
+
+
+Input: dax walm Output:",Output: green red red,green green green,False,90
+"Return the output preceded by 'Output:'
+Input: lug zup
+Output: blue yellow
+
+Input: zup dax wif
+Output: yellow green red
+
+Input: dax bluf wif
+Output: green green red
+
+Input: zup lug
+Output: yellow blue
+
+Input: wif dax bluf
+Output: red green green
+
+
+Input: zup bluf lug Output:",Output: yellow green blue,yellow yellow blue,False,91
+"Return the output preceded by 'Output:'
+Input: lug zup
+Output: blue yellow
+
+Input: lug zup dax lug
+Output: blue yellow green blue
+
+Input: wif zup dax
+Output: red yellow green
+
+Input: lug
+Output: blue
+
+Input: zup dax wif zup
+Output: yellow green red yellow
+
+
+Input: wif lug walm dax Output:",Output: red blue purple green,red blue blue blue green,False,92
+"Return the output preceded by 'Output:'
+Input: wif dax wif
+Output: red green red
+
+Input: lug dax wif lug
+Output: blue green red blue
+
+Input: dax bluf
+Output: green green
+
+Input: zup dax bluf wif zup bluf lug
+Output: yellow green green red yellow yellow blue
+
+Input: wif dax zup walm
+Output: red green yellow yellow yellow
+
+
+Input: zup dax Output:",Output: yellow green,yellow green,True,93
+"Return the output preceded by 'Output:'
+Input: dax wif
+Output: green red
+
+Input: zup
+Output: yellow
+
+Input: wif lug zup bluf
+Output: red blue yellow yellow
+
+Input: zup dax walm
+Output: yellow green green green
+
+Input: wif walm
+Output: red red red
+
+
+Input: lug Output:",Output: blue,blue,True,94
+"Return the output preceded by 'Output:'
+Input: zup dax bluf
+Output: yellow green green
+
+Input: wif
+Output: red
+
+Input: zup bluf
+Output: yellow yellow
+
+Input: wif bluf
+Output: red red
+
+Input: lug wif dax walm zup
+Output: blue red green green green yellow
+
+
+Input: wif walm dax Output:",Output: red green green,red red red green,False,95
+"Return the output preceded by 'Output:'
+Input: dax lug
+Output: green blue
+
+Input: lug bluf zup lug
+Output: blue blue yellow blue
+
+Input: dax bluf wif zup wif
+Output: green green red yellow red
+
+Input: lug wif
+Output: blue red
+
+Input: zup wif
+Output: yellow red
+
+
+Input: wif lug wif zup bluf Output:",Output: red blue red yellow green,red blue red yellow yellow,False,96
+"Return the output preceded by 'Output:'
+Input: zup walm
+Output: yellow yellow yellow
+
+Input: lug dax zup lug wif
+Output: blue green yellow blue red
+
+Input: wif dax zup wif
+Output: red green yellow red
+
+Input: lug
+Output: blue
+
+Input: dax
+Output: green
+
+
+Input: wif zup Output:",Output: red yellow,red yellow,True,97
+"Return the output preceded by 'Output:'
+Input: wif bluf lug
+Output: red red blue
+
+Input: dax
+Output: green
+
+Input: zup wif lug dax
+Output: yellow red blue green
+
+Input: lug
+Output: blue
+
+Input: dax zup
+Output: green yellow
+
+
+Input: dax zup dax Output:",Output: green yellow green,green yellow green,True,98
+"Return the output preceded by 'Output:'
+Input: zup bluf
+Output: yellow yellow
+
+Input: dax lug
+Output: green blue
+
+Input: zup lug dax lug
+Output: yellow blue green blue
+
+Input: zup wif
+Output: yellow red
+
+Input: zup wif
+Output: yellow red
+
+
+Input: lug walm zup Output:",Output: blue purple yellow,blue blue blue yellow,False,99
+"Return the output preceded by 'Output:'
+Input: lug bluf
+Output: blue blue
+
+Input: lug zup lug
+Output: blue yellow blue
+
+Input: dax
+Output: green
+
+Input: dax zup lug bluf
+Output: green yellow blue blue
+
+Input: zup walm
+Output: yellow yellow yellow
+
+
+Input: wif lug zup bluf wif bluf Output:",Output: red blue yellow blue red blue,red blue yellow yellow red red,False,100
+"Return the output preceded by 'Output:'
+Input: dax bluf lug wif
+Output: green green blue red
+
+Input: zup walm
+Output: yellow yellow yellow
+
+Input: lug wif dax walm zup
+Output: blue red green green green yellow
+
+Input: wif
+Output: red
+
+Input: zup
+Output: yellow
+
+
+Input: zup Output:",Output: yellow,yellow,True,101
+"Return the output preceded by 'Output:'
+Input: zup
+Output: yellow
+
+Input: lug wif
+Output: blue red
+
+Input: lug
+Output: blue
+
+Input: lug dax lug
+Output: blue green blue
+
+Input: lug walm
+Output: blue blue blue
+
+
+Input: dax zup walm dax wif lug Output:",Output: green yellow blue green red blue,green yellow yellow yellow green red blue,False,102
+"Return the output preceded by 'Output:'
+Input: wif zup dax bluf
+Output: red yellow green green
+
+Input: zup
+Output: yellow
+
+Input: dax walm
+Output: green green green
+
+Input: wif zup
+Output: red yellow
+
+Input: wif dax
+Output: red green
+
+
+Input: wif zup dax zup Output:",Output: red yellow green yellow,red yellow green yellow,True,103
+"Return the output preceded by 'Output:'
+Input: wif lug wif
+Output: red blue red
+
+Input: wif zup lug zup lug
+Output: red yellow blue yellow blue
+
+Input: wif
+Output: red
+
+Input: dax zup lug bluf
+Output: green yellow blue blue
+
+Input: dax
+Output: green
+
+
+Input: dax wif bluf Output:",Output: green red blue,green red red,False,104
+"Return the output preceded by 'Output:'
+Input: lug
+Output: blue
+
+Input: lug walm wif bluf
+Output: blue blue blue red red
+
+Input: wif zup lug
+Output: red yellow blue
+
+Input: zup
+Output: yellow
+
+Input: wif
+Output: red
+
+
+Input: zup walm Output:",Output: yellow blue,yellow yellow yellow,False,105
+"Return the output preceded by 'Output:'
+Input: zup walm
+Output: yellow yellow yellow
+
+Input: wif walm lug bluf
+Output: red red red blue blue
+
+Input: zup bluf
+Output: yellow yellow
+
+Input: dax
+Output: green
+
+Input: zup dax
+Output: yellow green
+
+
+Input: wif Output:",Output: red,red,True,106
+"Return the output preceded by 'Output:'
+Input: dax lug zup
+Output: green blue yellow
+
+Input: lug zup walm lug
+Output: blue yellow yellow yellow blue
+
+Input: dax bluf lug wif
+Output: green green blue red
+
+Input: zup
+Output: yellow
+
+Input: lug dax bluf wif dax
+Output: blue green green red green
+
+
+Input: zup Output:",Output: yellow,yellow,True,107
+"Return the output preceded by 'Output:'
+Input: wif zup
+Output: red yellow
+
+Input: zup
+Output: yellow
+
+Input: wif walm dax zup
+Output: red red red green yellow
+
+Input: zup wif lug
+Output: yellow red blue
+
+Input: lug dax lug
+Output: blue green blue
+
+
+Input: dax Output:",Output: green,green,True,108
+"Return the output preceded by 'Output:'
+Input: zup dax walm
+Output: yellow green green green
+
+Input: lug walm
+Output: blue blue blue
+
+Input: lug zup lug
+Output: blue yellow blue
+
+Input: dax walm
+Output: green green green
+
+Input: zup lug
+Output: yellow blue
+
+
+Input: zup walm lug Output:",Output: yellow green green blue,yellow yellow yellow blue,False,109
+"Return the output preceded by 'Output:'
+Input: dax lug dax
+Output: green blue green
+
+Input: zup bluf
+Output: yellow yellow
+
+Input: lug
+Output: blue
+
+Input: lug
+Output: blue
+
+Input: lug wif dax bluf wif lug
+Output: blue red green green red blue
+
+
+Input: zup Output:",Output: yellow,yellow,True,110
+"Return the output preceded by 'Output:'
+Input: zup walm
+Output: yellow yellow yellow
+
+Input: dax zup bluf
+Output: green yellow yellow
+
+Input: wif walm dax
+Output: red red red green
+
+Input: dax lug walm
+Output: green blue blue blue
+
+Input: dax walm
+Output: green green green
+
+
+Input: wif bluf zup lug wif Output:",Output: red red yellow blue red,red red yellow blue red,True,111
+"Return the output preceded by 'Output:'
+Input: dax
+Output: green
+
+Input: dax
+Output: green
+
+Input: wif dax zup dax
+Output: red green yellow green
+
+Input: lug zup walm lug
+Output: blue yellow yellow yellow blue
+
+Input: wif lug
+Output: red blue
+
+
+Input: lug dax zup lug dax bluf Output:",Output: blue green yellow blue green yellow,blue green yellow blue green green,False,112
+"Return the output preceded by 'Output:'
+Input: dax
+Output: green
+
+Input: zup bluf wif walm
+Output: yellow yellow red red red
+
+Input: lug
+Output: blue
+
+Input: lug zup walm lug
+Output: blue yellow yellow yellow blue
+
+Input: wif bluf lug zup
+Output: red red blue yellow
+
+
+Input: wif Output:",Output: red,red,True,113
+"Return the output preceded by 'Output:'
+Input: dax
+Output: green
+
+Input: lug
+Output: blue
+
+Input: lug dax
+Output: blue green
+
+Input: wif lug
+Output: red blue
+
+Input: zup walm lug wif
+Output: yellow yellow yellow blue red
+
+
+Input: dax zup lug Output:",Output: green yellow blue,green yellow blue,True,114
+"Return the output preceded by 'Output:'
+Input: lug wif
+Output: blue red
+
+Input: zup
+Output: yellow
+
+Input: lug
+Output: blue
+
+Input: wif dax zup walm
+Output: red green yellow yellow yellow
+
+Input: wif
+Output: red
+
+
+Input: wif Output:",Output: red,red,True,115
+"Return the output preceded by 'Output:'
+Input: zup lug bluf zup bluf wif
+Output: yellow blue blue yellow yellow red
+
+Input: zup bluf
+Output: yellow yellow
+
+Input: dax wif
+Output: green red
+
+Input: lug
+Output: blue
+
+Input: lug zup bluf dax
+Output: blue yellow yellow green
+
+
+Input: dax wif Output:",Output: green red,green red,True,116
+"Return the output preceded by 'Output:'
+Input: lug
+Output: blue
+
+Input: zup walm lug
+Output: yellow yellow yellow blue
+
+Input: zup wif lug zup walm
+Output: yellow red blue yellow yellow yellow
+
+Input: lug
+Output: blue
+
+Input: dax walm
+Output: green green green
+
+
+Input: lug zup walm dax lug zup Output:",Output: blue yellow yellow yellow green green green blue yellow yellow,blue yellow yellow yellow green blue yellow,False,117
+"Return the output preceded by 'Output:'
+Input: lug
+Output: blue
+
+Input: lug wif bluf
+Output: blue red red
+
+Input: zup
+Output: yellow
+
+Input: lug wif dax wif
+Output: blue red green red
+
+Input: zup wif
+Output: yellow red
+
+
+Input: wif dax Output:",Output: red green,red green,True,118
+"Return the output preceded by 'Output:'
+Input: zup
+Output: yellow
+
+Input: dax
+Output: green
+
+Input: lug
+Output: blue
+
+Input: lug dax
+Output: blue green
+
+Input: zup walm lug wif
+Output: yellow yellow yellow blue red
+
+
+Input: zup lug zup lug Output:",Output: yellow blue yellow blue,yellow blue yellow blue,True,119
+"Return the output preceded by 'Output:'
+Input: wif bluf
+Output: red red
+
+Input: lug
+Output: blue
+
+Input: wif
+Output: red
+
+Input: wif
+Output: red
+
+Input: dax
+Output: green
+
+
+Input: zup walm lug Output:",Output: yellow blue blue,yellow yellow yellow blue,False,120
+"Return the output preceded by 'Output:'
+Input: zup
+Output: yellow
+
+Input: dax lug zup wif bluf dax
+Output: green blue yellow red red green
+
+Input: dax wif lug
+Output: green red blue
+
+Input: dax walm
+Output: green green green
+
+Input: lug wif lug
+Output: blue red blue
+
+
+Input: zup walm lug walm wif zup dax Output:",Output: yellow green blue green red yellow green,yellow yellow yellow blue blue blue red yellow green,False,121
+"Return the output preceded by 'Output:'
+Input: wif
+Output: red
+
+Input: lug
+Output: blue
+
+Input: wif bluf
+Output: red red
+
+Input: wif walm
+Output: red red red
+
+Input: lug bluf
+Output: blue blue
+
+
+Input: zup Output:",Output: green,yellow,False,122
+"Return the output preceded by 'Output:'
+Input: zup dax bluf zup dax
+Output: yellow green green yellow green
+
+Input: wif dax zup dax
+Output: red green yellow green
+
+Input: zup
+Output: yellow
+
+Input: dax zup lug zup bluf
+Output: green yellow blue yellow yellow
+
+Input: zup bluf wif dax lug
+Output: yellow yellow red green blue
+
+
+Input: wif Output:",Output: red,red,True,123
+"Return the output preceded by 'Output:'
+Input: dax wif walm
+Output: green red red red
+
+Input: zup walm wif
+Output: yellow yellow yellow red
+
+Input: zup dax
+Output: yellow green
+
+Input: dax
+Output: green
+
+Input: lug bluf wif
+Output: blue blue red
+
+
+Input: zup lug Output:",Output: yellow blue,yellow blue,True,124
+"Return the output preceded by 'Output:'
+Input: zup wif dax wif bluf
+Output: yellow red green red red
+
+Input: lug zup lug
+Output: blue yellow blue
+
+Input: zup wif
+Output: yellow red
+
+Input: zup lug
+Output: yellow blue
+
+Input: zup dax bluf
+Output: yellow green green
+
+
+Input: dax lug wif lug Output:",Output: green blue red blue,green blue red blue,True,125
+"Return the output preceded by 'Output:'
+Input: dax
+Output: green
+
+Input: dax zup
+Output: green yellow
+
+Input: wif
+Output: red
+
+Input: dax
+Output: green
+
+Input: zup
+Output: yellow
+
+
+Input: zup walm Output:",Output: yellow blue,yellow yellow yellow,False,126
+"Return the output preceded by 'Output:'
+Input: lug bluf dax bluf
+Output: blue blue green green
+
+Input: zup wif walm lug
+Output: yellow red red red blue
+
+Input: wif zup lug
+Output: red yellow blue
+
+Input: wif lug
+Output: red blue
+
+Input: lug dax
+Output: blue green
+
+
+Input: lug Output:",Output: blue,blue,True,127
+"Return the output preceded by 'Output:'
+Input: zup walm lug zup wif dax
+Output: yellow yellow yellow blue yellow red green
+
+Input: zup wif dax walm lug
+Output: yellow red green green green blue
+
+Input: dax lug walm
+Output: green blue blue blue
+
+Input: lug
+Output: blue
+
+Input: zup
+Output: yellow
+
+
+Input: wif Output:",Output: red,red,True,128
+"Return the output preceded by 'Output:'
+Input: wif bluf dax lug
+Output: red red green blue
+
+Input: dax walm
+Output: green green green
+
+Input: wif
+Output: red
+
+Input: dax walm wif
+Output: green green green red
+
+Input: dax
+Output: green
+
+
+Input: dax wif zup bluf Output:",Output: green red yellow red,green red yellow yellow,False,129
+"Return the output preceded by 'Output:'
+Input: dax walm
+Output: green green green
+
+Input: wif dax wif lug wif
+Output: red green red blue red
+
+Input: zup
+Output: yellow
+
+Input: dax
+Output: green
+
+Input: zup dax lug dax
+Output: yellow green blue green
+
+
+Input: lug bluf dax Output:",Output: blue purple green,blue blue green,False,130
+"Return the output preceded by 'Output:'
+Input: dax zup bluf
+Output: green yellow yellow
+
+Input: dax bluf
+Output: green green
+
+Input: lug walm
+Output: blue blue blue
+
+Input: lug zup
+Output: blue yellow
+
+Input: zup
+Output: yellow
+
+
+Input: wif Output:",Output: red,red,True,131
+"Return the output preceded by 'Output:'
+Input: dax bluf wif zup lug
+Output: green green red yellow blue
+
+Input: zup dax wif
+Output: yellow green red
+
+Input: zup bluf wif dax lug
+Output: yellow yellow red green blue
+
+Input: zup
+Output: yellow
+
+Input: wif
+Output: red
+
+
+Input: lug Output:",Output: blue,blue,True,132
+"Return the output preceded by 'Output:'
+Input: wif walm dax
+Output: red red red green
+
+Input: wif dax
+Output: red green
+
+Input: lug wif dax bluf wif lug
+Output: blue red green green red blue
+
+Input: wif walm zup walm
+Output: red red red yellow yellow yellow
+
+Input: dax zup lug zup bluf
+Output: green yellow blue yellow yellow
+
+
+Input: zup walm Output:",Output: yellow yellow yellow,yellow yellow yellow,True,133
+"Return the output preceded by 'Output:'
+Input: lug zup
+Output: blue yellow
+
+Input: lug dax
+Output: blue green
+
+Input: wif
+Output: red
+
+Input: dax wif dax zup bluf
+Output: green red green yellow yellow
+
+Input: wif
+Output: red
+
+
+Input: dax lug Output:",Output: green blue,green blue,True,134
+"Return the output preceded by 'Output:'
+Input: wif
+Output: red
+
+Input: wif
+Output: red
+
+Input: lug wif lug
+Output: blue red blue
+
+Input: zup wif walm
+Output: yellow red red red
+
+Input: zup
+Output: yellow
+
+
+Input: dax lug Output:",Output: green blue,green blue,True,135
+"Return the output preceded by 'Output:'
+Input: wif
+Output: red
+
+Input: lug dax zup lug wif
+Output: blue green yellow blue red
+
+Input: wif dax
+Output: red green
+
+Input: wif dax wif
+Output: red green red
+
+Input: wif dax
+Output: red green
+
+
+Input: wif Output:",Output: red,red,True,136
+"Return the output preceded by 'Output:'
+Input: wif
+Output: red
+
+Input: zup walm lug
+Output: yellow yellow yellow blue
+
+Input: lug walm zup lug walm
+Output: blue blue blue yellow blue blue blue
+
+Input: lug walm wif
+Output: blue blue blue red
+
+Input: zup lug
+Output: yellow blue
+
+
+Input: dax lug Output:",Output: green blue,green blue,True,137
+"Return the output preceded by 'Output:'
+Input: dax lug walm
+Output: green blue blue blue
+
+Input: lug wif bluf lug wif
+Output: blue red red blue red
+
+Input: dax walm
+Output: green green green
+
+Input: dax bluf wif zup dax
+Output: green green red yellow green
+
+Input: zup lug
+Output: yellow blue
+
+
+Input: wif zup dax Output:",Output: red yellow green,red yellow green,True,138
+"Return the output preceded by 'Output:'
+Input: lug bluf zup
+Output: blue blue yellow
+
+Input: dax
+Output: green
+
+Input: lug
+Output: blue
+
+Input: lug dax
+Output: blue green
+
+Input: dax walm
+Output: green green green
+
+
+Input: wif dax wif dax Output:",Output: red green red green,red green red green,True,139
+"Return the output preceded by 'Output:'
+Input: wif
+Output: red
+
+Input: lug zup
+Output: blue yellow
+
+Input: lug wif lug wif lug
+Output: blue red blue red blue
+
+Input: zup walm
+Output: yellow yellow yellow
+
+Input: wif bluf lug zup
+Output: red red blue yellow
+
+
+Input: wif Output:",Output: red,red,True,140
+"Return the output preceded by 'Output:'
+Input: dax lug wif lug
+Output: green blue red blue
+
+Input: zup
+Output: yellow
+
+Input: lug wif lug wif lug
+Output: blue red blue red blue
+
+Input: wif zup lug
+Output: red yellow blue
+
+Input: lug
+Output: blue
+
+
+Input: lug Output:",Output: blue,blue,True,141
+"Return the output preceded by 'Output:'
+Input: zup
+Output: yellow
+
+Input: lug
+Output: blue
+
+Input: dax wif walm lug zup walm
+Output: green red red red blue yellow yellow yellow
+
+Input: wif lug
+Output: red blue
+
+Input: dax wif zup dax
+Output: green red yellow green
+
+
+Input: dax lug zup Output:",Output: green blue yellow,green blue yellow,True,142
+"Return the output preceded by 'Output:'
+Input: zup walm
+Output: yellow yellow yellow
+
+Input: lug zup wif
+Output: blue yellow red
+
+Input: wif bluf zup wif lug dax
+Output: red red yellow red blue green
+
+Input: wif bluf lug zup
+Output: red red blue yellow
+
+Input: wif lug walm
+Output: red blue blue blue
+
+
+Input: dax zup walm Output:",Output: green yellow blue blue blue,green yellow yellow yellow,False,143
+"Return the output preceded by 'Output:'
+Input: dax zup bluf
+Output: green yellow yellow
+
+Input: wif lug
+Output: red blue
+
+Input: dax
+Output: green
+
+Input: lug zup
+Output: blue yellow
+
+Input: lug
+Output: blue
+
+
+Input: dax Output:",Output: green,green,True,144
+"Return the output preceded by 'Output:'
+Input: lug zup
+Output: blue yellow
+
+Input: lug dax
+Output: blue green
+
+Input: lug dax
+Output: blue green
+
+Input: lug bluf zup
+Output: blue blue yellow
+
+Input: wif lug dax lug
+Output: red blue green blue
+
+
+Input: lug zup Output:",Output: blue yellow,blue yellow,True,145
+"Return the output preceded by 'Output:'
+Input: dax zup wif
+Output: green yellow red
+
+Input: dax wif
+Output: green red
+
+Input: zup wif walm lug
+Output: yellow red red red blue
+
+Input: wif
+Output: red
+
+Input: zup wif zup dax
+Output: yellow red yellow green
+
+
+Input: wif zup bluf Output:",Output: red yellow red,red yellow yellow,False,146
+"Return the output preceded by 'Output:'
+Input: lug
+Output: blue
+
+Input: wif bluf
+Output: red red
+
+Input: wif walm dax zup
+Output: red red red green yellow
+
+Input: dax
+Output: green
+
+Input: zup lug wif dax lug
+Output: yellow blue red green blue
+
+
+Input: wif walm Output:",Output: red red,red red red,False,147
+"Return the output preceded by 'Output:'
+Input: zup bluf
+Output: yellow yellow
+
+Input: dax
+Output: green
+
+Input: zup dax
+Output: yellow green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf dax lug zup walm lug
+Output: blue blue green blue yellow yellow yellow blue
+
+
+Input: dax wif Output:",Output: green red,green red,True,148
+"Return the output preceded by 'Output:'
+Input: lug bluf
+Output: blue blue
+
+Input: lug dax
+Output: blue green
+
+Input: lug dax bluf
+Output: blue green green
+
+Input: dax zup lug wif lug
+Output: green yellow blue red blue
+
+Input: zup lug
+Output: yellow blue
+
+
+Input: zup dax Output:",Output: yellow green,yellow green,True,149
+"Return the output preceded by 'Output:'
+Input: lug bluf wif
+Output: blue blue red
+
+Input: wif walm
+Output: red red red
+
+Input: wif zup
+Output: red yellow
+
+Input: lug walm
+Output: blue blue blue
+
+Input: dax zup walm wif walm
+Output: green yellow yellow yellow red red red
+
+
+Input: lug dax Output:",Output: blue green,blue green,True,150
+"Return the output preceded by 'Output:'
+Input: lug
+Output: blue
+
+Input: lug walm zup lug walm
+Output: blue blue blue yellow blue blue blue
+
+Input: wif
+Output: red
+
+Input: lug wif bluf
+Output: blue red red
+
+Input: lug
+Output: blue
+
+
+Input: lug zup walm dax lug Output:",Output: blue blue yellow blue blue,blue yellow yellow yellow green blue,False,151
+"Return the output preceded by 'Output:'
+Input: zup wif
+Output: yellow red
+
+Input: dax walm zup
+Output: green green green yellow
+
+Input: lug zup wif
+Output: blue yellow red
+
+Input: lug bluf
+Output: blue blue
+
+Input: lug wif bluf lug wif
+Output: blue red red blue red
+
+
+Input: wif zup wif dax Output:",Output: red yellow red green,red yellow red green,True,152
+"Return the output preceded by 'Output:'
+Input: lug
+Output: blue
+
+Input: lug
+Output: blue
+
+Input: zup
+Output: yellow
+
+Input: dax lug wif
+Output: green blue red
+
+Input: lug zup lug
+Output: blue yellow blue
+
+
+Input: zup bluf lug walm Output:",Output: yellow purple blue orange,yellow yellow blue blue blue,False,153
+"Return the output preceded by 'Output:'
+Input: wif walm
+Output: red red red
+
+Input: dax
+Output: green
+
+Input: dax wif zup dax
+Output: green red yellow green
+
+Input: wif
+Output: red
+
+Input: dax wif walm
+Output: green red red red
+
+
+Input: dax zup dax lug dax Output:",Output: green yellow green blue green,green yellow green blue green,True,154
+"Return the output preceded by 'Output:'
+Input: wif zup lug
+Output: red yellow blue
+
+Input: dax lug
+Output: green blue
+
+Input: lug wif dax walm zup
+Output: blue red green green green yellow
+
+Input: zup
+Output: yellow
+
+Input: dax
+Output: green
+
+
+Input: lug Output:",Output: blue,blue,True,155
+"Return the output preceded by 'Output:'
+Input: wif
+Output: red
+
+Input: wif lug
+Output: red blue
+
+Input: dax
+Output: green
+
+Input: lug
+Output: blue
+
+Input: lug
+Output: blue
+
+
+Input: dax Output:",Output: green,green,True,156
+"Return the output preceded by 'Output:'
+Input: dax
+Output: green
+
+Input: lug
+Output: blue
+
+Input: lug
+Output: blue
+
+Input: dax lug walm
+Output: green blue blue blue
+
+Input: wif bluf zup wif lug dax
+Output: red red yellow red blue green
+
+
+Input: wif dax wif lug walm zup Output:",Output: red green red blue blue blue yellow,red green red blue blue blue yellow,True,157
+"Return the output preceded by 'Output:'
+Input: zup lug
+Output: yellow blue
+
+Input: lug bluf
+Output: blue blue
+
+Input: zup
+Output: yellow
+
+Input: dax zup
+Output: green yellow
+
+Input: dax zup
+Output: green yellow
+
+
+Input: lug dax zup wif Output:",Output: blue green yellow red,blue green yellow red,True,158
+"Return the output preceded by 'Output:'
+Input: dax
+Output: green
+
+Input: wif lug dax
+Output: red blue green
+
+Input: dax zup lug wif zup
+Output: green yellow blue red yellow
+
+Input: dax zup bluf
+Output: green yellow yellow
+
+Input: zup lug
+Output: yellow blue
+
+
+Input: lug dax Output:",Output: blue green,blue green,True,159
+"Return the output preceded by 'Output:'
+Input: wif
+Output: red
+
+Input: dax
+Output: green
+
+Input: wif
+Output: red
+
+Input: dax walm
+Output: green green green
+
+Input: zup walm
+Output: yellow yellow yellow
+
+
+Input: lug wif Output:",Output: blue red,blue red,True,160
+"Return the output preceded by 'Output:'
+Input: dax bluf
+Output: green green
+
+Input: zup wif bluf
+Output: yellow red red
+
+Input: lug
+Output: blue
+
+Input: lug zup dax wif zup
+Output: blue yellow green red yellow
+
+Input: zup lug
+Output: yellow blue
+
+
+Input: zup dax walm wif Output:",Output: yellow green purple red,yellow green green green red,False,161
+"Return the output preceded by 'Output:'
+Input: zup dax
+Output: yellow green
+
+Input: wif dax bluf
+Output: red green green
+
+Input: lug zup wif
+Output: blue yellow red
+
+Input: zup wif bluf
+Output: yellow red red
+
+Input: wif bluf
+Output: red red
+
+
+Input: dax lug walm dax walm Output:",Output: green blue purple green purple,green blue blue blue green green green,False,162
+"Return the output preceded by 'Output:'
+Input: dax
+Output: green
+
+Input: zup
+Output: yellow
+
+Input: wif lug
+Output: red blue
+
+Input: wif bluf
+Output: red red
+
+Input: dax bluf
+Output: green green
+
+
+Input: wif Output:",Output: red,red,True,163
+"Return the output preceded by 'Output:'
+Input: lug zup
+Output: blue yellow
+
+Input: wif bluf dax bluf wif walm lug wif
+Output: red red green green red red red blue red
+
+Input: zup lug
+Output: yellow blue
+
+Input: dax lug zup dax
+Output: green blue yellow green
+
+Input: lug zup
+Output: blue yellow
+
+
+Input: zup dax lug walm zup Output:",Output: yellow green blue red yellow,yellow green blue blue blue yellow,False,164
+"Return the output preceded by 'Output:'
+Input: zup bluf
+Output: yellow yellow
+
+Input: zup
+Output: yellow
+
+Input: wif
+Output: red
+
+Input: dax
+Output: green
+
+Input: zup
+Output: yellow
+
+
+Input: wif Output:",Output: red,red,True,165
+"Return the output preceded by 'Output:'
+Input: zup wif
+Output: yellow red
+
+Input: lug wif bluf
+Output: blue red red
+
+Input: dax lug walm
+Output: green blue blue blue
+
+Input: dax walm
+Output: green green green
+
+Input: zup
+Output: yellow
+
+
+Input: lug Output:",Output: blue,blue,True,166
+"Return the output preceded by 'Output:'
+Input: lug walm
+Output: blue blue blue
+
+Input: zup
+Output: yellow
+
+Input: wif
+Output: red
+
+Input: wif lug
+Output: red blue
+
+Input: wif zup
+Output: red yellow
+
+
+Input: zup Output:",Output: yellow,yellow,True,167
+"Return the output preceded by 'Output:'
+Input: zup lug bluf zup bluf wif
+Output: yellow blue blue yellow yellow red
+
+Input: lug
+Output: blue
+
+Input: dax lug wif lug
+Output: green blue red blue
+
+Input: wif
+Output: red
+
+Input: wif dax lug walm
+Output: red green blue blue blue
+
+
+Input: wif Output:",Output: red,red,True,168
+"Return the output preceded by 'Output:'
+Input: dax lug zup dax
+Output: green blue yellow green
+
+Input: dax walm
+Output: green green green
+
+Input: wif
+Output: red
+
+Input: wif
+Output: red
+
+Input: dax
+Output: green
+
+
+Input: lug walm Output:",Output: blue green green,blue blue blue,False,169
+"Return the output preceded by 'Output:'
+Input: dax
+Output: green
+
+Input: wif bluf dax lug
+Output: red red green blue
+
+Input: dax bluf zup bluf dax
+Output: green green yellow yellow green
+
+Input: lug bluf zup lug
+Output: blue blue yellow blue
+
+Input: dax lug
+Output: green blue
+
+
+Input: zup dax zup wif walm Output:",Output: yellow green yellow red purple,yellow green yellow red red red,False,170
+"Return the output preceded by 'Output:'
+Input: lug zup
+Output: blue yellow
+
+Input: lug
+Output: blue
+
+Input: dax
+Output: green
+
+Input: zup bluf lug zup
+Output: yellow yellow blue yellow
+
+Input: zup dax wif
+Output: yellow green red
+
+
+Input: zup wif dax lug bluf zup Output:",Output: yellow red green blue yellow yellow,yellow red green blue blue yellow,False,171
+"Return the output preceded by 'Output:'
+Input: lug
+Output: blue
+
+Input: dax lug walm
+Output: green blue blue blue
+
+Input: zup wif bluf
+Output: yellow red red
+
+Input: wif lug
+Output: red blue
+
+Input: dax
+Output: green
+
+
+Input: lug dax Output:",Output: blue green,blue green,True,172
+"Return the output preceded by 'Output:'
+Input: wif zup
+Output: red yellow
+
+Input: dax wif zup dax
+Output: green red yellow green
+
+Input: dax
+Output: green
+
+Input: lug
+Output: blue
+
+Input: dax walm
+Output: green green green
+
+
+Input: lug wif dax walm Output:",Output: blue red green green green,blue red green green green,True,173
+"Return the output preceded by 'Output:'
+Input: wif bluf
+Output: red red
+
+Input: wif dax
+Output: red green
+
+Input: zup wif
+Output: yellow red
+
+Input: dax lug
+Output: green blue
+
+Input: zup
+Output: yellow
+
+
+Input: wif lug Output:",Output: red blue,red blue,True,174
+"Return the output preceded by 'Output:'
+Input: dax wif walm
+Output: green red red red
+
+Input: zup dax
+Output: yellow green
+
+Input: zup dax bluf zup dax
+Output: yellow green green yellow green
+
+Input: lug
+Output: blue
+
+Input: lug
+Output: blue
+
+
+Input: dax walm Output:",Output: green red,green green green,False,175
+"Return the output preceded by 'Output:'
+Input: lug wif lug wif lug
+Output: blue red blue red blue
+
+Input: zup
+Output: yellow
+
+Input: lug
+Output: blue
+
+Input: zup dax lug
+Output: yellow green blue
+
+Input: lug
+Output: blue
+
+
+Input: lug Output:",Output: blue,blue,True,176
+"Return the output preceded by 'Output:'
+Input: dax
+Output: green
+
+Input: zup dax lug
+Output: yellow green blue
+
+Input: zup lug zup lug wif
+Output: yellow blue yellow blue red
+
+Input: zup
+Output: yellow
+
+Input: zup lug
+Output: yellow blue
+
+
+Input: wif walm lug Output:",Output: red purple blue,red red red blue,False,177
+"Return the output preceded by 'Output:'
+Input: zup
+Output: yellow
+
+Input: wif
+Output: red
+
+Input: dax lug
+Output: green blue
+
+Input: zup wif lug
+Output: yellow red blue
+
+Input: wif walm dax
+Output: red red red green
+
+
+Input: zup Output:",Output: yellow,yellow,True,178
+"Return the output preceded by 'Output:'
+Input: wif zup lug zup lug
+Output: red yellow blue yellow blue
+
+Input: wif lug zup bluf
+Output: red blue yellow yellow
+
+Input: wif
+Output: red
+
+Input: lug wif
+Output: blue red
+
+Input: dax lug wif lug
+Output: green blue red blue
+
+
+Input: lug zup Output:",Output: blue yellow,blue yellow,True,179
+"Return the output preceded by 'Output:'
+Input: zup
+Output: yellow
+
+Input: dax lug zup
+Output: green blue yellow
+
+Input: lug wif lug bluf
+Output: blue red blue blue
+
+Input: zup lug wif
+Output: yellow blue red
+
+Input: wif
+Output: red
+
+
+Input: lug Output:",Output: blue,blue,True,180
+"Return the output preceded by 'Output:'
+Input: wif zup lug
+Output: red yellow blue
+
+Input: wif
+Output: red
+
+Input: dax
+Output: green
+
+Input: lug walm zup walm
+Output: blue blue blue yellow yellow yellow
+
+Input: zup dax lug zup
+Output: yellow green blue yellow
+
+
+Input: zup lug walm zup lug Output:",Output: yellow blue yellow yellow blue,yellow blue blue blue yellow blue,False,181
+"Return the output preceded by 'Output:'
+Input: wif dax lug dax
+Output: red green blue green
+
+Input: zup dax bluf wif zup bluf lug
+Output: yellow green green red yellow yellow blue
+
+Input: lug zup lug
+Output: blue yellow blue
+
+Input: dax bluf zup bluf dax
+Output: green green yellow yellow green
+
+Input: dax zup
+Output: green yellow
+
+
+Input: dax zup dax wif Output:",Output: green yellow green red,green yellow green red,True,182
+"Return the output preceded by 'Output:'
+Input: dax lug
+Output: green blue
+
+Input: lug walm zup
+Output: blue blue blue yellow
+
+Input: wif lug zup
+Output: red blue yellow
+
+Input: lug bluf zup
+Output: blue blue yellow
+
+Input: dax walm wif dax
+Output: green green green red green
+
+
+Input: lug dax walm lug Output:",Output: blue green green blue blue,blue green green green blue,False,183
+"Return the output preceded by 'Output:'
+Input: wif lug zup walm wif lug
+Output: red blue yellow yellow yellow red blue
+
+Input: wif lug
+Output: red blue
+
+Input: dax
+Output: green
+
+Input: dax
+Output: green
+
+Input: dax
+Output: green
+
+
+Input: dax walm Output:",Output: green yellow,green green green,False,184
+"Return the output preceded by 'Output:'
+Input: zup
+Output: yellow
+
+Input: lug walm dax
+Output: blue blue blue green
+
+Input: lug walm zup lug zup wif
+Output: blue blue blue yellow blue yellow red
+
+Input: lug zup bluf dax
+Output: blue yellow yellow green
+
+Input: dax lug wif
+Output: green blue red
+
+
+Input: zup wif zup Output:",Output: yellow red yellow,yellow red yellow,True,185
+"Return the output preceded by 'Output:'
+Input: dax bluf wif lug zup
+Output: green green red blue yellow
+
+Input: zup dax lug dax
+Output: yellow green blue green
+
+Input: wif
+Output: red
+
+Input: zup lug
+Output: yellow blue
+
+Input: zup wif zup dax
+Output: yellow red yellow green
+
+
+Input: wif Output:",Output: red,red,True,186
+"Return the output preceded by 'Output:'
+Input: dax walm wif walm zup
+Output: green green green red red red yellow
+
+Input: lug
+Output: blue
+
+Input: zup lug
+Output: yellow blue
+
+Input: dax walm
+Output: green green green
+
+Input: zup
+Output: yellow
+
+
+Input: dax zup bluf Output:",Output: green green green yellow red,green yellow yellow,False,187
+"Return the output preceded by 'Output:'
+Input: lug
+Output: blue
+
+Input: zup
+Output: yellow
+
+Input: dax bluf wif lug
+Output: green green red blue
+
+Input: dax zup dax
+Output: green yellow green
+
+Input: wif walm dax
+Output: red red red green
+
+
+Input: wif dax wif Output:",Output: red green red,red green red,True,188
+"Return the output preceded by 'Output:'
+Input: lug zup
+Output: blue yellow
+
+Input: lug wif
+Output: blue red
+
+Input: lug zup walm lug
+Output: blue yellow yellow yellow blue
+
+Input: dax
+Output: green
+
+Input: wif
+Output: red
+
+
+Input: dax lug wif Output:",Output: green blue red,green blue red,True,189
+"Return the output preceded by 'Output:'
+Input: dax zup dax
+Output: green yellow green
+
+Input: lug zup dax wif zup
+Output: blue yellow green red yellow
+
+Input: wif
+Output: red
+
+Input: lug dax zup
+Output: blue green yellow
+
+Input: wif
+Output: red
+
+
+Input: dax wif zup dax Output:",Output: green red yellow green,green red yellow green,True,190
+"Return the output preceded by 'Output:'
+Input: wif
+Output: red
+
+Input: wif dax
+Output: red green
+
+Input: zup lug zup lug zup bluf
+Output: yellow blue yellow blue yellow yellow
+
+Input: lug
+Output: blue
+
+Input: dax lug
+Output: green blue
+
+
+Input: wif lug dax wif walm Output:",Output: red blue green red purple,red blue green red red red,False,191
+"Return the output preceded by 'Output:'
+Input: wif
+Output: red
+
+Input: wif lug
+Output: red blue
+
+Input: zup
+Output: yellow
+
+Input: zup lug dax
+Output: yellow blue green
+
+Input: dax
+Output: green
+
+
+Input: zup bluf lug zup walm lug Output:",Output: yellow purple blue yellow orange blue,yellow yellow blue yellow yellow yellow blue,False,192
+"Return the output preceded by 'Output:'
+Input: lug zup
+Output: blue yellow
+
+Input: zup
+Output: yellow
+
+Input: lug
+Output: blue
+
+Input: dax bluf
+Output: green green
+
+Input: zup lug dax
+Output: yellow blue green
+
+
+Input: wif bluf lug walm dax lug dax Output:",Output: red green blue purple green blue green,red red blue blue blue green blue green,False,193
+"Return the output preceded by 'Output:'
+Input: dax lug walm
+Output: green blue blue blue
+
+Input: zup
+Output: yellow
+
+Input: dax bluf lug wif
+Output: green green blue red
+
+Input: lug
+Output: blue
+
+Input: lug
+Output: blue
+
+
+Input: lug Output:",Output: blue,blue,True,194
+"Return the output preceded by 'Output:'
+Input: dax
+Output: green
+
+Input: lug wif
+Output: blue red
+
+Input: lug dax
+Output: blue green
+
+Input: dax zup wif zup
+Output: green yellow red yellow
+
+Input: zup lug dax lug
+Output: yellow blue green blue
+
+
+Input: dax wif Output:",Output: green red,green red,True,195
+"Return the output preceded by 'Output:'
+Input: zup bluf
+Output: yellow yellow
+
+Input: lug dax lug wif
+Output: blue green blue red
+
+Input: lug
+Output: blue
+
+Input: zup lug
+Output: yellow blue
+
+Input: dax wif dax
+Output: green red green
+
+
+Input: dax zup dax zup walm Output:",Output: green yellow green yellow purple,green yellow green yellow yellow yellow,False,196
+"Return the output preceded by 'Output:'
+Input: lug wif dax walm zup
+Output: blue red green green green yellow
+
+Input: wif walm zup lug zup walm
+Output: red red red yellow blue yellow yellow yellow
+
+Input: zup
+Output: yellow
+
+Input: lug
+Output: blue
+
+Input: zup walm
+Output: yellow yellow yellow
+
+
+Input: lug dax bluf wif lug Output:",Output: blue green green red blue,blue green green red blue,True,197
+"Return the output preceded by 'Output:'
+Input: zup dax
+Output: yellow green
+
+Input: dax
+Output: green
+
+Input: lug
+Output: blue
+
+Input: dax
+Output: green
+
+Input: wif bluf dax
+Output: red red green
+
+
+Input: wif Output:",Output: red,red,True,198
+"Return the output preceded by 'Output:'
+Input: lug wif zup wif walm
+Output: blue red yellow red red red
+
+Input: zup dax lug walm zup lug
+Output: yellow green blue blue blue yellow blue
+
+Input: zup bluf dax lug
+Output: yellow yellow green blue
+
+Input: zup dax lug walm zup
+Output: yellow green blue blue blue yellow
+
+Input: wif
+Output: red
+
+
+Input: zup wif dax Output:",Output: yellow red green,yellow red green,True,199

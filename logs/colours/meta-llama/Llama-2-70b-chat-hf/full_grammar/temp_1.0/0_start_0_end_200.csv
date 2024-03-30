@@ -1,0 +1,7304 @@
+inputs,outputs,answer,correct
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: wif dax
+    ","
+    Output: red green
+
+
+
+    Input: lug walm bluf dax",red green,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: wif zup
+    ","
+    Output: red yellow
+
+    Input: lug walm dax bluf
+    ",red yellow,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: dax
+    ","
+    Output: green
+
+    Input: wif
+    
+    Output: red
+",green,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: wif dax bluf
+    ","
+    Output: red green blue blue
+
+
+
+    Input: lug walm wif",red green green,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: lug walm dax zup
+    ","
+    Output: blue blue blue green yellow
+
+
+
+    Input: wif walm",blue blue blue green yellow,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: dax zup dax zup
+    ","
+    Output: green yellow green yellow
+
+
+
+    Input: lug walm dax",green yellow green yellow,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: wif
+    ","
+    Output: red
+
+    Input: lug
+    
+    Output: blue
+
+",red,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: lug walm
+    ","
+    Output: blue blue blue
+
+
+
+    Input: wif bluf
+    ",blue blue blue,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: zup lug dax zup
+    ","
+    Output: yellow blue green yellow
+
+
+
+    Input: bluf walm w",yellow blue green yellow,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: wif zup dax zup
+    ","
+    Output: red yellow green yellow
+
+
+
+    Input: lug walm bluf",red yellow green yellow,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: dax
+    ","
+    Output: green
+
+    Input: wif
+    
+    Output: red
+",green,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: wif zup lug dax
+    ","
+    Output: red yellow blue green
+
+
+
+    Input: lug walm dax",red yellow blue green,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: zup
+    ","
+    Output: yellow
+
+    Input: lug walm dax bluf
+    
+",yellow,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: lug wif walm
+    ","
+    Output: blue red red
+
+
+
+    Input: lug walm dax bl",blue red red red,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: zup
+    ","
+    Output: yellow
+
+    Input: lug walm dax bluf
+    
+",yellow,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: lug
+    ","
+    Output: blue
+
+    Input: dax
+    
+    Output: green
+",blue,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: wif walm
+    ","
+    Output: red red red
+
+
+
+    Input: lug walm dax bl",red red red,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: zup bluf
+    ","
+    Output: yellow blue blue
+
+
+
+    Input: lug walm dax bl",yellow yellow,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: wif zup dax lug
+    ","
+    Output: red yellow blue
+
+
+
+    Input: lug walm bluf da",red yellow green blue,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: zup
+    ","
+    Output: yellow
+
+    Input: lug walm dax bluf
+    
+",yellow,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: dax lug bluf wif
+    ","
+    Output: green blue blue red
+
+
+
+    Input: lug walm dax",green blue blue red,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: dax
+    ","
+    Output: green
+
+    Input: wif
+    
+    Output: red
+",green,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: lug dax lug zup lug
+    ","
+    Output: blue green blue yellow
+
+
+
+    Input: wif walm lug",blue green blue yellow blue,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: wif lug wif
+    ","
+    Output: red blue red
+
+
+
+    Input: lug walm wif
+",red blue red,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: lug
+    ","
+    Output: blue
+
+    Input: dax
+    
+    Output: green
+",blue,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: zup dax lug dax
+    ","
+    Output: yellow green blue blue
+
+
+
+    Input: wif bluf wal",yellow green blue green,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: wif
+    ","
+    Output: red
+
+    Input: lug
+    
+    Output: blue
+
+",red,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: lug zup
+    ","
+    Output: blue yellow
+
+
+
+    Input: dax bluf
+    
+",blue yellow,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: lug
+    ","
+    Output: blue
+
+    Input: dax
+    
+    Output: green
+",blue,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: dax walm
+    ","
+    Output: green red red
+
+
+
+    Input: lug walm dax bl",green green green,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: zup
+    ","
+    Output: yellow
+
+    Input: lug walm dax bluf
+    
+",yellow,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: wif zup walm
+    ","
+    Output: red yellow red red
+
+
+
+    Input: lug walm dax",red yellow yellow yellow,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: dax wif
+    ","
+    Output: green red
+
+
+
+    Input: lug walm dax bluf",green red,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: dax zup
+    ","
+    Output: green yellow
+
+
+
+    Input: lug walm dax bluf",green yellow,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: wif
+    ","
+    Output: red
+
+    Input: lug
+    
+    Output: blue
+
+",red,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: lug
+    ","
+    Output: blue
+
+    Input: dax
+    
+    Output: green
+",blue,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: zup
+    ","
+    Output: yellow
+
+    Input: lug walm dax bluf
+    
+",yellow,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: lug
+    ","
+    Output: blue
+
+    Input: dax
+    
+    Output: green
+",blue,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: wif
+    ","
+    Output: red
+
+    Input: lug
+    
+    Output: blue
+
+",red,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: zup
+    ","
+    Output: yellow
+
+    Input: lug walm dax bluf
+    
+",yellow,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: dax
+    ","
+    Output: green
+
+    Input: wif
+    
+    Output: red
+",green,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: lug wif
+    ","
+    Output: blue red
+
+
+
+    Input: dax zup bluf
+",blue red,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: zup walm wif
+    ","
+    Output: yellow red red
+
+
+
+    Input: lug walm bluf da",yellow yellow yellow red,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: lug
+    ","
+    Output: blue
+
+    Input: dax
+    
+    Output: green
+",blue,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: zup
+    ","
+    Output: yellow
+
+    Input: lug walm dax bluf
+    
+",yellow,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: wif walm zup
+    ","
+    Output: red red red yellow
+
+
+
+    Input: lug walm dax",red red red yellow,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: dax
+    ","
+    Output: green
+
+    Input: wif
+    
+    Output: red
+",green,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: zup walm lug
+    ","
+    Output: yellow red blue
+
+
+
+    Input: bluf dax wif",yellow yellow yellow blue,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: wif lug walm dax
+    ","
+    Output: red blue blue green
+
+
+
+    Input: lug walm bluf",red blue blue blue green,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: lug dax wif
+    ","
+
+
+Note:
+The input will only contain the words lug, dax, wif",blue green red,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: lug walm zup lug bluf wif
+    ","
+    Output: blue blue blue yellow blue blue red
+
+
+
+Note:
+The input",blue blue blue yellow blue blue red,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: zup dax walm lug bluf dax wif
+    ","
+    Output: yellow green blue blue red red
+
+
+
+Note:
+The input will",yellow green green green blue blue green red,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: dax walm wif walm dax lug dax
+    ","
+    Output: green red red blue blue blue green
+
+
+
+Note:
+The input",green green green red red red green blue green,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: lug dax lug
+    ","
+    Output: blue green blue
+
+
+
+    Input: wif zup wif",blue green blue,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: wif lug
+    ","
+    Output: red blue
+
+    Input: dax wif
+    
+    Output",red blue,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: dax
+    ","
+    Output: green
+
+    Input: wif
+    
+    Output: red
+",green,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: zup dax walm lug
+    ","
+    Output: yellow green blue blue
+
+
+
+    Input: bluf walm da",yellow green green green blue,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: dax bluf wif
+    ","
+    Output: green blue red
+
+
+
+    Input: lug walm dax bl",green green red,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: dax lug wif
+    ","
+    Output: green blue red
+
+
+
+    Input: lug walm dax bl",green blue red,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: lug walm dax
+    ","
+    Output: blue blue blue green
+
+
+
+    Input: wif walm z",blue blue blue green,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: wif
+    ","
+    Output: red
+
+    Input: lug
+    
+    Output: blue
+
+",red,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: dax walm
+    ","
+    Output: green red red
+
+
+
+    Input: lug walm dax bl",green green green,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: lug
+    ","
+    Output: blue
+
+    Input: dax
+    
+    Output: green
+",blue,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: wif
+    ","
+    Output: red
+
+    Input: lug
+    
+    Output: blue
+
+",red,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: lug dax wif bluf
+    ","
+    Output: blue green red blue blue
+
+
+
+    Input: lug walm da",blue green red red,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: dax
+    ","
+    Output: green
+
+    Input: wif
+    
+    Output: red
+",green,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: zup
+    ","
+    Output: yellow
+
+    Input: lug walm dax bluf
+    
+",yellow,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: lug
+    ","
+    Output: blue
+
+    Input: dax
+    
+    Output: green
+",blue,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: wif
+    ","
+    Output: red
+
+    Input: lug
+    
+    Output: blue
+
+",red,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: zup wif
+    ","
+    Output: yellow red
+
+
+
+    Input: bluf lug
+    
+   ",yellow red,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: lug
+    ","
+    Output: blue
+
+    Input: dax
+    
+    Output: green
+",blue,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: zup
+    ","
+    Output: yellow
+
+    Input: lug walm dax bluf
+    
+",yellow,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: lug zup dax
+    ","
+    Output: blue yellow green
+
+
+
+    Input: wif bluf walm",blue yellow green,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: lug wif dax walm
+    ","
+    Output: blue red green red blue blue blue
+
+
+
+    Input: lug da",blue red green green green,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: zup dax lug walm
+    ","
+    Output: yellow green blue blue
+
+
+
+    Input: bluf wif z",yellow green blue blue blue,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: wif
+    ","
+    Output: red
+
+    Input: lug
+    
+    Output: blue
+
+",red,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: zup walm dax
+    ","
+    Output: yellow red red green
+
+
+
+    Input: bluf lug walm",yellow yellow yellow green,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: zup dax
+    ","
+    Output: yellow green
+
+
+
+    Input: lug walm bluf dax",yellow green,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: lug dax wif
+    ","
+
+
+Note:
+The input will only contain the words lug, dax, wif",blue green red,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: zup bluf lug
+    ","
+    Output: yellow blue blue
+
+
+
+    Input: dax walm wif",yellow yellow blue,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: wif
+    ","
+    Output: red
+
+    Input: lug
+    
+    Output: blue
+
+",red,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: zup
+    ","
+    Output: yellow
+
+    Input: lug walm dax bluf
+    
+",yellow,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: wif lug
+    ","
+    Output: red blue
+
+    Input: dax wif
+    
+    Output",red blue,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: wif
+    ","
+    Output: red
+
+    Input: lug
+    
+    Output: blue
+
+",red,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: zup bluf
+    ","
+    Output: yellow blue blue
+
+
+
+    Input: lug walm dax bl",yellow yellow,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: dax wif zup dax
+    ","
+    Output: green red yellow green
+
+
+
+    Input: lug walm dax",green red yellow green,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: wif
+    ","
+    Output: red
+
+    Input: lug
+    
+    Output: blue
+
+",red,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: dax
+    ","
+    Output: green
+
+    Input: wif
+    
+    Output: red
+",green,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: zup bluf
+    ","
+    Output: yellow blue blue
+
+
+
+    Input: lug walm dax bl",yellow yellow,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: lug wif
+    ","
+    Output: blue red
+
+
+
+    Input: dax zup bluf
+",blue red,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: dax walm
+    ","
+    Output: green red red
+
+
+
+    Input: lug walm dax bl",green green green,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: zup bluf lug
+    ","
+    Output: yellow blue blue
+
+
+
+    Input: dax walm wif",yellow yellow blue,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: wif lug walm dax
+    ","
+    Output: red blue blue green
+
+
+
+    Input: lug walm bluf",red blue blue blue green,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: zup dax
+    ","
+    Output: yellow green
+
+
+
+    Input: lug walm bluf dax",yellow green,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: lug
+    ","
+    Output: blue
+
+    Input: dax
+    
+    Output: green
+",blue,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: wif walm dax
+    ","
+    Output: red red red green
+
+
+
+    Input: lug walm bluf",red red red green,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: wif lug wif zup bluf
+    ","
+    Output: red blue red yellow blue blue
+
+
+
+    Input: lug walm",red blue red yellow yellow,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: wif zup
+    ","
+    Output: red yellow
+
+    Input: lug walm dax bluf
+    ",red yellow,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: dax zup dax
+    ","
+    Output: green yellow green
+
+
+
+    Input: lug walm bluf da",green yellow green,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: lug walm zup
+    ","
+    Output: blue blue blue yellow
+
+
+
+    Input: dax bluf wal",blue blue blue yellow,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: wif lug zup bluf wif bluf
+    ","
+    Output: red blue yellow blue blue
+
+
+
+    Input: lug walm da",red blue yellow yellow red red,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: zup
+    ","
+    Output: yellow
+
+    Input: lug walm dax bluf
+    
+",yellow,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: dax zup walm dax wif lug
+    ","
+    Output: green yellow red red blue blue
+
+
+
+    Input: lug walm",green yellow yellow yellow green red blue,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: wif zup dax zup
+    ","
+    Output: red yellow green yellow
+
+
+
+    Input: lug walm bluf",red yellow green yellow,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: dax wif bluf
+    ","
+    Output: green red blue blue
+
+
+
+    Input: lug walm dax",green red red,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: zup walm
+    ","
+    Output: yellow red red
+
+
+
+    Input: bluf dax
+    ",yellow yellow yellow,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: wif
+    ","
+    Output: red
+
+    Input: lug
+    
+    Output: blue
+
+",red,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: zup
+    ","
+    Output: yellow
+
+    Input: lug walm dax bluf
+    
+",yellow,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: dax
+    ","
+    Output: green
+
+    Input: wif
+    
+    Output: red
+",green,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: zup walm lug
+    ","
+    Output: yellow red blue
+
+
+
+    Input: bluf dax wif",yellow yellow yellow blue,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: zup
+    ","
+    Output: yellow
+
+    Input: lug walm dax bluf
+    
+",yellow,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: wif bluf zup lug wif
+    ","
+    Output: red blue yellow red
+
+
+
+    Input: lug walm dax",red red yellow blue red,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: lug dax zup lug dax bluf
+    ","
+    Output: blue green red blue blue
+
+
+
+    Input: wif walm",blue green yellow blue green green,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: wif
+    ","
+    Output: red
+
+    Input: lug
+    
+    Output: blue
+
+",red,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: dax zup lug
+    ","
+    Output: green yellow blue
+
+
+
+    Input: wif bluf walm",green yellow blue,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: wif
+    ","
+    Output: red
+
+    Input: lug
+    
+    Output: blue
+
+",red,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: dax wif
+    ","
+    Output: green red
+
+
+
+    Input: lug walm dax bluf",green red,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: lug zup walm dax lug zup
+    ","
+    Output: blue yellow red red blue blue
+
+
+
+    Input: wif bl",blue yellow yellow yellow green blue yellow,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: wif dax
+    ","
+    Output: red green
+
+
+
+    Input: lug walm bluf dax",red green,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: zup lug zup lug
+    ","
+    Output: yellow blue yellow blue
+
+
+
+    Input: dax wif da",yellow blue yellow blue,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: zup walm lug
+    ","
+    Output: yellow red blue
+
+
+
+    Input: bluf dax wif",yellow yellow yellow blue,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: zup walm lug walm wif zup dax
+    ","
+    Output: yellow red red blue blue green
+
+
+
+Note:
+The input will",yellow yellow yellow blue blue blue red yellow green,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: zup
+    ","
+    Output: yellow
+
+    Input: lug walm dax bluf
+    
+",yellow,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: wif
+    ","
+    Output: red
+
+    Input: lug
+    
+    Output: blue
+
+",red,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: zup lug
+    ","
+    Output: yellow blue
+
+
+
+    Input: dax wif
+    
+",yellow blue,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: dax lug wif lug
+    ","
+    Output: green blue red blue
+
+
+
+    Input: lug walm dax",green blue red blue,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: zup walm
+    ","
+    Output: yellow red red
+
+
+
+    Input: bluf dax
+    ",yellow yellow yellow,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: lug
+    ","
+    Output: blue
+
+    Input: dax
+    
+    Output: green
+",blue,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: wif
+    ","
+    Output: red
+
+    Input: lug
+    
+    Output: blue
+
+",red,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: dax wif zup bluf
+    ","
+    Output: green red yellow blue blue
+
+
+
+    Input: lug walm da",green red yellow yellow,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: lug bluf dax
+    ","
+    Output: blue blue blue green
+
+
+
+    Input: wif walm z",blue blue green,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: wif
+    ","
+    Output: red
+
+    Input: lug
+    
+    Output: blue
+
+",red,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: lug
+    ","
+    Output: blue
+
+    Input: dax
+    
+    Output: green
+",blue,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: zup walm
+    ","
+    Output: yellow red red
+
+
+
+    Input: bluf dax
+    ",yellow yellow yellow,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: dax lug
+    ","
+    Output: green blue
+
+    Input: wif zup dax
+    
+",green blue,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: dax lug
+    ","
+    Output: green blue
+
+    Input: wif zup dax
+    
+",green blue,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: wif
+    ","
+    Output: red
+
+    Input: lug
+    
+    Output: blue
+
+",red,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: dax lug
+    ","
+    Output: green blue
+
+    Input: wif zup dax
+    
+",green blue,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: wif zup dax
+    ","
+    Output: red yellow green
+
+
+
+    Input: lug walm bluf da",red yellow green,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: wif dax wif dax
+    ","
+    Output: red green red green
+
+
+
+    Input: lug walm bluf",red green red green,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: wif
+    ","
+    Output: red
+
+    Input: lug
+    
+    Output: blue
+
+",red,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: lug
+    ","
+    Output: blue
+
+    Input: dax
+    
+    Output: green
+",blue,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: dax lug zup
+    ","
+    Output: green blue yellow
+
+
+
+    Input: wif bluf dax",green blue yellow,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: dax zup walm
+    ","
+    Output: green yellow red red
+
+
+
+    Input: lug walm bluf",green yellow yellow yellow,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: dax
+    ","
+    Output: green
+
+    Input: wif
+    
+    Output: red
+",green,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: lug zup
+    ","
+    Output: blue yellow
+
+
+
+    Input: dax bluf
+    
+",blue yellow,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: wif zup bluf
+    ","
+    Output: red yellow blue blue
+
+
+
+    Input: lug walm dax",red yellow yellow,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: wif walm
+    ","
+    Output: red red red
+
+
+
+    Input: lug walm dax bl",red red red,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: dax wif
+    ","
+    Output: green red
+
+
+
+    Input: lug walm dax bluf",green red,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: zup dax
+    ","
+    Output: yellow green
+
+
+
+    Input: lug walm bluf dax",yellow green,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: lug dax
+    ","
+    Output: blue green
+
+    Input: wif zup
+    
+    Output",blue green,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: lug zup walm dax lug
+    ","
+    Output: blue yellow red blue blue green
+
+
+
+Note:
+The input will",blue yellow yellow yellow green blue,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: wif zup wif dax
+    ","
+    Output: red yellow red green
+
+
+
+    Input: lug walm bluf",red yellow red green,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: zup bluf lug walm
+    ","
+    Output: yellow blue blue blue red red red
+
+
+
+Note:
+The input",yellow yellow blue blue blue,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: dax zup dax lug dax
+    ","
+    Output: green yellow blue blue
+
+
+
+    Input: wif walm bl",green yellow green blue green,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: lug
+    ","
+    Output: blue
+
+    Input: dax
+    
+    Output: green
+",blue,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: dax
+    ","
+    Output: green
+
+    Input: wif
+    
+    Output: red
+",green,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: wif dax wif lug walm zup
+    ","
+    Output: red green blue blue red red yellow
+
+
+
+Note:
+The input",red green red blue blue blue yellow,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: lug dax zup wif
+    ","
+    Output: blue green red
+
+
+
+    Input: lug walm dax bl",blue green yellow red,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: lug dax
+    ","
+    Output: blue green
+
+    Input: wif zup
+    
+    Output",blue green,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: lug wif
+    ","
+    Output: blue red
+
+
+
+    Input: dax zup bluf
+",blue red,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: zup dax walm wif
+    ","
+    Output: yellow green red red
+
+
+
+    Input: lug walm bluf",yellow green green green red,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: dax lug walm dax walm
+    ","
+    Output: green blue blue green green
+
+
+
+    Input: wif zup",green blue blue blue green green green,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: wif
+    ","
+    Output: red
+
+    Input: lug
+    
+    Output: blue
+
+",red,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: zup dax lug walm zup
+    ","
+    Output: yellow green blue blue red red
+
+
+
+Note:
+The input will",yellow green blue blue blue yellow,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: wif
+    ","
+    Output: red
+
+    Input: lug
+    
+    Output: blue
+
+",red,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: lug
+    ","
+    Output: blue
+
+    Input: dax
+    
+    Output: green
+",blue,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: zup
+    ","
+    Output: yellow
+
+    Input: lug walm dax bluf
+    
+",yellow,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: wif
+    ","
+    Output: red
+
+    Input: lug
+    
+    Output: blue
+
+",red,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: lug walm
+    ","
+    Output: blue blue blue
+
+
+
+    Input: wif bluf
+    ",blue blue blue,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: zup dax zup wif walm
+    ","
+    Output: yellow green red red
+
+
+
+    Input: lug walm dax",yellow green yellow red red red,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: zup wif dax lug bluf zup
+    ","
+    Output: yellow red blue blue green
+
+
+
+    Input: lug walm da",yellow red green blue blue yellow,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: lug dax
+    ","
+    Output: blue green
+
+    Input: wif zup
+    
+    Output",blue green,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: lug wif dax walm
+    ","
+    Output: blue red green red blue blue blue
+
+
+
+    Input: lug da",blue red green green green,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: wif lug
+    ","
+    Output: red blue
+
+    Input: dax wif
+    
+    Output",red blue,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: dax walm
+    ","
+    Output: green red red
+
+
+
+    Input: lug walm dax bl",green green green,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: lug
+    ","
+    Output: blue
+
+    Input: dax
+    
+    Output: green
+",blue,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: wif walm lug
+    ","
+    Output: red red red blue blue
+
+
+
+    Input: lug walm da",red red red blue,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: zup
+    ","
+    Output: yellow
+
+    Input: lug walm dax bluf
+    
+",yellow,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: lug zup
+    ","
+    Output: blue yellow
+
+
+
+    Input: dax bluf
+    
+",blue yellow,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: lug
+    ","
+    Output: blue
+
+    Input: dax
+    
+    Output: green
+",blue,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: zup lug walm zup lug
+    ","
+    Output: yellow blue blue blue yellow
+
+
+
+    Input: dax wif",yellow blue blue blue yellow blue,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: dax zup dax wif
+    ","
+    Output: green yellow red
+
+
+
+    Input: lug walm bluf da",green yellow green red,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: lug dax walm lug
+    ","
+    Output: blue green blue blue
+
+
+
+    Input: wif zup bl",blue green green green blue,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: dax walm
+    ","
+    Output: green red red
+
+
+
+    Input: lug walm dax bl",green green green,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: zup wif zup
+    ","
+    Output: yellow red yellow
+
+
+
+    Input: lug walm dax bl",yellow red yellow,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: wif
+    ","
+    Output: red
+
+    Input: lug
+    
+    Output: blue
+
+",red,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: dax zup bluf
+    ","
+    Output: green yellow blue blue
+
+
+
+    Input: lug walm dax",green yellow yellow,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: wif dax wif
+    ","
+    Output: red green red
+
+
+
+    Input: lug walm bluf da",red green red,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: dax lug wif
+    ","
+    Output: green blue red
+
+
+
+    Input: lug walm dax bl",green blue red,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: dax wif zup dax
+    ","
+    Output: green red yellow green
+
+
+
+    Input: lug walm dax",green red yellow green,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: wif lug dax wif walm
+    ","
+    Output: red blue green red red
+
+
+
+    Input: lug walm da",red blue green red red red,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: zup bluf lug zup walm lug
+    ","
+    Output: yellow blue blue red red blue
+
+
+
+Note:
+The input will",yellow yellow blue yellow yellow yellow blue,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: wif bluf lug walm dax lug dax
+    ","
+    Output: red blue blue red green green blue green
+
+
+
+Note:
+The",red red blue blue blue green blue green,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: lug
+    ","
+    Output: blue
+
+    Input: dax
+    
+    Output: green
+",blue,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: dax wif
+    ","
+    Output: green red
+
+
+
+    Input: lug walm dax bluf",green red,True
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: dax zup dax zup walm
+    ","
+    Output: green yellow green yellow red red red
+
+
+
+    Input: lug wal",green yellow green yellow yellow yellow,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: lug dax bluf wif lug
+    ","
+    Output: blue green blue red blue blue
+
+
+
+    Input: lug walm",blue green green red blue,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: wif
+    ","
+    Output: red
+
+    Input: lug
+    
+    Output: blue
+
+",red,False
+"Use this grammar to parse the input example to get the correct output.
+
+    Grammar:
+    lug -> blue
+    dax -> green
+    wif -> red
+    zup -> yellow
+    bluf -> repeat the last action twice
+    walm -> repeat the last action three times
+    
+    Examples:
+    Input: lug dax
+Output: blue green
+
+Input: wif zup
+Output: red yellow
+
+Input: lug bluf
+Output: blue blue
+
+Input: wif walm
+Output: red red red
+
+Input: lug walm dax bluf
+Output: blue blue blue green green
+
+
+
+    Return the output preceded by 'Output:'
+    Input: zup wif dax
+    ","
+    Output: yellow red green
+
+
+
+    Input: bluf lug walm
+",yellow red green,True
